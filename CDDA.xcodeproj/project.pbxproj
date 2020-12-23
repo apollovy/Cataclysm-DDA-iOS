@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53E7C5B2592D59F00F4E019 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B53E7C5A2592D59F00F4E019 /* data */; };
 		B54FDD4425929EE800505231 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B599344225929EA40074C0C0 /* libSDL2.a */; };
 		B54FDD4525929EE800505231 /* libSDLmain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B599344A25929EA40074C0C0 /* libSDLmain.a */; };
 		B54FDD6825929F3700505231 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD4E25929F0A00505231 /* libSDL2_image.a */; };
@@ -321,7 +322,6 @@
 		B57205AD25929503003D2A20 /* proficiency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572047425929502003D2A20 /* proficiency.cpp */; };
 		B57205AE25929503003D2A20 /* mtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572047525929502003D2A20 /* mtype.cpp */; };
 		B57205AF25929503003D2A20 /* disease.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572047A25929502003D2A20 /* disease.cpp */; };
-		B5A627782592B22C00EBA544 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5A627772592B22C00EBA544 /* data */; };
 		B5A627792592B2B000EBA544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D2259293EE003D2A20 /* Main.storyboard */; };
 		B5A627812592BB5B00EBA544 /* config in Resources */ = {isa = PBXBuildFile; fileRef = B5A627802592BB5B00EBA544 /* config */; };
 /* End PBXBuildFile section */
@@ -414,6 +414,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B53E7C5A2592D59F00F4E019 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 		B54FDD4625929F0A00505231 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2_image-2.0.5/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2_mixer-2.0.4/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2_ttf-2.0.15/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
@@ -1069,7 +1070,6 @@
 		B599343225929DA80074C0C0 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2.a; sourceTree = "<group>"; };
 		B599343425929DA80074C0C0 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2.a; sourceTree = "<group>"; };
 		B599343525929EA40074C0C0 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
-		B5A627772592B22C00EBA544 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "../../../Cataclysm-DDA/data"; sourceTree = "<group>"; };
 		B5A627802592BB5B00EBA544 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
 		B5A627822592BCE600EBA544 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B5A627842592BDA400EBA544 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -1177,8 +1177,8 @@
 		B57201CB259293EE003D2A20 /* CDDA */ = {
 			isa = PBXGroup;
 			children = (
+				B53E7C5A2592D59F00F4E019 /* data */,
 				B5A627802592BB5B00EBA544 /* config */,
-				B5A627772592B22C00EBA544 /* data */,
 				B54FDD732592A04500505231 /* SDVersion */,
 				B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */,
 				B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */,
@@ -2067,8 +2067,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A627782592B22C00EBA544 /* data in Resources */,
 				B5A627812592BB5B00EBA544 /* config in Resources */,
+				B53E7C5B2592D59F00F4E019 /* data in Resources */,
 				B5A627792592B2B000EBA544 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
