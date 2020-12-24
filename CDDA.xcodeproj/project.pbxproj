@@ -1066,28 +1066,8 @@
 		B572047825929502003D2A20 /* generic_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic_factory.h; sourceTree = "<group>"; };
 		B572047925929502003D2A20 /* weather_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weather_gen.h; sourceTree = "<group>"; };
 		B572047A25929502003D2A20 /* disease.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = disease.cpp; sourceTree = "<group>"; };
-		B599341625929CCE0074C0C0 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = "../../Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL/output/iOS/release/libSDL2.a"; sourceTree = "<group>"; };
-		B599343225929DA80074C0C0 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2.a; sourceTree = "<group>"; };
-		B599343425929DA80074C0C0 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSDL2.a; sourceTree = "<group>"; };
 		B599343525929EA40074C0C0 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		B5A627802592BB5B00EBA544 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
-		B5A627822592BCE600EBA544 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		B5A627842592BDA400EBA544 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B5A627862592BDF100EBA544 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		B5A6279F2592BE8B00EBA544 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
-		B5A627A02592BE8B00EBA544 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
-		B5A627A12592BE8B00EBA544 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B5A627A22592BE8B00EBA544 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
-		B5A627A32592BE8B00EBA544 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B5A627A42592BE8C00EBA544 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		B5A627A52592BE8C00EBA544 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		B5A627A62592BE8C00EBA544 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		B5A627A72592BE8C00EBA544 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		B5A627A82592BE8C00EBA544 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B5A627A92592BE8C00EBA544 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		B5A627AA2592BE8C00EBA544 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		B5A627AB2592BE8C00EBA544 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		B5A627AC2592BE8D00EBA544 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1837,59 +1817,14 @@
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B5A627A42592BE8C00EBA544 /* Accelerate.framework */,
-				B5A627A62592BE8C00EBA544 /* CoreAudio.framework */,
-				B5A627A22592BE8B00EBA544 /* CoreAudioKit.framework */,
-				B5A627A32592BE8B00EBA544 /* CoreGraphics.framework */,
-				B5A627AA2592BE8C00EBA544 /* CoreImage.framework */,
-				B5A627A72592BE8C00EBA544 /* CoreMedia.framework */,
-				B5A627A92592BE8C00EBA544 /* CoreServices.framework */,
-				B5A627AC2592BE8D00EBA544 /* Foundation.framework */,
-				B5A627A52592BE8C00EBA544 /* ImageIO.framework */,
-				B5A627A82592BE8C00EBA544 /* MediaPlayer.framework */,
-				B5A627A02592BE8B00EBA544 /* OpenAL.framework */,
-				B5A6279F2592BE8B00EBA544 /* ReplayKit.framework */,
-				B5A627AB2592BE8C00EBA544 /* StoreKit.framework */,
-				B5A627A12592BE8B00EBA544 /* UIKit.framework */,
-				B5A627862592BDF100EBA544 /* Metal.framework */,
-				B5A627842592BDA400EBA544 /* QuartzCore.framework */,
-				B5A627822592BCE600EBA544 /* OpenGLES.framework */,
+				B54FDD6D25929F9C00505231 /* AudioToolbox.framework */,
+				B54FDD6F25929FBA00505231 /* AVFoundation.framework */,
+				B54FDD6B25929F6400505231 /* CoreBluetooth.framework */,
 				B54FDD7F2592A0AD00505231 /* CoreMotion.framework */,
 				B54FDD7D2592A09000505231 /* GameController.framework */,
 				B54FDD7125929FEA00505231 /* MobileCoreServices.framework */,
-				B54FDD6F25929FBA00505231 /* AVFoundation.framework */,
-				B54FDD6D25929F9C00505231 /* AudioToolbox.framework */,
-				B54FDD6B25929F6400505231 /* CoreBluetooth.framework */,
-				B599343025929DA80074C0C0 /* iOS */,
-				B599341625929CCE0074C0C0 /* libSDL2.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B599343025929DA80074C0C0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B599343125929DA80074C0C0 /* release */,
-				B599343325929DA80074C0C0 /* debug */,
-			);
-			name = iOS;
-			path = "../../Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL/output/iOS";
-			sourceTree = "<group>";
-		};
-		B599343125929DA80074C0C0 /* release */ = {
-			isa = PBXGroup;
-			children = (
-				B599343225929DA80074C0C0 /* libSDL2.a */,
-			);
-			path = release;
-			sourceTree = "<group>";
-		};
-		B599343325929DA80074C0C0 /* debug */ = {
-			isa = PBXGroup;
-			children = (
-				B599343425929DA80074C0C0 /* libSDL2.a */,
-			);
-			path = debug;
 			sourceTree = "<group>";
 		};
 		B599343625929EA40074C0C0 /* Products */ = {
