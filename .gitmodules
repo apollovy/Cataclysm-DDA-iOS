@@ -1,0 +1,3 @@
+[submodule "Libraries/SDL"]
+	path = Libraries/SDL
+	url = https://github.com/SDL-mirror/SDL.git
