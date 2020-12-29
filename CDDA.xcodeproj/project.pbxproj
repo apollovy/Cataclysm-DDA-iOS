@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B53E7C5B2592D59F00F4E019 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B53E7C5A2592D59F00F4E019 /* data */; };
-		B54FDD4425929EE800505231 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B599344225929EA40074C0C0 /* libSDL2.a */; };
-		B54FDD4525929EE800505231 /* libSDLmain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B599344A25929EA40074C0C0 /* libSDLmain.a */; };
-		B54FDD6825929F3700505231 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD4E25929F0A00505231 /* libSDL2_image.a */; };
-		B54FDD6925929F3700505231 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD5925929F1800505231 /* libSDL2_mixer.a */; };
-		B54FDD6A25929F3700505231 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6525929F2800505231 /* libSDL2_ttf.a */; };
 		B54FDD6C25929F6400505231 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6B25929F6400505231 /* CoreBluetooth.framework */; };
 		B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
 		B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
@@ -20,6 +14,13 @@
 		B54FDD7B2592A04500505231 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B54FDD762592A04500505231 /* SDiOSVersion.m */; };
 		B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
+		B5653F1A259BB12E00AABE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D2259293EE003D2A20 /* Main.storyboard */; };
+		B56E7E29259BA61B000701EF /* config in Resources */ = {isa = PBXBuildFile; fileRef = B5A627802592BB5B00EBA544 /* config */; };
+		B56E7E2A259BA61C000701EF /* data in Resources */ = {isa = PBXBuildFile; fileRef = B53E7C5A2592D59F00F4E019 /* data */; };
+		B56E7E2D259BA891000701EF /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7E0B259BA391000701EF /* libSDL2_image.a */; };
+		B56E7E2E259BA896000701EF /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7E16259BA39A000701EF /* libSDL2_mixer.a */; };
+		B56E7E2F259BA89A000701EF /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7E22259BA3A2000701EF /* libSDL2_ttf.a */; };
+		B56E7E30259BA89D000701EF /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7DF8259BA387000701EF /* libSDL2.a */; };
 		B572047B25929502003D2A20 /* units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B57201FD25929500003D2A20 /* units.cpp */; };
 		B572047C25929502003D2A20 /* iuse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B57201FF25929500003D2A20 /* iuse.cpp */; };
 		B572047D25929502003D2A20 /* condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572020425929500003D2A20 /* condition.cpp */; };
@@ -322,102 +323,97 @@
 		B57205AD25929503003D2A20 /* proficiency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572047425929502003D2A20 /* proficiency.cpp */; };
 		B57205AE25929503003D2A20 /* mtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572047525929502003D2A20 /* mtype.cpp */; };
 		B57205AF25929503003D2A20 /* disease.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B572047A25929502003D2A20 /* disease.cpp */; };
-		B5A627792592B2B000EBA544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D2259293EE003D2A20 /* Main.storyboard */; };
-		B5A627812592BB5B00EBA544 /* config in Resources */ = {isa = PBXBuildFile; fileRef = B5A627802592BB5B00EBA544 /* config */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B54FDD4D25929F0A00505231 /* PBXContainerItemProxy */ = {
+		B56E7DF7259BA387000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B54FDD4625929F0A00505231 /* SDL_image.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BE1FA74107AF4C45004B6283;
-			remoteInfo = "libSDL_image-iOS";
-		};
-		B54FDD4F25929F0A00505231 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B54FDD4625929F0A00505231 /* SDL_image.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA5314451FE0FA910025C9BE;
-			remoteInfo = "libSDL_image-tvOS";
-		};
-		B54FDD5825929F1800505231 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BE1FA95407AF96B2004B6283;
-			remoteInfo = "libSDL_mixer-iOS";
-		};
-		B54FDD5A25929F1800505231 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA5314F11FE0FE2E0025C9BE;
-			remoteInfo = "libSDL_mixer-tvOS";
-		};
-		B54FDD6425929F2800505231 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BE48FD6E07AFA17000BB41DA;
-			remoteInfo = "libSDL_ttf-iOS";
-		};
-		B54FDD6625929F2800505231 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA53152E1FE1016F0025C9BE;
-			remoteInfo = "libSDL_ttf-tvOS";
-		};
-		B599344125929EA40074C0C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+			containerPortal = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FD6526630DE8FCCB002AD96B;
 			remoteInfo = "libSDL-iOS";
 		};
-		B599344325929EA40074C0C0 /* PBXContainerItemProxy */ = {
+		B56E7DF9259BA387000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+			containerPortal = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 52ED1E5C222889500061FCE0;
 			remoteInfo = "libSDL-iOS-dylib";
 		};
-		B599344525929EA40074C0C0 /* PBXContainerItemProxy */ = {
+		B56E7DFB259BA387000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+			containerPortal = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FAB598141BB5C1B100BE72C5;
 			remoteInfo = "libSDL-tvOS";
 		};
-		B599344725929EA40074C0C0 /* PBXContainerItemProxy */ = {
+		B56E7DFD259BA387000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+			containerPortal = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F3E3C7572241389A007D243C;
 			remoteInfo = "libSDL-tvOS-dylib";
 		};
-		B599344925929EA40074C0C0 /* PBXContainerItemProxy */ = {
+		B56E7DFF259BA387000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+			containerPortal = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F3E3C65222406928007D243C;
 			remoteInfo = "libSDLmain-iOS";
 		};
-		B599344B25929EA40074C0C0 /* PBXContainerItemProxy */ = {
+		B56E7E01259BA387000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+			containerPortal = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F3E3C75F224138AE007D243C;
 			remoteInfo = "libSDLmain-tvOS";
+		};
+		B56E7E0A259BA391000701EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56E7E03259BA391000701EF /* SDL_image.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE1FA74107AF4C45004B6283;
+			remoteInfo = "libSDL_image-iOS";
+		};
+		B56E7E0C259BA391000701EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56E7E03259BA391000701EF /* SDL_image.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA5314451FE0FA910025C9BE;
+			remoteInfo = "libSDL_image-tvOS";
+		};
+		B56E7E15259BA39A000701EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE1FA95407AF96B2004B6283;
+			remoteInfo = "libSDL_mixer-iOS";
+		};
+		B56E7E17259BA39A000701EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA5314F11FE0FE2E0025C9BE;
+			remoteInfo = "libSDL_mixer-tvOS";
+		};
+		B56E7E21259BA3A2000701EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE48FD6E07AFA17000BB41DA;
+			remoteInfo = "libSDL_ttf-iOS";
+		};
+		B56E7E23259BA3A2000701EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA53152E1FE1016F0025C9BE;
+			remoteInfo = "libSDL_ttf-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B53E7C5A2592D59F00F4E019 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
-		B54FDD4625929F0A00505231 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2_image-2.0.5/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
-		B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2_mixer-2.0.4/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
-		B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2_ttf-2.0.15/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B54FDD6B25929F6400505231 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B54FDD6D25929F9C00505231 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B54FDD6F25929FBA00505231 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -427,6 +423,10 @@
 		B54FDD7A2592A04500505231 /* SDVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDVersion.h; sourceTree = "<group>"; };
 		B54FDD7D2592A09000505231 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B56E7DEB259BA387000701EF /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "Libraries/SDL2-2.0.12/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
+		B56E7E03259BA391000701EF /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL2_image-2.0.5/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
+		B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL2_mixer-2.0.4/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
+		B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL2_ttf-2.0.15/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D3259293EE003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1066,7 +1066,6 @@
 		B572047825929502003D2A20 /* generic_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generic_factory.h; sourceTree = "<group>"; };
 		B572047925929502003D2A20 /* weather_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weather_gen.h; sourceTree = "<group>"; };
 		B572047A25929502003D2A20 /* disease.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = disease.cpp; sourceTree = "<group>"; };
-		B599343525929EA40074C0C0 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = "../../../Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL/SDL.xcodeproj"; sourceTree = "<group>"; };
 		B5A627802592BB5B00EBA544 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1075,11 +1074,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54FDD4425929EE800505231 /* libSDL2.a in Frameworks */,
-				B54FDD6825929F3700505231 /* libSDL2_image.a in Frameworks */,
-				B54FDD4525929EE800505231 /* libSDLmain.a in Frameworks */,
-				B54FDD6925929F3700505231 /* libSDL2_mixer.a in Frameworks */,
-				B54FDD6A25929F3700505231 /* libSDL2_ttf.a in Frameworks */,
+				B56E7E30259BA89D000701EF /* libSDL2.a in Frameworks */,
+				B56E7E2F259BA89A000701EF /* libSDL2_ttf.a in Frameworks */,
+				B56E7E2E259BA896000701EF /* libSDL2_mixer.a in Frameworks */,
+				B56E7E2D259BA891000701EF /* libSDL2_image.a in Frameworks */,
 				B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */,
 				B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */,
 				B54FDD6C25929F6400505231 /* CoreBluetooth.framework in Frameworks */,
@@ -1092,33 +1090,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B54FDD4725929F0A00505231 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B54FDD4E25929F0A00505231 /* libSDL2_image.a */,
-				B54FDD5025929F0A00505231 /* libSDL2_image.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B54FDD5225929F1800505231 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B54FDD5925929F1800505231 /* libSDL2_mixer.a */,
-				B54FDD5B25929F1800505231 /* libSDL2_mixer.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B54FDD5D25929F2800505231 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B54FDD6525929F2800505231 /* libSDL2_ttf.a */,
-				B54FDD6725929F2800505231 /* libSDL2_ttf.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B54FDD732592A04500505231 /* SDVersion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1137,12 +1108,75 @@
 			path = SDiOSVersion;
 			sourceTree = "<group>";
 		};
+		B56E7DEA259BA378000701EF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B56E7E03259BA391000701EF /* SDL_image.xcodeproj */,
+				B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */,
+				B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */,
+				B56E7DEB259BA387000701EF /* SDL.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B56E7DEC259BA387000701EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56E7DF8259BA387000701EF /* libSDL2.a */,
+				B56E7DFA259BA387000701EF /* libSDL2.dylib */,
+				B56E7DFC259BA387000701EF /* libSDL2.a */,
+				B56E7DFE259BA387000701EF /* libSDL2.dylib */,
+				B56E7E00259BA387000701EF /* libSDLmain.a */,
+				B56E7E02259BA387000701EF /* libSDLmain.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56E7E04259BA391000701EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56E7E0B259BA391000701EF /* libSDL2_image.a */,
+				B56E7E0D259BA391000701EF /* libSDL2_image.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56E7E0F259BA39A000701EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56E7E16259BA39A000701EF /* libSDL2_mixer.a */,
+				B56E7E18259BA39A000701EF /* libSDL2_mixer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56E7E1A259BA3A2000701EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56E7E22259BA3A2000701EF /* libSDL2_ttf.a */,
+				B56E7E24259BA3A2000701EF /* libSDL2_ttf.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56E7E25259BA51C000701EF /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				B5A627802592BB5B00EBA544 /* config */,
+				B53E7C5A2592D59F00F4E019 /* data */,
+				B57201D2259293EE003D2A20 /* Main.storyboard */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
 		B57201C0259293EE003D2A20 = {
 			isa = PBXGroup;
 			children = (
+				B56E7E25259BA51C000701EF /* Bundle */,
 				B57201CB259293EE003D2A20 /* CDDA */,
-				B57201CA259293EE003D2A20 /* Products */,
 				B599341525929CCE0074C0C0 /* Frameworks */,
+				B56E7DEA259BA378000701EF /* Libraries */,
+				B57201CA259293EE003D2A20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1157,18 +1191,11 @@
 		B57201CB259293EE003D2A20 /* CDDA */ = {
 			isa = PBXGroup;
 			children = (
-				B53E7C5A2592D59F00F4E019 /* data */,
-				B5A627802592BB5B00EBA544 /* config */,
-				B54FDD732592A04500505231 /* SDVersion */,
-				B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */,
-				B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */,
-				B54FDD4625929F0A00505231 /* SDL_image.xcodeproj */,
-				B599343525929EA40074C0C0 /* SDL.xcodeproj */,
-				B57201FC25929500003D2A20 /* src */,
-				B57201D2259293EE003D2A20 /* Main.storyboard */,
 				B57201D5259293EF003D2A20 /* Assets.xcassets */,
-				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
 				B57201DA259293EF003D2A20 /* Info.plist */,
+				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
+				B54FDD732592A04500505231 /* SDVersion */,
+				B57201FC25929500003D2A20 /* src */,
 			);
 			path = CDDA;
 			sourceTree = "<group>";
@@ -1827,19 +1854,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B599343625929EA40074C0C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B599344225929EA40074C0C0 /* libSDL2.a */,
-				B599344425929EA40074C0C0 /* libSDL2.dylib */,
-				B599344625929EA40074C0C0 /* libSDL2.a */,
-				B599344825929EA40074C0C0 /* libSDL2.dylib */,
-				B599344A25929EA40074C0C0 /* libSDLmain.a */,
-				B599344C25929EA40074C0C0 /* libSDLmain.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1887,20 +1901,20 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B599343625929EA40074C0C0 /* Products */;
-					ProjectRef = B599343525929EA40074C0C0 /* SDL.xcodeproj */;
+					ProductGroup = B56E7DEC259BA387000701EF /* Products */;
+					ProjectRef = B56E7DEB259BA387000701EF /* SDL.xcodeproj */;
 				},
 				{
-					ProductGroup = B54FDD4725929F0A00505231 /* Products */;
-					ProjectRef = B54FDD4625929F0A00505231 /* SDL_image.xcodeproj */;
+					ProductGroup = B56E7E04259BA391000701EF /* Products */;
+					ProjectRef = B56E7E03259BA391000701EF /* SDL_image.xcodeproj */;
 				},
 				{
-					ProductGroup = B54FDD5225929F1800505231 /* Products */;
-					ProjectRef = B54FDD5125929F1800505231 /* SDL_mixer.xcodeproj */;
+					ProductGroup = B56E7E0F259BA39A000701EF /* Products */;
+					ProjectRef = B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */;
 				},
 				{
-					ProductGroup = B54FDD5D25929F2800505231 /* Products */;
-					ProjectRef = B54FDD5C25929F2800505231 /* SDL_ttf.xcodeproj */;
+					ProductGroup = B56E7E1A259BA3A2000701EF /* Products */;
+					ProjectRef = B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1911,88 +1925,88 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B54FDD4E25929F0A00505231 /* libSDL2_image.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_image.a;
-			remoteRef = B54FDD4D25929F0A00505231 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B54FDD5025929F0A00505231 /* libSDL2_image.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_image.a;
-			remoteRef = B54FDD4F25929F0A00505231 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B54FDD5925929F1800505231 /* libSDL2_mixer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_mixer.a;
-			remoteRef = B54FDD5825929F1800505231 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B54FDD5B25929F1800505231 /* libSDL2_mixer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_mixer.a;
-			remoteRef = B54FDD5A25929F1800505231 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B54FDD6525929F2800505231 /* libSDL2_ttf.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_ttf.a;
-			remoteRef = B54FDD6425929F2800505231 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B54FDD6725929F2800505231 /* libSDL2_ttf.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_ttf.a;
-			remoteRef = B54FDD6625929F2800505231 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B599344225929EA40074C0C0 /* libSDL2.a */ = {
+		B56E7DF8259BA387000701EF /* libSDL2.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2.a;
-			remoteRef = B599344125929EA40074C0C0 /* PBXContainerItemProxy */;
+			remoteRef = B56E7DF7259BA387000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B599344425929EA40074C0C0 /* libSDL2.dylib */ = {
+		B56E7DFA259BA387000701EF /* libSDL2.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2.dylib;
-			remoteRef = B599344325929EA40074C0C0 /* PBXContainerItemProxy */;
+			remoteRef = B56E7DF9259BA387000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B599344625929EA40074C0C0 /* libSDL2.a */ = {
+		B56E7DFC259BA387000701EF /* libSDL2.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2.a;
-			remoteRef = B599344525929EA40074C0C0 /* PBXContainerItemProxy */;
+			remoteRef = B56E7DFB259BA387000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B599344825929EA40074C0C0 /* libSDL2.dylib */ = {
+		B56E7DFE259BA387000701EF /* libSDL2.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDL2.dylib;
-			remoteRef = B599344725929EA40074C0C0 /* PBXContainerItemProxy */;
+			remoteRef = B56E7DFD259BA387000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B599344A25929EA40074C0C0 /* libSDLmain.a */ = {
+		B56E7E00259BA387000701EF /* libSDLmain.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDLmain.a;
-			remoteRef = B599344925929EA40074C0C0 /* PBXContainerItemProxy */;
+			remoteRef = B56E7DFF259BA387000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B599344C25929EA40074C0C0 /* libSDLmain.a */ = {
+		B56E7E02259BA387000701EF /* libSDLmain.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDLmain.a;
-			remoteRef = B599344B25929EA40074C0C0 /* PBXContainerItemProxy */;
+			remoteRef = B56E7E01259BA387000701EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B56E7E0B259BA391000701EF /* libSDL2_image.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_image.a;
+			remoteRef = B56E7E0A259BA391000701EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B56E7E0D259BA391000701EF /* libSDL2_image.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_image.a;
+			remoteRef = B56E7E0C259BA391000701EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B56E7E16259BA39A000701EF /* libSDL2_mixer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_mixer.a;
+			remoteRef = B56E7E15259BA39A000701EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B56E7E18259BA39A000701EF /* libSDL2_mixer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_mixer.a;
+			remoteRef = B56E7E17259BA39A000701EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B56E7E22259BA3A2000701EF /* libSDL2_ttf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_ttf.a;
+			remoteRef = B56E7E21259BA3A2000701EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B56E7E24259BA3A2000701EF /* libSDL2_ttf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_ttf.a;
+			remoteRef = B56E7E23259BA3A2000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -2002,9 +2016,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A627812592BB5B00EBA544 /* config in Resources */,
-				B53E7C5B2592D59F00F4E019 /* data in Resources */,
-				B5A627792592B2B000EBA544 /* Main.storyboard in Resources */,
+				B56E7E29259BA61B000701EF /* config in Resources */,
+				B56E7E2A259BA61C000701EF /* data in Resources */,
+				B5653F1A259BB12E00AABE12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2398,21 +2412,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/**",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				USER_HEADER_SEARCH_PATHS = (
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/include",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2_image-2.0.5",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2_ttf-2.0.15",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDVersion/**",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2_mixer-2.0.4",
+					"./Libraries/SDL2_mixer-2.0.4",
+					"./Libraries/SDL2_image-2.0.5",
+					"./Libraries/SDL2-2.0.12/include",
+					"./Libraries/SDL2_ttf-2.0.15",
+					"./Libraries/SDL2-2.0.12/src/video/uikit",
 				);
 			};
 			name = Debug;
@@ -2469,21 +2482,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/**",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/Xcode-iOS/SDL",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
 				USER_HEADER_SEARCH_PATHS = (
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2-2.0.12/include",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2_image-2.0.5",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2_ttf-2.0.15",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDVersion/**",
-					"/Users/apollov/work/Cataclysm-DDA/iOS/Libraries/SDL2_mixer-2.0.4",
+					"./Libraries/SDL2_mixer-2.0.4",
+					"./Libraries/SDL2_image-2.0.5",
+					"./Libraries/SDL2-2.0.12/include",
+					"./Libraries/SDL2_ttf-2.0.15",
+					"./Libraries/SDL2-2.0.12/src/video/uikit",
 				);
 				VALIDATE_PRODUCT = YES;
 			};

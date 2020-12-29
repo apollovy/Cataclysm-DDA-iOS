@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="534852b0-80e9-4e4f-93f3-4c716097e2fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Images.xcassets/LaunchImage.launchimage/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Images.xcassets/LaunchImage.launchimage/Default-568h@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Images.xcassets/LaunchImage.launchimage/Default@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/.idea/runConfigurations/Cataclysm_Dark_Days_Ahead.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/.idea/runConfigurations/Cataclysm_Dark_Days_Ahead.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/project.xcworkspace/xcuserdata/apollov.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/project.xcworkspace/xcuserdata/apollov.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/xcshareddata/xcschemes/Cataclysm-Dark-Days-Ahead.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/xcshareddata/xcschemes/Cataclysm-Dark-Days-Ahead.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/xcuserdata/apollov.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/xcuserdata/apollov.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-Ahead/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-AheadTests/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cataclysm-Dark-Days-Ahead/Cataclysm-Dark-Days-AheadTests/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSController" beforeDir="false" afterPath="$PROJECT_DIR$/../../../JSController" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demos.xcodeproj/project.xcworkspace/xcuserdata/apollov.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Demos.xcodeproj/project.xcworkspace/xcuserdata/apollov.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demos.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Demos.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SDL/SDL.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../SDL/SDL.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SDL2_image-2.0.5/Xcode-iOS/SDL_image.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SDL2_image-2.0.5/Xcode-iOS/SDL_image.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SDL2_mixer-2.0.4/Xcode-iOS/SDL_mixer.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SDL2_mixer-2.0.4/Xcode-iOS/SDL_mixer.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SDL2_ttf-2.0.15/Xcode-iOS/SDL_ttf.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SDL2_ttf-2.0.15/Xcode-iOS/SDL_ttf.xcodeproj/xcuserdata/apollov.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1lyO7S4xbkcnsYOKC4oVyb3ZfEo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Rectangles,,,Happy,,,Happy-TV,,,Accel,,,Touch,,,Mixer,,,Fireworks,,,Keyboard" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Demos.xcodeproj" />
+  </component>
+  <component name="RunManager" selected="Application.All-iOS">
+    <list>
+      <item itemvalue="Application.All-iOS" />
+      <item itemvalue="Application.All-tvOS" />
+      <item itemvalue="Application.libSDL-iOS" />
+      <item itemvalue="Application.libSDL-iOS-dylib" />
+      <item itemvalue="Application.libSDL-tvOS" />
+      <item itemvalue="Application.libSDL-tvOS-dylib" />
+      <item itemvalue="Application.libSDLmain-iOS" />
+      <item itemvalue="Application.libSDLmain-tvOS" />
+      <item itemvalue="Application.PrepareXcodeProjectTemplate" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="534852b0-80e9-4e4f-93f3-4c716097e2fe" name="Default Changelist" comment="" />
+      <created>1608565696812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608565696812</updated>
+      <workItem from="1608565698225" duration="201000" />
+      <workItem from="1608668857615" duration="199000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
