@@ -7,22 +7,22 @@
 		<key>All (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>21</integer>
 		</dict>
 		<key>All (tvOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>22</integer>
 		</dict>
 		<key>libSDL_ttf-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>19</integer>
 		</dict>
 		<key>libSDL_ttf-tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>20</integer>
 		</dict>
 	</dict>
 </dict>

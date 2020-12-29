@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54FDD6C25929F6400505231 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6B25929F6400505231 /* CoreBluetooth.framework */; };
 		B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
 		B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
@@ -16,7 +17,6 @@
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B5653F1A259BB12E00AABE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D2259293EE003D2A20 /* Main.storyboard */; };
 		B5654D3D259BD13D00AABE12 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
-		B5654D3E259BD14500AABE12 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7E0B259BA391000701EF /* libSDL2_image.a */; };
 		B5654D3F259BD14900AABE12 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7E16259BA39A000701EF /* libSDL2_mixer.a */; };
 		B5654D40259BD14F00AABE12 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56E7E22259BA3A2000701EF /* libSDL2_ttf.a */; };
 		B56E7E29259BA61B000701EF /* config in Resources */ = {isa = PBXBuildFile; fileRef = B5A627802592BB5B00EBA544 /* config */; };
@@ -326,6 +326,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B54932EB259BD59D00667062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54932E4259BD59D00667062 /* SDL_image.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE1FA74107AF4C45004B6283;
+			remoteInfo = "libSDL_image-iOS";
+		};
+		B54932ED259BD59D00667062 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54932E4259BD59D00667062 /* SDL_image.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AA5314451FE0FA910025C9BE;
+			remoteInfo = "libSDL_image-tvOS";
+		};
 		B5654D21259BC9DE00AABE12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */;
@@ -417,20 +431,6 @@
 			remoteGlobalIDString = A75FDB6E23E3A2C900529352;
 			remoteInfo = "hidapi-tvOS";
 		};
-		B56E7E0A259BA391000701EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B56E7E03259BA391000701EF /* SDL_image.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BE1FA74107AF4C45004B6283;
-			remoteInfo = "libSDL_image-iOS";
-		};
-		B56E7E0C259BA391000701EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B56E7E03259BA391000701EF /* SDL_image.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AA5314451FE0FA910025C9BE;
-			remoteInfo = "libSDL_image-tvOS";
-		};
 		B56E7E15259BA39A000701EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */;
@@ -463,6 +463,7 @@
 
 /* Begin PBXFileReference section */
 		B53E7C5A2592D59F00F4E019 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54FDD6B25929F6400505231 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B54FDD6D25929F9C00505231 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B54FDD6F25929FBA00505231 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -473,7 +474,6 @@
 		B54FDD7D2592A09000505231 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
-		B56E7E03259BA391000701EF /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL2_image-2.0.5/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL2_mixer-2.0.4/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL2_ttf-2.0.15/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1123,9 +1123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */,
 				B5654D40259BD14F00AABE12 /* libSDL2_ttf.a in Frameworks */,
 				B5654D3F259BD14900AABE12 /* libSDL2_mixer.a in Frameworks */,
-				B5654D3E259BD14500AABE12 /* libSDL2_image.a in Frameworks */,
 				B5654D3D259BD13D00AABE12 /* libSDL2.a in Frameworks */,
 				B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */,
 				B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */,
@@ -1139,6 +1139,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B54932E5259BD59D00667062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B54932EC259BD59D00667062 /* libSDL2_image.a */,
+				B54932EE259BD59D00667062 /* libSDL2_image.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B54FDD732592A04500505231 /* SDVersion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1180,21 +1189,12 @@
 		B56E7DEA259BA378000701EF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B54932E4259BD59D00667062 /* SDL_image.xcodeproj */,
 				B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */,
-				B56E7E03259BA391000701EF /* SDL_image.xcodeproj */,
 				B56E7E0E259BA39A000701EF /* SDL_mixer.xcodeproj */,
 				B56E7E19259BA3A2000701EF /* SDL_ttf.xcodeproj */,
 			);
 			name = Libraries;
-			sourceTree = "<group>";
-		};
-		B56E7E04259BA391000701EF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B56E7E0B259BA391000701EF /* libSDL2_image.a */,
-				B56E7E0D259BA391000701EF /* libSDL2_image.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B56E7E0F259BA39A000701EF /* Products */ = {
@@ -1961,8 +1961,8 @@
 					ProjectRef = B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */;
 				},
 				{
-					ProductGroup = B56E7E04259BA391000701EF /* Products */;
-					ProjectRef = B56E7E03259BA391000701EF /* SDL_image.xcodeproj */;
+					ProductGroup = B54932E5259BD59D00667062 /* Products */;
+					ProjectRef = B54932E4259BD59D00667062 /* SDL_image.xcodeproj */;
 				},
 				{
 					ProductGroup = B56E7E0F259BA39A000701EF /* Products */;
@@ -1981,6 +1981,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		B54932EC259BD59D00667062 /* libSDL2_image.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_image.a;
+			remoteRef = B54932EB259BD59D00667062 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B54932EE259BD59D00667062 /* libSDL2_image.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDL2_image.a;
+			remoteRef = B54932ED259BD59D00667062 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B5654D22259BC9DE00AABE12 /* SDL2.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -2070,20 +2084,6 @@
 			fileType = wrapper.framework;
 			path = hidapi.framework;
 			remoteRef = B5654D39259BC9DE00AABE12 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B56E7E0B259BA391000701EF /* libSDL2_image.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_image.a;
-			remoteRef = B56E7E0A259BA391000701EF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B56E7E0D259BA391000701EF /* libSDL2_image.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSDL2_image.a;
-			remoteRef = B56E7E0C259BA391000701EF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B56E7E16259BA39A000701EF /* libSDL2_mixer.a */ = {
@@ -2527,7 +2527,7 @@
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				USER_HEADER_SEARCH_PATHS = (
 					"./Libraries/SDL2_mixer-2.0.4",
-					"./Libraries/SDL2_image-2.0.5",
+					./Libraries/SDL_image,
 					./Libraries/SDL/include,
 					"./Libraries/SDL2_ttf-2.0.15",
 					./Libraries/SDL/src/video/uikit,
@@ -2597,7 +2597,7 @@
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				USER_HEADER_SEARCH_PATHS = (
 					"./Libraries/SDL2_mixer-2.0.4",
-					"./Libraries/SDL2_image-2.0.5",
+					./Libraries/SDL_image,
 					./Libraries/SDL/include,
 					"./Libraries/SDL2_ttf-2.0.15",
 					./Libraries/SDL/src/video/uikit,
