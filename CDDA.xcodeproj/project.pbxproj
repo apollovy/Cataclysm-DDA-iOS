@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5072BDD259D1C18002479DB /* gfx in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
 		B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -322,7 +323,6 @@
 		B5F97C62259C07A000C5A910 /* mtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F97B2A259C07A000C5A910 /* mtype.cpp */; };
 		B5F97C63259C07A000C5A910 /* disease.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F97B2F259C07A000C5A910 /* disease.cpp */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
-		B5F97C6D259C0CF100C5A910 /* gfx in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5F97C6B259C0CEC00C5A910 /* gfx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -468,13 +468,15 @@
 			dstPath = data;
 			dstSubfolderSpec = 7;
 			files = (
-				B5F97C6D259C0CF100C5A910 /* gfx in CopyFiles */,
+				B5072BDD259D1C18002479DB /* gfx in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B5072BB6259CDF22002479DB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-DDA/gfx"; sourceTree = SOURCE_ROOT; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B5493315259BE20000667062 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
@@ -1124,7 +1126,6 @@
 		B5F97B2E259C07A000C5A910 /* weather_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weather_gen.h; sourceTree = "<group>"; };
 		B5F97B2F259C07A000C5A910 /* disease.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = disease.cpp; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		B5F97C6B259C0CEC00C5A910 /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gfx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1228,7 +1229,7 @@
 		B56E7E25259BA51C000701EF /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
-				B5F97C6B259C0CEC00C5A910 /* gfx */,
+				B5072BB8259CE883002479DB /* gfx */,
 				B5B01B95259BEF650023AB00 /* data */,
 				B57201D2259293EE003D2A20 /* Main.storyboard */,
 			);
@@ -1291,6 +1292,7 @@
 		B5F978B3259C079E00C5A910 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				B5072BB6259CDF22002479DB /* main.cpp */,
 				B5F9796E259C079F00C5A910 /* achievement.cpp */,
 				B5F97AE8259C079F00C5A910 /* action.cpp */,
 				B5F97AF9259C079F00C5A910 /* active_item_cache.cpp */,
