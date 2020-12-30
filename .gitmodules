@@ -10,3 +10,6 @@
 [submodule "Libraries/SDL_mixer"]
 	path = Libraries/SDL_mixer
 	url = git@github.com:SDL-mirror/SDL_mixer.git
+[submodule "Libraries/Cataclysm-DDA"]
+	path = Libraries/Cataclysm-DDA
+	url = git@github.com:CleverRaven/Cataclysm-DDA.git

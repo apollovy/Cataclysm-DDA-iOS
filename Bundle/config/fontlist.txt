@@ -1,6 +1,0 @@
-Terminus
-data/font//terminus.fon
-0
-Unifont Medium
-data/font//unifont.ttf
-0

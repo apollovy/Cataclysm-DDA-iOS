@@ -1,4 +1,0 @@
-[
-  { "rule": "*", "active": true, "whitelist": false, "attitude": 0, "proximity": 0, "category": 0 },
-  { "rule": "*", "active": true, "whitelist": true, "attitude": 1, "proximity": 5, "category": 1 }
-]
