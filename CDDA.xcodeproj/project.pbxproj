@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5072BDD259D1C18002479DB /* gfx in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
+		B5072BDD259D1C18002479DB /* gfx in Copy Files */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
+		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
 		B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -291,7 +292,6 @@
 		B599DD6D259D29F20000BC16 /* sdl_wrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B599DC56259D29F10000BC16 /* sdl_wrappers.cpp */; };
 		B599DD6E259D29F20000BC16 /* mission_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B599DC59259D29F10000BC16 /* mission_end.cpp */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
-		B5B01B97259BEFAA0023AB00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D2259293EE003D2A20 /* Main.storyboard */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 /* End PBXBuildFile section */
 
@@ -432,20 +432,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B5F97C6A259C0C9A00C5A910 /* CopyFiles */ = {
+		B5F97C6A259C0C9A00C5A910 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = data;
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 1;
 			files = (
-				B5072BDD259D1C18002479DB /* gfx in CopyFiles */,
+				B5072BDD259D1C18002479DB /* gfx in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-DDA/gfx"; sourceTree = SOURCE_ROOT; };
+		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
+		B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B5493315259BE20000667062 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
@@ -460,7 +463,6 @@
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B57201D3259293EE003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1129,7 +1131,6 @@
 			children = (
 				B5072BB8259CE883002479DB /* gfx */,
 				B5B01B95259BEF650023AB00 /* data */,
-				B57201D2259293EE003D2A20 /* Main.storyboard */,
 			);
 			path = Bundle;
 			sourceTree = "<group>";
@@ -1183,6 +1184,8 @@
 			children = (
 				B5F97C66259C08B500C5A910 /* main.mm */,
 				B5B01B99259BF0690023AB00 /* version.h */,
+				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
+				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -1762,7 +1765,7 @@
 				B57201C5259293EE003D2A20 /* Sources */,
 				B57201C6259293EE003D2A20 /* Frameworks */,
 				B57201C7259293EE003D2A20 /* Resources */,
-				B5F97C6A259C0C9A00C5A910 /* CopyFiles */,
+				B5F97C6A259C0C9A00C5A910 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -1965,7 +1968,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B01B96259BEF650023AB00 /* data in Resources */,
-				B5B01B97259BEFAA0023AB00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2176,6 +2178,7 @@
 				B599DD10259D29F10000BC16 /* wcwidth.cpp in Sources */,
 				B599DD5C259D29F20000BC16 /* memorial_logger.cpp in Sources */,
 				B599DCE6259D29F10000BC16 /* mission_start.cpp in Sources */,
+				B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B599DC7B259D29F10000BC16 /* input.cpp in Sources */,
 				B599DCC5259D29F10000BC16 /* creature.cpp in Sources */,
 				B599DD24259D29F20000BC16 /* condition.cpp in Sources */,
@@ -2255,14 +2258,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B57201D2259293EE003D2A20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B57201D3259293EE003D2A20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

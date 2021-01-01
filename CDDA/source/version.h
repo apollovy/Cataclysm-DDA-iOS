@@ -9,6 +9,6 @@
 #ifndef version_h
 #define version_h
 
-const char* VERSION = "0.E-3+83c437ba547eb53080650414f8dfbdf9c60d29ef";
+const char* VERSION = "0.E-3";
 
 #endif /* version_h */
