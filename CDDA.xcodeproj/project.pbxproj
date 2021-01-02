@@ -20,6 +20,7 @@
 		B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B5654D3D259BD13D00AABE12 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
+		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
 		B599DC5A259D29F10000BC16 /* flag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B599DA29259D29C80000BC16 /* flag.cpp */; };
 		B599DC5B259D29F10000BC16 /* char_validity_check.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B599DA2E259D29C80000BC16 /* char_validity_check.cpp */; };
 		B599DC5C259D29F10000BC16 /* vehicle_move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B599DA2F259D29C80000BC16 /* vehicle_move.cpp */; };
@@ -466,6 +467,8 @@
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+GestureHandling.h"; sourceTree = "<group>"; };
+		B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GestureHandling.m"; sourceTree = "<group>"; };
 		B599DA28259D29C80000BC16 /* text_style_check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = text_style_check.h; sourceTree = "<group>"; };
 		B599DA29259D29C80000BC16 /* flag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flag.cpp; sourceTree = "<group>"; };
 		B599DA2A259D29C80000BC16 /* shadowcasting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shadowcasting.h; sourceTree = "<group>"; };
@@ -1186,6 +1189,8 @@
 				B5B01B99259BF0690023AB00 /* version.h */,
 				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
 				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
+				B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */,
+				B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2118,6 +2123,7 @@
 				B599DCDF259D29F10000BC16 /* event_statistics.cpp in Sources */,
 				B599DCF4259D29F10000BC16 /* ballistics.cpp in Sources */,
 				B599DC76259D29F10000BC16 /* magic_teleporter_list.cpp in Sources */,
+				B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */,
 				B599DD34259D29F20000BC16 /* savegame_legacy.cpp in Sources */,
 				B599DC7A259D29F10000BC16 /* veh_type.cpp in Sources */,
 				B599DD42259D29F20000BC16 /* field.cpp in Sources */,
@@ -2413,6 +2419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
@@ -2430,6 +2437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
