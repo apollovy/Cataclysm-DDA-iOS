@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SDL_uikitviewcontroller (GestureHandling)
+
 @end
 
 NS_ASSUME_NONNULL_END

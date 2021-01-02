@@ -7,19 +7,20 @@
 //
 #include <UIKit/UIKit.h>
 
-#include "SDL_keyboard.h"
+#import <objc/runtime.h>
 
 #import "SDL_uikitviewcontroller+GestureHandling.h"
 
-
+/*
+ We use Method Swizzling because it hard enough to substitute SDL_uikitviewcontroller in appropriate places.
+*/
 @implementation SDL_uikitviewcontroller (GestureHandling)
 
 
-// the right place is to do it in viewDidLoad, but since it's empty in SDL implementation, we cannot rely on it.
-- (void)setView:(UIView *)view
+- (void)modifiedSetView:(UIView *)view
 {
-    [super setView:view];
-
+    [self modifiedSetView:view];
+    
     UISwipeGestureRecognizer* swipeUpRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(showKeyboard)];
     swipeUpRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
     [view addGestureRecognizer:swipeUpRecognizer];
@@ -27,6 +28,13 @@
     UISwipeGestureRecognizer* swipeDownRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     swipeDownRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
     [view addGestureRecognizer:swipeDownRecognizer];
+}
+
++(void)load
+{
+    Method originalSetView = class_getInstanceMethod(self, @selector(setView:));
+    Method modifiedSetView = class_getInstanceMethod(self, @selector(modifiedSetView:));
+    method_exchangeImplementations(originalSetView, modifiedSetView);
 }
 
 @end
