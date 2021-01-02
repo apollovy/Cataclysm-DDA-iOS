@@ -7,12 +7,12 @@
 
 int main( int argc, char *argv[] )
 {
-    NSString* documentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/save/"];
+    NSString* documentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     const char* new_argv_const[] = {
         *argv,
         "--datadir", [datadir UTF8String],
-        "--savedir", [documentPath UTF8String],
+        "--userdir", [documentPath UTF8String],
     };
     const int new_argv_const_size = (sizeof(new_argv_const) / sizeof(*new_argv_const));
     char* new_argv[new_argv_const_size];
