@@ -15,34 +15,10 @@
 @implementation GamePadViewController
 
 
-NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
-
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    JSDPadDirection dirs[] = {
-        JSDPadDirectionUp,
-        JSDPadDirectionDown,
-        JSDPadDirectionLeft,
-        JSDPadDirectionRight,
-        JSDPadDirectionUpLeft,
-        JSDPadDirectionUpRight,
-        JSDPadDirectionDownLeft,
-        JSDPadDirectionDownRight,
-        JSDPadDirectionNone,
-    };
-    const char keyCodes[] = "kjhlyubn.";
-    int directionsCount = sizeof(dirs) / sizeof(dirs[0]);
-    directionsToStrings = [NSMutableDictionary dictionary];
-    for (int i=0; i<directionsCount; i++)
-    {
-        char key;
-        key = keyCodes[i];
-        NSString* keyString = [NSString stringWithUTF8String:&key];
-        NSNumber* dirInt = [NSNumber numberWithInt:dirs[i]];
-        [directionsToStrings setObject:keyString forKey:dirInt];
-    }
-    
+
     [self.escapeButton.titleLabel setText:@"ESC"];
     [self.returnButton.titleLabel setText:@"⮐"];
     [self.tabButton.titleLabel setText:@"⇥"];
@@ -59,11 +35,47 @@ NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
 
 - (void)dPad:(JSDPad *)dPad didPressDirection:(JSDPadDirection)direction
 {
-    NSString* key = [directionsToStrings objectForKey:[NSNumber numberWithInt:direction]];
-    // TODO: refactor this, it is slmost the same as in +KeyboardKeysHandling.m
     SDL_Event event;
-    event.text.type = SDL_TEXTINPUT;
-    SDL_utf8strlcpy(event.text.text, [key UTF8String], SDL_arraysize(event.text.text));
+    switch (direction) {
+        case JSDPadDirectionNone:
+            break;
+        case JSDPadDirectionUp:
+            event.type = SDL_KEYDOWN;
+            event.key.keysym.sym = SDLK_UP;
+            break;
+        case JSDPadDirectionDown:
+            event.type = SDL_KEYDOWN;
+            event.key.keysym.sym = SDLK_DOWN;
+            break;
+        case JSDPadDirectionLeft:
+            event.type = SDL_KEYDOWN;
+            event.key.keysym.sym = SDLK_LEFT;
+            break;
+        case JSDPadDirectionRight:
+            event.type = SDL_KEYDOWN;
+            event.key.keysym.sym = SDLK_RIGHT;
+            break;
+        case JSDPadDirectionUpLeft:
+            event.type = SDL_TEXTINPUT;
+            event.text.text[0] = *"7";
+            break;
+        case JSDPadDirectionUpRight:
+            event.type = SDL_TEXTINPUT;
+            event.text.text[0] = *"9";
+            break;
+        case JSDPadDirectionDownLeft:
+            event.type = SDL_TEXTINPUT;
+            event.text.text[0] = *"1";
+            break;
+        case JSDPadDirectionDownRight:
+            event.type = SDL_TEXTINPUT;
+            event.text.text[0] = *"3";
+            break;
+        default:
+            event.type = SDL_TEXTINPUT;
+            event.text.text[0] = *"5";
+            break;
+    }
     SDL_PushEvent(&event);
 }
 
