@@ -318,6 +318,7 @@
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
 		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
+		B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 /* End PBXBuildFile section */
 
@@ -1114,6 +1115,7 @@
 		B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GestureHandling.m"; sourceTree = "<group>"; };
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-DDA/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
+		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1855,6 +1857,7 @@
 		B57201CB259293EE003D2A20 /* CDDA */ = {
 			isa = PBXGroup;
 			children = (
+				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
 				B5B01B98259BF0480023AB00 /* source */,
 				B57201DA259293EF003D2A20 /* Info.plist */,
 				B54FDD732592A04500505231 /* SDVersion */,
@@ -2132,6 +2135,7 @@
 				B50B448A25A24F7A00628243 /* dPad-DownLeft@2x.png in Resources */,
 				B50B449025A24F7A00628243 /* dPad-UpRight@2x.png in Resources */,
 				B50B448B25A24F7A00628243 /* dPad-Down@2x.png in Resources */,
+				B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */,
 				B50B448C25A24F7A00628243 /* dPad-Up@2x.png in Resources */,
 				B50B448F25A24F7A00628243 /* dPad-Right@2x.png in Resources */,
 				B50B449925A24F7A00628243 /* dPad-None.png in Resources */,
