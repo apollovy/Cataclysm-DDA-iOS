@@ -114,7 +114,6 @@
 		B50B483625A250EC00628243 /* gates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472725A250DC00628243 /* gates.cpp */; };
 		B50B483725A250EC00628243 /* live_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472825A250DC00628243 /* live_view.cpp */; };
 		B50B483825A250EC00628243 /* mission_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472925A250DC00628243 /* mission_end.cpp */; };
-		B50B483925A250EC00628243 /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472A25A250DC00628243 /* path_info.cpp */; };
 		B50B483A25A250EC00628243 /* construction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472B25A250DC00628243 /* construction.cpp */; };
 		B50B483B25A250EC00628243 /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472C25A250DC00628243 /* npc.cpp */; };
 		B50B483C25A250EC00628243 /* trait_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472D25A250DC00628243 /* trait_group.cpp */; };
@@ -319,6 +318,7 @@
 		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
+		B5E6FF9125A3A29C003FB37F /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472A25A250DC00628243 /* path_info.cpp */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 /* End PBXBuildFile section */
 
@@ -1908,6 +1908,7 @@
 				B57201C5259293EE003D2A20 /* Sources */,
 				B57201C6259293EE003D2A20 /* Frameworks */,
 				B57201C7259293EE003D2A20 /* Resources */,
+				B5E6FF9525A3AA9B003FB37F /* ShellScript */,
 				B5F97C6A259C0C9A00C5A910 /* Copy Files */,
 			);
 			buildRules = (
@@ -2153,6 +2154,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5E6FF9525A3AA9B003FB37F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "touch Libraries/Cataclysm-DDA/gfx\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B57201C5259293EE003D2A20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2260,6 +2281,7 @@
 				B50B484B25A250EC00628243 /* map_extras.cpp in Sources */,
 				B50B47EE25A250EC00628243 /* avatar.cpp in Sources */,
 				B50B487425A250EC00628243 /* worldfactory.cpp in Sources */,
+				B5E6FF9125A3A29C003FB37F /* path_info.cpp in Sources */,
 				B50B48AF25A250ED00628243 /* units.cpp in Sources */,
 				B50B481B25A250EC00628243 /* mapgen.cpp in Sources */,
 				B50B484625A250EC00628243 /* iuse_software_kitten.cpp in Sources */,
@@ -2287,7 +2309,6 @@
 				B50B48EB25A250ED00628243 /* missiondef.cpp in Sources */,
 				B50B48D525A250ED00628243 /* wcwidth.cpp in Sources */,
 				B50B483125A250EC00628243 /* rng.cpp in Sources */,
-				B50B483925A250EC00628243 /* path_info.cpp in Sources */,
 				B50B48E825A250ED00628243 /* advanced_inv_pane.cpp in Sources */,
 				B50B483D25A250EC00628243 /* teleport.cpp in Sources */,
 				B50B486C25A250EC00628243 /* vehicle_part.cpp in Sources */,
