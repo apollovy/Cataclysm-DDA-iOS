@@ -10,6 +10,12 @@
 #import "GamePadViewController.h"
 
 
+@interface SDL_uikitviewcontroller (GamePad)
+
+@property (nonatomic, assign) int keyboardHeight;
+
+@end
+
 
 @implementation SDL_uikitviewcontroller (GamePad)
 
@@ -19,6 +25,11 @@
     _gamepadViewController = [[GamePadViewController alloc] init];
     [self.view addSubview:_gamepadViewController.view];
     [self updateFrame];
+    
+    for (NSString* notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification])
+    {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFrame) name:notification object:nil];
+    }
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
@@ -32,10 +43,11 @@
     CGFloat screenHeight = screenRect.size.height;
     CGRect frame = [_gamepadViewController.view frame];
     frame.origin.x = 20;
-    frame.origin.y = screenHeight - 20 - frame.size.height;
+    frame.origin.y = screenHeight - 20 - frame.size.height - self.keyboardHeight;
     [_gamepadViewController.view setFrame:frame];
 }
 
 GamePadViewController* _gamepadViewController;
+@dynamic keyboardHeight;
 
 @end
