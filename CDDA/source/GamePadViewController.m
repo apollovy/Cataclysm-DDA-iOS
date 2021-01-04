@@ -63,9 +63,15 @@ NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
 
 #pragma mark - JSDButtonDelegate
 
+CFAbsoluteTime lastPress;
+
 - (void)buttonPressed:(JSButton *)button
 {
-    if ([button isEqual:self.escapeButton]){
+    // limit to 1 event per second
+    CFAbsoluteTime now = CFAbsoluteTimeGetCurrent();
+    if ([button isEqual:self.escapeButton] && (!lastPress || ((now-1) > lastPress)))
+    {
+        lastPress = now;
         SDL_Event event = {.type=SDL_KEYDOWN};
         event.key.keysym.sym = SDLK_ESCAPE;
         SDL_PushEvent(&event);
