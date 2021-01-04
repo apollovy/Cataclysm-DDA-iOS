@@ -802,6 +802,292 @@
 		B50B47E425A250EB00628243 /* mission_ui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mission_ui.cpp; path = "Libraries/Cataclysm-DDA/src/mission_ui.cpp"; sourceTree = SOURCE_ROOT; };
 		B50B47E525A250EC00628243 /* sdlsound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdlsound.cpp; path = "Libraries/Cataclysm-DDA/src/sdlsound.cpp"; sourceTree = SOURCE_ROOT; };
 		B50B48F525A255A300628243 /* GamePadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePadViewController.xib; sourceTree = "<group>"; };
+		B50B48FB25A2A5AF00628243 /* mapgen_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapgen_functions.h; path = "Libraries/Cataclysm-DDA/src/mapgen_functions.h"; sourceTree = SOURCE_ROOT; };
+		B50B48FC25A2A5AF00628243 /* mapdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapdata.h; path = "Libraries/Cataclysm-DDA/src/mapdata.h"; sourceTree = SOURCE_ROOT; };
+		B50B48FD25A2A5AF00628243 /* avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = avatar.h; path = "Libraries/Cataclysm-DDA/src/avatar.h"; sourceTree = SOURCE_ROOT; };
+		B50B48FE25A2A5AF00628243 /* iuse_software_lightson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software_lightson.h; path = "Libraries/Cataclysm-DDA/src/iuse_software_lightson.h"; sourceTree = SOURCE_ROOT; };
+		B50B48FF25A2A5AF00628243 /* path_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = path_info.h; path = "Libraries/Cataclysm-DDA/src/path_info.h"; sourceTree = SOURCE_ROOT; };
+		B50B490025A2A5AF00628243 /* iuse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse.h; path = "Libraries/Cataclysm-DDA/src/iuse.h"; sourceTree = SOURCE_ROOT; };
+		B50B490125A2A5AF00628243 /* npc_favor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npc_favor.h; path = "Libraries/Cataclysm-DDA/src/npc_favor.h"; sourceTree = SOURCE_ROOT; };
+		B50B490225A2A5AF00628243 /* game_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_constants.h; path = "Libraries/Cataclysm-DDA/src/game_constants.h"; sourceTree = SOURCE_ROOT; };
+		B50B490325A2A5B000628243 /* relic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = relic.h; path = "Libraries/Cataclysm-DDA/src/relic.h"; sourceTree = SOURCE_ROOT; };
+		B50B490425A2A5B000628243 /* requirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = requirements.h; path = "Libraries/Cataclysm-DDA/src/requirements.h"; sourceTree = SOURCE_ROOT; };
+		B50B490525A2A5B000628243 /* sdl_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sdl_utils.h; path = "Libraries/Cataclysm-DDA/src/sdl_utils.h"; sourceTree = SOURCE_ROOT; };
+		B50B490625A2A5B000628243 /* monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monster.h; path = "Libraries/Cataclysm-DDA/src/monster.h"; sourceTree = SOURCE_ROOT; };
+		B50B490725A2A5B000628243 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = line.h; path = "Libraries/Cataclysm-DDA/src/line.h"; sourceTree = SOURCE_ROOT; };
+		B50B490825A2A5B000628243 /* panels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = panels.h; path = "Libraries/Cataclysm-DDA/src/panels.h"; sourceTree = SOURCE_ROOT; };
+		B50B490925A2A5B000628243 /* loading_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loading_ui.h; path = "Libraries/Cataclysm-DDA/src/loading_ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B490A25A2A5B000628243 /* veh_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = veh_utils.h; path = "Libraries/Cataclysm-DDA/src/veh_utils.h"; sourceTree = SOURCE_ROOT; };
+		B50B490B25A2A5B000628243 /* item_category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_category.h; path = "Libraries/Cataclysm-DDA/src/item_category.h"; sourceTree = SOURCE_ROOT; };
+		B50B490C25A2A5B000628243 /* mingw.thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mingw.thread.h; path = "Libraries/Cataclysm-DDA/src/mingw.thread.h"; sourceTree = SOURCE_ROOT; };
+		B50B490D25A2A5B000628243 /* behavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = behavior.h; path = "Libraries/Cataclysm-DDA/src/behavior.h"; sourceTree = SOURCE_ROOT; };
+		B50B490E25A2A5B000628243 /* sdl_wrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sdl_wrappers.h; path = "Libraries/Cataclysm-DDA/src/sdl_wrappers.h"; sourceTree = SOURCE_ROOT; };
+		B50B490F25A2A5B100628243 /* cursesport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cursesport.h; path = "Libraries/Cataclysm-DDA/src/cursesport.h"; sourceTree = SOURCE_ROOT; };
+		B50B491025A2A5B100628243 /* cellular_automata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cellular_automata.h; path = "Libraries/Cataclysm-DDA/src/cellular_automata.h"; sourceTree = SOURCE_ROOT; };
+		B50B491125A2A5B100628243 /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = field.h; path = "Libraries/Cataclysm-DDA/src/field.h"; sourceTree = SOURCE_ROOT; };
+		B50B491225A2A5B100628243 /* catacharset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = catacharset.h; path = "Libraries/Cataclysm-DDA/src/catacharset.h"; sourceTree = SOURCE_ROOT; };
+		B50B491325A2A5B100628243 /* string_formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_formatter.h; path = "Libraries/Cataclysm-DDA/src/string_formatter.h"; sourceTree = SOURCE_ROOT; };
+		B50B491425A2A5B100628243 /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = input.h; path = "Libraries/Cataclysm-DDA/src/input.h"; sourceTree = SOURCE_ROOT; };
+		B50B491525A2A5B100628243 /* overmap_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_types.h; path = "Libraries/Cataclysm-DDA/src/overmap_types.h"; sourceTree = SOURCE_ROOT; };
+		B50B491625A2A5B100628243 /* memorial_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memorial_logger.h; path = "Libraries/Cataclysm-DDA/src/memorial_logger.h"; sourceTree = SOURCE_ROOT; };
+		B50B491725A2A5B100628243 /* faction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faction.h; path = "Libraries/Cataclysm-DDA/src/faction.h"; sourceTree = SOURCE_ROOT; };
+		B50B491825A2A5B100628243 /* bodypart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bodypart.h; path = "Libraries/Cataclysm-DDA/src/bodypart.h"; sourceTree = SOURCE_ROOT; };
+		B50B491925A2A5B100628243 /* coordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coordinates.h; path = "Libraries/Cataclysm-DDA/src/coordinates.h"; sourceTree = SOURCE_ROOT; };
+		B50B491A25A2A5B200628243 /* scent_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scent_map.h; path = "Libraries/Cataclysm-DDA/src/scent_map.h"; sourceTree = SOURCE_ROOT; };
+		B50B491B25A2A5B200628243 /* rect_range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rect_range.h; path = "Libraries/Cataclysm-DDA/src/rect_range.h"; sourceTree = SOURCE_ROOT; };
+		B50B491C25A2A5B200628243 /* cata_io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_io.h; path = "Libraries/Cataclysm-DDA/src/cata_io.h"; sourceTree = SOURCE_ROOT; };
+		B50B491D25A2A5B200628243 /* stats_tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stats_tracker.h; path = "Libraries/Cataclysm-DDA/src/stats_tracker.h"; sourceTree = SOURCE_ROOT; };
+		B50B491E25A2A5B200628243 /* string_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_id.h; path = "Libraries/Cataclysm-DDA/src/string_id.h"; sourceTree = SOURCE_ROOT; };
+		B50B491F25A2A5B200628243 /* iexamine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iexamine.h; path = "Libraries/Cataclysm-DDA/src/iexamine.h"; sourceTree = SOURCE_ROOT; };
+		B50B492025A2A5B200628243 /* vpart_range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vpart_range.h; path = "Libraries/Cataclysm-DDA/src/vpart_range.h"; sourceTree = SOURCE_ROOT; };
+		B50B492125A2A5B200628243 /* mapbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapbuffer.h; path = "Libraries/Cataclysm-DDA/src/mapbuffer.h"; sourceTree = SOURCE_ROOT; };
+		B50B492225A2A5B200628243 /* construction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = construction.h; path = "Libraries/Cataclysm-DDA/src/construction.h"; sourceTree = SOURCE_ROOT; };
+		B50B492325A2A5B200628243 /* mutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutation.h; path = "Libraries/Cataclysm-DDA/src/mutation.h"; sourceTree = SOURCE_ROOT; };
+		B50B492425A2A5B200628243 /* artifact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = artifact.h; path = "Libraries/Cataclysm-DDA/src/artifact.h"; sourceTree = SOURCE_ROOT; };
+		B50B492525A2A5B300628243 /* lru_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lru_cache.h; path = "Libraries/Cataclysm-DDA/src/lru_cache.h"; sourceTree = SOURCE_ROOT; };
+		B50B492625A2A5B300628243 /* ballistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ballistics.h; path = "Libraries/Cataclysm-DDA/src/ballistics.h"; sourceTree = SOURCE_ROOT; };
+		B50B492725A2A5B300628243 /* computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = computer.h; path = "Libraries/Cataclysm-DDA/src/computer.h"; sourceTree = SOURCE_ROOT; };
+		B50B492825A2A5B300628243 /* color_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = color_loader.h; path = "Libraries/Cataclysm-DDA/src/color_loader.h"; sourceTree = SOURCE_ROOT; };
+		B50B492925A2A5B300628243 /* optional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = optional.h; path = "Libraries/Cataclysm-DDA/src/optional.h"; sourceTree = SOURCE_ROOT; };
+		B50B492A25A2A5B300628243 /* iuse_software_minesweeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software_minesweeper.h; path = "Libraries/Cataclysm-DDA/src/iuse_software_minesweeper.h"; sourceTree = SOURCE_ROOT; };
+		B50B492B25A2A5B300628243 /* editmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editmap.h; path = "Libraries/Cataclysm-DDA/src/editmap.h"; sourceTree = SOURCE_ROOT; };
+		B50B492C25A2A5B300628243 /* overmap_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_ui.h; path = "Libraries/Cataclysm-DDA/src/overmap_ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B492D25A2A5B300628243 /* color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = color.h; path = "Libraries/Cataclysm-DDA/src/color.h"; sourceTree = SOURCE_ROOT; };
+		B50B492E25A2A5B300628243 /* gun_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gun_mode.h; path = "Libraries/Cataclysm-DDA/src/gun_mode.h"; sourceTree = SOURCE_ROOT; };
+		B50B492F25A2A5B300628243 /* map_item_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_item_stack.h; path = "Libraries/Cataclysm-DDA/src/map_item_stack.h"; sourceTree = SOURCE_ROOT; };
+		B50B493025A2A5B400628243 /* mondefense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mondefense.h; path = "Libraries/Cataclysm-DDA/src/mondefense.h"; sourceTree = SOURCE_ROOT; };
+		B50B493125A2A5B400628243 /* construction_category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = construction_category.h; path = "Libraries/Cataclysm-DDA/src/construction_category.h"; sourceTree = SOURCE_ROOT; };
+		B50B493225A2A5B400628243 /* item_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_factory.h; path = "Libraries/Cataclysm-DDA/src/item_factory.h"; sourceTree = SOURCE_ROOT; };
+		B50B493325A2A5B400628243 /* emit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = emit.h; path = "Libraries/Cataclysm-DDA/src/emit.h"; sourceTree = SOURCE_ROOT; };
+		B50B493425A2A5B400628243 /* behavior_oracle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = behavior_oracle.h; path = "Libraries/Cataclysm-DDA/src/behavior_oracle.h"; sourceTree = SOURCE_ROOT; };
+		B50B493525A2A5B400628243 /* dependency_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dependency_tree.h; path = "Libraries/Cataclysm-DDA/src/dependency_tree.h"; sourceTree = SOURCE_ROOT; };
+		B50B493625A2A5B400628243 /* flood_fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flood_fill.h; path = "Libraries/Cataclysm-DDA/src/flood_fill.h"; sourceTree = SOURCE_ROOT; };
+		B50B493725A2A5B400628243 /* veh_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = veh_type.h; path = "Libraries/Cataclysm-DDA/src/veh_type.h"; sourceTree = SOURCE_ROOT; };
+		B50B493825A2A5B400628243 /* activity_handlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_handlers.h; path = "Libraries/Cataclysm-DDA/src/activity_handlers.h"; sourceTree = SOURCE_ROOT; };
+		B50B493925A2A5B400628243 /* npc_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npc_class.h; path = "Libraries/Cataclysm-DDA/src/npc_class.h"; sourceTree = SOURCE_ROOT; };
+		B50B493A25A2A5B400628243 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "Libraries/Cataclysm-DDA/src/ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B493B25A2A5B500628243 /* ranged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ranged.h; path = "Libraries/Cataclysm-DDA/src/ranged.h"; sourceTree = SOURCE_ROOT; };
+		B50B493C25A2A5B500628243 /* flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flag.h; path = "Libraries/Cataclysm-DDA/src/flag.h"; sourceTree = SOURCE_ROOT; };
+		B50B493D25A2A5B500628243 /* npctalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npctalk.h; path = "Libraries/Cataclysm-DDA/src/npctalk.h"; sourceTree = SOURCE_ROOT; };
+		B50B493E25A2A5B500628243 /* stomach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stomach.h; path = "Libraries/Cataclysm-DDA/src/stomach.h"; sourceTree = SOURCE_ROOT; };
+		B50B493F25A2A5B500628243 /* vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vehicle.h; path = "Libraries/Cataclysm-DDA/src/vehicle.h"; sourceTree = SOURCE_ROOT; };
+		B50B494025A2A5B500628243 /* wdirent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wdirent.h; path = "Libraries/Cataclysm-DDA/src/wdirent.h"; sourceTree = SOURCE_ROOT; };
+		B50B494125A2A5B500628243 /* sdltiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sdltiles.h; path = "Libraries/Cataclysm-DDA/src/sdltiles.h"; sourceTree = SOURCE_ROOT; };
+		B50B494225A2A5B500628243 /* action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = action.h; path = "Libraries/Cataclysm-DDA/src/action.h"; sourceTree = SOURCE_ROOT; };
+		B50B494325A2A5B500628243 /* mattack_actors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mattack_actors.h; path = "Libraries/Cataclysm-DDA/src/mattack_actors.h"; sourceTree = SOURCE_ROOT; };
+		B50B494425A2A5B500628243 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = options.h; path = "Libraries/Cataclysm-DDA/src/options.h"; sourceTree = SOURCE_ROOT; };
+		B50B494525A2A5B600628243 /* cata_algo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_algo.h; path = "Libraries/Cataclysm-DDA/src/cata_algo.h"; sourceTree = SOURCE_ROOT; };
+		B50B494625A2A5B600628243 /* enum_bitset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enum_bitset.h; path = "Libraries/Cataclysm-DDA/src/enum_bitset.h"; sourceTree = SOURCE_ROOT; };
+		B50B494725A2A5B600628243 /* crafting_gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crafting_gui.h; path = "Libraries/Cataclysm-DDA/src/crafting_gui.h"; sourceTree = SOURCE_ROOT; };
+		B50B494825A2A5B600628243 /* messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = messages.h; path = "Libraries/Cataclysm-DDA/src/messages.h"; sourceTree = SOURCE_ROOT; };
+		B50B494925A2A5B600628243 /* pldata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pldata.h; path = "Libraries/Cataclysm-DDA/src/pldata.h"; sourceTree = SOURCE_ROOT; };
+		B50B494A25A2A5B600628243 /* simplexnoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simplexnoise.h; path = "Libraries/Cataclysm-DDA/src/simplexnoise.h"; sourceTree = SOURCE_ROOT; };
+		B50B494B25A2A5B600628243 /* ret_val.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ret_val.h; path = "Libraries/Cataclysm-DDA/src/ret_val.h"; sourceTree = SOURCE_ROOT; };
+		B50B494C25A2A5B700628243 /* translations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translations.h; path = "Libraries/Cataclysm-DDA/src/translations.h"; sourceTree = SOURCE_ROOT; };
+		B50B494D25A2A5B700628243 /* scent_block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scent_block.h; path = "Libraries/Cataclysm-DDA/src/scent_block.h"; sourceTree = SOURCE_ROOT; };
+		B50B494E25A2A5B700628243 /* weather_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = weather_gen.h; path = "Libraries/Cataclysm-DDA/src/weather_gen.h"; sourceTree = SOURCE_ROOT; };
+		B50B494F25A2A5B700628243 /* inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inventory.h; path = "Libraries/Cataclysm-DDA/src/inventory.h"; sourceTree = SOURCE_ROOT; };
+		B50B495025A2A5B700628243 /* explosion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = explosion.h; path = "Libraries/Cataclysm-DDA/src/explosion.h"; sourceTree = SOURCE_ROOT; };
+		B50B495125A2A5B700628243 /* advanced_inv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = advanced_inv.h; path = "Libraries/Cataclysm-DDA/src/advanced_inv.h"; sourceTree = SOURCE_ROOT; };
+		B50B495225A2A5B700628243 /* mongroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mongroup.h; path = "Libraries/Cataclysm-DDA/src/mongroup.h"; sourceTree = SOURCE_ROOT; };
+		B50B495325A2A5B700628243 /* main_menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main_menu.h; path = "Libraries/Cataclysm-DDA/src/main_menu.h"; sourceTree = SOURCE_ROOT; };
+		B50B495425A2A5B700628243 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = "Libraries/Cataclysm-DDA/src/json.h"; sourceTree = SOURCE_ROOT; };
+		B50B495525A2A5B700628243 /* string_input_popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_input_popup.h; path = "Libraries/Cataclysm-DDA/src/string_input_popup.h"; sourceTree = SOURCE_ROOT; };
+		B50B495625A2A5B800628243 /* mattack_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mattack_common.h; path = "Libraries/Cataclysm-DDA/src/mattack_common.h"; sourceTree = SOURCE_ROOT; };
+		B50B495725A2A5B800628243 /* harvest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = harvest.h; path = "Libraries/Cataclysm-DDA/src/harvest.h"; sourceTree = SOURCE_ROOT; };
+		B50B495825A2A5B800628243 /* trait_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trait_group.h; path = "Libraries/Cataclysm-DDA/src/trait_group.h"; sourceTree = SOURCE_ROOT; };
+		B50B495925A2A5B800628243 /* teleport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = teleport.h; path = "Libraries/Cataclysm-DDA/src/teleport.h"; sourceTree = SOURCE_ROOT; };
+		B50B495A25A2A5B800628243 /* dialogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dialogue.h; path = "Libraries/Cataclysm-DDA/src/dialogue.h"; sourceTree = SOURCE_ROOT; };
+		B50B495B25A2A5B800628243 /* clone_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clone_ptr.h; path = "Libraries/Cataclysm-DDA/src/clone_ptr.h"; sourceTree = SOURCE_ROOT; };
+		B50B495C25A2A5B800628243 /* inventory_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inventory_ui.h; path = "Libraries/Cataclysm-DDA/src/inventory_ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B495D25A2A5B800628243 /* magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = magic.h; path = "Libraries/Cataclysm-DDA/src/magic.h"; sourceTree = SOURCE_ROOT; };
+		B50B495E25A2A5B900628243 /* common_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common_types.h; path = "Libraries/Cataclysm-DDA/src/common_types.h"; sourceTree = SOURCE_ROOT; };
+		B50B495F25A2A5B900628243 /* computer_session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = computer_session.h; path = "Libraries/Cataclysm-DDA/src/computer_session.h"; sourceTree = SOURCE_ROOT; };
+		B50B496025A2A5B900628243 /* posix_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = posix_time.h; path = "Libraries/Cataclysm-DDA/src/posix_time.h"; sourceTree = SOURCE_ROOT; };
+		B50B496125A2A5B900628243 /* assign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = assign.h; path = "Libraries/Cataclysm-DDA/src/assign.h"; sourceTree = SOURCE_ROOT; };
+		B50B496225A2A5B900628243 /* calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calendar.h; path = "Libraries/Cataclysm-DDA/src/calendar.h"; sourceTree = SOURCE_ROOT; };
+		B50B496325A2A5B900628243 /* iuse_software.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software.h; path = "Libraries/Cataclysm-DDA/src/iuse_software.h"; sourceTree = SOURCE_ROOT; };
+		B50B496425A2A5B900628243 /* vehicle_selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vehicle_selector.h; path = "Libraries/Cataclysm-DDA/src/vehicle_selector.h"; sourceTree = SOURCE_ROOT; };
+		B50B496525A2A5B900628243 /* overmap_noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_noise.h; path = "Libraries/Cataclysm-DDA/src/overmap_noise.h"; sourceTree = SOURCE_ROOT; };
+		B50B496625A2A5B900628243 /* magic_enchantment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = magic_enchantment.h; path = "Libraries/Cataclysm-DDA/src/magic_enchantment.h"; sourceTree = SOURCE_ROOT; };
+		B50B496725A2A5BA00628243 /* enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enums.h; path = "Libraries/Cataclysm-DDA/src/enums.h"; sourceTree = SOURCE_ROOT; };
+		B50B496825A2A5BA00628243 /* item_location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_location.h; path = "Libraries/Cataclysm-DDA/src/item_location.h"; sourceTree = SOURCE_ROOT; };
+		B50B496925A2A5BA00628243 /* mapgendata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapgendata.h; path = "Libraries/Cataclysm-DDA/src/mapgendata.h"; sourceTree = SOURCE_ROOT; };
+		B50B496A25A2A5BA00628243 /* monattack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monattack.h; path = "Libraries/Cataclysm-DDA/src/monattack.h"; sourceTree = SOURCE_ROOT; };
+		B50B496B25A2A5BA00628243 /* output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = output.h; path = "Libraries/Cataclysm-DDA/src/output.h"; sourceTree = SOURCE_ROOT; };
+		B50B496C25A2A5BA00628243 /* map_iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_iterator.h; path = "Libraries/Cataclysm-DDA/src/map_iterator.h"; sourceTree = SOURCE_ROOT; };
+		B50B496D25A2A5BA00628243 /* overmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap.h; path = "Libraries/Cataclysm-DDA/src/overmap.h"; sourceTree = SOURCE_ROOT; };
+		B50B496E25A2A5BA00628243 /* anatomy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = anatomy.h; path = "Libraries/Cataclysm-DDA/src/anatomy.h"; sourceTree = SOURCE_ROOT; };
+		B50B496F25A2A5BA00628243 /* pimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pimpl.h; path = "Libraries/Cataclysm-DDA/src/pimpl.h"; sourceTree = SOURCE_ROOT; };
+		B50B497025A2A5BB00628243 /* projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = projectile.h; path = "Libraries/Cataclysm-DDA/src/projectile.h"; sourceTree = SOURCE_ROOT; };
+		B50B497125A2A5BB00628243 /* simple_pathfinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_pathfinding.h; path = "Libraries/Cataclysm-DDA/src/simple_pathfinding.h"; sourceTree = SOURCE_ROOT; };
+		B50B497225A2A5BB00628243 /* start_location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = start_location.h; path = "Libraries/Cataclysm-DDA/src/start_location.h"; sourceTree = SOURCE_ROOT; };
+		B50B497325A2A5BB00628243 /* tileray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tileray.h; path = "Libraries/Cataclysm-DDA/src/tileray.h"; sourceTree = SOURCE_ROOT; };
+		B50B497425A2A5BB00628243 /* overmap_location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_location.h; path = "Libraries/Cataclysm-DDA/src/overmap_location.h"; sourceTree = SOURCE_ROOT; };
+		B50B497525A2A5BB00628243 /* craft_command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = craft_command.h; path = "Libraries/Cataclysm-DDA/src/craft_command.h"; sourceTree = SOURCE_ROOT; };
+		B50B497625A2A5BB00628243 /* auto_note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_note.h; path = "Libraries/Cataclysm-DDA/src/auto_note.h"; sourceTree = SOURCE_ROOT; };
+		B50B497725A2A5BB00628243 /* mapsharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapsharing.h; path = "Libraries/Cataclysm-DDA/src/mapsharing.h"; sourceTree = SOURCE_ROOT; };
+		B50B497825A2A5BB00628243 /* cursesdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cursesdef.h; path = "Libraries/Cataclysm-DDA/src/cursesdef.h"; sourceTree = SOURCE_ROOT; };
+		B50B497925A2A5BC00628243 /* pixel_minimap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pixel_minimap.h; path = "Libraries/Cataclysm-DDA/src/pixel_minimap.h"; sourceTree = SOURCE_ROOT; };
+		B50B497A25A2A5BC00628243 /* init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = init.h; path = "Libraries/Cataclysm-DDA/src/init.h"; sourceTree = SOURCE_ROOT; };
+		B50B497B25A2A5BC00628243 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point.h; path = "Libraries/Cataclysm-DDA/src/point.h"; sourceTree = SOURCE_ROOT; };
+		B50B497C25A2A5BC00628243 /* fire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fire.h; path = "Libraries/Cataclysm-DDA/src/fire.h"; sourceTree = SOURCE_ROOT; };
+		B50B497D25A2A5BC00628243 /* live_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = live_view.h; path = "Libraries/Cataclysm-DDA/src/live_view.h"; sourceTree = SOURCE_ROOT; };
+		B50B497E25A2A5BC00628243 /* behavior_strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = behavior_strategy.h; path = "Libraries/Cataclysm-DDA/src/behavior_strategy.h"; sourceTree = SOURCE_ROOT; };
+		B50B497F25A2A5BC00628243 /* visitable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visitable.h; path = "Libraries/Cataclysm-DDA/src/visitable.h"; sourceTree = SOURCE_ROOT; };
+		B50B498025A2A5BC00628243 /* units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = units.h; path = "Libraries/Cataclysm-DDA/src/units.h"; sourceTree = SOURCE_ROOT; };
+		B50B498125A2A5BC00628243 /* melee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = melee.h; path = "Libraries/Cataclysm-DDA/src/melee.h"; sourceTree = SOURCE_ROOT; };
+		B50B498225A2A5BD00628243 /* damage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = damage.h; path = "Libraries/Cataclysm-DDA/src/damage.h"; sourceTree = SOURCE_ROOT; };
+		B50B498325A2A5BD00628243 /* game_inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_inventory.h; path = "Libraries/Cataclysm-DDA/src/game_inventory.h"; sourceTree = SOURCE_ROOT; };
+		B50B498425A2A5BD00628243 /* animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation.h; path = "Libraries/Cataclysm-DDA/src/animation.h"; sourceTree = SOURCE_ROOT; };
+		B50B498525A2A5BD00628243 /* cata_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_utility.h; path = "Libraries/Cataclysm-DDA/src/cata_utility.h"; sourceTree = SOURCE_ROOT; };
+		B50B498625A2A5BD00628243 /* char_validity_check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = char_validity_check.h; path = "Libraries/Cataclysm-DDA/src/char_validity_check.h"; sourceTree = SOURCE_ROOT; };
+		B50B498725A2A5BD00628243 /* avatar_action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = avatar_action.h; path = "Libraries/Cataclysm-DDA/src/avatar_action.h"; sourceTree = SOURCE_ROOT; };
+		B50B498825A2A5BD00628243 /* safemode_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safemode_ui.h; path = "Libraries/Cataclysm-DDA/src/safemode_ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B498925A2A5BD00628243 /* scenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scenario.h; path = "Libraries/Cataclysm-DDA/src/scenario.h"; sourceTree = SOURCE_ROOT; };
+		B50B498A25A2A5BD00628243 /* cata_variant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_variant.h; path = "Libraries/Cataclysm-DDA/src/cata_variant.h"; sourceTree = SOURCE_ROOT; };
+		B50B498B25A2A5BE00628243 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = "Libraries/Cataclysm-DDA/src/game.h"; sourceTree = SOURCE_ROOT; };
+		B50B498C25A2A5BE00628243 /* lightmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lightmap.h; path = "Libraries/Cataclysm-DDA/src/lightmap.h"; sourceTree = SOURCE_ROOT; };
+		B50B498D25A2A5BE00628243 /* clzones.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clzones.h; path = "Libraries/Cataclysm-DDA/src/clzones.h"; sourceTree = SOURCE_ROOT; };
+		B50B498E25A2A5BE00628243 /* fragment_cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fragment_cloud.h; path = "Libraries/Cataclysm-DDA/src/fragment_cloud.h"; sourceTree = SOURCE_ROOT; };
+		B50B498F25A2A5BE00628243 /* creature_tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = creature_tracker.h; path = "Libraries/Cataclysm-DDA/src/creature_tracker.h"; sourceTree = SOURCE_ROOT; };
+		B50B499025A2A5BE00628243 /* omdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = omdata.h; path = "Libraries/Cataclysm-DDA/src/omdata.h"; sourceTree = SOURCE_ROOT; };
+		B50B499125A2A5BE00628243 /* pathfinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pathfinding.h; path = "Libraries/Cataclysm-DDA/src/pathfinding.h"; sourceTree = SOURCE_ROOT; };
+		B50B499225A2A5BE00628243 /* text_style_check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = text_style_check.h; path = "Libraries/Cataclysm-DDA/src/text_style_check.h"; sourceTree = SOURCE_ROOT; };
+		B50B499325A2A5BE00628243 /* text_snippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = text_snippets.h; path = "Libraries/Cataclysm-DDA/src/text_snippets.h"; sourceTree = SOURCE_ROOT; };
+		B50B499425A2A5BF00628243 /* drawing_primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = drawing_primitives.h; path = "Libraries/Cataclysm-DDA/src/drawing_primitives.h"; sourceTree = SOURCE_ROOT; };
+		B50B499525A2A5BF00628243 /* iuse_software_kitten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software_kitten.h; path = "Libraries/Cataclysm-DDA/src/iuse_software_kitten.h"; sourceTree = SOURCE_ROOT; };
+		B50B499625A2A5BF00628243 /* activity_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_type.h; path = "Libraries/Cataclysm-DDA/src/activity_type.h"; sourceTree = SOURCE_ROOT; };
+		B50B499725A2A5BF00628243 /* popup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = popup.h; path = "Libraries/Cataclysm-DDA/src/popup.h"; sourceTree = SOURCE_ROOT; };
+		B50B499825A2A5BF00628243 /* kill_tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kill_tracker.h; path = "Libraries/Cataclysm-DDA/src/kill_tracker.h"; sourceTree = SOURCE_ROOT; };
+		B50B499925A2A5BF00628243 /* advanced_inv_pane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = advanced_inv_pane.h; path = "Libraries/Cataclysm-DDA/src/advanced_inv_pane.h"; sourceTree = SOURCE_ROOT; };
+		B50B499A25A2A5BF00628243 /* magic_ter_furn_transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = magic_ter_furn_transform.h; path = "Libraries/Cataclysm-DDA/src/magic_ter_furn_transform.h"; sourceTree = SOURCE_ROOT; };
+		B50B499B25A2A5BF00628243 /* cata_tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_tiles.h; path = "Libraries/Cataclysm-DDA/src/cata_tiles.h"; sourceTree = SOURCE_ROOT; };
+		B50B499C25A2A5BF00628243 /* map_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_memory.h; path = "Libraries/Cataclysm-DDA/src/map_memory.h"; sourceTree = SOURCE_ROOT; };
+		B50B499D25A2A5C000628243 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event.h; path = "Libraries/Cataclysm-DDA/src/event.h"; sourceTree = SOURCE_ROOT; };
+		B50B499E25A2A5C000628243 /* type_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = type_id.h; path = "Libraries/Cataclysm-DDA/src/type_id.h"; sourceTree = SOURCE_ROOT; };
+		B50B499F25A2A5C000628243 /* monfaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monfaction.h; path = "Libraries/Cataclysm-DDA/src/monfaction.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A025A2A5C000628243 /* field_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = field_type.h; path = "Libraries/Cataclysm-DDA/src/field_type.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A125A2A5C000628243 /* npctrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npctrade.h; path = "Libraries/Cataclysm-DDA/src/npctrade.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A225A2A5C000628243 /* monstergenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monstergenerator.h; path = "Libraries/Cataclysm-DDA/src/monstergenerator.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A325A2A5C000628243 /* mapgenformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapgenformat.h; path = "Libraries/Cataclysm-DDA/src/mapgenformat.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A425A2A5C000628243 /* item_action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_action.h; path = "Libraries/Cataclysm-DDA/src/item_action.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A525A2A5C000628243 /* profession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = profession.h; path = "Libraries/Cataclysm-DDA/src/profession.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A625A2A5C100628243 /* item_search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_search.h; path = "Libraries/Cataclysm-DDA/src/item_search.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A725A2A5C100628243 /* morale_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = morale_types.h; path = "Libraries/Cataclysm-DDA/src/morale_types.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A825A2A5C100628243 /* player_activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = player_activity.h; path = "Libraries/Cataclysm-DDA/src/player_activity.h"; sourceTree = SOURCE_ROOT; };
+		B50B49A925A2A5C100628243 /* scores_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scores_ui.h; path = "Libraries/Cataclysm-DDA/src/scores_ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B49AA25A2A5C100628243 /* generic_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = generic_factory.h; path = "Libraries/Cataclysm-DDA/src/generic_factory.h"; sourceTree = SOURCE_ROOT; };
+		B50B49AB25A2A5C100628243 /* weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = weather.h; path = "Libraries/Cataclysm-DDA/src/weather.h"; sourceTree = SOURCE_ROOT; };
+		B50B49AC25A2A5C100628243 /* value_ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = value_ptr.h; path = "Libraries/Cataclysm-DDA/src/value_ptr.h"; sourceTree = SOURCE_ROOT; };
+		B50B49AD25A2A5C100628243 /* veh_interact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = veh_interact.h; path = "Libraries/Cataclysm-DDA/src/veh_interact.h"; sourceTree = SOURCE_ROOT; };
+		B50B49AE25A2A5C100628243 /* condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = condition.h; path = "Libraries/Cataclysm-DDA/src/condition.h"; sourceTree = SOURCE_ROOT; };
+		B50B49AF25A2A5C200628243 /* ammo_effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ammo_effect.h; path = "Libraries/Cataclysm-DDA/src/ammo_effect.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B025A2A5C200628243 /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map.h; path = "Libraries/Cataclysm-DDA/src/map.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B125A2A5C200628243 /* morale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = morale.h; path = "Libraries/Cataclysm-DDA/src/morale.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B225A2A5C200628243 /* skill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skill.h; path = "Libraries/Cataclysm-DDA/src/skill.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B325A2A5C200628243 /* advanced_inv_listitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = advanced_inv_listitem.h; path = "Libraries/Cataclysm-DDA/src/advanced_inv_listitem.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B425A2A5C200628243 /* game_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_ui.h; path = "Libraries/Cataclysm-DDA/src/game_ui.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B525A2A5C200628243 /* name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = name.h; path = "Libraries/Cataclysm-DDA/src/name.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B625A2A5C200628243 /* item_stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_stack.h; path = "Libraries/Cataclysm-DDA/src/item_stack.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B725A2A5C200628243 /* gates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gates.h; path = "Libraries/Cataclysm-DDA/src/gates.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B825A2A5C300628243 /* auto_pickup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = auto_pickup.h; path = "Libraries/Cataclysm-DDA/src/auto_pickup.h"; sourceTree = SOURCE_ROOT; };
+		B50B49B925A2A5C300628243 /* uistate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uistate.h; path = "Libraries/Cataclysm-DDA/src/uistate.h"; sourceTree = SOURCE_ROOT; };
+		B50B49BA25A2A5C300628243 /* basecamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basecamp.h; path = "Libraries/Cataclysm-DDA/src/basecamp.h"; sourceTree = SOURCE_ROOT; };
+		B50B49BB25A2A5C300628243 /* gamemode_defense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gamemode_defense.h; path = "Libraries/Cataclysm-DDA/src/gamemode_defense.h"; sourceTree = SOURCE_ROOT; };
+		B50B49BC25A2A5C300628243 /* character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character.h; path = "Libraries/Cataclysm-DDA/src/character.h"; sourceTree = SOURCE_ROOT; };
+		B50B49BD25A2A5C300628243 /* font_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = font_loader.h; path = "Libraries/Cataclysm-DDA/src/font_loader.h"; sourceTree = SOURCE_ROOT; };
+		B50B49BE25A2A5C300628243 /* magic_teleporter_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = magic_teleporter_list.h; path = "Libraries/Cataclysm-DDA/src/magic_teleporter_list.h"; sourceTree = SOURCE_ROOT; };
+		B50B49BF25A2A5C300628243 /* rotatable_symbols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rotatable_symbols.h; path = "Libraries/Cataclysm-DDA/src/rotatable_symbols.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C025A2A5C300628243 /* coordinate_conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coordinate_conversions.h; path = "Libraries/Cataclysm-DDA/src/coordinate_conversions.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C125A2A5C400628243 /* skill_boost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skill_boost.h; path = "Libraries/Cataclysm-DDA/src/skill_boost.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C225A2A5C400628243 /* enum_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enum_traits.h; path = "Libraries/Cataclysm-DDA/src/enum_traits.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C325A2A5C400628243 /* dialogue_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dialogue_win.h; path = "Libraries/Cataclysm-DDA/src/dialogue_win.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C425A2A5C400628243 /* ime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ime.h; path = "Libraries/Cataclysm-DDA/src/ime.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C525A2A5C400628243 /* mondeath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mondeath.h; path = "Libraries/Cataclysm-DDA/src/mondeath.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C625A2A5C400628243 /* active_item_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = active_item_cache.h; path = "Libraries/Cataclysm-DDA/src/active_item_cache.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C725A2A5C400628243 /* debug_menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug_menu.h; path = "Libraries/Cataclysm-DDA/src/debug_menu.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C825A2A5C400628243 /* io_tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = io_tags.h; path = "Libraries/Cataclysm-DDA/src/io_tags.h"; sourceTree = SOURCE_ROOT; };
+		B50B49C925A2A5C400628243 /* shadowcasting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shadowcasting.h; path = "Libraries/Cataclysm-DDA/src/shadowcasting.h"; sourceTree = SOURCE_ROOT; };
+		B50B49CA25A2A5C500628243 /* addiction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = addiction.h; path = "Libraries/Cataclysm-DDA/src/addiction.h"; sourceTree = SOURCE_ROOT; };
+		B50B49CB25A2A5C500628243 /* handle_liquid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = handle_liquid.h; path = "Libraries/Cataclysm-DDA/src/handle_liquid.h"; sourceTree = SOURCE_ROOT; };
+		B50B49CC25A2A5C500628243 /* mtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mtype.h; path = "Libraries/Cataclysm-DDA/src/mtype.h"; sourceTree = SOURCE_ROOT; };
+		B50B49CD25A2A5C500628243 /* crash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crash.h; path = "Libraries/Cataclysm-DDA/src/crash.h"; sourceTree = SOURCE_ROOT; };
+		B50B49CE25A2A5C500628243 /* worldfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = worldfactory.h; path = "Libraries/Cataclysm-DDA/src/worldfactory.h"; sourceTree = SOURCE_ROOT; };
+		B50B49CF25A2A5C500628243 /* fungal_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fungal_effects.h; path = "Libraries/Cataclysm-DDA/src/fungal_effects.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D025A2A5C500628243 /* crafting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crafting.h; path = "Libraries/Cataclysm-DDA/src/crafting.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D125A2A5C500628243 /* pickup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pickup.h; path = "Libraries/Cataclysm-DDA/src/pickup.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D225A2A5C500628243 /* filesystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filesystem.h; path = "Libraries/Cataclysm-DDA/src/filesystem.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D325A2A5C600628243 /* iuse_software_sokoban.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software_sokoban.h; path = "Libraries/Cataclysm-DDA/src/iuse_software_sokoban.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D425A2A5C600628243 /* speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = speech.h; path = "Libraries/Cataclysm-DDA/src/speech.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D525A2A5C600628243 /* clothing_mod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clothing_mod.h; path = "Libraries/Cataclysm-DDA/src/clothing_mod.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D625A2A5C600628243 /* get_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = get_version.h; path = "Libraries/Cataclysm-DDA/src/get_version.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D725A2A5C600628243 /* event_bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event_bus.h; path = "Libraries/Cataclysm-DDA/src/event_bus.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D825A2A5C600628243 /* recipe_groups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recipe_groups.h; path = "Libraries/Cataclysm-DDA/src/recipe_groups.h"; sourceTree = SOURCE_ROOT; };
+		B50B49D925A2A5C600628243 /* iuse_actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_actor.h; path = "Libraries/Cataclysm-DDA/src/iuse_actor.h"; sourceTree = SOURCE_ROOT; };
+		B50B49DA25A2A5C600628243 /* mod_tileset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mod_tileset.h; path = "Libraries/Cataclysm-DDA/src/mod_tileset.h"; sourceTree = SOURCE_ROOT; };
+		B50B49DB25A2A5C700628243 /* mod_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mod_manager.h; path = "Libraries/Cataclysm-DDA/src/mod_manager.h"; sourceTree = SOURCE_ROOT; };
+		B50B49DC25A2A5C700628243 /* map_extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_extras.h; path = "Libraries/Cataclysm-DDA/src/map_extras.h"; sourceTree = SOURCE_ROOT; };
+		B50B49DD25A2A5C700628243 /* event_statistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event_statistics.h; path = "Libraries/Cataclysm-DDA/src/event_statistics.h"; sourceTree = SOURCE_ROOT; };
+		B50B49DE25A2A5C700628243 /* regional_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = regional_settings.h; path = "Libraries/Cataclysm-DDA/src/regional_settings.h"; sourceTree = SOURCE_ROOT; };
+		B50B49DF25A2A5C700628243 /* trap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trap.h; path = "Libraries/Cataclysm-DDA/src/trap.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E025A2A5C700628243 /* vitamin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vitamin.h; path = "Libraries/Cataclysm-DDA/src/vitamin.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E125A2A5C700628243 /* compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compatibility.h; path = "Libraries/Cataclysm-DDA/src/compatibility.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E225A2A5C700628243 /* dispersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dispersion.h; path = "Libraries/Cataclysm-DDA/src/dispersion.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E325A2A5C700628243 /* vpart_position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vpart_position.h; path = "Libraries/Cataclysm-DDA/src/vpart_position.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E425A2A5C800628243 /* rng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rng.h; path = "Libraries/Cataclysm-DDA/src/rng.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E525A2A5C800628243 /* vehicle_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vehicle_group.h; path = "Libraries/Cataclysm-DDA/src/vehicle_group.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E625A2A5C800628243 /* submap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = submap.h; path = "Libraries/Cataclysm-DDA/src/submap.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E725A2A5C800628243 /* wcwidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wcwidth.h; path = "Libraries/Cataclysm-DDA/src/wcwidth.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E825A2A5C800628243 /* sounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sounds.h; path = "Libraries/Cataclysm-DDA/src/sounds.h"; sourceTree = SOURCE_ROOT; };
+		B50B49E925A2A5C800628243 /* effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = effect.h; path = "Libraries/Cataclysm-DDA/src/effect.h"; sourceTree = SOURCE_ROOT; };
+		B50B49EA25A2A5C800628243 /* gamemode_tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gamemode_tutorial.h; path = "Libraries/Cataclysm-DDA/src/gamemode_tutorial.h"; sourceTree = SOURCE_ROOT; };
+		B50B49EB25A2A5C800628243 /* iuse_software_snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software_snake.h; path = "Libraries/Cataclysm-DDA/src/iuse_software_snake.h"; sourceTree = SOURCE_ROOT; };
+		B50B49EC25A2A5C800628243 /* flat_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flat_set.h; path = "Libraries/Cataclysm-DDA/src/flat_set.h"; sourceTree = SOURCE_ROOT; };
+		B50B49ED25A2A5C900628243 /* colony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = colony.h; path = "Libraries/Cataclysm-DDA/src/colony.h"; sourceTree = SOURCE_ROOT; };
+		B50B49EE25A2A5C900628243 /* character_martial_arts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_martial_arts.h; path = "Libraries/Cataclysm-DDA/src/character_martial_arts.h"; sourceTree = SOURCE_ROOT; };
+		B50B49EF25A2A5C900628243 /* overmapbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmapbuffer.h; path = "Libraries/Cataclysm-DDA/src/overmapbuffer.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F025A2A5C900628243 /* timed_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = timed_event.h; path = "Libraries/Cataclysm-DDA/src/timed_event.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F125A2A5C900628243 /* fault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fault.h; path = "Libraries/Cataclysm-DDA/src/fault.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F225A2A5C900628243 /* creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = creature.h; path = "Libraries/Cataclysm-DDA/src/creature.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F325A2A5C900628243 /* enum_conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = enum_conversions.h; path = "Libraries/Cataclysm-DDA/src/enum_conversions.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F425A2A5C900628243 /* memory_fast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memory_fast.h; path = "Libraries/Cataclysm-DDA/src/memory_fast.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F525A2A5C900628243 /* itype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = itype.h; path = "Libraries/Cataclysm-DDA/src/itype.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F625A2A5CA00628243 /* safe_reference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safe_reference.h; path = "Libraries/Cataclysm-DDA/src/safe_reference.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F725A2A5CA00628243 /* item_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_group.h; path = "Libraries/Cataclysm-DDA/src/item_group.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F825A2A5CA00628243 /* monexamine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monexamine.h; path = "Libraries/Cataclysm-DDA/src/monexamine.h"; sourceTree = SOURCE_ROOT; };
+		B50B49F925A2A5CA00628243 /* advanced_inv_area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = advanced_inv_area.h; path = "Libraries/Cataclysm-DDA/src/advanced_inv_area.h"; sourceTree = SOURCE_ROOT; };
+		B50B49FA25A2A5CA00628243 /* help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = help.h; path = "Libraries/Cataclysm-DDA/src/help.h"; sourceTree = SOURCE_ROOT; };
+		B50B49FB25A2A5CA00628243 /* recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recipe.h; path = "Libraries/Cataclysm-DDA/src/recipe.h"; sourceTree = SOURCE_ROOT; };
+		B50B49FC25A2A5CA00628243 /* iteminfo_query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iteminfo_query.h; path = "Libraries/Cataclysm-DDA/src/iteminfo_query.h"; sourceTree = SOURCE_ROOT; };
+		B50B49FD25A2A5CA00628243 /* overlay_ordering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overlay_ordering.h; path = "Libraries/Cataclysm-DDA/src/overlay_ordering.h"; sourceTree = SOURCE_ROOT; };
+		B50B49FE25A2A5CA00628243 /* weighted_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = weighted_list.h; path = "Libraries/Cataclysm-DDA/src/weighted_list.h"; sourceTree = SOURCE_ROOT; };
+		B50B49FF25A2A5CB00628243 /* overmap_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_connection.h; path = "Libraries/Cataclysm-DDA/src/overmap_connection.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0025A2A5CB00628243 /* hash_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash_utils.h; path = "Libraries/Cataclysm-DDA/src/hash_utils.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0125A2A5CB00628243 /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item.h; path = "Libraries/Cataclysm-DDA/src/item.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0225A2A5CB00628243 /* gamemode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gamemode.h; path = "Libraries/Cataclysm-DDA/src/gamemode.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0325A2A5CB00628243 /* mapgen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapgen.h; path = "Libraries/Cataclysm-DDA/src/mapgen.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0425A2A5CB00628243 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = list.h; path = "Libraries/Cataclysm-DDA/src/list.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0525A2A5CB00628243 /* map_selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_selector.h; path = "Libraries/Cataclysm-DDA/src/map_selector.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0625A2A5CB00628243 /* ammo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ammo.h; path = "Libraries/Cataclysm-DDA/src/ammo.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0725A2A5CC00628243 /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = material.h; path = "Libraries/Cataclysm-DDA/src/material.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0825A2A5CC00628243 /* faction_camp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faction_camp.h; path = "Libraries/Cataclysm-DDA/src/faction_camp.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0925A2A5CC00628243 /* platform_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform_win.h; path = "Libraries/Cataclysm-DDA/src/platform_win.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0A25A2A5CC00628243 /* character_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_id.h; path = "Libraries/Cataclysm-DDA/src/character_id.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0B25A2A5CC00628243 /* int_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = int_id.h; path = "Libraries/Cataclysm-DDA/src/int_id.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0C25A2A5CC00628243 /* math_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_defines.h; path = "Libraries/Cataclysm-DDA/src/math_defines.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0D25A2A5CC00628243 /* npc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npc.h; path = "Libraries/Cataclysm-DDA/src/npc.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0E25A2A5CC00628243 /* sdlsound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sdlsound.h; path = "Libraries/Cataclysm-DDA/src/sdlsound.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A0F25A2A5CC00628243 /* mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mission.h; path = "Libraries/Cataclysm-DDA/src/mission.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1025A2A5CD00628243 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "Libraries/Cataclysm-DDA/src/main.cpp"; sourceTree = SOURCE_ROOT; };
+		B50B4A1125A2A5CD00628243 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = "Libraries/Cataclysm-DDA/src/debug.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1225A2A5CD00628243 /* bionics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bionics.h; path = "Libraries/Cataclysm-DDA/src/bionics.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1325A2A5CD00628243 /* pixel_minimap_projectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pixel_minimap_projectors.h; path = "Libraries/Cataclysm-DDA/src/pixel_minimap_projectors.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1425A2A5CD00628243 /* recipe_dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recipe_dictionary.h; path = "Libraries/Cataclysm-DDA/src/recipe_dictionary.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1525A2A5CD00628243 /* mission_companion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mission_companion.h; path = "Libraries/Cataclysm-DDA/src/mission_companion.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1625A2A5CD00628243 /* martialarts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = martialarts.h; path = "Libraries/Cataclysm-DDA/src/martialarts.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1725A2A5CD00628243 /* bonuses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bonuses.h; path = "Libraries/Cataclysm-DDA/src/bonuses.h"; sourceTree = SOURCE_ROOT; };
+		B50B4A1825A2A5CE00628243 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = player.h; path = "Libraries/Cataclysm-DDA/src/player.h"; sourceTree = SOURCE_ROOT; };
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
@@ -890,276 +1176,562 @@
 			isa = PBXGroup;
 			children = (
 				B50B47A325A250E600628243 /* action.cpp */,
+				B50B494225A2A5B500628243 /* action.h */,
 				B50B46DC25A250D600628243 /* active_item_cache.cpp */,
+				B50B49C625A2A5C400628243 /* active_item_cache.h */,
 				B50B47B825A250E800628243 /* activity_handlers.cpp */,
+				B50B493825A2A5B400628243 /* activity_handlers.h */,
 				B50B473125A250DC00628243 /* activity_item_handling.cpp */,
 				B50B471925A250DB00628243 /* activity_type.cpp */,
+				B50B499625A2A5BF00628243 /* activity_type.h */,
 				B50B471225A250DA00628243 /* addiction.cpp */,
+				B50B49CA25A2A5C500628243 /* addiction.h */,
 				B50B470825A250D900628243 /* advanced_inv_area.cpp */,
+				B50B49F925A2A5CA00628243 /* advanced_inv_area.h */,
 				B50B46F225A250D800628243 /* advanced_inv_listitem.cpp */,
+				B50B49B325A2A5C200628243 /* advanced_inv_listitem.h */,
 				B50B47D925A250EB00628243 /* advanced_inv_pane.cpp */,
+				B50B499925A2A5BF00628243 /* advanced_inv_pane.h */,
 				B50B46D825A250D600628243 /* advanced_inv.cpp */,
+				B50B495125A2A5B700628243 /* advanced_inv.h */,
 				B50B46FC25A250D800628243 /* ammo_effect.cpp */,
+				B50B49AF25A2A5C200628243 /* ammo_effect.h */,
 				B50B47CB25A250EA00628243 /* ammo.cpp */,
+				B50B4A0625A2A5CB00628243 /* ammo.h */,
 				B50B47AC25A250E700628243 /* anatomy.cpp */,
+				B50B496E25A2A5BA00628243 /* anatomy.h */,
 				B50B470725A250D900628243 /* animation.cpp */,
+				B50B498425A2A5BD00628243 /* animation.h */,
 				B50B46D725A250D600628243 /* armor_layers.cpp */,
 				B50B473925A250DD00628243 /* artifact.cpp */,
+				B50B492425A2A5B200628243 /* artifact.h */,
+				B50B496125A2A5B900628243 /* assign.h */,
 				B50B47AE25A250E700628243 /* auto_note.cpp */,
+				B50B497625A2A5BB00628243 /* auto_note.h */,
 				B50B473F25A250DD00628243 /* auto_pickup.cpp */,
+				B50B49B825A2A5C300628243 /* auto_pickup.h */,
 				B50B47E125A250EB00628243 /* avatar_action.cpp */,
+				B50B498725A2A5BD00628243 /* avatar_action.h */,
 				B50B46DF25A250D600628243 /* avatar.cpp */,
+				B50B48FD25A2A5AF00628243 /* avatar.h */,
 				B50B474C25A250DE00628243 /* ballistics.cpp */,
+				B50B492625A2A5B300628243 /* ballistics.h */,
 				B50B473325A250DD00628243 /* basecamp.cpp */,
+				B50B49BA25A2A5C300628243 /* basecamp.h */,
 				B50B475525A250DF00628243 /* behavior_oracle.cpp */,
+				B50B493425A2A5B400628243 /* behavior_oracle.h */,
 				B50B47A625A250E600628243 /* behavior_strategy.cpp */,
+				B50B497E25A2A5BC00628243 /* behavior_strategy.h */,
 				B50B479425A250E400628243 /* behavior.cpp */,
+				B50B490D25A2A5B000628243 /* behavior.h */,
 				B50B479625A250E400628243 /* bionics_ui.cpp */,
 				B50B47D125A250EA00628243 /* bionics.cpp */,
+				B50B4A1225A2A5CD00628243 /* bionics.h */,
 				B50B47A725A250E600628243 /* bodypart.cpp */,
+				B50B491825A2A5B100628243 /* bodypart.h */,
 				B50B46DA25A250D600628243 /* bonuses.cpp */,
+				B50B4A1725A2A5CD00628243 /* bonuses.h */,
 				B50B474F25A250DF00628243 /* calendar.cpp */,
+				B50B496225A2A5B900628243 /* calendar.h */,
+				B50B494525A2A5B600628243 /* cata_algo.h */,
+				B50B491C25A2A5B200628243 /* cata_io.h */,
 				B50B472525A250DB00628243 /* cata_tiles.cpp */,
+				B50B499B25A2A5BF00628243 /* cata_tiles.h */,
 				B50B47A125A250E600628243 /* cata_utility.cpp */,
+				B50B498525A2A5BD00628243 /* cata_utility.h */,
 				B50B46EE25A250D700628243 /* cata_variant.cpp */,
+				B50B498A25A2A5BD00628243 /* cata_variant.h */,
 				B50B477D25A250E200628243 /* catacharset.cpp */,
+				B50B491225A2A5B100628243 /* catacharset.h */,
+				B50B491025A2A5B100628243 /* cellular_automata.h */,
 				B50B476A25A250E100628243 /* char_validity_check.cpp */,
+				B50B498625A2A5BD00628243 /* char_validity_check.h */,
+				B50B4A0A25A2A5CC00628243 /* character_id.h */,
 				B50B473A25A250DD00628243 /* character_martial_arts.cpp */,
+				B50B49EE25A2A5C900628243 /* character_martial_arts.h */,
 				B50B470E25A250DA00628243 /* character.cpp */,
+				B50B49BC25A2A5C300628243 /* character.h */,
+				B50B495B25A2A5B800628243 /* clone_ptr.h */,
 				B50B47D225A250EA00628243 /* clothing_mod.cpp */,
+				B50B49D525A2A5C600628243 /* clothing_mod.h */,
 				B50B46E725A250D700628243 /* clzones.cpp */,
+				B50B498D25A2A5BE00628243 /* clzones.h */,
+				B50B49ED25A2A5C900628243 /* colony.h */,
+				B50B492825A2A5B300628243 /* color_loader.h */,
 				B50B46E425A250D700628243 /* color.cpp */,
+				B50B492D25A2A5B300628243 /* color.h */,
+				B50B495E25A2A5B900628243 /* common_types.h */,
+				B50B49E125A2A5C700628243 /* compatibility.h */,
 				B50B474725A250DE00628243 /* computer_session.cpp */,
+				B50B495F25A2A5B900628243 /* computer_session.h */,
 				B50B47CE25A250EA00628243 /* computer.cpp */,
+				B50B492725A2A5B300628243 /* computer.h */,
 				B50B47C525A250E900628243 /* condition.cpp */,
+				B50B49AE25A2A5C100628243 /* condition.h */,
 				B50B46EC25A250D700628243 /* construction_category.cpp */,
+				B50B493125A2A5B400628243 /* construction_category.h */,
 				B50B472B25A250DC00628243 /* construction.cpp */,
+				B50B492225A2A5B200628243 /* construction.h */,
 				B50B475925A250E000628243 /* consumption.cpp */,
 				B50B47DE25A250EB00628243 /* coordinate_conversions.cpp */,
+				B50B49C025A2A5C300628243 /* coordinate_conversions.h */,
+				B50B491925A2A5B100628243 /* coordinates.h */,
 				B50B47C125A250E900628243 /* craft_command.cpp */,
+				B50B497525A2A5BB00628243 /* craft_command.h */,
 				B50B47B725A250E800628243 /* crafting_gui.cpp */,
+				B50B494725A2A5B600628243 /* crafting_gui.h */,
 				B50B474225A250DE00628243 /* crafting.cpp */,
+				B50B49D025A2A5C500628243 /* crafting.h */,
 				B50B47BA25A250E800628243 /* crash.cpp */,
+				B50B49CD25A2A5C500628243 /* crash.h */,
 				B50B478925A250E300628243 /* creature_tracker.cpp */,
+				B50B498F25A2A5BE00628243 /* creature_tracker.h */,
 				B50B47E325A250EB00628243 /* creature.cpp */,
+				B50B49F225A2A5C900628243 /* creature.h */,
+				B50B497825A2A5BB00628243 /* cursesdef.h */,
 				B50B475E25A250E000628243 /* cursesport.cpp */,
+				B50B490F25A2A5B100628243 /* cursesport.h */,
 				B50B46FA25A250D800628243 /* damage.cpp */,
+				B50B498225A2A5BD00628243 /* damage.h */,
 				B50B470425A250D900628243 /* debug_menu.cpp */,
+				B50B49C725A2A5C400628243 /* debug_menu.h */,
 				B50B477925A250E200628243 /* debug.cpp */,
+				B50B4A1125A2A5CD00628243 /* debug.h */,
 				B50B46EA25A250D700628243 /* dependency_tree.cpp */,
+				B50B493525A2A5B400628243 /* dependency_tree.h */,
 				B50B479325A250E400628243 /* descriptions.cpp */,
 				B50B47CC25A250EA00628243 /* dialogue_win.cpp */,
+				B50B49C325A2A5C400628243 /* dialogue_win.h */,
+				B50B495A25A2A5B800628243 /* dialogue.h */,
 				B50B475A25A250E000628243 /* dispersion.cpp */,
+				B50B49E225A2A5C700628243 /* dispersion.h */,
 				B50B473225A250DC00628243 /* drawing_primitives.cpp */,
+				B50B499425A2A5BF00628243 /* drawing_primitives.h */,
 				B50B476D25A250E100628243 /* dump.cpp */,
 				B50B476025A250E000628243 /* editmap.cpp */,
+				B50B492B25A2A5B300628243 /* editmap.h */,
 				B50B47D825A250EB00628243 /* effect.cpp */,
+				B50B49E925A2A5C800628243 /* effect.h */,
 				B50B47B325A250E700628243 /* emit.cpp */,
+				B50B493325A2A5B400628243 /* emit.h */,
+				B50B494625A2A5B600628243 /* enum_bitset.h */,
+				B50B49F325A2A5C900628243 /* enum_conversions.h */,
+				B50B49C225A2A5C400628243 /* enum_traits.h */,
+				B50B496725A2A5BA00628243 /* enums.h */,
 				B50B473425A250DD00628243 /* event_bus.cpp */,
+				B50B49D725A2A5C600628243 /* event_bus.h */,
 				B50B476425A250E000628243 /* event_statistics.cpp */,
+				B50B49DD25A2A5C700628243 /* event_statistics.h */,
 				B50B47A225A250E600628243 /* event.cpp */,
+				B50B499D25A2A5C000628243 /* event.h */,
 				B50B478325A250E300628243 /* explosion.cpp */,
+				B50B495025A2A5B700628243 /* explosion.h */,
 				B50B46E625A250D700628243 /* faction_camp.cpp */,
+				B50B4A0825A2A5CC00628243 /* faction_camp.h */,
 				B50B46FF25A250D900628243 /* faction.cpp */,
+				B50B491725A2A5B100628243 /* faction.h */,
 				B50B47C325A250E900628243 /* fault.cpp */,
+				B50B49F125A2A5C900628243 /* fault.h */,
 				B50B46F125A250D700628243 /* field_type.cpp */,
+				B50B49A025A2A5C000628243 /* field_type.h */,
 				B50B471125A250DA00628243 /* field.cpp */,
+				B50B491125A2A5B100628243 /* field.h */,
 				B50B478225A250E300628243 /* filesystem.cpp */,
+				B50B49D225A2A5C500628243 /* filesystem.h */,
+				B50B497C25A2A5BC00628243 /* fire.h */,
 				B50B475425A250DF00628243 /* flag.cpp */,
+				B50B493C25A2A5B500628243 /* flag.h */,
+				B50B49EC25A2A5C800628243 /* flat_set.h */,
+				B50B493625A2A5B400628243 /* flood_fill.h */,
+				B50B49BD25A2A5C300628243 /* font_loader.h */,
+				B50B498E25A2A5BE00628243 /* fragment_cloud.h */,
 				B50B478F25A250E400628243 /* fungal_effects.cpp */,
+				B50B49CF25A2A5C500628243 /* fungal_effects.h */,
+				B50B490225A2A5AF00628243 /* game_constants.h */,
 				B50B475625A250DF00628243 /* game_inventory.cpp */,
+				B50B498325A2A5BD00628243 /* game_inventory.h */,
 				B50B478D25A250E400628243 /* game_ui.cpp */,
+				B50B49B425A2A5C200628243 /* game_ui.h */,
 				B50B47D525A250EA00628243 /* game.cpp */,
+				B50B498B25A2A5BE00628243 /* game.h */,
 				B50B46F625A250D800628243 /* gamemode_defense.cpp */,
+				B50B49BB25A2A5C300628243 /* gamemode_defense.h */,
 				B50B478E25A250E400628243 /* gamemode_tutorial.cpp */,
+				B50B49EA25A2A5C800628243 /* gamemode_tutorial.h */,
 				B50B472625A250DC00628243 /* gamemode.cpp */,
+				B50B4A0225A2A5CB00628243 /* gamemode.h */,
 				B50B472725A250DC00628243 /* gates.cpp */,
+				B50B49B725A2A5C200628243 /* gates.h */,
+				B50B49AA25A2A5C100628243 /* generic_factory.h */,
+				B50B49D625A2A5C600628243 /* get_version.h */,
 				B50B47BE25A250E800628243 /* grab.cpp */,
+				B50B492E25A2A5B300628243 /* gun_mode.h */,
 				B50B477F25A250E300628243 /* handle_action.cpp */,
 				B50B47BF25A250E800628243 /* handle_liquid.cpp */,
+				B50B49CB25A2A5C500628243 /* handle_liquid.h */,
 				B50B471425A250DA00628243 /* harvest.cpp */,
+				B50B495725A2A5B800628243 /* harvest.h */,
+				B50B4A0025A2A5CB00628243 /* hash_utils.h */,
 				B50B47AB25A250E700628243 /* help.cpp */,
+				B50B49FA25A2A5CA00628243 /* help.h */,
 				B50B47D025A250EA00628243 /* iexamine.cpp */,
+				B50B491F25A2A5B200628243 /* iexamine.h */,
 				B50B471F25A250DB00628243 /* ime.cpp */,
+				B50B49C425A2A5C400628243 /* ime.h */,
 				B50B470D25A250DA00628243 /* init.cpp */,
+				B50B497A25A2A5BC00628243 /* init.h */,
 				B50B476125A250E000628243 /* input.cpp */,
+				B50B491425A2A5B100628243 /* input.h */,
+				B50B4A0B25A2A5CC00628243 /* int_id.h */,
 				B50B476625A250E100628243 /* inventory_ui.cpp */,
+				B50B495C25A2A5B800628243 /* inventory_ui.h */,
 				B50B474825A250DE00628243 /* inventory.cpp */,
+				B50B494F25A2A5B700628243 /* inventory.h */,
+				B50B49C825A2A5C400628243 /* io_tags.h */,
 				B50B472F25A250DC00628243 /* item_action.cpp */,
+				B50B49A425A2A5C000628243 /* item_action.h */,
 				B50B47BB25A250E800628243 /* item_category.cpp */,
+				B50B490B25A2A5B000628243 /* item_category.h */,
 				B50B475C25A250E000628243 /* item_factory.cpp */,
+				B50B493225A2A5B400628243 /* item_factory.h */,
 				B50B471B25A250DB00628243 /* item_group.cpp */,
+				B50B49F725A2A5CA00628243 /* item_group.h */,
 				B50B47AA25A250E600628243 /* item_location.cpp */,
+				B50B496825A2A5BA00628243 /* item_location.h */,
 				B50B46F825A250D800628243 /* item_search.cpp */,
+				B50B49A625A2A5C100628243 /* item_search.h */,
 				B50B46F025A250D700628243 /* item_stack.cpp */,
+				B50B49B625A2A5C200628243 /* item_stack.h */,
 				B50B477225A250E200628243 /* item.cpp */,
+				B50B4A0125A2A5CB00628243 /* item.h */,
 				B50B46D925A250D600628243 /* iteminfo_query.cpp */,
+				B50B49FC25A2A5CA00628243 /* iteminfo_query.h */,
 				B50B472025A250DB00628243 /* itype.cpp */,
+				B50B49F525A2A5C900628243 /* itype.h */,
 				B50B474425A250DE00628243 /* iuse_actor.cpp */,
+				B50B49D925A2A5C600628243 /* iuse_actor.h */,
 				B50B473725A250DD00628243 /* iuse_software_kitten.cpp */,
+				B50B499525A2A5BF00628243 /* iuse_software_kitten.h */,
 				B50B47BC25A250E800628243 /* iuse_software_lightson.cpp */,
+				B50B48FE25A2A5AF00628243 /* iuse_software_lightson.h */,
 				B50B46EB25A250D700628243 /* iuse_software_minesweeper.cpp */,
+				B50B492A25A2A5B300628243 /* iuse_software_minesweeper.h */,
 				B50B474925A250DE00628243 /* iuse_software_snake.cpp */,
+				B50B49EB25A2A5C800628243 /* iuse_software_snake.h */,
 				B50B472325A250DB00628243 /* iuse_software_sokoban.cpp */,
+				B50B49D325A2A5C600628243 /* iuse_software_sokoban.h */,
 				B50B476C25A250E100628243 /* iuse_software.cpp */,
+				B50B496325A2A5B900628243 /* iuse_software.h */,
 				B50B477525A250E200628243 /* iuse.cpp */,
+				B50B490025A2A5AF00628243 /* iuse.h */,
 				B50B471A25A250DB00628243 /* json.cpp */,
+				B50B495425A2A5B700628243 /* json.h */,
 				B50B476F25A250E100628243 /* kill_tracker.cpp */,
+				B50B499825A2A5BF00628243 /* kill_tracker.h */,
 				B50B47B525A250E700628243 /* lightmap.cpp */,
+				B50B498C25A2A5BE00628243 /* lightmap.h */,
 				B50B47D625A250EA00628243 /* line.cpp */,
+				B50B490725A2A5B000628243 /* line.h */,
+				B50B4A0425A2A5CB00628243 /* list.h */,
 				B50B472825A250DC00628243 /* live_view.cpp */,
+				B50B497D25A2A5BC00628243 /* live_view.h */,
 				B50B47B925A250E800628243 /* loading_ui.cpp */,
+				B50B490925A2A5B000628243 /* loading_ui.h */,
 				B50B479525A250E400628243 /* lru_cache.cpp */,
+				B50B492525A2A5B300628243 /* lru_cache.h */,
 				B50B47B225A250E700628243 /* magic_enchantment.cpp */,
+				B50B496625A2A5B900628243 /* magic_enchantment.h */,
 				B50B47C725A250E900628243 /* magic_spell_effect.cpp */,
 				B50B472425A250DB00628243 /* magic_teleporter_list.cpp */,
+				B50B49BE25A2A5C300628243 /* magic_teleporter_list.h */,
 				B50B474025A250DE00628243 /* magic_ter_fur_transform.cpp */,
+				B50B499A25A2A5BF00628243 /* magic_ter_furn_transform.h */,
 				B50B474625A250DE00628243 /* magic.cpp */,
+				B50B495D25A2A5B800628243 /* magic.h */,
 				B50B47E225A250EB00628243 /* main_menu.cpp */,
+				B50B495325A2A5B700628243 /* main_menu.h */,
+				B50B4A1025A2A5CD00628243 /* main.cpp */,
 				B50B473C25A250DD00628243 /* map_extras.cpp */,
+				B50B49DC25A2A5C700628243 /* map_extras.h */,
 				B50B478625A250E300628243 /* map_field.cpp */,
 				B50B47BD25A250E800628243 /* map_item_stack.cpp */,
+				B50B492F25A2A5B300628243 /* map_item_stack.h */,
+				B50B496C25A2A5BA00628243 /* map_iterator.h */,
 				B50B47AF25A250E700628243 /* map_memory.cpp */,
+				B50B499C25A2A5BF00628243 /* map_memory.h */,
 				B50B473525A250DD00628243 /* map_selector.cpp */,
+				B50B4A0525A2A5CB00628243 /* map_selector.h */,
 				B50B479C25A250E500628243 /* map.cpp */,
+				B50B49B025A2A5C200628243 /* map.h */,
 				B50B476E25A250E100628243 /* mapbuffer.cpp */,
+				B50B492125A2A5B200628243 /* mapbuffer.h */,
 				B50B473625A250DD00628243 /* mapdata.cpp */,
+				B50B48FC25A2A5AF00628243 /* mapdata.h */,
 				B50B47D725A250EA00628243 /* mapgen_functions.cpp */,
+				B50B48FB25A2A5AF00628243 /* mapgen_functions.h */,
 				B50B470C25A250DA00628243 /* mapgen.cpp */,
+				B50B4A0325A2A5CB00628243 /* mapgen.h */,
 				B50B477E25A250E200628243 /* mapgendata.cpp */,
+				B50B496925A2A5BA00628243 /* mapgendata.h */,
 				B50B474125A250DE00628243 /* mapgenformat.cpp */,
+				B50B49A325A2A5C000628243 /* mapgenformat.h */,
 				B50B47AD25A250E700628243 /* mapsharing.cpp */,
+				B50B497725A2A5BB00628243 /* mapsharing.h */,
 				B50B46E525A250D700628243 /* martialarts.cpp */,
+				B50B4A1625A2A5CD00628243 /* martialarts.h */,
 				B50B475025A250DF00628243 /* material.cpp */,
+				B50B4A0725A2A5CC00628243 /* material.h */,
+				B50B4A0C25A2A5CC00628243 /* math_defines.h */,
 				B50B47DA25A250EB00628243 /* mattack_actors.cpp */,
+				B50B494325A2A5B500628243 /* mattack_actors.h */,
+				B50B495625A2A5B800628243 /* mattack_common.h */,
 				B50B479E25A250E500628243 /* melee.cpp */,
+				B50B498125A2A5BC00628243 /* melee.h */,
 				B50B470325A250D900628243 /* memorial_logger.cpp */,
+				B50B491625A2A5B100628243 /* memorial_logger.h */,
+				B50B49F425A2A5C900628243 /* memory_fast.h */,
 				B50B47C225A250E900628243 /* messages.cpp */,
+				B50B494825A2A5B600628243 /* messages.h */,
+				B50B490C25A2A5B000628243 /* mingw.thread.h */,
 				B50B479F25A250E500628243 /* mission_companion.cpp */,
+				B50B4A1525A2A5CD00628243 /* mission_companion.h */,
 				B50B472925A250DC00628243 /* mission_end.cpp */,
 				B50B47B425A250E700628243 /* mission_place.cpp */,
 				B50B46E225A250D600628243 /* mission_start.cpp */,
 				B50B47E425A250EB00628243 /* mission_ui.cpp */,
 				B50B47CF25A250EA00628243 /* mission_util.cpp */,
 				B50B470F25A250DA00628243 /* mission.cpp */,
+				B50B4A0F25A2A5CC00628243 /* mission.h */,
 				B50B47DC25A250EB00628243 /* missiondef.cpp */,
 				B50B475325A250DF00628243 /* mod_manager_ui.cpp */,
 				B50B47B025A250E700628243 /* mod_manager.cpp */,
+				B50B49DB25A2A5C700628243 /* mod_manager.h */,
 				B50B47C425A250E900628243 /* mod_tileset.cpp */,
+				B50B49DA25A2A5C600628243 /* mod_tileset.h */,
 				B50B471725A250DA00628243 /* monattack.cpp */,
+				B50B496A25A2A5BA00628243 /* monattack.h */,
 				B50B47A425A250E600628243 /* mondeath.cpp */,
+				B50B49C525A2A5C400628243 /* mondeath.h */,
 				B50B46FD25A250D800628243 /* mondefense.cpp */,
+				B50B493025A2A5B400628243 /* mondefense.h */,
 				B50B478B25A250E300628243 /* monexamine.cpp */,
+				B50B49F825A2A5CA00628243 /* monexamine.h */,
 				B50B47C925A250E900628243 /* monfaction.cpp */,
+				B50B499F25A2A5C000628243 /* monfaction.h */,
 				B50B470125A250D900628243 /* mongroup.cpp */,
+				B50B495225A2A5B700628243 /* mongroup.h */,
 				B50B46F925A250D800628243 /* monmove.cpp */,
 				B50B471025A250DA00628243 /* monster.cpp */,
+				B50B490625A2A5B000628243 /* monster.h */,
 				B50B470225A250D900628243 /* monstergenerator.cpp */,
+				B50B49A225A2A5C000628243 /* monstergenerator.h */,
 				B50B474325A250DE00628243 /* morale_types.cpp */,
+				B50B49A725A2A5C100628243 /* morale_types.h */,
 				B50B46EF25A250D700628243 /* morale.cpp */,
+				B50B49B125A2A5C200628243 /* morale.h */,
 				B50B477825A250E200628243 /* mtype.cpp */,
+				B50B49CC25A2A5C500628243 /* mtype.h */,
 				B50B46FB25A250D800628243 /* mutation_data.cpp */,
 				B50B478125A250E300628243 /* mutation_type.cpp */,
 				B50B47A525A250E600628243 /* mutation_ui.cpp */,
 				B50B47D425A250EA00628243 /* mutation.cpp */,
+				B50B492325A2A5B200628243 /* mutation.h */,
 				B50B477C25A250E200628243 /* name.cpp */,
+				B50B49B525A2A5C200628243 /* name.h */,
 				B50B475125A250DF00628243 /* ncurses_def.cpp */,
 				B50B470925A250D900628243 /* newcharacter.cpp */,
 				B50B471625A250DA00628243 /* npc_class.cpp */,
+				B50B493925A2A5B400628243 /* npc_class.h */,
+				B50B490125A2A5AF00628243 /* npc_favor.h */,
 				B50B472C25A250DC00628243 /* npc.cpp */,
+				B50B4A0D25A2A5CC00628243 /* npc.h */,
 				B50B471325A250DA00628243 /* npcmove.cpp */,
 				B50B479A25A250E500628243 /* npctalk_funcs.cpp */,
 				B50B47CA25A250E900628243 /* npctalk.cpp */,
+				B50B493D25A2A5B500628243 /* npctalk.h */,
 				B50B473B25A250DD00628243 /* npctrade.cpp */,
+				B50B49A125A2A5C000628243 /* npctrade.h */,
+				B50B499025A2A5BE00628243 /* omdata.h */,
+				B50B492925A2A5B300628243 /* optional.h */,
 				B50B478A25A250E300628243 /* options.cpp */,
+				B50B494425A2A5B500628243 /* options.h */,
 				B50B471E25A250DB00628243 /* output.cpp */,
+				B50B496B25A2A5BA00628243 /* output.h */,
 				B50B475725A250DF00628243 /* overlay_ordering.cpp */,
+				B50B49FD25A2A5CA00628243 /* overlay_ordering.h */,
 				B50B478525A250E300628243 /* overmap_connection.cpp */,
+				B50B49FF25A2A5CB00628243 /* overmap_connection.h */,
 				B50B478025A250E300628243 /* overmap_location.cpp */,
+				B50B497425A2A5BB00628243 /* overmap_location.h */,
 				B50B473025A250DC00628243 /* overmap_noise.cpp */,
+				B50B496525A2A5B900628243 /* overmap_noise.h */,
+				B50B491525A2A5B100628243 /* overmap_types.h */,
 				B50B479225A250E400628243 /* overmap_ui.cpp */,
+				B50B492C25A2A5B300628243 /* overmap_ui.h */,
 				B50B46F725A250D800628243 /* overmap.cpp */,
+				B50B496D25A2A5BA00628243 /* overmap.h */,
 				B50B474D25A250DF00628243 /* overmapbuffer.cpp */,
+				B50B49EF25A2A5C900628243 /* overmapbuffer.h */,
 				B50B46E025A250D600628243 /* panels.cpp */,
+				B50B490825A2A5B000628243 /* panels.h */,
 				B50B472A25A250DC00628243 /* path_info.cpp */,
+				B50B48FF25A2A5AF00628243 /* path_info.h */,
 				B50B46F325A250D800628243 /* pathfinding.cpp */,
+				B50B499125A2A5BE00628243 /* pathfinding.h */,
 				B50B46DD25A250D600628243 /* pickup.cpp */,
+				B50B49D125A2A5C500628243 /* pickup.h */,
+				B50B496F25A2A5BA00628243 /* pimpl.h */,
 				B50B474A25A250DE00628243 /* pixel_minimap_projectors.cpp */,
+				B50B4A1325A2A5CD00628243 /* pixel_minimap_projectors.h */,
 				B50B476725A250E100628243 /* pixel_minimap.cpp */,
+				B50B497925A2A5BC00628243 /* pixel_minimap.h */,
+				B50B4A0925A2A5CC00628243 /* platform_win.h */,
 				B50B477025A250E100628243 /* player_activity.cpp */,
+				B50B49A825A2A5C100628243 /* player_activity.h */,
 				B50B477125A250E100628243 /* player_display.cpp */,
 				B50B476825A250E100628243 /* player_hardcoded_effects.cpp */,
 				B50B474525A250DE00628243 /* player.cpp */,
+				B50B4A1825A2A5CE00628243 /* player.h */,
+				B50B494925A2A5B600628243 /* pldata.h */,
 				B50B47B625A250E800628243 /* point.cpp */,
+				B50B497B25A2A5BC00628243 /* point.h */,
 				B50B477625A250E200628243 /* popup.cpp */,
+				B50B499725A2A5BF00628243 /* popup.h */,
 				B50B47D325A250EA00628243 /* posix_time.cpp */,
+				B50B496025A2A5B900628243 /* posix_time.h */,
 				B50B472125A250DB00628243 /* profession.cpp */,
+				B50B49A525A2A5C000628243 /* profession.h */,
 				B50B478425A250E300628243 /* projectile.cpp */,
+				B50B497025A2A5BB00628243 /* projectile.h */,
 				B50B479B25A250E500628243 /* ranged.cpp */,
+				B50B493B25A2A5B500628243 /* ranged.h */,
 				B50B475225A250DF00628243 /* recipe_dictionary.cpp */,
+				B50B4A1425A2A5CD00628243 /* recipe_dictionary.h */,
 				B50B478725A250E300628243 /* recipe_groups.cpp */,
+				B50B49D825A2A5C600628243 /* recipe_groups.h */,
 				B50B477A25A250E200628243 /* recipe.cpp */,
+				B50B49FB25A2A5CA00628243 /* recipe.h */,
+				B50B491B25A2A5B200628243 /* rect_range.h */,
 				B50B473D25A250DD00628243 /* regional_settings.cpp */,
+				B50B49DE25A2A5C700628243 /* regional_settings.h */,
 				B50B471825A250DA00628243 /* relic.cpp */,
+				B50B490325A2A5B000628243 /* relic.h */,
 				B50B46FE25A250D800628243 /* requirements.cpp */,
+				B50B490425A2A5B000628243 /* requirements.h */,
+				B50B494B25A2A5B600628243 /* ret_val.h */,
 				B50B472225A250DB00628243 /* rng.cpp */,
+				B50B49E425A2A5C800628243 /* rng.h */,
 				B50B477325A250E200628243 /* rotatable_symbols.cpp */,
+				B50B49BF25A2A5C300628243 /* rotatable_symbols.h */,
 				B50B471C25A250DB00628243 /* safe_reference.cpp */,
+				B50B49F625A2A5CA00628243 /* safe_reference.h */,
 				B50B470025A250D900628243 /* safemode_ui.cpp */,
+				B50B498825A2A5BD00628243 /* safemode_ui.h */,
 				B50B470525A250D900628243 /* savegame_json.cpp */,
 				B50B47B125A250E700628243 /* savegame_legacy.cpp */,
 				B50B479D25A250E500628243 /* savegame.cpp */,
 				B50B477B25A250E200628243 /* scenario.cpp */,
+				B50B498925A2A5BD00628243 /* scenario.h */,
+				B50B494D25A2A5B700628243 /* scent_block.h */,
 				B50B470625A250D900628243 /* scent_map.cpp */,
+				B50B491A25A2A5B200628243 /* scent_map.h */,
 				B50B47C025A250E900628243 /* scores_ui.cpp */,
+				B50B49A925A2A5C100628243 /* scores_ui.h */,
 				B50B46F425A250D800628243 /* sdl_utils.cpp */,
+				B50B490525A2A5B000628243 /* sdl_utils.h */,
 				B50B46DE25A250D600628243 /* sdl_wrappers.cpp */,
+				B50B490E25A2A5B000628243 /* sdl_wrappers.h */,
 				B50B47E525A250EC00628243 /* sdlsound.cpp */,
+				B50B4A0E25A2A5CC00628243 /* sdlsound.h */,
 				B50B46E925A250D700628243 /* sdltiles.cpp */,
+				B50B494125A2A5B500628243 /* sdltiles.h */,
+				B50B49C925A2A5C400628243 /* shadowcasting.h */,
+				B50B497125A2A5BB00628243 /* simple_pathfinding.h */,
 				B50B47C825A250E900628243 /* simplexnoise.cpp */,
+				B50B494A25A2A5B600628243 /* simplexnoise.h */,
 				B50B46DB25A250D600628243 /* skill_boost.cpp */,
+				B50B49C125A2A5C400628243 /* skill_boost.h */,
 				B50B478C25A250E400628243 /* skill.cpp */,
+				B50B49B225A2A5C200628243 /* skill.h */,
 				B50B46ED25A250D700628243 /* sounds.cpp */,
+				B50B49E825A2A5C800628243 /* sounds.h */,
 				B50B477425A250E200628243 /* speech.cpp */,
+				B50B49D425A2A5C600628243 /* speech.h */,
 				B50B474B25A250DE00628243 /* start_location.cpp */,
+				B50B497225A2A5BB00628243 /* start_location.h */,
 				B50B475825A250DF00628243 /* stats_tracker.cpp */,
+				B50B491D25A2A5B200628243 /* stats_tracker.h */,
 				B50B476925A250E100628243 /* stomach.cpp */,
+				B50B493E25A2A5B500628243 /* stomach.h */,
 				B50B475F25A250E000628243 /* string_formatter.cpp */,
+				B50B491325A2A5B100628243 /* string_formatter.h */,
 				B50B476225A250E000628243 /* string_id_null_ids.cpp */,
+				B50B491E25A2A5B200628243 /* string_id.h */,
 				B50B475B25A250E000628243 /* string_input_popup.cpp */,
+				B50B495525A2A5B700628243 /* string_input_popup.h */,
 				B50B47DF25A250EB00628243 /* submap.cpp */,
+				B50B49E625A2A5C800628243 /* submap.h */,
 				B50B46E125A250D600628243 /* suffer.cpp */,
 				B50B472E25A250DC00628243 /* teleport.cpp */,
+				B50B495925A2A5B800628243 /* teleport.h */,
 				B50B479725A250E400628243 /* text_snippets.cpp */,
+				B50B499325A2A5BE00628243 /* text_snippets.h */,
+				B50B499225A2A5BE00628243 /* text_style_check.h */,
 				B50B46F525A250D800628243 /* tileray.cpp */,
+				B50B497325A2A5BB00628243 /* tileray.h */,
 				B50B479125A250E400628243 /* timed_event.cpp */,
+				B50B49F025A2A5C900628243 /* timed_event.h */,
 				B50B472D25A250DC00628243 /* trait_group.cpp */,
+				B50B495825A2A5B800628243 /* trait_group.h */,
 				B50B476325A250E000628243 /* translations.cpp */,
+				B50B494C25A2A5B700628243 /* translations.h */,
 				B50B479025A250E400628243 /* trap.cpp */,
+				B50B49DF25A2A5C700628243 /* trap.h */,
 				B50B47E025A250EB00628243 /* trapfunc.cpp */,
 				B50B47A825A250E600628243 /* turret.cpp */,
+				B50B499E25A2A5C000628243 /* type_id.h */,
 				B50B479825A250E500628243 /* ui.cpp */,
+				B50B493A25A2A5B400628243 /* ui.h */,
+				B50B49B925A2A5C300628243 /* uistate.h */,
 				B50B47A025A250E500628243 /* units.cpp */,
+				B50B498025A2A5BC00628243 /* units.h */,
+				B50B49AC25A2A5C100628243 /* value_ptr.h */,
 				B50B46E825A250D700628243 /* veh_interact.cpp */,
+				B50B49AD25A2A5C100628243 /* veh_interact.h */,
 				B50B479925A250E500628243 /* veh_type.cpp */,
+				B50B493725A2A5B400628243 /* veh_type.h */,
 				B50B473E25A250DD00628243 /* veh_utils.cpp */,
+				B50B490A25A2A5B000628243 /* veh_utils.h */,
 				B50B474E25A250DF00628243 /* vehicle_display.cpp */,
 				B50B47A925A250E600628243 /* vehicle_group.cpp */,
+				B50B49E525A2A5C800628243 /* vehicle_group.h */,
 				B50B476B25A250E100628243 /* vehicle_move.cpp */,
 				B50B475D25A250E000628243 /* vehicle_part.cpp */,
 				B50B471525A250DA00628243 /* vehicle_selector.cpp */,
+				B50B496425A2A5B900628243 /* vehicle_selector.h */,
 				B50B47DD25A250EB00628243 /* vehicle_use.cpp */,
 				B50B470A25A250D900628243 /* vehicle.cpp */,
+				B50B493F25A2A5B500628243 /* vehicle.h */,
 				B50B47CD25A250EA00628243 /* version.cpp */,
 				B50B47DB25A250EB00628243 /* visitable.cpp */,
+				B50B497F25A2A5BC00628243 /* visitable.h */,
 				B50B46E325A250D700628243 /* vitamin.cpp */,
+				B50B49E025A2A5C700628243 /* vitamin.h */,
+				B50B49E325A2A5C700628243 /* vpart_position.h */,
+				B50B492025A2A5B200628243 /* vpart_range.h */,
 				B50B47C625A250E900628243 /* wcwidth.cpp */,
+				B50B49E725A2A5C800628243 /* wcwidth.h */,
+				B50B494025A2A5B500628243 /* wdirent.h */,
 				B50B471D25A250DB00628243 /* weather_data.cpp */,
 				B50B473825A250DD00628243 /* weather_gen.cpp */,
+				B50B494E25A2A5B700628243 /* weather_gen.h */,
 				B50B470B25A250D900628243 /* weather.cpp */,
+				B50B49AB25A2A5C100628243 /* weather.h */,
+				B50B49FE25A2A5CA00628243 /* weighted_list.h */,
 				B50B478825A250E300628243 /* wincurse.cpp */,
 				B50B477725A250E200628243 /* wish.cpp */,
 				B50B476525A250E000628243 /* worldfactory.cpp */,
+				B50B49CE25A2A5C500628243 /* worldfactory.h */,
 			);
 			path = "Cataclysm-DDA";
 			sourceTree = "<group>";
@@ -1307,18 +1879,18 @@
 			isa = PBXGroup;
 			children = (
 				B50B46D625A2507700628243 /* Cataclysm-DDA */,
-				B50B447425A24F0500628243 /* JSDPad */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
-				B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */,
-				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
-				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
-				B5B01B99259BF0690023AB00 /* version.h */,
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
-				B50B446F25A24ECA00628243 /* SDL_uikitviewcontroller+GamePad.m */,
-				B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */,
-				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
-				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
+				B50B447425A24F0500628243 /* JSDPad */,
 				B5F97C66259C08B500C5A910 /* main.mm */,
+				B50B446F25A24ECA00628243 /* SDL_uikitviewcontroller+GamePad.m */,
+				B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */,
+				B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */,
+				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
+				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
+				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
+				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
+				B5B01B99259BF0690023AB00 /* version.h */,
 			);
 			path = source;
 			sourceTree = "<group>";

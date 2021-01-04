@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SDL_uikitviewcontroller (GestureHandling)
 
+@property (nonatomic, assign) SDL_Rect textInputRect;
+
 @end
 
 NS_ASSUME_NONNULL_END
