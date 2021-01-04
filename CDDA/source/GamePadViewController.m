@@ -44,8 +44,14 @@ NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
     }
     
     [self.escapeButton.titleLabel setText:@"ESC"];
-    [self.escapeButton setBackgroundImage:[UIImage imageNamed:@"button"]];
-    [self.escapeButton setBackgroundImagePressed:[UIImage imageNamed:@"button-pressed"]];
+    [self.returnButton.titleLabel setText:@"⮐"];
+    [self.tabButton.titleLabel setText:@"⇥"];
+
+    for (id button in @[self.escapeButton, self.returnButton, self.tabButton])
+    {
+        [button setBackgroundImage:[UIImage imageNamed:@"button"]];
+        [button setBackgroundImagePressed:[UIImage imageNamed:@"button-pressed"]];
+    }
 }
 
 
@@ -63,19 +69,34 @@ NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
 
 #pragma mark - JSDButtonDelegate
 
-CFAbsoluteTime lastPress;
+BOOL pressed;
 
 - (void)buttonPressed:(JSButton *)button
 {
-    // limit to 1 event per second
-    CFAbsoluteTime now = CFAbsoluteTimeGetCurrent();
-    if ([button isEqual:self.escapeButton] && (!lastPress || ((now-1) > lastPress)))
+    if (!pressed)
     {
-        lastPress = now;
+        pressed = YES;
+        SDL_Keycode sym;
+        if (button == self.escapeButton)
+            sym = SDLK_ESCAPE;
+        else if (button == self.tabButton)
+            sym = SDLK_TAB;
+        else if (button == self.returnButton)
+            sym = SDLK_RETURN;
+        else
+        {
+            NSLog(@"Unknown button pressed: %@", button);
+            return;
+        }
         SDL_Event event = {.type=SDL_KEYDOWN};
-        event.key.keysym.sym = SDLK_ESCAPE;
+        event.key.keysym.sym = sym;
         SDL_PushEvent(&event);
     }
+}
+
+- (void)buttonReleased:(JSButton *)button
+{
+    pressed = NO;
 }
 
 @end

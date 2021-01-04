@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GamePadViewController">
             <connections>
                 <outlet property="escapeButton" destination="i1O-bZ-wGq" id="iMS-IW-vV8"/>
+                <outlet property="returnButton" destination="muE-kR-vED" id="VNx-z1-uVA"/>
+                <outlet property="tabButton" destination="nOm-qV-pej" id="K3k-F6-Inw"/>
                 <outlet property="view" destination="8ah-Vi-tMW" id="MYs-jH-PyM"/>
             </connections>
         </placeholder>
@@ -25,6 +27,20 @@
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="vAv-Q3-3LK"/>
+                    </connections>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" id="muE-kR-vED" userLabel="Return button" customClass="JSButton">
+                    <rect key="frame" x="470" y="290" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="XCe-GR-GDh"/>
+                    </connections>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" id="nOm-qV-pej" userLabel="Tab button" customClass="JSButton">
+                    <rect key="frame" x="20" y="20" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="bpS-lg-eFa"/>
                     </connections>
                 </view>
                 <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="16" userLabel="GamePad" customClass="JSDPad">

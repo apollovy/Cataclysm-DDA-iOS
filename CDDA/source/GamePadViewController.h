@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GamePadViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet JSButton* escapeButton;
+@property (nonatomic, weak) IBOutlet JSButton* returnButton;
+@property (nonatomic, weak) IBOutlet JSButton* tabButton;
 
 @end
 
