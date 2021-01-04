@@ -42,8 +42,9 @@
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenHeight = screenRect.size.height;
     CGRect frame = [_gamepadViewController.view frame];
-    frame.origin.x = 20;
-    frame.origin.y = screenHeight - 20 - frame.size.height - self.keyboardHeight;
+    frame.origin.x = frame.origin.y = 0;
+    frame.size.height = screenHeight - self.keyboardHeight;
+    frame.size.width = screenRect.size.width;
     [_gamepadViewController.view setFrame:frame];
 }
 

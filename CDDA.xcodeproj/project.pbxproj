@@ -319,6 +319,11 @@
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5E6FF9125A3A29C003FB37F /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472A25A250DC00628243 /* path_info.cpp */; };
+		B5E6FF9725A3AE54003FB37F /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6FF9625A3AE54003FB37F /* JSButton.m */; };
+		B5E6FF9C25A3AE8A003FB37F /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9825A3AE8A003FB37F /* button@2x.png */; };
+		B5E6FF9D25A3AE8A003FB37F /* button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9925A3AE8A003FB37F /* button-pressed.png */; };
+		B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */; };
+		B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9B25A3AE8A003FB37F /* button.png */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 /* End PBXBuildFile section */
 
@@ -1116,6 +1121,11 @@
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-DDA/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
+		B5E6FF9625A3AE54003FB37F /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
+		B5E6FF9825A3AE8A003FB37F /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "Libraries/JSController/Controller/button@2x.png"; sourceTree = SOURCE_ROOT; };
+		B5E6FF9925A3AE8A003FB37F /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed.png"; path = "Libraries/JSController/Controller/button-pressed.png"; sourceTree = SOURCE_ROOT; };
+		B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
+		B5E6FF9B25A3AE8A003FB37F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Libraries/JSController/Controller/button.png; sourceTree = SOURCE_ROOT; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1143,6 +1153,7 @@
 		B50B447425A24F0500628243 /* JSDPad */ = {
 			isa = PBXGroup;
 			children = (
+				B5E6FF9625A3AE54003FB37F /* JSButton.m */,
 				B50B449E25A24FF600628243 /* JSDPad.m */,
 			);
 			path = JSDPad;
@@ -1151,6 +1162,10 @@
 		B50B447725A24F5600628243 /* JSDPad */ = {
 			isa = PBXGroup;
 			children = (
+				B5E6FF9925A3AE8A003FB37F /* button-pressed.png */,
+				B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */,
+				B5E6FF9B25A3AE8A003FB37F /* button.png */,
+				B5E6FF9825A3AE8A003FB37F /* button@2x.png */,
 				B50B48F525A255A300628243 /* GamePadViewController.xib */,
 				B50B447B25A24F7900628243 /* dPad-Down.png */,
 				B50B447925A24F7900628243 /* dPad-Down@2x.png */,
@@ -2133,8 +2148,10 @@
 				B50B48F625A255A300628243 /* GamePadViewController.xib in Resources */,
 				B50B449A25A24F7A00628243 /* dPad-None@2x.png in Resources */,
 				B50B449225A24F7A00628243 /* dPad-UpLeft.png in Resources */,
+				B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */,
 				B50B448A25A24F7A00628243 /* dPad-DownLeft@2x.png in Resources */,
 				B50B449025A24F7A00628243 /* dPad-UpRight@2x.png in Resources */,
+				B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */,
 				B50B448B25A24F7A00628243 /* dPad-Down@2x.png in Resources */,
 				B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */,
 				B50B448C25A24F7A00628243 /* dPad-Up@2x.png in Resources */,
@@ -2145,9 +2162,11 @@
 				B50B449425A24F7A00628243 /* dPad-UpLeft@2x.png in Resources */,
 				B50B449725A24F7A00628243 /* dPad-UpRight.png in Resources */,
 				B50B449125A24F7A00628243 /* dPad-Right.png in Resources */,
+				B5E6FF9D25A3AE8A003FB37F /* button-pressed.png in Resources */,
 				B50B449B25A24F7A00628243 /* dPad-DownRight@2x.png in Resources */,
 				B50B449825A24F7A00628243 /* dPad-DownLeft.png in Resources */,
 				B50B449625A24F7A00628243 /* dPad-Left@2x.png in Resources */,
+				B5E6FF9C25A3AE8A003FB37F /* button@2x.png in Resources */,
 				B50B448E25A24F7A00628243 /* dPad-Up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2441,6 +2460,7 @@
 				B50B48BE25A250ED00628243 /* map_memory.cpp in Sources */,
 				B50B480125A250EC00628243 /* advanced_inv_listitem.cpp in Sources */,
 				B50B48BC25A250ED00628243 /* mapsharing.cpp in Sources */,
+				B5E6FF9725A3AE54003FB37F /* JSButton.m in Sources */,
 				B50B482325A250EC00628243 /* harvest.cpp in Sources */,
 				B50B480725A250EC00628243 /* item_search.cpp in Sources */,
 				B50B483225A250EC00628243 /* iuse_software_sokoban.cpp in Sources */,

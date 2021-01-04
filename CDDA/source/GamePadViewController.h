@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#import "JSButton.h"
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GamePadViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet JSButton* escapeButton;
+
 @end
 
 NS_ASSUME_NONNULL_END

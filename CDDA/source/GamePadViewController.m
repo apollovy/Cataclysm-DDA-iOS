@@ -17,9 +17,9 @@
 
 NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
 
--(id)init
+-(void)viewDidLoad
 {
-    self = [super init];
+    [super viewDidLoad];
     JSDPadDirection dirs[] = {
         JSDPadDirectionUp,
         JSDPadDirectionDown,
@@ -42,7 +42,10 @@ NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
         NSNumber* dirInt = [NSNumber numberWithInt:dirs[i]];
         [directionsToStrings setObject:keyString forKey:dirInt];
     }
-    return self;
+    
+    [self.escapeButton.titleLabel setText:@"ESC"];
+    [self.escapeButton setBackgroundImage:[UIImage imageNamed:@"button"]];
+    [self.escapeButton setBackgroundImagePressed:[UIImage imageNamed:@"button-pressed"]];
 }
 
 
@@ -56,6 +59,17 @@ NSMutableDictionary <NSNumber*, NSString*>* directionsToStrings;
     event.text.type = SDL_TEXTINPUT;
     SDL_utf8strlcpy(event.text.text, [key UTF8String], SDL_arraysize(event.text.text));
     SDL_PushEvent(&event);
+}
+
+#pragma mark - JSDButtonDelegate
+
+- (void)buttonPressed:(JSButton *)button
+{
+    if ([button isEqual:self.escapeButton]){
+        SDL_Event event = {.type=SDL_KEYDOWN};
+        event.key.keysym.sym = SDLK_ESCAPE;
+        SDL_PushEvent(&event);
+    }
 }
 
 @end
