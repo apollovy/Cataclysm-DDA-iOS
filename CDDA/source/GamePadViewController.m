@@ -15,22 +15,6 @@
 @implementation GamePadViewController
 
 
--(void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    [self.escapeButton.titleLabel setText:@"ESC"];
-    [self.returnButton.titleLabel setText:@"⮐"];
-    [self.tabButton.titleLabel setText:@"⇥"];
-
-    for (id button in @[self.escapeButton, self.returnButton, self.tabButton])
-    {
-        [button setBackgroundImage:[UIImage imageNamed:@"button"]];
-        [button setBackgroundImagePressed:[UIImage imageNamed:@"button-pressed"]];
-    }
-}
-
-
 #pragma mark - JSDPadDelegate
 
 - (void)dPad:(JSDPad *)dPad didPressDirection:(JSDPadDirection)direction

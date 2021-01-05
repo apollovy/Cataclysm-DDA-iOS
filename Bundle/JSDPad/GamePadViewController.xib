@@ -25,6 +25,11 @@
                 <view opaque="NO" contentMode="scaleToFill" id="i1O-bZ-wGq" userLabel="Escape button" customClass="JSButton">
                     <rect key="frame" x="470" y="20" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="ESC"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="delegate" destination="-1" id="vAv-Q3-3LK"/>
                     </connections>
@@ -32,6 +37,11 @@
                 <view opaque="NO" contentMode="scaleToFill" id="muE-kR-vED" userLabel="Return button" customClass="JSButton">
                     <rect key="frame" x="470" y="290" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="⮐"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="delegate" destination="-1" id="XCe-GR-GDh"/>
                     </connections>
@@ -39,6 +49,11 @@
                 <view opaque="NO" contentMode="scaleToFill" id="nOm-qV-pej" userLabel="Tab button" customClass="JSButton">
                     <rect key="frame" x="20" y="20" width="50" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="TAB"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="delegate" destination="-1" id="bpS-lg-eFa"/>
                     </connections>
@@ -54,4 +69,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="button" width="16" height="16"/>
+        <image name="button-pressed" width="16" height="16"/>
+    </resources>
 </document>
