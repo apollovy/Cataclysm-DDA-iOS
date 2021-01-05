@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -303,6 +303,7 @@
 		B50B48F425A250ED00628243 /* sdlsound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B47E525A250EC00628243 /* sdlsound.cpp */; };
 		B50B48F625A255A300628243 /* GamePadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50B48F525A255A300628243 /* GamePadViewController.xib */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B545D9FB25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m in Sources */ = {isa = PBXBuildFile; fileRef = B545D9FA25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m */; };
 		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
@@ -325,6 +326,7 @@
 		B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */; };
 		B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9B25A3AE8A003FB37F /* button.png */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
+		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -513,6 +515,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.release.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.release.xcconfig"; sourceTree = "<group>"; };
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-DDA/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B446F25A24ECA00628243 /* SDL_uikitviewcontroller+GamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GamePad.m"; sourceTree = "<group>"; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
@@ -1097,6 +1100,8 @@
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
+		B545D9F925A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+GoogleAds.h"; sourceTree = "<group>"; };
+		B545D9FA25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GoogleAds.m"; sourceTree = "<group>"; };
 		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
 		B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
@@ -1127,6 +1132,8 @@
 		B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
 		B5E6FF9B25A3AE8A003FB37F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Libraries/JSController/Controller/button.png; sourceTree = SOURCE_ROOT; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1144,12 +1151,22 @@
 				B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */,
 				B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */,
 				B54FDD7225929FEA00505231 /* MobileCoreServices.framework in Frameworks */,
+				B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265D23A253D509D85BDFC3B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */,
+				6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B50B447425A24F0500628243 /* JSDPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -1858,6 +1875,7 @@
 				B599341525929CCE0074C0C0 /* Frameworks */,
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
+				265D23A253D509D85BDFC3B4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1889,6 +1907,7 @@
 				B54FDD7F2592A0AD00505231 /* CoreMotion.framework */,
 				B54FDD7D2592A09000505231 /* GameController.framework */,
 				B54FDD7125929FEA00505231 /* MobileCoreServices.framework */,
+				BB281804576C684487B909B9 /* Pods_CDDA.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1909,6 +1928,8 @@
 				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5B01B99259BF0690023AB00 /* version.h */,
+				B545D9F925A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.h */,
+				B545D9FA25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -1920,11 +1941,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B57201DF259293EF003D2A20 /* Build configuration list for PBXNativeTarget "CDDA" */;
 			buildPhases = (
+				83EF11B7E415B634B9830171 /* [CP] Check Pods Manifest.lock */,
 				B57201C5259293EE003D2A20 /* Sources */,
 				B57201C6259293EE003D2A20 /* Frameworks */,
 				B57201C7259293EE003D2A20 /* Resources */,
 				B5E6FF9525A3AA9B003FB37F /* ShellScript */,
 				B5F97C6A259C0C9A00C5A910 /* Copy Files */,
+				CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2174,6 +2197,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		83EF11B7E415B634B9830171 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDDA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B5E6FF9525A3AA9B003FB37F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2190,6 +2235,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "touch Libraries/Cataclysm-DDA/gfx\n";
+		};
+		CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2227,6 +2289,7 @@
 				B50B48A425A250ED00628243 /* lru_cache.cpp in Sources */,
 				B50B47EB25A250EC00628243 /* active_item_cache.cpp in Sources */,
 				B50B482E25A250EC00628243 /* ime.cpp in Sources */,
+				B545D9FB25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m in Sources */,
 				B50B487725A250EC00628243 /* player_hardcoded_effects.cpp in Sources */,
 				B50B48DA25A250ED00628243 /* ammo.cpp in Sources */,
 				B50B488725A250EC00628243 /* mtype.cpp in Sources */,
@@ -2662,6 +2725,7 @@
 		};
 		B57201E0259293EF003D2A20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2680,6 +2744,7 @@
 		};
 		B57201E1259293EF003D2A20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
