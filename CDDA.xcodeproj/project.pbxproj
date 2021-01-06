@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5072BDD259D1C18002479DB /* gfx in Copy Files */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
+		B5072BDD259D1C18002479DB /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
 		B50B447225A24ECB00628243 /* SDL_uikitviewcontroller+GamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B446F25A24ECA00628243 /* SDL_uikitviewcontroller+GamePad.m */; };
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
 		B50B448A25A24F7A00628243 /* dPad-DownLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447825A24F7900628243 /* dPad-DownLeft@2x.png */; };
@@ -317,8 +317,8 @@
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
 		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
+		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
-		B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5E6FF9125A3A29C003FB37F /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472A25A250DC00628243 /* path_info.cpp */; };
 		B5E6FF9725A3AE54003FB37F /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6FF9625A3AE54003FB37F /* JSButton.m */; };
 		B5E6FF9C25A3AE8A003FB37F /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9825A3AE8A003FB37F /* button@2x.png */; };
@@ -326,6 +326,8 @@
 		B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */; };
 		B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9B25A3AE8A003FB37F /* button.png */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
+		B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
+		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
 /* End PBXBuildFile section */
 
@@ -501,15 +503,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B5F97C6A259C0C9A00C5A910 /* Copy Files */ = {
+		B5F97C6A259C0C9A00C5A910 /* Copy gfx to data */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = data;
 			dstSubfolderSpec = 1;
 			files = (
-				B5072BDD259D1C18002479DB /* gfx in Copy Files */,
+				B5072BDD259D1C18002479DB /* gfx in Copy gfx to data */,
 			);
-			name = "Copy Files";
+			name = "Copy gfx to data";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FD200525A57AD100CE613D /* Copy mo to lang */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = lang;
+			dstSubfolderSpec = 1;
+			files = (
+				B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */,
+			);
+			name = "Copy mo to lang";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1123,6 +1136,7 @@
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+GestureHandling.h"; sourceTree = "<group>"; };
 		B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GestureHandling.m"; sourceTree = "<group>"; };
+		B5A5855225A53D7A00E73D9A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-DDA/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
@@ -1132,6 +1146,9 @@
 		B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
 		B5E6FF9B25A3AE8A003FB37F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Libraries/JSController/Controller/button.png; sourceTree = SOURCE_ROOT; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
+		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
+		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1141,6 +1158,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */,
+				B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */,
+				B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */,
 				B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */,
 				B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */,
 				B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */,
@@ -1151,7 +1171,6 @@
 				B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */,
 				B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */,
 				B54FDD7225929FEA00505231 /* MobileCoreServices.framework in Frameworks */,
-				B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1858,6 +1877,7 @@
 		B56E7E25259BA51C000701EF /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
+				B5FD200325A57A9F00CE613D /* mo */,
 				B57201D5259293EF003D2A20 /* Assets.xcassets */,
 				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
 				B50B447725A24F5600628243 /* JSDPad */,
@@ -1870,6 +1890,7 @@
 		B57201C0259293EE003D2A20 = {
 			isa = PBXGroup;
 			children = (
+				B5FD1F2625A575AB00CE613D /* Binaries */,
 				B56E7E25259BA51C000701EF /* Bundle */,
 				B57201CB259293EE003D2A20 /* CDDA */,
 				B599341525929CCE0074C0C0 /* Frameworks */,
@@ -1901,6 +1922,7 @@
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5A5855225A53D7A00E73D9A /* libiconv.tbd */,
 				B54FDD6D25929F9C00505231 /* AudioToolbox.framework */,
 				B54FDD6F25929FBA00505231 /* AVFoundation.framework */,
 				B54FDD6B25929F6400505231 /* CoreBluetooth.framework */,
@@ -1934,6 +1956,39 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		B5FD1F2625A575AB00CE613D /* Binaries */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD1F2725A575AB00CE613D /* glib */,
+			);
+			path = Binaries;
+			sourceTree = "<group>";
+		};
+		B5FD1F2725A575AB00CE613D /* glib */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD1F2825A575AB00CE613D /* include */,
+				B5FD1F2A25A575AB00CE613D /* lib */,
+			);
+			path = glib;
+			sourceTree = "<group>";
+		};
+		B5FD1F2825A575AB00CE613D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD1F2925A575AB00CE613D /* libintl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B5FD1F2A25A575AB00CE613D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD1F2B25A575AB00CE613D /* libintl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1945,9 +2000,12 @@
 				B57201C5259293EE003D2A20 /* Sources */,
 				B57201C6259293EE003D2A20 /* Frameworks */,
 				B57201C7259293EE003D2A20 /* Resources */,
-				B5E6FF9525A3AA9B003FB37F /* ShellScript */,
-				B5F97C6A259C0C9A00C5A910 /* Copy Files */,
+				B5E6FF9525A3AA9B003FB37F /* Touch gfx dir to always have its copying to the product */,
+				B5F97C6A259C0C9A00C5A910 /* Copy gfx to data */,
 				CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */,
+				B5FD1F2D25A5775F00CE613D /* Compile lang/mo if po changed */,
+				B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */,
+				B5FD200525A57AD100CE613D /* Copy mo to lang */,
 			);
 			buildRules = (
 			);
@@ -2176,7 +2234,6 @@
 				B50B449025A24F7A00628243 /* dPad-UpRight@2x.png in Resources */,
 				B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */,
 				B50B448B25A24F7A00628243 /* dPad-Down@2x.png in Resources */,
-				B5E6FF8E25A393DC003FB37F /* icon_1024x1024.png in Resources */,
 				B50B448C25A24F7A00628243 /* dPad-Up@2x.png in Resources */,
 				B50B448F25A24F7A00628243 /* dPad-Right@2x.png in Resources */,
 				B50B449925A24F7A00628243 /* dPad-None.png in Resources */,
@@ -2219,7 +2276,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5E6FF9525A3AA9B003FB37F /* ShellScript */ = {
+		B5E6FF9525A3AA9B003FB37F /* Touch gfx dir to always have its copying to the product */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2228,13 +2285,54 @@
 			);
 			inputPaths = (
 			);
+			name = "Touch gfx dir to always have its copying to the product";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "touch Libraries/Cataclysm-DDA/gfx\n";
+			shellScript = "echo touching gfx\ntouch Libraries/Cataclysm-DDA/gfx\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FD1F2D25A5775F00CE613D /* Compile lang/mo if po changed */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Libraries/Cataclysm-DDA/lang/po/cataclysm-dda.pot",
+			);
+			name = "Compile lang/mo if po changed";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Libraries/Cataclysm-DDA/lang/mo",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo compiling mo\ncd Libraries/Cataclysm-DDA/lang && ./compile_mo.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Touch lang/mo dir to always have its copying to the product";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo touching mo\ntouch Libraries/Cataclysm-DDA/lang/mo\n";
 		};
 		CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2626,6 +2724,7 @@
 					DEBUG,
 					TILES,
 					SDL_SOUND,
+					LOCALIZE,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2649,6 +2748,7 @@
 					./Libraries/SDL/src/video/uikit,
 					"./Libraries/Cataclysm-DDA/src",
 					./Libraries/JSController/Controller,
+					./Binaries/glib/include,
 				);
 			};
 			name = Debug;
@@ -2695,6 +2795,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					TILES,
 					SDL_SOUND,
+					LOCALIZE,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -2718,6 +2819,7 @@
 					./Libraries/SDL/src/video/uikit,
 					"./Libraries/Cataclysm-DDA/src",
 					./Libraries/JSController/Controller,
+					./Binaries/glib/include,
 				);
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2736,9 +2838,23 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Binaries/glib/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					./Libraries/SDL_mixer,
+					./Libraries/SDL_image,
+					./Libraries/SDL/include,
+					./Libraries/SDL_ttf,
+					./Libraries/SDL/src/video/uikit,
+					"./Libraries/Cataclysm-DDA/src",
+					./Libraries/JSController/Controller,
+					"./Libraries/glib-ios",
+				);
 			};
 			name = Debug;
 		};
@@ -2755,9 +2871,23 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Binaries/glib/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					./Libraries/SDL_mixer,
+					./Libraries/SDL_image,
+					./Libraries/SDL/include,
+					./Libraries/SDL_ttf,
+					./Libraries/SDL/src/video/uikit,
+					"./Libraries/Cataclysm-DDA/src",
+					./Libraries/JSController/Controller,
+					"./Libraries/glib-ios",
+				);
 			};
 			name = Release;
 		};
