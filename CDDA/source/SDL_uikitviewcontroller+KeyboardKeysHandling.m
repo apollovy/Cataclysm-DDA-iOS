@@ -89,18 +89,16 @@ NSDictionary* _keyCommandsTranslator;
 
     if(key) {
         NSSet* specialKeys = [NSSet setWithArray:[[_keyCommandsTranslator allValues] arrayByAddingObjectsFromArray:@[@"\015", @"\t"]]];
+        SDL_Event event = {};
         if ([specialKeys containsObject:key]) {
             SDL_KeyCode keyCode = SDL_GetKeyFromName([key UTF8String]);
-            SDL_Event sdlDownEvent = {};
-            sdlDownEvent.type = SDL_KEYDOWN;
-            sdlDownEvent.key.keysym.sym = keyCode;
-            SDL_PushEvent(&sdlDownEvent);
+            event.type = SDL_KEYDOWN;
+            event.key.keysym.sym = keyCode;
         } else {
-            SDL_Event event;
             event.text.type = SDL_TEXTINPUT;
             SDL_utf8strlcpy(event.text.text, [key UTF8String], SDL_arraysize(event.text.text));
-            SDL_PushEvent(&event);
         }
+        SDL_PushEvent(&event);
     }
 }
 @end

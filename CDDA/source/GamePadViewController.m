@@ -19,7 +19,7 @@
 
 - (void)dPad:(JSDPad *)dPad didPressDirection:(JSDPadDirection)direction
 {
-    SDL_Event event;
+    SDL_Event event = {};
     switch (direction) {
         case JSDPadDirectionNone:
             break;
