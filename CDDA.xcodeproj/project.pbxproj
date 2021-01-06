@@ -312,7 +312,6 @@
 		B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
 		B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
 		B54FDD7225929FEA00505231 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7125929FEA00505231 /* MobileCoreServices.framework */; };
-		B54FDD7B2592A04500505231 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B54FDD762592A04500505231 /* SDiOSVersion.m */; };
 		B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
@@ -1125,9 +1124,6 @@
 		B54FDD6D25929F9C00505231 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B54FDD6F25929FBA00505231 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B54FDD7125929FEA00505231 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		B54FDD752592A04500505231 /* SDiOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiOSVersion.h; sourceTree = "<group>"; };
-		B54FDD762592A04500505231 /* SDiOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiOSVersion.m; sourceTree = "<group>"; };
-		B54FDD7A2592A04500505231 /* SDVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDVersion.h; sourceTree = "<group>"; };
 		B54FDD7D2592A09000505231 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
@@ -1825,24 +1821,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B54FDD732592A04500505231 /* SDVersion */ = {
-			isa = PBXGroup;
-			children = (
-				B54FDD742592A04500505231 /* SDiOSVersion */,
-				B54FDD7A2592A04500505231 /* SDVersion.h */,
-			);
-			path = SDVersion;
-			sourceTree = "<group>";
-		};
-		B54FDD742592A04500505231 /* SDiOSVersion */ = {
-			isa = PBXGroup;
-			children = (
-				B54FDD752592A04500505231 /* SDiOSVersion.h */,
-				B54FDD762592A04500505231 /* SDiOSVersion.m */,
-			);
-			path = SDiOSVersion;
-			sourceTree = "<group>";
-		};
 		B5654D12259BC9DE00AABE12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1915,7 +1893,6 @@
 				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
 				B5B01B98259BF0480023AB00 /* source */,
 				B57201DA259293EF003D2A20 /* Info.plist */,
-				B54FDD732592A04500505231 /* SDVersion */,
 			);
 			path = CDDA;
 			sourceTree = "<group>";
@@ -2637,7 +2614,6 @@
 				B50B47F125A250EC00628243 /* mission_start.cpp in Sources */,
 				B50B488225A250EC00628243 /* rotatable_symbols.cpp in Sources */,
 				B50B47F525A250EC00628243 /* faction_camp.cpp in Sources */,
-				B54FDD7B2592A04500505231 /* SDiOSVersion.m in Sources */,
 				B50B483C25A250EC00628243 /* trait_group.cpp in Sources */,
 				B50B47E925A250EC00628243 /* bonuses.cpp in Sources */,
 			);
@@ -2734,7 +2710,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -2805,7 +2781,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -2831,7 +2807,6 @@
 			baseConfigurationReference = C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
@@ -2864,7 +2839,6 @@
 			baseConfigurationReference = 6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
