@@ -319,6 +319,7 @@
 		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
+		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5E6FF9125A3A29C003FB37F /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472A25A250DC00628243 /* path_info.cpp */; };
 		B5E6FF9725A3AE54003FB37F /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6FF9625A3AE54003FB37F /* JSButton.m */; };
 		B5E6FF9C25A3AE8A003FB37F /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9825A3AE8A003FB37F /* button@2x.png */; };
@@ -2231,6 +2232,7 @@
 				B50B449225A24F7A00628243 /* dPad-UpLeft.png in Resources */,
 				B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */,
 				B50B448A25A24F7A00628243 /* dPad-DownLeft@2x.png in Resources */,
+				B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */,
 				B50B449025A24F7A00628243 /* dPad-UpRight@2x.png in Resources */,
 				B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */,
 				B50B448B25A24F7A00628243 /* dPad-Down@2x.png in Resources */,
@@ -2314,7 +2316,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo compiling mo\ncd Libraries/Cataclysm-DDA/lang && ./compile_mo.sh\n";
-			showEnvVarsInLog = 0;
 		};
 		B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2713,9 +2714,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2735,7 +2736,7 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = "";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
