@@ -2807,6 +2807,7 @@
 			baseConfigurationReference = C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
@@ -2820,6 +2821,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
 					./Libraries/SDL_mixer,
@@ -2839,6 +2841,7 @@
 			baseConfigurationReference = 6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
@@ -2852,6 +2855,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
 					./Libraries/SDL_mixer,
