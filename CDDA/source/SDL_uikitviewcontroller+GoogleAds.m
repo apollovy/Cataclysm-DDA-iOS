@@ -21,8 +21,11 @@
     // In this case, we instantiate the banner with desired ad size.
     self.bannerView = [[GADBannerView alloc]
                        initWithAdSize:kGADAdSizeBanner];
-    
-    [self addBannerViewToView:self.bannerView];
+    @try {
+        [self addBannerViewToView:self.bannerView];
+    } @catch (NSException *exception) {
+        NSLog(@"CDDA-iOS::Adding banner resulted in error::%@", exception.reason);
+    }
 }
 
 - (void)addBannerViewToView:(UIView *)bannerView {
@@ -45,12 +48,9 @@
                                                               constant:0]
                                 ]
      ];
-    
-    // FIXME: replace with more sane approach
-    self.bannerView.adUnitID = @"ca-app-pub-9615054841988249/9046413488";
+    self.bannerView.adUnitID = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"GATopBannerAdUnitId"];
     self.bannerView.rootViewController = self;
     GADRequest* request = [GADRequest request];
-    request.testDevices = @[ kGADSimulatorID ];
     [self.bannerView loadRequest:request];
 }
 
