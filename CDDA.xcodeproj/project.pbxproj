@@ -308,6 +308,7 @@
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
 		B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
+		B54C7A7125A8B373007856B5 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B54FDD6C25929F6400505231 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6B25929F6400505231 /* CoreBluetooth.framework */; };
 		B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
 		B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
@@ -1120,6 +1121,7 @@
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B5493315259BE20000667062 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
+		B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 		B54FDD6B25929F6400505231 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B54FDD6D25929F9C00505231 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B54FDD6F25929FBA00505231 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -1155,6 +1157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54C7A7125A8B373007856B5 /* CoreHaptics.framework in Frameworks */,
 				B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */,
 				B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */,
 				B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */,
@@ -1900,6 +1903,7 @@
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */,
 				B5A5855225A53D7A00E73D9A /* libiconv.tbd */,
 				B54FDD6D25929F9C00505231 /* AudioToolbox.framework */,
 				B54FDD6F25929FBA00505231 /* AVFoundation.framework */,
@@ -1980,10 +1984,11 @@
 				B57201C7259293EE003D2A20 /* Resources */,
 				B5E6FF9525A3AA9B003FB37F /* Touch gfx dir to always have its copying to the product */,
 				B5F97C6A259C0C9A00C5A910 /* Copy gfx to data */,
-				CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */,
 				B5FD1F2D25A5775F00CE613D /* Compile lang/mo if po changed */,
 				B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */,
 				B5FD200525A57AD100CE613D /* Copy mo to lang */,
+				B5550C6A25A90F7400FB227A /* Remove redundant directories from data */,
+				CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2254,6 +2259,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B5550C6A25A90F7400FB227A /* Remove redundant directories from data */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove redundant directories from data";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -r \"${CODESIGNING_FOLDER_PATH}\"/data/osx\n";
 		};
 		B5E6FF9525A3AA9B003FB37F /* Touch gfx dir to always have its copying to the product */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2809,6 +2832,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2819,6 +2843,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2843,6 +2868,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2853,6 +2879,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
