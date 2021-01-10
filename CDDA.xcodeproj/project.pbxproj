@@ -10,24 +10,6 @@
 		B5072BDD259D1C18002479DB /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
 		B50B447225A24ECB00628243 /* SDL_uikitviewcontroller+GamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B446F25A24ECA00628243 /* SDL_uikitviewcontroller+GamePad.m */; };
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
-		B50B448A25A24F7A00628243 /* dPad-DownLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447825A24F7900628243 /* dPad-DownLeft@2x.png */; };
-		B50B448B25A24F7A00628243 /* dPad-Down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447925A24F7900628243 /* dPad-Down@2x.png */; };
-		B50B448C25A24F7A00628243 /* dPad-Up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447A25A24F7900628243 /* dPad-Up@2x.png */; };
-		B50B448D25A24F7A00628243 /* dPad-Down.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447B25A24F7900628243 /* dPad-Down.png */; };
-		B50B448E25A24F7A00628243 /* dPad-Up.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447C25A24F7900628243 /* dPad-Up.png */; };
-		B50B448F25A24F7A00628243 /* dPad-Right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447D25A24F7900628243 /* dPad-Right@2x.png */; };
-		B50B449025A24F7A00628243 /* dPad-UpRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447E25A24F7900628243 /* dPad-UpRight@2x.png */; };
-		B50B449125A24F7A00628243 /* dPad-Right.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B447F25A24F7A00628243 /* dPad-Right.png */; };
-		B50B449225A24F7A00628243 /* dPad-UpLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448025A24F7A00628243 /* dPad-UpLeft.png */; };
-		B50B449325A24F7A00628243 /* dPad-DownRight.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448125A24F7A00628243 /* dPad-DownRight.png */; };
-		B50B449425A24F7A00628243 /* dPad-UpLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448225A24F7A00628243 /* dPad-UpLeft@2x.png */; };
-		B50B449525A24F7A00628243 /* dPad-Left.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448325A24F7A00628243 /* dPad-Left.png */; };
-		B50B449625A24F7A00628243 /* dPad-Left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448425A24F7A00628243 /* dPad-Left@2x.png */; };
-		B50B449725A24F7A00628243 /* dPad-UpRight.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448525A24F7A00628243 /* dPad-UpRight.png */; };
-		B50B449825A24F7A00628243 /* dPad-DownLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448625A24F7A00628243 /* dPad-DownLeft.png */; };
-		B50B449925A24F7A00628243 /* dPad-None.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448725A24F7A00628243 /* dPad-None.png */; };
-		B50B449A25A24F7A00628243 /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448825A24F7A00628243 /* dPad-None@2x.png */; };
-		B50B449B25A24F7A00628243 /* dPad-DownRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50B448925A24F7A00628243 /* dPad-DownRight@2x.png */; };
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
 		B50B449F25A24FF600628243 /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B449E25A24FF600628243 /* JSDPad.m */; };
@@ -316,16 +298,23 @@
 		B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
+		B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA625AB85A20065602D /* dPad-Down@2x.png */; };
+		B559EDB025AB85A50065602D /* dPad-DownRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */; };
+		B559EDB125AB85A50065602D /* dPad-UpLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */; };
+		B559EDB225AB85A50065602D /* dPad-DownLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA925AB85A30065602D /* dPad-DownLeft@2x.png */; };
+		B559EDB325AB85A50065602D /* dPad-Left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAA25AB85A30065602D /* dPad-Left@2x.png */; };
+		B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAB25AB85A40065602D /* dPad-Up@2x.png */; };
+		B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
+		B559EDB625AB85A50065602D /* dPad-Right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAD25AB85A40065602D /* dPad-Right@2x.png */; };
+		B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */; };
+		B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDB925AB86C70065602D /* button-pressed@2x.png */; };
+		B559EDBC25AB86C70065602D /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDBA25AB86C70065602D /* button@2x.png */; };
 		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5E6FF9125A3A29C003FB37F /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B472A25A250DC00628243 /* path_info.cpp */; };
 		B5E6FF9725A3AE54003FB37F /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6FF9625A3AE54003FB37F /* JSButton.m */; };
-		B5E6FF9C25A3AE8A003FB37F /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9825A3AE8A003FB37F /* button@2x.png */; };
-		B5E6FF9D25A3AE8A003FB37F /* button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9925A3AE8A003FB37F /* button-pressed.png */; };
-		B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */; };
-		B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF9B25A3AE8A003FB37F /* button.png */; };
 		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 		B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
@@ -534,24 +523,6 @@
 		B50B446F25A24ECA00628243 /* SDL_uikitviewcontroller+GamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GamePad.m"; sourceTree = "<group>"; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
-		B50B447825A24F7900628243 /* dPad-DownLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-DownLeft@2x.png"; path = "Libraries/JSController/Controller/dPad-DownLeft@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B447925A24F7900628243 /* dPad-Down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Down@2x.png"; path = "Libraries/JSController/Controller/dPad-Down@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B447A25A24F7900628243 /* dPad-Up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Up@2x.png"; path = "Libraries/JSController/Controller/dPad-Up@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B447B25A24F7900628243 /* dPad-Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Down.png"; path = "Libraries/JSController/Controller/dPad-Down.png"; sourceTree = SOURCE_ROOT; };
-		B50B447C25A24F7900628243 /* dPad-Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Up.png"; path = "Libraries/JSController/Controller/dPad-Up.png"; sourceTree = SOURCE_ROOT; };
-		B50B447D25A24F7900628243 /* dPad-Right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Right@2x.png"; path = "Libraries/JSController/Controller/dPad-Right@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B447E25A24F7900628243 /* dPad-UpRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-UpRight@2x.png"; path = "Libraries/JSController/Controller/dPad-UpRight@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B447F25A24F7A00628243 /* dPad-Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Right.png"; path = "Libraries/JSController/Controller/dPad-Right.png"; sourceTree = SOURCE_ROOT; };
-		B50B448025A24F7A00628243 /* dPad-UpLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-UpLeft.png"; path = "Libraries/JSController/Controller/dPad-UpLeft.png"; sourceTree = SOURCE_ROOT; };
-		B50B448125A24F7A00628243 /* dPad-DownRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-DownRight.png"; path = "Libraries/JSController/Controller/dPad-DownRight.png"; sourceTree = SOURCE_ROOT; };
-		B50B448225A24F7A00628243 /* dPad-UpLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-UpLeft@2x.png"; path = "Libraries/JSController/Controller/dPad-UpLeft@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B448325A24F7A00628243 /* dPad-Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Left.png"; path = "Libraries/JSController/Controller/dPad-Left.png"; sourceTree = SOURCE_ROOT; };
-		B50B448425A24F7A00628243 /* dPad-Left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-Left@2x.png"; path = "Libraries/JSController/Controller/dPad-Left@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B448525A24F7A00628243 /* dPad-UpRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-UpRight.png"; path = "Libraries/JSController/Controller/dPad-UpRight.png"; sourceTree = SOURCE_ROOT; };
-		B50B448625A24F7A00628243 /* dPad-DownLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-DownLeft.png"; path = "Libraries/JSController/Controller/dPad-DownLeft.png"; sourceTree = SOURCE_ROOT; };
-		B50B448725A24F7A00628243 /* dPad-None.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-None.png"; path = "Libraries/JSController/Controller/dPad-None.png"; sourceTree = SOURCE_ROOT; };
-		B50B448825A24F7A00628243 /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-None@2x.png"; path = "Libraries/JSController/Controller/dPad-None@2x.png"; sourceTree = SOURCE_ROOT; };
-		B50B448925A24F7A00628243 /* dPad-DownRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dPad-DownRight@2x.png"; path = "Libraries/JSController/Controller/dPad-DownRight@2x.png"; sourceTree = SOURCE_ROOT; };
 		B50B449E25A24FF600628243 /* JSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSDPad.m; path = Libraries/JSController/Controller/JSDPad.m; sourceTree = SOURCE_ROOT; };
 		B50B46D725A250D600628243 /* armor_layers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = armor_layers.cpp; path = "Libraries/Cataclysm-DDA/src/armor_layers.cpp"; sourceTree = SOURCE_ROOT; };
 		B50B46D825A250D600628243 /* advanced_inv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = advanced_inv.cpp; path = "Libraries/Cataclysm-DDA/src/advanced_inv.cpp"; sourceTree = SOURCE_ROOT; };
@@ -1128,6 +1099,17 @@
 		B54FDD7125929FEA00505231 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B54FDD7D2592A09000505231 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B559EDA625AB85A20065602D /* dPad-Down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Down@2x.png"; sourceTree = "<group>"; };
+		B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownRight@2x.png"; sourceTree = "<group>"; };
+		B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpLeft@2x.png"; sourceTree = "<group>"; };
+		B559EDA925AB85A30065602D /* dPad-DownLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownLeft@2x.png"; sourceTree = "<group>"; };
+		B559EDAA25AB85A30065602D /* dPad-Left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Left@2x.png"; sourceTree = "<group>"; };
+		B559EDAB25AB85A40065602D /* dPad-Up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Up@2x.png"; sourceTree = "<group>"; };
+		B559EDAC25AB85A40065602D /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None@2x.png"; sourceTree = "<group>"; };
+		B559EDAD25AB85A40065602D /* dPad-Right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Right@2x.png"; sourceTree = "<group>"; };
+		B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpRight@2x.png"; sourceTree = "<group>"; };
+		B559EDB925AB86C70065602D /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
+		B559EDBA25AB86C70065602D /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "Libraries/JSController/Controller/button@2x.png"; sourceTree = SOURCE_ROOT; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1140,10 +1122,6 @@
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5E6FF9625A3AE54003FB37F /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
-		B5E6FF9825A3AE8A003FB37F /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "Libraries/JSController/Controller/button@2x.png"; sourceTree = SOURCE_ROOT; };
-		B5E6FF9925A3AE8A003FB37F /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed.png"; path = "Libraries/JSController/Controller/button-pressed.png"; sourceTree = SOURCE_ROOT; };
-		B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
-		B5E6FF9B25A3AE8A003FB37F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Libraries/JSController/Controller/button.png; sourceTree = SOURCE_ROOT; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
@@ -1198,29 +1176,18 @@
 		B50B447725A24F5600628243 /* JSDPad */ = {
 			isa = PBXGroup;
 			children = (
-				B5E6FF9925A3AE8A003FB37F /* button-pressed.png */,
-				B5E6FF9A25A3AE8A003FB37F /* button-pressed@2x.png */,
-				B5E6FF9B25A3AE8A003FB37F /* button.png */,
-				B5E6FF9825A3AE8A003FB37F /* button@2x.png */,
+				B559EDB925AB86C70065602D /* button-pressed@2x.png */,
+				B559EDBA25AB86C70065602D /* button@2x.png */,
+				B559EDA625AB85A20065602D /* dPad-Down@2x.png */,
+				B559EDA925AB85A30065602D /* dPad-DownLeft@2x.png */,
+				B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */,
+				B559EDAA25AB85A30065602D /* dPad-Left@2x.png */,
+				B559EDAC25AB85A40065602D /* dPad-None@2x.png */,
+				B559EDAD25AB85A40065602D /* dPad-Right@2x.png */,
+				B559EDAB25AB85A40065602D /* dPad-Up@2x.png */,
+				B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */,
+				B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */,
 				B50B48F525A255A300628243 /* GamePadViewController.xib */,
-				B50B447B25A24F7900628243 /* dPad-Down.png */,
-				B50B447925A24F7900628243 /* dPad-Down@2x.png */,
-				B50B448625A24F7A00628243 /* dPad-DownLeft.png */,
-				B50B447825A24F7900628243 /* dPad-DownLeft@2x.png */,
-				B50B448125A24F7A00628243 /* dPad-DownRight.png */,
-				B50B448925A24F7A00628243 /* dPad-DownRight@2x.png */,
-				B50B448325A24F7A00628243 /* dPad-Left.png */,
-				B50B448425A24F7A00628243 /* dPad-Left@2x.png */,
-				B50B448725A24F7A00628243 /* dPad-None.png */,
-				B50B448825A24F7A00628243 /* dPad-None@2x.png */,
-				B50B447F25A24F7A00628243 /* dPad-Right.png */,
-				B50B447D25A24F7900628243 /* dPad-Right@2x.png */,
-				B50B447C25A24F7900628243 /* dPad-Up.png */,
-				B50B447A25A24F7900628243 /* dPad-Up@2x.png */,
-				B50B448025A24F7A00628243 /* dPad-UpLeft.png */,
-				B50B448225A24F7A00628243 /* dPad-UpLeft@2x.png */,
-				B50B448525A24F7A00628243 /* dPad-UpRight.png */,
-				B50B447E25A24F7900628243 /* dPad-UpRight@2x.png */,
 			);
 			path = JSDPad;
 			sourceTree = "<group>";
@@ -2206,32 +2173,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
+				B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */,
+				B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
-				B50B449325A24F7A00628243 /* dPad-DownRight.png in Resources */,
+				B559EDB325AB85A50065602D /* dPad-Left@2x.png in Resources */,
+				B559EDBC25AB86C70065602D /* button@2x.png in Resources */,
 				B50B48F625A255A300628243 /* GamePadViewController.xib in Resources */,
-				B50B449A25A24F7A00628243 /* dPad-None@2x.png in Resources */,
-				B50B449225A24F7A00628243 /* dPad-UpLeft.png in Resources */,
-				B5E6FF9F25A3AE8A003FB37F /* button.png in Resources */,
-				B50B448A25A24F7A00628243 /* dPad-DownLeft@2x.png in Resources */,
+				B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */,
+				B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */,
+				B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */,
+				B559EDB625AB85A50065602D /* dPad-Right@2x.png in Resources */,
+				B559EDB125AB85A50065602D /* dPad-UpLeft@2x.png in Resources */,
+				B559EDB025AB85A50065602D /* dPad-DownRight@2x.png in Resources */,
+				B559EDB225AB85A50065602D /* dPad-DownLeft@2x.png in Resources */,
 				B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */,
-				B50B449025A24F7A00628243 /* dPad-UpRight@2x.png in Resources */,
-				B5E6FF9E25A3AE8A003FB37F /* button-pressed@2x.png in Resources */,
-				B50B448B25A24F7A00628243 /* dPad-Down@2x.png in Resources */,
-				B50B448C25A24F7A00628243 /* dPad-Up@2x.png in Resources */,
-				B50B448F25A24F7A00628243 /* dPad-Right@2x.png in Resources */,
-				B50B449925A24F7A00628243 /* dPad-None.png in Resources */,
-				B50B448D25A24F7A00628243 /* dPad-Down.png in Resources */,
-				B50B449525A24F7A00628243 /* dPad-Left.png in Resources */,
-				B50B449425A24F7A00628243 /* dPad-UpLeft@2x.png in Resources */,
-				B50B449725A24F7A00628243 /* dPad-UpRight.png in Resources */,
-				B50B449125A24F7A00628243 /* dPad-Right.png in Resources */,
-				B5E6FF9D25A3AE8A003FB37F /* button-pressed.png in Resources */,
-				B50B449B25A24F7A00628243 /* dPad-DownRight@2x.png in Resources */,
-				B50B449825A24F7A00628243 /* dPad-DownLeft.png in Resources */,
-				B50B449625A24F7A00628243 /* dPad-Left@2x.png in Resources */,
-				B5E6FF9C25A3AE8A003FB37F /* button@2x.png in Resources */,
-				B50B448E25A24F7A00628243 /* dPad-Up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
