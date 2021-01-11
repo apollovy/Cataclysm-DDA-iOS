@@ -15,9 +15,11 @@
 
     SDL_Event sdlDownEvent = {};
 
-    if([string isEqualToString:@"\b"])  {
+    if((range.location == 63) && (range.length == 1) && (string.length == 0))
+    // backspace pressed
+    {
         sdlDownEvent.type = SDL_KEYDOWN;
-        sdlDownEvent.key.keysym.scancode = SDL_SCANCODE_BACKSPACE;
+        sdlDownEvent.key.keysym.sym = '\b';
     }
     else if([string isEqualToString:@"\n"]) {
         sdlDownEvent.type = SDL_KEYDOWN;

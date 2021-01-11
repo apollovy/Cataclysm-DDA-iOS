@@ -23,7 +23,7 @@ NSDictionary* _keyCommandsTranslator;
     const NSArray* characterLists = [
         NSArray arrayWithObjects:
         // common on Macbook keyboard
-        @"§-=\b",  // backspace behaves badly
+        @"§-=",  // putting backspace in this list makes it behave badly
         @"\t[]\r",
         @";'\\",
         @"`,./",
@@ -88,7 +88,8 @@ NSDictionary* _keyCommandsTranslator;
     }
 
     if(key) {
-        NSSet* specialKeys = [NSSet setWithArray:[[_keyCommandsTranslator allValues] arrayByAddingObjectsFromArray:@[@"\015", @"\t"]]];
+        NSSet* specialKeys = [NSSet setWithArray:[[_keyCommandsTranslator
+                allValues] arrayByAddingObjectsFromArray:@[@"\r", @"\t"]]];
         SDL_Event event = {};
         if ([specialKeys containsObject:key]) {
             SDL_KeyCode keyCode = SDL_GetKeyFromName([key UTF8String]);
