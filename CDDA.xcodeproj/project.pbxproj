@@ -285,6 +285,7 @@
 		B50B48F425A250ED00628243 /* sdlsound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50B47E525A250EC00628243 /* sdlsound.cpp */; };
 		B50B48F625A255A300628243 /* GamePadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50B48F525A255A300628243 /* GamePadViewController.xib */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B545D9FB25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m in Sources */ = {isa = PBXBuildFile; fileRef = B545D9FA25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m */; };
 		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
@@ -319,6 +320,7 @@
 		B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
+		D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -328,6 +330,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 1A1DA8651704A5BC00BDA8F9;
 			remoteInfo = JSController;
+		};
+		B538050125AC6DB200AEB52A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B57201C1259293EE003D2A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B57201C8259293EE003D2A20;
+			remoteInfo = CDDA;
 		};
 		B54932EB259BD59D00667062 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1085,6 +1094,10 @@
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
+		B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDDAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B538050025AC6DB200AEB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B538050825AC6E3500AEB52A /* CDDAUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDAUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		B545D9F925A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+GoogleAds.h"; sourceTree = "<group>"; };
 		B545D9FA25A500BF001F4E36 /* SDL_uikitviewcontroller+GoogleAds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GoogleAds.m"; sourceTree = "<group>"; };
 		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
@@ -1128,9 +1141,18 @@
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
+		D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDAUITests.swift; sourceTree = "<group>"; };
+		D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackspaceInMenuTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B53804F925AC6DB200AEB52A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57201C6259293EE003D2A20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1764,6 +1786,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B53804FD25AC6DB200AEB52A /* CDDAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */,
+				B538050025AC6DB200AEB52A /* Info.plist */,
+				B538050825AC6E3500AEB52A /* CDDAUITests-Bridging-Header.h */,
+				D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */,
+				D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */,
+			);
+			path = CDDAUITests;
+			sourceTree = "<group>";
+		};
 		B54932E5259BD59D00667062 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1842,6 +1876,7 @@
 				B5FD1F2625A575AB00CE613D /* Binaries */,
 				B56E7E25259BA51C000701EF /* Bundle */,
 				B57201CB259293EE003D2A20 /* CDDA */,
+				B53804FD25AC6DB200AEB52A /* CDDAUITests */,
 				B599341525929CCE0074C0C0 /* Frameworks */,
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
@@ -1853,6 +1888,7 @@
 			isa = PBXGroup;
 			children = (
 				B57201C9259293EE003D2A20 /* CDDA.app */,
+				B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1941,6 +1977,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B53804FB25AC6DB200AEB52A /* CDDAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B538050325AC6DB200AEB52A /* Build configuration list for PBXNativeTarget "CDDAUITests" */;
+			buildPhases = (
+				B53804F825AC6DB200AEB52A /* Sources */,
+				B53804F925AC6DB200AEB52A /* Frameworks */,
+				B53804FA25AC6DB200AEB52A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B538050225AC6DB200AEB52A /* PBXTargetDependency */,
+			);
+			name = CDDAUITests;
+			productName = CDDAUITests;
+			productReference = B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B57201C8259293EE003D2A20 /* CDDA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B57201DF259293EF003D2A20 /* Build configuration list for PBXNativeTarget "CDDA" */;
@@ -1979,6 +2033,11 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Аполлов Юрий Андреевич";
 				TargetAttributes = {
+					B53804FB25AC6DB200AEB52A = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+						TestTargetID = B57201C8259293EE003D2A20;
+					};
 					B57201C8259293EE003D2A20 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -2020,6 +2079,7 @@
 			projectRoot = "";
 			targets = (
 				B57201C8259293EE003D2A20 /* CDDA */,
+				B53804FB25AC6DB200AEB52A /* CDDAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2168,6 +2228,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B53804FA25AC6DB200AEB52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57201C7259293EE003D2A20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2255,7 +2322,7 @@
 		};
 		B5FD1F2D25A5775F00CE613D /* Compile lang/mo if po changed */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -2269,7 +2336,7 @@
 			outputPaths = (
 				"$(SRCROOT)/Libraries/Cataclysm-DDA/lang/mo",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "echo compiling mo\ncd Libraries/Cataclysm-DDA/lang && ./compile_mo.sh\n";
 		};
@@ -2311,6 +2378,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B53804F825AC6DB200AEB52A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */,
+				D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B57201C5259293EE003D2A20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2601,6 +2677,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B538050225AC6DB200AEB52A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B57201C8259293EE003D2A20 /* CDDA */;
+			targetProxy = B538050125AC6DB200AEB52A /* PBXContainerItemProxy */;
+		};
 		B558366C25A15A77009ED0DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Static Library-iOS";
@@ -2635,6 +2716,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B538050425AC6DB200AEB52A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				ENABLE_TESTABILITY = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CDDAUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDAUITests/CDDAUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CDDA;
+			};
+			name = Debug;
+		};
+		B538050525AC6DB200AEB52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				INFOPLIST_FILE = CDDAUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDAUITests/CDDAUITests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CDDA;
+			};
+			name = Release;
+		};
 		B57201DD259293EF003D2A20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2856,6 +2992,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B538050325AC6DB200AEB52A /* Build configuration list for PBXNativeTarget "CDDAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B538050425AC6DB200AEB52A /* Debug */,
+				B538050525AC6DB200AEB52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B57201C4259293EE003D2A20 /* Build configuration list for PBXProject "CDDA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

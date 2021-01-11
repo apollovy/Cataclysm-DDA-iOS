@@ -22,4 +22,9 @@ platform :ios do
     build_app(workspace: "CDDA.xcworkspace", scheme: "CDDA Release")
     upload_to_testflight
   end
+  lane :clean do
+    for scheme in ["CDDA Release", "CDDA Debug"]
+      xcclean workspace: "CDDA.xcworkspace", scheme: scheme
+    end
+  end
 end
