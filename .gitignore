@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/xcode,appcode+all,cocoapods
-# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,appcode+all,cocoapods
+
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,fastlane,appcode+all,cocoapods
+# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,fastlane,appcode+all,cocoapods
 
 ### AppCode+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -98,9 +99,32 @@ modules.xml
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
 Pods/
 
+### fastlane ###
+# fastlane - A streamlined workflow tool for Cocoa deployment
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+# fastlane specific
+fastlane/report.xml
+
+# deliver temporary files
+fastlane/Preview.html
+
+# snapshot generated screenshots
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+
+# scan temporary files
+fastlane/test_output
+
+# Fastlane.swift runner binary
+fastlane/FastlaneRunner
+
 ### Xcode ###
 # Xcode
-#
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 ## User settings
@@ -133,4 +157,4 @@ DerivedData/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode,appcode+all,cocoapods
+# End of https://www.toptal.com/developers/gitignore/api/xcode,fastlane,appcode+all,cocoapods
