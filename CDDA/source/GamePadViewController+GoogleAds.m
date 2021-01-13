@@ -5,30 +5,32 @@
 //  Created by Аполлов Юрий Андреевич on 05/01/2021.
 //  Copyright © 2021 Аполлов Юрий Андреевич. All rights reserved.
 //
-#import "objc/runtime.h"
-
 @import GoogleMobileAds;
 
-#import "SDL_uikitviewcontroller+GoogleAds.h"
+#import "GamePadViewController+GoogleAds.h"
 
-@implementation SDL_uikitviewcontroller (GoogleAds)
+@implementation GamePadViewController (GoogleAds)
 
 
-- (void)googleAdsModifiedSetView:(UIView*)view
-{
-    [self googleAdsModifiedSetView:view];
-    
-    // In this case, we instantiate the banner with desired ad size.
-    self.bannerView = [[GADBannerView alloc]
-                       initWithAdSize:kGADAdSizeBanner];
-    @try {
-        [self addBannerViewToView:self.bannerView];
-    } @catch (NSException *exception) {
-        NSLog(@"CDDA-iOS::Adding banner resulted in error::%@", exception.reason);
+- (void)viewDidAppear:(BOOL)animated {
+    // only add banner once
+    if (!self.bannerView) {
+        @try {
+            [self addBannerViewToView];
+        } @catch (NSException* exception) {
+            self.bannerView = nil;
+            NSLog(@"CDDA-iOS::Adding banner resulted in error::%@",
+                    exception.reason);
+        }
     }
 }
 
-- (void)addBannerViewToView:(UIView *)bannerView {
+- (void)addBannerViewToView
+{
+    // In this case, we instantiate the banner with desired ad size.
+    self.bannerView = [[GADBannerView alloc]
+                                      initWithAdSize:kGADAdSizeBanner];
+    GADBannerView* bannerView = self.bannerView;
     bannerView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:bannerView];
     [self.view addConstraints:@[
@@ -66,13 +68,6 @@ GADBannerView* _bannerView;
 -(void)setBannerView:(GADBannerView*)view
 {
     _bannerView = view;
-}
-
-+(void)load
-{
-    Method originalSetView = class_getInstanceMethod(self, @selector(setView:));
-    Method modifiedSetView = class_getInstanceMethod(self, @selector(googleAdsModifiedSetView:));
-    method_exchangeImplementations(originalSetView, modifiedSetView);
 }
 
 @end
