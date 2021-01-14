@@ -54,6 +54,17 @@
     self.bannerView.rootViewController = self;
     GADRequest* request = [GADRequest request];
     [self.bannerView loadRequest:request];
+    self.bannerView.delegate = self;
+}
+
+- (void) toggleBannerView {
+    [UIView transitionWithView:self.bannerView
+            duration:0.4
+            options:UIViewAnimationOptionTransitionCrossDissolve
+            animations:^{
+                self.bannerView.hidden = !self.bannerView.hidden;
+            }
+            completion:NULL];
 }
 
 # pragma: Google ad banner view
@@ -68,6 +79,18 @@ GADBannerView* _bannerView;
 -(void)setBannerView:(GADBannerView*)view
 {
     _bannerView = view;
+}
+
+# pragma: GADBannerViewDelegate
+
+-(void) adViewWillLeaveApplication:(GADBannerView*) bannerView
+{
+    [self toggleBannerView];
+    int delay = [[[NSBundle mainBundle]
+                            objectForInfoDictionaryKey:@"GATopBannerHideTime"]
+                            intValue];
+    [self performSelector:@selector(toggleBannerView) withObject:self
+                                                      afterDelay:delay];
 }
 
 @end

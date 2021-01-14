@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GamePadViewController (GoogleAds)
+@interface GamePadViewController (GoogleAds) <GADBannerViewDelegate>
 @end
 
 NS_ASSUME_NONNULL_END
