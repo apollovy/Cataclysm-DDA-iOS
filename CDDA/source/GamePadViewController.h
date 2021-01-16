@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) IBOutlet JSButton* escapeButton;
 @property (nonatomic, weak) IBOutlet JSButton* returnButton;
 @property (nonatomic, weak) IBOutlet JSButton* tabButton;
+@property (nonatomic, weak) IBOutlet JSButton* backtabButton;
 
 @end
 

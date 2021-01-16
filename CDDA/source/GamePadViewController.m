@@ -73,12 +73,17 @@ BOOL pressed;
     {
         pressed = YES;
         SDL_Keycode sym;
+        SDL_Keymod modifier = KMOD_NONE;
         if (button == self.escapeButton)
             sym = SDLK_ESCAPE;
         else if (button == self.tabButton)
             sym = SDLK_TAB;
         else if (button == self.returnButton)
             sym = SDLK_RETURN;
+        else if (button == self.backtabButton) {
+            sym = SDLK_TAB;
+            modifier = KMOD_SHIFT;
+        }
         else
         {
             NSLog(@"Unknown button pressed: %@", button);
@@ -86,6 +91,7 @@ BOOL pressed;
         }
         SDL_Event event = {.type=SDL_KEYDOWN};
         event.key.keysym.sym = sym;
+        event.key.keysym.mod = modifier;
         SDL_PushEvent(&event);
     }
 }
