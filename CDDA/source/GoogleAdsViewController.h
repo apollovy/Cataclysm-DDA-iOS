@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GoogleAdsViewController : UIViewController <GADBannerViewDelegate>
+
++(GADAdSize)getBannerSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

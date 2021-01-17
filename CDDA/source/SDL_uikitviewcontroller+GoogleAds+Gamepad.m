@@ -12,43 +12,59 @@
 
 #import "SDL_uikitviewcontroller+GoogleAds+Gamepad.h"
 
-// FIXME: main menu is not showing. Maybe I'm to start showing ads in a
-//  minute or 2? Or maybe replace banner on iPhones to full-screen. Or
-//  possibly hide after click for 5 minutes and then move to opposite side of
-//  screen?
 @implementation SDL_uikitviewcontroller (GoogleAdsAndGamepad)
+
+#pragma Common
+
+// determined empirically, on lesser sizes main menu run away screaming
+static CGSize _minSize = {632, 368};
+
+- (void)viewDidAppear:(BOOL)animated {
+    if ([self shouldHaveTopBanner])
+        [self initBannerWindow];
+    [self initScreenControlsWindow:animated];
+}
 
 #pragma GoogleAds
 
-- (void)viewDidAppear:(BOOL)animated {
+- (CGFloat) getBannerHeight {
+    return [GoogleAdsViewController getBannerSize].size.height;
+}
+
+- (BOOL) shouldHaveTopBanner{
+    CGFloat mainScreenHeight = UIScreen.mainScreen.bounds.size
+                                       .height - [self getBannerHeight];
+    return (mainScreenHeight >= _minSize.height);
+}
+
+- (void)initBannerWindow {
     _adsWindow = [UIWindow new];
     _adsWindow.rootViewController = [GoogleAdsViewController new];
     _adsWindow.hidden = NO;
-
-    [self updateBannerWindow];
-    [self _GamePadViewDidAppear:animated];
+    [self updateBannerAndMainWindows];
 }
 
-- (void)updateBannerWindow {
+- (void)updateBannerAndMainWindows {
     UIScreen* screen = [UIScreen mainScreen];
     UIWindow* mainWindow = self.view.window;
-    CGFloat width = screen.bounds.size.width;
-    CGFloat bannerHeight = kGADAdSizeBanner.size.height;
+    CGFloat screenWidth = screen.bounds.size.width;
+    CGFloat bannerHeight = [self getBannerHeight];
 
     _adsWindow.frame = (CGRect)
             {
                     .origin = CGPointZero,
                     .size = (CGSize)
                             {
-                                    width,
+                                    screenWidth,
                                     bannerHeight,
                             }
             };
 
+    CGFloat freeScreenHeight = screen.bounds.size.height - bannerHeight;
     mainWindow.frame = (CGRect)
             {
                     .origin = (CGPoint) {0, bannerHeight},
-                    .size = screen.bounds.size,  // will go out of screen bounds
+                    .size = (CGSize){screenWidth, freeScreenHeight},
             };
 }
 
@@ -56,7 +72,7 @@ UIWindow* _adsWindow;
 
 #pragma Gamepad
 
-- (void)_GamePadViewDidAppear:(__unused BOOL)animated {
+- (void)initScreenControlsWindow:(__unused BOOL)animated {
     _gamepadViewController = [[GamePadViewController alloc] init];
     [self.view addSubview:_gamepadViewController.view];
     [self updateFrame];
@@ -69,7 +85,8 @@ UIWindow* _adsWindow;
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
-    [self updateBannerWindow];
+    if ([self shouldHaveTopBanner])
+        [self updateBannerAndMainWindows];
     [self updateFrame];
 }
 
@@ -78,8 +95,7 @@ UIWindow* _adsWindow;
     CGFloat viewHeight = viewFrame.size.height;
     CGRect frame = [_gamepadViewController.view frame];
     frame.origin.x = frame.origin.y = 0;
-    frame.size.height = viewHeight - self.keyboardHeight - kGADAdSizeBanner
-            .size.height;  // because of the overflow
+    frame.size.height = viewHeight - self.keyboardHeight;
     frame.size.width = viewFrame.size.width;
     [_gamepadViewController.view setFrame:frame];
 }

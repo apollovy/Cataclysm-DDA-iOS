@@ -11,6 +11,9 @@
 
 @implementation GoogleAdsViewController
 
++(GADAdSize)getBannerSize{
+    return kGADAdSizeLeaderboard;
+}
 
 - (void)viewDidAppear:(BOOL)animated {
     // only add banner once
@@ -29,7 +32,8 @@
 {
     // In this case, we instantiate the banner with desired ad size.
     self.bannerView = [[GADBannerView alloc]
-                                      initWithAdSize:kGADAdSizeBanner];
+                                      initWithAdSize:[GoogleAdsViewController
+                                      getBannerSize]];
     GADBannerView* bannerView = self.bannerView;
     bannerView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:bannerView];
