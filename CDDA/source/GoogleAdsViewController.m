@@ -1,5 +1,5 @@
 //
-//  SDL_uikitviewcontroller+GoogleAds.m
+//  GoogleAdsViewController.m
 //  CDDA
 //
 //  Created by Аполлов Юрий Андреевич on 05/01/2021.
@@ -7,9 +7,9 @@
 //
 @import GoogleMobileAds;
 
-#import "GamePadViewController+GoogleAds.h"
+#import "GoogleAdsViewController.h"
 
-@implementation GamePadViewController (GoogleAds)
+@implementation GoogleAdsViewController
 
 
 - (void)viewDidAppear:(BOOL)animated {
