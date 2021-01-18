@@ -158,5 +158,7 @@ DerivedData/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,fastlane,appcode+all,cocoapods
+
 *.dSYM
 *.ipa
+Screenshots for app store/generated
