@@ -12,6 +12,8 @@
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
 		B50B48F625A255A300628243 /* GamePadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50B48F525A255A300628243 /* GamePadViewController.xib */; };
+		B5174A6425C0ADC40085F2C7 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */; };
+		B5174A6925C0ADE60085F2C7 /* UIControlsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5174A6825C0ADE60085F2C7 /* UIControlsPageViewController.swift */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
@@ -532,6 +534,9 @@
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
 		B50B48F525A255A300628243 /* GamePadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GamePadViewController.xib; sourceTree = "<group>"; };
+		B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIControls.storyboard; sourceTree = "<group>"; };
+		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5174A6825C0ADE60085F2C7 /* UIControlsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlsPageViewController.swift; sourceTree = "<group>"; };
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
@@ -1290,12 +1295,13 @@
 		B56E7E25259BA51C000701EF /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
-				B5FD200325A57A9F00CE613D /* mo */,
 				B57201D5259293EF003D2A20 /* Assets.xcassets */,
-				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
-				B50B447725A24F5600628243 /* JSDPad */,
-				B5072BB8259CE883002479DB /* gfx */,
 				B5B01B95259BEF650023AB00 /* data */,
+				B5072BB8259CE883002479DB /* gfx */,
+				B50B447725A24F5600628243 /* JSDPad */,
+				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
+				B5FD200325A57A9F00CE613D /* mo */,
+				B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */,
 			);
 			path = Bundle;
 			sourceTree = "<group>";
@@ -1352,20 +1358,22 @@
 		B5B01B98259BF0480023AB00 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
+				D0AA2E7DEFFB416C943711CA /* GoogleAdsViewController.h */,
+				D0AA23E1879343C61DB376D5 /* GoogleAdsViewController.m */,
 				B5F97C66259C08B500C5A910 /* main.mm */,
+				B5174A6825C0ADE60085F2C7 /* UIControlsPageViewController.swift */,
 				B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */,
 				B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */,
+				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.h */,
+				D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m */,
 				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
 				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
 				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5B01B99259BF0690023AB00 /* version.h */,
-				D0AA2E7DEFFB416C943711CA /* GoogleAdsViewController.h */,
-				D0AA23E1879343C61DB376D5 /* GoogleAdsViewController.m */,
-				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.h */,
-				D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2044,6 +2052,7 @@
 					};
 					B57201C8259293EE003D2A20 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -2247,6 +2256,7 @@
 				B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */,
 				B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
+				B5174A6425C0ADC40085F2C7 /* UIControls.storyboard in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
 				B559EDB325AB85A50065602D /* dPad-Left@2x.png in Resources */,
 				B559EDBC25AB86C70065602D /* button@2x.png in Resources */,
@@ -2487,6 +2497,7 @@
 				D0AA213CD1F2B4EAB47B45B2 /* gamemode_tutorial.cpp in Sources */,
 				D0AA270E5A8E35E671C98CC6 /* gamemode.cpp in Sources */,
 				D0AA222B3B77A11815903203 /* gates.cpp in Sources */,
+				B5174A6925C0ADE60085F2C7 /* UIControlsPageViewController.swift in Sources */,
 				D0AA22971E8BC260700A12B8 /* grab.cpp in Sources */,
 				D0AA2F1A8CD56434E069FEBA /* handle_action.cpp in Sources */,
 				D0AA2707F458C92E13B3F0A7 /* handle_liquid.cpp in Sources */,
@@ -2723,6 +2734,7 @@
 		B538050425AC6DB200AEB52A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -2754,6 +2766,7 @@
 		B538050525AC6DB200AEB52A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -2926,6 +2939,7 @@
 			baseConfigurationReference = C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
@@ -2943,6 +2957,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
 					./Libraries/SDL_mixer,
@@ -2962,6 +2979,7 @@
 			baseConfigurationReference = 6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
@@ -2979,6 +2997,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
 					./Libraries/SDL_mixer,

@@ -27,11 +27,11 @@ static CGSize _minSize = {632, 368};
 
 #pragma GoogleAds
 
-- (CGFloat) getBannerHeight {
+- (CGFloat)getBannerHeight {
     return [GoogleAdsViewController getBannerSize].size.height;
 }
 
-- (BOOL) shouldHaveTopBanner{
+- (BOOL)shouldHaveTopBanner {
     CGFloat mainScreenHeight = UIScreen.mainScreen.bounds.size
                                        .height - [self getBannerHeight];
     return (mainScreenHeight >= _minSize.height);
@@ -64,7 +64,7 @@ static CGSize _minSize = {632, 368};
     mainWindow.frame = (CGRect)
             {
                     .origin = (CGPoint) {0, bannerHeight},
-                    .size = (CGSize){screenWidth, freeScreenHeight},
+                    .size = (CGSize) {screenWidth, freeScreenHeight},
             };
 }
 
@@ -73,7 +73,9 @@ UIWindow* _adsWindow;
 #pragma Gamepad
 
 - (void)initScreenControlsWindow:(__unused BOOL)animated {
-    _gamepadViewController = [[GamePadViewController alloc] init];
+    _gamepadViewController = [
+            [UIStoryboard storyboardWithName:@"UIControls" bundle:nil]
+            instantiateInitialViewController];
     [self.view addSubview:_gamepadViewController.view];
     [self updateFrame];
 

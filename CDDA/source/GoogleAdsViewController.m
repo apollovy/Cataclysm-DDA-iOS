@@ -97,4 +97,25 @@ GADBannerView* _bannerView;
                                                       afterDelay:delay];
 }
 
+- (void)adView:(GADBannerView *)adView
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    // Gets the domain from which the error came.
+    NSString *errorDomain = error.domain;
+    // Gets the error code. See
+    // https://developers.google.com/admob/ios/api/reference/Enums/GADErrorCode
+    // for a list of possible codes.
+    long errorCode = error.code;
+    // Gets an error message.
+    // For example "Account not approved yet". See
+    // https://support.google.com/admob/answer/9905175 for explanations of
+    // common errors.
+    NSString *errorMessage = error.localizedDescription;
+    // Gets the underlyingError, if available.
+    NSError *underlyingError = error.userInfo[NSUnderlyingErrorKey];
+    NSLog(@"Received error with domain: %@, code: %ld, message: %@, "
+          @"underLyingError: %@",
+            errorDomain, errorCode, errorMessage,
+            underlyingError.localizedDescription);
+}
+
 @end
