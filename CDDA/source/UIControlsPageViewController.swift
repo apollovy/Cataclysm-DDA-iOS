@@ -91,17 +91,19 @@ extension UIControlsPageViewController: UIPageViewControllerDataSource {
         
         return orderedViewControllers[nextIndex]
     }
+// FIXME: on iPad buttons look bad. I believe the same is true for all non-notched devices.
 
-    func presentationCount(for: UIPageViewController) -> Int {
-        return orderedViewControllers.count
-    }
-    
-    func presentationIndex(for: UIPageViewController) -> Int {
-        guard let firstViewController = viewControllers?.first,
-              let firstViewControllerIndex = orderedViewControllers.firstIndex(of: firstViewController) else {
-            return 0
-        }
-        
-        return firstViewControllerIndex
-    }
+// without pages count overlay looks better to me.
+//    func presentationCount(for: UIPageViewController) -> Int {
+//        return orderedViewControllers.count
+//    }
+//
+//    func presentationIndex(for: UIPageViewController) -> Int {
+//        guard let firstViewController = viewControllers?.first,
+//              let firstViewControllerIndex = orderedViewControllers.firstIndex(of: firstViewController) else {
+//            return 0
+//        }
+//
+//        return firstViewControllerIndex
+//    }
 }

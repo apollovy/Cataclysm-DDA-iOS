@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zAG-vD-k51">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -16,11 +16,24 @@
                         <viewControllerLayoutGuide type="bottom" id="hdE-Yk-7Q6"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" alpha="0.25" contentMode="scaleToFill" id="kaD-Gk-wUo">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDM-uw-JwE" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="856" y="10" width="50" height="50"/>
+                                <rect key="frame" x="666" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="qxh-xb-VIF">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-JE-h1D">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <accessibility key="accessibilityConfiguration" identifier="Escape button">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -28,17 +41,25 @@
                                     <constraint firstAttribute="width" constant="50" id="Pj5-Zw-Pz2"/>
                                     <constraint firstAttribute="height" constant="50" id="XHW-W3-ORi"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="ESC"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="wNQ-Un-7eH" id="5My-r3-wAb"/>
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-Ci-YR7" userLabel="Return button" customClass="JSButton">
-                                <rect key="frame" x="856" y="368" width="50" height="50"/>
+                                <rect key="frame" x="666" y="354" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Tf-ng-lTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sy-Of-nem" userLabel="⮐">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <accessibility key="accessibilityConfiguration" identifier="Return button">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -46,17 +67,25 @@
                                     <constraint firstAttribute="height" constant="50" id="4af-I6-caP"/>
                                     <constraint firstAttribute="width" constant="50" id="Yde-tp-O5M"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="⮐"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="wNQ-Un-7eH" id="I9h-tq-cR4"/>
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfo-53-aKY" userLabel="Tab button" customClass="JSButton">
                                 <rect key="frame" x="90" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="lnu-Yf-piP">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbA-Qg-YBC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <accessibility key="accessibilityConfiguration" identifier="Tab button">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -64,17 +93,25 @@
                                     <constraint firstAttribute="width" constant="50" id="JnR-6V-Zul"/>
                                     <constraint firstAttribute="height" constant="50" id="Q3r-ga-Cb9"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="TAB"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="wNQ-Un-7eH" id="3XE-zb-Rly"/>
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-Tz-vvS" userLabel="Backtab button" customClass="JSButton">
                                 <rect key="frame" x="20" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="4jo-KP-7fm">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peb-AI-eAl">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <accessibility key="accessibilityConfiguration" identifier="Backtab button">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -82,17 +119,18 @@
                                     <constraint firstAttribute="height" constant="50" id="RrF-Nn-dT4"/>
                                     <constraint firstAttribute="width" constant="50" id="YNh-yJ-2WO"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel.text" value="BTAB"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="button"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImagePressed" value="button-pressed"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="wNQ-Un-7eH" id="BdV-8d-Wks"/>
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-8M-Ibc" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="40" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="264" width="150" height="150"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="EIe-Bo-yYH">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                                 <accessibility key="accessibilityConfiguration" identifier="GamePad">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -110,12 +148,12 @@
                             <constraint firstItem="VHc-Tz-vvS" firstAttribute="top" secondItem="kaD-Gk-wUo" secondAttribute="top" constant="10" id="7nE-TC-sRS"/>
                             <constraint firstItem="LpT-Ci-YR7" firstAttribute="bottom" secondItem="eCw-8M-Ibc" secondAttribute="bottom" constant="-10" id="9bg-BJ-Rls" userLabel="bottomMargin = Return button.bottom"/>
                             <constraint firstItem="PDM-uw-JwE" firstAttribute="top" secondItem="VHc-Tz-vvS" secondAttribute="top" id="GIm-dF-48m"/>
-                            <constraint firstItem="PDM-uw-JwE" firstAttribute="trailing" secondItem="kaD-Gk-wUo" secondAttribute="trailingMargin" constant="40" id="L23-MM-RKt"/>
+                            <constraint firstItem="PDM-uw-JwE" firstAttribute="trailing" secondItem="kaD-Gk-wUo" secondAttribute="trailingMargin" id="L23-MM-RKt"/>
                             <constraint firstItem="eCw-8M-Ibc" firstAttribute="bottom" secondItem="kaD-Gk-wUo" secondAttribute="bottom" id="YLr-dX-unk" userLabel="bottomMargin = GamePad.bottom"/>
-                            <constraint firstItem="eCw-8M-Ibc" firstAttribute="leading" secondItem="kaD-Gk-wUo" secondAttribute="leading" constant="40" id="dOb-9o-j1a"/>
+                            <constraint firstItem="eCw-8M-Ibc" firstAttribute="leading" secondItem="VHc-Tz-vvS" secondAttribute="leading" id="dOb-9o-j1a"/>
                             <constraint firstItem="LpT-Ci-YR7" firstAttribute="trailing" secondItem="PDM-uw-JwE" secondAttribute="trailing" id="uhY-Hy-lQH"/>
                             <constraint firstItem="Zfo-53-aKY" firstAttribute="leading" secondItem="VHc-Tz-vvS" secondAttribute="trailing" constant="20" id="zS8-dV-YoV"/>
-                            <constraint firstItem="VHc-Tz-vvS" firstAttribute="leading" secondItem="kaD-Gk-wUo" secondAttribute="leadingMargin" constant="-40" id="zTx-fa-0dL"/>
+                            <constraint firstItem="VHc-Tz-vvS" firstAttribute="leading" secondItem="kaD-Gk-wUo" secondAttribute="leadingMargin" id="zTx-fa-0dL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -138,11 +176,11 @@
                         <viewControllerLayoutGuide type="bottom" id="5Yg-AA-4cZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="Afy-pK-tNl">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="icon_1024x1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="jIa-Ys-JRn">
-                                <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -162,8 +200,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button" width="16" height="16"/>
-        <image name="button-pressed" width="16" height="16"/>
+        <image name="button-pressed.png" width="60" height="60"/>
+        <image name="button.png" width="60" height="60"/>
+        <image name="dPad-None.png" width="114" height="114"/>
         <image name="icon_1024x1024.png" width="1024" height="1024"/>
     </resources>
 </document>
