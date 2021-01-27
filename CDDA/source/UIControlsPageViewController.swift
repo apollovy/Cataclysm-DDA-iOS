@@ -27,7 +27,7 @@ class UIControlsPageViewController : UIPageViewController
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         return [
             self.newViewController("Default"),
-            self.newViewController("Screen 1"),
+            self.newViewController("Inventory"),
 //                self.newViewController("C3"),
         ]
     }()

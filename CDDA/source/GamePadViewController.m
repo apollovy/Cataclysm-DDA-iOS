@@ -72,26 +72,91 @@ BOOL pressed;
     if (!pressed)
     {
         pressed = YES;
-        SDL_Keycode sym;
+        SDL_Event event = {};
+        SDL_Keycode sym = SDLK_UNKNOWN;
         SDL_Keymod modifier = KMOD_NONE;
+        
+        // special symbols
         if (button == self.escapeButton)
             sym = SDLK_ESCAPE;
-        else if (button == self.tabButton)
-            sym = SDLK_TAB;
         else if (button == self.returnButton)
             sym = SDLK_RETURN;
+        else if (button == self.tabButton)
+            sym = SDLK_TAB;
         else if (button == self.backtabButton) {
             sym = SDLK_TAB;
             modifier = KMOD_SHIFT;
         }
-        else
-        {
-            NSLog(@"Unknown button pressed: %@", button);
-            return;
+        
+        if (sym) {
+            event.type = SDL_KEYDOWN;
+            event.key.keysym.sym = sym;
+            event.key.keysym.mod = modifier;
         }
-        SDL_Event event = {.type=SDL_KEYDOWN};
-        event.key.keysym.sym = sym;
-        event.key.keysym.mod = modifier;
+        else { // letters
+            event.text.type = SDL_TEXTINPUT;
+            NSString* text = @"";
+            
+            // FIXME: this should be done using dict
+            // small letters
+            if (button == self.aButton)
+                text = @"a";
+            else if (button == self.cButton)
+                text = @"c";
+            else if (button == self.dButton)
+                text = @"d";
+            else if (button == self.eButton)
+                text = @"e";
+            else if (button == self.fButton)
+                text = @"f";
+            else if (button == self.iButton)
+                text = @"i";
+            else if (button == self.mButton)
+                text = @"m";
+            else if (button == self.rButton)
+                text = @"r";
+            else if (button == self.sButton)
+                text = @"s";
+            else if (button == self.tButton)
+                text = @"t";
+            else if (button == self.wButton)
+                text = @"w";
+            
+            // punctuation
+            else if (button == self.dotButton)
+                text = @".";
+            else if (button == self.slashButton)
+                text = @"/";
+
+
+            // digits
+            else if (button == self._1Button)
+                text = @"1";
+            else if (button == self._2Button)
+                text = @"2";
+            else if (button == self._3Button)
+                text = @"3";
+            else if (button == self._4Button)
+                text = @"4";
+            else if (button == self._5Button)
+                text = @"5";
+            else if (button == self._6Button)
+                text = @"6";
+            else if (button == self._7Button)
+                text = @"7";
+            else if (button == self._8Button)
+                text = @"8";
+            else if (button == self._9Button)
+                text = @"9";
+
+            if (!text.length)
+            {
+                NSLog(@"Unknown button pressed: %@", button);
+                return;
+            }
+            
+            SDL_utf8strlcpy(event.text.text, [text UTF8String], SDL_arraysize(event.text.text));
+        }
         SDL_PushEvent(&event);
     }
 }
