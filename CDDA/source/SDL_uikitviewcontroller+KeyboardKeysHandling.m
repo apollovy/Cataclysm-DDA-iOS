@@ -9,6 +9,8 @@
 
 #include "SDL_uikitviewcontroller+KeyboardKeysHandling.h"
 
+#include "SDL_char_utils.h"
+
 
 @implementation SDL_uikitviewcontroller (KeyboardKeysHandling)
 NSDictionary* _keyCommandsTranslator;
@@ -96,8 +98,7 @@ NSDictionary* _keyCommandsTranslator;
             event.type = SDL_KEYDOWN;
             event.key.keysym.sym = keyCode;
         } else {
-            event.text.type = SDL_TEXTINPUT;
-            SDL_utf8strlcpy(event.text.text, [key UTF8String], SDL_arraysize(event.text.text));
+            event = SDL_write_text_to_event(event, key);
         }
         SDL_PushEvent(&event);
     }

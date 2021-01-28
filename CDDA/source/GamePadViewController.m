@@ -9,6 +9,7 @@
 
 #import "JSDPad.h"
 
+#import "SDL_char_utils.h"
 #import "GamePadViewController.h"
 
 
@@ -107,8 +108,7 @@ BOOL pressed;
             event.key.keysym.mod = modifier;
         }
         else {  // regular symbols
-            event.text.type = SDL_TEXTINPUT;
-            SDL_utf8strlcpy(event.text.text, [text UTF8String], SDL_arraysize(event.text.text));
+            event = SDL_write_text_to_event(event, text);
         }
         SDL_PushEvent(&event);
     }

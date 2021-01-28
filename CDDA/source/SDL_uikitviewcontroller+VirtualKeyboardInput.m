@@ -7,6 +7,8 @@
 //
 #include "SDL_events.h"
 
+#include "SDL_char_utils.h"
+
 #import "SDL_uikitviewcontroller+VirtualKeyboardInput.h"
 
 @implementation SDL_uikitviewcontroller (VirtualKeyboardInput)
@@ -26,8 +28,7 @@
         sdlDownEvent.key.keysym.scancode = SDL_SCANCODE_RETURN;
     }
     else {
-        sdlDownEvent.text.type = SDL_TEXTINPUT;
-        SDL_utf8strlcpy(sdlDownEvent.text.text, [string UTF8String], SDL_arraysize(sdlDownEvent.text.text));
+        sdlDownEvent = SDL_write_text_to_event(sdlDownEvent, string);
     }
     SDL_PushEvent(&sdlDownEvent);
 
