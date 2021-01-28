@@ -334,19 +334,6 @@
                             <constraint firstItem="VHc-Tz-vvS" firstAttribute="leading" secondItem="kaD-Gk-wUo" secondAttribute="leadingMargin" id="zTx-fa-0dL"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="backtabButton" destination="VHc-Tz-vvS" id="8Dp-ct-kAw"/>
-                        <outlet property="dotButton" destination="wzc-xo-rYR" id="oZa-7K-pRl"/>
-                        <outlet property="escapeButton" destination="PDM-uw-JwE" id="5NQ-QT-c7z"/>
-                        <outlet property="fButton" destination="luo-8k-3bU" id="N6z-5s-kmn"/>
-                        <outlet property="mButton" destination="4tb-GR-bfg" id="WvK-7f-SYf"/>
-                        <outlet property="rButton" destination="zit-ds-Vki" id="nTX-2k-b6p"/>
-                        <outlet property="returnButton" destination="LpT-Ci-YR7" id="hQT-pM-9sQ"/>
-                        <outlet property="sButton" destination="cgD-VX-9V2" id="91m-AN-dSW"/>
-                        <outlet property="tButton" destination="NL5-bH-qox" id="rdd-UU-25x"/>
-                        <outlet property="tabButton" destination="Zfo-53-aKY" id="Xn5-A1-U55"/>
-                        <outlet property="wButton" destination="Uvw-uC-ptI" id="Qib-DO-Q9l"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNZ-is-eXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -905,26 +892,6 @@
                             <constraint firstItem="YHN-gK-wBI" firstAttribute="top" secondItem="gDi-w5-ovu" secondAttribute="bottom" constant="10" id="zwe-SJ-6vV"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="_1Button" destination="fDc-vl-wWW" id="1UB-Rd-PKv"/>
-                        <outlet property="_2Button" destination="Y4Y-TU-aIv" id="UNo-Am-KH9"/>
-                        <outlet property="_3Button" destination="q5e-aI-tgr" id="8Hq-ZK-i2c"/>
-                        <outlet property="_4Button" destination="9Wh-Uw-JR5" id="ZXc-FM-cbO"/>
-                        <outlet property="_5Button" destination="wkN-Sx-mgC" id="Pgf-zO-RFH"/>
-                        <outlet property="_6Button" destination="yVZ-CD-Bas" id="vk1-Iy-Wem"/>
-                        <outlet property="_7Button" destination="l8S-WZ-MN0" id="mqY-Ef-wLT"/>
-                        <outlet property="_8Button" destination="DLc-rv-liw" id="DGa-rL-KcH"/>
-                        <outlet property="_9Button" destination="AbC-Yp-wlK" id="gn5-fA-8O2"/>
-                        <outlet property="aButton" destination="hCQ-wC-a5K" id="zYe-FB-hat"/>
-                        <outlet property="cButton" destination="vuV-Rb-QkS" id="RR3-LX-27l"/>
-                        <outlet property="dButton" destination="DvP-F1-qjF" id="cOA-jc-BZ6"/>
-                        <outlet property="eButton" destination="7fk-1N-ys8" id="57N-Aj-WWL"/>
-                        <outlet property="escapeButton" destination="YHN-gK-wBI" id="hRN-QN-ist"/>
-                        <outlet property="iButton" destination="Bvb-6G-gMh" id="ujY-hx-jiN"/>
-                        <outlet property="returnButton" destination="gD9-Vd-LZY" id="f9H-4e-NVf"/>
-                        <outlet property="slashButton" destination="Ldh-20-u4G" id="Sws-mQ-gOk"/>
-                        <outlet property="wButton" destination="JRg-40-PrQ" id="arJ-yj-rzA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTp-YF-TWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
