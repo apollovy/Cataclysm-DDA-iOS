@@ -14,6 +14,8 @@ class UIControlsPageViewController : UIPageViewController
     {
         super.viewDidLoad()
         
+        self.view.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(zoomInOut)))
+        
         dataSource = self
         
         if let firstViewController = orderedViewControllers.first {
@@ -36,13 +38,36 @@ class UIControlsPageViewController : UIPageViewController
         return UIStoryboard(name: "UIControls", bundle: nil) .
             instantiateViewController(withIdentifier: name)
     }
+    
+// MARK: scaling
+    
+    var lastScaled: Date = Date(timeIntervalSince1970: 0)
+    
+    @objc func zoomInOut(_ gestureRecognizer : UIPinchGestureRecognizer) {
+        let now = Date()
+        
+        guard gestureRecognizer.view != nil else { return }
+        guard now >= (lastScaled + 0.5) else {return}
+        
+        lastScaled = now
+        var text: NSString
+        
+        if gestureRecognizer.scale > 1
+        {
+            text = "z"
+        } else if gestureRecognizer.scale < 1 {
+            text = "Z"
+        } else {
+            return
+        }
+        gestureRecognizer.scale = 1
+        SDL_send_text_event(text as String)
+    }
 }
 
 // MARK: UIPageViewControllerDataSource
 
 extension UIControlsPageViewController: UIPageViewControllerDataSource {
-    
-    
     func pageViewController(
         _ pageViewController: UIPageViewController,
         viewControllerBefore viewController: UIViewController
@@ -91,8 +116,7 @@ extension UIControlsPageViewController: UIPageViewControllerDataSource {
         
         return orderedViewControllers[nextIndex]
     }
-// FIXME: on iPad buttons look bad. I believe the same is true for all non-notched devices.
-
+    
 // without pages count overlay looks better to me.
 //    func presentationCount(for: UIPageViewController) -> Int {
 //        return orderedViewControllers.count
