@@ -10,7 +10,7 @@
         <!--Default View Controller-->
         <scene sceneID="GDc-Dk-THq">
             <objects>
-                <viewController storyboardIdentifier="Default" id="wNQ-Un-7eH" userLabel="Default View Controller" customClass="GamePadViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Battle" id="wNQ-Un-7eH" userLabel="Default View Controller" customClass="GamePadViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qKh-cc-B8u"/>
                         <viewControllerLayoutGuide type="bottom" id="hdE-Yk-7Q6"/>
@@ -306,7 +306,34 @@
                                     <outlet property="delegate" destination="wNQ-Un-7eH" id="I6s-vz-4gH"/>
                                 </connections>
                             </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx1-nI-Yku" userLabel="* button" customClass="JSButton">
+                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="iIm-8m-gox">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5e-Hy-tI9">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="GQ3-xt-gJB"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ogc-eF-dSd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="wNQ-Un-7eH" id="jER-Kp-XyA"/>
+                                </connections>
+                            </view>
                         </subviews>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Uvw-uC-ptI" firstAttribute="leading" secondItem="zit-ds-Vki" secondAttribute="trailing" constant="8" id="1eD-Cy-LXs"/>
                             <constraint firstItem="Zfo-53-aKY" firstAttribute="top" secondItem="VHc-Tz-vvS" secondAttribute="top" id="4bi-3k-NVi"/>
@@ -321,8 +348,10 @@
                             <constraint firstItem="NL5-bH-qox" firstAttribute="leading" secondItem="zit-ds-Vki" secondAttribute="leading" id="Qxd-bO-Ljw"/>
                             <constraint firstItem="zit-ds-Vki" firstAttribute="top" secondItem="Uvw-uC-ptI" secondAttribute="top" id="Wvp-cz-4Hp"/>
                             <constraint firstItem="eCw-8M-Ibc" firstAttribute="bottom" secondItem="kaD-Gk-wUo" secondAttribute="bottom" id="YLr-dX-unk" userLabel="bottomMargin = GamePad.bottom"/>
+                            <constraint firstItem="Jx1-nI-Yku" firstAttribute="leading" secondItem="NL5-bH-qox" secondAttribute="leading" id="Ygf-ki-t97"/>
                             <constraint firstItem="NL5-bH-qox" firstAttribute="top" secondItem="wzc-xo-rYR" secondAttribute="top" id="byz-0h-E8x"/>
                             <constraint firstItem="eCw-8M-Ibc" firstAttribute="leading" secondItem="VHc-Tz-vvS" secondAttribute="leading" id="dOb-9o-j1a"/>
+                            <constraint firstItem="Jx1-nI-Yku" firstAttribute="top" secondItem="cgD-VX-9V2" secondAttribute="top" id="dy9-hJ-Jmm"/>
                             <constraint firstItem="Uvw-uC-ptI" firstAttribute="top" secondItem="4tb-GR-bfg" secondAttribute="top" id="lsu-1B-8uT"/>
                             <constraint firstItem="luo-8k-3bU" firstAttribute="trailing" secondItem="LpT-Ci-YR7" secondAttribute="trailing" id="qF7-lh-scL"/>
                             <constraint firstItem="LpT-Ci-YR7" firstAttribute="top" secondItem="luo-8k-3bU" secondAttribute="bottom" constant="8" id="qIs-Pk-dGu"/>
@@ -337,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNZ-is-eXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="-186"/>
+            <point key="canvasLocation" x="827" y="-186"/>
         </scene>
         <!--Controls Page View Controller-->
         <scene sceneID="5E4-C9-dlB">
@@ -875,16 +904,122 @@
                                     <outlet property="delegate" destination="1BJ-SQ-Knh" id="lhD-lZ-ODf"/>
                                 </connections>
                             </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-lv-uqU" userLabel="Tab button" customClass="JSButton">
+                                <rect key="frame" x="130" y="8" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="gbv-BS-2EI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-dZ-apa">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="s7o-ko-KzZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="sOj-ao-yMg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="wNQ-Un-7eH" id="IDa-OS-zhZ"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-2Y-gPb" userLabel="Backtab button" customClass="JSButton">
+                                <rect key="frame" x="60" y="8" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="IAe-Bp-W8J">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-zK-kv4">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="O19-8r-sDS"/>
+                                    <constraint firstAttribute="width" constant="50" id="VGE-Mf-sns"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="wNQ-Un-7eH" id="tA6-rk-vIU"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsU-dw-649" userLabel="&gt; button" customClass="JSButton">
+                                <rect key="frame" x="758" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="na3-10-s3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-CJ-4oq">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FuK-7v-hes"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zli-Za-OBc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="nFi-L3-u9x"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5m-up-hm8" userLabel="&lt; button" customClass="JSButton">
+                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-uO-sma">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-ll-rXt">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DQb-3V-dU2"/>
+                                    <constraint firstAttribute="height" constant="50" id="RlF-2x-KNo"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="XJ1-cL-skU"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="wnr-lv-uqU" firstAttribute="top" secondItem="aW0-2Y-gPb" secondAttribute="top" id="707-lz-xR5"/>
                             <constraint firstItem="7fk-1N-ys8" firstAttribute="trailing" secondItem="Ldh-20-u4G" secondAttribute="trailing" id="83c-JL-VkX"/>
                             <constraint firstItem="gD9-Vd-LZY" firstAttribute="top" secondItem="Ldh-20-u4G" secondAttribute="bottom" constant="8" id="AsI-mB-rFB"/>
+                            <constraint firstItem="gD9-Vd-LZY" firstAttribute="leading" secondItem="hsU-dw-649" secondAttribute="trailing" constant="8" id="CHG-hG-onq"/>
                             <constraint firstItem="Ldh-20-u4G" firstAttribute="top" secondItem="7fk-1N-ys8" secondAttribute="bottom" constant="8" id="Frj-WW-wt1"/>
+                            <constraint firstItem="aW0-2Y-gPb" firstAttribute="leading" secondItem="ado-ot-PFc" secondAttribute="leading" id="G5c-8B-paP"/>
+                            <constraint firstItem="hsU-dw-649" firstAttribute="leading" secondItem="y5m-up-hm8" secondAttribute="trailing" constant="8" id="Gap-o1-vle"/>
                             <constraint firstItem="gD9-Vd-LZY" firstAttribute="bottom" secondItem="ado-ot-PFc" secondAttribute="bottom" constant="-10" id="HE7-Gh-BNn"/>
                             <constraint firstItem="YHN-gK-wBI" firstAttribute="trailing" secondItem="icS-5a-H1g" secondAttribute="trailingMargin" id="HP7-Tu-Lbc"/>
                             <constraint firstItem="gD9-Vd-LZY" firstAttribute="leading" secondItem="YHN-gK-wBI" secondAttribute="leading" id="JRq-ND-e21"/>
+                            <constraint firstItem="wnr-lv-uqU" firstAttribute="leading" secondItem="aW0-2Y-gPb" secondAttribute="trailing" constant="20" id="Pcd-8o-ngO"/>
                             <constraint firstItem="ado-ot-PFc" firstAttribute="leading" secondItem="icS-5a-H1g" secondAttribute="leadingMargin" id="Qe0-7d-fZH"/>
                             <constraint firstItem="Ldh-20-u4G" firstAttribute="leading" secondItem="gD9-Vd-LZY" secondAttribute="leading" id="TNh-QA-shM"/>
+                            <constraint firstItem="y5m-up-hm8" firstAttribute="top" secondItem="hsU-dw-649" secondAttribute="top" id="YHc-QH-Bof"/>
+                            <constraint firstItem="hsU-dw-649" firstAttribute="top" secondItem="gD9-Vd-LZY" secondAttribute="top" id="dRM-Cu-vFV"/>
+                            <constraint firstItem="aW0-2Y-gPb" firstAttribute="top" secondItem="gDi-w5-ovu" secondAttribute="bottom" constant="8" id="dSO-6E-KN7"/>
                             <constraint firstItem="7fk-1N-ys8" firstAttribute="leading" secondItem="Ldh-20-u4G" secondAttribute="leading" id="qGz-dJ-fNk"/>
                             <constraint firstItem="ado-ot-PFc" firstAttribute="bottom" secondItem="icS-5a-H1g" secondAttribute="bottom" id="qKh-I0-vdc" userLabel="bottomMargin = GamePad.bottom"/>
                             <constraint firstItem="evo-st-Td5" firstAttribute="centerX" secondItem="icS-5a-H1g" secondAttribute="centerX" id="soH-9p-MPG"/>
@@ -895,7 +1030,479 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTp-YF-TWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863" y="-186"/>
+            <point key="canvasLocation" x="1490" y="-186"/>
+        </scene>
+        <!--View View Controller-->
+        <scene sceneID="097-dA-oJY">
+            <objects>
+                <viewController storyboardIdentifier="View" id="mgi-Zq-ipg" userLabel="View View Controller" customClass="GamePadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UcU-VT-OWl"/>
+                        <viewControllerLayoutGuide type="bottom" id="wIh-2C-jeG"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" alpha="0.25" contentMode="scaleToFill" id="Fd8-TI-tt4">
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-SI-Zpj" userLabel="Escape button" customClass="JSButton">
+                                <rect key="frame" x="816" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-1l-ayI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyh-hU-GEr">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ayc-rG-aF5"/>
+                                    <constraint firstAttribute="height" constant="50" id="gGD-5V-LyU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="x0M-kd-dVj"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcX-7V-Sr2" userLabel="Return button" customClass="JSButton">
+                                <rect key="frame" x="816" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="MKr-E2-7z7">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-7i-67E" userLabel="⮐">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0de-Rn-O7Z"/>
+                                    <constraint firstAttribute="height" constant="50" id="EY5-Qc-TIh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="y2r-qi-Y2P"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-EG-sBP" userLabel="Tab button" customClass="JSButton">
+                                <rect key="frame" x="130" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Je0-wv-QnX">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-LR-zoy">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3vB-kF-Mit"/>
+                                    <constraint firstAttribute="width" constant="50" id="ec0-hK-7DI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="H39-b5-8GZ"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-ZZ-6WE" userLabel="Backtab button" customClass="JSButton">
+                                <rect key="frame" x="60" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="j95-Bl-h2B">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU7-n1-uEj">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="WWz-fc-gBk"/>
+                                    <constraint firstAttribute="height" constant="50" id="XLj-B9-BxZ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="LVA-Tw-RNf"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-tx-7Tn" userLabel="GamePad" customClass="JSDPad">
+                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-FG-EBt">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9c9-1z-vAb"/>
+                                    <constraint firstAttribute="width" constant="150" id="Mxz-a2-AGc"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="1N0-AY-QEy"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVo-37-X5g" userLabel="V button" customClass="JSButton">
+                                <rect key="frame" x="758" y="194" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-w1-aU7">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="V" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O65-Jp-4bW">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7CQ-GU-xHG"/>
+                                    <constraint firstAttribute="width" constant="50" id="wKB-HS-ZeE"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="rpP-ZO-aKI"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-2e-z33" userLabel="x button" customClass="JSButton">
+                                <rect key="frame" x="758" y="310" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Qc-6H-vpw">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIw-3z-3c7">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UPc-Fj-d5w"/>
+                                    <constraint firstAttribute="height" constant="50" id="u2C-bw-WKF"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="uJh-0W-Ak1"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI8-4J-Clg" userLabel="m button" customClass="JSButton">
+                                <rect key="frame" x="816" y="252" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="LCZ-SV-xKr">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kds-uf-NW0">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2nZ-q9-xef"/>
+                                    <constraint firstAttribute="height" constant="50" id="8hr-Ee-HXR"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="E8c-uD-7hm"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yju-xA-hi3" userLabel="&gt; button" customClass="JSButton">
+                                <rect key="frame" x="758" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="n0K-ZD-BD4">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuR-dJ-aIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Nnb-XL-AW2"/>
+                                    <constraint firstAttribute="height" constant="50" id="f5M-EH-che"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="y1h-KI-0pn"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-Qz-nPa" userLabel="e button" customClass="JSButton">
+                                <rect key="frame" x="758" y="252" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="HqQ-EI-GIt">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atL-Ak-NAg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1dz-vy-MhA"/>
+                                    <constraint firstAttribute="height" constant="50" id="quJ-Uz-eHs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="CXM-Hd-Bdw"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vu5-mv-sRi" userLabel="! button" customClass="JSButton">
+                                <rect key="frame" x="700" y="252" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-xX-fFg">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coe-MM-82H">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0Fn-mr-80U"/>
+                                    <constraint firstAttribute="height" constant="50" id="2vQ-h8-hqe"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="PP5-GE-rwm"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhn-Jb-jpS" userLabel="T button" customClass="JSButton">
+                                <rect key="frame" x="700" y="310" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="8AI-rZ-Pjh">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRY-DV-P2g">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AsQ-ST-l5B"/>
+                                    <constraint firstAttribute="width" constant="50" id="yqK-s8-c0B"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="2nD-hZ-4z7"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojh-Zu-3kQ" userLabel="&lt; button" customClass="JSButton">
+                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="njL-9E-uvl">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3X-0H-ezb">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2DM-5T-pnJ"/>
+                                    <constraint firstAttribute="width" constant="50" id="Cjg-fC-q6C"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="5yx-pN-RYb"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-sJ-ewe" userLabel="' button" customClass="JSButton">
+                                <rect key="frame" x="642" y="368" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tcj-JG-Bst">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC7-fm-AJA">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ypm-oC-nEP"/>
+                                    <constraint firstAttribute="height" constant="50" id="cm9-ra-ceQ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="1fl-ol-LBE"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebO-XF-T75" userLabel="| button" customClass="JSButton">
+                                <rect key="frame" x="642" y="310" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRx-0z-m3A">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="|" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCO-zE-SQC">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="74e-kR-XiN"/>
+                                    <constraint firstAttribute="width" constant="50" id="R2P-eh-AD1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="rZh-vt-fFw"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sem-sr-ueQ" userLabel="&quot; button" customClass="JSButton">
+                                <rect key="frame" x="816" y="194" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZdN-6U-9Gd">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf6-8R-NYa">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="75s-gg-aBr"/>
+                                    <constraint firstAttribute="width" constant="50" id="wvO-OD-ZLA"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="wNQ-Un-7eH" id="fdm-lJ-BQv"/>
+                                </connections>
+                            </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUI-bF-9mT" userLabel="f button" customClass="JSButton">
+                                <rect key="frame" x="816" y="310" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="button.png" highlightedImage="button-pressed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mea-jU-f03">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mv-41-5vb">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qke-4Z-Vko"/>
+                                    <constraint firstAttribute="width" constant="50" id="vyr-QH-RdD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="wNQ-Un-7eH" id="S7A-Pd-F2w"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ck6-tx-7Tn" firstAttribute="bottom" secondItem="Fd8-TI-tt4" secondAttribute="bottom" id="4II-ot-zie" userLabel="bottomMargin = GamePad.bottom"/>
+                            <constraint firstItem="fVo-37-X5g" firstAttribute="leading" secondItem="OiH-2e-z33" secondAttribute="trailing" constant="-50" id="8Te-NO-fCr"/>
+                            <constraint firstItem="DI8-4J-Clg" firstAttribute="top" secondItem="Sem-sr-ueQ" secondAttribute="bottom" constant="8" id="AY9-4J-Yez"/>
+                            <constraint firstItem="NcX-7V-Sr2" firstAttribute="bottom" secondItem="ck6-tx-7Tn" secondAttribute="bottom" constant="-10" id="AdO-Iw-jaD" userLabel="bottomMargin = Return button.bottom"/>
+                            <constraint firstItem="nhn-Jb-jpS" firstAttribute="top" secondItem="OiH-2e-z33" secondAttribute="top" id="DHZ-wu-xng"/>
+                            <constraint firstItem="yju-xA-hi3" firstAttribute="leading" secondItem="OiH-2e-z33" secondAttribute="leading" id="EOO-UI-Yxw"/>
+                            <constraint firstItem="ojh-Zu-3kQ" firstAttribute="top" secondItem="yju-xA-hi3" secondAttribute="top" id="HEv-E3-ApU"/>
+                            <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="top" secondItem="Fd8-TI-tt4" secondAttribute="top" constant="10" id="LI1-C1-xlu"/>
+                            <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="leading" secondItem="Fd8-TI-tt4" secondAttribute="leadingMargin" id="MbC-JW-Nlu"/>
+                            <constraint firstItem="ojh-Zu-3kQ" firstAttribute="leading" secondItem="UBy-sJ-ewe" secondAttribute="trailing" constant="8" id="NE5-Z0-qtJ"/>
+                            <constraint firstItem="ck6-tx-7Tn" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="leading" id="OgC-P1-7Oz"/>
+                            <constraint firstItem="7fk-Qz-nPa" firstAttribute="leading" secondItem="vu5-mv-sRi" secondAttribute="trailing" constant="8" id="QfG-9x-J8G"/>
+                            <constraint firstItem="7fk-Qz-nPa" firstAttribute="leading" secondItem="OiH-2e-z33" secondAttribute="leading" id="RaJ-pp-RXK"/>
+                            <constraint firstItem="HUI-bF-9mT" firstAttribute="top" secondItem="OiH-2e-z33" secondAttribute="top" id="SEI-kN-SEa"/>
+                            <constraint firstItem="7fk-Qz-nPa" firstAttribute="top" secondItem="DI8-4J-Clg" secondAttribute="top" id="SPe-Nc-G0k"/>
+                            <constraint firstItem="Sem-sr-ueQ" firstAttribute="leading" secondItem="DI8-4J-Clg" secondAttribute="leading" id="Ud7-0d-w0c"/>
+                            <constraint firstItem="OiH-2e-z33" firstAttribute="top" secondItem="fVo-37-X5g" secondAttribute="top" constant="116" id="Xft-2Z-9a6"/>
+                            <constraint firstItem="nhn-Jb-jpS" firstAttribute="leading" secondItem="vu5-mv-sRi" secondAttribute="leading" id="Yb1-Xo-x0G"/>
+                            <constraint firstItem="fVo-37-X5g" firstAttribute="trailing" secondItem="NcX-7V-Sr2" secondAttribute="trailing" constant="-58" id="dEl-GK-3a4"/>
+                            <constraint firstItem="UBy-sJ-ewe" firstAttribute="top" secondItem="ojh-Zu-3kQ" secondAttribute="top" id="fdk-Ck-Qs0"/>
+                            <constraint firstItem="rlg-EG-sBP" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="trailing" constant="20" id="gkF-lc-dLW"/>
+                            <constraint firstItem="yju-xA-hi3" firstAttribute="top" secondItem="NcX-7V-Sr2" secondAttribute="top" id="kN8-bA-K2r"/>
+                            <constraint firstItem="ebO-XF-T75" firstAttribute="leading" secondItem="UBy-sJ-ewe" secondAttribute="leading" id="kX7-gX-XfR"/>
+                            <constraint firstItem="vu5-mv-sRi" firstAttribute="top" secondItem="7fk-Qz-nPa" secondAttribute="top" id="lyG-SF-vfb"/>
+                            <constraint firstItem="DI8-4J-Clg" firstAttribute="leading" secondItem="fVo-37-X5g" secondAttribute="leading" constant="58" id="mDA-pb-KQ2"/>
+                            <constraint firstItem="fVo-37-X5g" firstAttribute="top" secondItem="DI8-4J-Clg" secondAttribute="bottom" constant="-108" id="mQP-bu-YtX"/>
+                            <constraint firstItem="NcX-7V-Sr2" firstAttribute="trailing" secondItem="1Vg-SI-Zpj" secondAttribute="trailing" id="nfJ-q5-ifm"/>
+                            <constraint firstItem="NcX-7V-Sr2" firstAttribute="top" secondItem="fVo-37-X5g" secondAttribute="bottom" constant="124" id="pTk-XO-hXd"/>
+                            <constraint firstItem="ojh-Zu-3kQ" firstAttribute="leading" secondItem="nhn-Jb-jpS" secondAttribute="leading" id="q5c-1s-rbC"/>
+                            <constraint firstItem="rlg-EG-sBP" firstAttribute="top" secondItem="7Oo-ZZ-6WE" secondAttribute="top" id="qkC-X7-2g6"/>
+                            <constraint firstItem="HUI-bF-9mT" firstAttribute="leading" secondItem="DI8-4J-Clg" secondAttribute="leading" id="rWv-u9-hnR"/>
+                            <constraint firstItem="1Vg-SI-Zpj" firstAttribute="top" secondItem="7Oo-ZZ-6WE" secondAttribute="top" id="uQS-Bm-fDK"/>
+                            <constraint firstItem="ebO-XF-T75" firstAttribute="top" secondItem="nhn-Jb-jpS" secondAttribute="top" id="vhE-8V-Guh"/>
+                            <constraint firstItem="1Vg-SI-Zpj" firstAttribute="trailing" secondItem="Fd8-TI-tt4" secondAttribute="trailingMargin" id="zDo-Uf-W4K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-kc-v2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="-186"/>
         </scene>
     </scenes>
     <resources>
