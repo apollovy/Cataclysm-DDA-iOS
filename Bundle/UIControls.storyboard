@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mgi-Zq-ipg">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hdE-Yk-7Q6"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" alpha="0.25" contentMode="scaleToFill" id="kaD-Gk-wUo">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDM-uw-JwE" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="816" y="10" width="50" height="50"/>
+                                <rect key="frame" x="597" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-JE-h1D">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-Ci-YR7" userLabel="Return button" customClass="JSButton">
-                                <rect key="frame" x="816" y="368" width="50" height="50"/>
+                                <rect key="frame" x="597" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sy-Of-nem" userLabel="⮐">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfo-53-aKY" userLabel="Tab button" customClass="JSButton">
-                                <rect key="frame" x="130" y="10" width="50" height="50"/>
+                                <rect key="frame" x="90" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbA-Qg-YBC">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -84,7 +84,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-Tz-vvS" userLabel="Backtab button" customClass="JSButton">
-                                <rect key="frame" x="60" y="10" width="50" height="50"/>
+                                <rect key="frame" x="20" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peb-AI-eAl">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -105,7 +105,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-8M-Ibc" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="EIe-Bo-yYH">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -121,7 +121,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luo-8k-3bU" userLabel="f button" customClass="JSButton">
-                                <rect key="frame" x="816" y="310" width="50" height="50"/>
+                                <rect key="frame" x="597" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbr-n8-LkK">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -142,7 +142,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzc-xo-rYR" userLabel="Dot button" customClass="JSButton">
-                                <rect key="frame" x="758" y="310" width="50" height="50"/>
+                                <rect key="frame" x="539" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-B1-VDz">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -166,7 +166,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-VX-9V2" userLabel="s button" customClass="JSButton">
-                                <rect key="frame" x="758" y="368" width="50" height="50"/>
+                                <rect key="frame" x="539" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7S-e5-UMr">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -190,7 +190,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tb-GR-bfg" userLabel="m button" customClass="JSButton">
-                                <rect key="frame" x="816" y="252" width="50" height="50"/>
+                                <rect key="frame" x="597" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKm-ro-qgA">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -214,7 +214,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvw-uC-ptI" userLabel="w button" customClass="JSButton">
-                                <rect key="frame" x="758" y="252" width="50" height="50"/>
+                                <rect key="frame" x="539" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="w" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXc-vS-J1a">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -238,7 +238,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zit-ds-Vki" userLabel="r button" customClass="JSButton">
-                                <rect key="frame" x="700" y="252" width="50" height="50"/>
+                                <rect key="frame" x="481" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-YC-NVX">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -262,7 +262,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL5-bH-qox" userLabel="t button" customClass="JSButton">
-                                <rect key="frame" x="700" y="310" width="50" height="50"/>
+                                <rect key="frame" x="481" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="t" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-rd-68c">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -286,7 +286,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx1-nI-Yku" userLabel="* button" customClass="JSButton">
-                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <rect key="frame" x="481" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5e-Hy-tI9">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -354,11 +354,11 @@
                         <viewControllerLayoutGuide type="bottom" id="R0l-dP-5PS"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" alpha="0.25" contentMode="scaleToFill" id="icS-5a-H1g">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ado-ot-PFc" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-SQ-mkF">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -374,7 +374,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-gK-wBI" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="816" y="10" width="50" height="50"/>
+                                <rect key="frame" x="597" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exe-jT-5fU">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -395,7 +395,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gD9-Vd-LZY" userLabel="Return button" customClass="JSButton">
-                                <rect key="frame" x="816" y="368" width="50" height="50"/>
+                                <rect key="frame" x="597" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiM-wT-qRp">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -416,7 +416,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-20-u4G" userLabel="/ button" customClass="JSButton">
-                                <rect key="frame" x="816" y="310" width="50" height="50"/>
+                                <rect key="frame" x="597" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-ZF-pbU">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -437,7 +437,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evo-st-Td5" userLabel="Inventory management buttons">
-                                <rect key="frame" x="302" y="0.0" width="322" height="206"/>
+                                <rect key="frame" x="172.5" y="0.0" width="322" height="206"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-TU-aIv" userLabel="2 button" customClass="JSButton">
                                         <rect key="frame" x="194" y="136" width="50" height="50"/>
@@ -817,7 +817,7 @@
                                 </constraints>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-1N-ys8" userLabel="e button" customClass="JSButton">
-                                <rect key="frame" x="816" y="252" width="50" height="50"/>
+                                <rect key="frame" x="597" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMZ-8L-aH0">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -838,7 +838,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-lv-uqU" userLabel="Tab button" customClass="JSButton">
-                                <rect key="frame" x="130" y="8" width="50" height="50"/>
+                                <rect key="frame" x="90" y="8" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-dZ-apa">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -859,7 +859,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-2Y-gPb" userLabel="Backtab button" customClass="JSButton">
-                                <rect key="frame" x="60" y="8" width="50" height="50"/>
+                                <rect key="frame" x="20" y="8" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-zK-kv4">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -880,7 +880,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsU-dw-649" userLabel="&gt; button" customClass="JSButton">
-                                <rect key="frame" x="758" y="368" width="50" height="50"/>
+                                <rect key="frame" x="539" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-CJ-4oq">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -904,7 +904,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5m-up-hm8" userLabel="&lt; button" customClass="JSButton">
-                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <rect key="frame" x="481" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-ll-rXt">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -966,11 +966,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wIh-2C-jeG"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="Fd8-TI-tt4">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-SI-Zpj" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="816" y="10" width="50" height="50"/>
+                                <rect key="frame" x="597" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyh-hU-GEr">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -991,7 +991,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-EG-sBP" userLabel="Tab button" customClass="JSButton">
-                                <rect key="frame" x="130" y="10" width="50" height="50"/>
+                                <rect key="frame" x="90" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-LR-zoy">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1012,7 +1012,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-ZZ-6WE" userLabel="Backtab button" customClass="JSButton">
-                                <rect key="frame" x="60" y="10" width="50" height="50"/>
+                                <rect key="frame" x="20" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU7-n1-uEj">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1033,7 +1033,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" alpha="0.25" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-tx-7Tn" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-FG-EBt">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -1049,7 +1049,7 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="8JH-KK-t87" userLabel="Buttons Stack View">
-                                <rect key="frame" x="791" y="140" width="75" height="288"/>
+                                <rect key="frame" x="572" y="87" width="75" height="288"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-Ba-zeS" userLabel="Misc button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                         <rect key="frame" x="37" y="0.0" width="38" height="34"/>
@@ -1104,6 +1104,7 @@
                                         </state>
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="eY7-CY-XKd"/>
+                                            <outlet property="menuView" destination="oeO-Gg-n4M" id="1ID-t7-zY0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvM-pp-jx7" userLabel="Interact button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -1157,10 +1158,10 @@
                                 </constraints>
                             </stackView>
                             <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wys-zh-cet" userLabel="Menus view">
-                                <rect key="frame" x="555" y="0.0" width="236" height="428"/>
+                                <rect key="frame" x="292" y="0.0" width="280" height="375"/>
                                 <subviews>
                                     <stackView hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="7Zl-P2-tec" userLabel="Look menu stack view">
-                                        <rect key="frame" x="69" y="258" width="167" height="170"/>
+                                        <rect key="frame" x="113" y="205" width="167" height="170"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-4A-Xuc" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="118" y="0.0" width="49" height="34"/>
@@ -1216,16 +1217,16 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <scrollView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alc-G2-wLq" userLabel="Interact menu scroll view">
-                                        <rect key="frame" x="0.0" y="0.0" width="236" height="428"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="375"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwa-Bw-QAE" userLabel="Interact menu stack view wrapper">
-                                                <rect key="frame" x="0.0" y="0.0" width="236" height="408"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="408"/>
                                                 <subviews>
                                                     <stackView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="KSV-yz-DDO" userLabel="Interact menu stack view">
-                                                        <rect key="frame" x="0.0" y="0.0" width="236" height="408"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="408"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY5-Xk-Qjh" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="37" y="0.0" width="199" height="34"/>
+                                                                <rect key="frame" x="81" y="0.0" width="199" height="34"/>
                                                                 <state key="normal" title="e Examine nearby terrain">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1235,7 +1236,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-zS-lav" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="51" y="34" width="185" height="34"/>
+                                                                <rect key="frame" x="95" y="34" width="185" height="34"/>
                                                                 <state key="normal" title="s Smash nearby terrain">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1245,7 +1246,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC0-pd-coq" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="101" y="68" width="135" height="34"/>
+                                                                <rect key="frame" x="145" y="68" width="135" height="34"/>
                                                                 <state key="normal" title="&gt; Descend stairs">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1255,7 +1256,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-1i-RcC" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="112" y="102" width="124" height="34"/>
+                                                                <rect key="frame" x="156" y="102" width="124" height="34"/>
                                                                 <state key="normal" title="&lt; Ascend stairs">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1265,7 +1266,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYt-r8-kmV" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="135" y="136" width="101" height="34"/>
+                                                                <rect key="frame" x="179" y="136" width="101" height="34"/>
                                                                 <state key="normal" title="o Open door">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1275,7 +1276,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-O8-I0o" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="134" y="170" width="102" height="34"/>
+                                                                <rect key="frame" x="178" y="170" width="102" height="34"/>
                                                                 <state key="normal" title="c Close door">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1285,7 +1286,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsl-6o-px0" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="102" y="204" width="134" height="34"/>
+                                                                <rect key="frame" x="146" y="204" width="134" height="34"/>
                                                                 <state key="normal" title="C Chat with NPC">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1295,7 +1296,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-GZ-iXP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="45" y="238" width="191" height="34"/>
+                                                                <rect key="frame" x="89" y="238" width="191" height="34"/>
                                                                 <state key="normal" title="g Pickup nearby item(s)">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1305,7 +1306,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm7-Wl-Php" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="30" y="272" width="206" height="34"/>
+                                                                <rect key="frame" x="74" y="272" width="206" height="34"/>
                                                                 <state key="normal" title="G Grab something nearby">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1315,7 +1316,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-0k-8IJ" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="306" width="236" height="34"/>
+                                                                <rect key="frame" x="44" y="306" width="236" height="34"/>
                                                                 <state key="normal" title="\ Haul items along the ground">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1325,7 +1326,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="su3-cu-4E5" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="156" y="340" width="80" height="34"/>
+                                                                <rect key="frame" x="200" y="340" width="80" height="34"/>
                                                                 <state key="normal" title="B Butcher">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1335,7 +1336,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyS-tL-9CL" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="101" y="374" width="135" height="34"/>
+                                                                <rect key="frame" x="145" y="374" width="135" height="34"/>
                                                                 <state key="normal" title="O Zone activities">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -1351,9 +1352,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="KSV-yz-DDO" secondAttribute="trailing" id="3ze-4S-6nP"/>
                                                     <constraint firstItem="KSV-yz-DDO" firstAttribute="leading" secondItem="Gwa-Bw-QAE" secondAttribute="leading" id="MET-Re-Jd3"/>
-                                                    <constraint firstAttribute="width" constant="236" id="OYp-2L-H9X"/>
-                                                    <constraint firstAttribute="height" constant="408" id="eXg-Nm-udc"/>
+                                                    <constraint firstAttribute="width" constant="280" id="OYp-2L-H9X"/>
                                                     <constraint firstItem="KSV-yz-DDO" firstAttribute="top" secondItem="Gwa-Bw-QAE" secondAttribute="top" priority="750" id="pGZ-sN-cMO"/>
+                                                    <constraint firstAttribute="height" constant="408" id="rVM-wC-1kf"/>
                                                     <constraint firstAttribute="bottom" secondItem="KSV-yz-DDO" secondAttribute="bottom" id="rVf-GF-QRI"/>
                                                 </constraints>
                                             </view>
@@ -1365,15 +1366,189 @@
                                             <constraint firstAttribute="trailing" secondItem="Gwa-Bw-QAE" secondAttribute="trailing" id="rpC-MR-tBA"/>
                                         </constraints>
                                     </scrollView>
+                                    <scrollView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeO-Gg-n4M" userLabel="Inventory menu scroll view">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="375"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQv-Hd-u0C" userLabel="Inventory menu stack view wrapper">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="476"/>
+                                                <subviews>
+                                                    <stackView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-zr-VMN" userLabel="Inventory menu stack view">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="476"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-b2-ygR" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="149" y="0.0" width="131" height="34"/>
+                                                                <state key="normal" title="i Open inventory">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="mEB-DR-2nb"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="kFs-Uf-00y"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arx-BI-4Q2" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="1" y="34" width="279" height="34"/>
+                                                                <state key="normal" title="/ Advanced inventory management">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="fQQ-lr-4Az"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="gGM-D3-gwF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itl-U3-Oma" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="76" y="68" width="204" height="34"/>
+                                                                <state key="normal" title="+ Re-layer armor/clothing">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="RVk-8K-9Wk"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="cYQ-aj-o95"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-fe-UbN" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="61" y="102" width="219" height="34"/>
+                                                                <state key="normal" title="D Drop item to adjacent tile">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="IQq-4d-pWe"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="87D-Os-Uqq"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cml-1s-lAK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="186" y="136" width="94" height="34"/>
+                                                                <state key="normal" title="d Drop item">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="EEw-TU-BfJ"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="HQr-gg-tbw"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2O-c5-UIM" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="115" y="170" width="165" height="34"/>
+                                                                <state key="normal" title="I Compare two items">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="uoE-2O-RbE"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="a7z-dM-TuG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgW-Cc-7tV" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="86" y="204" width="194" height="34"/>
+                                                                <state key="normal" title="= Swap inventory letters">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="GPx-Ts-xwv"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="tmE-oN-376"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-ax-jFV" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="126" y="238" width="154" height="34"/>
+                                                                <state key="normal" title="a Apply or use item">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="jz4-a9-lcf"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="7lq-V0-A0z"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5b-ud-ybf" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="177" y="272" width="103" height="34"/>
+                                                                <state key="normal" title="W Wear item">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="UvR-0h-zpI"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="Ona-TE-YyL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDH-cF-ILP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="116" y="306" width="164" height="34"/>
+                                                                <state key="normal" title="T Take off worn item">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="JZV-Zn-bA9"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="LEj-mI-hIc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upz-QV-EZk" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="239" y="340" width="41" height="34"/>
+                                                                <state key="normal" title="E Eat">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="2t6-px-pMK"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="9Co-8B-isz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ms-CY-ZSx" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="223" y="374" width="57" height="34"/>
+                                                                <state key="normal" title="R Read">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="Jh0-Ev-VCS"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="FMI-4g-zld"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-oA-xhS" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="216" y="408" width="64" height="34"/>
+                                                                <state key="normal" title="w Wield">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="C0W-II-Iic"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="XXL-D3-RMX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-0o-qRZ" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="25" y="442" width="255" height="34"/>
+                                                                <state key="normal" title="U unload or empty wielded item">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="wya-N1-E5l"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="SkP-aJ-7hG"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="476" id="06e-h6-ZLH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DMv-zr-VMN" secondAttribute="trailing" id="0hN-dM-ccH"/>
+                                                    <constraint firstItem="DMv-zr-VMN" firstAttribute="leading" secondItem="AQv-Hd-u0C" secondAttribute="leading" id="RSR-ah-AaB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DMv-zr-VMN" secondAttribute="bottom" id="d5C-qo-mdF"/>
+                                                    <constraint firstItem="DMv-zr-VMN" firstAttribute="top" secondItem="AQv-Hd-u0C" secondAttribute="top" priority="750" id="dgb-lj-e7W"/>
+                                                    <constraint firstAttribute="width" constant="280" id="fkw-JO-2fh"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="AQv-Hd-u0C" secondAttribute="trailing" id="TuS-qM-IXF"/>
+                                            <constraint firstItem="AQv-Hd-u0C" firstAttribute="top" secondItem="oeO-Gg-n4M" secondAttribute="top" id="cqV-al-y3V"/>
+                                            <constraint firstItem="AQv-Hd-u0C" firstAttribute="leading" secondItem="oeO-Gg-n4M" secondAttribute="leading" id="mJq-LV-5ls"/>
+                                            <constraint firstAttribute="bottom" secondItem="AQv-Hd-u0C" secondAttribute="bottom" id="n7n-3k-71f"/>
+                                        </constraints>
+                                    </scrollView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oeO-Gg-n4M" secondAttribute="trailing" id="5PX-ZT-EQq"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="6o5-gM-b8s"/>
+                                    <constraint firstItem="oeO-Gg-n4M" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="QPe-eJ-2Cg"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="leading" id="VTH-fZ-uoJ"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="ZP3-xE-GCU"/>
                                     <constraint firstItem="7Zl-P2-tec" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="ZXJ-JI-d0A"/>
-                                    <constraint firstAttribute="width" constant="236" id="cjL-8K-53u"/>
+                                    <constraint firstAttribute="width" constant="280" id="cjL-8K-53u"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="trailing" secondItem="Wys-zh-cet" secondAttribute="trailing" id="eUO-yI-C5p"/>
+                                    <constraint firstAttribute="bottom" secondItem="oeO-Gg-n4M" secondAttribute="bottom" id="icn-lP-jNm"/>
                                     <constraint firstItem="7Zl-P2-tec" firstAttribute="trailing" secondItem="Wys-zh-cet" secondAttribute="trailing" id="l9L-2R-kCa"/>
+                                    <constraint firstItem="oeO-Gg-n4M" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="leading" id="nwD-9L-y4X"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1400,7 +1575,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-kc-v2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149.77511244377811" y="-189.59999999999999"/>
+            <point key="canvasLocation" x="149.67602591792658" y="-190.65420560747663"/>
         </scene>
     </scenes>
     <resources>

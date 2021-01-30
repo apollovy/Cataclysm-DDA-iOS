@@ -90,7 +90,16 @@ BOOL pressed;
         
         // special symbols
         if ([text  isEqual: @"ESC"])
+        {
+            if (!self.menusView.hidden)
+            {
+                [self hideMenus:^(BOOL completed){
+                    [self hideMenusView];
+                }];
+                return;
+            }
             sym = SDLK_ESCAPE;
+        }
         else if ([text isEqual:@"⮐"])
             sym = SDLK_RETURN;
         else if ([text isEqual:@"TAB"])
@@ -122,16 +131,54 @@ BOOL pressed;
 
 -(void)toggleMenu:(MenuButton*)sender
 {
+    if (!sender.menuView)
+    {
+        NSLog(@"No menu associated with MenuButton %@", sender);
+        return;
+    }
     BOOL shouldBeVisible = sender.menuView.hidden;
     
-    if (shouldBeVisible) // hide all menus before showing one
+    if (shouldBeVisible)
     {
-        NSArray<UIView*>* menuViews = [[self menusView] subviews];
-        for (UIView* menuView in menuViews)
-            menuView.hidden = YES;
+        if (sender.menuView.alpha)  // this is initial state, views are visible to easily interact with them in UIBuilder
+            sender.menuView.alpha = 0;
+        self.menusView.hidden = NO;
+        sender.menuView.hidden = NO;
+        
+        // hide all menus before showing one
+        [self hideMenus:nil];
+
+        [self toggleView:sender.menuView visibility:YES completion:nil];
+    } else {
+        [self toggleView:sender.menuView visibility:NO completion:^(BOOL finished){
+            [self hideMenusView];
+        }];
     }
-    [self menusView].hidden = !shouldBeVisible;
-    sender.menuView.hidden = !shouldBeVisible;
+}
+
+-(void)hideMenus:(void (^)(BOOL finished))completion
+{
+    NSArray<UIView*>* menuViews = [[self menusView] subviews];
+
+    for (UIView* menuView in menuViews)
+        if (menuView.alpha)
+            [self toggleView:menuView visibility:NO completion:completion];
+}
+
+-(void)hideMenusView
+{
+    self.menusView.hidden = YES;
+}
+
+-(void)toggleView:(UIView*)view visibility:(BOOL)shouldBeVisible completion:(void (^)(BOOL finished))completion
+{
+    [UIView animateWithDuration:0.4 animations:^{
+        view.alpha = shouldBeVisible;
+    } completion:^(BOOL finished){
+        view.hidden = !shouldBeVisible;
+        if (completion)
+            completion(finished);
+    }];
 }
 
 -(void)pressKey:(MenuButton*)sender
