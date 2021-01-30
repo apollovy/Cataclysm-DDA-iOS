@@ -1168,9 +1168,9 @@
                                         <rect key="frame" x="41" y="205" width="260" height="170"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-4A-Xuc" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="150" y="0.0" width="110" height="34"/>
+                                                <rect key="frame" x="146" y="0.0" width="114" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="; Look around">
+                                                <state key="normal" title="x Look around">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
