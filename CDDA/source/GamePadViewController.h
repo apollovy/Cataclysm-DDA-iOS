@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GamePadViewController : UIViewController
 
 -(IBAction)toggleMenu:(MenuButton*)sender;
+@property (weak, nonatomic) IBOutlet UIView* menusView;
 -(IBAction)pressKey:(MenuButton*)sender;
 
 @end

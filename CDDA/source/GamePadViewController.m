@@ -122,7 +122,15 @@ BOOL pressed;
 
 -(void)toggleMenu:(MenuButton*)sender
 {
-    sender.menuView.hidden = !sender.menuView.hidden;
+    BOOL shouldBeVisible = sender.menuView.hidden;
+    
+    if (shouldBeVisible) // hide all menus before showing one
+    {
+        NSArray<UIView*>* menuViews = [[self menusView] subviews];
+        for (UIView* menuView in menuViews)
+            menuView.hidden = YES;
+    }
+    sender.menuView.hidden = !shouldBeVisible;
 }
 
 -(void)pressKey:(MenuButton*)sender
