@@ -130,6 +130,7 @@ BOOL pressed;
         for (UIView* menuView in menuViews)
             menuView.hidden = YES;
     }
+    [self menusView].hidden = !shouldBeVisible;
     sender.menuView.hidden = !shouldBeVisible;
 }
 

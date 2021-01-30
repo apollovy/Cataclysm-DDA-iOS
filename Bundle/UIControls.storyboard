@@ -1156,7 +1156,7 @@
                                     <constraint firstAttribute="width" constant="75" id="Pra-px-yOE"/>
                                 </constraints>
                             </stackView>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wys-zh-cet" userLabel="Menus view">
+                            <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wys-zh-cet" userLabel="Menus view">
                                 <rect key="frame" x="555" y="0.0" width="236" height="428"/>
                                 <subviews>
                                     <stackView hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="7Zl-P2-tec" userLabel="Look menu stack view">
