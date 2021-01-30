@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import "JSButton.h"
+#import "CDDA-Swift.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GamePadViewController : UIViewController
+
+-(IBAction)toggleMenu:(MenuButton*)sender;
+-(IBAction)pressKey:(MenuButton*)sender;
+
 @end
 
 NS_ASSUME_NONNULL_END

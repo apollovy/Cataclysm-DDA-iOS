@@ -12,9 +12,9 @@
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
 		B5174A6425C0ADC40085F2C7 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */; };
-		B5174A6925C0ADE60085F2C7 /* UIControlsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5174A6825C0ADE60085F2C7 /* UIControlsPageViewController.swift */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
+		B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
@@ -537,7 +537,6 @@
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
 		B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIControls.storyboard; sourceTree = "<group>"; };
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
-		B5174A6825C0ADE60085F2C7 /* UIControlsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlsPageViewController.swift; sourceTree = "<group>"; };
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
@@ -545,6 +544,7 @@
 		B538050025AC6DB200AEB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B538050825AC6E3500AEB52A /* CDDAUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDAUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		B5436B4825C4D18D006579B4 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
 		B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
@@ -1370,7 +1370,9 @@
 				D0AA2E7DEFFB416C943711CA /* GoogleAdsViewController.h */,
 				D0AA23E1879343C61DB376D5 /* GoogleAdsViewController.m */,
 				B5F97C66259C08B500C5A910 /* main.mm */,
-				B5174A6825C0ADE60085F2C7 /* UIControlsPageViewController.swift */,
+				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
+				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
+				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
 				B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */,
 				B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */,
 				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.h */,
@@ -1380,8 +1382,6 @@
 				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5B01B99259BF0690023AB00 /* version.h */,
-				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
-				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2506,7 +2506,6 @@
 				D0AA213CD1F2B4EAB47B45B2 /* gamemode_tutorial.cpp in Sources */,
 				D0AA270E5A8E35E671C98CC6 /* gamemode.cpp in Sources */,
 				D0AA222B3B77A11815903203 /* gates.cpp in Sources */,
-				B5174A6925C0ADE60085F2C7 /* UIControlsPageViewController.swift in Sources */,
 				D0AA22971E8BC260700A12B8 /* grab.cpp in Sources */,
 				D0AA2F1A8CD56434E069FEBA /* handle_action.cpp in Sources */,
 				D0AA2707F458C92E13B3F0A7 /* handle_liquid.cpp in Sources */,
@@ -2530,6 +2529,7 @@
 				D0AA24FC1640C2D95399C9F2 /* iteminfo_query.cpp in Sources */,
 				D0AA29EAB884A78B64E5FFF6 /* itype.cpp in Sources */,
 				D0AA201C627C921E4D0BA426 /* iuse_actor.cpp in Sources */,
+				B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */,
 				D0AA27D9819A59AF3EA87472 /* iuse_software_kitten.cpp in Sources */,
 				D0AA229D3B3B3541A64C13A5 /* iuse_software_lightson.cpp in Sources */,
 				D0AA2E0E678D1AA8F1F32FC7 /* iuse_software_minesweeper.cpp in Sources */,
@@ -2852,7 +2852,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -2923,7 +2923,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

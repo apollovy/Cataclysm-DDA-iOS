@@ -8,6 +8,7 @@
 #import "SDL_events.h"
 
 #import "JSDPad.h"
+#import "JSButton.h"
 
 #import "SDL_char_utils.h"
 #import "GamePadViewController.h"
@@ -117,6 +118,19 @@ BOOL pressed;
 - (void)buttonReleased:(JSButton *)button
 {
     pressed = NO;
+}
+
+-(void)toggleMenu:(MenuButton*)sender
+{
+    sender.menuView.hidden = !sender.menuView.hidden;
+}
+
+-(void)pressKey:(MenuButton*)sender
+{
+    [self toggleMenu:sender];
+    NSString* text = sender.currentTitle;
+    NSString* firstSymbol = [text substringToIndex:1];
+    SDL_send_text_event(firstSymbol);
 }
 
 @end
