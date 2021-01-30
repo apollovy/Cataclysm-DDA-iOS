@@ -1541,7 +1541,7 @@
                                         </constraints>
                                     </scrollView>
                                     <stackView hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="yfA-Dz-Pkf" userLabel="Combat menu stack view">
-                                        <rect key="frame" x="0.0" y="103" width="301" height="272"/>
+                                        <rect key="frame" x="0.0" y="70" width="301" height="272"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXI-oR-EwK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="103" y="0.0" width="198" height="34"/>
@@ -1627,7 +1627,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-20-GCt" userLabel="Craft menu stack view">
-                                        <rect key="frame" x="139" y="239" width="162" height="136"/>
+                                        <rect key="frame" x="139" y="104" width="162" height="136"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-3G-dbv" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="56" y="0.0" width="106" height="34"/>
@@ -1673,7 +1673,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="3uG-Qh-1BN" userLabel="Info menu stack view">
-                                        <rect key="frame" x="140" y="171" width="161" height="204"/>
+                                        <rect key="frame" x="140" y="36" width="161" height="204"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-h4-KcP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="13" y="0.0" width="148" height="34"/>
@@ -1739,7 +1739,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="l6Z-Bs-2kE" userLabel="Misc menu stack view">
-                                        <rect key="frame" x="99" y="171" width="202" height="204"/>
+                                        <rect key="frame" x="99" y="2" width="202" height="204"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STE-m7-gS5" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="1" y="0.0" width="201" height="34"/>
@@ -1806,21 +1806,18 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="l6Z-Bs-2kE" secondAttribute="bottom" id="0Io-hY-M8U"/>
                                     <constraint firstAttribute="trailing" secondItem="oeO-Gg-n4M" secondAttribute="trailing" id="5PX-ZT-EQq"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="6o5-gM-b8s"/>
-                                    <constraint firstAttribute="bottom" secondItem="Pda-20-GCt" secondAttribute="bottom" id="JXh-zz-CII"/>
+                                    <constraint firstItem="l6Z-Bs-2kE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wys-zh-cet" secondAttribute="top" id="KEL-cL-TFn"/>
                                     <constraint firstItem="oeO-Gg-n4M" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="QPe-eJ-2Cg"/>
                                     <constraint firstAttribute="trailing" secondItem="3uG-Qh-1BN" secondAttribute="trailing" id="RRc-XR-5aT"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="leading" id="VTH-fZ-uoJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="yfA-Dz-Pkf" secondAttribute="bottom" id="Vc3-QR-OUk"/>
                                     <constraint firstAttribute="trailing" secondItem="yfA-Dz-Pkf" secondAttribute="trailing" id="WIa-WB-DBt"/>
                                     <constraint firstAttribute="trailing" secondItem="l6Z-Bs-2kE" secondAttribute="trailing" id="XTh-Or-6bD"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="ZP3-xE-GCU"/>
-                                    <constraint firstItem="7Zl-P2-tec" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="ZXJ-JI-d0A"/>
+                                    <constraint firstItem="7Zl-P2-tec" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Wys-zh-cet" secondAttribute="bottom" id="ZXJ-JI-d0A"/>
                                     <constraint firstAttribute="width" constant="301" id="cjL-8K-53u"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="trailing" secondItem="Wys-zh-cet" secondAttribute="trailing" id="eUO-yI-C5p"/>
-                                    <constraint firstAttribute="bottom" secondItem="3uG-Qh-1BN" secondAttribute="bottom" id="gAf-NB-Vtg"/>
                                     <constraint firstAttribute="bottom" secondItem="oeO-Gg-n4M" secondAttribute="bottom" id="icn-lP-jNm"/>
                                     <constraint firstItem="7Zl-P2-tec" firstAttribute="trailing" secondItem="Wys-zh-cet" secondAttribute="trailing" id="l9L-2R-kCa"/>
                                     <constraint firstItem="oeO-Gg-n4M" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="leading" id="nwD-9L-y4X"/>
@@ -1832,12 +1829,17 @@
                             <constraint firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="3kn-ay-nDr"/>
                             <constraint firstItem="ck6-tx-7Tn" firstAttribute="bottom" secondItem="Fd8-TI-tt4" secondAttribute="bottom" id="4II-ot-zie" userLabel="bottomMargin = GamePad.bottom"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="5Zl-9r-KFs"/>
+                            <constraint firstItem="l6Z-Bs-2kE" firstAttribute="centerY" secondItem="D2E-Ba-zeS" secondAttribute="centerY" priority="750" id="7Tq-ZY-M8X"/>
+                            <constraint firstItem="fT9-H1-Jfz" firstAttribute="centerY" secondItem="Pda-20-GCt" secondAttribute="centerY" id="9P1-as-Di3"/>
                             <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="top" secondItem="Fd8-TI-tt4" secondAttribute="top" constant="10" id="LI1-C1-xlu"/>
                             <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="leading" secondItem="Fd8-TI-tt4" secondAttribute="leadingMargin" id="MbC-JW-Nlu"/>
                             <constraint firstItem="ck6-tx-7Tn" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="leading" id="OgC-P1-7Oz"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="bottom" secondItem="ck6-tx-7Tn" secondAttribute="bottom" id="SYn-eI-zR9"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="trailing" secondItem="1Vg-SI-Zpj" secondAttribute="trailing" id="aYx-04-WaZ"/>
+                            <constraint firstItem="2sh-51-gTg" firstAttribute="centerY" secondItem="3uG-Qh-1BN" secondAttribute="centerY" id="dx5-GO-oDb"/>
+                            <constraint firstItem="7Zl-P2-tec" firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="6A1-2M-9GH" secondAttribute="centerY" priority="250" id="ff9-kG-qA1"/>
                             <constraint firstItem="rlg-EG-sBP" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="trailing" constant="20" id="gkF-lc-dLW"/>
+                            <constraint firstItem="JZL-ow-0sR" firstAttribute="centerY" secondItem="yfA-Dz-Pkf" secondAttribute="centerY" id="jVz-eM-ZK7"/>
                             <constraint firstItem="Wys-zh-cet" firstAttribute="top" secondItem="UcU-VT-OWl" secondAttribute="bottom" id="npo-cK-p4D"/>
                             <constraint firstItem="rlg-EG-sBP" firstAttribute="top" secondItem="7Oo-ZZ-6WE" secondAttribute="top" id="qkC-X7-2g6"/>
                             <constraint firstItem="1Vg-SI-Zpj" firstAttribute="top" secondItem="7Oo-ZZ-6WE" secondAttribute="top" id="uQS-Bm-fDK"/>
