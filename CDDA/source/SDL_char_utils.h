@@ -14,5 +14,7 @@
 
 SDL_Event SDL_write_text_to_event(SDL_Event event, NSString* text);
 void SDL_send_text_event(NSString* text);
+void SDL_send_keysym(SDL_KeyCode key, SDL_Keymod mods);
+void SDL_send_keysym_or_text(SDL_KeyCode sym, SDL_Keymod mods, NSString* text);
 
 #endif /* SDL_char_utils */

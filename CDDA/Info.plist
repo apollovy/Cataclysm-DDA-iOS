@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9615054841988249~3682406162</string>
 	<key>GATopBannerAdUnitId</key>

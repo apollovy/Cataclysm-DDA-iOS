@@ -7,7 +7,6 @@
 //
 #import "SDL_events.h"
 
-#import "JSDPad.h"
 #import "JSButton.h"
 
 #import "SDL_char_utils.h"
@@ -15,55 +14,6 @@
 
 
 @implementation GamePadViewController
-
-
-#pragma mark - JSDPadDelegate
-
-- (void)dPad:(JSDPad *)dPad didPressDirection:(JSDPadDirection)direction
-{
-    SDL_Event event = {};
-    switch (direction) {
-        case JSDPadDirectionNone:
-            break;
-        case JSDPadDirectionUp:
-            event.type = SDL_KEYDOWN;
-            event.key.keysym.sym = SDLK_UP;
-            break;
-        case JSDPadDirectionDown:
-            event.type = SDL_KEYDOWN;
-            event.key.keysym.sym = SDLK_DOWN;
-            break;
-        case JSDPadDirectionLeft:
-            event.type = SDL_KEYDOWN;
-            event.key.keysym.sym = SDLK_LEFT;
-            break;
-        case JSDPadDirectionRight:
-            event.type = SDL_KEYDOWN;
-            event.key.keysym.sym = SDLK_RIGHT;
-            break;
-        case JSDPadDirectionUpLeft:
-            event.type = SDL_TEXTINPUT;
-            event.text.text[0] = *"7";
-            break;
-        case JSDPadDirectionUpRight:
-            event.type = SDL_TEXTINPUT;
-            event.text.text[0] = *"9";
-            break;
-        case JSDPadDirectionDownLeft:
-            event.type = SDL_TEXTINPUT;
-            event.text.text[0] = *"1";
-            break;
-        case JSDPadDirectionDownRight:
-            event.type = SDL_TEXTINPUT;
-            event.text.text[0] = *"3";
-            break;
-        default:
-            event.type = SDL_TEXTINPUT;
-            event.text.text[0] = *"5";
-            break;
-    }
-    SDL_PushEvent(&event);
-}
 
 #pragma mark - JSDButtonDelegate
 
@@ -109,18 +59,7 @@ BOOL pressed;
             sym = SDLK_TAB;
             modifier = KMOD_SHIFT;
         }
-
-        SDL_Event event = {};
-
-        if (sym) {  // special symbols
-            event.type = SDL_KEYDOWN;
-            event.key.keysym.sym = sym;
-            event.key.keysym.mod = modifier;
-        }
-        else {  // regular symbols
-            event = SDL_write_text_to_event(event, text);
-        }
-        SDL_PushEvent(&event);
+        SDL_send_keysym_or_text(sym, modifier, text);
     }
 }
 
@@ -128,6 +67,9 @@ BOOL pressed;
 {
     pressed = NO;
 }
+
+
+#pragma mark - Menus handling
 
 -(void)toggleMenu:(MenuButton*)sender
 {
@@ -187,6 +129,83 @@ BOOL pressed;
     NSString* text = sender.currentTitle;
     NSString* firstSymbol = [text substringToIndex:1];
     SDL_send_text_event(firstSymbol);
+}
+
+
+#pragma mark - Zoom handling
+
+NSDate* lastZoom;
+
+-(void)zoom:(UIPinchGestureRecognizer*)sender
+{
+    NSDate* now = [NSDate date];
+    if (!lastZoom || ([[lastZoom dateByAddingTimeInterval:0.5] compare:now] == kCFCompareLessThan))
+    {
+        lastZoom = now;
+        NSString* text;
+        if (sender.scale > 1)
+            text = @"z";
+        else
+            text = @"Z";
+        sender.scale = 1;
+        SDL_send_text_event(text);
+    }
+}
+
+
+#pragma Gamepad buttons handling from recognizers
+
+NSDate* lastPress;
+
+-(void)holdGamepadButton:(UILongPressGestureRecognizer*)sender
+{
+    NSDate* now = [NSDate date];
+    if (!lastPress || ([[lastPress dateByAddingTimeInterval:0.5] compare:now] == kCFCompareLessThan))
+    {
+        lastPress = now;
+        [self _handleMovement:sender];
+    }
+}
+
+-(void)tapGamepadButton:(UITapGestureRecognizer*)sender
+{
+    [self _handleMovement:sender];
+}
+
+- (void)_handleMovement:(UIGestureRecognizer * _Nonnull)sender {
+    CGPoint touchLocation = [sender locationInView:sender.view];
+    int buttonWidth = sender.view.bounds.size.width / 3;
+    int buttonHeight = sender.view.bounds.size.height / 3;
+    int columnNumber = ((int) touchLocation.x) / buttonWidth;
+    int rowNumber = ((int) touchLocation.y) / buttonHeight;
+    
+    SDL_Keycode sym = SDLK_UNKNOWN;
+    NSString* text;
+    
+    if (rowNumber == 0 && columnNumber == 0)
+        text = @"7";
+    else if (rowNumber == 0 && columnNumber == 1)
+        sym = SDLK_UP;
+    else if (rowNumber == 0 && columnNumber == 2)
+        text = @"9";
+    else if (rowNumber == 1 && columnNumber == 0)
+        sym = SDLK_LEFT;
+    else if (rowNumber == 1 && columnNumber == 1)
+        text = @".";
+    else if (rowNumber == 1 && columnNumber == 2)
+        sym = SDLK_RIGHT;
+    else if (rowNumber == 2 && columnNumber == 0)
+        text = @"1";
+    else if (rowNumber == 2 && columnNumber == 1)
+        sym = SDLK_DOWN;
+    else if (rowNumber == 2 && columnNumber == 2)
+        text = @"3";
+    else
+    {
+        NSLog(@"Unknown button pressed in row %d, column %d", rowNumber, columnNumber);
+        return;
+    }
+    SDL_send_keysym_or_text(sym, KMOD_NONE, text);
 }
 
 @end

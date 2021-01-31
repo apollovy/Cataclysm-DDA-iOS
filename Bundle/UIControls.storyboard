@@ -1032,22 +1032,6 @@
                                     <outlet property="delegate" destination="mgi-Zq-ipg" id="LVA-Tw-RNf"/>
                                 </connections>
                             </view>
-                            <view opaque="NO" alpha="0.25" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck6-tx-7Tn" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="20" y="225" width="150" height="150"/>
-                                <subviews>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-FG-EBt">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="9c9-1z-vAb"/>
-                                    <constraint firstAttribute="width" constant="150" id="Mxz-a2-AGc"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="1N0-AY-QEy"/>
-                                </connections>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="8JH-KK-t87" userLabel="Buttons Stack View">
                                 <rect key="frame" x="572" y="87" width="75" height="288"/>
                                 <subviews>
@@ -1872,17 +1856,28 @@
                                     <constraint firstAttribute="trailing" secondItem="Pda-20-GCt" secondAttribute="trailing" id="qCb-mH-Epk"/>
                                 </constraints>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-FG-EBt">
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="j1s-lh-2pZ"/>
+                                    <constraint firstAttribute="width" constant="150" id="vvl-SJ-GDa"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bmE-fl-EP6" appends="YES" id="Jup-g3-bQ9"/>
+                                    <outletCollection property="gestureRecognizers" destination="et0-PU-Ud3" appends="YES" id="YIc-hb-xXj"/>
+                                </connections>
+                            </imageView>
                         </subviews>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="3kn-ay-nDr"/>
-                            <constraint firstItem="ck6-tx-7Tn" firstAttribute="bottom" secondItem="Fd8-TI-tt4" secondAttribute="bottom" id="4II-ot-zie" userLabel="bottomMargin = GamePad.bottom"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="5Zl-9r-KFs"/>
+                            <constraint firstItem="2dS-FG-EBt" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="leading" id="77w-9V-beS"/>
                             <constraint firstItem="l6Z-Bs-2kE" firstAttribute="centerY" secondItem="D2E-Ba-zeS" secondAttribute="centerY" priority="750" id="7Tq-ZY-M8X"/>
                             <constraint firstItem="fT9-H1-Jfz" firstAttribute="centerY" secondItem="Pda-20-GCt" secondAttribute="centerY" id="9P1-as-Di3"/>
                             <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="top" secondItem="Fd8-TI-tt4" secondAttribute="top" constant="10" id="LI1-C1-xlu"/>
                             <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="leading" secondItem="Fd8-TI-tt4" secondAttribute="leadingMargin" id="MbC-JW-Nlu"/>
-                            <constraint firstItem="ck6-tx-7Tn" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="leading" id="OgC-P1-7Oz"/>
-                            <constraint firstItem="8JH-KK-t87" firstAttribute="bottom" secondItem="ck6-tx-7Tn" secondAttribute="bottom" id="SYn-eI-zR9"/>
+                            <constraint firstAttribute="bottom" secondItem="2dS-FG-EBt" secondAttribute="bottom" id="UzC-aU-475"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="trailing" secondItem="1Vg-SI-Zpj" secondAttribute="trailing" id="aYx-04-WaZ"/>
                             <constraint firstItem="2sh-51-gTg" firstAttribute="centerY" secondItem="3uG-Qh-1BN" secondAttribute="centerY" id="dx5-GO-oDb"/>
                             <constraint firstItem="7Zl-P2-tec" firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="6A1-2M-9GH" secondAttribute="centerY" priority="250" id="ff9-kG-qA1"/>
@@ -1894,14 +1889,32 @@
                             <constraint firstItem="8JH-KK-t87" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="trailing" id="vRG-QG-a2i"/>
                             <constraint firstItem="1Vg-SI-Zpj" firstAttribute="trailing" secondItem="Fd8-TI-tt4" secondAttribute="trailingMargin" id="zDo-Uf-W4K"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4wb-5h-Zec" appends="YES" id="1J9-Az-90B"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="menusView" destination="Wys-zh-cet" id="wOl-Ig-v3S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-kc-v2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="4wb-5h-Zec" userLabel="Zoom Pinch Gesture Recognizer">
+                    <connections>
+                        <action selector="zoom:" destination="mgi-Zq-ipg" id="1bM-eP-t3K"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.10000000000000001" id="et0-PU-Ud3" userLabel="Gamepad Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="holdGamepadButton:" destination="mgi-Zq-ipg" id="KXa-9U-JTf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <tapGestureRecognizer delaysTouchesBegan="YES" id="bmE-fl-EP6" userLabel="Gamepad Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tapGamepadButton:" destination="mgi-Zq-ipg" id="X3G-Dg-mLc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="149.67602591792658" y="-190.65420560747663"/>
+            <point key="canvasLocation" x="148.87556221889056" y="-191.19999999999999"/>
         </scene>
     </scenes>
     <resources>

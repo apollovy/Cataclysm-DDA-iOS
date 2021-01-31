@@ -244,7 +244,6 @@
 		D0AA2AC2288AC29193DA319A /* creature_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2E9E8CCE98D88BD99CFD /* creature_tracker.cpp */; };
 		D0AA2AC767B2881964CAEE0A /* item_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2D43441A56CB4D281631 /* item_action.cpp */; };
 		D0AA2AEBB652F6042B17CD4C /* vehicle_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA295791EAA62CFE988757 /* vehicle_selector.cpp */; };
-		D0AA2AF3C523A4ECF17E34E4 /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA28057FE9A432F142CFCA /* JSDPad.m */; };
 		D0AA2AF3D0BCC443F26AAAD3 /* debug_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2CE2031F4E7DAE3A1859 /* debug_menu.cpp */; };
 		D0AA2B094BCFBAAB673AC447 /* computer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2BB93FA63A108AD2D887 /* computer.cpp */; };
 		D0AA2B0CC04C38C59838A29D /* teleport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2538366935F49C9987D4 /* teleport.cpp */; };
@@ -878,7 +877,6 @@
 		D0AA27EBA5443D81F222E0D4 /* weighted_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = weighted_list.h; path = "Libraries/Cataclysm-DDA/src/weighted_list.h"; sourceTree = SOURCE_ROOT; };
 		D0AA27F1E9C3F02C85895897 /* overmap_location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_location.h; path = "Libraries/Cataclysm-DDA/src/overmap_location.h"; sourceTree = SOURCE_ROOT; };
 		D0AA27F85357C88A33CA4F35 /* lightmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lightmap.h; path = "Libraries/Cataclysm-DDA/src/lightmap.h"; sourceTree = SOURCE_ROOT; };
-		D0AA28057FE9A432F142CFCA /* JSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSDPad.m; path = Libraries/JSController/Controller/JSDPad.m; sourceTree = SOURCE_ROOT; };
 		D0AA280645CD1A5B08816218 /* ballistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ballistics.h; path = "Libraries/Cataclysm-DDA/src/ballistics.h"; sourceTree = SOURCE_ROOT; };
 		D0AA280B1B896D651891AACF /* harvest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = harvest.cpp; path = "Libraries/Cataclysm-DDA/src/harvest.cpp"; sourceTree = SOURCE_ROOT; };
 		D0AA2817287C29A8AB6A4BF9 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = "Libraries/Cataclysm-DDA/src/json.h"; sourceTree = SOURCE_ROOT; };
@@ -1988,7 +1986,6 @@
 			isa = PBXGroup;
 			children = (
 				D0AA2004026776E97BA46FE8 /* JSButton.m */,
-				D0AA28057FE9A432F142CFCA /* JSDPad.m */,
 			);
 			name = JSDPad;
 			path = CDDA/source/JSDPad;
@@ -2322,7 +2319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm -r \"${CODESIGNING_FOLDER_PATH}\"/data/osx\n";
+			shellScript = "if [[ -d \"${CODESIGNING_FOLDER_PATH}\"/data/osx ]]; then\n    rm -r \"${CODESIGNING_FOLDER_PATH}\"/data/osx\nfi\n";
 		};
 		B5E6FF9525A3AA9B003FB37F /* Touch gfx dir to always have its copying to the product */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2695,7 +2692,6 @@
 				D0AA2E93DAF4A5E0540D1F9D /* wish.cpp in Sources */,
 				D0AA2502FE9F62733FF44EA3 /* worldfactory.cpp in Sources */,
 				D0AA2806054C585B62B33033 /* JSButton.m in Sources */,
-				D0AA2AF3C523A4ECF17E34E4 /* JSDPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2952,7 +2948,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2992,7 +2988,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
