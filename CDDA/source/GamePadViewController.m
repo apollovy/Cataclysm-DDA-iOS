@@ -208,4 +208,27 @@ NSDate* lastPress;
     SDL_send_keysym_or_text(sym, KMOD_NONE, text);
 }
 
+
+#pragma mark - Page up / Page down
+
+CGPoint lastLocation;
+
+-(void)pageUpDown:(UIPanGestureRecognizer*)sender
+{
+    CGPoint currentLocation = [sender translationInView:sender.view];
+
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        lastLocation = currentLocation;
+    } else if ((sender.state == UIGestureRecognizerStateEnded) || ( sender.state == UIGestureRecognizerStateCancelled)) {
+        lastLocation = CGPointZero;
+    } else {
+        SDL_KeyCode sym = SDLK_UNKNOWN;
+        if (lastLocation.y > currentLocation.y)
+            sym = SDLK_PAGEDOWN;
+        else
+            sym = SDLK_PAGEUP;
+        SDL_send_keysym(sym, KMOD_NONE);
+    }
+}
+
 @end

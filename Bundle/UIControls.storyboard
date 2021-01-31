@@ -1865,6 +1865,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bmE-fl-EP6" appends="YES" id="Jup-g3-bQ9"/>
                                     <outletCollection property="gestureRecognizers" destination="et0-PU-Ud3" appends="YES" id="YIc-hb-xXj"/>
+                                    <outletCollection property="gestureRecognizers" destination="Nm8-w2-VCE" appends="YES" id="qoS-no-kDY"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -1913,6 +1914,11 @@
                         <action selector="tapGamepadButton:" destination="mgi-Zq-ipg" id="X3G-Dg-mLc"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Nm8-w2-VCE">
+                    <connections>
+                        <action selector="pageUpDown:" destination="mgi-Zq-ipg" id="F5z-HM-2Bx"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="148.87556221889056" y="-191.19999999999999"/>
         </scene>
