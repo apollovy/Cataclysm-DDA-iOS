@@ -20,12 +20,6 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>4</string>
-	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-9615054841988249~3682406162</string>
-	<key>GATopBannerAdUnitId</key>
-	<string>ca-app-pub-9615054841988249/9046413488</string>
-	<key>GATopBannerHideTime</key>
-	<integer>60</integer>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationCategoryType</key>
@@ -34,13 +28,6 @@
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
-	<key>SKAdNetworkItems</key>
-	<array>
-		<dict>
-			<key>SKAdNetworkIdentifier</key>
-			<string>cstr6suwn9.skadnetwork</string>
-		</dict>
-	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -51,6 +38,8 @@
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+	<key>SentryDSN</key>
+	<string>https://2ca83d7479f142d7bfc453486d87e014@o187048.ingest.sentry.io/5591504</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>

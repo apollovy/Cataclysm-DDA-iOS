@@ -2016,6 +2016,7 @@
 				B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */,
 				B5FD200525A57AD100CE613D /* Copy mo to lang */,
 				B5550C6A25A90F7400FB227A /* Remove redundant directories from data */,
+				66E0DCCDC1ECEF3C111B1D52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2270,6 +2271,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		66E0DCCDC1ECEF3C111B1D52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		83EF11B7E415B634B9830171 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -1,4 +1,5 @@
 #include <Foundation/Foundation.h>
+#import "Sentry.h"
 
 #define main CDDA_main
 #include "main.cpp"
@@ -7,6 +8,16 @@
 
 int main( int argc, char *argv[] )
 {
+    [SentrySDK startWithOptions: @{
+        @"dsn": [[NSBundle mainBundle] objectForInfoDictionaryKey: @"SentryDSN"],
+#ifdef DEBUG
+        @"debug": @YES,
+        @"environment": @"development",
+#else
+        @"debug": @NO,
+        @"environment": @"production",
+#endif
+    }];
     NSString* documentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     const char* new_argv_const[] = {
