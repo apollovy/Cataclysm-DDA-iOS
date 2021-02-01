@@ -96,7 +96,7 @@
 		D0AA22253432DE32A6F64BA6 /* damage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2017B18D3D164D599632 /* damage.cpp */; };
 		D0AA222B3B77A11815903203 /* gates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA287152D3136723933ED5 /* gates.cpp */; };
 		D0AA22315ECBB2BD5A74A7E7 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2CF4CA3F4F52A03428D9 /* material.cpp */; };
-		D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m */; };
+		D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */; };
 		D0AA22480BF29271BA74C507 /* mongroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA235F8028E546D5BB87D3 /* mongroup.cpp */; };
 		D0AA224F9A9A1200701E531B /* fungal_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2BF2C4726E16AD7E6B51 /* fungal_effects.cpp */; };
 		D0AA22971E8BC260700A12B8 /* grab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA29D4C49AFEE4199CC47D /* grab.cpp */; };
@@ -217,7 +217,6 @@
 		D0AA295173178B3E0ECA1783 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA24092B29A6E88A43B664 /* line.cpp */; };
 		D0AA2952D44FC8AD6979F6C1 /* creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA251893805F0F89104040 /* creature.cpp */; };
 		D0AA2966962D7A0D50B3E215 /* sdl_wrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA29DA33F75C97635CBFA7 /* sdl_wrappers.cpp */; };
-		D0AA297068A354901F57907A /* GoogleAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA23E1879343C61DB376D5 /* GoogleAdsViewController.m */; };
 		D0AA298142AF50D260609C0C /* mutation_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2A8FC4332CF7A5851D89 /* mutation_data.cpp */; };
 		D0AA298636611546D9326B9C /* mondeath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA27DDB383E677D9C0ECC1 /* mondeath.cpp */; };
 		D0AA29B61B71B6C2979F6C40 /* mapgendata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA26C0D10E224FFA49879F /* mapgendata.cpp */; };
@@ -721,7 +720,6 @@
 		D0AA23C17024864DFFC34985 /* kill_tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kill_tracker.h; path = "Libraries/Cataclysm-DDA/src/kill_tracker.h"; sourceTree = SOURCE_ROOT; };
 		D0AA23C240EE3BD44E35B8FF /* scores_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scores_ui.h; path = "Libraries/Cataclysm-DDA/src/scores_ui.h"; sourceTree = SOURCE_ROOT; };
 		D0AA23D5A1534B2AECD8C6FB /* rng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rng.cpp; path = "Libraries/Cataclysm-DDA/src/rng.cpp"; sourceTree = SOURCE_ROOT; };
-		D0AA23E1879343C61DB376D5 /* GoogleAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleAdsViewController.m; sourceTree = "<group>"; };
 		D0AA23E735D2BD99A36354D4 /* requirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = requirements.h; path = "Libraries/Cataclysm-DDA/src/requirements.h"; sourceTree = SOURCE_ROOT; };
 		D0AA23F546E90A259142EF64 /* npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = npc.cpp; path = "Libraries/Cataclysm-DDA/src/npc.cpp"; sourceTree = SOURCE_ROOT; };
 		D0AA23F6A6387CB54737381C /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = line.h; path = "Libraries/Cataclysm-DDA/src/line.h"; sourceTree = SOURCE_ROOT; };
@@ -965,7 +963,7 @@
 		D0AA2B13C18DB5C2C22E85BA /* itype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = itype.h; path = "Libraries/Cataclysm-DDA/src/itype.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2B1E9528F0B381B34667 /* teleport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = teleport.h; path = "Libraries/Cataclysm-DDA/src/teleport.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2B289C563F504B717131 /* scent_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scent_map.h; path = "Libraries/Cataclysm-DDA/src/scent_map.h"; sourceTree = SOURCE_ROOT; };
-		D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GoogleAds+Gamepad.m"; sourceTree = "<group>"; };
+		D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+Gamepad.m"; sourceTree = "<group>"; };
 		D0AA2B36C545C442B5CEA624 /* flag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = flag.cpp; path = "Libraries/Cataclysm-DDA/src/flag.cpp"; sourceTree = SOURCE_ROOT; };
 		D0AA2B385A1CF372160C2319 /* fungal_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fungal_effects.h; path = "Libraries/Cataclysm-DDA/src/fungal_effects.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2B4D8871C2068944F7B5 /* mapgen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mapgen.h; path = "Libraries/Cataclysm-DDA/src/mapgen.h"; sourceTree = SOURCE_ROOT; };
@@ -974,7 +972,7 @@
 		D0AA2B5F9F2685A5EB1FBE35 /* faction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faction.h; path = "Libraries/Cataclysm-DDA/src/faction.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2B65C6F9B4E35D6D6063 /* item_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_group.h; path = "Libraries/Cataclysm-DDA/src/item_group.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2B73B51DA92ABB1FA1E3 /* overmap_connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = overmap_connection.cpp; path = "Libraries/Cataclysm-DDA/src/overmap_connection.cpp"; sourceTree = SOURCE_ROOT; };
-		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+GoogleAds+Gamepad.h"; sourceTree = "<group>"; };
+		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
 		D0AA2B79D8EBEF0756784D68 /* monattack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monattack.cpp; path = "Libraries/Cataclysm-DDA/src/monattack.cpp"; sourceTree = SOURCE_ROOT; };
 		D0AA2B8530188315AA089C90 /* map_selector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = map_selector.cpp; path = "Libraries/Cataclysm-DDA/src/map_selector.cpp"; sourceTree = SOURCE_ROOT; };
 		D0AA2B96BF876BB53BA63E87 /* live_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = live_view.h; path = "Libraries/Cataclysm-DDA/src/live_view.h"; sourceTree = SOURCE_ROOT; };
@@ -1079,7 +1077,6 @@
 		D0AA2E5C023D3605367D701E /* recipe_dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = recipe_dictionary.h; path = "Libraries/Cataclysm-DDA/src/recipe_dictionary.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2E72B2489DE202CC343F /* npctalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = npctalk.h; path = "Libraries/Cataclysm-DDA/src/npctalk.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2E77298BB1FB94D9CE46 /* safemode_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = safemode_ui.h; path = "Libraries/Cataclysm-DDA/src/safemode_ui.h"; sourceTree = SOURCE_ROOT; };
-		D0AA2E7DEFFB416C943711CA /* GoogleAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleAdsViewController.h; sourceTree = "<group>"; };
 		D0AA2E7F2BD7B1386F94A7C6 /* dialogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dialogue.h; path = "Libraries/Cataclysm-DDA/src/dialogue.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2E8451B1814FBF096BCE /* magic_teleporter_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = magic_teleporter_list.h; path = "Libraries/Cataclysm-DDA/src/magic_teleporter_list.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2E84B3CFB120994EEF5E /* handle_action.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = handle_action.cpp; path = "Libraries/Cataclysm-DDA/src/handle_action.cpp"; sourceTree = SOURCE_ROOT; };
@@ -1362,14 +1359,12 @@
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
-				D0AA2E7DEFFB416C943711CA /* GoogleAdsViewController.h */,
-				D0AA23E1879343C61DB376D5 /* GoogleAdsViewController.m */,
 				B5F97C66259C08B500C5A910 /* main.mm */,
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
 				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
-				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.h */,
-				D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m */,
+				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */,
+				D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */,
 				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
 				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
 				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
@@ -2021,7 +2016,6 @@
 				B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */,
 				B5FD200525A57AD100CE613D /* Copy mo to lang */,
 				B5550C6A25A90F7400FB227A /* Remove redundant directories from data */,
-				CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2373,23 +2367,6 @@
 			shellPath = /bin/sh;
 			shellScript = "echo touching mo\ntouch Libraries/Cataclysm-DDA/lang/mo\n";
 		};
-		CD68309028EACD1E67EC4022 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2410,8 +2387,7 @@
 				B5F97C67259C08B600C5A910 /* main.mm in Sources */,
 				B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */,
 				B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
-				D0AA297068A354901F57907A /* GoogleAdsViewController.m in Sources */,
-				D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m in Sources */,
+				D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
 				D0AA2186F5B79EB934B96224 /* action.cpp in Sources */,
 				D0AA2BFC4B878E87FDEB13A7 /* active_item_cache.cpp in Sources */,
 				D0AA2E85ECE039C8281ECD6A /* activity_handlers.cpp in Sources */,
@@ -2942,7 +2918,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2982,7 +2958,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

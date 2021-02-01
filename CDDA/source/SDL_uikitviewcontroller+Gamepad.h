@@ -5,7 +5,7 @@
 
 #import "SDL_uikitviewcontroller.h"
 
-@interface SDL_uikitviewcontroller (GoogleAdsAndGamepad)
+@interface SDL_uikitviewcontroller (Gamepad)
 
 @property (nonatomic, assign) int keyboardHeight;
 
