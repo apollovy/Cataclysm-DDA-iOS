@@ -6,6 +6,7 @@
 //  Copyright © 2021 Аполлов Юрий Андреевич. All rights reserved.
 //
 #import "SDL_events.h"
+#include "SDL_uikitviewcontroller.h"
 
 #import "JSButton.h"
 
@@ -211,24 +212,64 @@ NSDate* lastPress;
 
 #pragma mark - Page up / Page down
 
-CGPoint lastLocation;
+CGPoint lastScrollingLocation;
+NSDate* lastScrollingDate;
 
 -(void)pageUpDown:(UIPanGestureRecognizer*)sender
 {
     CGPoint currentLocation = [sender translationInView:sender.view];
 
-    if (sender.state == UIGestureRecognizerStateBegan) {
-        lastLocation = currentLocation;
-    } else if ((sender.state == UIGestureRecognizerStateEnded) || ( sender.state == UIGestureRecognizerStateCancelled)) {
-        lastLocation = CGPointZero;
-    } else {
-        SDL_KeyCode sym = SDLK_UNKNOWN;
-        if (lastLocation.y > currentLocation.y)
-            sym = SDLK_PAGEDOWN;
-        else
-            sym = SDLK_PAGEUP;
-        SDL_send_keysym(sym, KMOD_NONE);
+    if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
+    {
+        self.scrollingView.alpha = 0.07;
+        NSDate* now = [NSDate date];
+        if (!lastScrollingDate || ([[lastScrollingDate dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
+        {
+            SDL_KeyCode sym = SDLK_UNKNOWN;
+            if (lastScrollingLocation.y > currentLocation.y)
+                sym = SDLK_PAGEDOWN;
+            else
+                sym = SDLK_PAGEUP;
+            SDL_send_keysym(sym, KMOD_NONE);
+            lastScrollingLocation = currentLocation;
+            lastScrollingDate = now;
+        }
     }
+    if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
+    {
+        self.scrollingView.alpha = 0.02;
+        lastScrollingLocation = CGPointZero;
+    }
+}
+
+
+#pragma mark - Keyboard toggling
+
+-(void)showKeyboard:(UIScreenEdgePanGestureRecognizer*)sender
+{
+        [[self _getRootViewController] showKeyboard];
+}
+
+-(void)hideKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
+{
+    [[self _getRootViewController] hideKeyboard];
+}
+
+-(SDL_uikitviewcontroller*)_getRootViewController
+{
+    return (SDL_uikitviewcontroller*)self.view.window.rootViewController;;
+}
+
+
+#pragma mark - UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    if (([gestureRecognizer class] == [UIPanGestureRecognizer class]) && ([otherGestureRecognizer class] == [UIScreenEdgePanGestureRecognizer class]))
+        return YES;
+    else
+        return NO;
 }
 
 @end

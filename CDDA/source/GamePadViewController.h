@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GamePadViewController : UIViewController
+@interface GamePadViewController : UIViewController <UIGestureRecognizerDelegate>
 
 -(IBAction)toggleMenu:(MenuButton*)sender;
 @property (weak, nonatomic) IBOutlet UIView* menusView;
@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)holdGamepadButton:(UILongPressGestureRecognizer*)sender;
 -(IBAction)tapGamepadButton:(UITapGestureRecognizer*)sender;
 -(IBAction)pageUpDown:(UIPanGestureRecognizer*)sender;
+-(IBAction)showKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
+-(IBAction)hideKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
+@property (weak, nonatomic) IBOutlet UIView* scrollingView;
+
 
 @end
 

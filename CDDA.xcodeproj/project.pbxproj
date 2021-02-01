@@ -37,7 +37,6 @@
 		B559EDB625AB85A50065602D /* dPad-Right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAD25AB85A40065602D /* dPad-Right@2x.png */; };
 		B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */; };
 		B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDB925AB86C70065602D /* button-pressed@2x.png */; };
-		B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
@@ -571,8 +570,6 @@
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+GestureHandling.h"; sourceTree = "<group>"; };
-		B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+GestureHandling.m"; sourceTree = "<group>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
 		B5A5855225A53D7A00E73D9A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -1371,8 +1368,6 @@
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
 				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
-				B5754ACC25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.h */,
-				B5754ACD25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m */,
 				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.h */,
 				D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+GoogleAds+Gamepad.m */,
 				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
@@ -2413,7 +2408,6 @@
 			files = (
 				B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B5F97C67259C08B600C5A910 /* main.mm in Sources */,
-				B5754ACE25A04CBA0054176C /* SDL_uikitviewcontroller+GestureHandling.m in Sources */,
 				B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */,
 				B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				D0AA297068A354901F57907A /* GoogleAdsViewController.m in Sources */,
