@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mgi-Zq-ipg">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hdE-Yk-7Q6"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" alpha="0.25" contentMode="scaleToFill" id="kaD-Gk-wUo">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDM-uw-JwE" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="816" y="10" width="50" height="50"/>
+                                <rect key="frame" x="597" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-JE-h1D">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-Ci-YR7" userLabel="Return button" customClass="JSButton">
-                                <rect key="frame" x="816" y="368" width="50" height="50"/>
+                                <rect key="frame" x="597" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sy-Of-nem" userLabel="⮐">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -63,7 +63,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfo-53-aKY" userLabel="Tab button" customClass="JSButton">
-                                <rect key="frame" x="130" y="10" width="50" height="50"/>
+                                <rect key="frame" x="90" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbA-Qg-YBC">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -84,7 +84,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-Tz-vvS" userLabel="Backtab button" customClass="JSButton">
-                                <rect key="frame" x="60" y="10" width="50" height="50"/>
+                                <rect key="frame" x="20" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peb-AI-eAl">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -105,7 +105,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-8M-Ibc" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="EIe-Bo-yYH">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -121,7 +121,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luo-8k-3bU" userLabel="f button" customClass="JSButton">
-                                <rect key="frame" x="816" y="310" width="50" height="50"/>
+                                <rect key="frame" x="597" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbr-n8-LkK">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -142,7 +142,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzc-xo-rYR" userLabel="Dot button" customClass="JSButton">
-                                <rect key="frame" x="758" y="310" width="50" height="50"/>
+                                <rect key="frame" x="539" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-B1-VDz">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -166,7 +166,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-VX-9V2" userLabel="s button" customClass="JSButton">
-                                <rect key="frame" x="758" y="368" width="50" height="50"/>
+                                <rect key="frame" x="539" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7S-e5-UMr">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -190,7 +190,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tb-GR-bfg" userLabel="m button" customClass="JSButton">
-                                <rect key="frame" x="816" y="252" width="50" height="50"/>
+                                <rect key="frame" x="597" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKm-ro-qgA">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -214,7 +214,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvw-uC-ptI" userLabel="w button" customClass="JSButton">
-                                <rect key="frame" x="758" y="252" width="50" height="50"/>
+                                <rect key="frame" x="539" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="w" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXc-vS-J1a">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -238,7 +238,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zit-ds-Vki" userLabel="r button" customClass="JSButton">
-                                <rect key="frame" x="700" y="252" width="50" height="50"/>
+                                <rect key="frame" x="481" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="r" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-YC-NVX">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -262,7 +262,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL5-bH-qox" userLabel="t button" customClass="JSButton">
-                                <rect key="frame" x="700" y="310" width="50" height="50"/>
+                                <rect key="frame" x="481" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="t" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-rd-68c">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -286,7 +286,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx1-nI-Yku" userLabel="* button" customClass="JSButton">
-                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <rect key="frame" x="481" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5e-Hy-tI9">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -354,11 +354,11 @@
                         <viewControllerLayoutGuide type="bottom" id="R0l-dP-5PS"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" alpha="0.25" contentMode="scaleToFill" id="icS-5a-H1g">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ado-ot-PFc" userLabel="GamePad" customClass="JSDPad">
-                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="kLQ-SQ-mkF">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -374,7 +374,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-gK-wBI" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="816" y="10" width="50" height="50"/>
+                                <rect key="frame" x="597" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exe-jT-5fU">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -395,7 +395,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gD9-Vd-LZY" userLabel="Return button" customClass="JSButton">
-                                <rect key="frame" x="816" y="368" width="50" height="50"/>
+                                <rect key="frame" x="597" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiM-wT-qRp">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -416,7 +416,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-20-u4G" userLabel="/ button" customClass="JSButton">
-                                <rect key="frame" x="816" y="310" width="50" height="50"/>
+                                <rect key="frame" x="597" y="257" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-ZF-pbU">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -437,7 +437,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evo-st-Td5" userLabel="Inventory management buttons">
-                                <rect key="frame" x="302" y="0.0" width="322" height="206"/>
+                                <rect key="frame" x="172.5" y="0.0" width="322" height="206"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-TU-aIv" userLabel="2 button" customClass="JSButton">
                                         <rect key="frame" x="194" y="136" width="50" height="50"/>
@@ -817,7 +817,7 @@
                                 </constraints>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-1N-ys8" userLabel="e button" customClass="JSButton">
-                                <rect key="frame" x="816" y="252" width="50" height="50"/>
+                                <rect key="frame" x="597" y="199" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMZ-8L-aH0">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -838,7 +838,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-lv-uqU" userLabel="Tab button" customClass="JSButton">
-                                <rect key="frame" x="130" y="8" width="50" height="50"/>
+                                <rect key="frame" x="90" y="8" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFg-dZ-apa">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -859,7 +859,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW0-2Y-gPb" userLabel="Backtab button" customClass="JSButton">
-                                <rect key="frame" x="60" y="8" width="50" height="50"/>
+                                <rect key="frame" x="20" y="8" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYx-zK-kv4">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -880,7 +880,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsU-dw-649" userLabel="&gt; button" customClass="JSButton">
-                                <rect key="frame" x="758" y="368" width="50" height="50"/>
+                                <rect key="frame" x="539" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-CJ-4oq">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -904,7 +904,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5m-up-hm8" userLabel="&lt; button" customClass="JSButton">
-                                <rect key="frame" x="700" y="368" width="50" height="50"/>
+                                <rect key="frame" x="481" y="315" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-ll-rXt">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -966,11 +966,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wIh-2C-jeG"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="Fd8-TI-tt4">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-EG-sBP" userLabel="Tab button" customClass="JSButton">
-                                <rect key="frame" x="130" y="10" width="50" height="50"/>
+                                <rect key="frame" x="90" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-LR-zoy">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -991,7 +991,7 @@
                                 </connections>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-ZZ-6WE" userLabel="Backtab button" customClass="JSButton">
-                                <rect key="frame" x="60" y="10" width="50" height="50"/>
+                                <rect key="frame" x="20" y="10" width="50" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU7-n1-uEj">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -1012,35 +1012,14 @@
                                 </connections>
                             </view>
                             <view opaque="NO" alpha="0.02" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K9-WE-QV7" userLabel="Scrolling View">
-                                <rect key="frame" x="791" y="0.0" width="135" height="428"/>
+                                <rect key="frame" x="572" y="0.0" width="95" height="375"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Nm8-w2-VCE" appends="YES" id="tXp-cQ-KLU"/>
                                 </connections>
                             </view>
-                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-SI-Zpj" userLabel="Escape button" customClass="JSButton">
-                                <rect key="frame" x="816" y="10" width="50" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyh-hU-GEr">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="systemRedColor"/>
-                                        <size key="shadowOffset" width="1" height="-1"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Ayc-rG-aF5"/>
-                                    <constraint firstAttribute="height" constant="50" id="gGD-5V-LyU"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="x0M-kd-dVj"/>
-                                </connections>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="8JH-KK-t87" userLabel="Buttons Stack View">
-                                <rect key="frame" x="791" y="140" width="75" height="288"/>
+                                <rect key="frame" x="572" y="87" width="75" height="288"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-Ba-zeS" userLabel="Misc button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                         <rect key="frame" x="37" y="0.0" width="38" height="34"/>
@@ -1156,10 +1135,10 @@
                                 </connections>
                             </stackView>
                             <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wys-zh-cet" userLabel="Menus view">
-                                <rect key="frame" x="490" y="0.0" width="301" height="428"/>
+                                <rect key="frame" x="271" y="0.0" width="301" height="375"/>
                                 <subviews>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="7Zl-P2-tec" userLabel="Look menu stack view">
-                                        <rect key="frame" x="41" y="258" width="260" height="170"/>
+                                        <rect key="frame" x="41" y="1" width="260" height="374"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-4A-Xuc" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="146" y="0.0" width="114" height="34"/>
@@ -1216,10 +1195,76 @@
                                                     <outlet property="menuView" destination="7Zl-P2-tec" id="vfd-hG-NP0"/>
                                                 </connections>
                                             </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGM-no-Wvz" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="84" y="170" width="176" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="{ Toggle map memory">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="5n5-ZE-BHq"/>
+                                                    <outlet property="menuView" destination="7Zl-P2-tec" id="4u8-hH-Fnu"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tG-7H-PAk" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="155" y="204" width="105" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=": Center view">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="YXq-q5-WOe"/>
+                                                    <outlet property="menuView" destination="7Zl-P2-tec" id="bZW-zn-fHa"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrX-vq-dua" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="108" y="238" width="152" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="K Move view North">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="Rg3-EO-eas"/>
+                                                    <outlet property="menuView" destination="7Zl-P2-tec" id="hCI-ag-9Nz"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wv-vE-3M1" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="121" y="272" width="139" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="L Move view East">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="znl-Ka-IKi"/>
+                                                    <outlet property="menuView" destination="7Zl-P2-tec" id="uVf-ap-Mze"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA1-YX-0MP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="109" y="306" width="151" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="J Move view South">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="CDw-0a-oqW"/>
+                                                    <outlet property="menuView" destination="7Zl-P2-tec" id="91M-9e-e6U"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-5P-Ygu" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="340" width="148" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="H Move view West">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="xT4-Gr-iif"/>
+                                                    <outlet property="menuView" destination="7Zl-P2-tec" id="Au5-0V-gG8"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <scrollView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alc-G2-wLq" userLabel="Interact menu scroll view">
-                                        <rect key="frame" x="0.0" y="0.0" width="301" height="428"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="375"/>
                                         <subviews>
                                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwa-Bw-QAE" userLabel="Interact menu stack view wrapper">
                                                 <rect key="frame" x="0.0" y="0.0" width="301" height="408"/>
@@ -1380,13 +1425,13 @@
                                         </constraints>
                                     </scrollView>
                                     <scrollView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeO-Gg-n4M" userLabel="Inventory menu scroll view">
-                                        <rect key="frame" x="0.0" y="0.0" width="301" height="428"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="375"/>
                                         <subviews>
                                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQv-Hd-u0C" userLabel="Inventory menu stack view wrapper">
-                                                <rect key="frame" x="0.0" y="0.0" width="301" height="476"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="301" height="510"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-zr-VMN" userLabel="Inventory menu stack view">
-                                                        <rect key="frame" x="0.0" y="0.0" width="301" height="476"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="301" height="510"/>
                                                         <subviews>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-b2-ygR" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="170" y="0.0" width="131" height="34"/>
@@ -1476,8 +1521,19 @@
                                                                     <outlet property="menuView" destination="oeO-Gg-n4M" id="7lq-V0-A0z"/>
                                                                 </connections>
                                                             </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag8-HV-vsg" userLabel="A Apply or use wielded item" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="147" y="272" width="154" height="34"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="a Apply or use item">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="VV0-Ua-iSp"/>
+                                                                    <outlet property="menuView" destination="oeO-Gg-n4M" id="nAN-AQ-hQK"/>
+                                                                </connections>
+                                                            </button>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5b-ud-ybf" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="198" y="272" width="103" height="34"/>
+                                                                <rect key="frame" x="198" y="306" width="103" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="W Wear item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1488,7 +1544,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDH-cF-ILP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="137" y="306" width="164" height="34"/>
+                                                                <rect key="frame" x="137" y="340" width="164" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="T Take off worn item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1499,7 +1555,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upz-QV-EZk" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="260" y="340" width="41" height="34"/>
+                                                                <rect key="frame" x="260" y="374" width="41" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="E Eat">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1510,7 +1566,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ms-CY-ZSx" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="244" y="374" width="57" height="34"/>
+                                                                <rect key="frame" x="244" y="408" width="57" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="R Read">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1521,7 +1577,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-oA-xhS" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="237" y="408" width="64" height="34"/>
+                                                                <rect key="frame" x="237" y="442" width="64" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="w Wield">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1532,9 +1588,9 @@
                                                                 </connections>
                                                             </button>
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-0o-qRZ" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="46" y="442" width="255" height="34"/>
+                                                                <rect key="frame" x="44" y="476" width="257" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="U unload or empty wielded item">
+                                                                <state key="normal" title="U Unload or empty wielded item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -1546,10 +1602,10 @@
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="476" id="06e-h6-ZLH"/>
+                                                    <constraint firstAttribute="height" constant="510" id="06e-h6-ZLH"/>
                                                     <constraint firstAttribute="trailing" secondItem="DMv-zr-VMN" secondAttribute="trailing" id="0hN-dM-ccH"/>
                                                     <constraint firstItem="DMv-zr-VMN" firstAttribute="leading" secondItem="AQv-Hd-u0C" secondAttribute="leading" id="RSR-ah-AaB"/>
-                                                    <constraint firstAttribute="bottom" secondItem="DMv-zr-VMN" secondAttribute="bottom" id="d5C-qo-mdF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DMv-zr-VMN" secondAttribute="bottom" id="UrH-hB-t4X"/>
                                                     <constraint firstItem="DMv-zr-VMN" firstAttribute="top" secondItem="AQv-Hd-u0C" secondAttribute="top" priority="750" id="dgb-lj-e7W"/>
                                                     <constraint firstAttribute="width" constant="301" id="fkw-JO-2fh"/>
                                                 </constraints>
@@ -1563,7 +1619,7 @@
                                         </constraints>
                                     </scrollView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="yfA-Dz-Pkf" userLabel="Combat menu stack view">
-                                        <rect key="frame" x="0.0" y="123" width="301" height="272"/>
+                                        <rect key="frame" x="0.0" y="70" width="301" height="272"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXI-oR-EwK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="103" y="0.0" width="198" height="34"/>
@@ -1656,7 +1712,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-20-GCt" userLabel="Craft menu stack view">
-                                        <rect key="frame" x="139" y="157" width="162" height="136"/>
+                                        <rect key="frame" x="139" y="104" width="162" height="136"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-3G-dbv" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="56" y="0.0" width="106" height="34"/>
@@ -1705,10 +1761,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="3uG-Qh-1BN" userLabel="Info menu stack view">
-                                        <rect key="frame" x="140" y="89" width="161" height="204"/>
+                                        <rect key="frame" x="133" y="0.0" width="168" height="306"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-h4-KcP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="13" y="0.0" width="148" height="34"/>
+                                                <rect key="frame" x="20" y="0.0" width="148" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="@ View player info">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1719,7 +1775,7 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHm-Pw-jfr" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="27" y="34" width="134" height="34"/>
+                                                <rect key="frame" x="34" y="34" width="134" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="M View missions">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1730,7 +1786,7 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEJ-AJ-Gz7" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="53" y="68" width="108" height="34"/>
+                                                <rect key="frame" x="60" y="68" width="108" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title=") View scores">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1741,7 +1797,7 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-Wa-j4J" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="38" y="102" width="123" height="34"/>
+                                                <rect key="frame" x="45" y="102" width="123" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="# View factions">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1752,7 +1808,7 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCY-BL-P82" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="48" y="136" width="113" height="34"/>
+                                                <rect key="frame" x="55" y="136" width="113" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="v View morale">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1763,7 +1819,7 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-oo-Kzm" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="170" width="161" height="34"/>
+                                                <rect key="frame" x="7" y="170" width="161" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="P View message log">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1773,10 +1829,43 @@
                                                     <outlet property="menuView" destination="3uG-Qh-1BN" id="nrq-Xo-0Bz"/>
                                                 </connections>
                                             </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhA-h7-2Nb" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="204" width="168" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="} Toggle panel admin">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="jdB-O4-dGe"/>
+                                                    <outlet property="menuView" destination="3uG-Qh-1BN" id="6SO-eA-N2y"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oa-cJ-9uK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="23" y="238" width="145" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="N Toggle minimap">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="9lG-e9-GC2"/>
+                                                    <outlet property="menuView" destination="3uG-Qh-1BN" id="MRT-FQ-2Q2"/>
+                                                </connections>
+                                            </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C1-w1-5a2" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="272" width="94" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="0 View help">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="4EP-tX-GIa"/>
+                                                    <outlet property="menuView" destination="3uG-Qh-1BN" id="ubD-3v-QFW"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="l6Z-Bs-2kE" userLabel="Misc menu stack view">
-                                        <rect key="frame" x="99" y="55" width="202" height="204"/>
+                                        <rect key="frame" x="99" y="0.0" width="202" height="322"/>
                                         <subviews>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STE-m7-gS5" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="1" y="0.0" width="201" height="34"/>
@@ -1844,20 +1933,50 @@
                                                     <outlet property="menuView" destination="l6Z-Bs-2kE" id="uDx-WW-KcL"/>
                                                 </connections>
                                             </button>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmw-JK-7yF" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="77" y="204" width="125" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="S Save and quit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="hP2-1E-eGX"/>
+                                                    <outlet property="menuView" destination="l6Z-Bs-2kE" id="hld-1O-fX5"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFc-fK-n8N">
+                                                <rect key="frame" x="152" y="238" width="50" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF2-D6-5Nd" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                <rect key="frame" x="59" y="288" width="143" height="34"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Q Commit suicide">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pressKey:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="U8x-7u-xGd"/>
+                                                    <outlet property="menuView" destination="l6Z-Bs-2kE" id="LoE-RL-EEQ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="oeO-Gg-n4M" secondAttribute="trailing" id="5PX-ZT-EQq"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="6o5-gM-b8s"/>
-                                    <constraint firstItem="l6Z-Bs-2kE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wys-zh-cet" secondAttribute="top" id="KEL-cL-TFn"/>
+                                    <constraint firstItem="7Zl-P2-tec" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wys-zh-cet" secondAttribute="top" id="Ajf-V1-oRX"/>
+                                    <constraint firstItem="l6Z-Bs-2kE" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="KEL-cL-TFn"/>
                                     <constraint firstItem="oeO-Gg-n4M" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="QPe-eJ-2Cg"/>
                                     <constraint firstAttribute="trailing" secondItem="3uG-Qh-1BN" secondAttribute="trailing" id="RRc-XR-5aT"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="leading" id="VTH-fZ-uoJ"/>
                                     <constraint firstAttribute="trailing" secondItem="yfA-Dz-Pkf" secondAttribute="trailing" id="WIa-WB-DBt"/>
                                     <constraint firstAttribute="trailing" secondItem="l6Z-Bs-2kE" secondAttribute="trailing" id="XTh-Or-6bD"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="ZP3-xE-GCU"/>
-                                    <constraint firstItem="7Zl-P2-tec" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Wys-zh-cet" secondAttribute="bottom" id="ZXJ-JI-d0A"/>
+                                    <constraint firstItem="7Zl-P2-tec" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="ZXJ-JI-d0A"/>
+                                    <constraint firstItem="3uG-Qh-1BN" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="bvc-0a-SpP"/>
                                     <constraint firstAttribute="width" constant="301" id="cjL-8K-53u"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="trailing" secondItem="Wys-zh-cet" secondAttribute="trailing" id="eUO-yI-C5p"/>
                                     <constraint firstAttribute="bottom" secondItem="oeO-Gg-n4M" secondAttribute="bottom" id="icn-lP-jNm"/>
@@ -1866,8 +1985,29 @@
                                     <constraint firstAttribute="trailing" secondItem="Pda-20-GCt" secondAttribute="trailing" id="qCb-mH-Epk"/>
                                 </constraints>
                             </view>
+                            <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-SI-Zpj" userLabel="Escape button" customClass="JSButton">
+                                <rect key="frame" x="597" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyh-hU-GEr">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="systemRedColor"/>
+                                        <size key="shadowOffset" width="1" height="-1"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ayc-rG-aF5"/>
+                                    <constraint firstAttribute="height" constant="50" id="gGD-5V-LyU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="mgi-Zq-ipg" id="x0M-kd-dVj"/>
+                                </connections>
+                            </view>
                             <imageView opaque="NO" clipsSubviews="YES" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dPad-None.png" translatesAutoresizingMaskIntoConstraints="NO" id="2dS-FG-EBt">
-                                <rect key="frame" x="60" y="278" width="150" height="150"/>
+                                <rect key="frame" x="20" y="225" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="j1s-lh-2pZ"/>
                                     <constraint firstAttribute="width" constant="150" id="vvl-SJ-GDa"/>
@@ -1883,7 +2023,6 @@
                             <constraint firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="3kn-ay-nDr"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="5Zl-9r-KFs"/>
                             <constraint firstItem="2dS-FG-EBt" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="leading" id="77w-9V-beS"/>
-                            <constraint firstItem="l6Z-Bs-2kE" firstAttribute="centerY" secondItem="D2E-Ba-zeS" secondAttribute="centerY" priority="750" id="7Tq-ZY-M8X"/>
                             <constraint firstItem="fT9-H1-Jfz" firstAttribute="centerY" secondItem="Pda-20-GCt" secondAttribute="centerY" id="9P1-as-Di3"/>
                             <constraint firstItem="8K9-WE-QV7" firstAttribute="leading" secondItem="8JH-KK-t87" secondAttribute="leading" id="Faw-Jw-dsa"/>
                             <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="top" secondItem="Fd8-TI-tt4" secondAttribute="top" constant="10" id="LI1-C1-xlu"/>
@@ -1892,8 +2031,6 @@
                             <constraint firstItem="8K9-WE-QV7" firstAttribute="trailing" secondItem="Fd8-TI-tt4" secondAttribute="trailing" id="Uou-Ek-cO4"/>
                             <constraint firstAttribute="bottom" secondItem="2dS-FG-EBt" secondAttribute="bottom" id="UzC-aU-475"/>
                             <constraint firstItem="8JH-KK-t87" firstAttribute="trailing" secondItem="1Vg-SI-Zpj" secondAttribute="trailing" id="aYx-04-WaZ"/>
-                            <constraint firstItem="2sh-51-gTg" firstAttribute="centerY" secondItem="3uG-Qh-1BN" secondAttribute="centerY" id="dx5-GO-oDb"/>
-                            <constraint firstItem="7Zl-P2-tec" firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="6A1-2M-9GH" secondAttribute="centerY" priority="250" id="ff9-kG-qA1"/>
                             <constraint firstItem="rlg-EG-sBP" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="trailing" constant="20" id="gkF-lc-dLW"/>
                             <constraint firstItem="8K9-WE-QV7" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" id="h0D-Lc-zYc"/>
                             <constraint firstItem="JZL-ow-0sR" firstAttribute="centerY" secondItem="yfA-Dz-Pkf" secondAttribute="centerY" id="jVz-eM-ZK7"/>
@@ -1920,7 +2057,7 @@
                         <action selector="zoom:" destination="mgi-Zq-ipg" id="1bM-eP-t3K"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.10000000000000001" id="et0-PU-Ud3" userLabel="Gamepad Long Press Gesture Recognizer">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="et0-PU-Ud3" userLabel="Gamepad Long Press Gesture Recognizer">
                     <connections>
                         <action selector="holdGamepadButton:" destination="mgi-Zq-ipg" id="KXa-9U-JTf"/>
                     </connections>

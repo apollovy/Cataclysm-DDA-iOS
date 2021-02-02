@@ -115,7 +115,7 @@ BOOL pressed;
 
 -(void)toggleView:(UIView*)view visibility:(BOOL)shouldBeVisible completion:(void (^)(BOOL finished))completion
 {
-    [UIView animateWithDuration:0.4 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         view.alpha = shouldBeVisible;
     } completion:^(BOOL finished){
         view.hidden = !shouldBeVisible;
@@ -161,7 +161,7 @@ NSDate* lastPress;
 -(void)holdGamepadButton:(UILongPressGestureRecognizer*)sender
 {
     NSDate* now = [NSDate date];
-    if (!lastPress || ([[lastPress dateByAddingTimeInterval:0.5] compare:now] == kCFCompareLessThan))
+    if (!lastPress || ([[lastPress dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
     {
         lastPress = now;
         [self _handleMovement:sender];
