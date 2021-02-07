@@ -1737,10 +1737,10 @@
                                                                     <outlet property="menuView" destination="oeO-Gg-n4M" id="7lq-V0-A0z"/>
                                                                 </connections>
                                                             </button>
-                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag8-HV-vsg" userLabel="A Apply or use wielded item" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
-                                                                <rect key="frame" x="147" y="394.5" width="154" height="34"/>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag8-HV-vsg" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
+                                                                <rect key="frame" x="78" y="394.5" width="223" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="a Apply or use item">
+                                                                <state key="normal" title="A Apply or use wielded item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
