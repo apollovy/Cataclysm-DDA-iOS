@@ -20,10 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)zoom:(UIPinchGestureRecognizer*)sender;
 -(IBAction)holdGamepadButton:(UILongPressGestureRecognizer*)sender;
 -(IBAction)tapGamepadButton:(UITapGestureRecognizer*)sender;
--(IBAction)pageUpDown:(UIPanGestureRecognizer*)sender;
+-(IBAction)pageUpDown:(PageUpDownPanGestureRecognizer*)sender;
 -(IBAction)showKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
 -(IBAction)hideKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
-
 
 @end
 

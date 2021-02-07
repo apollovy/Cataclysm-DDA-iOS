@@ -39,6 +39,7 @@
 		B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDB925AB86C70065602D /* button-pressed@2x.png */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
+		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
@@ -574,6 +575,7 @@
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
 		B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitview+CDDA.h"; sourceTree = "<group>"; };
 		B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
+		B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		B5A5855225A53D7A00E73D9A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-DDA/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
@@ -1364,6 +1366,7 @@
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
 				B5F97C66259C08B500C5A910 /* main.mm */,
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
+				B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */,
 				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
 				B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */,
@@ -2624,6 +2627,7 @@
 				D0AA2A0AA5218644BB29AA79 /* recipe_dictionary.cpp in Sources */,
 				D0AA21BB14AFE26FE7D55ABF /* recipe_groups.cpp in Sources */,
 				D0AA20233DCC85BD2BB58BA7 /* recipe.cpp in Sources */,
+				B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */,
 				D0AA2ABBA3DC969A72063996 /* regional_settings.cpp in Sources */,
 				D0AA2BE6915191AA45313C2E /* relic.cpp in Sources */,
 				D0AA28782F04DB8A9A808825 /* requirements.cpp in Sources */,

@@ -225,16 +225,17 @@ NSDate* lastPress;
 CGPoint lastScrollingLocation;
 NSDate* lastScrollingDate;
 
--(void)pageUpDown:(UIPanGestureRecognizer*)sender
+-(void)pageUpDown:(PageUpDownPanGestureRecognizer*)sender
 {
-    CGPoint currentLocation = [sender translationInView:sender.view];
+    UIView* viewToHighlight = sender.viewToHighlight ?: sender.view;
 
     if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
     {
-        sender.view.alpha = 0.07;
+        viewToHighlight.alpha = 0.07;
         NSDate* now = [NSDate date];
         if (!lastScrollingDate || ([[lastScrollingDate dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
         {
+            CGPoint currentLocation = [sender translationInView:sender.view];
             SDL_KeyCode sym = SDLK_UNKNOWN;
             if (lastScrollingLocation.y > currentLocation.y)
                 sym = SDLK_PAGEDOWN;
@@ -247,7 +248,7 @@ NSDate* lastScrollingDate;
     }
     if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
     {
-        sender.view.alpha = 0.02;
+        viewToHighlight.alpha = 0.02;
         lastScrollingLocation = CGPointZero;
     }
 }
