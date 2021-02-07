@@ -16,6 +16,16 @@
 
 @implementation GamePadViewController
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    UIWindow* window = self.view.window;
+    CGRect windowFrame = window.rootViewController.view.frame;
+    CGRect viewControllerFrame = self.view.frame;
+    viewControllerFrame.origin.x = -windowFrame.origin.x;
+    viewControllerFrame.size.width = window.screen.bounds.size.width;
+    self.view.frame = viewControllerFrame;
+}
+
 #pragma mark - JSDButtonDelegate
 
 BOOL pressed;
@@ -221,7 +231,7 @@ NSDate* lastScrollingDate;
 
     if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
     {
-        self.scrollingView.alpha = 0.07;
+        sender.view.alpha = 0.07;
         NSDate* now = [NSDate date];
         if (!lastScrollingDate || ([[lastScrollingDate dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
         {
@@ -237,7 +247,7 @@ NSDate* lastScrollingDate;
     }
     if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
     {
-        self.scrollingView.alpha = 0.02;
+        sender.view.alpha = 0.02;
         lastScrollingLocation = CGPointZero;
     }
 }

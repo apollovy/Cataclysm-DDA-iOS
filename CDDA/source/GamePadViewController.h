@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)pageUpDown:(UIPanGestureRecognizer*)sender;
 -(IBAction)showKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
 -(IBAction)hideKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
-@property (weak, nonatomic) IBOutlet UIView* scrollingView;
 
 
 @end
