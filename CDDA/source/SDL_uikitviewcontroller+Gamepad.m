@@ -17,11 +17,15 @@
                               [UIStoryboard storyboardWithName:@"UIControls" bundle:nil]
                               instantiateInitialViewController];
     [self.view addSubview:_gamepadViewController.view];
-    [self updateFrame];
 
     for (NSString* notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
         [[NSNotificationCenter defaultCenter]
          addObserver:self selector:@selector(updateFrame)
+         name:notification object:nil];
+    }
+    for (NSString* notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification]) {
+        [[NSNotificationCenter defaultCenter]
+         addObserver:self selector:@selector(resizeRootView)
          name:notification object:nil];
     }
 }
@@ -30,27 +34,28 @@
 {
     if (@available(iOS 11.0, *)) {
         UIView* view = self.view;
-        UIEdgeInsets insets = view.safeAreaInsets;
+        UIWindow* window = UIApplication.sharedApplication.keyWindow;
+        UIEdgeInsets insets = window.safeAreaInsets;
+
         CGRect viewFrame = view.frame;
-        viewFrame.origin.x = insets.left;
+        viewFrame.origin.x = viewFrame.origin.x + insets.left;
         viewFrame.size.width = viewFrame.size.width - insets.right - insets.left;
         view.frame = viewFrame;
     }
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+- (void)viewWillTransitionToSize:(CGSize)size
+       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
     [self updateFrame];
 }
 
 - (void)updateFrame {
-    CGRect viewFrame = self.view.frame;
-    CGFloat viewHeight = viewFrame.size.height;
-    CGRect frame = [_gamepadViewController.view frame];
-    frame.origin.x = frame.origin.y = 0;
-    frame.size.height = viewHeight - self.keyboardHeight;
-    frame.size.width = viewFrame.size.width;
-    [_gamepadViewController.view setFrame:frame];
-
+    CGRect windowFrame = self.view.window.frame;
+    CGRect frame = _gamepadViewController.view.frame;
+    frame.origin.y = 0;
+    frame.size.height = windowFrame.size.height - self.keyboardHeight;
+    _gamepadViewController.view.frame = frame;
 }
 
 GamePadViewController* _gamepadViewController;
