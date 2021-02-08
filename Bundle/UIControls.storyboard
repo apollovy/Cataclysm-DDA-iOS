@@ -23,33 +23,11 @@
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDj-QU-PXX" userLabel="Wrapper View">
                                 <rect key="frame" x="0.0" y="596" width="1366" height="428"/>
                                 <subviews>
-                                    <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-EG-sBP" userLabel="Tab button" customClass="JSButton">
-                                        <rect key="frame" x="110" y="30" width="50" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-LR-zoy">
-                                                <rect key="frame" x="0.0" y="15" width="32" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                                <color key="shadowColor" systemColor="systemRedColor"/>
-                                                <size key="shadowOffset" width="1" height="-1"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3vB-kF-Mit"/>
-                                            <constraint firstItem="W0g-LR-zoy" firstAttribute="centerY" secondItem="rlg-EG-sBP" secondAttribute="centerY" id="Njl-2L-33n"/>
-                                            <constraint firstAttribute="width" constant="50" id="ec0-hK-7DI"/>
-                                            <constraint firstItem="W0g-LR-zoy" firstAttribute="leading" secondItem="rlg-EG-sBP" secondAttribute="leading" id="xW9-Jg-MDI"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="delegate" destination="mgi-Zq-ipg" id="H39-b5-8GZ"/>
-                                        </connections>
-                                    </view>
                                     <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-ZZ-6WE" userLabel="Backtab button" customClass="JSButton">
-                                        <rect key="frame" x="40" y="30" width="50" height="50"/>
+                                        <rect key="frame" x="40" y="0.0" width="50" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="BTAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU7-n1-uEj">
-                                                <rect key="frame" x="0.0" y="15" width="43" height="21"/>
+                                                <rect key="frame" x="0.0" y="14.5" width="42.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -65,6 +43,28 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="delegate" destination="mgi-Zq-ipg" id="LVA-Tw-RNf"/>
+                                        </connections>
+                                    </view>
+                                    <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-EG-sBP" userLabel="Tab button" customClass="JSButton">
+                                        <rect key="frame" x="110" y="0.0" width="50" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="TAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-LR-zoy">
+                                                <rect key="frame" x="0.0" y="14.5" width="32" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" systemColor="systemRedColor"/>
+                                                <size key="shadowOffset" width="1" height="-1"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3vB-kF-Mit"/>
+                                            <constraint firstItem="W0g-LR-zoy" firstAttribute="centerY" secondItem="rlg-EG-sBP" secondAttribute="centerY" id="Njl-2L-33n"/>
+                                            <constraint firstAttribute="width" constant="50" id="ec0-hK-7DI"/>
+                                            <constraint firstItem="W0g-LR-zoy" firstAttribute="leading" secondItem="rlg-EG-sBP" secondAttribute="leading" id="xW9-Jg-MDI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="delegate" destination="mgi-Zq-ipg" id="H39-b5-8GZ"/>
                                         </connections>
                                     </view>
                                     <view opaque="NO" alpha="0.019999999552965164" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8L-gp-5HW" userLabel="Left Scrolling View">
@@ -172,7 +172,7 @@
                                                 <rect key="frame" x="0.0" y="238" width="75" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="⮐" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-7i-67E" userLabel="⮐">
-                                                        <rect key="frame" x="53" y="15" width="22" height="21"/>
+                                                        <rect key="frame" x="53" y="14.5" width="22" height="21.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -1300,10 +1300,10 @@
                                         </constraints>
                                     </view>
                                     <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-SI-Zpj" userLabel="Escape button" customClass="JSButton">
-                                        <rect key="frame" x="1268" y="30" width="50" height="50"/>
+                                        <rect key="frame" x="1268" y="0.0" width="50" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="ESC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyh-hU-GEr">
-                                                <rect key="frame" x="17" y="15" width="33" height="21"/>
+                                                <rect key="frame" x="17" y="14.5" width="33" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1342,7 +1342,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="375" id="GXU-Ao-hMw"/>
                                     <constraint firstItem="8K9-WE-QV7" firstAttribute="leading" secondItem="8JH-KK-t87" secondAttribute="leading" id="IpI-cJ-hyW"/>
                                     <constraint firstAttribute="bottom" secondItem="S8L-gp-5HW" secondAttribute="bottom" id="J2c-wp-qwo"/>
-                                    <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="top" secondItem="FDj-QU-PXX" secondAttribute="top" constant="30" id="L4P-nJ-96g"/>
+                                    <constraint firstItem="7Oo-ZZ-6WE" firstAttribute="top" secondItem="FDj-QU-PXX" secondAttribute="top" id="L4P-nJ-96g"/>
                                     <constraint firstItem="rlg-EG-sBP" firstAttribute="top" secondItem="7Oo-ZZ-6WE" secondAttribute="top" id="hhE-pr-7CK"/>
                                     <constraint firstItem="8K9-WE-QV7" firstAttribute="bottom" secondItem="FDj-QU-PXX" secondAttribute="bottom" id="i4V-ph-iYU"/>
                                     <constraint firstItem="1Vg-SI-Zpj" firstAttribute="top" secondItem="7Oo-ZZ-6WE" secondAttribute="top" id="iCe-Gi-87Y"/>
