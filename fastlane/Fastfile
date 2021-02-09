@@ -21,10 +21,24 @@ platform :ios do
     increment_build_number(xcodeproj: "CDDA.xcodeproj")
     build_app(workspace: "CDDA.xcworkspace", scheme: "CDDA Release")
     upload_to_testflight
+    sentry
   end
+
   lane :clean do
     for scheme in ["CDDA Release", "CDDA Debug"]
       xcclean workspace: "CDDA.xcworkspace", scheme: scheme
+    end
+  end
+
+  lane :sentry do
+    download_dsyms(version: 'latest', wait_for_dsym_processing: true)
+    for dSYM_path in lane_context[SharedValues::DSYM_PATHS]
+        puts dSYM_path
+        sentry_upload_dsym(
+          org_slug: 'ip-apollov-yuri-andreevich',
+          project_slug: 'cataclysm-dda-ios',
+          dsym_path: dSYM_path,
+        )
     end
   end
 end
