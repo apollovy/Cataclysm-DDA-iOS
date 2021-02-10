@@ -19,6 +19,12 @@ int main( int argc, char *argv[] )
 #endif
     }];
     NSString* documentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
+
+    [SentrySDK configureScope:^(SentryScope *_Nonnull scope) {
+        for (NSString* file in @[@"config/debug.log", @"config/debug.log.prev", @"config/options.json"])
+            [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
+    }];
+
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     const char* new_argv_const[] = {
         *argv,
