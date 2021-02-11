@@ -12,30 +12,15 @@
 @implementation SDL_uikitviewcontroller (Gamepad)
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self resizeRootView];
-    
     NSDictionary* appDefaults = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"overlayUIEnabled"];
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
-    
-    if ([NSUserDefaults.standardUserDefaults boolForKey:@"overlayUIEnabled"])
-    {
-        _gamepadViewController = [
-                                  [UIStoryboard storyboardWithName:@"UIControls" bundle:nil]
-                                  instantiateInitialViewController];
-        [self.view addSubview:_gamepadViewController.view];
+    for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
+        [self registerNotification:notification forSelector:@selector(resizeRootView)];
+    [self registerNotification:NSUserDefaultsDidChangeNotification forSelector:@selector(maybeToggleUI)];
 
-        for (NSString* notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-            [[NSNotificationCenter defaultCenter]
-             addObserver:self selector:@selector(updateFrame)
-             name:notification object:nil];
-        }
-    }
-    for (NSString* notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification]) {
-        [[NSNotificationCenter defaultCenter]
-         addObserver:self selector:@selector(resizeRootView)
-         name:notification object:nil];
-    }
+    [self resizeRootView];
+    [self maybeToggleUI];
 }
 
 - (void)resizeRootView
@@ -52,13 +37,37 @@
     }
 }
 
+- (void)maybeToggleUI
+{
+    if ([NSUserDefaults.standardUserDefaults boolForKey:@"overlayUIEnabled"])
+    {
+        _gamepadViewController = [[UIStoryboard storyboardWithName:@"UIControls" bundle:nil] instantiateInitialViewController];
+        [self.view addSubview:_gamepadViewController.view];
+
+        for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
+            [self registerNotification:notification forSelector:@selector(maybeUpdateFrame)];
+        }
+    } else {
+        [_gamepadViewController.view removeFromSuperview];
+        _gamepadViewController = nil;
+        for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
+            [[NSNotificationCenter defaultCenter] removeObserver:self name:notification object:nil];
+        }
+    }
+}
+
+- (void)registerNotification:(NSNotificationName)notification forSelector:(SEL)selector
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notification object:nil];
+}
+
 - (void)viewWillTransitionToSize:(CGSize)size
        withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
-    [self updateFrame];
+    [self maybeUpdateFrame];
 }
 
-- (void)updateFrame {
+- (void)maybeUpdateFrame {
     if (_gamepadViewController)
     {
         CGRect windowFrame = self.view.window.frame;
