@@ -26,6 +26,7 @@
 		B54FDD7225929FEA00505231 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7125929FEA00505231 /* MobileCoreServices.framework */; };
 		B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
+		B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B555591025D5BC8F00CD2E90 /* Settings.bundle */; };
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
 		B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA625AB85A20065602D /* dPad-Down@2x.png */; };
 		B559EDB025AB85A50065602D /* dPad-DownRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */; };
@@ -556,6 +557,7 @@
 		B54FDD7125929FEA00505231 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B54FDD7D2592A09000505231 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B555591025D5BC8F00CD2E90 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B559EDA625AB85A20065602D /* dPad-Down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Down@2x.png"; sourceTree = "<group>"; };
 		B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownRight@2x.png"; sourceTree = "<group>"; };
 		B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpLeft@2x.png"; sourceTree = "<group>"; };
@@ -1305,6 +1307,7 @@
 				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
 				B5FD200325A57A9F00CE613D /* mo */,
 				B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */,
+				B555591025D5BC8F00CD2E90 /* Settings.bundle */,
 			);
 			path = Bundle;
 			sourceTree = "<group>";
@@ -2256,6 +2259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
+				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
 				B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */,
 				B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
