@@ -48,6 +48,7 @@
             [self registerNotification:notification forSelector:@selector(maybeUpdateFrame)];
         }
     } else {
+        [self hideKeyboard];
         [_gamepadViewController.view removeFromSuperview];
         _gamepadViewController = nil;
         for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
