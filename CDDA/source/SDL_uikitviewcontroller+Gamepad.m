@@ -45,7 +45,7 @@
         [self.view addSubview:_gamepadViewController.view];
 
         for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-            [self registerNotification:notification forSelector:@selector(maybeUpdateFrame)];
+            [self registerNotification:notification forSelector:@selector(onKeyboard)];
         }
     } else {
         [self hideKeyboard];
@@ -62,19 +62,24 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notification object:nil];
 }
 
+-(void)onKeyboard
+{
+    CGSize size = self.view.window.frame.size;
+    size.height = size.height - self.keyboardHeight;
+    [self maybeUpdateFrameTo:size];
+}
+
 - (void)viewWillTransitionToSize:(CGSize)size
        withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
-    [self maybeUpdateFrame];
+    [self maybeUpdateFrameTo:size];
 }
 
-- (void)maybeUpdateFrame {
+- (void)maybeUpdateFrameTo:(CGSize)size {
     if (_gamepadViewController)
     {
-        CGRect windowFrame = self.view.window.frame;
         CGRect frame = _gamepadViewController.view.frame;
-        frame.origin.y = 0;
-        frame.size.height = windowFrame.size.height - self.keyboardHeight;
+        frame.size = size;
         _gamepadViewController.view.frame = frame;
     }
 }
