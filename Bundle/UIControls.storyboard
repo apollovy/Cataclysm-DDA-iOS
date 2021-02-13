@@ -1357,8 +1357,8 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="4wb-5h-Zec" appends="YES" id="1J9-Az-90B"/>
-                            <outletCollection property="gestureRecognizers" destination="f9E-JX-WWf" appends="YES" id="Wk9-EI-q0N"/>
-                            <outletCollection property="gestureRecognizers" destination="fLp-vV-UXL" appends="YES" id="OUy-at-fmX"/>
+                            <outletCollection property="gestureRecognizers" destination="Tfw-QS-14g" appends="YES" id="LLm-84-juW"/>
+                            <outletCollection property="gestureRecognizers" destination="oCc-us-EYS" appends="YES" id="bar-0D-b9v"/>
                         </connections>
                     </view>
                     <connections>
@@ -1400,20 +1400,16 @@
                         <outlet property="viewToHighlight" destination="8K9-WE-QV7" id="CQ2-ks-A8H"/>
                     </connections>
                 </panGestureRecognizer>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="f9E-JX-WWf" userLabel="Hide keyboard Screen Edge Pan Gesture Recognizer">
-                    <scrollTypes key="allowedScrollTypesMask" discrete="YES"/>
-                    <rectEdge key="edges" top="YES"/>
+                <swipeGestureRecognizer direction="up" id="Tfw-QS-14g" userLabel="Show Keyboard Swipe Gesture Recognizer">
                     <connections>
-                        <action selector="hideKeyboard:" destination="mgi-Zq-ipg" id="t8f-eh-FUG"/>
+                        <action selector="showKeyboard:" destination="mgi-Zq-ipg" id="XXp-ww-e7A"/>
                     </connections>
-                </screenEdgePanGestureRecognizer>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="fLp-vV-UXL" userLabel="Show keyboard Screen Edge Pan Gesture Recognizer">
-                    <scrollTypes key="allowedScrollTypesMask" discrete="YES"/>
-                    <rectEdge key="edges" bottom="YES"/>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="oCc-us-EYS" userLabel="Hide Keyboard Swipe Gesture Recognizer">
                     <connections>
-                        <action selector="showKeyboard:" destination="mgi-Zq-ipg" id="IEe-S4-HSx"/>
+                        <action selector="hideKeyboard:" destination="mgi-Zq-ipg" id="9SR-gx-n0s"/>
                     </connections>
-                </screenEdgePanGestureRecognizer>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="253" y="-79"/>
         </scene>

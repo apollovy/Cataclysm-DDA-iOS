@@ -256,12 +256,12 @@ NSDate* lastScrollingDate;
 
 #pragma mark - Keyboard toggling
 
--(void)showKeyboard:(UIScreenEdgePanGestureRecognizer*)sender
+-(void)showKeyboard:(UISwipeGestureRecognizer*)sender
 {
         [[self _getRootViewController] showKeyboard];
 }
 
--(void)hideKeyboard:(UIScreenEdgePanGestureRecognizer*)sender;
+-(void)hideKeyboard:(UISwipeGestureRecognizer*)sender;
 {
     [[self _getRootViewController] hideKeyboard];
 }
@@ -269,18 +269,6 @@ NSDate* lastScrollingDate;
 -(SDL_uikitviewcontroller*)_getRootViewController
 {
     return (SDL_uikitviewcontroller*)self.view.window.rootViewController;;
-}
-
-
-#pragma mark - UIGestureRecognizerDelegate
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
-shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-    if (([gestureRecognizer class] == [UIPanGestureRecognizer class]) && ([otherGestureRecognizer class] == [UIScreenEdgePanGestureRecognizer class]))
-        return YES;
-    else
-        return NO;
 }
 
 @end
