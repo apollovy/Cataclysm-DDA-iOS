@@ -9,6 +9,37 @@
 #import "SDL_uikitviewcontroller+Gamepad.h"
 #import "GamePadViewController.h"
 
+
+#pragma mark - OnKeyboardHandler
+
+@interface OnKeyboardHandler : NSObject
+
+@property (weak, nonatomic) SDL_uikitviewcontroller* _controller;
+
+@end
+
+@implementation OnKeyboardHandler
+
++(id)initWithController:(SDL_uikitviewcontroller*)controller
+{
+    OnKeyboardHandler* obj = [OnKeyboardHandler new];
+    obj._controller = controller;
+    
+    return obj;
+}
+
+-(void)onKeyboard
+{
+    CGSize size = self._controller.view.window.frame.size;
+    size.height = size.height - self._controller.keyboardHeight;
+    [self._controller maybeUpdateFrameTo:size];
+}
+
+@end
+
+
+#pragma mark - SDL_uikitviewcontroller (Gamepad)
+
 @implementation SDL_uikitviewcontroller (Gamepad)
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -44,29 +75,26 @@
         _gamepadViewController = [[UIStoryboard storyboardWithName:@"UIControls" bundle:nil] instantiateInitialViewController];
         [self.view addSubview:_gamepadViewController.view];
 
+        _onKeyboardHandler = [OnKeyboardHandler initWithController:self];
         for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-            [self registerNotification:notification forSelector:@selector(onKeyboard)];
+            [[NSNotificationCenter defaultCenter] addObserver:_onKeyboardHandler selector:@selector(onKeyboard) name:notification object:nil];
         }
     } else {
         [self hideKeyboard];
         [_gamepadViewController.view removeFromSuperview];
         _gamepadViewController = nil;
         for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-            [[NSNotificationCenter defaultCenter] removeObserver:self name:notification object:nil];
+            [[NSNotificationCenter defaultCenter] removeObserver:_onKeyboardHandler name:notification object:nil];
         }
+        _onKeyboardHandler = nil;
     }
 }
+
+OnKeyboardHandler* _onKeyboardHandler;
 
 - (void)registerNotification:(NSNotificationName)notification forSelector:(SEL)selector
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notification object:nil];
-}
-
--(void)onKeyboard
-{
-    CGSize size = self.view.window.frame.size;
-    size.height = size.height - self.keyboardHeight;
-    [self maybeUpdateFrameTo:size];
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size
@@ -88,3 +116,5 @@ GamePadViewController* _gamepadViewController;
 @dynamic keyboardHeight;
 
 @end
+
+

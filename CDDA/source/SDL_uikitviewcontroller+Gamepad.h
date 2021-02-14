@@ -9,4 +9,6 @@
 
 @property (nonatomic, assign) int keyboardHeight;
 
+- (void)maybeUpdateFrameTo:(CGSize)size;
+
 @end
