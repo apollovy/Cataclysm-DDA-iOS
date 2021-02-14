@@ -573,6 +573,8 @@
 		B560EE9125D996AE00FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EE9525D99A6200FDE1C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/UIControls.strings; sourceTree = "<group>"; };
 		B560EE9625D99A6300FDE1C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B560EE9925D99C6200FDE1C4 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/UIControls.strings; sourceTree = "<group>"; };
+		B560EE9A25D99C6300FDE1C4 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -2077,6 +2079,7 @@
 				Base,
 				hu,
 				es,
+				zh,
 			);
 			mainGroup = B57201C0259293EE003D2A20;
 			productRefGroup = B57201CA259293EE003D2A20 /* Products */;
@@ -2743,6 +2746,7 @@
 				B560EE8925D9822000FDE1C4 /* Base */,
 				B560EE8D25D9824800FDE1C4 /* hu */,
 				B560EE9525D99A6200FDE1C4 /* es */,
+				B560EE9925D99C6200FDE1C4 /* zh */,
 			);
 			name = UIControls.storyboard;
 			sourceTree = "<group>";
@@ -2752,6 +2756,7 @@
 			children = (
 				B560EE9125D996AE00FDE1C4 /* hu */,
 				B560EE9625D99A6300FDE1C4 /* es */,
+				B560EE9A25D99C6300FDE1C4 /* zh */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
