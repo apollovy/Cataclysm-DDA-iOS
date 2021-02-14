@@ -583,6 +583,8 @@
 		B560EEA625D9A71000FDE1C4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EEA925D9AA0900FDE1C4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/UIControls.strings; sourceTree = "<group>"; };
 		B560EEAA25D9AA0900FDE1C4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B560EEAD25D9B0CF00FDE1C4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/UIControls.strings; sourceTree = "<group>"; };
+		B560EEAE25D9B0D000FDE1C4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -2092,6 +2094,7 @@
 				de,
 				pt,
 				ru,
+				fr,
 			);
 			mainGroup = B57201C0259293EE003D2A20;
 			productRefGroup = B57201CA259293EE003D2A20 /* Products */;
@@ -2763,6 +2766,7 @@
 				B560EEA125D9A66600FDE1C4 /* de */,
 				B560EEA525D9A70F00FDE1C4 /* pt */,
 				B560EEA925D9AA0900FDE1C4 /* ru */,
+				B560EEAD25D9B0CF00FDE1C4 /* fr */,
 			);
 			name = UIControls.storyboard;
 			sourceTree = "<group>";
@@ -2777,6 +2781,7 @@
 				B560EEA225D9A66600FDE1C4 /* de */,
 				B560EEA625D9A71000FDE1C4 /* pt */,
 				B560EEAA25D9AA0900FDE1C4 /* ru */,
+				B560EEAE25D9B0D000FDE1C4 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
