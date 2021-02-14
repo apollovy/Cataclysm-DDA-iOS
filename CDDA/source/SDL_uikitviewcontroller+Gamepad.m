@@ -84,14 +84,17 @@ static CGSize _minSize = {632, 368};
 {
     if ([NSUserDefaults.standardUserDefaults boolForKey:@"overlayUIEnabled"])
     {
-        _gamepadViewController = [[UIStoryboard storyboardWithName:@"UIControls" bundle:nil] instantiateInitialViewController];
-        [self.view addSubview:_gamepadViewController.view];
+        if (!_gamepadViewController)
+        {
+            _gamepadViewController = [[UIStoryboard storyboardWithName:@"UIControls" bundle:nil] instantiateInitialViewController];
+            [self.view addSubview:_gamepadViewController.view];
 
-        _onKeyboardHandler = [OnKeyboardHandler initWithController:self];
-        for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-            [[NSNotificationCenter defaultCenter] addObserver:_onKeyboardHandler selector:@selector(onKeyboard) name:notification object:nil];
+            _onKeyboardHandler = [OnKeyboardHandler initWithController:self];
+            for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
+                [[NSNotificationCenter defaultCenter] addObserver:_onKeyboardHandler selector:@selector(onKeyboard) name:notification object:nil];
+            }
         }
-    } else {
+    } else if (_gamepadViewController) {
         [self hideKeyboard];
         [_gamepadViewController.view removeFromSuperview];
         _gamepadViewController = nil;
