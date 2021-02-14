@@ -11,7 +11,6 @@
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
-		B5174A6425C0ADC40085F2C7 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
@@ -38,6 +37,8 @@
 		B559EDB625AB85A50065602D /* dPad-Right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAD25AB85A40065602D /* dPad-Right@2x.png */; };
 		B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */; };
 		B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDB925AB86C70065602D /* button-pressed@2x.png */; };
+		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
+		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
@@ -535,7 +536,6 @@
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-DDA/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
-		B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIControls.storyboard; sourceTree = "<group>"; };
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
@@ -568,6 +568,9 @@
 		B559EDAD25AB85A40065602D /* dPad-Right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Right@2x.png"; sourceTree = "<group>"; };
 		B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpRight@2x.png"; sourceTree = "<group>"; };
 		B559EDB925AB86C70065602D /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
+		B560EE8925D9822000FDE1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UIControls.storyboard; sourceTree = "<group>"; };
+		B560EE8D25D9824800FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/UIControls.strings; sourceTree = "<group>"; };
+		B560EE9125D996AE00FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1306,7 +1309,7 @@
 				B50B447725A24F5600628243 /* JSDPad */,
 				B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */,
 				B5FD200325A57A9F00CE613D /* mo */,
-				B5174A6325C0ADC40085F2C7 /* UIControls.storyboard */,
+				B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */,
 				B555591025D5BC8F00CD2E90 /* Settings.bundle */,
 			);
 			path = Bundle;
@@ -1341,6 +1344,7 @@
 				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
 				B5B01B98259BF0480023AB00 /* source */,
 				B57201DA259293EF003D2A20 /* Info.plist */,
+				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
 			);
 			path = CDDA;
 			sourceTree = "<group>";
@@ -2069,6 +2073,7 @@
 			knownRegions = (
 				en,
 				Base,
+				hu,
 			);
 			mainGroup = B57201C0259293EE003D2A20;
 			productRefGroup = B57201CA259293EE003D2A20 /* Products */;
@@ -2264,9 +2269,10 @@
 				B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
 				B5EF4E9025C20850003948D0 /* button-pressed.png in Resources */,
-				B5174A6425C0ADC40085F2C7 /* UIControls.storyboard in Resources */,
+				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
 				B5EF4E9225C20850003948D0 /* button.png in Resources */,
+				B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */,
 				B559EDB325AB85A50065602D /* dPad-Left@2x.png in Resources */,
 				B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */,
 				B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */,
@@ -2728,6 +2734,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B560EE8925D9822000FDE1C4 /* Base */,
+				B560EE8D25D9824800FDE1C4 /* hu */,
+			);
+			name = UIControls.storyboard;
+			sourceTree = "<group>";
+		};
+		B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B560EE9125D996AE00FDE1C4 /* hu */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2800,6 +2823,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2874,6 +2898,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2950,7 +2975,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2990,7 +3015,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
