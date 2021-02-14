@@ -32,6 +32,7 @@
 {
     CGSize size = self._controller.view.window.frame.size;
     size.height = size.height - self._controller.keyboardHeight;
+    [self._controller resizeRootView];
     [self._controller maybeUpdateFrameTo:size];
 }
 
@@ -54,18 +55,29 @@
     [self maybeToggleUI];
 }
 
+// determined empirically, on lesser sizes main menu run away screaming
+static CGSize _minSize = {632, 368};
+
 - (void)resizeRootView
 {
+    UIView* view = self.view;
+    CGRect viewFrame = view.frame;
+    UIWindow* window = UIApplication.sharedApplication.keyWindow;
+
     if (@available(iOS 11.0, *)) {
-        UIView* view = self.view;
-        UIWindow* window = UIApplication.sharedApplication.keyWindow;
         UIEdgeInsets insets = window.safeAreaInsets;
 
-        CGRect viewFrame = view.frame;
-        viewFrame.origin.x = viewFrame.origin.x + insets.left;
-        viewFrame.size.width = viewFrame.size.width - insets.right - insets.left;
-        view.frame = viewFrame;
+        viewFrame.origin.x = insets.left;
+        viewFrame.size.width = window.frame.size.width - insets.right - insets.left;
     }
+    
+    CGFloat keyboardLessHeight = window.frame.size.height - self.keyboardHeight;
+    
+    if (keyboardLessHeight >= _minSize.height)
+    {
+        viewFrame.size.height = keyboardLessHeight;
+    }
+    view.frame = viewFrame;
 }
 
 - (void)maybeToggleUI
