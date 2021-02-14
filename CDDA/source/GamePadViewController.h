@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)pageUpDown:(PageUpDownPanGestureRecognizer*)sender;
 -(IBAction)showKeyboard:(UISwipeGestureRecognizer*)sender;
 -(IBAction)hideKeyboard:(UISwipeGestureRecognizer*)sender;
+-(IBAction)panView:(UIPanGestureRecognizer*)sender;
 
 @end
 

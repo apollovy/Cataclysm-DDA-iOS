@@ -220,7 +220,7 @@ NSDate* lastPress;
 }
 
 
-#pragma mark - Page up / Page down
+#pragma mark - Page up / Page down scroll
 
 CGPoint lastScrollingLocation;
 NSDate* lastScrollingDate;
@@ -250,6 +250,44 @@ NSDate* lastScrollingDate;
     {
         viewToHighlight.alpha = 0.02;
         lastScrollingLocation = CGPointZero;
+    }
+}
+
+
+#pragma mark - Pan view
+
+CGPoint lastPanningLocation;
+NSDate* lastPanningDate;
+
+-(void)panView:(UIPanGestureRecognizer*)sender
+{
+    if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
+    {
+        NSDate* now = [NSDate date];
+        if (!lastPanningDate || ([[lastPanningDate dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
+        {
+            CGPoint currentLocation = [sender translationInView:sender.view];
+            CGPoint movement = {.x=(currentLocation.x - lastPanningLocation.x), .y=(currentLocation.y - lastPanningLocation.y)};
+            
+            NSString* text;
+            if (fabs(movement.x) > fabs(movement.y))
+                if (movement.x > 0)
+                    text = @"H";
+                else
+                    text = @"L";
+            else
+                if (movement.y > 0)
+                    text = @"K";
+                else
+                    text = @"J";
+            SDL_send_text_event(text);
+            lastPanningLocation = currentLocation;
+            lastPanningDate = now;
+        }
+    }
+    if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
+    {
+        lastPanningLocation = CGPointZero;
     }
 }
 
