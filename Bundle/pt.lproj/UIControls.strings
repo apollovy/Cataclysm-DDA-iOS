@@ -1,0 +1,294 @@
+/* Class = "UIButton"; normalTitle = "N Toggle minimap"; ObjectID = "1Oa-cJ-9uK"; */
+"1Oa-cJ-9uK.normalTitle" = "N Alternar minimapa";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "1qM-mQ-Wtx"; */
+"1qM-mQ-Wtx.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "U Unload or empty wielded item"; ObjectID = "2oi-0o-qRZ"; */
+"2oi-0o-qRZ.normalTitle" = "U Descarregue ou esvazie o item empunhado";
+
+/* Class = "UIButton"; normalTitle = "m View map"; ObjectID = "2rD-mb-n0D"; */
+"2rD-mb-n0D.normalTitle" = "m Ver mapa";
+
+/* Class = "UIButton"; normalTitle = "Info"; ObjectID = "2sh-51-gTg"; */
+"2sh-51-gTg.normalTitle" = "Informações";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "3D3-C1-83f"; */
+"3D3-C1-83f.normalTitle" = "7";
+
+/* Class = "UIButton"; normalTitle = "L Move view East"; ObjectID = "4Wv-vE-3M1"; */
+"4Wv-vE-3M1.normalTitle" = "L Mover vista para o leste";
+
+/* Class = "UIButton"; normalTitle = "0 View help"; ObjectID = "5C1-w1-5a2"; */
+"5C1-w1-5a2.normalTitle" = "0 Ver ajuda";
+
+/* Class = "UIButton"; normalTitle = ": Center view"; ObjectID = "5tG-7H-PAk"; */
+"5tG-7H-PAk.normalTitle" = ": Vista central";
+
+/* Class = "UIButton"; normalTitle = "Look"; ObjectID = "6A1-2M-9GH"; */
+"6A1-2M-9GH.normalTitle" = "Olhar";
+
+/* Class = "UIButton"; normalTitle = "R Read"; ObjectID = "7ms-CY-ZSx"; */
+"7ms-CY-ZSx.normalTitle" = "R Read";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "7PD-Dg-gMD"; */
+"7PD-Dg-gMD.normalTitle" = "4";
+
+/* Class = "UIButton"; normalTitle = "D"; ObjectID = "7Zi-hn-3K0"; */
+"7Zi-hn-3K0.normalTitle" = "D";
+
+/* Class = "UIButton"; normalTitle = "Y Manage zones"; ObjectID = "8RM-dc-ehg"; */
+"8RM-dc-ehg.normalTitle" = "Y Gerenciar zonas";
+
+/* Class = "UIButton"; normalTitle = "Inventory"; ObjectID = "21L-gO-5lI"; */
+"21L-gO-5lI.normalTitle" = "Inventário";
+
+/* Class = "UIButton"; normalTitle = "V List all items around the player"; ObjectID = "32c-b7-dgm"; */
+"32c-b7-dgm.normalTitle" = "V Listar todos os itens ao redor do player";
+
+/* Class = "UIButton"; normalTitle = "I"; ObjectID = "99e-nn-2Bg"; */
+"99e-nn-2Bg.normalTitle" = "I";
+
+/* Class = "UIButton"; normalTitle = "W"; ObjectID = "A9E-wE-NsX"; */
+"A9E-wE-NsX.normalTitle" = "W";
+
+/* Class = "UIButton"; normalTitle = "m Change aim mode"; ObjectID = "abw-Gi-gLh"; */
+"abw-Gi-gLh.normalTitle" = "m Alterar modo de mira";
+
+/* Class = "UIButton"; normalTitle = "A Apply or use wielded item"; ObjectID = "Ag8-HV-vsg"; */
+"Ag8-HV-vsg.normalTitle" = "A Aplicar ou usar item empunhado";
+
+/* Class = "UIButton"; normalTitle = "s Toggle burst/auto mode"; ObjectID = "aLY-Ci-gcY"; */
+"aLY-Ci-gcY.normalTitle" = "s Alternar modo burst / automático";
+
+/* Class = "UIButton"; normalTitle = "/ Advanced inventory management"; ObjectID = "Arx-BI-4Q2"; */
+"Arx-BI-4Q2.normalTitle" = "/ Gerenciamento avançado de estoque";
+
+/* Class = "UIButton"; normalTitle = "* Toggle snap-to-target"; ObjectID = "b0h-MK-q2B"; */
+"b0h-MK-q2B.normalTitle" = "* Alternar snap-to-target";
+
+/* Class = "UIButton"; normalTitle = "f Fire wielded item"; ObjectID = "b1L-YO-kzg"; */
+"b1L-YO-kzg.normalTitle" = "f Item de fogo";
+
+/* Class = "UIButton"; normalTitle = "v View morale"; ObjectID = "BCY-BL-P82"; */
+"BCY-BL-P82.normalTitle" = "v Ver moral";
+
+/* Class = "UIButton"; normalTitle = "{ Toggle map memory"; ObjectID = "BGM-no-Wvz"; */
+"BGM-no-Wvz.normalTitle" = "{Alternar memória do mapa";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "bkz-j8-p5I"; */
+"bkz-j8-p5I.normalTitle" = "5";
+
+/* Class = "UIButton"; normalTitle = "w Wield"; ObjectID = "c3J-oA-xhS"; */
+"c3J-oA-xhS.normalTitle" = "w empunhar";
+
+/* Class = "UIButton"; normalTitle = "r Reload item"; ObjectID = "c5U-wN-MtZ"; */
+"c5U-wN-MtZ.normalTitle" = "r Recarregar item";
+
+/* Class = "UIButton"; normalTitle = "< Ascend stairs"; ObjectID = "cFn-1i-RcC"; */
+"cFn-1i-RcC.normalTitle" = "<Subir escadas";
+
+/* Class = "UIButton"; normalTitle = "d Drop item"; ObjectID = "cml-1s-lAK"; */
+"cml-1s-lAK.normalTitle" = "d Soltar item";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "cry-Ec-icn"; */
+"cry-Ec-icn.normalTitle" = "8";
+
+/* Class = "UILabel"; text = "⮐"; ObjectID = "cWf-7i-67E"; */
+"cWf-7i-67E.text" = "⮐";
+
+/* Class = "UIButton"; normalTitle = "C"; ObjectID = "cXb-a6-SSR"; */
+"cXb-a6-SSR.normalTitle" = "C";
+
+/* Class = "UIButton"; normalTitle = "Misc"; ObjectID = "D2E-Ba-zeS"; */
+"D2E-Ba-zeS.normalTitle" = "Misc";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "D8y-g2-3h4"; */
+"D8y-g2-3h4.normalTitle" = "6";
+
+/* Class = "UIButton"; normalTitle = "H Move view West"; ObjectID = "eb9-5P-Ygu"; */
+"eb9-5P-Ygu.normalTitle" = "H Mover vista para oeste";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "EbI-bB-iO1"; */
+"EbI-bB-iO1.normalTitle" = "3";
+
+/* Class = "UIButton"; normalTitle = "Craft"; ObjectID = "fT9-H1-Jfz"; */
+"fT9-H1-Jfz.normalTitle" = "Construir";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "FyZ-sQ-Dhh"; */
+"FyZ-sQ-Dhh.normalTitle" = "9";
+
+/* Class = "UIButton"; normalTitle = "x Look around"; ObjectID = "gZs-4A-Xuc"; */
+"gZs-4A-Xuc.normalTitle" = "x Olhe em volta";
+
+/* Class = "UILabel"; text = "SPACE"; ObjectID = "H0S-tR-HRe"; */
+"H0S-tR-HRe.text" = "ESPAÇO";
+
+/* Class = "UIButton"; normalTitle = "@ View player info"; ObjectID = "ha2-h4-KcP"; */
+"ha2-h4-KcP.normalTitle" = "@ Ver informações do jogador";
+
+/* Class = "UIButton"; normalTitle = "& Craft items"; ObjectID = "HfL-3G-dbv"; */
+"HfL-3G-dbv.normalTitle" = "& Itens artesanato";
+
+/* Class = "UIButton"; normalTitle = "a Apply or use item"; ObjectID = "HTd-ax-jFV"; */
+"HTd-ax-jFV.normalTitle" = "a Aplicar ou usar item";
+
+/* Class = "UIButton"; normalTitle = "g Pickup nearby item(s)"; ObjectID = "hxf-GZ-iXP"; */
+"hxf-GZ-iXP.normalTitle" = "g Retirar item (ns) próximo (s)";
+
+/* Class = "UIButton"; normalTitle = "* Construct terrain"; ObjectID = "i9l-yy-8zg"; */
+"i9l-yy-8zg.normalTitle" = "* Construir terreno";
+
+/* Class = "UIButton"; normalTitle = "_ Select martial arts style"; ObjectID = "I23-SD-kCK"; */
+"I23-SD-kCK.normalTitle" = "_ Selecione o estilo de artes marciais";
+
+/* Class = "UIButton"; normalTitle = "} Toggle panel admin"; ObjectID = "IhA-h7-2Nb"; */
+"IhA-h7-2Nb.normalTitle" = "} Alternar painel de administração";
+
+/* Class = "UIButton"; normalTitle = "+ Re-layer armor/clothing"; ObjectID = "Itl-U3-Oma"; */
+"Itl-U3-Oma.normalTitle" = "+ Re-camada de armadura / roupas";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "Ji1-u6-tZa"; */
+"Ji1-u6-tZa.normalTitle" = "2";
+
+/* Class = "UILabel"; text = "SPACE"; ObjectID = "JiR-fK-U8f"; */
+"JiR-fK-U8f.text" = "ESPAÇO";
+
+/* Class = "UIButton"; normalTitle = "Combat"; ObjectID = "JZL-ow-0sR"; */
+"JZL-ow-0sR.normalTitle" = "Combate";
+
+/* Class = "UIButton"; normalTitle = "^ Control vehicle"; ObjectID = "ks3-Xr-EHC"; */
+"ks3-Xr-EHC.normalTitle" = "^ Veículo de controle";
+
+/* Class = "UIButton"; normalTitle = "I Compare two items"; ObjectID = "l2O-c5-UIM"; */
+"l2O-c5-UIM.normalTitle" = "I comparo dois itens";
+
+/* Class = "UIButton"; normalTitle = "X Peek around corners"; ObjectID = "Lei-Cf-xhr"; */
+"Lei-Cf-xhr.normalTitle" = "X Espreite pelos cantos";
+
+/* Class = "UIButton"; normalTitle = "P View message log"; ObjectID = "LZ2-oo-Kzm"; */
+"LZ2-oo-Kzm.normalTitle" = "P Ver log de mensagens";
+
+/* Class = "UIButton"; normalTitle = "[ View/activate mutations"; ObjectID = "MCC-ov-ITU"; */
+"MCC-ov-ITU.normalTitle" = "[Ver / ativar mutações";
+
+/* Class = "UIButton"; normalTitle = "# View factions"; ObjectID = "mJp-Wa-j4J"; */
+"mJp-Wa-j4J.normalTitle" = "# Ver facções";
+
+/* Class = "UIButton"; normalTitle = "= Swap inventory letters"; ObjectID = "NgW-Cc-7tV"; */
+"NgW-Cc-7tV.normalTitle" = "= Trocar cartas de inventário";
+
+/* Class = "UIButton"; normalTitle = "G Grab something nearby"; ObjectID = "Nm7-Wl-Php"; */
+"Nm7-Wl-Php.normalTitle" = "G Pegue algo próximo";
+
+/* Class = "UIButton"; normalTitle = "K Move view North"; ObjectID = "OrX-vq-dua"; */
+"OrX-vq-dua.normalTitle" = "K Mover vista para o norte";
+
+/* Class = "UIButton"; normalTitle = "( Disassemble items"; ObjectID = "P5l-UU-zih"; */
+"P5l-UU-zih.normalTitle" = "(Desmonte os itens";
+
+/* Class = "UIButton"; normalTitle = "T Take off worn item"; ObjectID = "pDH-cF-ILP"; */
+"pDH-cF-ILP.normalTitle" = "T Tire o item usado";
+
+/* Class = "UIButton"; normalTitle = "e Examine nearby terrain"; ObjectID = "PY5-Xk-Qjh"; */
+"PY5-Xk-Qjh.normalTitle" = "e Examine o terreno próximo";
+
+/* Class = "UIButton"; normalTitle = "o Open door"; ObjectID = "pYt-r8-kmV"; */
+"pYt-r8-kmV.normalTitle" = "o Porta aberta";
+
+/* Class = "UIButton"; normalTitle = "\\ Haul items along the ground"; ObjectID = "q5D-0k-8IJ"; */
+"q5D-0k-8IJ.normalTitle" = "\\ Transporte de itens ao longo do solo";
+
+/* Class = "UIButton"; normalTitle = ") View scores"; ObjectID = "QEJ-AJ-Gz7"; */
+"QEJ-AJ-Gz7.normalTitle" = ") Ver pontuações";
+
+/* Class = "UIButton"; normalTitle = "Interact"; ObjectID = "qvM-pp-jx7"; */
+"qvM-pp-jx7.normalTitle" = "Interagir";
+
+/* Class = "UIButton"; normalTitle = "c Close door"; ObjectID = "RUE-O8-I0o"; */
+"RUE-O8-I0o.normalTitle" = "c Fechar porta";
+
+/* Class = "UIButton"; normalTitle = "| Wait for several minutes"; ObjectID = "STE-m7-gS5"; */
+"STE-m7-gS5.normalTitle" = "| Espere alguns minutos";
+
+/* Class = "UIButton"; normalTitle = "B Butcher"; ObjectID = "su3-cu-4E5"; */
+"su3-cu-4E5.normalTitle" = "B Butcher";
+
+/* Class = "UIButton"; normalTitle = "> Descend stairs"; ObjectID = "TC0-pd-coq"; */
+"TC0-pd-coq.normalTitle" = "> Descer escadas";
+
+/* Class = "UIButton"; normalTitle = "C Chat with NPC"; ObjectID = "tsl-6o-px0"; */
+"tsl-6o-px0.normalTitle" = "C Bate-papo com NPC";
+
+/* Class = "UIButton"; normalTitle = "D Drop item to adjacent tile"; ObjectID = "UaZ-fe-UbN"; */
+"UaZ-fe-UbN.normalTitle" = "D Solte o item no ladrilho adjacente";
+
+/* Class = "UIButton"; normalTitle = "- Recraft last recipe"; ObjectID = "Udi-IA-HcC"; */
+"Udi-IA-HcC.normalTitle" = "- Recrie a última receita";
+
+/* Class = "UILabel"; text = "SPACE"; ObjectID = "uFc-fK-n8N"; */
+"uFc-fK-n8N.text" = "ESPAÇO";
+
+/* Class = "UIButton"; normalTitle = "E Eat"; ObjectID = "upz-QV-EZk"; */
+"upz-QV-EZk.normalTitle" = "E comer";
+
+/* Class = "UIButton"; normalTitle = "% Item action menu"; ObjectID = "uUN-zr-a0Z"; */
+"uUN-zr-a0Z.normalTitle" = "% Menu de ação do item";
+
+/* Class = "UIButton"; normalTitle = "W Wear item"; ObjectID = "v5b-ud-ybf"; */
+"v5b-ud-ybf.normalTitle" = "W Item Wear";
+
+/* Class = "UIButton"; normalTitle = "t Throw item"; ObjectID = "vFn-qJ-jex"; */
+"vFn-qJ-jex.normalTitle" = "t Jogue item";
+
+/* Class = "UILabel"; text = "TAB"; ObjectID = "W0g-LR-zoy"; */
+"W0g-LR-zoy.text" = "ABA";
+
+/* Class = "UIButton"; normalTitle = "! Toggle safe mode"; ObjectID = "wer-L7-Cpb"; */
+"wer-L7-Cpb.normalTitle" = "! Alternar modo de segurança";
+
+/* Class = "UIButton"; normalTitle = "s Smash nearby terrain"; ObjectID = "wiQ-zS-lav"; */
+"wiQ-zS-lav.normalTitle" = "s Esmagar terreno próximo";
+
+/* Class = "UIButton"; normalTitle = "\" Movement mode menu"; ObjectID = "WXI-oR-EwK"; */
+"WXI-oR-EwK.normalTitle" = "\"Menu do modo de movimento";
+
+/* Class = "UIButton"; normalTitle = "F Toggle attack mode of wielded item"; ObjectID = "x7p-pw-tds"; */
+"x7p-pw-tds.normalTitle" = "F Alternar modo de ataque do item empunhado";
+
+/* Class = "UIButton"; normalTitle = "J Move view South"; ObjectID = "XA1-YX-0MP"; */
+"XA1-YX-0MP.normalTitle" = "J Mova a vista para o sul";
+
+/* Class = "UIButton"; normalTitle = "p View/activate bionics"; ObjectID = "xex-8W-XPo"; */
+"xex-8W-XPo.normalTitle" = "p Ver / ativar biônica";
+
+/* Class = "UIButton"; normalTitle = "Q Commit suicide"; ObjectID = "xF2-D6-5Nd"; */
+"xF2-D6-5Nd.normalTitle" = "Q Cometer suicídio";
+
+/* Class = "UIButton"; normalTitle = "S Save and quit"; ObjectID = "xmw-JK-7yF"; */
+"xmw-JK-7yF.normalTitle" = "S Salvar e sair";
+
+/* Class = "UIButton"; normalTitle = "A"; ObjectID = "xSF-Dh-vwe"; */
+"xSF-Dh-vwe.normalTitle" = "A";
+
+/* Class = "UILabel"; text = "ESC"; ObjectID = "Xyh-hU-GEr"; */
+"Xyh-hU-GEr.text" = "ESC";
+
+/* Class = "UIButton"; normalTitle = "' Ignore nearby enemy"; ObjectID = "yr1-rH-Wes"; */
+"yr1-rH-Wes.normalTitle" = "'Ignorar o inimigo próximo";
+
+/* Class = "UIButton"; normalTitle = "i Open inventory"; ObjectID = "YVi-b2-ygR"; */
+"YVi-b2-ygR.normalTitle" = "i abro inventário";
+
+/* Class = "UIButton"; normalTitle = "M View missions"; ObjectID = "ZHm-Pw-jfr"; */
+"ZHm-Pw-jfr.normalTitle" = "M Ver missões";
+
+/* Class = "UIButton"; normalTitle = "$ Sleep"; ObjectID = "zNc-RM-hfo"; */
+"zNc-RM-hfo.normalTitle" = "$ Sleep";
+
+/* Class = "UILabel"; text = "BTAB"; ObjectID = "zU7-n1-uEj"; */
+"zU7-n1-uEj.text" = "BTAB";
+
+/* Class = "UIButton"; normalTitle = "O Zone activities"; ObjectID = "zyS-tL-9CL"; */
+"zyS-tL-9CL.normalTitle" = "O Atividades da Zona";
+
