@@ -1,11 +1,11 @@
 /* Class = "UIButton"; normalTitle = "N Toggle minimap"; ObjectID = "1Oa-cJ-9uK"; */
-"1Oa-cJ-9uK.normalTitle" = "N 미니맵전환";
+"1Oa-cJ-9uK.normalTitle" = "N 미니 맵 전환";
 
 /* Class = "UIButton"; normalTitle = "1"; ObjectID = "1qM-mQ-Wtx"; */
 "1qM-mQ-Wtx.normalTitle" = "1";
 
 /* Class = "UIButton"; normalTitle = "U Unload or empty wielded item"; ObjectID = "2oi-0o-qRZ"; */
-"2oi-0o-qRZ.normalTitle" = "U 사용된아이템을내리거나비웁니다.";
+"2oi-0o-qRZ.normalTitle" = "U 사용 된 아이템을 내리거나 비 웁니다.";
 
 /* Class = "UIButton"; normalTitle = "m View map"; ObjectID = "2rD-mb-n0D"; */
 "2rD-mb-n0D.normalTitle" = "m지도보기";
@@ -17,7 +17,7 @@
 "3D3-C1-83f.normalTitle" = "7";
 
 /* Class = "UIButton"; normalTitle = "L Move view East"; ObjectID = "4Wv-vE-3M1"; */
-"4Wv-vE-3M1.normalTitle" = "L 이동보기동쪽";
+"4Wv-vE-3M1.normalTitle" = "L 이동보기 동쪽";
 
 /* Class = "UIButton"; normalTitle = "0 View help"; ObjectID = "5C1-w1-5a2"; */
 "5C1-w1-5a2.normalTitle" = "0 도움말보기";
@@ -38,13 +38,13 @@
 "7Zi-hn-3K0.normalTitle" = "D";
 
 /* Class = "UIButton"; normalTitle = "Y Manage zones"; ObjectID = "8RM-dc-ehg"; */
-"8RM-dc-ehg.normalTitle" = "Y 영역관리";
+"8RM-dc-ehg.normalTitle" = "Y 영역 관리";
 
 /* Class = "UIButton"; normalTitle = "Inventory"; ObjectID = "21L-gO-5lI"; */
 "21L-gO-5lI.normalTitle" = "목록";
 
 /* Class = "UIButton"; normalTitle = "V List all items around the player"; ObjectID = "32c-b7-dgm"; */
-"32c-b7-dgm.normalTitle" = "V 플레이어주변의모든항목나열";
+"32c-b7-dgm.normalTitle" = "V 플레이어 주변의 모든 항목 나열";
 
 /* Class = "UIButton"; normalTitle = "I"; ObjectID = "99e-nn-2Bg"; */
 "99e-nn-2Bg.normalTitle" = "I";
@@ -53,28 +53,28 @@
 "A9E-wE-NsX.normalTitle" = "W";
 
 /* Class = "UIButton"; normalTitle = "m Change aim mode"; ObjectID = "abw-Gi-gLh"; */
-"abw-Gi-gLh.normalTitle" = "m 조준모드변경";
+"abw-Gi-gLh.normalTitle" = "m 조준 모드 변경";
 
 /* Class = "UIButton"; normalTitle = "A Apply or use wielded item"; ObjectID = "Ag8-HV-vsg"; */
-"Ag8-HV-vsg.normalTitle" = "A 휘두르는아이템적용또는사용";
+"Ag8-HV-vsg.normalTitle" = "A 휘두르는 아이템 적용 또는 사용";
 
 /* Class = "UIButton"; normalTitle = "s Toggle burst/auto mode"; ObjectID = "aLY-Ci-gcY"; */
-"aLY-Ci-gcY.normalTitle" = "s 버스트 / 자동모드전환";
+"aLY-Ci-gcY.normalTitle" = "s 버스트 / 자동 모드 전환";
 
 /* Class = "UIButton"; normalTitle = "/ Advanced inventory management"; ObjectID = "Arx-BI-4Q2"; */
-"Arx-BI-4Q2.normalTitle" = "/ 고급재고관리";
+"Arx-BI-4Q2.normalTitle" = "/ 고급 재고 관리";
 
 /* Class = "UIButton"; normalTitle = "* Toggle snap-to-target"; ObjectID = "b0h-MK-q2B"; */
-"b0h-MK-q2B.normalTitle" = "* 대상에스냅전환";
+"b0h-MK-q2B.normalTitle" = "* 대상에 스냅 전환";
 
 /* Class = "UIButton"; normalTitle = "f Fire wielded item"; ObjectID = "b1L-YO-kzg"; */
-"b1L-YO-kzg.normalTitle" = "f 불휘두르는아이템";
+"b1L-YO-kzg.normalTitle" = "f 불 휘두르는 아이템";
 
 /* Class = "UIButton"; normalTitle = "v View morale"; ObjectID = "BCY-BL-P82"; */
 "BCY-BL-P82.normalTitle" = "v 사기보기";
 
 /* Class = "UIButton"; normalTitle = "{ Toggle map memory"; ObjectID = "BGM-no-Wvz"; */
-"BGM-no-Wvz.normalTitle" = "{지도메모리전환";
+"BGM-no-Wvz.normalTitle" = "{지도 메모리 전환";
 
 /* Class = "UIButton"; normalTitle = "5"; ObjectID = "bkz-j8-p5I"; */
 "bkz-j8-p5I.normalTitle" = "5";
@@ -83,13 +83,13 @@
 "c3J-oA-xhS.normalTitle" = "w 휘두르다";
 
 /* Class = "UIButton"; normalTitle = "r Reload item"; ObjectID = "c5U-wN-MtZ"; */
-"c5U-wN-MtZ.normalTitle" = "r 항목다시로드";
+"c5U-wN-MtZ.normalTitle" = "r 항목 다시로드";
 
 /* Class = "UIButton"; normalTitle = "< Ascend stairs"; ObjectID = "cFn-1i-RcC"; */
 "cFn-1i-RcC.normalTitle" = "<계단 오르기";
 
 /* Class = "UIButton"; normalTitle = "d Drop item"; ObjectID = "cml-1s-lAK"; */
-"cml-1s-lAK.normalTitle" = "d 드롭아이템";
+"cml-1s-lAK.normalTitle" = "d 드롭 아이템";
 
 /* Class = "UIButton"; normalTitle = "8"; ObjectID = "cry-Ec-icn"; */
 "cry-Ec-icn.normalTitle" = "8";
@@ -107,7 +107,7 @@
 "D8y-g2-3h4.normalTitle" = "6";
 
 /* Class = "UIButton"; normalTitle = "H Move view West"; ObjectID = "eb9-5P-Ygu"; */
-"eb9-5P-Ygu.normalTitle" = "H 이동보기서쪽";
+"eb9-5P-Ygu.normalTitle" = "H 이동보기 서쪽";
 
 /* Class = "UIButton"; normalTitle = "3"; ObjectID = "EbI-bB-iO1"; */
 "EbI-bB-iO1.normalTitle" = "3";
@@ -125,28 +125,28 @@
 "H0S-tR-HRe.text" = "우주";
 
 /* Class = "UIButton"; normalTitle = "@ View player info"; ObjectID = "ha2-h4-KcP"; */
-"ha2-h4-KcP.normalTitle" = "@ 선수정보보기";
+"ha2-h4-KcP.normalTitle" = "@ 선수 정보보기";
 
 /* Class = "UIButton"; normalTitle = "& Craft items"; ObjectID = "HfL-3G-dbv"; */
 "HfL-3G-dbv.normalTitle" = "& 공예품";
 
 /* Class = "UIButton"; normalTitle = "a Apply or use item"; ObjectID = "HTd-ax-jFV"; */
-"HTd-ax-jFV.normalTitle" = "a 적용또는사용항목";
+"HTd-ax-jFV.normalTitle" = "a 적용 또는 사용 항목";
 
 /* Class = "UIButton"; normalTitle = "g Pickup nearby item(s)"; ObjectID = "hxf-GZ-iXP"; */
-"hxf-GZ-iXP.normalTitle" = "g 주변물품픽업";
+"hxf-GZ-iXP.normalTitle" = "g 주변 물품 픽업";
 
 /* Class = "UIButton"; normalTitle = "* Construct terrain"; ObjectID = "i9l-yy-8zg"; */
-"i9l-yy-8zg.normalTitle" = "* 건설지형";
+"i9l-yy-8zg.normalTitle" = "* 건설 지형";
 
 /* Class = "UIButton"; normalTitle = "_ Select martial arts style"; ObjectID = "I23-SD-kCK"; */
-"I23-SD-kCK.normalTitle" = "_ 무술스타일선택";
+"I23-SD-kCK.normalTitle" = "_ 무술 스타일 선택";
 
 /* Class = "UIButton"; normalTitle = "} Toggle panel admin"; ObjectID = "IhA-h7-2Nb"; */
-"IhA-h7-2Nb.normalTitle" = "} 패널관리자전환";
+"IhA-h7-2Nb.normalTitle" = "} 패널 관리자 전환";
 
 /* Class = "UIButton"; normalTitle = "+ Re-layer armor/clothing"; ObjectID = "Itl-U3-Oma"; */
-"Itl-U3-Oma.normalTitle" = "+ 갑옷 / 의류다시레이어";
+"Itl-U3-Oma.normalTitle" = "+ 갑옷 / 의류 다시 레이어";
 
 /* Class = "UIButton"; normalTitle = "2"; ObjectID = "Ji1-u6-tZa"; */
 "Ji1-u6-tZa.normalTitle" = "2";
@@ -158,16 +158,16 @@
 "JZL-ow-0sR.normalTitle" = "전투";
 
 /* Class = "UIButton"; normalTitle = "^ Control vehicle"; ObjectID = "ks3-Xr-EHC"; */
-"ks3-Xr-EHC.normalTitle" = "^ 제어차량";
+"ks3-Xr-EHC.normalTitle" = "^ 제어 차량";
 
 /* Class = "UIButton"; normalTitle = "I Compare two items"; ObjectID = "l2O-c5-UIM"; */
-"l2O-c5-UIM.normalTitle" = "I나는두항목을비교";
+"l2O-c5-UIM.normalTitle" = "I나는 두 항목을 비교";
 
 /* Class = "UIButton"; normalTitle = "X Peek around corners"; ObjectID = "Lei-Cf-xhr"; */
-"Lei-Cf-xhr.normalTitle" = "X 모서리주변엿보기";
+"Lei-Cf-xhr.normalTitle" = "X 모서리 주변 엿보기";
 
 /* Class = "UIButton"; normalTitle = "P View message log"; ObjectID = "LZ2-oo-Kzm"; */
-"LZ2-oo-Kzm.normalTitle" = "P 메시지로그보기";
+"LZ2-oo-Kzm.normalTitle" = "P 메시지 로그보기";
 
 /* Class = "UIButton"; normalTitle = "[ View/activate mutations"; ObjectID = "MCC-ov-ITU"; */
 "MCC-ov-ITU.normalTitle" = "[돌연변이보기 / 활성화";
@@ -176,55 +176,55 @@
 "mJp-Wa-j4J.normalTitle" = "# 파벌보기";
 
 /* Class = "UIButton"; normalTitle = "= Swap inventory letters"; ObjectID = "NgW-Cc-7tV"; */
-"NgW-Cc-7tV.normalTitle" = "= 재고문자교체";
+"NgW-Cc-7tV.normalTitle" = "= 재고 문자 교체";
 
 /* Class = "UIButton"; normalTitle = "G Grab something nearby"; ObjectID = "Nm7-Wl-Php"; */
-"Nm7-Wl-Php.normalTitle" = "G 근처에서뭔가잡아";
+"Nm7-Wl-Php.normalTitle" = "G 근처에서 뭔가 잡아";
 
 /* Class = "UIButton"; normalTitle = "K Move view North"; ObjectID = "OrX-vq-dua"; */
-"OrX-vq-dua.normalTitle" = "K 이동보기북쪽";
+"OrX-vq-dua.normalTitle" = "K 이동보기 북쪽";
 
 /* Class = "UIButton"; normalTitle = "( Disassemble items"; ObjectID = "P5l-UU-zih"; */
-"P5l-UU-zih.normalTitle" = "(품목분해";
+"P5l-UU-zih.normalTitle" = "(품목 분해";
 
 /* Class = "UIButton"; normalTitle = "T Take off worn item"; ObjectID = "pDH-cF-ILP"; */
-"pDH-cF-ILP.normalTitle" = "T 착용아이템벗기";
+"pDH-cF-ILP.normalTitle" = "T 착용 아이템 벗기";
 
 /* Class = "UIButton"; normalTitle = "e Examine nearby terrain"; ObjectID = "PY5-Xk-Qjh"; */
-"PY5-Xk-Qjh.normalTitle" = "e 주변지형조사";
+"PY5-Xk-Qjh.normalTitle" = "e 주변 지형 조사";
 
 /* Class = "UIButton"; normalTitle = "o Open door"; ObjectID = "pYt-r8-kmV"; */
-"pYt-r8-kmV.normalTitle" = "o 문열림";
+"pYt-r8-kmV.normalTitle" = "o 문 열림";
 
 /* Class = "UIButton"; normalTitle = "\\ Haul items along the ground"; ObjectID = "q5D-0k-8IJ"; */
-"q5D-0k-8IJ.normalTitle" = "\\ 땅을따라물건운반";
+"q5D-0k-8IJ.normalTitle" = "\\ 땅을 따라 물건 운반";
 
 /* Class = "UIButton"; normalTitle = ") View scores"; ObjectID = "QEJ-AJ-Gz7"; */
 "QEJ-AJ-Gz7.normalTitle" = ") 점수보기";
 
 /* Class = "UIButton"; normalTitle = "Interact"; ObjectID = "qvM-pp-jx7"; */
-"qvM-pp-jx7.normalTitle" = "상호작용";
+"qvM-pp-jx7.normalTitle" = "상호 작용";
 
 /* Class = "UIButton"; normalTitle = "c Close door"; ObjectID = "RUE-O8-I0o"; */
-"RUE-O8-I0o.normalTitle" = "c 문닫기";
+"RUE-O8-I0o.normalTitle" = "c 문 닫기";
 
 /* Class = "UIButton"; normalTitle = "| Wait for several minutes"; ObjectID = "STE-m7-gS5"; */
-"STE-m7-gS5.normalTitle" = "| 몇분간기다리십시오";
+"STE-m7-gS5.normalTitle" = "| 몇 분간 기다리십시오";
 
 /* Class = "UIButton"; normalTitle = "B Butcher"; ObjectID = "su3-cu-4E5"; */
 "su3-cu-4E5.normalTitle" = "B 정육점";
 
 /* Class = "UIButton"; normalTitle = "> Descend stairs"; ObjectID = "TC0-pd-coq"; */
-"TC0-pd-coq.normalTitle" = "> 계단하강";
+"TC0-pd-coq.normalTitle" = "> 계단 하강";
 
 /* Class = "UIButton"; normalTitle = "C Chat with NPC"; ObjectID = "tsl-6o-px0"; */
-"tsl-6o-px0.normalTitle" = "C NPC와채팅";
+"tsl-6o-px0.normalTitle" = "C NPC와 채팅";
 
 /* Class = "UIButton"; normalTitle = "D Drop item to adjacent tile"; ObjectID = "UaZ-fe-UbN"; */
-"UaZ-fe-UbN.normalTitle" = "D 인접한타일에아이템드롭";
+"UaZ-fe-UbN.normalTitle" = "D 인접한 타일에 아이템 드롭";
 
 /* Class = "UIButton"; normalTitle = "- Recraft last recipe"; ObjectID = "Udi-IA-HcC"; */
-"Udi-IA-HcC.normalTitle" = "-마지막레시피재생";
+"Udi-IA-HcC.normalTitle" = "-마지막 레시피 재생";
 
 /* Class = "UILabel"; text = "SPACE"; ObjectID = "uFc-fK-n8N"; */
 "uFc-fK-n8N.text" = "우주";
@@ -233,40 +233,40 @@
 "upz-QV-EZk.normalTitle" = "E 먹다";
 
 /* Class = "UIButton"; normalTitle = "% Item action menu"; ObjectID = "uUN-zr-a0Z"; */
-"uUN-zr-a0Z.normalTitle" = "% 항목작업메뉴";
+"uUN-zr-a0Z.normalTitle" = "% 항목 작업 메뉴";
 
 /* Class = "UIButton"; normalTitle = "W Wear item"; ObjectID = "v5b-ud-ybf"; */
-"v5b-ud-ybf.normalTitle" = "W 착용아이템";
+"v5b-ud-ybf.normalTitle" = "W 착용 아이템";
 
 /* Class = "UIButton"; normalTitle = "t Throw item"; ObjectID = "vFn-qJ-jex"; */
-"vFn-qJ-jex.normalTitle" = "t 던지기아이템";
+"vFn-qJ-jex.normalTitle" = "t 던지기 아이템";
 
 /* Class = "UILabel"; text = "TAB"; ObjectID = "W0g-LR-zoy"; */
 "W0g-LR-zoy.text" = "탭";
 
 /* Class = "UIButton"; normalTitle = "! Toggle safe mode"; ObjectID = "wer-L7-Cpb"; */
-"wer-L7-Cpb.normalTitle" = "! 안전모드전환";
+"wer-L7-Cpb.normalTitle" = "! 안전 모드 전환";
 
 /* Class = "UIButton"; normalTitle = "s Smash nearby terrain"; ObjectID = "wiQ-zS-lav"; */
-"wiQ-zS-lav.normalTitle" = "s주변지형을부수다";
+"wiQ-zS-lav.normalTitle" = "s주변 지형을 부수다";
 
 /* Class = "UIButton"; normalTitle = "\" Movement mode menu"; ObjectID = "WXI-oR-EwK"; */
-"WXI-oR-EwK.normalTitle" = "\"이동모드메뉴";
+"WXI-oR-EwK.normalTitle" = "\"이동 모드 메뉴";
 
 /* Class = "UIButton"; normalTitle = "F Toggle attack mode of wielded item"; ObjectID = "x7p-pw-tds"; */
-"x7p-pw-tds.normalTitle" = "F 휘두르는아이템의공격모드전환";
+"x7p-pw-tds.normalTitle" = "F 휘두르는 아이템의 공격 모드 전환";
 
 /* Class = "UIButton"; normalTitle = "J Move view South"; ObjectID = "XA1-YX-0MP"; */
-"XA1-YX-0MP.normalTitle" = "J보기남쪽으로이동";
+"XA1-YX-0MP.normalTitle" = "J보기 남쪽으로 이동";
 
 /* Class = "UIButton"; normalTitle = "p View/activate bionics"; ObjectID = "xex-8W-XPo"; */
-"xex-8W-XPo.normalTitle" = "p 생체공학보기 / 활성화";
+"xex-8W-XPo.normalTitle" = "p 생체 공학보기 / 활성화";
 
 /* Class = "UIButton"; normalTitle = "Q Commit suicide"; ObjectID = "xF2-D6-5Nd"; */
 "xF2-D6-5Nd.normalTitle" = "Q 자살하기";
 
 /* Class = "UIButton"; normalTitle = "S Save and quit"; ObjectID = "xmw-JK-7yF"; */
-"xmw-JK-7yF.normalTitle" = "S 저장하고종료";
+"xmw-JK-7yF.normalTitle" = "S 저장하고 종료";
 
 /* Class = "UIButton"; normalTitle = "A"; ObjectID = "xSF-Dh-vwe"; */
 "xSF-Dh-vwe.normalTitle" = "A";
@@ -275,10 +275,10 @@
 "Xyh-hU-GEr.text" = "ESC";
 
 /* Class = "UIButton"; normalTitle = "' Ignore nearby enemy"; ObjectID = "yr1-rH-Wes"; */
-"yr1-rH-Wes.normalTitle" = "'근처의적무시";
+"yr1-rH-Wes.normalTitle" = "'근처의 적 무시";
 
 /* Class = "UIButton"; normalTitle = "i Open inventory"; ObjectID = "YVi-b2-ygR"; */
-"YVi-b2-ygR.normalTitle" = "i 인벤토리열기";
+"YVi-b2-ygR.normalTitle" = "i 인벤토리 열기";
 
 /* Class = "UIButton"; normalTitle = "M View missions"; ObjectID = "ZHm-Pw-jfr"; */
 "ZHm-Pw-jfr.normalTitle" = "M 임무보기";

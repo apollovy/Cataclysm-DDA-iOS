@@ -128,7 +128,7 @@
 "ha2-h4-KcP.normalTitle" = "@ Ver información del jugador";
 
 /* Class = "UIButton"; normalTitle = "& Craft items"; ObjectID = "HfL-3G-dbv"; */
-"HfL-3G-dbv.normalTitle" = "Y artículos de artesanía";
+"HfL-3G-dbv.normalTitle" = "& artículos de artesanía";
 
 /* Class = "UIButton"; normalTitle = "a Apply or use item"; ObjectID = "HTd-ax-jFV"; */
 "HTd-ax-jFV.normalTitle" = "a Aplicar o utilizar artículo";
@@ -242,7 +242,7 @@
 "vFn-qJ-jex.normalTitle" = "t Lanzar artículo";
 
 /* Class = "UILabel"; text = "TAB"; ObjectID = "W0g-LR-zoy"; */
-"W0g-LR-zoy.text" = "PESTAÑA";
+"W0g-LR-zoy.text" = "TAB";
 
 /* Class = "UIButton"; normalTitle = "! Toggle safe mode"; ObjectID = "wer-L7-Cpb"; */
 "wer-L7-Cpb.normalTitle" = "! Alternar modo seguro";
