@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mgi-Zq-ipg">
     <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
@@ -203,7 +202,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-4A-Xuc" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="146" y="0.0" width="114" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="x Look around">
+                                                <state key="normal" title="x Look Around">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -214,7 +213,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lei-Cf-xhr" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="77" y="34" width="183" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="X Peek around corners">
+                                                <state key="normal" title="X Peek Around Corners">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -247,7 +246,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rD-mb-n0D" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="161" y="136" width="99" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="m View map">
+                                                <state key="normal" title="m View Map">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -258,7 +257,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGM-no-Wvz" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="84" y="170" width="176" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="{ Toggle map memory">
+                                                <state key="normal" title="{ Toggle Map Memory">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -269,7 +268,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tG-7H-PAk" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="155" y="204" width="105" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title=": Center view">
+                                                <state key="normal" title=": Center View">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -280,7 +279,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrX-vq-dua" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="108" y="238" width="152" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="K Move view North">
+                                                <state key="normal" title="K Move View North">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -291,7 +290,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wv-vE-3M1" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="121" y="272" width="139" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="L Move view East">
+                                                <state key="normal" title="L Move View East">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -302,7 +301,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA1-YX-0MP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="109" y="306" width="151" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="J Move view South">
+                                                <state key="normal" title="J Move View South">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -313,7 +312,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-5P-Ygu" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="112" y="340" width="148" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="H Move view West">
+                                                <state key="normal" title="H Move View West">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -335,7 +334,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PY5-Xk-Qjh" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="102" y="0.0" width="199" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="e Examine nearby terrain">
+                                                                <state key="normal" title="e Examine Nearby Terrain">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -346,7 +345,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-zS-lav" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="116" y="34" width="185" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="s Smash nearby terrain">
+                                                                <state key="normal" title="s Smash Nearby Terrain">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -357,7 +356,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC0-pd-coq" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="166" y="68" width="135" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="&gt; Descend stairs">
+                                                                <state key="normal" title="&gt; Descend Stairs">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -368,7 +367,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-1i-RcC" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="177" y="102" width="124" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="&lt; Ascend stairs">
+                                                                <state key="normal" title="&lt; Ascend Stairs">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -379,7 +378,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYt-r8-kmV" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="200" y="136" width="101" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="o Open door">
+                                                                <state key="normal" title="o Open Door">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -390,7 +389,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUE-O8-I0o" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="199" y="170" width="102" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="c Close door">
+                                                                <state key="normal" title="c Close Door">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -412,7 +411,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-GZ-iXP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="110" y="238" width="191" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="g Pickup nearby item(s)">
+                                                                <state key="normal" title="g Pick up Nearby Item(s)">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -712,7 +711,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVi-b2-ygR" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="170" y="122.33333333333331" width="131" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="i Open inventory">
+                                                                <state key="normal" title="i Open Inventory">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -723,7 +722,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arx-BI-4Q2" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="22" y="156.33333333333334" width="279" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="/ Advanced inventory management">
+                                                                <state key="normal" title="/ Advanced Inventory management">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -745,7 +744,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-fe-UbN" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="82" y="224.33333333333334" width="219" height="34.000000000000028"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="D Drop item to adjacent tile">
+                                                                <state key="normal" title="D Drop Item to Adjacent Tile">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -756,7 +755,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cml-1s-lAK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="207" y="258.33333333333331" width="94" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="d Drop item">
+                                                                <state key="normal" title="d Drop Item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -767,7 +766,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2O-c5-UIM" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="136" y="292.33333333333331" width="165" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="I Compare two items">
+                                                                <state key="normal" title="I Compare two Items">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -778,7 +777,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgW-Cc-7tV" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="107" y="326.33333333333331" width="194" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="= Swap inventory letters">
+                                                                <state key="normal" title="= Swap Inventory Letters">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -789,7 +788,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-ax-jFV" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="147" y="360.33333333333331" width="154" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="a Apply or use item">
+                                                                <state key="normal" title="a Apply or Use Item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -800,7 +799,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag8-HV-vsg" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="78" y="394.33333333333331" width="223" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="A Apply or use wielded item">
+                                                                <state key="normal" title="A Apply or Use Wielded Item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -811,7 +810,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5b-ud-ybf" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="198" y="428.33333333333331" width="103" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="W Wear item">
+                                                                <state key="normal" title="W Wear Item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -822,7 +821,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDH-cF-ILP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="137" y="462.33333333333331" width="164" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="T Take off worn item">
+                                                                <state key="normal" title="T Take Off Worn Item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -866,7 +865,7 @@
                                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-0o-qRZ" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                                 <rect key="frame" x="44" y="598.33333333333337" width="257" height="34"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="U Unload or empty wielded item">
+                                                                <state key="normal" title="U Unload or Empty Wielded Item">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
@@ -900,7 +899,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXI-oR-EwK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="103" y="0.0" width="198" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="&quot; Movement mode menu">
+                                                <state key="normal" title="&quot; Movement Mode Menu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -911,7 +910,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1L-YO-kzg" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="154" y="34" width="147" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="f Fire wielded item">
+                                                <state key="normal" title="f Fire Wielded Item">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -922,7 +921,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5U-wN-MtZ" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="195" y="68" width="106" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="r Reload item">
+                                                <state key="normal" title="r Reload Item">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -933,7 +932,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-pw-tds" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="102" width="301" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="F Toggle attack mode of wielded item">
+                                                <state key="normal" title="F Toggle attack mode of Wielded Item">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -944,7 +943,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFn-qJ-jex" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="200" y="136" width="101" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="t Throw item">
+                                                <state key="normal" title="t Throw Item">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -955,7 +954,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I23-SD-kCK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="98" y="170" width="203" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="_ Select martial arts style">
+                                                <state key="normal" title="_ Select Martial Arts Style">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -966,7 +965,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wer-L7-Cpb" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="148" y="204" width="153" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="! Toggle safe mode">
+                                                <state key="normal" title="! Toggle Safe Mode">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -977,7 +976,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr1-rH-Wes" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="122" y="238" width="179" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="' Ignore nearby enemy">
+                                                <state key="normal" title="' Ignore Nearby Enemy">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -988,7 +987,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-Ci-gcY" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="96" y="272" width="205" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="s Toggle burst/auto mode">
+                                                <state key="normal" title="s Toggle Burst/Auto Mode">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -999,7 +998,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abw-Gi-gLh" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="135" y="306" width="166" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="m Change aim mode">
+                                                <state key="normal" title="m Change Aim Mode">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1010,7 +1009,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-MK-q2B" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="111" y="340" width="190" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="* Toggle snap-to-target">
+                                                <state key="normal" title="* Toggle Snap-to-target">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1026,7 +1025,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-3G-dbv" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="56" y="0.0" width="106" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="&amp; Craft items">
+                                                <state key="normal" title="&amp; Craft Items">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1048,7 +1047,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9l-yy-8zg" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="13" y="68" width="149" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="* Construct terrain">
+                                                <state key="normal" title="* Construct Terrain">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1075,7 +1074,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha2-h4-KcP" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="0.0" width="148" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="@ View player info">
+                                                <state key="normal" title="@ View Player Info">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1086,7 +1085,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHm-Pw-jfr" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="34" y="34" width="134" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="M View missions">
+                                                <state key="normal" title="M View Missions">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1097,7 +1096,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEJ-AJ-Gz7" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="68" width="108" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title=") View scores">
+                                                <state key="normal" title=") View Scores">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1108,7 +1107,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-Wa-j4J" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="45" y="102" width="123" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="# View factions">
+                                                <state key="normal" title="# View Factions">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1119,7 +1118,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCY-BL-P82" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="55" y="136" width="113" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="v View morale">
+                                                <state key="normal" title="v View Morale">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1130,7 +1129,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ2-oo-Kzm" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="7" y="170" width="161" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="P View message log">
+                                                <state key="normal" title="P View Message Log">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1141,7 +1140,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhA-h7-2Nb" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="204" width="168" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="} Toggle panel admin">
+                                                <state key="normal" title="} Toggle Panel Admin">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1152,7 +1151,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oa-cJ-9uK" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="23" y="238" width="145" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="N Toggle minimap">
+                                                <state key="normal" title="N Toggle Minimap">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1163,7 +1162,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C1-w1-5a2" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="74" y="272" width="94" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="0 View help">
+                                                <state key="normal" title="0 View Help">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1179,7 +1178,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STE-m7-gS5" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="1" y="0.0" width="201" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="| Wait for several minutes">
+                                                <state key="normal" title="| Wait for Several Minutes">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1201,7 +1200,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xex-8W-XPo" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="18" y="68" width="184" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="p View/activate bionics">
+                                                <state key="normal" title="p View/Activate Bionics">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1212,7 +1211,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCC-ov-ITU" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="102" width="202" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="[ View/activate mutations">
+                                                <state key="normal" title="[ View/Activate Mutations">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1223,7 +1222,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks3-Xr-EHC" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="66" y="136" width="136" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="^ Control vehicle">
+                                                <state key="normal" title="^ Control Vehicle">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1234,7 +1233,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-zr-a0Z" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="42" y="170" width="160" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="% Item action menu">
+                                                <state key="normal" title="% Item Action Menu">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1245,7 +1244,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmw-JK-7yF" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="77" y="204" width="125" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="S Save and quit">
+                                                <state key="normal" title="S Save and Quit">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -1262,7 +1261,7 @@
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF2-D6-5Nd" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="258.33333333333331" width="143" height="34"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Q Commit suicide">
+                                                <state key="normal" title="Q Commit Suicide">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
