@@ -134,14 +134,19 @@ OnKeyboardHandler* _onKeyboardHandler;
 GamePadViewController* _gamepadViewController;
 @dynamic keyboardHeight;
 
+
+#pragma mark - Gestures
+
 -(void)addRecognizers
 {
     UISwipeGestureRecognizer* showKeyboardGR = [UISwipeGestureRecognizer new];
     showKeyboardGR.direction = UISwipeGestureRecognizerDirectionUp;
+    showKeyboardGR.delaysTouchesBegan = YES;
     [showKeyboardGR addTarget:self action:@selector(showKeyboard)];
     
     UISwipeGestureRecognizer* hideKeyboardGR = [UISwipeGestureRecognizer new];
     hideKeyboardGR.direction = UISwipeGestureRecognizerDirectionDown;
+    hideKeyboardGR.delaysTouchesBegan = YES;
     [hideKeyboardGR addTarget:self action:@selector(hideKeyboard)];
     
     UIPanGestureRecognizer* panViewGR = [UIPanGestureRecognizer new];

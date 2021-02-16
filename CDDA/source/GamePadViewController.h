@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)holdGamepadButton:(UILongPressGestureRecognizer*)sender;
 -(IBAction)tapGamepadButton:(UITapGestureRecognizer*)sender;
 -(IBAction)pageUpDown:(PageUpDownPanGestureRecognizer*)sender;
+-(IBAction)temporarilyHideUI:(UILongPressGestureRecognizer*)sender;
 
 @end
 

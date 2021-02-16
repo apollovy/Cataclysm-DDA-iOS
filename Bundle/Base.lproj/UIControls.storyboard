@@ -1354,6 +1354,9 @@
                             <constraint firstItem="Wys-zh-cet" firstAttribute="top" secondItem="Fd8-TI-tt4" secondAttribute="top" id="wgb-eh-GTP"/>
                             <constraint firstItem="rlg-EG-sBP" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="trailing" constant="20" id="zLR-bM-2oV"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Vcz-AR-Xcm" appends="YES" id="Pd2-8s-1cK"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="menusView" destination="Wys-zh-cet" id="Bqw-jS-cv2"/>
@@ -1389,6 +1392,11 @@
                         <outlet property="viewToHighlight" destination="8K9-WE-QV7" id="CQ2-ks-A8H"/>
                     </connections>
                 </panGestureRecognizer>
+                <pongPressGestureRecognizer delaysTouchesBegan="YES" allowableMovement="10" minimumPressDuration="0.5" id="Vcz-AR-Xcm" userLabel="Temporarily Hide UI Long Press Gesture Recognizer">
+                    <connections>
+                        <action selector="temporarilyHideUI:" destination="mgi-Zq-ipg" id="XH3-jZ-nJU"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="252.69978401727863" y="-79.906542056074755"/>
         </scene>

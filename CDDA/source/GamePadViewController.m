@@ -232,4 +232,29 @@ NSDate* lastScrollingDate;
     }
 }
 
+
+-(void)temporarilyHideUI:(UILongPressGestureRecognizer*)sender
+{
+    switch (sender.state) {
+        case UIGestureRecognizerStateBegan:
+        {
+            [UIView animateWithDuration:0.2 animations:^(void){
+                self.view.alpha = 0;
+            }];
+            break;
+        }
+        case UIGestureRecognizerStateCancelled:
+        case UIGestureRecognizerStateEnded:
+        {
+            [UIView animateWithDuration:0.2 animations:^(void){
+                self.view.alpha = 1;
+            }];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+
 @end
