@@ -1392,7 +1392,7 @@
                         <outlet property="viewToHighlight" destination="8K9-WE-QV7" id="CQ2-ks-A8H"/>
                     </connections>
                 </panGestureRecognizer>
-                <pongPressGestureRecognizer delaysTouchesBegan="YES" allowableMovement="10" minimumPressDuration="0.5" id="Vcz-AR-Xcm" userLabel="Temporarily Hide UI Long Press Gesture Recognizer">
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.5" id="Vcz-AR-Xcm" userLabel="Temporarily Hide UI Long Press Gesture Recognizer">
                     <connections>
                         <action selector="temporarilyHideUI:" destination="mgi-Zq-ipg" id="XH3-jZ-nJU"/>
                     </connections>
