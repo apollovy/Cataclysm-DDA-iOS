@@ -202,7 +202,7 @@ NSDate* lastPress;
 #pragma mark - Page up / Page down scroll
 
 CGPoint lastScrollingLocation;
-NSDate* lastScrollingDate;
+const float _scrollingPrecision = 10;
 
 -(void)pageUpDown:(PageUpDownPanGestureRecognizer*)sender
 {
@@ -211,18 +211,20 @@ NSDate* lastScrollingDate;
     if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
     {
         viewToHighlight.alpha = 0.07;
-        NSDate* now = [NSDate date];
-        if (!lastScrollingDate || ([[lastScrollingDate dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
+        CGPoint currentLocation = [sender translationInView:sender.view];
+        float yDiff = fabs(lastScrollingLocation.y - currentLocation.y);
+
+        if (yDiff > _scrollingPrecision)
         {
-            CGPoint currentLocation = [sender translationInView:sender.view];
             SDL_KeyCode sym = SDLK_UNKNOWN;
             if (lastScrollingLocation.y > currentLocation.y)
                 sym = SDLK_PAGEDOWN;
             else
                 sym = SDLK_PAGEUP;
-            SDL_send_keysym(sym, KMOD_NONE);
+
+            for (int i=0; i < (yDiff / _scrollingPrecision); i++)
+                SDL_send_keysym(sym, KMOD_NONE);
             lastScrollingLocation = currentLocation;
-            lastScrollingDate = now;
         }
     }
     if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
@@ -232,6 +234,8 @@ NSDate* lastScrollingDate;
     }
 }
 
+
+# pragma mark - UI hiding
 
 -(void)temporarilyHideUI:(UILongPressGestureRecognizer*)sender
 {
