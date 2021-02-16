@@ -199,54 +199,71 @@ GestureRecognizerDelegate* _gestureRecognizerDelegate;
 
 #pragma mark - Zoom handling
 
-NSDate* lastZoom;
-
 -(void)zoom:(UIPinchGestureRecognizer*)sender
 {
-    NSDate* now = [NSDate date];
-    if ((!lastZoom || ([[lastZoom dateByAddingTimeInterval:0.5] compare:now] == kCFCompareLessThan)) && ((sender.scale > 1.25) || (sender.scale < 0.75)))
+    if ((sender.scale > _minScale) || (sender.scale < _maxScale))
     {
-        lastZoom = now;
         NSString* text;
+        int multiplier;
         if (sender.scale > 1)
+        {
             text = @"z";
+            multiplier = (sender.scale - 1) / _zoomingPrecision;
+        }
         else
+        {
             text = @"Z";
+            multiplier = (1 - sender.scale) / _zoomingPrecision;
+        }
         sender.scale = 1;
-        SDL_send_text_event(text);
+        
+        for (int i=0; i < multiplier; i++)
+            SDL_send_text_event(text);
     }
 }
+
+const float _zoomingPrecision = 0.25;
+const float _minScale = 1 + _zoomingPrecision;
+const float _maxScale = 1 - _zoomingPrecision;
+
 
 
 #pragma mark - Pan view
 
 CGPoint lastPanningLocation;
-NSDate* lastPanningDate;
 
 -(void)panView:(UIPanGestureRecognizer*)sender
 {
     if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
     {
-        NSDate* now = [NSDate date];
-        if (!lastPanningDate || ([[lastPanningDate dateByAddingTimeInterval:0.1] compare:now] == kCFCompareLessThan))
+        CGPoint currentLocation = [sender translationInView:sender.view];
+        CGPoint movement = {.x=(currentLocation.x - lastPanningLocation.x), .y=(currentLocation.y - lastPanningLocation.y)};
+        float xAbs = fabs(movement.x);
+        float yAbs = fabs(movement.y);
+        
+        if ((xAbs > _panningPrecision) || (yAbs > _panningPrecision))
         {
-            CGPoint currentLocation = [sender translationInView:sender.view];
-            CGPoint movement = {.x=(currentLocation.x - lastPanningLocation.x), .y=(currentLocation.y - lastPanningLocation.y)};
-            
             NSString* text;
-            if (fabs(movement.x) > fabs(movement.y))
+            int multiplier;
+            if (xAbs > yAbs)
+            {
+                multiplier = xAbs / _panningPrecision;
                 if (movement.x > 0)
                     text = @"H";
                 else
                     text = @"L";
+            }
+            else
+            {
+                multiplier = yAbs / _panningPrecision;
+                if (movement.y > 0)
+                    text = @"K";
                 else
-                    if (movement.y > 0)
-                        text = @"K";
-                    else
-                        text = @"J";
-            SDL_send_text_event(text);
+                    text = @"J";
+            }
+            for (int i=0; i < multiplier; i++)
+                SDL_send_text_event(text);
             lastPanningLocation = currentLocation;
-            lastPanningDate = now;
         }
     }
     if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
@@ -254,5 +271,7 @@ NSDate* lastPanningDate;
         lastPanningLocation = CGPointZero;
     }
 }
+
+const int _panningPrecision = 10;
 
 @end
