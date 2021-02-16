@@ -1354,23 +1354,12 @@
                             <constraint firstItem="Wys-zh-cet" firstAttribute="top" secondItem="Fd8-TI-tt4" secondAttribute="top" id="wgb-eh-GTP"/>
                             <constraint firstItem="rlg-EG-sBP" firstAttribute="leading" secondItem="7Oo-ZZ-6WE" secondAttribute="trailing" constant="20" id="zLR-bM-2oV"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="4wb-5h-Zec" appends="YES" id="1J9-Az-90B"/>
-                            <outletCollection property="gestureRecognizers" destination="Tfw-QS-14g" appends="YES" id="LLm-84-juW"/>
-                            <outletCollection property="gestureRecognizers" destination="oCc-us-EYS" appends="YES" id="bar-0D-b9v"/>
-                            <outletCollection property="gestureRecognizers" destination="2S5-Wl-UkC" appends="YES" id="ldf-tq-cjR"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="menusView" destination="Wys-zh-cet" id="Bqw-jS-cv2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-kc-v2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="4wb-5h-Zec" userLabel="Zoom Pinch Gesture Recognizer">
-                    <connections>
-                        <action selector="zoom:" destination="mgi-Zq-ipg" id="1bM-eP-t3K"/>
-                    </connections>
-                </pinchGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="et0-PU-Ud3" userLabel="Gamepad Long Press Gesture Recognizer">
                     <connections>
                         <action selector="holdGamepadButton:" destination="mgi-Zq-ipg" id="KXa-9U-JTf"/>
@@ -1398,21 +1387,6 @@
                         <action selector="pageUpDown:" destination="mgi-Zq-ipg" id="pIg-3e-JBc"/>
                         <outlet property="delegate" destination="mgi-Zq-ipg" id="l3N-to-YmJ"/>
                         <outlet property="viewToHighlight" destination="8K9-WE-QV7" id="CQ2-ks-A8H"/>
-                    </connections>
-                </panGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="Tfw-QS-14g" userLabel="Show Keyboard Swipe Gesture Recognizer">
-                    <connections>
-                        <action selector="showKeyboard:" destination="mgi-Zq-ipg" id="XXp-ww-e7A"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="down" id="oCc-us-EYS" userLabel="Hide Keyboard Swipe Gesture Recognizer">
-                    <connections>
-                        <action selector="hideKeyboard:" destination="mgi-Zq-ipg" id="9SR-gx-n0s"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="2" id="2S5-Wl-UkC" userLabel="Pan view Pan Gesture Recognizer">
-                    <connections>
-                        <action selector="panView:" destination="mgi-Zq-ipg" id="pMA-0a-YAl"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>

@@ -17,13 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)toggleMenu:(MenuButton*)sender;
 @property (weak, nonatomic) IBOutlet UIView* menusView;
 -(IBAction)pressKey:(MenuButton*)sender;
--(IBAction)zoom:(UIPinchGestureRecognizer*)sender;
 -(IBAction)holdGamepadButton:(UILongPressGestureRecognizer*)sender;
 -(IBAction)tapGamepadButton:(UITapGestureRecognizer*)sender;
 -(IBAction)pageUpDown:(PageUpDownPanGestureRecognizer*)sender;
--(IBAction)showKeyboard:(UISwipeGestureRecognizer*)sender;
--(IBAction)hideKeyboard:(UISwipeGestureRecognizer*)sender;
--(IBAction)panView:(UIPanGestureRecognizer*)sender;
 
 @end
 
