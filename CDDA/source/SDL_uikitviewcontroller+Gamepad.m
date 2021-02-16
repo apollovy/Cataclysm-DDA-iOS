@@ -41,6 +41,38 @@
 @end
 
 
+@interface GestureRecognizerDelegate : NSObject <UIGestureRecognizerDelegate>
+
++(id)initWith:(UIGestureRecognizer*)first and:(UIGestureRecognizer*)second;
+
+@end
+
+
+@implementation GestureRecognizerDelegate
+{
+    UIGestureRecognizer* _first;
+    UIGestureRecognizer* _second;
+}
+
++(instancetype)initWith:(UIGestureRecognizer*)first and:(UIGestureRecognizer*)second
+{
+    GestureRecognizerDelegate* obj = [GestureRecognizerDelegate new];
+    obj->_first = first;
+    obj->_second = second;
+    
+    return obj;
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    if (((gestureRecognizer == self->_first) && (otherGestureRecognizer == self->_second)) || ((gestureRecognizer == self->_second) && (otherGestureRecognizer == self->_first)))
+        return YES;
+    else
+        return NO;
+}
+
+@end
+
 #pragma mark - SDL_uikitviewcontroller (Gamepad)
 
 @implementation SDL_uikitviewcontroller (Gamepad)
@@ -155,10 +187,14 @@ GamePadViewController* _gamepadViewController;
     
     UIPinchGestureRecognizer* zoomGR = [UIPinchGestureRecognizer new];
     [zoomGR addTarget:self action:@selector(zoom:)];
-    
+    _gestureRecognizerDelegate = [GestureRecognizerDelegate initWith:panViewGR and:zoomGR];
+    zoomGR.delegate = _gestureRecognizerDelegate;
+
     for (UIGestureRecognizer* recognizer in @[showKeyboardGR, hideKeyboardGR, panViewGR, zoomGR])
         [self.view addGestureRecognizer:recognizer];
 }
+
+GestureRecognizerDelegate* _gestureRecognizerDelegate;
 
 
 #pragma mark - Zoom handling
@@ -168,7 +204,7 @@ NSDate* lastZoom;
 -(void)zoom:(UIPinchGestureRecognizer*)sender
 {
     NSDate* now = [NSDate date];
-    if (!lastZoom || ([[lastZoom dateByAddingTimeInterval:0.5] compare:now] == kCFCompareLessThan))
+    if ((!lastZoom || ([[lastZoom dateByAddingTimeInterval:0.5] compare:now] == kCFCompareLessThan)) && ((sender.scale > 1.25) || (sender.scale < 0.75)))
     {
         lastZoom = now;
         NSString* text;
