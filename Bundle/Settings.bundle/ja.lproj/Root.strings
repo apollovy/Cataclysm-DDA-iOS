@@ -1,3 +1,4 @@
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "オーバーレイUIが有効";
-
+"Invert scrolling direction" = "スクロール方向を反転します";
+"Invert panning direction" = "パンの方向を反転します";

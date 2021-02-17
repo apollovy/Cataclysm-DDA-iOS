@@ -1,3 +1,4 @@
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "IU de superposición habilitada";
-
+"Invert scrolling direction" = "Invertir dirección de desplazamiento";
+"Invert panning direction" = "Invertir dirección de panorámica";
