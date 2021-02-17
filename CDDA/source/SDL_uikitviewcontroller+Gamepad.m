@@ -73,6 +73,13 @@
 
 @end
 
+
+typedef struct PanViewHelperReturnType {
+    NSString* movementText;
+    CGFloat newCoorinate;
+} PanViewHelperReturnType;
+
+
 #pragma mark - SDL_uikitviewcontroller (Gamepad)
 
 @implementation SDL_uikitviewcontroller (Gamepad)
@@ -243,32 +250,15 @@ CGPoint lastPanningLocation;
         
         if ((xAbs > _panningPrecision) || (yAbs > _panningPrecision))
         {
-            NSString* xText = @"";
-            NSString* yText = @"";
-            int multiplier;
             CGPoint newLocation = lastPanningLocation;
-            if (xAbs > _panningPrecision)
-            {
-                NSString* xSym;
-                multiplier = xAbs / _panningPrecision;
-                if (movement.x > 0)
-                    xSym = @"H";
-                else
-                    xSym = @"L";
-                xText = [xText stringByPaddingToLength:multiplier withString:xSym startingAtIndex:0];
-                newLocation.x = multiplier * _panningPrecision * (movement.x > 0 ? 1 : -1) + lastPanningLocation.x;
-            }
-            if (yAbs > _panningPrecision)
-            {
-                NSString* ySym;
-                multiplier = yAbs / _panningPrecision;
-                if (movement.y > 0)
-                    ySym = @"K";
-                else
-                    ySym = @"J";
-                yText = [yText stringByPaddingToLength:multiplier withString:ySym startingAtIndex:0];
-                newLocation.y = multiplier * _panningPrecision * (movement.y > 0 ? 1 : -1) + lastPanningLocation.y;
-            }
+            PanViewHelperReturnType xRet = [self calculateMovement:movement.x plus:@"H" minus:@"L" previous:lastPanningLocation.x];
+            NSString* xText = xRet.movementText;
+            newLocation.x = xRet.newCoorinate;
+
+            PanViewHelperReturnType yRet = [self calculateMovement:movement.y plus:@"K" minus:@"J" previous:lastPanningLocation.y];
+            NSString* yText = yRet.movementText;
+            newLocation.y = yRet.newCoorinate;
+
             NSMutableString* text = [NSMutableString new];
             NSString* longestString = (xText.length > yText.length) ? xText : yText;
             NSString* shortestString = (longestString == xText) ? yText : xText;
@@ -279,7 +269,7 @@ CGPoint lastPanningLocation;
                 if (i < shortestStringLenght)
                     [text appendFormat:@"%c", [shortestString characterAtIndex:i]];
             }
-            
+
             for (int i=0; i < text.length; i++)
                 SDL_send_text_event([NSString stringWithFormat:@"%c", [text characterAtIndex:i]]);
             lastPanningLocation = newLocation;
@@ -289,6 +279,21 @@ CGPoint lastPanningLocation;
     {
         lastPanningLocation = CGPointZero;
     }
+}
+
+-(PanViewHelperReturnType)calculateMovement:(CGFloat)movement plus:(NSString*)posSym minus:(NSString*)negSymbol previous:(CGFloat)previous
+{
+    NSString* movementText = @"";
+    CGFloat newCoorinate = previous;
+    float movementAbs = fabs(movement);
+    if (movementAbs > _panningPrecision)
+    {
+        NSString* movementSym = (movement > 0) ? posSym : negSymbol;
+        int multiplier = movementAbs / _panningPrecision;
+        movementText = [movementText stringByPaddingToLength:multiplier withString:movementSym startingAtIndex:0];
+        newCoorinate = multiplier * _panningPrecision * (movement > 0 ? 1 : -1) + previous;
+    }
+    return (PanViewHelperReturnType){.movementText=movementText, .newCoorinate=newCoorinate};
 }
 
 const int _panningPrecision = 10;
