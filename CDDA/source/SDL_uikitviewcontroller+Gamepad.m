@@ -243,31 +243,47 @@ CGPoint lastPanningLocation;
         
         if ((xAbs > _panningPrecision) || (yAbs > _panningPrecision))
         {
-            NSString* text;
+            NSString* xText = @"";
+            NSString* yText = @"";
             int multiplier;
             CGPoint newLocation = lastPanningLocation;
             if (xAbs > _panningPrecision)
             {
+                NSString* xSym;
                 multiplier = xAbs / _panningPrecision;
                 if (movement.x > 0)
-                    text = @"H";
+                    xSym = @"H";
                 else
-                    text = @"L";
+                    xSym = @"L";
                 for (int i=0; i < multiplier; i++)
-                    SDL_send_text_event(text);
+                    xText = [xText stringByPaddingToLength:multiplier withString:xSym startingAtIndex:0];
                 newLocation.x = multiplier * _panningPrecision * (movement.x > 0 ? 1 : -1) + lastPanningLocation.x;
             }
             if (yAbs > _panningPrecision)
             {
+                NSString* ySym;
                 multiplier = yAbs / _panningPrecision;
                 if (movement.y > 0)
-                    text = @"K";
+                    ySym = @"K";
                 else
-                    text = @"J";
+                    ySym = @"J";
                 for (int i=0; i < multiplier; i++)
-                    SDL_send_text_event(text);
+                    yText = [yText stringByPaddingToLength:multiplier withString:ySym startingAtIndex:0];
                 newLocation.y = multiplier * _panningPrecision * (movement.y > 0 ? 1 : -1) + lastPanningLocation.y;
             }
+            NSMutableString* text = [NSMutableString new];
+            NSString* longestString = (xText.length > yText.length) ? xText : yText;
+            NSString* shortestString = (longestString == xText) ? yText : xText;
+            NSInteger shortestStringLenght = shortestString.length;
+            for (int i=0; i < longestString.length; i++)
+            {
+                [text appendFormat:@"%c", [longestString characterAtIndex:i]];
+                if (i < shortestStringLenght)
+                    [text appendFormat:@"%c", [shortestString characterAtIndex:i]];
+            }
+            
+            for (int i=0; i < text.length; i++)
+                SDL_send_text_event([NSString stringWithFormat:@"%c", [text characterAtIndex:i]]);
             lastPanningLocation = newLocation;
         }
     }
