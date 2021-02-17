@@ -245,25 +245,30 @@ CGPoint lastPanningLocation;
         {
             NSString* text;
             int multiplier;
-            if (xAbs > yAbs)
+            CGPoint newLocation = lastPanningLocation;
+            if (xAbs > _panningPrecision)
             {
                 multiplier = xAbs / _panningPrecision;
                 if (movement.x > 0)
                     text = @"H";
                 else
                     text = @"L";
+                for (int i=0; i < multiplier; i++)
+                    SDL_send_text_event(text);
+                newLocation.x = multiplier * _panningPrecision * (movement.x > 0 ? 1 : -1) + lastPanningLocation.x;
             }
-            else
+            if (yAbs > _panningPrecision)
             {
                 multiplier = yAbs / _panningPrecision;
                 if (movement.y > 0)
                     text = @"K";
                 else
                     text = @"J";
+                for (int i=0; i < multiplier; i++)
+                    SDL_send_text_event(text);
+                newLocation.y = multiplier * _panningPrecision * (movement.y > 0 ? 1 : -1) + lastPanningLocation.y;
             }
-            for (int i=0; i < multiplier; i++)
-                SDL_send_text_event(text);
-            lastPanningLocation = currentLocation;
+            lastPanningLocation = newLocation;
         }
     }
     if ((sender.state == UIGestureRecognizerStateCancelled) || ( sender.state == UIGestureRecognizerStateEnded))
