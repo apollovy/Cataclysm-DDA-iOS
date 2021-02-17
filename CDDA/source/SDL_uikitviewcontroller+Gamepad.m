@@ -255,8 +255,7 @@ CGPoint lastPanningLocation;
                     xSym = @"H";
                 else
                     xSym = @"L";
-                for (int i=0; i < multiplier; i++)
-                    xText = [xText stringByPaddingToLength:multiplier withString:xSym startingAtIndex:0];
+                xText = [xText stringByPaddingToLength:multiplier withString:xSym startingAtIndex:0];
                 newLocation.x = multiplier * _panningPrecision * (movement.x > 0 ? 1 : -1) + lastPanningLocation.x;
             }
             if (yAbs > _panningPrecision)
@@ -267,8 +266,7 @@ CGPoint lastPanningLocation;
                     ySym = @"K";
                 else
                     ySym = @"J";
-                for (int i=0; i < multiplier; i++)
-                    yText = [yText stringByPaddingToLength:multiplier withString:ySym startingAtIndex:0];
+                yText = [yText stringByPaddingToLength:multiplier withString:ySym startingAtIndex:0];
                 newLocation.y = multiplier * _panningPrecision * (movement.y > 0 ? 1 : -1) + lastPanningLocation.y;
             }
             NSMutableString* text = [NSMutableString new];
