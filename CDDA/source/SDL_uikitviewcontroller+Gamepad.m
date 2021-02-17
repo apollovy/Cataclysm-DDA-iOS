@@ -88,6 +88,7 @@ typedef struct PanViewHelperReturnType {
     NSDictionary* appDefaults = @{
         @"overlayUIEnabled": @YES,
         @"invertScroll": @NO,
+        @"invertPan": @NO,
     };
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
@@ -300,7 +301,7 @@ CGPoint lastPanningLocation;
     float movementAbs = fabs(movement);
     if (movementAbs > _panningPrecision)
     {
-        NSString* movementSym = (movement > 0) ? posSym : negSymbol;
+        NSString* movementSym = ((movement > 0) != [NSUserDefaults.standardUserDefaults boolForKey:@"invertPan"]) ? posSym : negSymbol;
         int multiplier = movementAbs / _panningPrecision;
         movementText = [movementText stringByPaddingToLength:multiplier withString:movementSym startingAtIndex:0];
         newCoorinate = multiplier * _panningPrecision * (movement > 0 ? 1 : -1) + previous;
