@@ -85,17 +85,29 @@ typedef struct PanViewHelperReturnType {
 @implementation SDL_uikitviewcontroller (Gamepad)
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSDictionary* appDefaults = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"overlayUIEnabled"];
+    NSDictionary* appDefaults = @{
+        @"overlayUIEnabled": @YES,
+        @"invertScroll": @NO,
+    };
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
     for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
         [self registerNotification:notification forSelector:@selector(resizeRootView)];
-    [self registerNotification:NSUserDefaultsDidChangeNotification forSelector:@selector(maybeToggleUI)];
+    [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:@"overlayUIEnabled" options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
 
     [self resizeRootView];
-    [self maybeToggleUI];
     [self addRecognizers];
 }
+
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqual: @"overlayUIEnabled"])
+        [self maybeToggleUI];
+    else
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+}
+
 
 // determined empirically, on lesser sizes main menu run away screaming
 static CGSize _minSize = {632, 368};
