@@ -209,8 +209,12 @@ GamePadViewController* _gamepadViewController;
     [zoomGR addTarget:self action:@selector(zoom:)];
     _gestureRecognizerDelegate = [GestureRecognizerDelegate initWith:panViewGR and:zoomGR];
     zoomGR.delegate = _gestureRecognizerDelegate;
+    
+    UITapGestureRecognizer* centerViewGR = [UITapGestureRecognizer new];
+    centerViewGR.numberOfTapsRequired = centerViewGR.numberOfTouchesRequired = 2;
+    [centerViewGR addTarget:self action:@selector(centerView)];
 
-    for (UIGestureRecognizer* recognizer in @[showKeyboardGR, hideKeyboardGR, panViewGR, zoomGR])
+    for (UIGestureRecognizer* recognizer in @[showKeyboardGR, hideKeyboardGR, panViewGR, zoomGR, centerViewGR])
         [self.view addGestureRecognizer:recognizer];
 }
 
@@ -310,5 +314,13 @@ CGPoint lastPanningLocation;
 }
 
 const int _panningPrecision = 10;
+
+
+# pragma mark - Cenver view
+
+-(void)centerView
+{
+    SDL_send_text_event(@":");
+}
 
 @end
