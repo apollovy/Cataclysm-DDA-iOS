@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mgi-Zq-ipg">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -474,6 +474,13 @@
                                                     <constraint firstItem="KSV-yz-DDO" firstAttribute="top" secondItem="Gwa-Bw-QAE" secondAttribute="top" id="wl6-LE-wcM"/>
                                                 </constraints>
                                             </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll" translatesAutoresizingMaskIntoConstraints="NO" id="ROQ-v3-EgE">
+                                                <rect key="frame" x="241" y="396" width="20" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="Nh0-Ke-CLU"/>
+                                                    <constraint firstAttribute="height" constant="12" id="ePt-48-qDM"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="408" id="ECa-Po-IPw"/>
@@ -884,6 +891,13 @@
                                                     <constraint firstItem="DMv-zr-VMN" firstAttribute="top" secondItem="AQv-Hd-u0C" secondAttribute="top" id="rHH-Jk-Rl7"/>
                                                 </constraints>
                                             </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-Xy-Nwd">
+                                                <rect key="frame" x="284" y="416" width="20" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="HDA-dp-u9R"/>
+                                                    <constraint firstAttribute="width" constant="20" id="qI5-eW-Y0h"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="AQv-Hd-u0C" firstAttribute="width" secondItem="oeO-Gg-n4M" secondAttribute="width" id="K4G-qE-PYO"/>
@@ -1277,9 +1291,12 @@
                                     <constraint firstAttribute="trailing" secondItem="oeO-Gg-n4M" secondAttribute="trailing" id="5PX-ZT-EQq"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="bottom" secondItem="Wys-zh-cet" secondAttribute="bottom" id="6o5-gM-b8s"/>
                                     <constraint firstItem="yfA-Dz-Pkf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wys-zh-cet" secondAttribute="top" id="Ahd-mX-j5P"/>
+                                    <constraint firstItem="ROQ-v3-EgE" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="trailing" constant="5" id="B0w-AN-PyY"/>
+                                    <constraint firstAttribute="bottom" secondItem="ROQ-v3-EgE" secondAttribute="bottom" id="J5K-Ot-Ost"/>
                                     <constraint firstItem="oeO-Gg-n4M" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" priority="750" id="QPe-eJ-2Cg"/>
                                     <constraint firstAttribute="trailing" secondItem="3uG-Qh-1BN" secondAttribute="trailing" id="RRc-XR-5aT"/>
                                     <constraint firstAttribute="trailing" secondItem="yfA-Dz-Pkf" secondAttribute="trailing" id="WIa-WB-DBt"/>
+                                    <constraint firstAttribute="bottom" secondItem="2cI-Xy-Nwd" secondAttribute="bottom" id="Wfg-Tp-SdK"/>
                                     <constraint firstAttribute="bottom" secondItem="yfA-Dz-Pkf" secondAttribute="bottom" id="WuG-Tm-tAl"/>
                                     <constraint firstAttribute="trailing" secondItem="l6Z-Bs-2kE" secondAttribute="trailing" id="XTh-Or-6bD"/>
                                     <constraint firstItem="Alc-G2-wLq" firstAttribute="top" secondItem="Wys-zh-cet" secondAttribute="top" priority="750" id="ZP3-xE-GCU"/>
@@ -1288,6 +1305,7 @@
                                     <constraint firstAttribute="bottom" secondItem="oeO-Gg-n4M" secondAttribute="bottom" id="icn-lP-jNm"/>
                                     <constraint firstItem="7Zl-P2-tec" firstAttribute="trailing" secondItem="Wys-zh-cet" secondAttribute="trailing" id="l9L-2R-kCa"/>
                                     <constraint firstAttribute="trailing" secondItem="Pda-20-GCt" secondAttribute="trailing" id="qCb-mH-Epk"/>
+                                    <constraint firstItem="2cI-Xy-Nwd" firstAttribute="leading" secondItem="Wys-zh-cet" secondAttribute="trailing" constant="5" id="v9K-84-ofr"/>
                                 </constraints>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-SI-Zpj" userLabel="Escape button" customClass="JSButton">
@@ -1403,6 +1421,7 @@
     </scenes>
     <resources>
         <image name="dPad-None.png" width="114" height="114"/>
+        <image name="scroll" width="39.333332061767578" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
