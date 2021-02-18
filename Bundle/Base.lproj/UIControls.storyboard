@@ -1395,18 +1395,21 @@
                     <connections>
                         <action selector="pageUpDown:" destination="mgi-Zq-ipg" id="F5z-HM-2Bx"/>
                         <outlet property="delegate" destination="mgi-Zq-ipg" id="6YY-Ua-Kj3"/>
+                        <outlet property="rootView" destination="Fd8-TI-tt4" id="9gA-Lz-2sL"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="g0P-cA-Rtc" userLabel="Left Page Up/Down Pan Gesture Recognizer" customClass="PageUpDownPanGestureRecognizer" customModule="CDDA" customModuleProvider="target">
                     <connections>
                         <action selector="pageUpDown:" destination="mgi-Zq-ipg" id="Mc6-fP-S75"/>
                         <outlet property="delegate" destination="mgi-Zq-ipg" id="0De-z9-oZt"/>
+                        <outlet property="rootView" destination="Fd8-TI-tt4" id="NtP-l1-ZYE"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Fiu-Bo-PBT" userLabel="Buttons stack page Up/Down Pan Gesture Recognizer" customClass="PageUpDownPanGestureRecognizer" customModule="CDDA" customModuleProvider="target">
                     <connections>
                         <action selector="pageUpDown:" destination="mgi-Zq-ipg" id="pIg-3e-JBc"/>
                         <outlet property="delegate" destination="mgi-Zq-ipg" id="l3N-to-YmJ"/>
+                        <outlet property="rootView" destination="Fd8-TI-tt4" id="YX8-w6-26i"/>
                         <outlet property="viewToHighlight" destination="8K9-WE-QV7" id="CQ2-ks-A8H"/>
                     </connections>
                 </panGestureRecognizer>

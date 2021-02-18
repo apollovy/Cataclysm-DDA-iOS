@@ -207,6 +207,12 @@ const float _scrollingPrecision = 10;
 -(void)pageUpDown:(PageUpDownPanGestureRecognizer*)sender
 {
     UIView* viewToHighlight = sender.viewToHighlight ?: sender.view;
+    UIView* rootView = sender.rootView;
+    
+    if (sender.state == UIGestureRecognizerStateBegan)
+        [UIView animateWithDuration:0.2 animations:^(void){
+            rootView.alpha = 0;
+        }];
 
     if ((sender.state == UIGestureRecognizerStateChanged) || ( sender.state == UIGestureRecognizerStateEnded))
     {
@@ -232,6 +238,9 @@ const float _scrollingPrecision = 10;
     {
         viewToHighlight.alpha = 0.02;
         lastScrollingLocation = CGPointZero;
+        [UIView animateWithDuration:0.2 animations:^(void){
+            rootView.alpha = 1;
+        }];
     }
 }
 

@@ -12,4 +12,5 @@ import UIKit
 class PageUpDownPanGestureRecognizer : UIPanGestureRecognizer
 {
     @IBOutlet var viewToHighlight: UIView?
+    @IBOutlet var rootView: UIView?
 }
