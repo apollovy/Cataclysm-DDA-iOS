@@ -202,16 +202,17 @@ GamePadViewController* _gamepadViewController;
     [hideKeyboardGR addTarget:self action:@selector(hideKeyboard)];
     
     UIPanGestureRecognizer* panViewGR = [UIPanGestureRecognizer new];
-    panViewGR.minimumNumberOfTouches = 2;
     [panViewGR addTarget:self action:@selector(panView:)];
-    
+    [panViewGR requireGestureRecognizerToFail:showKeyboardGR];
+    [panViewGR requireGestureRecognizerToFail:hideKeyboardGR];
+
     UIPinchGestureRecognizer* zoomGR = [UIPinchGestureRecognizer new];
     [zoomGR addTarget:self action:@selector(zoom:)];
     _gestureRecognizerDelegate = [GestureRecognizerDelegate initWith:panViewGR and:zoomGR];
     zoomGR.delegate = _gestureRecognizerDelegate;
     
     UITapGestureRecognizer* centerViewGR = [UITapGestureRecognizer new];
-    centerViewGR.numberOfTapsRequired = centerViewGR.numberOfTouchesRequired = 2;
+    centerViewGR.numberOfTouchesRequired = 2;
     [centerViewGR addTarget:self action:@selector(centerView)];
 
     for (UIGestureRecognizer* recognizer in @[showKeyboardGR, hideKeyboardGR, panViewGR, zoomGR, centerViewGR])
