@@ -2068,6 +2068,7 @@
 		B57201C1259293EE003D2A20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Аполлов Юрий Андреевич";
 				TargetAttributes = {
@@ -3015,7 +3016,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3026,7 +3027,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3055,7 +3056,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				INFOPLIST_FILE = CDDA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3066,7 +3067,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

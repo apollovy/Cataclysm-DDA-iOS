@@ -276,19 +276,15 @@ CGPoint lastPanningLocation;
             NSString* yText = yRet.movementText;
             newLocation.y = yRet.newCoorinate;
 
-            NSMutableString* text = [NSMutableString new];
             NSString* longestString = (xText.length > yText.length) ? xText : yText;
             NSString* shortestString = (longestString == xText) ? yText : xText;
             NSInteger shortestStringLenght = shortestString.length;
             for (int i=0; i < longestString.length; i++)
             {
-                [text appendFormat:@"%c", [longestString characterAtIndex:i]];
+                [self typeSymbolOf:longestString atIndex:i];
                 if (i < shortestStringLenght)
-                    [text appendFormat:@"%c", [shortestString characterAtIndex:i]];
+                    [self typeSymbolOf:shortestString atIndex:i];
             }
-
-            for (int i=0; i < text.length; i++)
-                SDL_send_text_event([NSString stringWithFormat:@"%c", [text characterAtIndex:i]]);
             lastPanningLocation = newLocation;
         }
     }
@@ -313,6 +309,10 @@ CGPoint lastPanningLocation;
     return (PanViewHelperReturnType){.movementText=movementText, .newCoorinate=newCoorinate};
 }
 
+-(void)typeSymbolOf:(NSString*)string atIndex:(int)index
+{
+    SDL_send_text_event([NSString stringWithFormat:@"%c", [string characterAtIndex:index]]);
+}
 const int _panningPrecision = 10;
 
 
