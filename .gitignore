@@ -159,6 +159,9 @@ DerivedData/
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,fastlane,appcode+all,cocoapods
 
-*.dSYM
 *.ipa
 Screenshots for app store/generated
+*.dSYM*
+*.sw?
+/CDDA-loc
+.ipynb_checkpoints
