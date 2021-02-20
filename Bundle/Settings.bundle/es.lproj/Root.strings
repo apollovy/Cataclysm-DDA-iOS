@@ -4,6 +4,9 @@
 /* (No Comment) */
 "Invert scrolling direction" = "Invertir dirección de desplazamiento";
 
+/* (No Comment) */
+"Keyboard show/hide time" = "Mostrar / ocultar el tiempo del teclado";
+
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "IU de superposición habilitada";
 

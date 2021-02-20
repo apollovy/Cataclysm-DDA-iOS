@@ -40,7 +40,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Time to show/hide keyboard</string>
+			<string>Keyboard show/hide time</string>
 			<key>Key</key>
 			<string>keyboardSwipeTime</string>
 			<key>DefaultValue</key>

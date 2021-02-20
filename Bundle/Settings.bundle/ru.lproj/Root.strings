@@ -4,6 +4,9 @@
 /* (No Comment) */
 "Invert scrolling direction" = "Инвертировать направление прокрутки";
 
+/* (No Comment) */
+"Keyboard show/hide time" = "Время отображения / скрытия клавиатуры";
+
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "Пользовательский интерфейс наложения включен";
 
