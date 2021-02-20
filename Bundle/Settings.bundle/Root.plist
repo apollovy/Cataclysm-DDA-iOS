@@ -36,6 +36,18 @@
 			<key>DefaultValue</key>
 			<false/>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Time to show/hide keyboard</string>
+			<key>Key</key>
+			<string>keyboardSwipeTime</string>
+			<key>DefaultValue</key>
+			<real>0.05</real>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+		</dict>
 	</array>
 </dict>
 </plist>

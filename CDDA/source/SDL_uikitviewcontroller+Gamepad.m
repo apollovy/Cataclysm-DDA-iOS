@@ -80,6 +80,32 @@ typedef struct PanViewHelperReturnType {
 } PanViewHelperReturnType;
 
 
+@interface KeyboardSwipeGestureRecognizer : UISwipeGestureRecognizer
+
+@end
+
+
+@implementation KeyboardSwipeGestureRecognizer
+
+NSDate* _startDate;
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    _startDate = [NSDate date];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    if (_startDate.timeIntervalSinceNow < -[NSUserDefaults.standardUserDefaults doubleForKey:@"keyboardSwipeTime"])
+        self.state = UIGestureRecognizerStateFailed;
+    else
+        [super touchesMoved:touches withEvent:event];
+}
+
+@end
+
+
 #pragma mark - SDL_uikitviewcontroller (Gamepad)
 
 @implementation SDL_uikitviewcontroller (Gamepad)
@@ -89,6 +115,7 @@ typedef struct PanViewHelperReturnType {
         @"overlayUIEnabled": @YES,
         @"invertScroll": @NO,
         @"invertPan": @NO,
+        @"keyboardSwipeTime": @0.1,
     };
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
@@ -191,12 +218,12 @@ GamePadViewController* _gamepadViewController;
 
 -(void)addRecognizers
 {
-    UISwipeGestureRecognizer* showKeyboardGR = [UISwipeGestureRecognizer new];
+    KeyboardSwipeGestureRecognizer* showKeyboardGR = [KeyboardSwipeGestureRecognizer new];
     showKeyboardGR.direction = UISwipeGestureRecognizerDirectionUp;
     showKeyboardGR.delaysTouchesBegan = YES;
     [showKeyboardGR addTarget:self action:@selector(showKeyboard)];
     
-    UISwipeGestureRecognizer* hideKeyboardGR = [UISwipeGestureRecognizer new];
+    KeyboardSwipeGestureRecognizer* hideKeyboardGR = [KeyboardSwipeGestureRecognizer new];
     hideKeyboardGR.direction = UISwipeGestureRecognizerDirectionDown;
     hideKeyboardGR.delaysTouchesBegan = YES;
     [hideKeyboardGR addTarget:self action:@selector(hideKeyboard)];
