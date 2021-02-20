@@ -1,4 +1,9 @@
+/* (No Comment) */
+"Invert panning direction" = "反转摇摄方向";
+
+/* (No Comment) */
+"Invert scrolling direction" = "反转滚动方向";
+
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "启用重叠式用户界面";
-"Invert scrolling direction" = "反转滚动方向";
-"Invert panning direction" = "反转摇摄方向";
+

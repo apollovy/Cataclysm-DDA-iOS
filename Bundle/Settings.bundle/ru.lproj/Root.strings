@@ -1,4 +1,9 @@
+/* (No Comment) */
+"Invert panning direction" = "Инвертировать направление панорамирования";
+
+/* (No Comment) */
+"Invert scrolling direction" = "Инвертировать направление прокрутки";
+
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "Пользовательский интерфейс наложения включен";
-"Invert scrolling direction" = "Инвертировать направление прокрутки";
-"Invert panning direction" = "Инвертировать направление панорамирования";
+

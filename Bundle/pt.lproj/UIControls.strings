@@ -242,7 +242,7 @@
 "vFn-qJ-jex.normalTitle" = "t Arremessar Item";
 
 /* Class = "UILabel"; text = "TAB"; ObjectID = "W0g-LR-zoy"; */
-"W0g-LR-zoy.text" = "ABA";
+"W0g-LR-zoy.text" = "TAB";
 
 /* Class = "UIButton"; normalTitle = "! Toggle Safe Mode"; ObjectID = "wer-L7-Cpb"; */
 "wer-L7-Cpb.normalTitle" = "! Alternar Modo de Segurança";
