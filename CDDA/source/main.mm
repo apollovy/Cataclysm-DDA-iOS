@@ -24,6 +24,15 @@ int main( int argc, char *argv[] )
         for (NSString* file in @[@"config/debug.log", @"config/debug.log.prev", @"config/options.json"])
             [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
     }];
+    
+    NSDictionary* appDefaults = @{
+        @"overlayUIEnabled": @YES,
+        @"invertScroll": @NO,
+        @"invertPan": @NO,
+        @"keyboardSwipeTime": @0.05,
+        @"resizeGameWindowWhenTogglingKeyboard": @YES,
+    };
+    [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     const char* new_argv_const[] = {

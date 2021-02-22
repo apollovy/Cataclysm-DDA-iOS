@@ -111,15 +111,6 @@ NSDate* _startDate;
 @implementation SDL_uikitviewcontroller (Gamepad)
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSDictionary* appDefaults = @{
-        @"overlayUIEnabled": @YES,
-        @"invertScroll": @NO,
-        @"invertPan": @NO,
-        @"keyboardSwipeTime": @0.1,
-        @"resizeGameWindowWhenTogglingKeyboard": @YES,
-    };
-    [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
-
     for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
         [self registerNotification:notification forSelector:@selector(resizeRootView)];
     [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:@"overlayUIEnabled" options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
