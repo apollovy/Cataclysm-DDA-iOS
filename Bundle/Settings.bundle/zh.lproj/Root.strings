@@ -10,3 +10,5 @@
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "启用重叠式用户界面";
 
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "切换键盘时调整游戏窗口的大小（仅限iPad）";

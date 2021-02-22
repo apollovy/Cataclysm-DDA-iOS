@@ -10,3 +10,5 @@
 /* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
 "Overlay UI enabled" = "Пользовательский интерфейс наложения включен";
 
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "Изменение размера окна игры при переключении клавиатуры (только для iPad)";

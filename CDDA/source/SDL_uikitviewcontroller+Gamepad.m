@@ -116,6 +116,7 @@ NSDate* _startDate;
         @"invertScroll": @NO,
         @"invertPan": @NO,
         @"keyboardSwipeTime": @0.1,
+        @"resizeGameWindowWhenTogglingKeyboard": @YES,
     };
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
@@ -155,7 +156,7 @@ static CGSize _minSize = {632, 368};
     
     CGFloat keyboardLessHeight = window.frame.size.height - self.keyboardHeight;
     
-    if (keyboardLessHeight >= _minSize.height)
+    if ((keyboardLessHeight >= _minSize.height) && [NSUserDefaults.standardUserDefaults boolForKey:@"resizeGameWindowWhenTogglingKeyboard"])
     {
         viewFrame.size.height = keyboardLessHeight;
     }
