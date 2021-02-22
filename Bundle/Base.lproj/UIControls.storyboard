@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mgi-Zq-ipg">
     <device id="retina6_7" orientation="landscape" appearance="dark"/>
     <dependencies>
@@ -83,6 +84,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-Ba-zeS" userLabel="Misc button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
                                         <rect key="frame" x="37" y="0.0" width="38" height="34"/>
+                                        <gestureRecognizers/>
                                         <size key="titleShadowOffset" width="1" height="-1"/>
                                         <state key="normal" title="Misc">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +93,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="Lp7-yY-qSz"/>
                                             <outlet property="menuView" destination="l6Z-Bs-2kE" id="ZJP-s7-kZV"/>
+                                            <outletCollection property="gestureRecognizers" destination="0o5-7S-5Oj" appends="YES" id="zdW-ka-ddP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sh-51-gTg" userLabel="Info button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -103,6 +106,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="cD4-mu-2C4"/>
                                             <outlet property="menuView" destination="3uG-Qh-1BN" id="6Gt-LC-0Dp"/>
+                                            <outletCollection property="gestureRecognizers" destination="7q1-C7-zmd" appends="YES" id="d6i-Dm-pbC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fT9-H1-Jfz" userLabel="Craft button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -115,6 +119,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="flQ-fs-UCZ"/>
                                             <outlet property="menuView" destination="Pda-20-GCt" id="dgL-y2-lPs"/>
+                                            <outletCollection property="gestureRecognizers" destination="iLR-sR-hkN" appends="YES" id="zcT-Hk-OXv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZL-ow-0sR" userLabel="Combat button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -127,6 +132,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="qrd-ti-NKd"/>
                                             <outlet property="menuView" destination="yfA-Dz-Pkf" id="ag4-Tn-qIk"/>
+                                            <outletCollection property="gestureRecognizers" destination="xOm-Tn-9SO" appends="YES" id="EY4-yA-5dp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21L-gO-5lI" userLabel="Inventory button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -139,6 +145,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="eY7-CY-XKd"/>
                                             <outlet property="menuView" destination="oeO-Gg-n4M" id="1ID-t7-zY0"/>
+                                            <outletCollection property="gestureRecognizers" destination="f6k-3N-n9g" appends="YES" id="gCC-Qo-SYu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvM-pp-jx7" userLabel="Interact button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -151,6 +158,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="5ty-EK-HKi"/>
                                             <outlet property="menuView" destination="Alc-G2-wLq" id="82H-r4-D8u"/>
+                                            <outletCollection property="gestureRecognizers" destination="W0F-HH-Qon" appends="YES" id="COW-D7-KjN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6A1-2M-9GH" userLabel="Look button" customClass="MenuButton" customModule="CDDA" customModuleProvider="target">
@@ -163,6 +171,7 @@
                                         <connections>
                                             <action selector="toggleMenu:" destination="mgi-Zq-ipg" eventType="primaryActionTriggered" id="6cs-Pq-2PV"/>
                                             <outlet property="menuView" destination="7Zl-P2-tec" id="R0Q-hK-UFd"/>
+                                            <outletCollection property="gestureRecognizers" destination="XcN-M8-ZiT" appends="YES" id="jCd-Hd-amR"/>
                                         </connections>
                                     </button>
                                     <view opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcX-7V-Sr2" userLabel="Return button" customClass="JSButton">
@@ -1415,6 +1424,48 @@
                 <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.5" id="Vcz-AR-Xcm" userLabel="Temporarily Hide UI Long Press Gesture Recognizer">
                     <connections>
                         <action selector="temporarilyHideUI:" destination="mgi-Zq-ipg" id="XH3-jZ-nJU"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="0o5-7S-5Oj" userLabel="Misc button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="oVb-mM-p4I"/>
+                        <outlet property="menuButton" destination="D2E-Ba-zeS" id="KKl-85-Tb1"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="7q1-C7-zmd" userLabel="Info button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="phX-TH-4fx"/>
+                        <outlet property="menuButton" destination="2sh-51-gTg" id="jpx-P3-CxM"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="iLR-sR-hkN" userLabel="Craft button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="47G-vb-bDK"/>
+                        <outlet property="menuButton" destination="fT9-H1-Jfz" id="aPB-X4-8n1"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xOm-Tn-9SO" userLabel="Combat button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="NSa-5v-eCw"/>
+                        <outlet property="menuButton" destination="JZL-ow-0sR" id="ajR-1y-9Kl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="f6k-3N-n9g" userLabel="Inventory button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="Kfx-iz-ldM"/>
+                        <outlet property="menuButton" destination="21L-gO-5lI" id="9ma-dc-smj"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="W0F-HH-Qon" userLabel="Interact button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="AtC-aO-Tpb"/>
+                        <outlet property="menuButton" destination="qvM-pp-jx7" id="Z14-Xh-64H"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="XcN-M8-ZiT" userLabel="Look button show'n'fix menu Long Press Gesture Recognizer" customClass="ShowAndFixGestureRecognizer" customModule="CDDA" customModuleProvider="target">
+                    <connections>
+                        <action selector="showAndFixMenu:" destination="mgi-Zq-ipg" id="aZH-R1-bOO"/>
+                        <outlet property="menuButton" destination="6A1-2M-9GH" id="2TN-4h-Bl5"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>

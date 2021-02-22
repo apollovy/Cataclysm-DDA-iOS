@@ -10,6 +10,8 @@
 
 #import "JSButton.h"
 
+#import "CDDA-Swift.h"
+
 #import "SDL_char_utils.h"
 #import "GamePadViewController.h"
 
@@ -84,6 +86,12 @@ BOOL pressed;
 
 -(void)toggleMenu:(MenuButton*)sender
 {
+    _fixedMenuButton = nil;
+    [self toggleMenu:sender hideMenusView:YES];
+}
+
+-(void)toggleMenu:(MenuButton*)sender hideMenusView:(BOOL)hideMenusView
+{
     if (!sender.menuView)
     {
         NSLog(@"No menu associated with MenuButton %@", sender);
@@ -93,6 +101,7 @@ BOOL pressed;
     
     if (shouldBeVisible)
     {
+        _activeMenuButton = sender;
         if (sender.menuView.alpha)  // this is initial state, views are visible to easily interact with them in UIBuilder
             sender.menuView.alpha = 0;
         self.menusView.hidden = NO;
@@ -103,9 +112,34 @@ BOOL pressed;
 
         [self toggleView:sender.menuView visibility:YES completion:nil];
     } else {
-        [self toggleView:sender.menuView visibility:NO completion:^(BOOL finished){
+        void (^completion)(BOOL) = hideMenusView ? ^(BOOL finished){
             [self hideMenusView];
-        }];
+        } : nil ;
+        [self toggleView:sender.menuView visibility:NO completion:completion];
+        _fixedMenuButton = _activeMenuButton = nil;
+    }
+}
+
+MenuButton* _activeMenuButton;
+MenuButton* _fixedMenuButton;
+
+/// We have these cases:
+/// 1. Tap on menu button when no menu is present - show and fix the menu for that button
+/// 2. Tap on menu button that is already on the screen - fix that menu, no need to toggle a thing
+/// 3. Tap on menu button when another button's menu is on the screen - hide the latter, show and fix the former menu
+-(void)showAndFixMenu:(ShowAndFixGestureRecognizer*)sender
+{
+    if (!_activeMenuButton)
+    {
+        _fixedMenuButton = sender.menuButton;
+        [self toggleMenu:sender.menuButton hideMenusView:YES];
+    } else if (_activeMenuButton == sender.menuButton)
+    {
+        _fixedMenuButton = sender.menuButton;
+    } else {
+        [self toggleMenu:_activeMenuButton hideMenusView:NO];
+        _fixedMenuButton = sender.menuButton;
+        [self toggleMenu:sender.menuButton];
     }
 }
 
@@ -136,7 +170,8 @@ BOOL pressed;
 
 -(void)pressKey:(MenuButton*)sender
 {
-    [self toggleMenu:sender];
+    if (!_fixedMenuButton)
+        [self toggleMenu:sender];
     NSString* text = sender.currentTitle;
     NSString* firstSymbol = [text substringToIndex:1];
     SDL_send_text_event(firstSymbol);

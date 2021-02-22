@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(IBAction)tapGamepadButton:(UITapGestureRecognizer*)sender;
 -(IBAction)pageUpDown:(PageUpDownPanGestureRecognizer*)sender;
 -(IBAction)temporarilyHideUI:(UILongPressGestureRecognizer*)sender;
+-(IBAction)showAndFixMenu:(ShowAndFixGestureRecognizer*)sender;
 
 @end
 
