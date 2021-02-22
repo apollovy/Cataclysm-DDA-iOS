@@ -178,7 +178,7 @@ MenuButton* _fixedMenuButton;
 }
 
 
-#pragma Gamepad buttons handling from recognizers
+#pragma mark - Gamepad buttons handling from recognizers
 
 NSDate* lastPress;
 
