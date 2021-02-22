@@ -3,13 +3,13 @@
 	url = git@github.com:apollovy/SDL.git
 [submodule "Libraries/SDL_image"]
 	path = Libraries/SDL_image
-	url = git@github.com:SDL-mirror/SDL_image.git
+	url = git@github.com:apollovy/SDL_image.git
 [submodule "Libraries/SDL_ttf"]
 	path = Libraries/SDL_ttf
-	url = git@github.com:SDL-mirror/SDL_ttf.git
+	url = git@github.com:apollovy/SDL_ttf.git
 [submodule "Libraries/SDL_mixer"]
 	path = Libraries/SDL_mixer
-	url = git@github.com:SDL-mirror/SDL_mixer.git
+	url = git@github.com:apollovy/SDL_mixer.git
 [submodule "Libraries/Cataclysm-DDA"]
 	path = Libraries/Cataclysm-DDA
 	url = git@github.com:CleverRaven/Cataclysm-DDA.git
