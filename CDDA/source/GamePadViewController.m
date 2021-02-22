@@ -54,11 +54,9 @@ BOOL pressed;
         // special symbols
         if ([text  isEqual: @"ESC"])
         {
-            if (!self.menusView.hidden)
+            if (_activeMenuButton)
             {
-                [self hideMenus:^(BOOL completed){
-                    [self hideMenusView];
-                }];
+                [self toggleMenu:_activeMenuButton];
                 return;
             }
             sym = SDLK_ESCAPE;
