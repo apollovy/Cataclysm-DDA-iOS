@@ -38,6 +38,26 @@
 		</dict>
 		<dict>
 			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Resize game window when toggling keyboard (iPad only)</string>
+			<key>Key</key>
+			<string>resizeGameWindowWhenTogglingKeyboard</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Panning with 1 finger</string>
+			<key>Key</key>
+			<string>panningWith1Finger</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
 			<string>Keyboard show/hide time</string>
@@ -47,16 +67,6 @@
 			<real>0.05</real>
 			<key>KeyboardType</key>
 			<string>NumberPad</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
-			<key>Title</key>
-			<string>Resize game window when toggling keyboard (iPad only)</string>
-			<key>Key</key>
-			<string>resizeGameWindowWhenTogglingKeyboard</string>
-			<key>DefaultValue</key>
-			<true/>
 		</dict>
 	</array>
 </dict>

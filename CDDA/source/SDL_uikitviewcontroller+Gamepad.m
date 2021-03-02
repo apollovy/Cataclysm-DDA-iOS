@@ -113,10 +113,11 @@ NSDate* _startDate;
 - (void)viewDidAppear:(BOOL)animated {
     for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
         [self registerNotification:notification forSelector:@selector(resizeRootView)];
-    [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:@"overlayUIEnabled" options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
+
+    for (NSString* keyPath in @[@"overlayUIEnabled", @"panningWith1Finger"])
+        [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
 
     [self resizeRootView];
-    [self addRecognizers];
 }
 
 
@@ -124,6 +125,8 @@ NSDate* _startDate;
 {
     if ([keyPath isEqual: @"overlayUIEnabled"])
         [self maybeToggleUI];
+    else if ([keyPath isEqual:@"panningWith1Finger"])
+        [self addRecognizers];
     else
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
 }
@@ -210,20 +213,37 @@ GamePadViewController* _gamepadViewController;
 
 -(void)addRecognizers
 {
-    KeyboardSwipeGestureRecognizer* showKeyboardGR = [KeyboardSwipeGestureRecognizer new];
+    self.view.gestureRecognizers = nil;
+    
+    UISwipeGestureRecognizer* showKeyboardGR;
+    UISwipeGestureRecognizer* hideKeyboardGR;
+
+    if ([NSUserDefaults.standardUserDefaults boolForKey:@"panningWith1Finger"])
+    {
+        showKeyboardGR = [KeyboardSwipeGestureRecognizer new];
+        hideKeyboardGR = [KeyboardSwipeGestureRecognizer new];
+    } else {
+        showKeyboardGR = [UISwipeGestureRecognizer new];
+        hideKeyboardGR = [UISwipeGestureRecognizer new];
+    }
     showKeyboardGR.direction = UISwipeGestureRecognizerDirectionUp;
     showKeyboardGR.delaysTouchesBegan = YES;
     [showKeyboardGR addTarget:self action:@selector(showKeyboard)];
     
-    KeyboardSwipeGestureRecognizer* hideKeyboardGR = [KeyboardSwipeGestureRecognizer new];
     hideKeyboardGR.direction = UISwipeGestureRecognizerDirectionDown;
     hideKeyboardGR.delaysTouchesBegan = YES;
     [hideKeyboardGR addTarget:self action:@selector(hideKeyboard)];
     
     UIPanGestureRecognizer* panViewGR = [UIPanGestureRecognizer new];
     [panViewGR addTarget:self action:@selector(panView:)];
-    [panViewGR requireGestureRecognizerToFail:showKeyboardGR];
-    [panViewGR requireGestureRecognizerToFail:hideKeyboardGR];
+    
+    if ([NSUserDefaults.standardUserDefaults boolForKey:@"panningWith1Finger"])
+    {
+        [panViewGR requireGestureRecognizerToFail:showKeyboardGR];
+        [panViewGR requireGestureRecognizerToFail:hideKeyboardGR];
+    }
+    else
+        panViewGR.minimumNumberOfTouches = 2;
 
     UIPinchGestureRecognizer* zoomGR = [UIPinchGestureRecognizer new];
     [zoomGR addTarget:self action:@selector(zoom:)];
@@ -234,12 +254,10 @@ GamePadViewController* _gamepadViewController;
     centerViewGR.numberOfTouchesRequired = 2;
     [centerViewGR addTarget:self action:@selector(centerView)];
 
-    for (UIGestureRecognizer* recognizer in @[showKeyboardGR, hideKeyboardGR, panViewGR, zoomGR, centerViewGR])
-        [self.view addGestureRecognizer:recognizer];
+    self.view.gestureRecognizers = @[showKeyboardGR, hideKeyboardGR, panViewGR, zoomGR, centerViewGR];
 }
 
 GestureRecognizerDelegate* _gestureRecognizerDelegate;
-
 
 #pragma mark - Zoom handling
 

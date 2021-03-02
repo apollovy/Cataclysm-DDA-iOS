@@ -11,4 +11,7 @@
 "Overlay UI enabled" = "오버레이 UI 사용";
 
 /* (No Comment) */
+"Panning with 1 finger" = "한 손가락으로 패닝";
+
+/* (No Comment) */
 "Resize game window when toggling keyboard (iPad only)" = "키보드를 전환 할 때 게임 창 크기 조정 (iPad 만 해당)";

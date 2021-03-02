@@ -11,4 +11,7 @@
 "Overlay UI enabled" = "启用重叠式用户界面";
 
 /* (No Comment) */
+"Panning with 1 finger" = "用一根手指平移";
+
+/* (No Comment) */
 "Resize game window when toggling keyboard (iPad only)" = "切换键盘时调整游戏窗口的大小（仅限iPad）";

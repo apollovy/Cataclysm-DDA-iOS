@@ -31,6 +31,7 @@ int main( int argc, char *argv[] )
         @"invertPan": @NO,
         @"keyboardSwipeTime": @0.05,
         @"resizeGameWindowWhenTogglingKeyboard": @YES,
+        @"panningWith1Finger": @NO,
     };
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 

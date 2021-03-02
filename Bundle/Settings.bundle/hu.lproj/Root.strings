@@ -11,4 +11,7 @@
 "Overlay UI enabled" = "Az overlay felhasználói felület engedélyezve";
 
 /* (No Comment) */
+"Panning with 1 finger" = "Pásztázás 1 ujjal";
+
+/* (No Comment) */
 "Resize game window when toggling keyboard (iPad only)" = "A játékablak átméretezése a billentyűzet váltásakor (csak iPad esetén)";

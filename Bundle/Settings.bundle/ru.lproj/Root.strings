@@ -11,4 +11,7 @@
 "Overlay UI enabled" = "Пользовательский интерфейс наложения включен";
 
 /* (No Comment) */
+"Panning with 1 finger" = "Панорамирование одним пальцем";
+
+/* (No Comment) */
 "Resize game window when toggling keyboard (iPad only)" = "Изменение размера окна игры при переключении клавиатуры (только для iPad)";

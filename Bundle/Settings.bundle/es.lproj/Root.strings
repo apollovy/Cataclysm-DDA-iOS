@@ -11,4 +11,7 @@
 "Overlay UI enabled" = "IU de superposición habilitada";
 
 /* (No Comment) */
+"Panning with 1 finger" = "Panorámica con 1 dedo";
+
+/* (No Comment) */
 "Resize game window when toggling keyboard (iPad only)" = "Cambiar el tamaño de la ventana del juego al alternar el teclado (solo iPad)";
