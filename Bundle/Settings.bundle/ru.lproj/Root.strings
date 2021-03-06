@@ -15,3 +15,6 @@
 
 /* (No Comment) */
 "Resize game window when toggling keyboard (iPad only)" = "Изменение размера окна игры при переключении клавиатуры (только для iPad)";
+
+/* (No Comment) */
+"Use iCloud" = "Использовать iCloud";

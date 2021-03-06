@@ -18,13 +18,12 @@ int main( int argc, char *argv[] )
         @"environment": @"production",
 #endif
     }];
-    NSString* documentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
 
-    [SentrySDK configureScope:^(SentryScope *_Nonnull scope) {
-        for (NSString* file in @[@"config/debug.log", @"config/debug.log.prev", @"config/options.json"])
-            [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
-    }];
-    
+    NSString* iCloudDocumentPath = [[[[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"] path]stringByAppendingString:@"/"];
+    NSString* localDocumentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
+
+    bool useICloudByDefault = (![[NSFileManager defaultManager] fileExistsAtPath:[localDocumentPath stringByAppendingString:@"config"]]) && iCloudDocumentPath;
+
     NSDictionary* appDefaults = @{
         @"overlayUIEnabled": @YES,
         @"invertScroll": @NO,
@@ -32,8 +31,20 @@ int main( int argc, char *argv[] )
         @"keyboardSwipeTime": @0.05,
         @"resizeGameWindowWhenTogglingKeyboard": @YES,
         @"panningWith1Finger": @NO,
+        @"useICloud": [NSNumber numberWithBool:useICloudByDefault],
     };
     [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
+
+    NSString* documentPath;
+    if ([NSUserDefaults.standardUserDefaults boolForKey:@"useICloud"])
+        documentPath = iCloudDocumentPath;
+    else
+        documentPath = localDocumentPath;
+
+    [SentrySDK configureScope:^(SentryScope *_Nonnull scope) {
+        for (NSString* file in @[@"config/debug.log", @"config/debug.log.prev", @"config/options.json"])
+            [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
+    }];
 
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     const char* new_argv_const[] = {
