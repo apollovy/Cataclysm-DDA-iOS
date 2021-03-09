@@ -1,56 +1,28 @@
 #include <Foundation/Foundation.h>
-#import "Sentry.h"
 
 #define main CDDA_main
 #include "main.cpp"
 #undef main
 
+#include "SDL.h"
+
 extern "C"
 {
 
-int CDDA_iOS_main( int argc, char *argv[] )
+int CDDA_iOS_main(NSString* documentPath)
 {
-    [SentrySDK startWithOptions: @{
-        @"dsn": [[NSBundle mainBundle] objectForInfoDictionaryKey: @"SentryDSN"],
-#ifdef DEBUG
-        @"debug": @YES,
-        @"environment": @"development",
-#else
-        @"debug": @NO,
-        @"environment": @"production",
-#endif
-    }];
+    SDL_iPhoneSetEventPump(SDL_TRUE);
 
-    NSString* iCloudDocumentPath = [[[[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"] path]stringByAppendingString:@"/"];
-    NSString* localDocumentPath = [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
-
-    bool useICloudByDefault = (![[NSFileManager defaultManager] fileExistsAtPath:[localDocumentPath stringByAppendingString:@"config"]]) && iCloudDocumentPath;
-
-    NSDictionary* appDefaults = @{
-        @"overlayUIEnabled": @YES,
-        @"invertScroll": @NO,
-        @"invertPan": @NO,
-        @"keyboardSwipeTime": @0.05,
-        @"resizeGameWindowWhenTogglingKeyboard": @YES,
-        @"panningWith1Finger": @NO,
-        @"useICloud": [NSNumber numberWithBool:useICloudByDefault],
-    };
-    [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
-
-    NSString* documentPath;
-    if ([NSUserDefaults.standardUserDefaults boolForKey:@"useICloud"])
-        documentPath = iCloudDocumentPath;
-    else
-        documentPath = localDocumentPath;
-
-    [SentrySDK configureScope:^(SentryScope *_Nonnull scope) {
-        for (NSString* file in @[@"config/debug.log", @"config/debug.log.prev", @"config/options.json"])
-            [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
-    }];
+    NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
+    int arguments_count = NSProcessInfo.processInfo.arguments.count;
+    char* args[arguments_count];
+    
+    for(int i=0; i<arguments_count; i++)
+        strcpy(args[i], [arguments[i] UTF8String]);
 
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     const char* new_argv_const[] = {
-        *argv,
+        *args,
         "--datadir", [datadir UTF8String],
         "--userdir", [documentPath UTF8String],
     };
@@ -62,8 +34,11 @@ int CDDA_iOS_main( int argc, char *argv[] )
         auto new_ptr = new char[strlen(arg_ptr)];
         new_argv[i] = strcpy(new_ptr, arg_ptr);
     };
-    
-    return CDDA_main(new_argv_const_size, new_argv);
+
+    int exitCode = CDDA_main(new_argv_const_size, new_argv);
+    SDL_iPhoneSetEventPump(SDL_FALSE);
+
+    return exitCode;
 }
 
 }

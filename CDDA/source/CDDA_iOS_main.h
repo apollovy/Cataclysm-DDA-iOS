@@ -9,6 +9,6 @@
 #ifndef CDDA_iOS_main_h
 #define CDDA_iOS_main_h
 
-int CDDA_iOS_main( int argc, char *argv[] );
+int CDDA_iOS_main(NSString* documentPath );
 
 #endif /* CDDA_iOS_main_h */
