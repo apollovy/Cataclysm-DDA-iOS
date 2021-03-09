@@ -4,9 +4,11 @@
 #define main CDDA_main
 #include "main.cpp"
 #undef main
-#include "SDL_main.h"
 
-int main( int argc, char *argv[] )
+extern "C"
+{
+
+int CDDA_iOS_main( int argc, char *argv[] )
 {
     [SentrySDK startWithOptions: @{
         @"dsn": [[NSBundle mainBundle] objectForInfoDictionaryKey: @"SentryDSN"],
@@ -62,4 +64,6 @@ int main( int argc, char *argv[] )
     };
     
     return CDDA_main(new_argv_const_size, new_argv);
+}
+
 }

@@ -44,12 +44,16 @@
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
+		B5A5BED925F7DEB500EEEA0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */; };
+		B5A5BEDA25F7DEB500EEEA0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
+		B5A5BEDB25F7DEB500EEEA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5EF4E9025C20850003948D0 /* button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EF4E8D25C20850003948D0 /* button-pressed.png */; };
 		B5EF4E9125C20850003948D0 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EF4E8E25C20850003948D0 /* button@2x.png */; };
 		B5EF4E9225C20850003948D0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EF4E8F25C20850003948D0 /* button.png */; };
-		B5F97C67259C08B600C5A910 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
+		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
@@ -600,6 +604,13 @@
 		B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
 		B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		B5A5855225A53D7A00E73D9A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5A5BED625F7DEB300EEEA0F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5A5BED725F7DEB400EEEA0F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_iOS_main.h; sourceTree = "<group>"; };
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-DDA/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
 		B5CF696825F38BC3009F929E /* CDDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CDDA.entitlements; sourceTree = "<group>"; };
@@ -607,7 +618,7 @@
 		B5EF4E8D25C20850003948D0 /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed.png"; path = "Libraries/JSController/Controller/button-pressed.png"; sourceTree = SOURCE_ROOT; };
 		B5EF4E8E25C20850003948D0 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "Libraries/JSController/Controller/button@2x.png"; sourceTree = SOURCE_ROOT; };
 		B5EF4E8F25C20850003948D0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Libraries/JSController/Controller/button.png; sourceTree = SOURCE_ROOT; };
-		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
@@ -1322,6 +1333,7 @@
 		B56E7E25259BA51C000701EF /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
+				B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */,
 				B57201D5259293EF003D2A20 /* Assets.xcassets */,
 				B5B01B95259BEF650023AB00 /* data */,
 				B5072BB8259CE883002479DB /* gfx */,
@@ -1388,10 +1400,14 @@
 		B5B01B98259BF0480023AB00 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
+				B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */,
+				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
+				B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */,
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
-				B5F97C66259C08B500C5A910 /* main.mm */,
+				B5A5BED625F7DEB300EEEA0F /* main.m */,
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
 				B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */,
 				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
@@ -1406,6 +1422,8 @@
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */,
 				B5B01B99259BF0690023AB00 /* version.h */,
+				B5A5BED725F7DEB400EEEA0F /* ViewController.h */,
+				B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2292,6 +2310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */,
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
 				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
 				B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */,
@@ -2449,7 +2468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
-				B5F97C67259C08B600C5A910 /* main.mm in Sources */,
+				B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */,
 				B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */,
 				B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
@@ -2522,6 +2541,7 @@
 				D0AA28264236FB306AD29F34 /* event_bus.cpp in Sources */,
 				D0AA2EBCE275077BB490A386 /* event_statistics.cpp in Sources */,
 				D0AA20DD18F8D0A6B6DEEFC1 /* event.cpp in Sources */,
+				B5A5BEDA25F7DEB500EEEA0F /* main.m in Sources */,
 				D0AA2804914276BAC43D174A /* explosion.cpp in Sources */,
 				D0AA2763356EDAB0BA241A39 /* faction_camp.cpp in Sources */,
 				D0AA2F48C04D144499EA026C /* faction.cpp in Sources */,
@@ -2563,6 +2583,7 @@
 				D0AA201C627C921E4D0BA426 /* iuse_actor.cpp in Sources */,
 				B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */,
 				D0AA27D9819A59AF3EA87472 /* iuse_software_kitten.cpp in Sources */,
+				B5A5BED925F7DEB500EEEA0F /* ViewController.m in Sources */,
 				D0AA229D3B3B3541A64C13A5 /* iuse_software_lightson.cpp in Sources */,
 				D0AA2E0E678D1AA8F1F32FC7 /* iuse_software_minesweeper.cpp in Sources */,
 				D0AA23A12B4FB436453E35E4 /* iuse_software_snake.cpp in Sources */,
@@ -2655,6 +2676,7 @@
 				D0AA2CA1A6E080A0D3A7D69E /* pixel_minimap.cpp in Sources */,
 				D0AA24075C598C7A2B7C508C /* player_activity.cpp in Sources */,
 				D0AA24224575845D3BBE5F08 /* player_display.cpp in Sources */,
+				B5A5BEDB25F7DEB500EEEA0F /* AppDelegate.m in Sources */,
 				D0AA2614160A657BA033D7AA /* player_hardcoded_effects.cpp in Sources */,
 				D0AA218FA6D587583262A4E8 /* player.cpp in Sources */,
 				D0AA293023896D2155BA787D /* point.cpp in Sources */,
