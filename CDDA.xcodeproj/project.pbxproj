@@ -28,16 +28,7 @@
 		B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B555591025D5BC8F00CD2E90 /* Settings.bundle */; };
 		B5557CAF25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
-		B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA625AB85A20065602D /* dPad-Down@2x.png */; };
-		B559EDB025AB85A50065602D /* dPad-DownRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */; };
-		B559EDB125AB85A50065602D /* dPad-UpLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */; };
-		B559EDB225AB85A50065602D /* dPad-DownLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDA925AB85A30065602D /* dPad-DownLeft@2x.png */; };
-		B559EDB325AB85A50065602D /* dPad-Left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAA25AB85A30065602D /* dPad-Left@2x.png */; };
-		B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAB25AB85A40065602D /* dPad-Up@2x.png */; };
 		B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
-		B559EDB625AB85A50065602D /* dPad-Right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAD25AB85A40065602D /* dPad-Right@2x.png */; };
-		B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */; };
-		B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDB925AB86C70065602D /* button-pressed@2x.png */; };
 		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
@@ -51,9 +42,6 @@
 		B5A5BEF625F7F9E200EEEA0F /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
-		B5EF4E9025C20850003948D0 /* button-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EF4E8D25C20850003948D0 /* button-pressed.png */; };
-		B5EF4E9125C20850003948D0 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EF4E8E25C20850003948D0 /* button@2x.png */; };
-		B5EF4E9225C20850003948D0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B5EF4E8F25C20850003948D0 /* button.png */; };
 		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
@@ -565,16 +553,7 @@
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B555591025D5BC8F00CD2E90 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAndFixGestureRecognizer.swift; sourceTree = "<group>"; };
-		B559EDA625AB85A20065602D /* dPad-Down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Down@2x.png"; sourceTree = "<group>"; };
-		B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownRight@2x.png"; sourceTree = "<group>"; };
-		B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpLeft@2x.png"; sourceTree = "<group>"; };
-		B559EDA925AB85A30065602D /* dPad-DownLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-DownLeft@2x.png"; sourceTree = "<group>"; };
-		B559EDAA25AB85A30065602D /* dPad-Left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Left@2x.png"; sourceTree = "<group>"; };
-		B559EDAB25AB85A40065602D /* dPad-Up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Up@2x.png"; sourceTree = "<group>"; };
 		B559EDAC25AB85A40065602D /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None@2x.png"; sourceTree = "<group>"; };
-		B559EDAD25AB85A40065602D /* dPad-Right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-Right@2x.png"; sourceTree = "<group>"; };
-		B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-UpRight@2x.png"; sourceTree = "<group>"; };
-		B559EDB925AB86C70065602D /* button-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed@2x.png"; path = "Libraries/JSController/Controller/button-pressed@2x.png"; sourceTree = SOURCE_ROOT; };
 		B560EE8925D9822000FDE1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UIControls.storyboard; sourceTree = "<group>"; };
 		B560EE8D25D9824800FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/UIControls.strings; sourceTree = "<group>"; };
 		B560EE9125D996AE00FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -618,9 +597,6 @@
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
 		B5CF696825F38BC3009F929E /* CDDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CDDA.entitlements; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
-		B5EF4E8D25C20850003948D0 /* button-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-pressed.png"; path = "Libraries/JSController/Controller/button-pressed.png"; sourceTree = SOURCE_ROOT; };
-		B5EF4E8E25C20850003948D0 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button@2x.png"; path = "Libraries/JSController/Controller/button@2x.png"; sourceTree = SOURCE_ROOT; };
-		B5EF4E8F25C20850003948D0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Libraries/JSController/Controller/button.png; sourceTree = SOURCE_ROOT; };
 		B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
@@ -1235,19 +1211,7 @@
 		B50B447725A24F5600628243 /* JSDPad */ = {
 			isa = PBXGroup;
 			children = (
-				B5EF4E8D25C20850003948D0 /* button-pressed.png */,
-				B559EDB925AB86C70065602D /* button-pressed@2x.png */,
-				B5EF4E8F25C20850003948D0 /* button.png */,
-				B5EF4E8E25C20850003948D0 /* button@2x.png */,
-				B559EDA625AB85A20065602D /* dPad-Down@2x.png */,
-				B559EDA925AB85A30065602D /* dPad-DownLeft@2x.png */,
-				B559EDA725AB85A20065602D /* dPad-DownRight@2x.png */,
-				B559EDAA25AB85A30065602D /* dPad-Left@2x.png */,
 				B559EDAC25AB85A40065602D /* dPad-None@2x.png */,
-				B559EDAD25AB85A40065602D /* dPad-Right@2x.png */,
-				B559EDAB25AB85A40065602D /* dPad-Up@2x.png */,
-				B559EDA825AB85A20065602D /* dPad-UpLeft@2x.png */,
-				B559EDAE25AB85A50065602D /* dPad-UpRight@2x.png */,
 			);
 			path = JSDPad;
 			sourceTree = "<group>";
@@ -1413,6 +1377,8 @@
 				B5A5BED625F7DEB300EEEA0F /* main.m */,
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
 				B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */,
+				B5A5BEF025F7F51300EEEA0F /* path_utils.h */,
+				B5A5BEE925F7F31F00EEEA0F /* path_utils.m */,
 				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
 				B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */,
@@ -1427,8 +1393,6 @@
 				B5B01B99259BF0690023AB00 /* version.h */,
 				B5A5BED725F7DEB400EEEA0F /* ViewController.h */,
 				B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */,
-				B5A5BEE925F7F31F00EEEA0F /* path_utils.m */,
-				B5A5BEF025F7F51300EEEA0F /* path_utils.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2318,23 +2282,11 @@
 				B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */,
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
 				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
-				B559EDB425AB85A50065602D /* dPad-Up@2x.png in Resources */,
-				B559EDAF25AB85A50065602D /* dPad-Down@2x.png in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
-				B5EF4E9025C20850003948D0 /* button-pressed.png in Resources */,
 				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
-				B5EF4E9225C20850003948D0 /* button.png in Resources */,
 				B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */,
-				B559EDB325AB85A50065602D /* dPad-Left@2x.png in Resources */,
-				B559EDB725AB85A50065602D /* dPad-UpRight@2x.png in Resources */,
 				B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */,
-				B559EDBB25AB86C70065602D /* button-pressed@2x.png in Resources */,
-				B559EDB625AB85A50065602D /* dPad-Right@2x.png in Resources */,
-				B5EF4E9125C20850003948D0 /* button@2x.png in Resources */,
-				B559EDB125AB85A50065602D /* dPad-UpLeft@2x.png in Resources */,
-				B559EDB025AB85A50065602D /* dPad-DownRight@2x.png in Resources */,
-				B559EDB225AB85A50065602D /* dPad-DownLeft@2x.png in Resources */,
 				B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3050,7 +3002,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3100,7 +3052,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -24,7 +24,7 @@ int CDDA_iOS_main(NSString* documentPath)
     const char* new_argv_const[] = {
         *args,
         "--datadir", [datadir UTF8String],
-        "--userdir", [documentPath UTF8String],
+        "--userdir", [[documentPath stringByAppendingString:@"/"] UTF8String],
     };
     const int new_argv_const_size = (sizeof(new_argv_const) / sizeof(*new_argv_const));
     char* new_argv[new_argv_const_size];

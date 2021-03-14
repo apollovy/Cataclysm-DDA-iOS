@@ -26,7 +26,7 @@ int main(int argc, char * argv[]) {
 #endif
         }];
 
-        bool useICloudByDefault = (![[NSFileManager defaultManager] fileExistsAtPath:[getLocalDocumentPath() stringByAppendingString:@"config"]]) && getICloudDocumentPath();
+        bool useICloudByDefault = (![[NSFileManager defaultManager] fileExistsAtPath:[getLocalDocumentURL() URLByAppendingPathComponent:@"/config"].path]) && getICloudDocumentURL();
 
         NSDictionary* appDefaults = @{
             @"overlayUIEnabled": @YES,
@@ -39,9 +39,10 @@ int main(int argc, char * argv[]) {
         };
         [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
+        NSString* documentPath = getDocumentURL().path;
         [SentrySDK configureScope:^(SentryScope *_Nonnull scope) {
-            for (NSString* file in @[@"config/debug.log", @"config/debug.log.prev", @"config/options.json"])
-                [scope addAttachment:[[SentryAttachment alloc] initWithPath:[getDocumentPath() stringByAppendingString:file]]];
+            for (NSString* file in @[@"/config/debug.log", @"/config/debug.log.prev", @"/config/options.json"])
+                [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
         }];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

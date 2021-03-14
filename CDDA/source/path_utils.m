@@ -10,23 +10,23 @@
 
 #import "path_utils.h"
 
-NSString* getICloudDocumentPath()
+NSURL* getICloudDocumentURL()
 {
-    return [[[[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"] path]stringByAppendingString:@"/"];
+    return [[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"];
 }
 
-NSString* getLocalDocumentPath()
+NSURL* getLocalDocumentURL()
 {
-    return [[[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] path] stringByAppendingString:@"/"];
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-NSString* getDocumentPath()
+NSURL* getDocumentURL()
 {
-    NSString* documentPath;
+    NSURL* documentPath;
     if ([NSUserDefaults.standardUserDefaults boolForKey:@"useICloud"])
-        documentPath = getICloudDocumentPath();
+        documentPath = getICloudDocumentURL();
     else
-        documentPath = getLocalDocumentPath();
+        documentPath = getLocalDocumentURL();
     
     return documentPath;
 }

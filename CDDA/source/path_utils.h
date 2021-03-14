@@ -10,8 +10,8 @@
 #ifndef path_utils_h
 #define path_utils_h
 
-NSString* getICloudDocumentPath(void);
-NSString* getLocalDocumentPath(void);
-NSString* getDocumentPath(void);
+NSURL* getICloudDocumentURL(void);
+NSURL* getLocalDocumentURL(void);
+NSURL* getDocumentURL(void);
 
 #endif /* path_utils_h */
