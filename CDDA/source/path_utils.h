@@ -11,7 +11,6 @@
 #define path_utils_h
 
 NSURL* getICloudDocumentURL(void);
-NSURL* getLocalDocumentURL(void);
 NSURL* getDocumentURL(void);
 
 #endif /* path_utils_h */

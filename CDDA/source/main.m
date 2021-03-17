@@ -26,8 +26,6 @@ int main(int argc, char * argv[]) {
 #endif
         }];
 
-        bool useICloudByDefault = (![[NSFileManager defaultManager] fileExistsAtPath:[getLocalDocumentURL() URLByAppendingPathComponent:@"/config"].path]) && getICloudDocumentURL();
-
         NSDictionary* appDefaults = @{
             @"overlayUIEnabled": @YES,
             @"invertScroll": @NO,
@@ -35,7 +33,6 @@ int main(int argc, char * argv[]) {
             @"keyboardSwipeTime": @0.05,
             @"resizeGameWindowWhenTogglingKeyboard": @YES,
             @"panningWith1Finger": @NO,
-            @"useICloud": [NSNumber numberWithBool:useICloudByDefault],
         };
         [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 

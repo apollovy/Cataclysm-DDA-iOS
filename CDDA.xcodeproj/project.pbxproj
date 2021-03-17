@@ -35,7 +35,7 @@
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
-		B5A5BED925F7DEB500EEEA0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */; };
+		B5A5BED925F7DEB500EEEA0F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B5A5BEDA25F7DEB500EEEA0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5A5BEDB25F7DEB500EEEA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
@@ -584,10 +584,10 @@
 		B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
 		B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		B5A5855225A53D7A00E73D9A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
-		B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5A5BED625F7DEB300EEEA0F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B5A5BED725F7DEB400EEEA0F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5A5BED725F7DEB400EEEA0F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_iOS_main.h; sourceTree = "<group>"; };
@@ -1391,8 +1391,8 @@
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */,
 				B5B01B99259BF0690023AB00 /* version.h */,
-				B5A5BED725F7DEB400EEEA0F /* ViewController.h */,
-				B5A5BEBE25F7DEB200EEEA0F /* ViewController.m */,
+				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
+				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2540,7 +2540,7 @@
 				D0AA201C627C921E4D0BA426 /* iuse_actor.cpp in Sources */,
 				B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */,
 				D0AA27D9819A59AF3EA87472 /* iuse_software_kitten.cpp in Sources */,
-				B5A5BED925F7DEB500EEEA0F /* ViewController.m in Sources */,
+				B5A5BED925F7DEB500EEEA0F /* MainViewController.m in Sources */,
 				D0AA229D3B3B3541A64C13A5 /* iuse_software_lightson.cpp in Sources */,
 				D0AA2E0E678D1AA8F1F32FC7 /* iuse_software_minesweeper.cpp in Sources */,
 				D0AA23A12B4FB436453E35E4 /* iuse_software_snake.cpp in Sources */,

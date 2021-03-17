@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController : UIViewController
+@interface MainViewController : UIViewController
 
 - (IBAction)startApp:(id)sender;
+- (IBAction)save:(id)sender;
 
 @end

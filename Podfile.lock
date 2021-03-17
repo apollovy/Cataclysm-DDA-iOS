@@ -2,9 +2,15 @@ PODS:
   - Sentry (6.1.4):
     - Sentry/Core (= 6.1.4)
   - Sentry/Core (6.1.4)
+  - SSZipArchive (2.2.3)
 
 DEPENDENCIES:
   - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `6.1.4`)
+  - SSZipArchive (= 2.2.3)
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   Sentry:
@@ -18,7 +24,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Sentry: 9d055e2de30a77685e86b219acf02e59b82091fc
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
 
-PODFILE CHECKSUM: 12a3f785e7681d44a78c875d8be40fd3a0009ab2
+PODFILE CHECKSUM: 32c4760947cc4b5535189f10136c6f2a072af79d
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

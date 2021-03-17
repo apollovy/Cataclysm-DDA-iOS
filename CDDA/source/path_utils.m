@@ -15,18 +15,7 @@ NSURL* getICloudDocumentURL()
     return [[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"];
 }
 
-NSURL* getLocalDocumentURL()
-{
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-}
-
 NSURL* getDocumentURL()
 {
-    NSURL* documentPath;
-    if ([NSUserDefaults.standardUserDefaults boolForKey:@"useICloud"])
-        documentPath = getICloudDocumentURL();
-    else
-        documentPath = getLocalDocumentURL();
-    
-    return documentPath;
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
