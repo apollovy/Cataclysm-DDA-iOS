@@ -17,61 +17,142 @@
 
 @implementation MainViewController
 
-- (void)startApp:(id)sender
+-(void)viewDidLoad
 {
-    self.view.window.hidden = YES;
+    [super viewDidLoad];
+    
+    self.progressWrapper.alpha = 0;
+}
+
+-(void)startApp:(id)sender
+{
     self.view = nil;
     CDDA_iOS_main(getDocumentURL().path);
 }
 
-- (void)save:(id)sender
+-(void)save:(id)sender
 {
-    NSURL* url = [getICloudDocumentURL() URLByAppendingPathComponent:@"/save.zip"];
+    self.label.text = @"Saving...";
+    [UIView animateWithDuration:0.2 animations:^{
+        self.buttons.alpha = 0;
+        self.progressWrapper.alpha = 1;
+    }];
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
+        NSURL* url = [getICloudDocumentURL() URLByAppendingPathComponent:@"save.zip"];
 
-    // zip
-    NSString* documentsDir = getDocumentURL().path;
-    [SSZipArchive createZipFileAtPath:url.path withContentsOfDirectory:documentsDir];
-
-    // upload
-    NSError* error = nil;
-    NSString* status = nil;
-    int attempt = 0;
-
-    while (true)
-    {
-        if ([url getResourceValue:&status forKey:NSURLUbiquitousItemDownloadingStatusKey error:&error] == YES)
+        // zip
+        NSString* documentsDir = getDocumentURL().path;
+        dispatch_queue_main_t  _Nonnull mainQ = dispatch_get_main_queue();
+        [SSZipArchive createZipFileAtPath:url.path withContentsOfDirectory:documentsDir keepParentDirectory:NO compressionLevel:9 password:nil AES:NO progressHandler:^(NSUInteger entryNumber, NSUInteger total)
         {
-            if ([status isEqualToString:NSURLUbiquitousItemDownloadingStatusCurrent] == YES)
-            {
-                if (attempt > 0)
-                    NSLog(@"Downloaded %@ in %i attempts.", url, attempt);
-                else
-                    NSLog(@"%@ was already there.", url);
-                return;
-            } else {
-                if (attempt == 0)
-                {
-                    [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:&error];
-                }
-                if (attempt >= 10)
-                {
-                    NSLog(@"%i attempts were made, giving up to download %@.", attempt, url);
-                    return;
-                }
-                if (error)
-                {
-                    NSLog(@"Downloading %@ resulted in error: %@ after %i attempts.", url, error, attempt);
-                    return;
-                }
-                attempt++;
-                NSLog(@"Sleeping for 1 second for %@ in %i attempt.", url, attempt);
-                [NSThread sleepForTimeInterval:1.0f];
-            }
-        } else {
-            NSLog(@"Downloading %@ resulted in error: %@ after %i attempts.", url, error, attempt);
+            dispatch_async(mainQ, ^{
+                self.progressView.progress = (float)entryNumber / total;
+            });
+        }];
+        
+        if (TARGET_OS_SIMULATOR)
+        {
+            dispatch_async(mainQ, ^{
+                [UIView animateWithDuration:0.2 animations:^{
+                    self.progressWrapper.alpha = 0;
+                    self.buttons.alpha = 1;
+                }];
+            });
+
             return;
         }
-    }
+        
+        // upload
+        dispatch_async(mainQ, ^{
+            self.label.text = @"Uploading...";
+            self.progressView.progress = 0;
+            [UIView animateWithDuration:0.2 animations:^{
+                self.progressWrapper.alpha = 1;
+                self.buttons.alpha = 0;
+            }];
+        });
+
+        NSError* error = nil;
+
+        [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:&error];
+        if (error)
+        {
+            dispatch_async(mainQ, ^{
+                self.label.text = [NSString stringWithFormat:@"Upload failed: %@", error];
+            });
+            return;
+        }
+        _query = [NSMetadataQuery new];
+        _query.predicate = [NSPredicate predicateWithFormat:@"%K = %@", NSMetadataItemURLKey, url];
+        _query.searchScopes = @[NSMetadataQueryUbiquitousDocumentsScope];
+        [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(queryDidFinishGathering:) name:NSMetadataQueryDidFinishGatheringNotification object:nil];
+        dispatch_async(mainQ, ^{
+            bool queryStarted = [_query startQuery];
+            if (!queryStarted)
+            {
+                dispatch_async(mainQ, ^{
+                    self.label.text = [NSString stringWithFormat:@"Failed to start query %@", _query.predicate];
+                });
+                return;
+            }
+            dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
+                while (_query.gathering)
+                {
+                    NSLog(@"Waiting for query to finish");
+                    [NSThread sleepForTimeInterval:1];
+                };
+            });
+        });
+    });
+}
+
+NSMetadataQuery* _query;
+
+-(void)queryDidFinishGathering:(NSNotification*)notification
+{
+    [_query stopQuery];
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
+        NSMetadataItem* fileMetadata = [_query.results firstObject];
+        NSNumber* percentUploaded = 0;
+        dispatch_queue_main_t  _Nonnull mainQ = dispatch_get_main_queue();
+
+        NSError* error = nil;
+        [NSFileManager.defaultManager startDownloadingUbiquitousItemAtURL:[fileMetadata valueForKey:NSMetadataItemURLKey] error:&error];
+
+        if (error)
+            dispatch_async(mainQ, ^{
+                self.label.text = [NSString stringWithFormat:@"Upload error: %@", error];
+            });
+        while ([percentUploaded intValue] != 100)
+        {
+            [NSThread sleepForTimeInterval:1];
+            percentUploaded = [fileMetadata valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
+            dispatch_async(mainQ, ^{
+                self.progressView.progress = [percentUploaded floatValue] / 100;
+            });
+//            if ([fileMetadata valueForKey:NSMetadataUbiquitousItemDownloadingStatusKey] == NSMetadataUbiquitousItemDownloadingStatusCurrent)
+//            {
+//                dispatch_async(mainQ, ^{
+//                    self.progressView.progress = 100;
+//                });
+//                break;
+//            }
+        }
+        dispatch_async(mainQ, ^{
+            [UIView animateWithDuration:0.2 animations:^{
+                self.progressWrapper.alpha = 0;
+                self.buttons.alpha = 1;
+            }];
+        });
+
+    });
+}
+
+-(void)load:(id)sender
+{
+    // download
+    
+    // unzip
 }
 
 @end

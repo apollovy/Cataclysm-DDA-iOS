@@ -12,7 +12,22 @@
 
 NSURL* getICloudDocumentURL()
 {
-    return [[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"];
+    NSURL* url;
+    if (TARGET_OS_SIMULATOR)
+    {
+        NSError* error;
+        bool created = [[NSFileManager defaultManager] createDirectoryAtPath:@"/tmp/CDDA-iOS/iCloud" withIntermediateDirectories:YES attributes:nil error:&error];
+        if (!created){
+            NSLog(@"Directory creation failed: %@", error);
+            @throw error;
+        }
+        else
+            url = [NSURL fileURLWithPath:@"/tmp/CDDA-iOS/iCloud" isDirectory: YES];
+    }
+    else
+        url = [[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"];
+    
+    return url;
 }
 
 NSURL* getDocumentURL()

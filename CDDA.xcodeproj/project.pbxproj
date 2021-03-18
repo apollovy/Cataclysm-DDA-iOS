@@ -31,6 +31,28 @@
 		B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
 		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
+		B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
+		B58679DF260402B600EACF2C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
+		B58679E0260402B600EACF2C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
+		B58679E1260402B600EACF2C /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
+		B58679E2260402B600EACF2C /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
+		B58679E3260402B600EACF2C /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
+		B58679E4260402B600EACF2C /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
+		B58679E5260402B600EACF2C /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
+		B58679E6260402B600EACF2C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
+		B58679E7260402B600EACF2C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
+		B58679E8260402B600EACF2C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6B25929F6400505231 /* CoreBluetooth.framework */; };
+		B58679E9260402B600EACF2C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
+		B58679EA260402B600EACF2C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
+		B58679EB260402B600EACF2C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7125929FEA00505231 /* MobileCoreServices.framework */; };
+		B58679ED260402B600EACF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
+		B58679EE260402B600EACF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
+		B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
+		B5867A172604030100EACF2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B5867A1B2604030A00EACF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
+		B5867A1F2604030E00EACF2C /* CDDA_iOS_main.m in Sources */ = {isa = PBXBuildFile; fileRef = B58678802603E72500EACF2C /* CDDA_iOS_main.m */; };
+		B5867A232604031100EACF2C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
+		B5867A2D2604036E00EACF2C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
@@ -578,6 +600,9 @@
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58678802603E72500EACF2C /* CDDA_iOS_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDA_iOS_main.m; sourceTree = "<group>"; };
+		B5867A02260402B600EACF2C /* CDDA iCloud debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDDA iCloud debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CDDA iCloud debug.plist"; path = "/Users/apollov/work/CDDA-new/CDDA/CDDA iCloud debug.plist"; sourceTree = "<absolute>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
 		B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitview+CDDA.h"; sourceTree = "<group>"; };
@@ -1196,6 +1221,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B58679DD260402B600EACF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */,
+				B58679DF260402B600EACF2C /* libintl.a in Frameworks */,
+				B58679E0260402B600EACF2C /* libiconv.tbd in Frameworks */,
+				B58679E1260402B600EACF2C /* Pods_CDDA.framework in Frameworks */,
+				B58679E2260402B600EACF2C /* libSDL2.a in Frameworks */,
+				B58679E3260402B600EACF2C /* libSDL2_mixer.a in Frameworks */,
+				B58679E4260402B600EACF2C /* libSDL2_ttf.a in Frameworks */,
+				B58679E5260402B600EACF2C /* libSDL2_image.a in Frameworks */,
+				B58679E6260402B600EACF2C /* AudioToolbox.framework in Frameworks */,
+				B58679E7260402B600EACF2C /* AVFoundation.framework in Frameworks */,
+				B58679E8260402B600EACF2C /* CoreBluetooth.framework in Frameworks */,
+				B58679E9260402B600EACF2C /* CoreMotion.framework in Frameworks */,
+				B58679EA260402B600EACF2C /* GameController.framework in Frameworks */,
+				B58679EB260402B600EACF2C /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1324,6 +1370,7 @@
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
 				265D23A253D509D85BDFC3B4 /* Pods */,
+				B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1332,6 +1379,7 @@
 			children = (
 				B57201C9259293EE003D2A20 /* CDDA.app */,
 				B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */,
+				B5867A02260402B600EACF2C /* CDDA iCloud debug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1346,6 +1394,14 @@
 				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
 			);
 			path = CDDA;
+			sourceTree = "<group>";
+		};
+		B58678852603E78800EACF2C /* iCloud debug */ = {
+			isa = PBXGroup;
+			children = (
+				B58678802603E72500EACF2C /* CDDA_iOS_main.m */,
+			);
+			path = "iCloud debug";
 			sourceTree = "<group>";
 		};
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
@@ -1393,6 +1449,7 @@
 				B5B01B99259BF0690023AB00 /* version.h */,
 				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
 				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
+				B58678852603E78800EACF2C /* iCloud debug */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2054,6 +2111,25 @@
 			productReference = B57201C9259293EE003D2A20 /* CDDA.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B58678B4260402B600EACF2C /* CDDA iCloud debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B58679FF260402B600EACF2C /* Build configuration list for PBXNativeTarget "CDDA iCloud debug" */;
+			buildPhases = (
+				B5867A13260402F800EACF2C /* Sources */,
+				B58678BD260402B600EACF2C /* [CP] Check Pods Manifest.lock */,
+				B58679DD260402B600EACF2C /* Frameworks */,
+				B58679EC260402B600EACF2C /* Resources */,
+				B58679FE260402B600EACF2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDDA iCloud debug";
+			productName = CDDA;
+			productReference = B5867A02260402B600EACF2C /* CDDA iCloud debug.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2120,6 +2196,7 @@
 			targets = (
 				B57201C8259293EE003D2A20 /* CDDA */,
 				B53804FB25AC6DB200AEB52A /* CDDAUITests */,
+				B58678B4260402B600EACF2C /* CDDA iCloud debug */,
 			);
 		};
 /* End PBXProject section */
@@ -2291,6 +2368,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B58679EC260402B600EACF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58679ED260402B600EACF2C /* Main.storyboard in Resources */,
+				B58679EE260402B600EACF2C /* Assets.xcassets in Resources */,
+				B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2350,6 +2437,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -d \"${CODESIGNING_FOLDER_PATH}\"/data/osx ]]; then\n    rm -r \"${CODESIGNING_FOLDER_PATH}\"/data/osx\nfi\n";
+		};
+		B58678BD260402B600EACF2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDDA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B58679FE260402B600EACF2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA/Pods-CDDA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		B5E6FF9525A3AA9B003FB37F /* Touch gfx dir to always have its copying to the product */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2710,6 +2836,18 @@
 				D0AA2E93DAF4A5E0540D1F9D /* wish.cpp in Sources */,
 				D0AA2502FE9F62733FF44EA3 /* worldfactory.cpp in Sources */,
 				D0AA2806054C585B62B33033 /* JSButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5867A13260402F800EACF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5867A1F2604030E00EACF2C /* CDDA_iOS_main.m in Sources */,
+				B5867A2D2604036E00EACF2C /* path_utils.m in Sources */,
+				B5867A1B2604030A00EACF2C /* main.m in Sources */,
+				B5867A172604030100EACF2C /* AppDelegate.m in Sources */,
+				B5867A232604031100EACF2C /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3092,6 +3230,105 @@
 			};
 			name = Release;
 		};
+		B5867A00260402B600EACF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39C0F27F710B28BCD23E069 /* Pods-CDDA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
+					"$(PROJECT_DIR)/Binaries/glib/include",
+				);
+				INFOPLIST_FILE = "CDDA iCloud debug.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Binaries/glib/lib",
+				);
+				MARKETING_VERSION = 1.2.2;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					./Libraries/SDL_mixer,
+					./Libraries/SDL_image,
+					./Libraries/SDL/include,
+					./Libraries/SDL_ttf,
+					./Libraries/SDL/src/video/uikit,
+					"./Libraries/Cataclysm-DDA/src",
+					./Libraries/JSController/Controller,
+					"./Libraries/glib-ios",
+				);
+			};
+			name = Debug;
+		};
+		B5867A01260402B600EACF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC2FD7EDA0081089A96A8F7 /* Pods-CDDA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 15;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
+					"$(PROJECT_DIR)/Binaries/glib/include",
+				);
+				INFOPLIST_FILE = "CDDA iCloud debug.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Binaries/glib/lib",
+				);
+				MARKETING_VERSION = 1.2.2;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					./Libraries/SDL_mixer,
+					./Libraries/SDL_image,
+					./Libraries/SDL/include,
+					./Libraries/SDL_ttf,
+					./Libraries/SDL/src/video/uikit,
+					"./Libraries/Cataclysm-DDA/src",
+					./Libraries/JSController/Controller,
+					"./Libraries/glib-ios",
+				);
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3118,6 +3355,15 @@
 			buildConfigurations = (
 				B57201E0259293EF003D2A20 /* Debug */,
 				B57201E1259293EF003D2A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B58679FF260402B600EACF2C /* Build configuration list for PBXNativeTarget "CDDA iCloud debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5867A00260402B600EACF2C /* Debug */,
+				B5867A01260402B600EACF2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

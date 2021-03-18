@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -13,21 +13,40 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" alpha="0.25" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-V7-1Zo" userLabel="Progress">
+                                <rect key="frame" x="0.0" y="149.5" width="667" height="76"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-UV-xyF">
+                                        <rect key="frame" x="264" y="0.0" width="139.5" height="72"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ud5-fe-ONn">
+                                        <rect key="frame" x="0.0" y="72" width="667" height="4"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ud5-fe-ONn" firstAttribute="width" secondItem="nh7-V7-1Zo" secondAttribute="width" id="UGu-eq-Ba1"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-7r-OEW">
-                                <rect key="frame" x="398.5" y="177" width="99" height="60"/>
+                                <rect key="frame" x="151" y="103.5" width="365" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
-                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="PLAY!"/>
                                         <connections>
                                             <action selector="startApp:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="M2o-xQ-eB8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-X9-ZgQ">
-                                        <rect key="frame" x="0.0" y="30" width="99" height="30"/>
+                                        <rect key="frame" x="0.0" y="84" width="365" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="Save to iCloud"/>
                                         <connections>
                                             <action selector="save:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FiZ-M1-amQ"/>
@@ -39,14 +58,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7rd-Zh-857"/>
                             <constraint firstItem="bbo-7r-OEW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GWa-Dz-Bak"/>
                             <constraint firstItem="bbo-7r-OEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I5v-wP-aKV"/>
+                            <constraint firstItem="nh7-V7-1Zo" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="LkS-RU-TWD"/>
+                            <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJm-ef-Qlx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttons" destination="bbo-7r-OEW" id="QPe-JW-ua4"/>
+                        <outlet property="label" destination="wOI-UV-xyF" id="ngH-GX-c9q"/>
+                        <outlet property="progressView" destination="ud5-fe-ONn" id="9j4-qp-fgr"/>
+                        <outlet property="progressWrapper" destination="nh7-V7-1Zo" id="CQH-vU-lEa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="421" y="100"/>
+            <point key="canvasLocation" x="420.53973013493254" y="100"/>
         </scene>
     </scenes>
 </document>
