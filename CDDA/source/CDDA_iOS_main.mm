@@ -6,36 +6,40 @@
 
 #include "SDL.h"
 
+// https://stackoverflow.com/a/15318065/674557
+char** cArrayFromNSArray(NSArray* array)
+{
+    int i, count = array.count;
+    char** cargs = (char**) malloc(sizeof(char*) * (count + 1));
+    for(i = 0; i < count; i++) {
+        NSString *s = array[i];
+        const char *cstr = s.UTF8String;
+        int len = strlen(cstr);
+        char* cstr_copy = (char*) malloc(sizeof(char) * (len + 1));
+        strcpy(cstr_copy, cstr);
+        cargs[i] = cstr_copy;
+    }
+    cargs[i] = NULL;
+    return cargs;
+}
+
 extern "C"
 {
 
 int CDDA_iOS_main(NSString* documentPath)
 {
-    SDL_iPhoneSetEventPump(SDL_TRUE);
-
     NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
-    int arguments_count = NSProcessInfo.processInfo.arguments.count;
-    char* args[arguments_count];
-    
-    for(int i=0; i<arguments_count; i++)
-        strcpy(args[i], [arguments[i] UTF8String]);
-
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
-    const char* new_argv_const[] = {
-        *args,
-        "--datadir", [datadir UTF8String],
-        "--userdir", [[documentPath stringByAppendingString:@"/"] UTF8String],
-    };
-    const int new_argv_const_size = (sizeof(new_argv_const) / sizeof(*new_argv_const));
-    char* new_argv[new_argv_const_size];
-    
-    for (int i=0; i<(new_argv_const_size); i++) {
-        auto arg_ptr = new_argv_const[i];
-        auto new_ptr = new char[strlen(arg_ptr)];
-        new_argv[i] = strcpy(new_ptr, arg_ptr);
-    };
+    NSArray<NSString*>* newArguments = [arguments arrayByAddingObjectsFromArray:@[
+        @"--datadir", datadir,
+        @"--userdir", [documentPath stringByAppendingString:@"/"],
+        
+    ]];
+    int newArgumentsCount = newArguments.count;
+    char** stringArgs = cArrayFromNSArray(newArguments);
 
-    int exitCode = CDDA_main(new_argv_const_size, new_argv);
+    SDL_iPhoneSetEventPump(SDL_TRUE);
+    int exitCode = CDDA_main(newArgumentsCount, stringArgs);
     SDL_iPhoneSetEventPump(SDL_FALSE);
 
     return exitCode;

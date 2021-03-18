@@ -36,11 +36,11 @@
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5A5BED925F7DEB500EEEA0F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
-		B5A5BEDA25F7DEB500EEEA0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5A5BEDB25F7DEB500EEEA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
 		B5A5BEF625F7F9E200EEEA0F /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
+		B5B7F8D62602C86B0007594B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
@@ -2498,7 +2498,6 @@
 				D0AA28264236FB306AD29F34 /* event_bus.cpp in Sources */,
 				D0AA2EBCE275077BB490A386 /* event_statistics.cpp in Sources */,
 				D0AA20DD18F8D0A6B6DEEFC1 /* event.cpp in Sources */,
-				B5A5BEDA25F7DEB500EEEA0F /* main.m in Sources */,
 				D0AA2804914276BAC43D174A /* explosion.cpp in Sources */,
 				D0AA2763356EDAB0BA241A39 /* faction_camp.cpp in Sources */,
 				D0AA2F48C04D144499EA026C /* faction.cpp in Sources */,
@@ -2555,6 +2554,7 @@
 				D0AA256247E6223DE707642F /* loading_ui.cpp in Sources */,
 				D0AA2C2CB8FC438C1A48EE26 /* lru_cache.cpp in Sources */,
 				D0AA2E8C41DA42B37D4153AF /* magic_enchantment.cpp in Sources */,
+				B5B7F8D62602C86B0007594B /* main.m in Sources */,
 				D0AA2B2BC40ED93241C7A9FE /* magic_spell_effect.cpp in Sources */,
 				D0AA2320507B3E539B8C0675 /* magic_teleporter_list.cpp in Sources */,
 				D0AA232A1D2AFE1BA94084C8 /* magic_ter_fur_transform.cpp in Sources */,

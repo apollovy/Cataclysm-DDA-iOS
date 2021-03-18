@@ -7,35 +7,36 @@
 //
 #import <Foundation/Foundation.h>
 
+#import "SSZipArchive.h"
+
 #import "path_utils.h"
 #import "CDDA_iOS_main.h"
-#import "SSZipArchive.h"
 
 #import "MainViewController.h"
 
 
 @implementation MainViewController
 
-- (IBAction)startApp:(id)sender
+- (void)startApp:(id)sender
 {
     self.view.window.hidden = YES;
     self.view = nil;
     CDDA_iOS_main(getDocumentURL().path);
 }
 
-- (IBAction)save:(id)sender
+- (void)save:(id)sender
 {
     NSURL* url = [getICloudDocumentURL() URLByAppendingPathComponent:@"/save.zip"];
 
     // zip
     NSString* documentsDir = getDocumentURL().path;
     [SSZipArchive createZipFileAtPath:url.path withContentsOfDirectory:documentsDir];
-    
+
     // upload
     NSError* error = nil;
     NSString* status = nil;
     int attempt = 0;
-    
+
     while (true)
     {
         if ([url getResourceValue:&status forKey:NSURLUbiquitousItemDownloadingStatusKey error:&error] == YES)
