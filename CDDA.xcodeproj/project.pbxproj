@@ -56,7 +56,6 @@
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
-		B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5A5BED925F7DEB500EEEA0F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B5A5BEDB25F7DEB500EEEA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
@@ -1206,7 +1205,6 @@
 			files = (
 				B54C7A7125A8B373007856B5 /* CoreHaptics.framework in Frameworks */,
 				B5FD1F2C25A575AC00CE613D /* libintl.a in Frameworks */,
-				B5A5858125A543C900E73D9A /* libiconv.tbd in Frameworks */,
 				B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */,
 				B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */,
 				B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */,
@@ -3140,7 +3138,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3190,7 +3188,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3239,7 +3237,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3289,7 +3287,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
