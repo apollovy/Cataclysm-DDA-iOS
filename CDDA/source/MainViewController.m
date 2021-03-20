@@ -7,7 +7,7 @@
 //
 #import <Foundation/Foundation.h>
 
-#import "SSZipArchive.h"
+#import "CDDA-Swift.h"
 
 #import "path_utils.h"
 #import "CDDA_iOS_main.h"
@@ -41,12 +41,11 @@
         NSURL* url = [getICloudDocumentURL() URLByAppendingPathComponent:@"save.zip"];
 
         // zip
-        NSString* documentsDir = getDocumentURL().path;
         dispatch_queue_main_t  _Nonnull mainQ = dispatch_get_main_queue();
-        [SSZipArchive createZipFileAtPath:url.path withContentsOfDirectory:documentsDir keepParentDirectory:NO compressionLevel:9 password:nil AES:NO progressHandler:^(NSUInteger entryNumber, NSUInteger total)
+        [ZipArchiver zip:getDocumentURL() destination:url progress:^(double progress)
         {
             dispatch_async(mainQ, ^{
-                self.progressView.progress = (float)entryNumber / total;
+                self.progressView.progress = progress;
             });
         }];
         

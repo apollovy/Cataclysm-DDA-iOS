@@ -2,21 +2,21 @@ PODS:
   - Sentry (6.2.1):
     - Sentry/Core (= 6.2.1)
   - Sentry/Core (6.2.1)
-  - SSZipArchive (2.2.3)
+  - Zip (2.1.1)
 
 DEPENDENCIES:
   - Sentry (= 6.2.1)
-  - SSZipArchive (= 2.2.3)
+  - Zip (~> 2.1)
 
 SPEC REPOS:
   trunk:
     - Sentry
-    - SSZipArchive
+    - Zip
 
 SPEC CHECKSUMS:
   Sentry: 9b922b396b0e0bca8516a10e36b0ea3ebea5faf7
-  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  Zip: 414f59909701fda9a84ab774ebe0f5449b1082cc
 
-PODFILE CHECKSUM: 7521e13242537ed3fd1e3ab15619ff782c684ea8
+PODFILE CHECKSUM: cab92e249c5c4b323a90f7c0eece2e59ea5009a4
 
 COCOAPODS: 1.10.1

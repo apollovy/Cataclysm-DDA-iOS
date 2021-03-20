@@ -2,5 +2,5 @@ target 'CDDA' do
   platform :ios, '9.0'
   use_frameworks!
   pod 'Sentry', '6.2.1'
-  pod 'SSZipArchive', '2.2.3'
+  pod 'Zip', '~> 2.1'
 end
