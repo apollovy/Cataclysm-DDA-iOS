@@ -12,7 +12,7 @@ import Zip
 
 class ZipArchiver : NSObject
 {
-    @objc class func zip(_ source: URL, destination: URL, progress: ((_ progress: Double) -> ())? = nil)
+    @objc class func zip(_ source: URL, destination: URL, errorPtr: NSErrorPointer, progress: @escaping ((_ progress: Double) -> ()))
     {
         do
         {
@@ -20,7 +20,7 @@ class ZipArchiver : NSObject
         }
         catch
         {
-            print("Error occured while zipping")
+            errorPtr?.pointee = error as NSError
         }
     }
 }

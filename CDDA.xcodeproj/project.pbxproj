@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260A73F8E3DA7035386F7E64 /* Pods_CDDA_CDDA_iCloud_debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */; };
 		285B239FA78188EF63BB005E /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
 		B5072BDD259D1C18002479DB /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
@@ -551,6 +552,7 @@
 
 /* Begin PBXFileReference section */
 		62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.release.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.release.xcconfig"; sourceTree = "<group>"; };
+		8D1E95D9EBCA66ED412EF480 /* Pods-CDDA-CDDA iCloud debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA-CDDA iCloud debug.debug.xcconfig"; path = "Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug.debug.xcconfig"; sourceTree = "<group>"; };
 		8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-DDA/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
@@ -605,7 +607,7 @@
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* CDDA_iOS_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDA_iOS_main.m; sourceTree = "<group>"; };
-		B5867A02260402B600EACF2C /* CDDA iCloud debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDDA iCloud debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CDDA iCloud debug.plist"; path = "/Users/apollov/work/CDDA-new/CDDA/CDDA iCloud debug.plist"; sourceTree = "<absolute>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
@@ -631,6 +633,7 @@
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA_CDDA_iCloud_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA200222F81260817C72C4 /* simplexnoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simplexnoise.h; path = "Libraries/Cataclysm-DDA/src/simplexnoise.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2002C33F2C7AB7784889 /* mod_tileset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mod_tileset.h; path = "Libraries/Cataclysm-DDA/src/mod_tileset.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
@@ -1193,6 +1196,7 @@
 		D0AA2FF12FFF28FF3615178D /* cata_tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_tiles.h; path = "Libraries/Cataclysm-DDA/src/cata_tiles.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2FF63E7B5A94D733997A /* veh_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = veh_type.h; path = "Libraries/Cataclysm-DDA/src/veh_type.h"; sourceTree = SOURCE_ROOT; };
 		D0AA2FFEB001D5FD6FCA8B6C /* overmap_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overmap_connection.h; path = "Libraries/Cataclysm-DDA/src/overmap_connection.h"; sourceTree = SOURCE_ROOT; };
+		F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA-CDDA iCloud debug.release.xcconfig"; path = "Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1242,6 +1246,7 @@
 				B58679E9260402B600EACF2C /* CoreMotion.framework in Frameworks */,
 				B58679EA260402B600EACF2C /* GameController.framework in Frameworks */,
 				B58679EB260402B600EACF2C /* MobileCoreServices.framework in Frameworks */,
+				260A73F8E3DA7035386F7E64 /* Pods_CDDA_CDDA_iCloud_debug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1253,6 +1258,8 @@
 			children = (
 				8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */,
 				62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */,
+				8D1E95D9EBCA66ED412EF480 /* Pods-CDDA-CDDA iCloud debug.debug.xcconfig */,
+				F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1382,7 +1389,7 @@
 			children = (
 				B57201C9259293EE003D2A20 /* CDDA.app */,
 				B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */,
-				B5867A02260402B600EACF2C /* CDDA iCloud debug.app */,
+				B5867A02260402B600EACF2C /* CDDA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1419,6 +1426,7 @@
 				B54FDD7D2592A09000505231 /* GameController.framework */,
 				B54FDD7125929FEA00505231 /* MobileCoreServices.framework */,
 				BB281804576C684487B909B9 /* Pods_CDDA.framework */,
+				CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2119,9 +2127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B58679FF260402B600EACF2C /* Build configuration list for PBXNativeTarget "CDDA iCloud debug" */;
 			buildPhases = (
+				F787A51C1AD499CEB06518A2 /* [CP] Check Pods Manifest.lock */,
 				B5867A13260402F800EACF2C /* Sources */,
 				B58679DD260402B600EACF2C /* Frameworks */,
 				B58679EC260402B600EACF2C /* Resources */,
+				3CAEFD8960DD47D3BCB32009 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2129,7 +2139,7 @@
 			);
 			name = "CDDA iCloud debug";
 			productName = CDDA;
-			productReference = B5867A02260402B600EACF2C /* CDDA iCloud debug.app */;
+			productReference = B5867A02260402B600EACF2C /* CDDA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -2383,6 +2393,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3CAEFD8960DD47D3BCB32009 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		66E0DCCDC1ECEF3C111B1D52 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2496,6 +2523,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo touching mo\ntouch Libraries/Cataclysm-DDA/lang/mo\n";
+		};
+		F787A51C1AD499CEB06518A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDDA-CDDA iCloud debug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3105,7 +3154,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3155,7 +3204,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3197,13 +3246,14 @@
 		};
 		B5867A00260402B600EACF2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1E95D9EBCA66ED412EF480 /* Pods-CDDA-CDDA iCloud debug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3225,7 +3275,7 @@
 				);
 				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3246,13 +3296,14 @@
 		};
 		B5867A01260402B600EACF2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3274,7 +3325,7 @@
 				);
 				MARKETING_VERSION = 1.2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

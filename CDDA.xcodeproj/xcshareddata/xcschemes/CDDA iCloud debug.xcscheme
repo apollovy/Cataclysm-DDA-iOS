@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B58678B4260402B600EACF2C"
-               BuildableName = "CDDA iCloud debug.app"
+               BuildableName = "CDDA.app"
                BlueprintName = "CDDA iCloud debug"
                ReferencedContainer = "container:CDDA.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B58678B4260402B600EACF2C"
-            BuildableName = "CDDA iCloud debug.app"
+            BuildableName = "CDDA.app"
             BlueprintName = "CDDA iCloud debug"
             ReferencedContainer = "container:CDDA.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B58678B4260402B600EACF2C"
-            BuildableName = "CDDA iCloud debug.app"
+            BuildableName = "CDDA.app"
             BlueprintName = "CDDA iCloud debug"
             ReferencedContainer = "container:CDDA.xcodeproj">
          </BuildableReference>
