@@ -16,7 +16,12 @@ class ZipArchiver : NSObject
     {
         do
         {
-            try Zip.zipFiles(paths: [source], zipFilePath: destination, password: nil, progress: progress)
+            let contentItemNames = try FileManager.default.contentsOfDirectory(atPath: source.path).filter({ (itemName) -> Bool in
+                return itemName != "config"
+            }).map({ (itemName) -> URL in
+                source.appendingPathComponent("/\(itemName)")
+            })
+            try Zip.zipFiles(paths: contentItemNames, zipFilePath: destination, password: nil, progress: progress)
         }
         catch
         {
@@ -28,7 +33,7 @@ class ZipArchiver : NSObject
     {
         do
         {
-            try Zip.unzipFile(_: source, destination: destination, overwrite: false, password: nil, progress: progress)
+            try Zip.unzipFile(_: source, destination: destination, overwrite: true, password: nil, progress: progress)
         }
         catch
         {

@@ -133,6 +133,10 @@
 
     [[NSFileManager.defaultManager contentsOfDirectoryAtPath:documentPath error:&error] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSError* error = nil;
+
+        if ([obj isEqual:@"config"])
+            return;
+
         [NSFileManager.defaultManager removeItemAtPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
     
         if (error)
@@ -159,28 +163,6 @@
         [self _showMainScreenWithMessage:@"Error unzipping save" error:error];
         return;
     }
-
-    NSString* innerDocumentsPath = [documentURL URLByAppendingPathComponent:@"/Documents"].path;
-    [[NSFileManager.defaultManager contentsOfDirectoryAtPath:innerDocumentsPath error:&error] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSError* error = nil;
-        [NSFileManager.defaultManager moveItemAtPath:[innerDocumentsPath stringByAppendingPathComponent:obj] toPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
-
-        if (error)
-        {
-            [self _showMainScreenWithMessage:@"Moving directory failed" error:error];
-            return;
-        }
-    }];
-
-    if (error)
-    {
-        [self _showMainScreenWithMessage:@"Listing contents of directory failed" error:error];
-        return;
-    }
-
-    [NSFileManager.defaultManager removeItemAtPath:innerDocumentsPath error:&error];
-    if (error)
-        NSLog(@"Removing inner documents directory %@ failed with %@", innerDocumentsPath, error);
 
     [self _showMainScreenWithMessage:@"Load successful" error:nil];
 }
