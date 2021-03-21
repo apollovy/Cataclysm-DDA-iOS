@@ -39,8 +39,7 @@
         
         if (error)
         {
-            NSLog(@"Error getting URL for save: %@", error);
-            [self _showMainScreen];
+            [self _showMainScreenWithMessage:@"Error getting URL for save" error:error];
             return;
         }
 
@@ -53,14 +52,13 @@
         
         if (error)
         {
-            NSLog(@"Error zipping save: %@", error);
-            [self _showMainScreen];
+            [self _showMainScreenWithMessage:@"Error zipping save" error:error];
             return;
         }
         
         if (TARGET_OS_SIMULATOR)
         {
-            [self _showMainScreen];
+            [self _showMainScreenWithMessage:@"Save successful" error:error];
             return;
         }
         
@@ -78,12 +76,10 @@
         
         if (error)
         {
-            NSLog(@"Error getting URL for save: %@", error);
-            [self _showMainScreen];
+            [self _showMainScreenWithMessage:@"Error getting URL for save" error:error];
             return;
         }
         
-        // download
         if (TARGET_OS_SIMULATOR)
         {
             [self _unzip:url];
@@ -100,8 +96,7 @@
 
     if (error)
     {
-        NSLog(@"Download start failed: %@", error);
-        [self _showMainScreen];
+        [self _showMainScreenWithMessage:@"Download start failed" error:error];
         return;
     }
 
@@ -116,7 +111,7 @@
         bool queryStarted = [_query startQuery];
         if (!queryStarted)
         {
-            NSLog(@"Failed to start query %@", _query.predicate);
+            [self _showMainScreenWithMessage:@"Failed to start query" error:nil];
             return;
         }
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
@@ -141,11 +136,17 @@
         [NSFileManager.defaultManager removeItemAtPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
     
         if (error)
-            NSLog(@"Removing %@ failed with %@", obj, error);
+        {
+            [self _showMainScreenWithMessage:@"Removing file failed" error:error];
+            return;
+        }
     }];
 
     if (error)
-        NSLog(@"Listing contents of directory %@ failed with %@. Proceeding...", documentPath, error);
+    {
+        [self _showMainScreenWithMessage:@"Listing contents of directory failed" error:error];
+        return;
+    }
 
     [ZipArchiver unzip:url destination:documentURL errorPtr:&error progress:^(double progress) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -155,8 +156,7 @@
 
     if (error)
     {
-        NSLog(@"Error unzipping save: %@", error);
-        [self _showMainScreen];
+        [self _showMainScreenWithMessage:@"Error unzipping save" error:error];
         return;
     }
 
@@ -166,17 +166,23 @@
         [NSFileManager.defaultManager moveItemAtPath:[innerDocumentsPath stringByAppendingPathComponent:obj] toPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
 
         if (error)
-            NSLog(@"Moving %@ failed with %@", obj, error);
+        {
+            [self _showMainScreenWithMessage:@"Moving directory failed" error:error];
+            return;
+        }
     }];
 
     if (error)
-        NSLog(@"Listing contents of directory %@ failed with %@", innerDocumentsPath, error);
+    {
+        [self _showMainScreenWithMessage:@"Listing contents of directory failed" error:error];
+        return;
+    }
 
     [NSFileManager.defaultManager removeItemAtPath:innerDocumentsPath error:&error];
     if (error)
         NSLog(@"Removing inner documents directory %@ failed with %@", innerDocumentsPath, error);
 
-    [self _showMainScreen];
+    [self _showMainScreenWithMessage:@"Load successful" error:nil];
 }
 
 -(void)_checkDownloadFinishedAndUnzip:(NSNotification*)notification
@@ -211,7 +217,7 @@
         [_query stopQuery];
         for (NSNotificationName notificationName in @[NSMetadataQueryDidFinishGatheringNotification, NSMetadataQueryDidUpdateNotification])
             [[NSNotificationCenter defaultCenter] removeObserver:self name:notificationName object:nil];
-//        [self _showMainScreenWithMessage:@"Upload successful!"];
+        [self _showMainScreenWithMessage:@"Upload successful!" error:nil];
     }
 }
 
@@ -241,21 +247,22 @@ NSMetadataQuery* _query;
     });
 }
 
-- (void)_showMainScreen
+-(void)_showMainScreenWithMessage:(NSString*)message error:(NSError*)error
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:0.2 animations:^{
             self.progressWrapper.alpha = 0;
             self.buttons.alpha = 1;
         }];
+        
+        NSString* title = error ? error.localizedDescription : message;
+        NSString* alertMessage = error ? error.localizedFailureReason : message;
+
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:alertMessage preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
     });
 }
-
-//-(void)_showMainScreenWithMessage:(NSString*)message
-//{
-//    [self _showMainScreen];
-//
-//}
-
 
 @end
