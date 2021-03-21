@@ -33,10 +33,7 @@
 -(void)save:(id)sender
 {
     self.label.text = @"Saving...";
-    [UIView animateWithDuration:0.2 animations:^{
-        self.buttons.alpha = 0;
-        self.progressWrapper.alpha = 1;
-    }];
+    [self _showProgressScreen];
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
         NSError* error = nil;
         NSURL* url = [self _getSaveUrl:&error];
@@ -44,9 +41,8 @@
         
         if (error)
         {
-            dispatch_async(mainQ, ^{
-                self.label.text = [NSString stringWithFormat:@"Error getting URL for save: %@", error];
-            });
+            NSLog(@"Error getting URL for save: %@", error);
+            [self _showMainScreen];
             return;
         }
 
@@ -60,117 +56,56 @@
         
         if (error)
         {
-            dispatch_async(mainQ, ^{
-                self.label.text = [NSString stringWithFormat:@"Error zipping save: %@", error];
-            });
+            NSLog(@"Error zipping save: %@", error);
+            [self _showMainScreen];
             return;
         }
         
         if (TARGET_OS_SIMULATOR)
         {
-            dispatch_async(mainQ, ^{
-                [UIView animateWithDuration:0.2 animations:^{
-                    self.progressWrapper.alpha = 0;
-                    self.buttons.alpha = 1;
-                }];
-            });
-
+            [self _showMainScreen];
             return;
         }
         
         // upload
-        dispatch_async(mainQ, ^{
-            self.label.text = @"Uploading...";
-            self.progressView.progress = 0;
-            [UIView animateWithDuration:0.2 animations:^{
-                self.progressWrapper.alpha = 1;
-                self.buttons.alpha = 0;
-            }];
-        });
-
         [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:&error];
         if (error)
         {
-            dispatch_async(mainQ, ^{
-                self.label.text = [NSString stringWithFormat:@"Upload failed: %@", error];
-            });
-            return;
+            NSLog(@"Upload failed: %@", error);
         }
-        _query = [NSMetadataQuery new];
-        _query.predicate = [NSPredicate predicateWithFormat:@"%K = %@", NSMetadataItemURLKey, url];
-        _query.searchScopes = @[NSMetadataQueryUbiquitousDocumentsScope];
-        [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(queryDidFinishGathering:) name:NSMetadataQueryDidFinishGatheringNotification object:nil];
-        dispatch_async(mainQ, ^{
-            bool queryStarted = [_query startQuery];
-            if (!queryStarted)
-            {
-                dispatch_async(mainQ, ^{
-                    self.label.text = [NSString stringWithFormat:@"Failed to start query %@", _query.predicate];
-                });
-                return;
-            }
-            dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
-                while (_query.gathering)
-                {
-                    NSLog(@"Waiting for query to finish");
-                    [NSThread sleepForTimeInterval:1];
-                };
-            });
-        });
+        [self _showMainScreen];
     });
 }
 
-- (NSURL*)_getSaveUrl:(NSError**)error_ptr
+- (NSURL*)_getSaveUrl:(NSError**)errorPrt
 {
     NSURL* iCloudDocumentURL = getICloudDocumentURL();
     NSString* iCloudDocumentsPath = iCloudDocumentURL.path;
     BOOL iCloudDocumentPathIsDir;
     
     if (!([NSFileManager.defaultManager fileExistsAtPath:iCloudDocumentsPath isDirectory:&iCloudDocumentPathIsDir] && iCloudDocumentPathIsDir))
-        [NSFileManager.defaultManager createDirectoryAtPath:iCloudDocumentsPath withIntermediateDirectories:YES attributes:nil error:error_ptr];
+        [NSFileManager.defaultManager createDirectoryAtPath:iCloudDocumentsPath withIntermediateDirectories:YES attributes:nil error:errorPrt];
     NSURL* url = [iCloudDocumentURL URLByAppendingPathComponent:@"save.zip"];
     return url;
 }
 
-NSMetadataQuery* _query;
-
--(void)queryDidFinishGathering:(NSNotification*)notification
+- (void)_showProgressScreen
 {
-    [_query stopQuery];
-    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
-        NSMetadataItem* fileMetadata = [_query.results firstObject];
-        NSNumber* percentUploaded = 0;
-        dispatch_queue_main_t  _Nonnull mainQ = dispatch_get_main_queue();
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.2 animations:^{
+            self.buttons.alpha = 0;
+            self.progressWrapper.alpha = 1;
+        }];
+    });
+}
 
-        NSError* error = nil;
-        [NSFileManager.defaultManager startDownloadingUbiquitousItemAtURL:[fileMetadata valueForKey:NSMetadataItemURLKey] error:&error];
-
-        if (error)
-            dispatch_async(mainQ, ^{
-                self.label.text = [NSString stringWithFormat:@"Upload error: %@", error];
-            });
-        while ([percentUploaded intValue] != 100)
-        {
-            [NSThread sleepForTimeInterval:1];
-            percentUploaded = [fileMetadata valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
-            dispatch_async(mainQ, ^{
-                self.progressView.progress = [percentUploaded floatValue] / 100;
-            });
-//            if ([fileMetadata valueForKey:NSMetadataUbiquitousItemDownloadingStatusKey] == NSMetadataUbiquitousItemDownloadingStatusCurrent)
-//            {
-//                dispatch_async(mainQ, ^{
-//                    self.progressView.progress = 100;
-//                });
-//                break;
-//            }
-        }
-        dispatch_async(mainQ, ^{
-            [UIView animateWithDuration:0.2 animations:^{
-                self.progressWrapper.alpha = 0;
-                self.buttons.alpha = 1;
-            }];
-        });
-
+- (void)_showMainScreen
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.2 animations:^{
+            self.progressWrapper.alpha = 0;
+            self.buttons.alpha = 1;
+        }];
     });
 }
 
