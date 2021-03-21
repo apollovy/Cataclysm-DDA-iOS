@@ -23,4 +23,16 @@ class ZipArchiver : NSObject
             errorPtr?.pointee = error as NSError
         }
     }
+    
+    @objc class func unzip(_ source: URL, destination: URL, errorPtr: NSErrorPointer, progress: @escaping ((_ progress: Double) -> ()))
+    {
+        do
+        {
+            try Zip.unzipFile(_: source, destination: destination, overwrite: false, password: nil, progress: progress)
+        }
+        catch
+        {
+            errorPtr?.pointee = error as NSError
+        }
+    }
 }

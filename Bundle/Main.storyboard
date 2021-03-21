@@ -34,10 +34,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-7r-OEW">
-                                <rect key="frame" x="151" y="103.5" width="365" height="168"/>
+                                <rect key="frame" x="117" y="61.5" width="433" height="252"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="84"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="PLAY!"/>
                                         <connections>
@@ -45,11 +45,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-X9-ZgQ">
-                                        <rect key="frame" x="0.0" y="84" width="365" height="84"/>
+                                        <rect key="frame" x="0.0" y="84" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="Save to iCloud"/>
                                         <connections>
                                             <action selector="save:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FiZ-M1-amQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5L-S4-qjM">
+                                        <rect key="frame" x="0.0" y="168" width="433" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <state key="normal" title="Load from iCloud"/>
+                                        <connections>
+                                            <action selector="load:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="BNZ-63-XoH"/>
                                         </connections>
                                     </button>
                                 </subviews>
