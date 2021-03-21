@@ -32,13 +32,10 @@
 
 -(void)save:(id)sender
 {
-    self.label.text = @"Saving...";
-    self.progressView.progress = 0;
-    [self _showProgressScreen];
+    [self _showProgressScreenWithLabel:@"Saving..."];
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
         NSError* error = nil;
         NSURL* url = [self _getSaveUrl:&error];
-        dispatch_queue_main_t  _Nonnull mainQ = dispatch_get_main_queue();
         
         if (error)
         {
@@ -47,10 +44,9 @@
             return;
         }
 
-        // zip
         [ZipArchiver zip:getDocumentURL() destination:url errorPtr:&error progress:^(double progress)
         {
-            dispatch_async(mainQ, ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
                 self.progressView.progress = progress;
             });
         }];
@@ -68,24 +64,17 @@
             return;
         }
         
-        // upload
-        [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:&error];
-        if (error)
-        {
-            NSLog(@"Upload failed: %@", error);
-        }
-        [self _showMainScreen];
+        [self _showProgressScreenWithLabel:@"Uploading..."];
+        [self _watchProgressForURL:url finishingWith:@selector(_checkUploadFinished:)];
     });
 }
 
 -(void)load:(id)sender
 {
-    self.label.text = @"Downloading...";
-    [self _showProgressScreen];
+    [self _showProgressScreenWithLabel:@"Downloading..."];
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
         NSError* error = nil;
         NSURL* url = [self _getSaveUrl:&error];
-        dispatch_queue_main_t _Nonnull mainQ = dispatch_get_main_queue();
         
         if (error)
         {
@@ -99,61 +88,71 @@
         {
             [self _unzip:url];
         } else {
-            [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:&error];
-            if (error)
-            {
-                NSLog(@"Download start failed: %@", error);
-                [self _showMainScreen];
-                return;
-            }
-            _query = [NSMetadataQuery new];
-            _query.predicate = [NSPredicate predicateWithFormat:@"%K = %@", NSMetadataItemURLKey, url];
-            _query.searchScopes = @[NSMetadataQueryUbiquitousDocumentsScope];
-            for (NSNotificationName notificationName in @[NSMetadataQueryDidFinishGatheringNotification, NSMetadataQueryDidUpdateNotification])
-                [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(_queryDidFinishGathering:) name:notificationName object:nil];
-            dispatch_async(mainQ, ^{
-                bool queryStarted = [_query startQuery];
-                if (!queryStarted)
-                {
-                    NSLog(@"Failed to start query %@", _query.predicate);
-                    return;
-                }
-                dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
-                    while (_query.gathering)
-                    {
-                        NSLog(@"Waiting for query to finish");
-                        [NSThread sleepForTimeInterval:1];
-                    };
-                });
-            });
+            [self _watchProgressForURL:url finishingWith:@selector(_checkDownloadFinishedAndUnzip:)];
         }
+    });
+}
+
+-(void)_watchProgressForURL:(NSURL*)url finishingWith:(SEL)selector
+{
+    NSError* error;
+    [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:&error];
+
+    if (error)
+    {
+        NSLog(@"Download start failed: %@", error);
+        [self _showMainScreen];
+        return;
+    }
+
+    _query = [NSMetadataQuery new];
+    _query.predicate = [NSPredicate predicateWithFormat:@"%K = %@", NSMetadataItemURLKey, url];
+    _query.searchScopes = @[NSMetadataQueryUbiquitousDocumentsScope];
+
+    for (NSNotificationName notificationName in @[NSMetadataQueryDidFinishGatheringNotification, NSMetadataQueryDidUpdateNotification])
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notificationName object:nil];
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        bool queryStarted = [_query startQuery];
+        if (!queryStarted)
+        {
+            NSLog(@"Failed to start query %@", _query.predicate);
+            return;
+        }
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
+            while (_query.gathering)
+            {
+                NSLog(@"Waiting for query to finish");
+                [NSThread sleepForTimeInterval:1];
+            };
+        });
     });
 }
 
 - (void)_unzip:(NSURL*)url
 {
-    dispatch_queue_main_t _Nonnull mainQ = dispatch_get_main_queue();
-    dispatch_async(mainQ, ^{
-        self.label.text = @"Unpacking...";
-        self.progressView.progress = 0;
-    });
+    [self _showProgressScreenWithLabel:@"Unpacking..."];
     NSURL* documentURL = getDocumentURL();
     NSString* documentPath = documentURL.path;
     NSError* error = nil;
+
     [[NSFileManager.defaultManager contentsOfDirectoryAtPath:documentPath error:&error] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSError* error = nil;
         [NSFileManager.defaultManager removeItemAtPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
+    
         if (error)
             NSLog(@"Removing %@ failed with %@", obj, error);
     }];
+
     if (error)
         NSLog(@"Listing contents of directory %@ failed with %@. Proceeding...", documentPath, error);
 
     [ZipArchiver unzip:url destination:documentURL errorPtr:&error progress:^(double progress) {
-        dispatch_async(mainQ, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.progressView.progress = progress;
         });
     }];
+
     if (error)
     {
         NSLog(@"Error unzipping save: %@", error);
@@ -165,9 +164,11 @@
     [[NSFileManager.defaultManager contentsOfDirectoryAtPath:innerDocumentsPath error:&error] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSError* error = nil;
         [NSFileManager.defaultManager moveItemAtPath:[innerDocumentsPath stringByAppendingPathComponent:obj] toPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
+
         if (error)
             NSLog(@"Moving %@ failed with %@", obj, error);
     }];
+
     if (error)
         NSLog(@"Listing contents of directory %@ failed with %@", innerDocumentsPath, error);
 
@@ -178,7 +179,7 @@
     [self _showMainScreen];
 }
 
--(void)_queryDidFinishGathering:(NSNotification*)notification
+-(void)_checkDownloadFinishedAndUnzip:(NSNotification*)notification
 {
     NSMetadataItem* fileMetadata = [_query.results firstObject];
     NSNumber* percentDownloaded = [fileMetadata valueForKey:NSMetadataUbiquitousItemPercentDownloadedKey];
@@ -198,6 +199,22 @@
     }
 }
 
+-(void)_checkUploadFinished:(NSNotification*)notification
+{
+    NSMetadataItem* fileMetadata = [_query.results firstObject];
+    NSNumber* percentUploaded = [fileMetadata valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
+    self.progressView.progress = [percentUploaded floatValue] / 100;
+
+    if ([percentUploaded intValue] == 100)
+    {
+        [_query disableUpdates];
+        [_query stopQuery];
+        for (NSNotificationName notificationName in @[NSMetadataQueryDidFinishGatheringNotification, NSMetadataQueryDidUpdateNotification])
+            [[NSNotificationCenter defaultCenter] removeObserver:self name:notificationName object:nil];
+//        [self _showMainScreenWithMessage:@"Upload successful!"];
+    }
+}
+
 NSMetadataQuery* _query;
 
 - (NSURL*)_getSaveUrl:(NSError**)errorPtr
@@ -212,9 +229,11 @@ NSMetadataQuery* _query;
     return url;
 }
 
-- (void)_showProgressScreen
+- (void)_showProgressScreenWithLabel:(NSString*)label
 {
     dispatch_async(dispatch_get_main_queue(), ^{
+        self.label.text = label;
+        self.progressView.progress = 0;
         [UIView animateWithDuration:0.2 animations:^{
             self.buttons.alpha = 0;
             self.progressWrapper.alpha = 1;
@@ -231,5 +250,12 @@ NSMetadataQuery* _query;
         }];
     });
 }
+
+//-(void)_showMainScreenWithMessage:(NSString*)message
+//{
+//    [self _showMainScreen];
+//
+//}
+
 
 @end
