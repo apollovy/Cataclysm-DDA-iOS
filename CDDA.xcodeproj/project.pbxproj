@@ -55,7 +55,6 @@
 		B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
 		B5867A172604030100EACF2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B5867A1B2604030A00EACF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
-		B5867A1F2604030E00EACF2C /* CDDA_iOS_main.m in Sources */ = {isa = PBXBuildFile; fileRef = B58678802603E72500EACF2C /* CDDA_iOS_main.m */; };
 		B5867A2D2604036E00EACF2C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
@@ -67,6 +66,7 @@
 		B5AB7F8326056FE600D4743B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5B7F8D62602C86B0007594B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
+		B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
@@ -606,7 +606,7 @@
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B58678802603E72500EACF2C /* CDDA_iOS_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDA_iOS_main.m; sourceTree = "<group>"; };
+		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CDDA iCloud debug.plist"; path = "/Users/apollov/work/CDDA-new/CDDA/CDDA iCloud debug.plist"; sourceTree = "<absolute>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
@@ -1409,7 +1409,7 @@
 		B58678852603E78800EACF2C /* iCloud debug */ = {
 			isa = PBXGroup;
 			children = (
-				B58678802603E72500EACF2C /* CDDA_iOS_main.m */,
+				B58678802603E72500EACF2C /* main.cpp */,
 			);
 			path = "iCloud debug";
 			sourceTree = "<group>";
@@ -2856,9 +2856,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5867A1F2604030E00EACF2C /* CDDA_iOS_main.m in Sources */,
 				B5412D15260602D50034128C /* MainViewController.m in Sources */,
 				B5867A2D2604036E00EACF2C /* path_utils.m in Sources */,
+				B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */,
 				B5867A1B2604030A00EACF2C /* main.m in Sources */,
 				B5867A172604030100EACF2C /* AppDelegate.m in Sources */,
 				B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */,
@@ -3154,7 +3154,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3204,7 +3204,7 @@
 				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3287,6 +3287,7 @@
 					./Libraries/SDL/include,
 					./Libraries/SDL_ttf,
 					./Libraries/SDL/src/video/uikit,
+					"./CDDA/source/iCloud\\ debug",
 					"./Libraries/Cataclysm-DDA/src",
 					./Libraries/JSController/Controller,
 					"./Libraries/glib-ios",
@@ -3336,6 +3337,7 @@
 					./Libraries/SDL/include,
 					./Libraries/SDL_ttf,
 					./Libraries/SDL/src/video/uikit,
+					"./CDDA/source/iCloud\\ debug",
 					"./Libraries/Cataclysm-DDA/src",
 					./Libraries/JSController/Controller,
 					"./Libraries/glib-ios",

@@ -22,7 +22,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-UV-xyF">
                                         <rect key="frame" x="167.5" y="0.0" width="332.5" height="72"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ud5-fe-ONn">
@@ -39,7 +39,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
                                         <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <state key="normal" title="PLAY!"/>
+                                        <state key="normal" title="PLAY!">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="startApp:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="M2o-xQ-eB8"/>
                                         </connections>
@@ -47,7 +49,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-X9-ZgQ">
                                         <rect key="frame" x="0.0" y="84" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <state key="normal" title="Save to iCloud"/>
+                                        <state key="normal" title="Save to iCloud">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="save:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FiZ-M1-amQ"/>
                                         </connections>
@@ -55,7 +59,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5L-S4-qjM">
                                         <rect key="frame" x="0.0" y="168" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <state key="normal" title="Load from iCloud"/>
+                                        <state key="normal" title="Load from iCloud">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="load:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="BNZ-63-XoH"/>
                                         </connections>
@@ -64,7 +70,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7rd-Zh-857"/>
                             <constraint firstItem="bbo-7r-OEW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GWa-Dz-Bak"/>

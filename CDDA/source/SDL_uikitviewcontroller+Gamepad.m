@@ -112,12 +112,27 @@ NSDate* _startDate;
 
 - (void)viewDidAppear:(BOOL)animated {
     for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
-        [self registerNotification:notification forSelector:@selector(resizeRootView)];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resizeRootView) name:notification object:nil];
 
     for (NSString* keyPath in @[@"overlayUIEnabled", @"panningWith1Finger"])
         [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
 
     [self resizeRootView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    _gamepadViewController = nil;
+    
+    for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:notification object:nil];
+    
+    @try {
+        for (NSString* keyPath in @[@"overlayUIEnabled", @"panningWith1Finger"])
+            [NSUserDefaults.standardUserDefaults removeObserver:self forKeyPath:keyPath context:nil];
+    } @catch (NSException *exception) {
+        NSLog(@"Failed to remove the observer: %@", exception);
+    }
 }
 
 
@@ -184,11 +199,6 @@ static CGSize _minSize = {632, 368};
 }
 
 OnKeyboardHandler* _onKeyboardHandler;
-
-- (void)registerNotification:(NSNotificationName)notification forSelector:(SEL)selector
-{
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:selector name:notification object:nil];
-}
 
 - (void)viewWillTransitionToSize:(CGSize)size
        withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator

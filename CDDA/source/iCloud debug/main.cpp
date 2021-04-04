@@ -1,13 +1,12 @@
 //
-//  CDDA_iOS_main.m
+//  main.cpp
 //  Main + iCloud
 //
 //  Created by Аполлов Юрий Андреевич on 18.03.2021.
 //  Copyright © 2021 Аполлов Юрий Андреевич. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-int CDDA_iOS_main(NSString* documentPath)
+int main(int argc, char *argv[])
 {
     return 0;
 }
