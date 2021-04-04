@@ -16,17 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_1024x1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="OqX-J6-ba5">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
                             <stackView opaque="NO" alpha="0.25" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-V7-1Zo" userLabel="Progress">
-                                <rect key="frame" x="0.0" y="149.5" width="667" height="76"/>
+                                <rect key="frame" x="0.0" y="149" width="667" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-UV-xyF">
-                                        <rect key="frame" x="167.5" y="0.0" width="332.5" height="72"/>
+                                        <rect key="frame" x="167" y="0.0" width="333.5" height="73"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ud5-fe-ONn">
-                                        <rect key="frame" x="0.0" y="72" width="667" height="4"/>
+                                    <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ud5-fe-ONn">
+                                        <rect key="frame" x="0.0" y="73" width="667" height="4"/>
+                                        <color key="progressTintColor" red="0.45640556655898734" green="0.910134698926788" blue="0.35226969876210967" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </progressView>
                                 </subviews>
                                 <constraints>
@@ -39,8 +46,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
                                         <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="PLAY!">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="startApp:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="M2o-xQ-eB8"/>
@@ -49,8 +58,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-X9-ZgQ">
                                         <rect key="frame" x="0.0" y="84" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Save to iCloud">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="save:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FiZ-M1-amQ"/>
@@ -59,8 +70,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5L-S4-qjM">
                                         <rect key="frame" x="0.0" y="168" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Load from iCloud">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="load:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="BNZ-63-XoH"/>
@@ -69,8 +82,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-R0-0cK">
                                         <rect key="frame" x="0.0" y="252" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Support project">
-                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="support:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="0g3-4h-ceL"/>
@@ -80,13 +95,17 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7rd-Zh-857"/>
+                            <constraint firstAttribute="trailing" secondItem="OqX-J6-ba5" secondAttribute="trailing" id="9k6-rz-cIH"/>
                             <constraint firstItem="bbo-7r-OEW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GWa-Dz-Bak"/>
                             <constraint firstItem="bbo-7r-OEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I5v-wP-aKV"/>
+                            <constraint firstItem="OqX-J6-ba5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ID6-Vg-GAB"/>
                             <constraint firstItem="nh7-V7-1Zo" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="LkS-RU-TWD"/>
                             <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJm-ef-Qlx"/>
+                            <constraint firstItem="OqX-J6-ba5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X3l-u6-1lS"/>
+                            <constraint firstAttribute="bottom" secondItem="OqX-J6-ba5" secondAttribute="bottom" id="h67-c1-PCc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -101,4 +120,7 @@
             <point key="canvasLocation" x="420.53973013493254" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_1024x1024.png" width="1024" height="1024"/>
+    </resources>
 </document>
