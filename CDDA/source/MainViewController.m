@@ -89,6 +89,11 @@
     });
 }
 
+-(void)support:(id)sender
+{
+    [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://www.patreon.com/apollov"]];
+}
+
 -(void)_watchProgressForURL:(NSURL*)url finishingWith:(SEL)selector
 {
     NSError* error;

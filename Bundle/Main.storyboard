@@ -34,7 +34,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-7r-OEW">
-                                <rect key="frame" x="117" y="61.5" width="433" height="252"/>
+                                <rect key="frame" x="117" y="19.5" width="433" height="336"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
                                         <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
@@ -64,6 +64,16 @@
                                         </state>
                                         <connections>
                                             <action selector="load:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="BNZ-63-XoH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-R0-0cK">
+                                        <rect key="frame" x="0.0" y="252" width="433" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <state key="normal" title="Support project">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="support:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="0g3-4h-ceL"/>
                                         </connections>
                                     </button>
                                 </subviews>
