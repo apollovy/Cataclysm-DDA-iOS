@@ -138,8 +138,8 @@
 
     [[NSFileManager.defaultManager contentsOfDirectoryAtPath:documentPath error:&error] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSError* error = nil;
-
-        if ([obj isEqual:@"config"])
+        
+        if (![ZipArchiver.savedDirs containsObject:obj])
             return;
 
         [NSFileManager.defaultManager removeItemAtPath:[documentPath stringByAppendingPathComponent:obj] error:&error];

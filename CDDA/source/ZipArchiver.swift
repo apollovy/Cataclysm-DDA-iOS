@@ -12,12 +12,14 @@ import Zip
 
 class ZipArchiver : NSObject
 {
+    @objc static var savedDirs: Array<String> = ["save", "memorial", "graveyard"]
+
     @objc class func zip(_ source: URL, destination: URL, errorPtr: NSErrorPointer, progress: @escaping ((_ progress: Double) -> ()))
     {
         do
         {
             let contentItemNames = try FileManager.default.contentsOfDirectory(atPath: source.path).filter({ (itemName) -> Bool in
-                return itemName != "config"
+                return savedDirs.contains(itemName)
             }).map({ (itemName) -> URL in
                 source.appendingPathComponent("/\(itemName)")
             })
