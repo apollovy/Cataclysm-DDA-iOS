@@ -13,6 +13,9 @@
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
+		B51597DF2634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
+		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
+		B51598222634894D008BFD0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B5412CF42605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
@@ -50,7 +53,6 @@
 		B58679E9260402B600EACF2C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B58679EA260402B600EACF2C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B58679EB260402B600EACF2C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7125929FEA00505231 /* MobileCoreServices.framework */; };
-		B58679ED260402B600EACF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
 		B58679EE260402B600EACF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
 		B5867A172604030100EACF2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
@@ -61,7 +63,6 @@
 		B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A5BED925F7DEB500EEEA0F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B5A5BEDB25F7DEB500EEEA0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
-		B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */; };
 		B5A5BEF625F7F9E200EEEA0F /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B5AB7F8326056FE600D4743B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
@@ -557,6 +558,27 @@
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-DDA/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
+		B51597E12634833A008BFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B51597FD2634834C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		B51597FF26348371008BFD0C /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Main.strings; sourceTree = "<group>"; };
+		B515980126348374008BFD0C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		B515980326348377008BFD0C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		B515980526348379008BFD0C /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Main.strings; sourceTree = "<group>"; };
+		B51598072634837B008BFD0C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		B51598092634837D008BFD0C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		B515980B2634837F008BFD0C /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		B515980D26348381008BFD0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		B515980F26348384008BFD0C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		B515981426348768008BFD0C /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B51598162634877A008BFD0C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B51598172634877C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B51598182634877E008BFD0C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B51598192634877F008BFD0C /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B515981A26348781008BFD0C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B515981B26348782008BFD0C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B515981C26348783008BFD0C /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B515981D26348784008BFD0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B515981E26348785008BFD0C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
@@ -620,7 +642,6 @@
 		B5A5BED625F7DEB300EEEA0F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5A5BED725F7DEB400EEEA0F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_iOS_main.h; sourceTree = "<group>"; };
 		B5A5BEE925F7F31F00EEEA0F /* path_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = path_utils.m; sourceTree = "<group>"; };
 		B5A5BEF025F7F51300EEEA0F /* path_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = path_utils.h; sourceTree = "<group>"; };
@@ -1356,7 +1377,7 @@
 		B56E7E25259BA51C000701EF /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
-				B5A5BEDE25F7DEEE00EEEA0F /* Main.storyboard */,
+				B51597E22634833A008BFD0C /* Main.storyboard */,
 				B57201D5259293EF003D2A20 /* Assets.xcassets */,
 				B5B01B95259BEF650023AB00 /* data */,
 				B5072BB8259CE883002479DB /* gfx */,
@@ -1372,6 +1393,7 @@
 		B57201C0259293EE003D2A20 = {
 			isa = PBXGroup;
 			children = (
+				B515981526348768008BFD0C /* Localizable.strings */,
 				B5FD1F2625A575AB00CE613D /* Binaries */,
 				B56E7E25259BA51C000701EF /* Bundle */,
 				B57201CB259293EE003D2A20 /* CDDA */,
@@ -2368,11 +2390,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A5BEDF25F7DEEE00EEEA0F /* Main.storyboard in Resources */,
+				B51597DF2634833A008BFD0C /* Main.storyboard in Resources */,
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
 				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
 				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
+				B51598222634894D008BFD0C /* Localizable.strings in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
 				B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */,
 				B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */,
@@ -2384,7 +2407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58679ED260402B600EACF2C /* Main.storyboard in Resources */,
+				B51597E02634833A008BFD0C /* Main.storyboard in Resources */,
 				B58679EE260402B600EACF2C /* Assets.xcassets in Resources */,
 				B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */,
 			);
@@ -2896,6 +2919,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B51597E22634833A008BFD0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51597E12634833A008BFD0C /* Base */,
+				B51597FD2634834C008BFD0C /* en */,
+				B51597FF26348371008BFD0C /* zh */,
+				B515980126348374008BFD0C /* fr */,
+				B515980326348377008BFD0C /* de */,
+				B515980526348379008BFD0C /* hu */,
+				B51598072634837B008BFD0C /* ja */,
+				B51598092634837D008BFD0C /* ko */,
+				B515980B2634837F008BFD0C /* pt */,
+				B515980D26348381008BFD0C /* ru */,
+				B515980F26348384008BFD0C /* es */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B515981526348768008BFD0C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B515981426348768008BFD0C /* zh */,
+				B51598162634877A008BFD0C /* fr */,
+				B51598172634877C008BFD0C /* en */,
+				B51598182634877E008BFD0C /* de */,
+				B51598192634877F008BFD0C /* hu */,
+				B515981A26348781008BFD0C /* ja */,
+				B515981B26348782008BFD0C /* ko */,
+				B515981C26348783008BFD0C /* pt */,
+				B515981D26348784008BFD0C /* ru */,
+				B515981E26348785008BFD0C /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -32,14 +32,14 @@
 
 -(void)save:(id)sender
 {
-    [self _showProgressScreenWithLabel:@"Saving..."];
+    [self _showProgressScreenWithLabel:NSLocalizedString(@"Saving...", @"")];
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
         NSError* error = nil;
         NSURL* url = [self _getSaveUrl:&error];
         
         if (error)
         {
-            [self _showMainScreenWithMessage:@"Error getting URL for save" error:error];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Error getting URL for save", @"") error:error];
             return;
         }
 
@@ -52,31 +52,31 @@
         
         if (error)
         {
-            [self _showMainScreenWithMessage:@"Error zipping save" error:error];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Error zipping save", @"") error:error];
             return;
         }
         
         if (TARGET_OS_SIMULATOR)
         {
-            [self _showMainScreenWithMessage:@"Save successful" error:error];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Save successful", @"") error:error];
             return;
         }
         
-        [self _showProgressScreenWithLabel:@"Uploading..."];
+        [self _showProgressScreenWithLabel:NSLocalizedString(@"Uploading...", @"")];
         [self _watchProgressForURL:url finishingWith:@selector(_checkUploadFinished:)];
     });
 }
 
 -(void)load:(id)sender
 {
-    [self _showProgressScreenWithLabel:@"Downloading..."];
+    [self _showProgressScreenWithLabel:NSLocalizedString(@"Downloading...", @"")];
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0) , ^{
         NSError* error = nil;
         NSURL* url = [self _getSaveUrl:&error];
         
         if (error)
         {
-            [self _showMainScreenWithMessage:@"Error getting URL for save" error:error];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Error getting URL for save", @:"") error:error];
             return;
         }
         
@@ -101,7 +101,7 @@
 
     if (error)
     {
-        [self _showMainScreenWithMessage:@"Download start failed" error:error];
+        [self _showMainScreenWithMessage:NSLocalizedString(@"Download start failed", @"") error:error];
         return;
     }
 
@@ -116,7 +116,7 @@
         bool queryStarted = [_query startQuery];
         if (!queryStarted)
         {
-            [self _showMainScreenWithMessage:@"Failed to start query" error:nil];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Failed to start query", "") error:nil];
             return;
         }
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
@@ -131,7 +131,7 @@
 
 - (void)_unzip:(NSURL*)url
 {
-    [self _showProgressScreenWithLabel:@"Unpacking..."];
+    [self _showProgressScreenWithLabel:NSLocalizedString(@"Unpacking...", @"")];
     NSURL* documentURL = getDocumentURL();
     NSString* documentPath = documentURL.path;
     NSError* error = nil;
@@ -146,14 +146,14 @@
     
         if (error)
         {
-            [self _showMainScreenWithMessage:@"Removing file failed" error:error];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Removing file failed", "") error:error];
             return;
         }
     }];
 
     if (error)
     {
-        [self _showMainScreenWithMessage:@"Listing contents of directory failed" error:error];
+        [self _showMainScreenWithMessage:NSLocalizedString(@"Listing contents of directory failed", @"") error:error];
         return;
     }
 
@@ -165,11 +165,11 @@
 
     if (error)
     {
-        [self _showMainScreenWithMessage:@"Error unzipping save" error:error];
+        [self _showMainScreenWithMessage:NSLocalizedString(@"Error unzipping save", "") error:error];
         return;
     }
 
-    [self _showMainScreenWithMessage:@"Load successful" error:nil];
+    [self _showMainScreenWithMessage:NSLocalizedString(@"Load successful", @"") error:nil];
 }
 
 -(void)_checkDownloadFinishedAndUnzip:(NSNotification*)notification
@@ -204,7 +204,7 @@
         [_query stopQuery];
         for (NSNotificationName notificationName in @[NSMetadataQueryDidFinishGatheringNotification, NSMetadataQueryDidUpdateNotification])
             [[NSNotificationCenter defaultCenter] removeObserver:self name:notificationName object:nil];
-        [self _showMainScreenWithMessage:@"Upload successful!" error:nil];
+        [self _showMainScreenWithMessage:NSLocalizedString(@"Upload successful!", @"") error:nil];
     }
 }
 
