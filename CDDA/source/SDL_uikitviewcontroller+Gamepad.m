@@ -111,8 +111,9 @@ NSDate* _startDate;
 @implementation SDL_uikitviewcontroller (Gamepad)
 
 - (void)viewDidAppear:(BOOL)animated {
-    for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resizeRootView) name:notification object:nil];
+    _onKeyboardHandler = [OnKeyboardHandler initWithController:self];
+    for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification,  UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
+        [[NSNotificationCenter defaultCenter] addObserver:_onKeyboardHandler selector:@selector(onKeyboard) name:notification object:nil];
 
     for (NSString* keyPath in @[@"overlayUIEnabled", @"panningWith1Finger"])
         [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
@@ -122,11 +123,11 @@ NSDate* _startDate;
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification,  UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
+        [[NSNotificationCenter defaultCenter] removeObserver:_onKeyboardHandler name:notification object:nil];
+    _onKeyboardHandler = nil;
     _gamepadViewController = nil;
-    
-    for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification, UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:notification object:nil];
-    
+
     @try {
         for (NSString* keyPath in @[@"overlayUIEnabled", @"panningWith1Finger"])
             [NSUserDefaults.standardUserDefaults removeObserver:self forKeyPath:keyPath context:nil];
@@ -181,20 +182,11 @@ static CGSize _minSize = {632, 368};
             [self hideKeyboard];
             _gamepadViewController = [[UIStoryboard storyboardWithName:@"UIControls" bundle:nil] instantiateInitialViewController];
             [self.view addSubview:_gamepadViewController.view];
-
-            _onKeyboardHandler = [OnKeyboardHandler initWithController:self];
-            for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-                [[NSNotificationCenter defaultCenter] addObserver:_onKeyboardHandler selector:@selector(onKeyboard) name:notification object:nil];
-            }
         }
     } else if (_gamepadViewController) {
         [self hideKeyboard];
         [_gamepadViewController.view removeFromSuperview];
         _gamepadViewController = nil;
-        for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification]) {
-            [[NSNotificationCenter defaultCenter] removeObserver:_onKeyboardHandler name:notification object:nil];
-        }
-        _onKeyboardHandler = nil;
     }
 }
 

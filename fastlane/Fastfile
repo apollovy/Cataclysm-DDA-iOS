@@ -40,5 +40,10 @@ platform :ios do
           dsym_path: dSYM_path,
         )
     end
+    sentry_set_commits(
+      version: get_version_number',
+      app_identifier: CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier),
+      auto: true,
+    )
   end
 end
