@@ -13,17 +13,12 @@ void no_exit(int status){}
 #include "MainViewController.h"
 
 // https://stackoverflow.com/a/15318065/674557
-char** cArrayFromNSArray(NSArray* array)
+const char** cArrayFromNSArray(NSArray<NSString*>* array)
 {
     int i, count = array.count;
-    char** cargs = (char**) malloc(sizeof(char*) * (count + 1));
+    const char** cargs = (const char**) malloc(sizeof(char*) * (count + 1));
     for(i = 0; i < count; i++) {
-        NSString *s = array[i];
-        const char *cstr = s.UTF8String;
-        int len = strlen(cstr);
-        char* cstr_copy = (char*) malloc(sizeof(char) * (len + 1));
-        strcpy(cstr_copy, cstr);
-        cargs[i] = cstr_copy;
+        cargs[i] = array[i].UTF8String;
     }
     cargs[i] = NULL;
     return cargs;
@@ -42,7 +37,7 @@ int CDDA_iOS_main(NSString* documentPath)
         
     ]];
     int newArgumentsCount = newArguments.count;
-    char** stringArgs = cArrayFromNSArray(newArguments);
+    const char** stringArgs = cArrayFromNSArray(newArguments);
 
     SDL_iPhoneSetEventPump(SDL_TRUE);
     int exitCode = CDDA_main(newArgumentsCount, stringArgs);
