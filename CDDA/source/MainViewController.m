@@ -89,9 +89,9 @@
     });
 }
 
--(void)support:(id)sender
+-(void)previousVersion:(id)sender
 {
-    [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://www.patreon.com/apollov"]];
+    [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://apps.apple.com/app/cataclysm-roguelike-rpg-0-e/id1547835881"]];
 }
 
 -(void)_watchProgressForURL:(NSURL*)url finishingWith:(SEL)selector

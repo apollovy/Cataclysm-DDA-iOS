@@ -14,7 +14,7 @@
 - (IBAction)startApp:(id)sender;
 - (IBAction)save:(id)sender;
 - (IBAction)load:(id)sender;
-- (IBAction)support:(id)sender;
+- (IBAction)previousVersion:(id)sender;
 
 @property IBOutlet UIView* buttons;
 
