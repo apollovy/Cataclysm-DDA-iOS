@@ -45,7 +45,9 @@ int CDDA_iOS_main(NSString* documentPath)
     
     dispatch_async(dispatch_get_main_queue(), ^{
         MainViewController* vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
-        [[UIApplication.sharedApplication windows] firstObject].rootViewController = vc;
+        auto window = [[UIApplication.sharedApplication windows] firstObject];
+        window.rootViewController = vc;
+        [window makeKeyAndVisible];
     });
 
     return exitCode;

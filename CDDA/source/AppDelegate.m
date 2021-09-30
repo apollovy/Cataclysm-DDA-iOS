@@ -7,6 +7,9 @@
 //
 #import "AppDelegate.h"
 
+#import "path_utils.h"
+#import "CDDA_iOS_main.h"
+
 @implementation AppDelegate
 {
     UIWindow* mainWindow;
@@ -29,11 +32,12 @@
         self.launchWindow = nil;
     }
     mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateInitialViewController];
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    mainWindow.rootViewController = vc;
-    [mainWindow makeKeyAndVisible];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *vc = [sb instantiateInitialViewController];
+//    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+//    mainWindow.rootViewController = vc;
+//    [mainWindow makeKeyAndVisible];
+    CDDA_iOS_main(getDocumentURL().path);
 }
 
 @end
