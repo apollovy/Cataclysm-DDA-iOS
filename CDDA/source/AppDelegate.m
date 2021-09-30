@@ -32,12 +32,11 @@
         self.launchWindow = nil;
     }
     mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    UIViewController *vc = [sb instantiateInitialViewController];
-//    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//    mainWindow.rootViewController = vc;
-//    [mainWindow makeKeyAndVisible];
-    CDDA_iOS_main(getDocumentURL().path);
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateInitialViewController];
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    mainWindow.rootViewController = vc;
+    [mainWindow makeKeyAndVisible];
 }
 
 @end
