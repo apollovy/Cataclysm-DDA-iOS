@@ -26,8 +26,10 @@
 
 -(void)startApp:(id)sender
 {
-    self.view = nil;
-    [[[UIApplication.sharedApplication windows] firstObject] setHidden:YES];
+//    self.view = nil;
+    UIWindow* firstWindow = [[UIApplication.sharedApplication windows] firstObject];
+    [firstWindow resignFirstResponder];
+    [firstWindow resignKeyWindow];
     CDDA_iOS_main(getDocumentURL().path);
 }
 
