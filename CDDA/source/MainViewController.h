@@ -11,7 +11,7 @@
 
 @interface MainViewController : UIViewController
 
-- (IBAction)startApp:(id)sender;
+- (IBAction)openSettings:(id)sender;
 - (IBAction)save:(id)sender;
 - (IBAction)load:(id)sender;
 - (IBAction)previousVersion:(id)sender;

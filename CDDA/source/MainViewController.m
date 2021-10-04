@@ -24,11 +24,9 @@
     self.progressWrapper.alpha = 0;
 }
 
--(void)startApp:(id)sender
+-(void)openSettings:(id)sender
 {
-    self.view = nil;
-    [[[UIApplication.sharedApplication windows] firstObject] setHidden:YES];
-    CDDA_iOS_main(getDocumentURL().path);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 
 -(void)save:(id)sender
