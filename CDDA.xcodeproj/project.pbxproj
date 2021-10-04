@@ -615,7 +615,7 @@
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
 		B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDDAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B538050025AC6DB200AEB52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B538050025AC6DB200AEB52A /* CDDAUITests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CDDAUITests.plist; sourceTree = "<group>"; };
 		B538050825AC6E3500AEB52A /* CDDAUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDAUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		B5412CF32605FEF20034128C /* ZipArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchiver.swift; sourceTree = "<group>"; };
@@ -658,10 +658,10 @@
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B57201DA259293EF003D2A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57201DA259293EF003D2A20 /* CDDA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CDDA.plist; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CDDA iCloud debug.plist"; path = "/Users/apollov/work/CDDA-new/CDDA/CDDA iCloud debug.plist"; sourceTree = "<absolute>"; };
+		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
 		B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitview+CDDA.h"; sourceTree = "<group>"; };
@@ -677,7 +677,7 @@
 		B5A5BEE925F7F31F00EEEA0F /* path_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = path_utils.m; sourceTree = "<group>"; };
 		B5A5BEF025F7F51300EEEA0F /* path_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = path_utils.h; sourceTree = "<group>"; };
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-DDA/data"; sourceTree = SOURCE_ROOT; };
-		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = version.h; path = CDDA/source/version.h; sourceTree = SOURCE_ROOT; };
+		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		B5CF696825F38BC3009F929E /* CDDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CDDA.entitlements; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5F9601B26A6FE4D00A6258D /* activity_actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_actor.h; path = "Libraries/Cataclysm-DDA/src/activity_actor.h"; sourceTree = SOURCE_ROOT; };
@@ -1411,7 +1411,6 @@
 			isa = PBXGroup;
 			children = (
 				B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */,
-				B538050025AC6DB200AEB52A /* Info.plist */,
 				B538050825AC6E3500AEB52A /* CDDAUITests-Bridging-Header.h */,
 				D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */,
 				D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */,
@@ -1499,16 +1498,12 @@
 		B57201C0259293EE003D2A20 = {
 			isa = PBXGroup;
 			children = (
-				B515981526348768008BFD0C /* Localizable.strings */,
-				B5FD1F2625A575AB00CE613D /* Binaries */,
-				B56E7E25259BA51C000701EF /* Bundle */,
-				B57201CB259293EE003D2A20 /* CDDA */,
-				B53804FD25AC6DB200AEB52A /* CDDAUITests */,
+				B5EDBF7F270B951500FB4526 /* Distinct */,
+				B5EDBF68270B94AB00FB4526 /* Common */,
 				B599341525929CCE0074C0C0 /* Frameworks */,
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
 				265D23A253D509D85BDFC3B4 /* Pods */,
-				B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1520,18 +1515,6 @@
 				B5867A02260402B600EACF2C /* CDDA.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B57201CB259293EE003D2A20 /* CDDA */ = {
-			isa = PBXGroup;
-			children = (
-				B5CF696825F38BC3009F929E /* CDDA.entitlements */,
-				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
-				B5B01B98259BF0480023AB00 /* source */,
-				B57201DA259293EF003D2A20 /* Info.plist */,
-				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
-			);
-			path = CDDA;
 			sourceTree = "<group>";
 		};
 		B58678852603E78800EACF2C /* iCloud debug */ = {
@@ -1562,10 +1545,9 @@
 		B5B01B98259BF0480023AB00 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
 				B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */,
-				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
-				B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */,
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
@@ -1585,11 +1567,45 @@
 				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */,
+				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		B5EDBF68270B94AB00FB4526 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B53804FD25AC6DB200AEB52A /* CDDAUITests */,
+				B56E7E25259BA51C000701EF /* Bundle */,
+				B5FD1F2625A575AB00CE613D /* Binaries */,
+				B515981526348768008BFD0C /* Localizable.strings */,
+				B5B01B98259BF0480023AB00 /* source */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B5EDBF7F270B951500FB4526 /* Distinct */ = {
+			isa = PBXGroup;
+			children = (
+				B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */,
+				B5CF696825F38BC3009F929E /* CDDA.entitlements */,
+				B57201DA259293EF003D2A20 /* CDDA.plist */,
+				B538050025AC6DB200AEB52A /* CDDAUITests.plist */,
+				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
+				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
+				B5EDBF80270B957000FB4526 /* source */,
+			);
+			path = Distinct;
+			sourceTree = "<group>";
+		};
+		B5EDBF80270B957000FB4526 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B58678852603E78800EACF2C /* iCloud debug */,
 				B5B01B99259BF0690023AB00 /* version.h */,
 				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
 				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
-				B58678852603E78800EACF2C /* iCloud debug */,
-				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
+				B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -3226,7 +3242,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CDDAUITests/Info.plist;
+				INFOPLIST_FILE = Distinct/CDDAUITests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3236,7 +3252,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDDAUITests/CDDAUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/CDDAUITests/CDDAUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3253,7 +3269,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
-				INFOPLIST_FILE = CDDAUITests/Info.plist;
+				INFOPLIST_FILE = Distinct/CDDAUITests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3262,7 +3278,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDAUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDDAUITests/CDDAUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/CDDAUITests/CDDAUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CDDA;
@@ -3324,9 +3340,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = ./Common/Binaries/glib/include;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = ./Common/Binaries/glib/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3340,7 +3356,6 @@
 					./Libraries/SDL/src/video/uikit,
 					"./Libraries/Cataclysm-DDA/src",
 					./Libraries/JSController/Controller,
-					./Binaries/glib/include,
 				);
 			};
 			name = Debug;
@@ -3397,9 +3412,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = ./Common/Binaries/glib/include;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = ./Common/Binaries/glib/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -3414,7 +3429,6 @@
 					./Libraries/SDL/src/video/uikit,
 					"./Libraries/Cataclysm-DDA/src",
 					./Libraries/JSController/Controller,
-					./Binaries/glib/include,
 				);
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3426,7 +3440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1015;
@@ -3438,9 +3452,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
-					"$(PROJECT_DIR)/Binaries/glib/include",
 				);
-				INFOPLIST_FILE = CDDA/Info.plist;
+				INFOPLIST_FILE = Distinct/CDDA.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3453,20 +3466,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					./Libraries/SDL_mixer,
-					./Libraries/SDL_image,
-					./Libraries/SDL/include,
-					./Libraries/SDL_ttf,
-					./Libraries/SDL/src/video/uikit,
-					"./Libraries/Cataclysm-DDA/src",
-					./Libraries/JSController/Controller,
-					"./Libraries/glib-ios",
-				);
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -3476,7 +3480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1015;
@@ -3488,9 +3492,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
-					"$(PROJECT_DIR)/Binaries/glib/include",
 				);
-				INFOPLIST_FILE = CDDA/Info.plist;
+				INFOPLIST_FILE = Distinct/CDDA.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3503,19 +3506,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = (
-					./Libraries/SDL_mixer,
-					./Libraries/SDL_image,
-					./Libraries/SDL/include,
-					./Libraries/SDL_ttf,
-					./Libraries/SDL/src/video/uikit,
-					"./Libraries/Cataclysm-DDA/src",
-					./Libraries/JSController/Controller,
-					"./Libraries/glib-ios",
-				);
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -3525,7 +3519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1015;
@@ -3537,35 +3531,24 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
-					"$(PROJECT_DIR)/Binaries/glib/include",
 				);
-				INFOPLIST_FILE = "CDDA iCloud debug.plist";
+				INFOPLIST_FILE = "Distinct/CDDA iCloud debug.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Binaries/glib/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
-					./Libraries/SDL_mixer,
-					./Libraries/SDL_image,
-					./Libraries/SDL/include,
-					./Libraries/SDL_ttf,
-					./Libraries/SDL/src/video/uikit,
-					"./CDDA/source/iCloud\\ debug",
-					"./Libraries/Cataclysm-DDA/src",
-					./Libraries/JSController/Controller,
-					"./Libraries/glib-ios",
+					"./Distinct/source/iCloud\\ debug",
+					"$(inherited)",
 				);
 			};
 			name = Debug;
@@ -3576,7 +3559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = CDDA/CDDA.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1015;
@@ -3588,34 +3571,23 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
-					"$(PROJECT_DIR)/Binaries/glib/include",
 				);
-				INFOPLIST_FILE = "CDDA iCloud debug.plist";
+				INFOPLIST_FILE = "Distinct/CDDA iCloud debug.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Binaries/glib/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "CDDA/source/CDDA-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = (
-					./Libraries/SDL_mixer,
-					./Libraries/SDL_image,
-					./Libraries/SDL/include,
-					./Libraries/SDL_ttf,
-					./Libraries/SDL/src/video/uikit,
-					"./CDDA/source/iCloud\\ debug",
-					"./Libraries/Cataclysm-DDA/src",
-					./Libraries/JSController/Controller,
-					"./Libraries/glib-ios",
+					"./Distinct/source/iCloud\\ debug",
+					"$(inherited)",
 				);
 			};
 			name = Release;
