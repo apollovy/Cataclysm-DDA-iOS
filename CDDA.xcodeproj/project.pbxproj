@@ -104,6 +104,7 @@
 		B5F9608E26A6FE5200A6258D /* character_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606926A6FE5200A6258D /* character_id.cpp */; };
 		B5F9608F26A6FE5200A6258D /* achievement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606A26A6FE5200A6258D /* achievement.cpp */; };
 		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
+		B5FA7C03270CD09C00A1655A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FA7BEC270CD09C00A1655A /* Assets.xcassets */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
 		D0AA201C627C921E4D0BA426 /* iuse_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA221C4759F32D1DF0A776 /* iuse_actor.cpp */; };
@@ -763,6 +764,7 @@
 		B5F9606B26A6FE5200A6258D /* cached_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cached_options.h; path = "Libraries/Cataclysm-DDA/src/cached_options.h"; sourceTree = SOURCE_ROOT; };
 		B5F9606C26A6FE5200A6258D /* item_contents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_contents.h; path = "Libraries/Cataclysm-DDA/src/item_contents.h"; sourceTree = SOURCE_ROOT; };
 		B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
+		B5FA7BEC270CD09C00A1655A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
@@ -1587,6 +1589,7 @@
 		B5EDBF7F270B951500FB4526 /* Distinct */ = {
 			isa = PBXGroup;
 			children = (
+				B5FA7BEC270CD09C00A1655A /* Assets.xcassets */,
 				B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */,
 				B5CF696825F38BC3009F929E /* CDDA.entitlements */,
 				B57201DA259293EF003D2A20 /* CDDA.plist */,
@@ -2590,6 +2593,7 @@
 			files = (
 				B51597DF2634833A008BFD0C /* Main.storyboard in Resources */,
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
+				B5FA7C03270CD09C00A1655A /* Assets.xcassets in Resources */,
 				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
 				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
