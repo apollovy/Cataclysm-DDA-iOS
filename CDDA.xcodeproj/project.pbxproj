@@ -68,43 +68,13 @@
 		B5B7F8D62602C86B0007594B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
-		B5F9606D26A6FE5200A6258D /* construction_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9601E26A6FE4D00A6258D /* construction_group.cpp */; };
-		B5F9606E26A6FE5200A6258D /* character_crafting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602026A6FE4D00A6258D /* character_crafting.cpp */; };
-		B5F9606F26A6FE5200A6258D /* butchery_requirements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602126A6FE4D00A6258D /* butchery_requirements.cpp */; };
-		B5F9607026A6FE5200A6258D /* item_contents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602226A6FE4D00A6258D /* item_contents.cpp */; };
-		B5F9607126A6FE5200A6258D /* talker_avatar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602326A6FE4E00A6258D /* talker_avatar.cpp */; };
-		B5F9607226A6FE5200A6258D /* activity_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602426A6FE4E00A6258D /* activity_actor.cpp */; };
-		B5F9607326A6FE5200A6258D /* disease.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602626A6FE4E00A6258D /* disease.cpp */; };
-		B5F9607426A6FE5200A6258D /* ascii_art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602A26A6FE4E00A6258D /* ascii_art.cpp */; };
-		B5F9607526A6FE5200A6258D /* talker_character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9602C26A6FE4E00A6258D /* talker_character.cpp */; };
-		B5F9607626A6FE5200A6258D /* advanced_inv_pagination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603026A6FE4E00A6258D /* advanced_inv_pagination.cpp */; };
-		B5F9607726A6FE5200A6258D /* sdl_font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603126A6FE4E00A6258D /* sdl_font.cpp */; };
-		B5F9607826A6FE5200A6258D /* shadowcasting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603326A6FE4F00A6258D /* shadowcasting.cpp */; };
-		B5F9607926A6FE5200A6258D /* smart_controller_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603426A6FE4F00A6258D /* smart_controller_ui.cpp */; };
-		B5F9607A26A6FE5200A6258D /* dialogue_chatbin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603526A6FE4F00A6258D /* dialogue_chatbin.cpp */; };
-		B5F9607B26A6FE5200A6258D /* units_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603A26A6FE4F00A6258D /* units_utility.cpp */; };
-		B5F9607C26A6FE5200A6258D /* monster_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603B26A6FE4F00A6258D /* monster_oracle.cpp */; };
-		B5F9607D26A6FE5200A6258D /* proficiency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9603C26A6FE4F00A6258D /* proficiency.cpp */; };
-		B5F9607E26A6FE5200A6258D /* ui_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9604126A6FE5000A6258D /* ui_manager.cpp */; };
-		B5F9607F26A6FE5200A6258D /* move_mode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9604326A6FE5000A6258D /* move_mode.cpp */; };
-		B5F9608026A6FE5200A6258D /* event_field_transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9604626A6FE5000A6258D /* event_field_transformations.cpp */; };
-		B5F9608126A6FE5200A6258D /* temp_crafting_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9604926A6FE5000A6258D /* temp_crafting_inventory.cpp */; };
-		B5F9608226A6FE5200A6258D /* weather_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9604B26A6FE5000A6258D /* weather_type.cpp */; };
-		B5F9608326A6FE5200A6258D /* string_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9604C26A6FE5000A6258D /* string_id.cpp */; };
-		B5F9608426A6FE5200A6258D /* level_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605426A6FE5100A6258D /* level_cache.cpp */; };
-		B5F9608526A6FE5200A6258D /* cached_options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605526A6FE5100A6258D /* cached_options.cpp */; };
-		B5F9608626A6FE5200A6258D /* reachability_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605926A6FE5100A6258D /* reachability_cache.cpp */; };
-		B5F9608726A6FE5200A6258D /* past_games_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605A26A6FE5100A6258D /* past_games_info.cpp */; };
-		B5F9608826A6FE5200A6258D /* sdl_geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605B26A6FE5100A6258D /* sdl_geometry.cpp */; };
-		B5F9608926A6FE5200A6258D /* effect_source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605C26A6FE5100A6258D /* effect_source.cpp */; };
-		B5F9608A26A6FE5200A6258D /* character_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9605F26A6FE5100A6258D /* character_oracle.cpp */; };
-		B5F9608B26A6FE5200A6258D /* activity_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606026A6FE5100A6258D /* activity_tracker.cpp */; };
-		B5F9608C26A6FE5200A6258D /* talker_npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606426A6FE5200A6258D /* talker_npc.cpp */; };
-		B5F9608D26A6FE5200A6258D /* item_pocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606726A6FE5200A6258D /* item_pocket.cpp */; };
-		B5F9608E26A6FE5200A6258D /* character_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606926A6FE5200A6258D /* character_id.cpp */; };
-		B5F9608F26A6FE5200A6258D /* achievement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F9606A26A6FE5200A6258D /* achievement.cpp */; };
+		B5F27ECE270C937700227AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F27EB7270C937600227AB4 /* Assets.xcassets */; };
+		B5F27ECF270C98D300227AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F27EB7270C937600227AB4 /* Assets.xcassets */; };
 		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
+		B5FD66F4270C929D00D202ED /* ime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FD66EE270C929D00D202ED /* ime.cpp */; };
+		B5FD66F5270C929D00D202ED /* artifact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FD66F0270C929D00D202ED /* artifact.cpp */; };
+		B5FD66F6270C929D00D202ED /* weather_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5FD66F1270C929D00D202ED /* weather_data.cpp */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
 		D0AA201C627C921E4D0BA426 /* iuse_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA221C4759F32D1DF0A776 /* iuse_actor.cpp */; };
 		D0AA2021BB2DFB19A2E6497E /* flag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B36C545C442B5CEA624 /* flag.cpp */; };
@@ -680,92 +650,17 @@
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		B5CF696825F38BC3009F929E /* CDDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CDDA.entitlements; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
-		B5F9601B26A6FE4D00A6258D /* activity_actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_actor.h; path = "Libraries/Cataclysm-DDA/src/activity_actor.h"; sourceTree = SOURCE_ROOT; };
-		B5F9601C26A6FE4D00A6258D /* activity_actor_definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_actor_definitions.h; path = "Libraries/Cataclysm-DDA/src/activity_actor_definitions.h"; sourceTree = SOURCE_ROOT; };
-		B5F9601D26A6FE4D00A6258D /* activity_tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_tracker.h; path = "Libraries/Cataclysm-DDA/src/activity_tracker.h"; sourceTree = SOURCE_ROOT; };
-		B5F9601E26A6FE4D00A6258D /* construction_group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = construction_group.cpp; path = "Libraries/Cataclysm-DDA/src/construction_group.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9601F26A6FE4D00A6258D /* effect_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = effect_source.h; path = "Libraries/Cataclysm-DDA/src/effect_source.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602026A6FE4D00A6258D /* character_crafting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_crafting.cpp; path = "Libraries/Cataclysm-DDA/src/character_crafting.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602126A6FE4D00A6258D /* butchery_requirements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = butchery_requirements.cpp; path = "Libraries/Cataclysm-DDA/src/butchery_requirements.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602226A6FE4D00A6258D /* item_contents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = item_contents.cpp; path = "Libraries/Cataclysm-DDA/src/item_contents.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602326A6FE4E00A6258D /* talker_avatar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = talker_avatar.cpp; path = "Libraries/Cataclysm-DDA/src/talker_avatar.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602426A6FE4E00A6258D /* activity_actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = activity_actor.cpp; path = "Libraries/Cataclysm-DDA/src/activity_actor.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602526A6FE4E00A6258D /* talker_avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = talker_avatar.h; path = "Libraries/Cataclysm-DDA/src/talker_avatar.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602626A6FE4E00A6258D /* disease.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = disease.cpp; path = "Libraries/Cataclysm-DDA/src/disease.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602726A6FE4E00A6258D /* past_games_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = past_games_info.h; path = "Libraries/Cataclysm-DDA/src/past_games_info.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602826A6FE4E00A6258D /* character_oracle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_oracle.h; path = "Libraries/Cataclysm-DDA/src/character_oracle.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602926A6FE4E00A6258D /* monster_oracle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = monster_oracle.h; path = "Libraries/Cataclysm-DDA/src/monster_oracle.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602A26A6FE4E00A6258D /* ascii_art.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ascii_art.cpp; path = "Libraries/Cataclysm-DDA/src/ascii_art.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602B26A6FE4E00A6258D /* map_field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_field.h; path = "Libraries/Cataclysm-DDA/src/map_field.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602C26A6FE4E00A6258D /* talker_character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = talker_character.cpp; path = "Libraries/Cataclysm-DDA/src/talker_character.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9602D26A6FE4E00A6258D /* talker_character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = talker_character.h; path = "Libraries/Cataclysm-DDA/src/talker_character.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602E26A6FE4E00A6258D /* units_fwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = units_fwd.h; path = "Libraries/Cataclysm-DDA/src/units_fwd.h"; sourceTree = SOURCE_ROOT; };
-		B5F9602F26A6FE4E00A6258D /* viewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewer.h; path = "Libraries/Cataclysm-DDA/src/viewer.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603026A6FE4E00A6258D /* advanced_inv_pagination.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = advanced_inv_pagination.cpp; path = "Libraries/Cataclysm-DDA/src/advanced_inv_pagination.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603126A6FE4E00A6258D /* sdl_font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_font.cpp; path = "Libraries/Cataclysm-DDA/src/sdl_font.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603226A6FE4F00A6258D /* make_static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = make_static.h; path = "Libraries/Cataclysm-DDA/src/make_static.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603326A6FE4F00A6258D /* shadowcasting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shadowcasting.cpp; path = "Libraries/Cataclysm-DDA/src/shadowcasting.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603426A6FE4F00A6258D /* smart_controller_ui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = smart_controller_ui.cpp; path = "Libraries/Cataclysm-DDA/src/smart_controller_ui.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603526A6FE4F00A6258D /* dialogue_chatbin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dialogue_chatbin.cpp; path = "Libraries/Cataclysm-DDA/src/dialogue_chatbin.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603626A6FE4F00A6258D /* event_field_transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event_field_transformations.h; path = "Libraries/Cataclysm-DDA/src/event_field_transformations.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603726A6FE4F00A6258D /* achievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = achievement.h; path = "Libraries/Cataclysm-DDA/src/achievement.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603826A6FE4F00A6258D /* item_pocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_pocket.h; path = "Libraries/Cataclysm-DDA/src/item_pocket.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603926A6FE4F00A6258D /* level_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = level_cache.h; path = "Libraries/Cataclysm-DDA/src/level_cache.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603A26A6FE4F00A6258D /* units_utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = units_utility.cpp; path = "Libraries/Cataclysm-DDA/src/units_utility.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603B26A6FE4F00A6258D /* monster_oracle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = monster_oracle.cpp; path = "Libraries/Cataclysm-DDA/src/monster_oracle.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603C26A6FE4F00A6258D /* proficiency.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = proficiency.cpp; path = "Libraries/Cataclysm-DDA/src/proficiency.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9603D26A6FE4F00A6258D /* talker_npc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = talker_npc.h; path = "Libraries/Cataclysm-DDA/src/talker_npc.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603E26A6FE4F00A6258D /* cuboid_rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cuboid_rectangle.h; path = "Libraries/Cataclysm-DDA/src/cuboid_rectangle.h"; sourceTree = SOURCE_ROOT; };
-		B5F9603F26A6FE4F00A6258D /* construction_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = construction_group.h; path = "Libraries/Cataclysm-DDA/src/construction_group.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604026A6FE4F00A6258D /* to_string_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = to_string_id.h; path = "Libraries/Cataclysm-DDA/src/to_string_id.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604126A6FE5000A6258D /* ui_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ui_manager.cpp; path = "Libraries/Cataclysm-DDA/src/ui_manager.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9604226A6FE5000A6258D /* sdl_geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sdl_geometry.h; path = "Libraries/Cataclysm-DDA/src/sdl_geometry.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604326A6FE5000A6258D /* move_mode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = move_mode.cpp; path = "Libraries/Cataclysm-DDA/src/move_mode.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9604426A6FE5000A6258D /* ascii_art.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ascii_art.h; path = "Libraries/Cataclysm-DDA/src/ascii_art.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604526A6FE5000A6258D /* advanced_inv_pagination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = advanced_inv_pagination.h; path = "Libraries/Cataclysm-DDA/src/advanced_inv_pagination.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604626A6FE5000A6258D /* event_field_transformations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = event_field_transformations.cpp; path = "Libraries/Cataclysm-DDA/src/event_field_transformations.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9604726A6FE5000A6258D /* units_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = units_utility.h; path = "Libraries/Cataclysm-DDA/src/units_utility.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604826A6FE5000A6258D /* weather_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = weather_type.h; path = "Libraries/Cataclysm-DDA/src/weather_type.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604926A6FE5000A6258D /* temp_crafting_inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = temp_crafting_inventory.cpp; path = "Libraries/Cataclysm-DDA/src/temp_crafting_inventory.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9604A26A6FE5000A6258D /* move_mode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = move_mode.h; path = "Libraries/Cataclysm-DDA/src/move_mode.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604B26A6FE5000A6258D /* weather_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = weather_type.cpp; path = "Libraries/Cataclysm-DDA/src/weather_type.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9604C26A6FE5000A6258D /* string_id.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string_id.cpp; path = "Libraries/Cataclysm-DDA/src/string_id.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9604D26A6FE5000A6258D /* temp_crafting_inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = temp_crafting_inventory.h; path = "Libraries/Cataclysm-DDA/src/temp_crafting_inventory.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604E26A6FE5000A6258D /* proficiency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = proficiency.h; path = "Libraries/Cataclysm-DDA/src/proficiency.h"; sourceTree = SOURCE_ROOT; };
-		B5F9604F26A6FE5000A6258D /* talker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = talker.h; path = "Libraries/Cataclysm-DDA/src/talker.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605026A6FE5000A6258D /* event_subscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event_subscriber.h; path = "Libraries/Cataclysm-DDA/src/event_subscriber.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605126A6FE5100A6258D /* ofstream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofstream_wrapper.h; path = "Libraries/Cataclysm-DDA/src/ofstream_wrapper.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605226A6FE5100A6258D /* point_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point_traits.h; path = "Libraries/Cataclysm-DDA/src/point_traits.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605326A6FE5100A6258D /* disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = disease.h; path = "Libraries/Cataclysm-DDA/src/disease.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605426A6FE5100A6258D /* level_cache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = level_cache.cpp; path = "Libraries/Cataclysm-DDA/src/level_cache.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9605526A6FE5100A6258D /* cached_options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cached_options.cpp; path = "Libraries/Cataclysm-DDA/src/cached_options.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9605626A6FE5100A6258D /* dialogue_chatbin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dialogue_chatbin.h; path = "Libraries/Cataclysm-DDA/src/dialogue_chatbin.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605726A6FE5100A6258D /* butchery_requirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = butchery_requirements.h; path = "Libraries/Cataclysm-DDA/src/butchery_requirements.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605826A6FE5100A6258D /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = location.h; path = "Libraries/Cataclysm-DDA/src/location.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605926A6FE5100A6258D /* reachability_cache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reachability_cache.cpp; path = "Libraries/Cataclysm-DDA/src/reachability_cache.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9605A26A6FE5100A6258D /* past_games_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = past_games_info.cpp; path = "Libraries/Cataclysm-DDA/src/past_games_info.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9605B26A6FE5100A6258D /* sdl_geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_geometry.cpp; path = "Libraries/Cataclysm-DDA/src/sdl_geometry.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9605C26A6FE5100A6258D /* effect_source.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = effect_source.cpp; path = "Libraries/Cataclysm-DDA/src/effect_source.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9605D26A6FE5100A6258D /* string_id_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_id_utils.h; path = "Libraries/Cataclysm-DDA/src/string_id_utils.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605E26A6FE5100A6258D /* cata_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_assert.h; path = "Libraries/Cataclysm-DDA/src/cata_assert.h"; sourceTree = SOURCE_ROOT; };
-		B5F9605F26A6FE5100A6258D /* character_oracle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_oracle.cpp; path = "Libraries/Cataclysm-DDA/src/character_oracle.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9606026A6FE5100A6258D /* activity_tracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = activity_tracker.cpp; path = "Libraries/Cataclysm-DDA/src/activity_tracker.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9606126A6FE5100A6258D /* ui_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui_manager.h; path = "Libraries/Cataclysm-DDA/src/ui_manager.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606226A6FE5100A6258D /* magic_spell_effect_helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = magic_spell_effect_helpers.h; path = "Libraries/Cataclysm-DDA/src/magic_spell_effect_helpers.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606326A6FE5100A6258D /* smart_controller_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = smart_controller_ui.h; path = "Libraries/Cataclysm-DDA/src/smart_controller_ui.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606426A6FE5200A6258D /* talker_npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = talker_npc.cpp; path = "Libraries/Cataclysm-DDA/src/talker_npc.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9606526A6FE5200A6258D /* reachability_cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reachability_cache.h; path = "Libraries/Cataclysm-DDA/src/reachability_cache.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606626A6FE5200A6258D /* build_reqs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = build_reqs.h; path = "Libraries/Cataclysm-DDA/src/build_reqs.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606726A6FE5200A6258D /* item_pocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = item_pocket.cpp; path = "Libraries/Cataclysm-DDA/src/item_pocket.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9606826A6FE5200A6258D /* sdl_font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sdl_font.h; path = "Libraries/Cataclysm-DDA/src/sdl_font.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606926A6FE5200A6258D /* character_id.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_id.cpp; path = "Libraries/Cataclysm-DDA/src/character_id.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9606A26A6FE5200A6258D /* achievement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = achievement.cpp; path = "Libraries/Cataclysm-DDA/src/achievement.cpp"; sourceTree = SOURCE_ROOT; };
-		B5F9606B26A6FE5200A6258D /* cached_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cached_options.h; path = "Libraries/Cataclysm-DDA/src/cached_options.h"; sourceTree = SOURCE_ROOT; };
-		B5F9606C26A6FE5200A6258D /* item_contents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_contents.h; path = "Libraries/Cataclysm-DDA/src/item_contents.h"; sourceTree = SOURCE_ROOT; };
+		B5F27EB7270C937600227AB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
+		B5FD66EE270C929D00D202ED /* ime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ime.cpp; path = "Libraries/Cataclysm-DDA/src/ime.cpp"; sourceTree = SOURCE_ROOT; };
+		B5FD66EF270C929D00D202ED /* ime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ime.h; path = "Libraries/Cataclysm-DDA/src/ime.h"; sourceTree = SOURCE_ROOT; };
+		B5FD66F0270C929D00D202ED /* artifact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = artifact.cpp; path = "Libraries/Cataclysm-DDA/src/artifact.cpp"; sourceTree = SOURCE_ROOT; };
+		B5FD66F1270C929D00D202ED /* weather_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = weather_data.cpp; path = "Libraries/Cataclysm-DDA/src/weather_data.cpp"; sourceTree = SOURCE_ROOT; };
+		B5FD66F2270C929D00D202ED /* compatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compatibility.h; path = "Libraries/Cataclysm-DDA/src/compatibility.h"; sourceTree = SOURCE_ROOT; };
+		B5FD66F3270C929D00D202ED /* artifact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = artifact.h; path = "Libraries/Cataclysm-DDA/src/artifact.h"; sourceTree = SOURCE_ROOT; };
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA_CDDA_iCloud_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA200222F81260817C72C4 /* simplexnoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simplexnoise.h; path = "Libraries/Cataclysm-DDA/src/simplexnoise.h"; sourceTree = SOURCE_ROOT; };
@@ -1587,6 +1482,7 @@
 		B5EDBF7F270B951500FB4526 /* Distinct */ = {
 			isa = PBXGroup;
 			children = (
+				B5F27EB7270C937600227AB4 /* Assets.xcassets */,
 				B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */,
 				B5CF696825F38BC3009F929E /* CDDA.entitlements */,
 				B57201DA259293EF003D2A20 /* CDDA.plist */,
@@ -1646,88 +1542,12 @@
 		D0AA25121479D716E30A5372 /* Cataclysm-DDA */ = {
 			isa = PBXGroup;
 			children = (
-				B5F9606A26A6FE5200A6258D /* achievement.cpp */,
-				B5F9603726A6FE4F00A6258D /* achievement.h */,
-				B5F9601C26A6FE4D00A6258D /* activity_actor_definitions.h */,
-				B5F9602426A6FE4E00A6258D /* activity_actor.cpp */,
-				B5F9601B26A6FE4D00A6258D /* activity_actor.h */,
-				B5F9606026A6FE5100A6258D /* activity_tracker.cpp */,
-				B5F9601D26A6FE4D00A6258D /* activity_tracker.h */,
-				B5F9603026A6FE4E00A6258D /* advanced_inv_pagination.cpp */,
-				B5F9604526A6FE5000A6258D /* advanced_inv_pagination.h */,
-				B5F9602A26A6FE4E00A6258D /* ascii_art.cpp */,
-				B5F9604426A6FE5000A6258D /* ascii_art.h */,
-				B5F9606626A6FE5200A6258D /* build_reqs.h */,
-				B5F9602126A6FE4D00A6258D /* butchery_requirements.cpp */,
-				B5F9605726A6FE5100A6258D /* butchery_requirements.h */,
-				B5F9605526A6FE5100A6258D /* cached_options.cpp */,
-				B5F9606B26A6FE5200A6258D /* cached_options.h */,
-				B5F9605E26A6FE5100A6258D /* cata_assert.h */,
-				B5F9602026A6FE4D00A6258D /* character_crafting.cpp */,
-				B5F9606926A6FE5200A6258D /* character_id.cpp */,
-				B5F9605F26A6FE5100A6258D /* character_oracle.cpp */,
-				B5F9602826A6FE4E00A6258D /* character_oracle.h */,
-				B5F9601E26A6FE4D00A6258D /* construction_group.cpp */,
-				B5F9603F26A6FE4F00A6258D /* construction_group.h */,
-				B5F9603E26A6FE4F00A6258D /* cuboid_rectangle.h */,
-				B5F9603526A6FE4F00A6258D /* dialogue_chatbin.cpp */,
-				B5F9605626A6FE5100A6258D /* dialogue_chatbin.h */,
-				B5F9602626A6FE4E00A6258D /* disease.cpp */,
-				B5F9605326A6FE5100A6258D /* disease.h */,
-				B5F9605C26A6FE5100A6258D /* effect_source.cpp */,
-				B5F9601F26A6FE4D00A6258D /* effect_source.h */,
-				B5F9604626A6FE5000A6258D /* event_field_transformations.cpp */,
-				B5F9603626A6FE4F00A6258D /* event_field_transformations.h */,
-				B5F9605026A6FE5000A6258D /* event_subscriber.h */,
-				B5F9602226A6FE4D00A6258D /* item_contents.cpp */,
-				B5F9606C26A6FE5200A6258D /* item_contents.h */,
-				B5F9606726A6FE5200A6258D /* item_pocket.cpp */,
-				B5F9603826A6FE4F00A6258D /* item_pocket.h */,
-				B5F9605426A6FE5100A6258D /* level_cache.cpp */,
-				B5F9603926A6FE4F00A6258D /* level_cache.h */,
-				B5F9605826A6FE5100A6258D /* location.h */,
-				B5F9606226A6FE5100A6258D /* magic_spell_effect_helpers.h */,
-				B5F9603226A6FE4F00A6258D /* make_static.h */,
-				B5F9602B26A6FE4E00A6258D /* map_field.h */,
-				B5F9603B26A6FE4F00A6258D /* monster_oracle.cpp */,
-				B5F9602926A6FE4E00A6258D /* monster_oracle.h */,
-				B5F9604326A6FE5000A6258D /* move_mode.cpp */,
-				B5F9604A26A6FE5000A6258D /* move_mode.h */,
-				B5F9605126A6FE5100A6258D /* ofstream_wrapper.h */,
-				B5F9605A26A6FE5100A6258D /* past_games_info.cpp */,
-				B5F9602726A6FE4E00A6258D /* past_games_info.h */,
-				B5F9605226A6FE5100A6258D /* point_traits.h */,
-				B5F9603C26A6FE4F00A6258D /* proficiency.cpp */,
-				B5F9604E26A6FE5000A6258D /* proficiency.h */,
-				B5F9605926A6FE5100A6258D /* reachability_cache.cpp */,
-				B5F9606526A6FE5200A6258D /* reachability_cache.h */,
-				B5F9603126A6FE4E00A6258D /* sdl_font.cpp */,
-				B5F9606826A6FE5200A6258D /* sdl_font.h */,
-				B5F9605B26A6FE5100A6258D /* sdl_geometry.cpp */,
-				B5F9604226A6FE5000A6258D /* sdl_geometry.h */,
-				B5F9603326A6FE4F00A6258D /* shadowcasting.cpp */,
-				B5F9603426A6FE4F00A6258D /* smart_controller_ui.cpp */,
-				B5F9606326A6FE5100A6258D /* smart_controller_ui.h */,
-				B5F9605D26A6FE5100A6258D /* string_id_utils.h */,
-				B5F9604C26A6FE5000A6258D /* string_id.cpp */,
-				B5F9602326A6FE4E00A6258D /* talker_avatar.cpp */,
-				B5F9602526A6FE4E00A6258D /* talker_avatar.h */,
-				B5F9602C26A6FE4E00A6258D /* talker_character.cpp */,
-				B5F9602D26A6FE4E00A6258D /* talker_character.h */,
-				B5F9606426A6FE5200A6258D /* talker_npc.cpp */,
-				B5F9603D26A6FE4F00A6258D /* talker_npc.h */,
-				B5F9604F26A6FE5000A6258D /* talker.h */,
-				B5F9604926A6FE5000A6258D /* temp_crafting_inventory.cpp */,
-				B5F9604D26A6FE5000A6258D /* temp_crafting_inventory.h */,
-				B5F9604026A6FE4F00A6258D /* to_string_id.h */,
-				B5F9604126A6FE5000A6258D /* ui_manager.cpp */,
-				B5F9606126A6FE5100A6258D /* ui_manager.h */,
-				B5F9602E26A6FE4E00A6258D /* units_fwd.h */,
-				B5F9603A26A6FE4F00A6258D /* units_utility.cpp */,
-				B5F9604726A6FE5000A6258D /* units_utility.h */,
-				B5F9602F26A6FE4E00A6258D /* viewer.h */,
-				B5F9604B26A6FE5000A6258D /* weather_type.cpp */,
-				B5F9604826A6FE5000A6258D /* weather_type.h */,
+				B5FD66F0270C929D00D202ED /* artifact.cpp */,
+				B5FD66F3270C929D00D202ED /* artifact.h */,
+				B5FD66F2270C929D00D202ED /* compatibility.h */,
+				B5FD66EE270C929D00D202ED /* ime.cpp */,
+				B5FD66EF270C929D00D202ED /* ime.h */,
+				B5FD66F1270C929D00D202ED /* weather_data.cpp */,
 				D0AA27383EE381A8A21F0809 /* action.cpp */,
 				D0AA2512E3E3965FEB977A0C /* action.h */,
 				D0AA2F64029393EC36374232 /* active_item_cache.cpp */,
@@ -2590,6 +2410,7 @@
 			files = (
 				B51597DF2634833A008BFD0C /* Main.storyboard in Resources */,
 				B50B449C25A24FB700628243 /* Assets.xcassets in Resources */,
+				B5F27ECE270C937700227AB4 /* Assets.xcassets in Resources */,
 				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
 				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
@@ -2607,6 +2428,7 @@
 			files = (
 				B51597E02634833A008BFD0C /* Main.storyboard in Resources */,
 				B58679EE260402B600EACF2C /* Assets.xcassets in Resources */,
+				B5F27ECF270C98D300227AB4 /* Assets.xcassets in Resources */,
 				B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2790,7 +2612,6 @@
 				D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
 				D0AA2186F5B79EB934B96224 /* action.cpp in Sources */,
 				D0AA2BFC4B878E87FDEB13A7 /* active_item_cache.cpp in Sources */,
-				B5F9608626A6FE5200A6258D /* reachability_cache.cpp in Sources */,
 				D0AA2E85ECE039C8281ECD6A /* activity_handlers.cpp in Sources */,
 				D0AA20FDF879A5C4DA7355CA /* activity_item_handling.cpp in Sources */,
 				D0AA20299EAAB74060BC5965 /* activity_type.cpp in Sources */,
@@ -2800,7 +2621,6 @@
 				D0AA29C8CDEE202AB860F1D6 /* advanced_inv_pane.cpp in Sources */,
 				D0AA29146840A94280BDA8D0 /* advanced_inv.cpp in Sources */,
 				D0AA26F213D12DD5008B8A65 /* ammo_effect.cpp in Sources */,
-				B5F9607326A6FE5200A6258D /* disease.cpp in Sources */,
 				D0AA22FA0B879FDAFE5358F4 /* ammo.cpp in Sources */,
 				D0AA2CD2AB040184A28764DE /* anatomy.cpp in Sources */,
 				D0AA213F083745E750A60939 /* animation.cpp in Sources */,
@@ -2816,12 +2636,7 @@
 				D0AA2B5C887C157D33045170 /* behavior.cpp in Sources */,
 				D0AA244A6FB907386CE068FE /* bionics_ui.cpp in Sources */,
 				D0AA23FF3A7B082DC465C2CE /* bionics.cpp in Sources */,
-				B5F9607C26A6FE5200A6258D /* monster_oracle.cpp in Sources */,
-				B5F9608726A6FE5200A6258D /* past_games_info.cpp in Sources */,
 				D0AA2FD4C06CD19D63651201 /* bodypart.cpp in Sources */,
-				B5F9607826A6FE5200A6258D /* shadowcasting.cpp in Sources */,
-				B5F9607426A6FE5200A6258D /* ascii_art.cpp in Sources */,
-				B5F9608D26A6FE5200A6258D /* item_pocket.cpp in Sources */,
 				D0AA233744A1DDCCD6C7653E /* bonuses.cpp in Sources */,
 				D0AA2728294755AF4E205248 /* calendar.cpp in Sources */,
 				D0AA211A1172AF5B77FB62F3 /* cata_tiles.cpp in Sources */,
@@ -2829,7 +2644,6 @@
 				D0AA2175BF6FE0D45CBE63B8 /* cata_variant.cpp in Sources */,
 				D0AA2706BD428D56AC896313 /* catacharset.cpp in Sources */,
 				D0AA219CE1B6FC8C4FE9B19D /* char_validity_check.cpp in Sources */,
-				B5F9608426A6FE5200A6258D /* level_cache.cpp in Sources */,
 				D0AA247E9CBF930051412629 /* character_martial_arts.cpp in Sources */,
 				D0AA2637CF7464FBE6149736 /* character.cpp in Sources */,
 				D0AA2A2655AD8B2B8AE3D107 /* clothing_mod.cpp in Sources */,
@@ -2841,22 +2655,19 @@
 				D0AA2F0D32C72BB69571C84D /* construction_category.cpp in Sources */,
 				D0AA265C9BBE5A6A78748163 /* construction.cpp in Sources */,
 				D0AA2AA3A574071474CA54C0 /* consumption.cpp in Sources */,
+				B5FD66F6270C929D00D202ED /* weather_data.cpp in Sources */,
 				D0AA21410250F62DEA21E069 /* coordinate_conversions.cpp in Sources */,
 				D0AA282F4CAE17F16CF1D96C /* craft_command.cpp in Sources */,
-				B5F9607F26A6FE5200A6258D /* move_mode.cpp in Sources */,
 				D0AA2A98C58908EC3E4FEA3E /* crafting_gui.cpp in Sources */,
 				D0AA20444E3ED0EC347B9275 /* crafting.cpp in Sources */,
 				D0AA25B0B2E944FFAF5ECF5D /* crash.cpp in Sources */,
 				D0AA2AC2288AC29193DA319A /* creature_tracker.cpp in Sources */,
 				D0AA2952D44FC8AD6979F6C1 /* creature.cpp in Sources */,
-				B5F9607626A6FE5200A6258D /* advanced_inv_pagination.cpp in Sources */,
-				B5F9607926A6FE5200A6258D /* smart_controller_ui.cpp in Sources */,
 				D0AA2D880CF3B9FF6A25C483 /* cursesport.cpp in Sources */,
 				D0AA22253432DE32A6F64BA6 /* damage.cpp in Sources */,
 				D0AA2AF3D0BCC443F26AAAD3 /* debug_menu.cpp in Sources */,
 				D0AA26851FF60A2CFD0CCCCA /* debug.cpp in Sources */,
 				D0AA2C1A44416D5183C77851 /* dependency_tree.cpp in Sources */,
-				B5F9607026A6FE5200A6258D /* item_contents.cpp in Sources */,
 				D0AA2F089168CB270991DB0B /* descriptions.cpp in Sources */,
 				D0AA2D018B1ECD6DB9EF274B /* dialogue_win.cpp in Sources */,
 				D0AA2D2D794143014F85B97F /* dispersion.cpp in Sources */,
@@ -2865,23 +2676,20 @@
 				D0AA2D62DF0C71A2AEBF3D6B /* dump.cpp in Sources */,
 				D0AA21C748CEDC0826EDFA8D /* editmap.cpp in Sources */,
 				D0AA262F486DDBB32985AE94 /* effect.cpp in Sources */,
-				B5F9608026A6FE5200A6258D /* event_field_transformations.cpp in Sources */,
 				D0AA219ECCCD82092F2DC9F4 /* emit.cpp in Sources */,
 				D0AA28264236FB306AD29F34 /* event_bus.cpp in Sources */,
 				D0AA2EBCE275077BB490A386 /* event_statistics.cpp in Sources */,
 				D0AA20DD18F8D0A6B6DEEFC1 /* event.cpp in Sources */,
-				B5F9607D26A6FE5200A6258D /* proficiency.cpp in Sources */,
 				D0AA2804914276BAC43D174A /* explosion.cpp in Sources */,
+				B5FD66F5270C929D00D202ED /* artifact.cpp in Sources */,
 				D0AA2763356EDAB0BA241A39 /* faction_camp.cpp in Sources */,
 				D0AA2F48C04D144499EA026C /* faction.cpp in Sources */,
 				D0AA237228733EBEC4F1B873 /* fault.cpp in Sources */,
 				D0AA24CEF49B3AA0E064B12A /* field_type.cpp in Sources */,
-				B5F9607A26A6FE5200A6258D /* dialogue_chatbin.cpp in Sources */,
 				D0AA2C6C718E21CF80CE9D6B /* field.cpp in Sources */,
 				D0AA24D4DED28924C2A2C2F3 /* filesystem.cpp in Sources */,
 				D0AA2021BB2DFB19A2E6497E /* flag.cpp in Sources */,
 				D0AA224F9A9A1200701E531B /* fungal_effects.cpp in Sources */,
-				B5F9608126A6FE5200A6258D /* temp_crafting_inventory.cpp in Sources */,
 				D0AA29D8D86059FA8F956949 /* game_inventory.cpp in Sources */,
 				D0AA22AA654B552A62F0BABF /* game_ui.cpp in Sources */,
 				D0AA2617F6A8FCEA990880A7 /* game.cpp in Sources */,
@@ -2897,23 +2705,15 @@
 				D0AA2E0738984A5AF2F5A59F /* iexamine.cpp in Sources */,
 				D0AA2C27560A05E3DED50C39 /* init.cpp in Sources */,
 				D0AA2578C9E1B254A49ADF54 /* input.cpp in Sources */,
-				B5F9608A26A6FE5200A6258D /* character_oracle.cpp in Sources */,
 				D0AA24CA135FF637A9E7A81B /* inventory_ui.cpp in Sources */,
-				B5F9606E26A6FE5200A6258D /* character_crafting.cpp in Sources */,
 				D0AA26D7C5CE960A69D5BEE0 /* inventory.cpp in Sources */,
 				D0AA2AC767B2881964CAEE0A /* item_action.cpp in Sources */,
-				B5F9607126A6FE5200A6258D /* talker_avatar.cpp in Sources */,
-				B5F9608B26A6FE5200A6258D /* activity_tracker.cpp in Sources */,
-				B5F9607B26A6FE5200A6258D /* units_utility.cpp in Sources */,
 				D0AA23F72280FADCB72201D5 /* item_category.cpp in Sources */,
 				D0AA2328F89A4397F7607408 /* item_factory.cpp in Sources */,
 				D0AA27BADB39E419927E6B66 /* item_group.cpp in Sources */,
-				B5F9606D26A6FE5200A6258D /* construction_group.cpp in Sources */,
 				D0AA2C8F966D4ED2D74E99D5 /* item_location.cpp in Sources */,
 				B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */,
-				B5F9607E26A6FE5200A6258D /* ui_manager.cpp in Sources */,
 				D0AA2926C346AE663463D57C /* item_search.cpp in Sources */,
-				B5F9608826A6FE5200A6258D /* sdl_geometry.cpp in Sources */,
 				D0AA2178CDEAD55BA063CCFA /* item_stack.cpp in Sources */,
 				D0AA29F5EEAE6D475BE83259 /* item.cpp in Sources */,
 				D0AA24FC1640C2D95399C9F2 /* iteminfo_query.cpp in Sources */,
@@ -2933,6 +2733,7 @@
 				D0AA293EC80ADA7E3F14FC67 /* lightmap.cpp in Sources */,
 				D0AA295173178B3E0ECA1783 /* line.cpp in Sources */,
 				D0AA2F1978CFE39C84921E2C /* live_view.cpp in Sources */,
+				B5FD66F4270C929D00D202ED /* ime.cpp in Sources */,
 				D0AA256247E6223DE707642F /* loading_ui.cpp in Sources */,
 				D0AA2C2CB8FC438C1A48EE26 /* lru_cache.cpp in Sources */,
 				D0AA2E8C41DA42B37D4153AF /* magic_enchantment.cpp in Sources */,
@@ -2949,13 +2750,10 @@
 				D0AA258F7E4CC2071622F331 /* map_selector.cpp in Sources */,
 				D0AA2E68B70DB5C1EF49FF39 /* map.cpp in Sources */,
 				D0AA261283F7564666FE7D06 /* mapbuffer.cpp in Sources */,
-				B5F9608526A6FE5200A6258D /* cached_options.cpp in Sources */,
 				D0AA2A1BF9744C2A021F60DD /* mapdata.cpp in Sources */,
 				D0AA26F80EB6C1FE68D6107A /* mapgen_functions.cpp in Sources */,
 				D0AA20A44CC1C60137D0366C /* mapgen.cpp in Sources */,
 				D0AA29B61B71B6C2979F6C40 /* mapgendata.cpp in Sources */,
-				B5F9607226A6FE5200A6258D /* activity_actor.cpp in Sources */,
-				B5F9608E26A6FE5200A6258D /* character_id.cpp in Sources */,
 				D0AA2A9DF94E8A9DCDF5D2B3 /* mapgenformat.cpp in Sources */,
 				D0AA2FAB5DFBB4F9A23AC3BE /* mapsharing.cpp in Sources */,
 				D0AA2E241FB7229ABC0164CA /* martialarts.cpp in Sources */,
@@ -2963,7 +2761,6 @@
 				D0AA2805361525E62DE35EA7 /* mattack_actors.cpp in Sources */,
 				D0AA2EDEE345BF71D0A5F7CB /* melee.cpp in Sources */,
 				D0AA2BE0F5E64112BAB215DF /* memorial_logger.cpp in Sources */,
-				B5F9608F26A6FE5200A6258D /* achievement.cpp in Sources */,
 				D0AA2EECDF5A9542DE7FB959 /* messages.cpp in Sources */,
 				D0AA26BD530F68DCC7883C8E /* mission_companion.cpp in Sources */,
 				D0AA20C57638AB4F4AC695DA /* mission_end.cpp in Sources */,
@@ -2994,7 +2791,6 @@
 				D0AA2882B9D51B426F0AD230 /* mutation_ui.cpp in Sources */,
 				D0AA210775A620CB85CC7D0C /* mutation.cpp in Sources */,
 				D0AA23EA22B3C8EF23F58A72 /* name.cpp in Sources */,
-				B5F9606F26A6FE5200A6258D /* butchery_requirements.cpp in Sources */,
 				D0AA2F0475CF592384B01CBE /* ncurses_def.cpp in Sources */,
 				D0AA2F311A83FA88E6264CC4 /* newcharacter.cpp in Sources */,
 				D0AA2FA05F747496DAD49E77 /* npc_class.cpp in Sources */,
@@ -3067,21 +2863,15 @@
 				D0AA2B0CC04C38C59838A29D /* teleport.cpp in Sources */,
 				D0AA253984B33CCDB8682F88 /* text_snippets.cpp in Sources */,
 				D0AA21E9E2F0D869876C4437 /* tileray.cpp in Sources */,
-				B5F9608926A6FE5200A6258D /* effect_source.cpp in Sources */,
-				B5F9608C26A6FE5200A6258D /* talker_npc.cpp in Sources */,
 				D0AA2EA85C5AF29718EEF2D7 /* timed_event.cpp in Sources */,
 				D0AA2C0F83E4BDA89B4FB4FA /* trait_group.cpp in Sources */,
-				B5F9608326A6FE5200A6258D /* string_id.cpp in Sources */,
 				B5A5BEF625F7F9E200EEEA0F /* path_utils.m in Sources */,
 				D0AA2DBBA56A2228F0A51CC6 /* translations.cpp in Sources */,
 				D0AA26F11EB82D8354E5A55A /* trap.cpp in Sources */,
 				D0AA22C3FDDB08C78AE9ADB0 /* trapfunc.cpp in Sources */,
-				B5F9607526A6FE5200A6258D /* talker_character.cpp in Sources */,
 				D0AA2572109239344EF6FDB8 /* turret.cpp in Sources */,
-				B5F9608226A6FE5200A6258D /* weather_type.cpp in Sources */,
 				D0AA2925ADAE1274B8616A12 /* ui.cpp in Sources */,
 				D0AA20AFA335CE6C4E55A692 /* units.cpp in Sources */,
-				B5F9607726A6FE5200A6258D /* sdl_font.cpp in Sources */,
 				D0AA2C8BD2B6176FB00832CE /* veh_interact.cpp in Sources */,
 				D0AA2A23B76124C17A6F701C /* veh_type.cpp in Sources */,
 				D0AA2A83F34218F7296CB63F /* veh_utils.cpp in Sources */,
@@ -3443,7 +3233,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3462,8 +3252,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
-				MARKETING_VERSION = 2.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
+				MARKETING_VERSION = 1.2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
@@ -3483,7 +3273,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3502,8 +3292,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
-				MARKETING_VERSION = 2.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
+				MARKETING_VERSION = 1.2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
@@ -3522,7 +3312,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3538,8 +3328,8 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
+				MARKETING_VERSION = 1.2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
@@ -3562,7 +3352,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3578,8 +3368,8 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
+				MARKETING_VERSION = 1.2.5;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA;
 				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";

@@ -90,7 +90,7 @@
 
 -(void)previousVersion:(id)sender
 {
-    [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://apps.apple.com/app/cataclysm-roguelike-rpg-0-e/id1547835881"]];
+    [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://apps.apple.com/app/cataclysm-roguelike-rpg-0-f/id1577366679"]];
 }
 
 -(void)_watchProgressForURL:(NSURL*)url finishingWith:(SEL)selector
