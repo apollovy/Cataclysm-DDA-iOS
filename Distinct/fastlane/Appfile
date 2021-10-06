@@ -1,4 +1,4 @@
-app_identifier("tk.apollov.CDDA0F") # The bundle identifier of your app
+app_identifier("tk.apollov.CBN") # The bundle identifier of your app
 apple_id("apollovy@gmail.com") # Your Apple email address
 
 itc_team_id("122534743") # App Store Connect Team ID

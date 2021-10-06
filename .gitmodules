@@ -10,12 +10,12 @@
 [submodule "Libraries/SDL_mixer"]
 	path = Libraries/SDL_mixer
 	url = git@github.com:apollovy/SDL_mixer.git
-[submodule "Libraries/Cataclysm-DDA"]
-	path = Libraries/Cataclysm-DDA
-	url = git@github.com:CleverRaven/Cataclysm-DDA.git
 [submodule "Libraries/JSController"]
 	path = Libraries/JSController
 	url = git@github.com:jasarien/JSController.git
 [submodule "Common"]
 	path = Common
 	url = git@github.com:apollovy/Cataclysm-DDA-iOS-commons.git
+[submodule "Libraries/Cataclysm-BN"]
+	path = Libraries/Cataclysm-BN
+	url = git@github.com:cataclysmbnteam/Cataclysm-BN.git

@@ -4,6 +4,7 @@
 
 void no_exit(int status){}
 #define exit no_exit
+#include "runtime_handlers.h"
 #include "main.cpp"
 #undef main
 
@@ -13,15 +14,27 @@ void no_exit(int status){}
 #include "MainViewController.h"
 
 // https://stackoverflow.com/a/15318065/674557
-const char** cArrayFromNSArray(NSArray<NSString*>* array)
+char** cArrayFromNSArray(NSArray* array)
 {
     int i, count = array.count;
-    const char** cargs = (const char**) malloc(sizeof(char*) * (count + 1));
+    char** cargs = (char**) malloc(sizeof(char*) * (count + 1));
     for(i = 0; i < count; i++) {
-        cargs[i] = array[i].UTF8String;
+        NSString *s = array[i];
+        const char *cstr = s.UTF8String;
+        int len = strlen(cstr);
+        char* cstr_copy = (char*) malloc(sizeof(char) * (len + 1));
+        strcpy(cstr_copy, cstr);
+        cargs[i] = cstr_copy;
     }
     cargs[i] = NULL;
     return cargs;
+}
+
+void exit_handler( int status )
+{
+    deinitDebug();
+    g.reset();
+    catacurses::endwin();
 }
 
 extern "C"
@@ -37,8 +50,8 @@ int CDDA_iOS_main(NSString* documentPath)
         
     ]];
     int newArgumentsCount = newArguments.count;
-    const char** stringArgs = cArrayFromNSArray(newArguments);
-
+    char** stringArgs = cArrayFromNSArray(newArguments);
+    
     SDL_iPhoneSetEventPump(SDL_TRUE);
     int exitCode = CDDA_main(newArgumentsCount, stringArgs);
     SDL_iPhoneSetEventPump(SDL_FALSE);
@@ -49,7 +62,7 @@ int CDDA_iOS_main(NSString* documentPath)
         window.rootViewController = vc;
         [window makeKeyAndVisible];
     });
-
+    
     return exitCode;
 }
 
