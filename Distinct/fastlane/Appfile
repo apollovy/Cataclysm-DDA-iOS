@@ -1,5 +1,5 @@
 app_identifier("tk.apollov.CDDA") # The bundle identifier of your app
-apple_id("apollovy@gmail.com") # Your Apple email address
+apple_id("apollovy@icloud.com") # Your Apple email address
 
 itc_team_id("122534743") # App Store Connect Team ID
 team_id("3NJUD9MLAB") # Developer Portal Team ID
