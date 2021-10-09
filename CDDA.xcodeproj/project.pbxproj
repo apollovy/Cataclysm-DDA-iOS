@@ -176,7 +176,6 @@
 		B5966B23270E11E0002163AD /* pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A5F270E11D5002163AD /* pathfinding.cpp */; };
 		B5966B24270E11E0002163AD /* string_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A61270E11D5002163AD /* string_utils.cpp */; };
 		B5966B25270E11E0002163AD /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A62270E11D6002163AD /* vehicle.cpp */; };
-		B5966B26270E11E0002163AD /* newcharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A65270E11D6002163AD /* newcharacter.cpp */; };
 		B5966B27270E11E0002163AD /* skill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A66270E11D6002163AD /* skill.cpp */; };
 		B5966B28270E11E0002163AD /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A67270E11D6002163AD /* output.cpp */; };
 		B5966B29270E11E0002163AD /* safemode_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A68270E11D6002163AD /* safemode_ui.cpp */; };
@@ -360,6 +359,7 @@
 		B5B7F8D62602C86B0007594B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
+		B5DDEA8B2711BF7B0051D4D1 /* newcharacter-override.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5DDEA8A2711BF7B0051D4D1 /* newcharacter-override.cpp */; };
 		B5F97C67259C08B600C5A910 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
 		B5FA7C03270CD09C00A1655A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FA7BEC270CD09C00A1655A /* Assets.xcassets */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
@@ -1291,6 +1291,7 @@
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-BN/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		B5CF696825F38BC3009F929E /* CDDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CDDA.entitlements; sourceTree = "<group>"; };
+		B5DDEA8A2711BF7B0051D4D1 /* newcharacter-override.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "newcharacter-override.cpp"; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B5FA7BEC270CD09C00A1655A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1391,6 +1392,7 @@
 			isa = PBXGroup;
 			children = (
 				B531B869270E19E700155C37 /* runtime_handlers.h */,
+				B5DDEA8A2711BF7B0051D4D1 /* newcharacter-override.cpp */,
 			);
 			path = overrides;
 			sourceTree = "<group>";
@@ -2835,6 +2837,7 @@
 				B5966AD8270E11E0002163AD /* path_info.cpp in Sources */,
 				B5966CAE270E121D002163AD /* init.cpp in Sources */,
 				B5966CDF270E121D002163AD /* monattack.cpp in Sources */,
+				B5DDEA8B2711BF7B0051D4D1 /* newcharacter-override.cpp in Sources */,
 				B5966CA1270E121C002163AD /* cursesport.cpp in Sources */,
 				B5966B01270E11E0002163AD /* mutation_data.cpp in Sources */,
 				B5966CBF270E121D002163AD /* memorial_logger.cpp in Sources */,
@@ -2865,7 +2868,6 @@
 				B5966B27270E11E0002163AD /* skill.cpp in Sources */,
 				B5966AEC270E11E0002163AD /* units.cpp in Sources */,
 				B5966B33270E11E1002163AD /* overmap_ui.cpp in Sources */,
-				B5966B26270E11E0002163AD /* newcharacter.cpp in Sources */,
 				B5966AF1270E11E0002163AD /* morale_types.cpp in Sources */,
 				B5966CDE270E121D002163AD /* mondefense.cpp in Sources */,
 				B5966C91270E121C002163AD /* crash.cpp in Sources */,
@@ -3412,7 +3414,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2001;
+				CURRENT_PROJECT_VERSION = 2002;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3428,7 +3430,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3449,7 +3451,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2001;
+				CURRENT_PROJECT_VERSION = 2002;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3465,7 +3467,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3485,7 +3487,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2001;
+				CURRENT_PROJECT_VERSION = 2002;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3501,7 +3503,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3525,7 +3527,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2001;
+				CURRENT_PROJECT_VERSION = 2002;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3541,7 +3543,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = CDDA;
 				PROVISIONING_PROFILE_SPECIFIER = "";
