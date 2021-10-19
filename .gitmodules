@@ -18,4 +18,4 @@
 	url = git@github.com:apollovy/Cataclysm-DDA-iOS-commons.git
 [submodule "Libraries/Cataclysm-BN"]
 	path = Libraries/Cataclysm-BN
-	url = git@github.com:cataclysmbnteam/Cataclysm-BN.git
+	url = git@github.com:apollovy/Cataclysm-BN.git
