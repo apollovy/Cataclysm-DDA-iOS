@@ -15,6 +15,8 @@
 		B51597DF2634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B51598222634894D008BFD0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
+		B5293F77275FF34C00E4B42E /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5293F5F275FF34C00E4B42E /* simple_pathfinding.cpp */; };
+		B5293F78275FF34C00E4B42E /* vehicle_autodrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5293F76275FF34C00E4B42E /* vehicle_autodrive.cpp */; };
 		B5312A1425A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B5412CF42605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
@@ -612,6 +614,8 @@
 		B515981D26348784008BFD0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B515981E26348785008BFD0C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5293F5F275FF34C00E4B42E /* simple_pathfinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simple_pathfinding.cpp; path = "Libraries/Cataclysm-DDA/src/simple_pathfinding.cpp"; sourceTree = SOURCE_ROOT; };
+		B5293F76275FF34C00E4B42E /* vehicle_autodrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle_autodrive.cpp; path = "Libraries/Cataclysm-DDA/src/vehicle_autodrive.cpp"; sourceTree = SOURCE_ROOT; };
 		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
 		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
@@ -1649,6 +1653,8 @@
 		D0AA25121479D716E30A5372 /* Cataclysm-DDA */ = {
 			isa = PBXGroup;
 			children = (
+				B5293F5F275FF34C00E4B42E /* simple_pathfinding.cpp */,
+				B5293F76275FF34C00E4B42E /* vehicle_autodrive.cpp */,
 				B5F9606A26A6FE5200A6258D /* achievement.cpp */,
 				B5F9603726A6FE4F00A6258D /* achievement.h */,
 				B5F9601C26A6FE4D00A6258D /* activity_actor_definitions.h */,
@@ -2729,7 +2735,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "echo compiling mo\ncd Libraries/Cataclysm-DDA/lang && ./compile_mo.sh\n";
+			shellScript = "echo compiling mo\ncd Libraries/Cataclysm-DDA/lang && mkdir -p mo && ./compile_mo.sh\n";
 		};
 		B5FD200725A57C0500CE613D /* Touch lang/mo dir to always have its copying to the product */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2818,6 +2824,7 @@
 				D0AA21FE3FB2534B72C5FA82 /* behavior_oracle.cpp in Sources */,
 				D0AA212D074F3574C1187937 /* behavior_strategy.cpp in Sources */,
 				D0AA2B5C887C157D33045170 /* behavior.cpp in Sources */,
+				B5293F78275FF34C00E4B42E /* vehicle_autodrive.cpp in Sources */,
 				D0AA244A6FB907386CE068FE /* bionics_ui.cpp in Sources */,
 				D0AA23FF3A7B082DC465C2CE /* bionics.cpp in Sources */,
 				B5F9607C26A6FE5200A6258D /* monster_oracle.cpp in Sources */,
@@ -3039,6 +3046,7 @@
 				D0AA20233DCC85BD2BB58BA7 /* recipe.cpp in Sources */,
 				B59EBBC425D09BC80093445F /* PageUpDownPanGestureRecognizer.swift in Sources */,
 				D0AA2ABBA3DC969A72063996 /* regional_settings.cpp in Sources */,
+				B5293F77275FF34C00E4B42E /* simple_pathfinding.cpp in Sources */,
 				D0AA2BE6915191AA45313C2E /* relic.cpp in Sources */,
 				D0AA28782F04DB8A9A808825 /* requirements.cpp in Sources */,
 				D0AA2F9CD2C0B516AE799C5C /* rng.cpp in Sources */,
@@ -3447,7 +3455,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 1018;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3466,7 +3474,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3487,7 +3495,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 1018;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3506,7 +3514,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Binaries/glib/lib",
 				);
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3526,7 +3534,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 1018;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3566,7 +3574,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1015;
+				CURRENT_PROJECT_VERSION = 1018;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
