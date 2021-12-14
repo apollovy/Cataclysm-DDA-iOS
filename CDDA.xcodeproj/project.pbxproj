@@ -12,6 +12,12 @@
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
+		B50EFDA8276904EF00B02C8E /* wisheffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9D276904EF00B02C8E /* wisheffect.cpp */; };
+		B50EFDA9276904EF00B02C8E /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
+		B50EFDAA276904EF00B02C8E /* ranged_aoe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA1276904EF00B02C8E /* ranged_aoe.cpp */; };
+		B50EFDAB276904EF00B02C8E /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA2276904EF00B02C8E /* shape.cpp */; };
+		B50EFDAC276904EF00B02C8E /* matrix_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA3276904EF00B02C8E /* matrix_math.cpp */; };
+		B50EFDAD276904EF00B02C8E /* vehicle_autodrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */; };
 		B51597DF2634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B51598222634894D008BFD0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
@@ -579,6 +585,20 @@
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-BN/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
+		B50EFD99276904EE00B02C8E /* shape_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape_impl.h; path = "Libraries/Cataclysm-BN/src/shape_impl.h"; sourceTree = "<group>"; };
+		B50EFD9B276904EE00B02C8E /* cuboid_rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cuboid_rectangle.h; path = "Libraries/Cataclysm-BN/src/cuboid_rectangle.h"; sourceTree = "<group>"; };
+		B50EFD9C276904EE00B02C8E /* matrix_math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matrix_math.h; path = "Libraries/Cataclysm-BN/src/matrix_math.h"; sourceTree = "<group>"; };
+		B50EFD9D276904EF00B02C8E /* wisheffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wisheffect.cpp; path = "Libraries/Cataclysm-BN/src/wisheffect.cpp"; sourceTree = "<group>"; };
+		B50EFD9E276904EF00B02C8E /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape.h; path = "Libraries/Cataclysm-BN/src/shape.h"; sourceTree = "<group>"; };
+		B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = simple_pathfinding.cpp; path = "Libraries/Cataclysm-BN/src/simple_pathfinding.cpp"; sourceTree = "<group>"; };
+		B50EFDA0276904EF00B02C8E /* active_tile_data_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = active_tile_data_def.h; path = "Libraries/Cataclysm-BN/src/active_tile_data_def.h"; sourceTree = "<group>"; };
+		B50EFDA1276904EF00B02C8E /* ranged_aoe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ranged_aoe.cpp; path = "Libraries/Cataclysm-BN/src/ranged_aoe.cpp"; sourceTree = "<group>"; };
+		B50EFDA2276904EF00B02C8E /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shape.cpp; path = "Libraries/Cataclysm-BN/src/shape.cpp"; sourceTree = "<group>"; };
+		B50EFDA3276904EF00B02C8E /* matrix_math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrix_math.cpp; path = "Libraries/Cataclysm-BN/src/matrix_math.cpp"; sourceTree = "<group>"; };
+		B50EFDA4276904EF00B02C8E /* units_angle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = units_angle.h; path = "Libraries/Cataclysm-BN/src/units_angle.h"; sourceTree = "<group>"; };
+		B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle_autodrive.cpp; path = "Libraries/Cataclysm-BN/src/vehicle_autodrive.cpp"; sourceTree = "<group>"; };
+		B50EFDA6276904EF00B02C8E /* point_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point_float.h; path = "Libraries/Cataclysm-BN/src/point_float.h"; sourceTree = "<group>"; };
+		B50EFDA7276904EF00B02C8E /* activity_actor_definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_actor_definitions.h; path = "Libraries/Cataclysm-BN/src/activity_actor_definitions.h"; sourceTree = "<group>"; };
 		B51597E12634833A008BFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51597FD2634834C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		B51597FF26348371008BFD0C /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/Main.strings; sourceTree = "<group>"; };
@@ -1438,6 +1458,20 @@
 		B558CB72270E0D3C00410845 /* Cataclysm-BN */ = {
 			isa = PBXGroup;
 			children = (
+				B50EFDA0276904EF00B02C8E /* active_tile_data_def.h */,
+				B50EFDA7276904EF00B02C8E /* activity_actor_definitions.h */,
+				B50EFD9B276904EE00B02C8E /* cuboid_rectangle.h */,
+				B50EFDA3276904EF00B02C8E /* matrix_math.cpp */,
+				B50EFD9C276904EE00B02C8E /* matrix_math.h */,
+				B50EFDA6276904EF00B02C8E /* point_float.h */,
+				B50EFDA1276904EF00B02C8E /* ranged_aoe.cpp */,
+				B50EFD99276904EE00B02C8E /* shape_impl.h */,
+				B50EFDA2276904EF00B02C8E /* shape.cpp */,
+				B50EFD9E276904EF00B02C8E /* shape.h */,
+				B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */,
+				B50EFDA4276904EF00B02C8E /* units_angle.h */,
+				B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */,
+				B50EFD9D276904EF00B02C8E /* wisheffect.cpp */,
 				B5966A34270E11D2002163AD /* achievement.cpp */,
 				B59669C1270E11CE002163AD /* achievement.h */,
 				B5966ACD270E11DF002163AD /* action.cpp */,
@@ -2857,6 +2891,7 @@
 				B5966CA5270E121C002163AD /* mission_ui.cpp in Sources */,
 				B5966CE4270E121D002163AD /* iuse_actor.cpp in Sources */,
 				B5966C85270E121C002163AD /* iexamine.cpp in Sources */,
+				B50EFDAA276904EF00B02C8E /* ranged_aoe.cpp in Sources */,
 				B5966AF6270E11E0002163AD /* recipe_dictionary.cpp in Sources */,
 				B5966CED270E121D002163AD /* dump.cpp in Sources */,
 				B5966C94270E121C002163AD /* ime.cpp in Sources */,
@@ -2867,6 +2902,7 @@
 				B5966AD2270E11E0002163AD /* sdl_utils.cpp in Sources */,
 				B5966CA8270E121C002163AD /* missiondef.cpp in Sources */,
 				B5966B27270E11E0002163AD /* skill.cpp in Sources */,
+				B50EFDA9276904EF00B02C8E /* simple_pathfinding.cpp in Sources */,
 				B5966AEC270E11E0002163AD /* units.cpp in Sources */,
 				B5966B33270E11E1002163AD /* overmap_ui.cpp in Sources */,
 				B5966AF1270E11E0002163AD /* morale_types.cpp in Sources */,
@@ -2902,14 +2938,17 @@
 				B5966CCA270E121D002163AD /* descriptions.cpp in Sources */,
 				B5A5BED925F7DEB500EEEA0F /* MainViewController.m in Sources */,
 				B5966B28270E11E0002163AD /* output.cpp in Sources */,
+				B50EFDAB276904EF00B02C8E /* shape.cpp in Sources */,
 				B5966CDB270E121D002163AD /* computer.cpp in Sources */,
 				B5966C87270E121C002163AD /* harvest.cpp in Sources */,
 				B5966B29270E11E0002163AD /* safemode_ui.cpp in Sources */,
 				B5966B4F270E11E1002163AD /* player_display.cpp in Sources */,
 				B5966B53270E11E1002163AD /* weather_gen.cpp in Sources */,
 				B531B85F270E16AE00155C37 /* artifact.cpp in Sources */,
+				B50EFDAD276904EF00B02C8E /* vehicle_autodrive.cpp in Sources */,
 				B5966B4B270E11E1002163AD /* requirements.cpp in Sources */,
 				B5966C98270E121C002163AD /* clzones.cpp in Sources */,
+				B50EFDAC276904EF00B02C8E /* matrix_math.cpp in Sources */,
 				B5966CD9270E121D002163AD /* gamemode_tutorial.cpp in Sources */,
 				B5966AEA270E11E0002163AD /* npc.cpp in Sources */,
 				B5966B25270E11E0002163AD /* vehicle.cpp in Sources */,
@@ -2998,6 +3037,7 @@
 				B5966C97270E121C002163AD /* field_type.cpp in Sources */,
 				B5966B58270E11E1002163AD /* submap.cpp in Sources */,
 				B5966B31270E11E1002163AD /* regional_settings.cpp in Sources */,
+				B50EFDA8276904EF00B02C8E /* wisheffect.cpp in Sources */,
 				B5966AF2270E11E0002163AD /* overmapbuffer.cpp in Sources */,
 				B59EBBA825D0849A0093445F /* SDL_uikitview+CDDA.m in Sources */,
 				B5966B09270E11E0002163AD /* sounds.cpp in Sources */,
@@ -3416,7 +3456,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2005;
+				CURRENT_PROJECT_VERSION = 2006;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3432,7 +3472,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3453,7 +3493,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2005;
+				CURRENT_PROJECT_VERSION = 2006;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3469,7 +3509,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3489,7 +3529,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2005;
+				CURRENT_PROJECT_VERSION = 2006;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3529,7 +3569,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2005;
+				CURRENT_PROJECT_VERSION = 2006;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
