@@ -9,6 +9,6 @@
 #ifndef version_h
 #define version_h
 
-const char* VERSION = "cbn-experimental-2021-12-12-1057/ios";
+const char* VERSION = "cbn-experimental-2021-12-28-1204/ios";
 
 #endif /* version_h */
