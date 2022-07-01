@@ -36,6 +36,7 @@
 		B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B555591025D5BC8F00CD2E90 /* Settings.bundle */; };
 		B5557CAF25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B558366A25A15A70009ED0DE /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
+		B558F960286FB54A000FB84F /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B558F95F286FB54A000FB84F /* game_dependent.mm */; };
 		B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
 		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
@@ -639,6 +640,8 @@
 		B54FDD7F2592A0AD00505231 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B555591025D5BC8F00CD2E90 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAndFixGestureRecognizer.swift; sourceTree = "<group>"; };
+		B558F948286FB54A000FB84F /* game_dependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_dependent.h; sourceTree = "<group>"; };
+		B558F95F286FB54A000FB84F /* game_dependent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_dependent.mm; sourceTree = "<group>"; };
 		B559EDAC25AB85A40065602D /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None@2x.png"; sourceTree = "<group>"; };
 		B560EE8925D9822000FDE1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UIControls.storyboard; sourceTree = "<group>"; };
 		B560EE8D25D9824800FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/UIControls.strings; sourceTree = "<group>"; };
@@ -1554,6 +1557,8 @@
 		B5B01B98259BF0480023AB00 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B558F948286FB54A000FB84F /* game_dependent.h */,
+				B558F95F286FB54A000FB84F /* game_dependent.mm */,
 				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
 				B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */,
@@ -3017,6 +3022,7 @@
 				D0AA2BE0F5E64112BAB215DF /* memorial_logger.cpp in Sources */,
 				B5F9608F26A6FE5200A6258D /* achievement.cpp in Sources */,
 				D0AA2EECDF5A9542DE7FB959 /* messages.cpp in Sources */,
+				B558F960286FB54A000FB84F /* game_dependent.mm in Sources */,
 				D0AA26BD530F68DCC7883C8E /* mission_companion.cpp in Sources */,
 				D0AA20C57638AB4F4AC695DA /* mission_end.cpp in Sources */,
 				D0AA28B1CC6CF90D5B0EB666 /* mission_place.cpp in Sources */,
