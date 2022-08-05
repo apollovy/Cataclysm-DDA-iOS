@@ -18,9 +18,6 @@
 		B50EFDAB276904EF00B02C8E /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA2276904EF00B02C8E /* shape.cpp */; };
 		B50EFDAC276904EF00B02C8E /* matrix_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA3276904EF00B02C8E /* matrix_math.cpp */; };
 		B50EFDAD276904EF00B02C8E /* vehicle_autodrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */; };
-		B51274EB289C46AE004882AA /* map_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51274E0289C46AC004882AA /* map_functions.cpp */; };
-		B51274EC289C46AE004882AA /* character_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51274E1289C46AC004882AA /* character_display.cpp */; };
-		B51274ED289C46AE004882AA /* character_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51274EA289C46AE004882AA /* character_functions.cpp */; };
 		B5127666289C5723004882AA /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B51597DF2634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
@@ -67,6 +64,7 @@
 		B5412D15260602D50034128C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
+		B5481520289D0255004E80FE /* player_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B548151F289D0255004E80FE /* player_display.cpp */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
 		B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -601,18 +599,6 @@
 		B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle_autodrive.cpp; path = "Libraries/Cataclysm-BN/src/vehicle_autodrive.cpp"; sourceTree = "<group>"; };
 		B50EFDA6276904EF00B02C8E /* point_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point_float.h; path = "Libraries/Cataclysm-BN/src/point_float.h"; sourceTree = "<group>"; };
 		B50EFDA7276904EF00B02C8E /* activity_actor_definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_actor_definitions.h; path = "Libraries/Cataclysm-BN/src/activity_actor_definitions.h"; sourceTree = "<group>"; };
-		B51274C9289C46AC004882AA /* character_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_functions.h; path = "Libraries/Cataclysm-BN/src/character_functions.h"; sourceTree = "<group>"; };
-		B51274E0289C46AC004882AA /* map_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = map_functions.cpp; path = "Libraries/Cataclysm-BN/src/map_functions.cpp"; sourceTree = "<group>"; };
-		B51274E1289C46AC004882AA /* character_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_display.cpp; path = "Libraries/Cataclysm-BN/src/character_display.cpp"; sourceTree = "<group>"; };
-		B51274E2289C46AC004882AA /* character_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_effects.h; path = "Libraries/Cataclysm-BN/src/character_effects.h"; sourceTree = "<group>"; };
-		B51274E3289C46AC004882AA /* mutation_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutation_data.h; path = "Libraries/Cataclysm-BN/src/mutation_data.h"; sourceTree = "<group>"; };
-		B51274E4289C46AD004882AA /* newcharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = newcharacter.h; path = "Libraries/Cataclysm-BN/src/newcharacter.h"; sourceTree = "<group>"; };
-		B51274E5289C46AD004882AA /* character_stat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_stat.h; path = "Libraries/Cataclysm-BN/src/character_stat.h"; sourceTree = "<group>"; };
-		B51274E6289C46AD004882AA /* character_display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_display.h; path = "Libraries/Cataclysm-BN/src/character_display.h"; sourceTree = "<group>"; };
-		B51274E7289C46AD004882AA /* character_encumbrance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_encumbrance.h; path = "Libraries/Cataclysm-BN/src/character_encumbrance.h"; sourceTree = "<group>"; };
-		B51274E8289C46AD004882AA /* consumption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = consumption.h; path = "Libraries/Cataclysm-BN/src/consumption.h"; sourceTree = "<group>"; };
-		B51274E9289C46AE004882AA /* map_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_functions.h; path = "Libraries/Cataclysm-BN/src/map_functions.h"; sourceTree = "<group>"; };
-		B51274EA289C46AE004882AA /* character_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_functions.cpp; path = "Libraries/Cataclysm-BN/src/character_functions.cpp"; sourceTree = "<group>"; };
 		B5127665289C5723004882AA /* version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = version.cpp; sourceTree = "<group>"; };
 		B51597E12634833A008BFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51597FD2634834C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -717,6 +703,7 @@
 		B5436B4825C4D18D006579B4 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
 		B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
+		B548151F289D0255004E80FE /* player_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player_display.cpp; path = "Libraries/Cataclysm-BN/src/player_display.cpp"; sourceTree = "<group>"; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B5493315259BE20000667062 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
@@ -1478,18 +1465,7 @@
 		B558CB72270E0D3C00410845 /* Cataclysm-BN */ = {
 			isa = PBXGroup;
 			children = (
-				B51274E1289C46AC004882AA /* character_display.cpp */,
-				B51274E6289C46AD004882AA /* character_display.h */,
-				B51274E2289C46AC004882AA /* character_effects.h */,
-				B51274E7289C46AD004882AA /* character_encumbrance.h */,
-				B51274EA289C46AE004882AA /* character_functions.cpp */,
-				B51274C9289C46AC004882AA /* character_functions.h */,
-				B51274E5289C46AD004882AA /* character_stat.h */,
-				B51274E8289C46AD004882AA /* consumption.h */,
-				B51274E0289C46AC004882AA /* map_functions.cpp */,
-				B51274E9289C46AE004882AA /* map_functions.h */,
-				B51274E3289C46AC004882AA /* mutation_data.h */,
-				B51274E4289C46AD004882AA /* newcharacter.h */,
+				B548151F289D0255004E80FE /* player_display.cpp */,
 				B523D75D289B05B000CD74AE /* explosion_queue.h */,
 				B523D75E289B05B000CD74AE /* generic_readers.h */,
 				B523D75C289B05B000CD74AE /* numeric_interval.h */,
@@ -2935,7 +2911,6 @@
 				B5966B5B270E11E1002163AD /* mapsharing.cpp in Sources */,
 				B5966CD5270E121D002163AD /* mission_end.cpp in Sources */,
 				B531B859270E16AE00155C37 /* addiction.cpp in Sources */,
-				B51274EC289C46AE004882AA /* character_display.cpp in Sources */,
 				B5966AD2270E11E0002163AD /* sdl_utils.cpp in Sources */,
 				B5966CA8270E121C002163AD /* missiondef.cpp in Sources */,
 				B5966B27270E11E0002163AD /* skill.cpp in Sources */,
@@ -3009,7 +2984,7 @@
 				B5966ADC270E11E0002163AD /* overmap_location.cpp in Sources */,
 				B5966AF7270E11E0002163AD /* translations.cpp in Sources */,
 				B5966C8A270E121C002163AD /* itype.cpp in Sources */,
-				B51274ED289C46AE004882AA /* character_functions.cpp in Sources */,
+				B5481520289D0255004E80FE /* player_display.cpp in Sources */,
 				B531B809270E168C00155C37 /* cata_utility.cpp in Sources */,
 				B5966B50270E11E1002163AD /* rotatable_symbols.cpp in Sources */,
 				B5966B30270E11E1002163AD /* veh_utils.cpp in Sources */,
@@ -3124,7 +3099,6 @@
 				B5966AD5270E11E0002163AD /* player_activity.cpp in Sources */,
 				B5966B1B270E11E0002163AD /* material.cpp in Sources */,
 				B5966C96270E121C002163AD /* condition.cpp in Sources */,
-				B51274EB289C46AE004882AA /* map_functions.cpp in Sources */,
 				B5966CCC270E121D002163AD /* dispersion.cpp in Sources */,
 				B5966B0F270E11E0002163AD /* vitamin.cpp in Sources */,
 				B5966AD1270E11E0002163AD /* sdl_font.cpp in Sources */,
@@ -3496,7 +3470,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2013;
+				CURRENT_PROJECT_VERSION = 2014;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3533,7 +3507,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2013;
+				CURRENT_PROJECT_VERSION = 2014;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3569,7 +3543,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2013;
+				CURRENT_PROJECT_VERSION = 2014;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3609,7 +3583,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2013;
+				CURRENT_PROJECT_VERSION = 2014;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
