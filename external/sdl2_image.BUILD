@@ -9,6 +9,7 @@ objc_library(
   deps = [
     "@sdl2",
   ],
+  copts = ["-DPNG_USES_IMAGEIO"],
   sdk_frameworks = [
     "CoreServices",
   ]
@@ -25,7 +26,7 @@ cc_library(
     "IMG_jxl.c",
     "IMG_lbm.c",
     "IMG_pcx.c",
-    "IMG_png.c",
+    #"IMG_png.c",
     "IMG_pnm.c",
     "IMG_qoi.c",
     "IMG_stb.c",
@@ -40,6 +41,7 @@ cc_library(
   ],
   hdrs = glob(["*.h"]),
   visibility = ["//visibility:public"],
+  local_defines = ["PNG_USES_IMAGEIO"],
   deps = [
     "@sdl2",
     ":sdl2_image_objc",

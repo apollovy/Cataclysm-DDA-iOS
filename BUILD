@@ -28,7 +28,6 @@ cc_library(
   includes = ["Libraries/Cataclysm-DDA/src/third-party", "Libraries/Cataclysm-DDA/src"],
   hdrs = glob(["Libraries/Cataclysm-DDA/src/**/*.h", "Libraries/Cataclysm-DDA/src/**/*.hpp", "Libraries/Cataclysm-DDA/src/main.cpp"]),
   defines = ["TILES", "SDL_SOUND", "LOCALIZE"],
-  data = [],
 )
 
 swift_library(
@@ -40,8 +39,11 @@ swift_library(
     "Common/source/ShowAndFixGestureRecognizer.swift",
   ],
   deps = ["@zip"],
+  data = [
+    "Common/Bundle/Base.lproj/UIControls.storyboard",
+  ],
   generates_header = True,
-  generated_header_name = "CDDA-Swift.h"
+  generated_header_name = "CDDA-Swift.h",
 )
 
 objc_library(
@@ -83,6 +85,10 @@ objc_library(
   ],
   includes = ["Common/source"],
   deps = ["@sdl2", "//Libraries/JSController", ":cdda_swift_common", ":cdda_objc_common_gamepad"],
+  data = [
+    "Common/Bundle/Base.lproj/Main.storyboard",
+    "Common/Bundle/JSDPad/dPad-None@2x.png",
+  ],
 )
 
 objc_library(
@@ -94,6 +100,9 @@ objc_library(
     "Distinct/source/MainViewController.h",
   ],
   deps = [":cdda_swift_common", ":cdda_objc_common"],
+  data = [
+    "Distinct/icon_1024x1024.png",
+  ],
 )
 
 objc_library(
@@ -106,6 +115,10 @@ objc_library(
   ],
   copts = ["-std=c++14"],
   deps = [":Cataclysm-DDA-lib", "@sdl2", ":cdda_objc_distinct"],
+  data = [
+    "Libraries/Cataclysm-DDA/data",
+    "Libraries/Cataclysm-DDA/gfx",
+  ],
 )
 
 ios_application(
@@ -119,5 +132,6 @@ ios_application(
   infoplists = [":Distinct/CDDA.plist"],
   version = ":version",
   visibility = ["//visibility:public"],
+  launch_storyboard = "Common/Bundle/Base.lproj/LaunchScreen.storyboard",
   deps = [":Cataclysm-DDA-lib", ":cdda_objc_common", ":cdda_objc_distinct", ":cdda_ios_main"],
 )
