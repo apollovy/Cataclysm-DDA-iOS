@@ -1,0 +1,12 @@
+cc_library(
+    name = "sdl2_mixer",
+    srcs = glob(["src/**/*.c"]),
+    hdrs = glob(["include/*.h", "src/**/*.h"]),
+    includes = ["include", "src", "src/codecs"],
+    copts = ["-Iinclude", "-Isrc", "-Isrc/codecs"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "@sdl2",
+    ],
+    include_prefix = "",
+)
