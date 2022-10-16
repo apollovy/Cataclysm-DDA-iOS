@@ -86,7 +86,7 @@ sdl_srcs = glob(
     include = [
         "src/hidapi/ios/*.c",
         "src/hidapi/ios/*.h",
-    ]
+    ],
 )
 
 # In general, we bundle SDL2.  However, on Linux that would require a header
@@ -110,4 +110,3 @@ cc_library(
     deps = ["sdl2_inner"],
     visibility = ["//visibility:public"],
 )
-

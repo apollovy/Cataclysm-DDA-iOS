@@ -109,4 +109,3 @@ cc_library(
     textual_hdrs = glob(["src/**/*.c"]),
     visibility = ["//visibility:public"],
 )
-
