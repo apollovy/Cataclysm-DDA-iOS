@@ -88,6 +88,7 @@ objc_library(
   data = [
     "Common/Bundle/Base.lproj/Main.storyboard",
     "Common/Bundle/JSDPad/dPad-None@2x.png",
+    "Common/Bundle/Settings.bundle",
   ],
 )
 
@@ -123,12 +124,12 @@ objc_library(
 
 ios_application(
   name = "Cataclysm-DDA",
-  bundle_id = "net.nornagon.Cataclysm-DDA-Experimental",
+  bundle_id = "net.nornagon.CDDA-Experimental",
   families = [
     "iphone",
     "ipad",
   ],
-  minimum_os_version = "9.0",
+  minimum_os_version = "13.0",
   infoplists = [":Distinct/CDDA.plist"],
   version = ":version",
   visibility = ["//visibility:public"],

@@ -26,7 +26,6 @@ cc_library(
     "IMG_jxl.c",
     "IMG_lbm.c",
     "IMG_pcx.c",
-    #"IMG_png.c",
     "IMG_pnm.c",
     "IMG_qoi.c",
     "IMG_stb.c",

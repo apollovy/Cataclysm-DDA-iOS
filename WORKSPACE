@@ -73,6 +73,22 @@ http_archive(
 )
 
 http_archive(
+  name = "ogg",
+  build_file = "ogg.BUILD",
+  sha256 = "def859277c68d5b2d3e237348c44c5276a241858b8e3fa357cabe1f17b4b85e5",
+  strip_prefix = "ogg-790939cacc9a571bd2d3ca6c8fd49ddce5435399",
+  urls = ["https://github.com/libsdl-org/ogg/archive/790939cacc9a571bd2d3ca6c8fd49ddce5435399.zip"],
+)
+
+http_archive(
+  name = "vorbis",
+  build_file = "vorbis.BUILD",
+  sha256 = "34c6ab5adfb1de665791aea43b18861b4db6d725de75918628b4ac4597cdfc49",
+  strip_prefix = "vorbis-b3d6249203b7deed0d28b6d9dddd39e2b4f133d5",
+  urls = ["https://github.com/libsdl-org/vorbis/archive/b3d6249203b7deed0d28b6d9dddd39e2b4f133d5.zip"],
+)
+
+http_archive(
     name = "sdl2_mixer",
     build_file = "sdl2_mixer.BUILD",
     sha256 = "e92ddea6042e32789f7227bf2735409e3943612f19fd31ed338f3681881fe8a1",
@@ -97,4 +113,12 @@ http_archive(
   sha256 = "6c95dba09199e0a640442bdb4cc94d8ec0846234b3083d9c7c33795454dda8c9",
   strip_prefix = "Zip-2.1.2",
   urls = ["https://github.com/marmelroy/Zip/archive/refs/tags/2.1.2.zip"],
+)
+
+http_archive(
+  name = "libpng",
+  build_file = "libpng.BUILD",
+  sha256 = "aoeu",
+  strip_prefix = "aoeu",
+  urls = ["https://github.com/libsdl-org/libpng/archive/999173059e2651fab2a0102eeba18748c4bd9827.zip"],
 )
