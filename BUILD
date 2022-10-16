@@ -122,6 +122,11 @@ objc_library(
   ],
 )
 
+filegroup(
+  name = "app_icon",
+  srcs = glob(["Distinct/Assets.xcassets/**"], exclude=["**/.DS_Store"]),
+)
+
 ios_application(
   name = "Cataclysm-DDA",
   bundle_id = "net.nornagon.CDDA-Experimental",
@@ -135,4 +140,6 @@ ios_application(
   visibility = ["//visibility:public"],
   launch_storyboard = "Common/Bundle/Base.lproj/LaunchScreen.storyboard",
   deps = [":Cataclysm-DDA-lib", ":cdda_objc_common", ":cdda_objc_distinct", ":cdda_ios_main"],
+  app_icons = [":app_icon"],
+  provisioning_profile = "9a4c6de6-ccee-4064-a5cd-1133f9dac8c7.mobileprovision",
 )
