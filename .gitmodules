@@ -1,6 +1,3 @@
-[submodule "Libraries/Cataclysm-DDA"]
-	path = Libraries/Cataclysm-DDA
-	url = git@github.com:CleverRaven/Cataclysm-DDA.git
 [submodule "Libraries/JSController"]
 	path = Libraries/JSController
 	url = git@github.com:jasarien/JSController.git

@@ -1,5 +1,6 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("cdda_version.bzl", "CDDA_SHASUM", "CDDA_VERSION")
 
 git_repository(
     name = "build_bazel_rules_apple",
@@ -13,17 +14,11 @@ http_archive(
     url = "https://github.com/bazelbuild/rules_swift/releases/download/1.2.0/rules_swift.1.2.0.tar.gz",
 )
 
-load(
-    "@build_bazel_rules_swift//swift:repositories.bzl",
-    "swift_rules_dependencies",
-)
+load("@build_bazel_rules_swift//swift:repositories.bzl", "swift_rules_dependencies")
 
 swift_rules_dependencies()
 
-load(
-    "@build_bazel_rules_swift//swift:extras.bzl",
-    "swift_rules_extra_dependencies",
-)
+load("@build_bazel_rules_swift//swift:extras.bzl", "swift_rules_extra_dependencies")
 
 swift_rules_extra_dependencies()
 
@@ -38,6 +33,8 @@ git_repository(
     remote = "https://github.com/bazelbuild/bazel-skylib.git",
     tag = "1.3.0",
 )
+
+## SDL2 + dependencies
 
 http_archive(
     name = "sdl2",
@@ -106,13 +103,19 @@ http_archive(
     urls = ["https://github.com/marmelroy/Zip/archive/refs/tags/2.1.2.zip"],
 )
 
+## CDDA
+
 http_archive(
-    name = "libpng",
-    build_file = "libpng.BUILD",
-    sha256 = "aoeu",
-    strip_prefix = "aoeu",
-    urls = ["https://github.com/libsdl-org/libpng/archive/999173059e2651fab2a0102eeba18748c4bd9827.zip"],
+    name = "cdda",
+    urls = ["https://github.com/CleverRaven/Cataclysm-DDA/archive/{}.zip".format(CDDA_VERSION)],
+    sha256 = CDDA_SHASUM,
+    strip_prefix = "Cataclysm-DDA-{}".format(CDDA_VERSION),
+    patches = ["@//:cdda.patch"],
+    patch_args = ["-p1"],
+    build_file = "cdda.BUILD",
 )
+
+## Tulsi (Xcode project generator)
 
 TULSI_COMMIT_HASH = "518f18da4948192c72074e07fa1dfe15858d40f4"
 

@@ -4,7 +4,7 @@
 
 void no_exit(int status){}
 #define exit no_exit
-#include "main.cpp"
+#include "external/cdda/src/main.cpp"
 #undef main
 
 #include "SDL.h"

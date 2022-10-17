@@ -8,25 +8,9 @@ apple_bundle_version(
     short_version_string = "1.0",
 )
 
-genrule(
-    name = "cdda_version_gen",
-    outs = ["version.h"],
-    cmd = "echo '#define VERSION \"testing\"' > \"$@\"",
-)
-
-cc_library(
-    name = "cdda_version",
-    hdrs = [":cdda_version_gen"],
-)
-
-cc_library(
-    name = "Cataclysm-DDA-lib",
-    srcs = glob(["Libraries/Cataclysm-DDA/src/**/*.cpp"], exclude = ["**/main.cpp"]),
-    copts = ["-ILibraries/Cataclysm-DDA/src"],
-    deps = [":cdda_version", "@sdl2", "@sdl2_image", "@sdl2_ttf", "@sdl2_mixer"],
-    includes = ["Libraries/Cataclysm-DDA/src/third-party", "Libraries/Cataclysm-DDA/src"],
-    hdrs = glob(["Libraries/Cataclysm-DDA/src/**/*.h", "Libraries/Cataclysm-DDA/src/**/*.hpp", "Libraries/Cataclysm-DDA/src/main.cpp"]),
-    defines = ["TILES", "SDL_SOUND", "LOCALIZE"],
+filegroup(
+    name = "common_bundle_assets",
+    srcs = glob(["Common/Bundle/Assets.xcassets/**"], exclude = ["**/.DS_Store"]),
 )
 
 swift_library(
@@ -40,6 +24,7 @@ swift_library(
     deps = ["@zip"],
     data = [
         "Common/Bundle/Base.lproj/UIControls.storyboard",
+        ":common_bundle_assets",
     ],
     generates_header = True,
     generated_header_name = "CDDA-Swift.h",
@@ -58,7 +43,7 @@ objc_library(
         "Common/source/SDL_char_utils.h",
     ],
     copts = ["-std=c++14"],
-    deps = [":Cataclysm-DDA-lib", "@sdl2", ":cdda_swift_common"],
+    deps = ["@cdda", "@sdl2", ":cdda_swift_common"],
 )
 
 objc_library(
@@ -113,11 +98,11 @@ objc_library(
     hdrs = [
         "Common/source/CDDA_iOS_main.h",
     ],
-    copts = ["-std=c++14"],
-    deps = [":Cataclysm-DDA-lib", "@sdl2", ":cdda_objc_distinct"],
+    copts = ["-std=gnu++14"],
+    deps = ["@cdda", "@sdl2", ":cdda_objc_distinct"],
     data = [
-        "Libraries/Cataclysm-DDA/data",
-        "Libraries/Cataclysm-DDA/gfx",
+        "@cdda//:data",
+        "@cdda//:gfx",
     ],
 )
 
@@ -127,18 +112,18 @@ filegroup(
 )
 
 ios_application(
-    name = "Cataclysm-DDA",
+    name = "cdda_ios",
     bundle_id = "net.nornagon.CDDA-Experimental",
     families = [
         "iphone",
         "ipad",
     ],
-    minimum_os_version = "13.0",
+    minimum_os_version = "11.0",
     infoplists = [":Distinct/CDDA.plist"],
     version = ":version",
     visibility = ["//visibility:public"],
     launch_storyboard = "Common/Bundle/Base.lproj/LaunchScreen.storyboard",
-    deps = [":Cataclysm-DDA-lib", ":cdda_objc_common", ":cdda_objc_distinct", ":cdda_ios_main"],
+    deps = ["@cdda", ":cdda_objc_common", ":cdda_objc_distinct", ":cdda_ios_main"],
     app_icons = [":app_icon"],
     provisioning_profile = "9a4c6de6-ccee-4064-a5cd-1133f9dac8c7.mobileprovision",
 )

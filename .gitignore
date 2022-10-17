@@ -167,3 +167,5 @@ Screenshots for app store/generated
 .ipynb_checkpoints
 
 *.mobileprovision
+
+bazel-*
