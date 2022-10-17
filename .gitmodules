@@ -1,6 +1,3 @@
-[submodule "Libraries/JSController"]
-	path = Libraries/JSController
-	url = git@github.com:jasarien/JSController.git
 [submodule "Common"]
 	path = Common
 	url = git@github.com:apollovy/Cataclysm-DDA-iOS-commons.git

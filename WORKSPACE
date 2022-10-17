@@ -95,6 +95,16 @@ http_archive(
     urls = ["https://download.savannah.gnu.org/releases/freetype/freetype-2.9.tar.gz"],
 )
 
+## ObjC / Swift deps
+
+http_archive(
+    name = "jscontroller",
+    build_file = "jscontroller.BUILD",
+    sha256 = "de28eb83d95cb7d5c225b01bed3d3d8bee9b609c6262ca51ed24b4dc45807b51",
+    strip_prefix = "JSController-3354a2ee3cd460583a0fce8cf637f69c378a15e1",
+    urls = ["https://github.com/jasarien/JSController/archive/3354a2ee3cd460583a0fce8cf637f69c378a15e1.zip"],
+)
+
 http_archive(
     name = "zip",
     build_file = "zip.BUILD",

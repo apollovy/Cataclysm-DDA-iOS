@@ -68,7 +68,7 @@ objc_library(
         "Common/source/path_utils.m",
     ],
     includes = ["Common/source"],
-    deps = ["@sdl2", "//Libraries/JSController", ":cdda_swift_common", ":cdda_objc_common_gamepad"],
+    deps = ["@sdl2", "@jscontroller", ":cdda_swift_common", ":cdda_objc_common_gamepad"],
     data = [
         "Common/Bundle/Base.lproj/Main.storyboard",
         "Common/Bundle/JSDPad/dPad-None@2x.png",
