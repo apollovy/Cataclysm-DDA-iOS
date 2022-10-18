@@ -103,7 +103,7 @@ objc_library(
     data = [
         "@cdda//:data",
         "@cdda//:gfx",
-    ],
+    ] + glob(["Common/Bundle/*.lproj/**"], exclude = ["Common/Bundle/Base.lproj/**"]),
 )
 
 filegroup(
