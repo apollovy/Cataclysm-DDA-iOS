@@ -3,17 +3,18 @@ objc_library(
     srcs = [
         "SDL_image.h",
     ],
+    copts = ["-DPNG_USES_IMAGEIO"],
     non_arc_srcs = [
         "IMG_ImageIO.m",
+    ],
+    sdk_frameworks = [
+        "CoreServices",
     ],
     deps = [
         "@sdl2",
     ],
-    copts = ["-DPNG_USES_IMAGEIO"],
-    sdk_frameworks = [
-        "CoreServices",
-    ],
 )
+
 cc_library(
     name = "sdl2_image",
     srcs = [
@@ -39,11 +40,11 @@ cc_library(
         "IMG_xxx.c",
     ],
     hdrs = glob(["*.h"]),
-    visibility = ["//visibility:public"],
-    local_defines = ["PNG_USES_IMAGEIO"],
-    deps = [
-        "@sdl2",
-        ":sdl2_image_objc",
-    ],
     include_prefix = "",
+    local_defines = ["PNG_USES_IMAGEIO"],
+    visibility = ["//visibility:public"],
+    deps = [
+        ":sdl2_image_objc",
+        "@sdl2",
+    ],
 )

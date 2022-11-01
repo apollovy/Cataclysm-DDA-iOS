@@ -104,9 +104,9 @@ cc_library(
 cc_library(
     name = "sdl2",
     hdrs = glob(["include/*.h"]),
+    include_prefix = "SDL",
     includes = ["."],
     strip_include_prefix = "include",
-    include_prefix = "SDL",
-    deps = ["sdl2_inner"],
     visibility = ["//visibility:public"],
+    deps = ["sdl2_inner"],
 )

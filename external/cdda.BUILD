@@ -6,7 +6,7 @@ genrule(
     cmd = "echo '#define VERSION \"{}\"' > \"$@\"".format(CDDA_VERSION),
 )
 
-LANGS = [x.split('/')[-1].split('.')[0] for x in glob(["lang/po/*.po"])]
+LANGS = [x.split("/")[-1].split(".")[0] for x in glob(["lang/po/*.po"])]
 
 [
     genrule(
@@ -15,7 +15,8 @@ LANGS = [x.split('/')[-1].split('.')[0] for x in glob(["lang/po/*.po"])]
         outs = ["lang/mo/{}/LC_MESSAGES/cataclysm-dda.mo".format(lang)],
         cmd = "msgfmt -f -o $@ $<",
     )
-    for lang in LANGS]
+    for lang in LANGS
+]
 
 filegroup(
     name = "cdda_mo",
@@ -38,12 +39,28 @@ cc_library(
         ],
         exclude = ["src/**/main.cpp"],
     ),
-    copts = ["-Iexternal/cdda/src"],
-    deps = [":cdda_version", "@sdl2", "@sdl2_image", "@sdl2_ttf", "@sdl2_mixer"],
-    includes = ["src", "src/third-party"],
     hdrs = glob(["src/**/*.h"]) + ["src/main.cpp"],
-    defines = ["TILES", "SDL_SOUND", "LOCALIZE"],
+    copts = ["-Iexternal/cdda/src"],
+    defines = [
+        "TILES",
+        "SDL_SOUND",
+        "LOCALIZE",
+    ],
+    includes = [
+        "src",
+        "src/third-party",
+    ],
     visibility = ["//visibility:public"],
+    deps = [
+        ":cdda_version",
+        "@sdl2",
+        "@sdl2_image",
+        "@sdl2_mixer",
+        "@sdl2_ttf",
+    ],
 )
 
-exports_files(["data", "gfx"])
+exports_files([
+    "data",
+    "gfx",
+])

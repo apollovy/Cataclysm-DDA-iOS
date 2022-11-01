@@ -12,17 +12,17 @@ cc_library(
 
 swift_c_module(
     name = "zip_c_mod",
-    deps = [":zip_c"],
     module_map = "Zip/minizip/module/module.modulemap",
     module_name = "Minizip",
+    deps = [":zip_c"],
 )
 
 swift_library(
     name = "zip",
-    module_name = "Zip",
     srcs = glob([
         "Zip/*.swift",
     ]),
+    module_name = "Zip",
     visibility = ["//visibility:public"],
     deps = [":zip_c_mod"],
 )
