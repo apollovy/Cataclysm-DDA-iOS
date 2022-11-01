@@ -1,5 +1,6 @@
 load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
 load("@build_bazel_rules_apple//apple:versioning.bzl", "apple_bundle_version")
+load("@build_bazel_rules_apple//apple:resources.bzl", "apple_resource_group")
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 apple_bundle_version(
@@ -90,6 +91,13 @@ objc_library(
     ],
 )
 
+apple_resource_group(
+    name = "cdda_mo",
+    structured_resources = [
+        "@cdda//:cdda_mo",
+    ],
+)
+
 objc_library(
     name = "cdda_ios_main",
     srcs = [
@@ -103,6 +111,7 @@ objc_library(
     data = [
         "@cdda//:data",
         "@cdda//:gfx",
+        ":cdda_mo",
     ] + glob(["Common/Bundle/*.lproj/**"], exclude = ["Common/Bundle/Base.lproj/**"]),
 )
 
