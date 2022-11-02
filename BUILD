@@ -149,6 +149,7 @@ ios_application(
     name = "cdda_ios",
     app_icons = [":app_icon"],
     bundle_id = "net.nornagon.CDDA-Experimental",
+    entitlements = "Distinct/CDDA.entitlements",
     families = [
         "iphone",
         "ipad",
