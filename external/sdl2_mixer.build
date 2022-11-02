@@ -1,0 +1,13 @@
+cc_library(
+    name = "sdl2_mixer",
+    srcs = glob(["src/**/*.c", "src/**/*.h"]),
+    hdrs = glob(["include/*.h"]),
+    includes = ["include"],
+    copts = ["-Iexternal/sdl2_mixer/include", "-Iexternal/sdl2_mixer/src", "-Iexternal/sdl2_mixer/src/codecs"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "@sdl2",
+        "@vorbis",
+    ],
+    local_defines = ["MUSIC_OGG"],
+)

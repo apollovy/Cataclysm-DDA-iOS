@@ -4,7 +4,7 @@
 
 void no_exit(int status){}
 #define exit no_exit
-#include "main.cpp"
+#include "external/cdda/src/main.cpp"
 #undef main
 
 #include "SDL.h"
@@ -30,9 +30,9 @@ extern "C"
 int CDDA_iOS_main(NSString* documentPath)
 {
     NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
-    NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
+    NSString* basepath = [[NSBundle mainBundle] bundlePath];
     NSArray<NSString*>* newArguments = [arguments arrayByAddingObjectsFromArray:@[
-        @"--datadir", datadir,
+        @"--basepath", basepath,
         @"--userdir", [documentPath stringByAppendingString:@"/"],
         
     ]];

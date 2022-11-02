@@ -1,0 +1,37 @@
+diff --git a/src/game.cpp b/src/game.cpp
+index 728fd364f3..faf14b262f 100644
+--- a/src/game.cpp
++++ b/src/game.cpp
+@@ -603,9 +603,11 @@ void game_ui::init_ui()
+     TERMX = get_terminal_width();
+     TERMY = get_terminal_height();
+ 
++    /*
+     get_options().get_option( "TERMINAL_X" ).setValue( TERMX * get_scaling_factor() );
+     get_options().get_option( "TERMINAL_Y" ).setValue( TERMY * get_scaling_factor() );
+     get_options().save();
++    */
+ #else
+     ensure_term_size();
+ 
+diff --git a/src/sdltiles.cpp b/src/sdltiles.cpp
+index 887897ef05..0077d6b9d7 100644
+--- a/src/sdltiles.cpp
++++ b/src/sdltiles.cpp
+@@ -4027,6 +4027,7 @@ bool is_draw_tiles_mode()
+ */
+ bool save_screenshot( const std::string &file_path )
+ {
++    /*
+     // Note: the viewport is returned by SDL and we don't have to manage its lifetime.
+     SDL_Rect viewport;
+ 
+@@ -4050,6 +4051,8 @@ bool save_screenshot( const std::string &file_path )
+     }
+ 
+     return true;
++    */
++    return false;
+ }
+ 
+ #ifdef _WIN32
