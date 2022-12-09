@@ -97,6 +97,10 @@
 		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
 		B577559B2605EA81006D29B1 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
+		B57AF1FD2943D40900604616 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
+		B57AF1FE2943D40900604616 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
+		B57AF2042943EB3800604616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57AF2032943EB3800604616 /* GoogleService-Info.plist */; };
+		B57AF2052943EB3800604616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57AF2032943EB3800604616 /* GoogleService-Info.plist */; };
 		B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B58679DF260402B600EACF2C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B58679E0260402B600EACF2C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
@@ -791,6 +795,10 @@
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* CDDA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CDDA.plist; sourceTree = "<group>"; };
+		B57AF1F82943D17D00604616 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57AF1FC2943D40900604616 /* cdda_firebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdda_firebase.m; sourceTree = "<group>"; };
+		B57AF1FF2943D47300604616 /* cdda_firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
+		B57AF2032943EB3800604616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
@@ -2275,6 +2283,7 @@
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B57AF1F82943D17D00604616 /* FirebaseCore.framework */,
 				B55910D2271F24B4001F34CD /* CoreServices.framework */,
 				B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */,
 				B5A5855225A53D7A00E73D9A /* libiconv.tbd */,
@@ -2335,6 +2344,7 @@
 		B5EDBF7F270B951500FB4526 /* Distinct */ = {
 			isa = PBXGroup;
 			children = (
+				B57AF2032943EB3800604616 /* GoogleService-Info.plist */,
 				B5FA7BEC270CD09C00A1655A /* Assets.xcassets */,
 				B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */,
 				B5CF696825F38BC3009F929E /* CDDA.entitlements */,
@@ -2356,6 +2366,8 @@
 				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
 				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
 				B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */,
+				B57AF1FC2943D40900604616 /* cdda_firebase.m */,
+				B57AF1FF2943D47300604616 /* cdda_firebase.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2702,6 +2714,7 @@
 				B5FA7C03270CD09C00A1655A /* Assets.xcassets in Resources */,
 				B555591125D5BC8F00CD2E90 /* Settings.bundle in Resources */,
 				B50B449D25A24FC100628243 /* LaunchScreen.storyboard in Resources */,
+				B57AF2042943EB3800604616 /* GoogleService-Info.plist in Resources */,
 				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
 				B51598222634894D008BFD0C /* Localizable.strings in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
@@ -2716,6 +2729,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51597E02634833A008BFD0C /* Main.storyboard in Resources */,
+				B57AF2052943EB3800604616 /* GoogleService-Info.plist in Resources */,
 				B58679EE260402B600EACF2C /* Assets.xcassets in Resources */,
 				B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */,
 			);
@@ -3014,6 +3028,7 @@
 				B531B857270E16AE00155C37 /* avatar.cpp in Sources */,
 				B5966CA7270E121C002163AD /* faction.cpp in Sources */,
 				B5412CF42605FEF20034128C /* ZipArchiver.swift in Sources */,
+				B57AF1FD2943D40900604616 /* cdda_firebase.m in Sources */,
 				B5966B45270E11E1002163AD /* start_location.cpp in Sources */,
 				B5966C86270E121C002163AD /* debug_menu.cpp in Sources */,
 				B5966C8E270E121C002163AD /* mission_place.cpp in Sources */,
@@ -3229,6 +3244,7 @@
 				B5412D15260602D50034128C /* MainViewController.m in Sources */,
 				B5867A2D2604036E00EACF2C /* path_utils.m in Sources */,
 				B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */,
+				B57AF1FE2943D40900604616 /* cdda_firebase.m in Sources */,
 				B5867A1B2604030A00EACF2C /* main.m in Sources */,
 				B5867A172604030100EACF2C /* AppDelegate.m in Sources */,
 				B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */,
@@ -3564,7 +3580,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2015;
+				CURRENT_PROJECT_VERSION = 3000;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3581,8 +3597,8 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 3.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
+				MARKETING_VERSION = 4.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";
@@ -3602,7 +3618,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2015;
+				CURRENT_PROJECT_VERSION = 3000;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3619,8 +3635,8 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 3.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
+				MARKETING_VERSION = 4.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Common/source/CDDA-Bridging-Header.h";

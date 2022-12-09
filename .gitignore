@@ -165,3 +165,4 @@ Screenshots for app store/generated
 *.sw?
 /CDDA-loc
 .ipynb_checkpoints
+Distinct/GoogleService-Info.plist

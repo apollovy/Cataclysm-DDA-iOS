@@ -39,9 +39,11 @@ void exit_handler( int status )
 
 extern "C"
 {
+#include "cdda_firebase.h"
 
 int CDDA_iOS_main(NSString* documentPath)
 {
+    configureFirebase();
     NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
     NSArray<NSString*>* newArguments = [arguments arrayByAddingObjectsFromArray:@[

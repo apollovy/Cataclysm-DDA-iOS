@@ -6,6 +6,7 @@
 //  Copyright © 2021 Аполлов Юрий Андреевич. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+@import FirebaseAnalytics;
 
 #import "CDDA-Swift.h"
 
@@ -26,6 +27,10 @@
 
 -(void)openSettings:(id)sender
 {
+    [FIRAnalytics logEventWithName:@"settings_opened"
+                        parameters:@{
+        @"myKey": @"myValue"
+    }];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 
