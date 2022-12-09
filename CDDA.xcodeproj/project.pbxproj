@@ -64,11 +64,23 @@
 		B5412D15260602D50034128C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B5436B4925C4D18D006579B4 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B5466E72259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
-		B5481520289D0255004E80FE /* player_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B548151F289D0255004E80FE /* player_display.cpp */; };
 		B54932EF259BD92F00667062 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B54932FB259BDD3400667062 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
 		B5493320259BE20A00667062 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
 		B54C7A7125A8B373007856B5 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
+		B54D826A292FEDE700DC5744 /* examine_item_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8245292FEDDC00DC5744 /* examine_item_menu.cpp */; };
+		B54D826B292FEDE700DC5744 /* string_editor_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8247292FEDDD00DC5744 /* string_editor_window.cpp */; };
+		B54D826C292FEDE700DC5744 /* diary_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8249292FEDDE00DC5744 /* diary_ui.cpp */; };
+		B54D826D292FEDE700DC5744 /* map_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D824F292FEDE200DC5744 /* map_functions.cpp */; };
+		B54D826E292FEDE700DC5744 /* character_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8252292FEDE300DC5744 /* character_functions.cpp */; };
+		B54D826F292FEDE700DC5744 /* panels_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8253292FEDE400DC5744 /* panels_utility.cpp */; };
+		B54D8270292FEDE700DC5744 /* diary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8258292FEDE500DC5744 /* diary.cpp */; };
+		B54D8271292FEDE700DC5744 /* distraction_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D825A292FEDE500DC5744 /* distraction_manager.cpp */; };
+		B54D8272292FEDE700DC5744 /* url_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D825D292FEDE500DC5744 /* url_utility.cpp */; };
+		B54D8273292FEDE700DC5744 /* character_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D825E292FEDE500DC5744 /* character_display.cpp */; };
+		B54D8274292FEDE700DC5744 /* construction_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8261292FEDE600DC5744 /* construction_group.cpp */; };
+		B54D8275292FEDE700DC5744 /* item_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8262292FEDE600DC5744 /* item_functions.cpp */; };
+		B54D8277292FEDE700DC5744 /* construction_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8269292FEDE700DC5744 /* construction_sequence.cpp */; };
 		B54FDD6C25929F6400505231 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6B25929F6400505231 /* CoreBluetooth.framework */; };
 		B54FDD6E25929F9D00505231 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
 		B54FDD7025929FBB00505231 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
@@ -703,11 +715,46 @@
 		B5436B4825C4D18D006579B4 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
 		B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
-		B548151F289D0255004E80FE /* player_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = player_display.cpp; path = "Libraries/Cataclysm-BN/src/player_display.cpp"; sourceTree = "<group>"; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B5493315259BE20000667062 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
 		B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
+		B54D8244292FEDDB00DC5744 /* distraction_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = distraction_manager.h; path = "Libraries/Cataclysm-BN/src/distraction_manager.h"; sourceTree = "<group>"; };
+		B54D8245292FEDDC00DC5744 /* examine_item_menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = examine_item_menu.cpp; path = "Libraries/Cataclysm-BN/src/examine_item_menu.cpp"; sourceTree = "<group>"; };
+		B54D8246292FEDDC00DC5744 /* url_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = url_utility.h; path = "Libraries/Cataclysm-BN/src/url_utility.h"; sourceTree = "<group>"; };
+		B54D8247292FEDDD00DC5744 /* string_editor_window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = string_editor_window.cpp; path = "Libraries/Cataclysm-BN/src/string_editor_window.cpp"; sourceTree = "<group>"; };
+		B54D8248292FEDDD00DC5744 /* cata_void.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_void.h; path = "Libraries/Cataclysm-BN/src/cata_void.h"; sourceTree = "<group>"; };
+		B54D8249292FEDDE00DC5744 /* diary_ui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = diary_ui.cpp; path = "Libraries/Cataclysm-BN/src/diary_ui.cpp"; sourceTree = "<group>"; };
+		B54D824A292FEDDF00DC5744 /* string_editor_window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_editor_window.h; path = "Libraries/Cataclysm-BN/src/string_editor_window.h"; sourceTree = "<group>"; };
+		B54D824B292FEDDF00DC5744 /* character_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_effects.h; path = "Libraries/Cataclysm-BN/src/character_effects.h"; sourceTree = "<group>"; };
+		B54D824C292FEDE000DC5744 /* panels_utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = panels_utility.h; path = "Libraries/Cataclysm-BN/src/panels_utility.h"; sourceTree = "<group>"; };
+		B54D824D292FEDE000DC5744 /* mutation_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutation_data.h; path = "Libraries/Cataclysm-BN/src/mutation_data.h"; sourceTree = "<group>"; };
+		B54D824E292FEDE100DC5744 /* character_stat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_stat.h; path = "Libraries/Cataclysm-BN/src/character_stat.h"; sourceTree = "<group>"; };
+		B54D824F292FEDE200DC5744 /* map_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = map_functions.cpp; path = "Libraries/Cataclysm-BN/src/map_functions.cpp"; sourceTree = "<group>"; };
+		B54D8250292FEDE200DC5744 /* map_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = map_functions.h; path = "Libraries/Cataclysm-BN/src/map_functions.h"; sourceTree = "<group>"; };
+		B54D8251292FEDE300DC5744 /* type_id_implement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = type_id_implement.h; path = "Libraries/Cataclysm-BN/src/type_id_implement.h"; sourceTree = "<group>"; };
+		B54D8252292FEDE300DC5744 /* character_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_functions.cpp; path = "Libraries/Cataclysm-BN/src/character_functions.cpp"; sourceTree = "<group>"; };
+		B54D8253292FEDE400DC5744 /* panels_utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = panels_utility.cpp; path = "Libraries/Cataclysm-BN/src/panels_utility.cpp"; sourceTree = "<group>"; };
+		B54D8254292FEDE400DC5744 /* mod_tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mod_tracker.h; path = "Libraries/Cataclysm-BN/src/mod_tracker.h"; sourceTree = "<group>"; };
+		B54D8256292FEDE400DC5744 /* item_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = item_functions.h; path = "Libraries/Cataclysm-BN/src/item_functions.h"; sourceTree = "<group>"; };
+		B54D8257292FEDE400DC5744 /* character_encumbrance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_encumbrance.h; path = "Libraries/Cataclysm-BN/src/character_encumbrance.h"; sourceTree = "<group>"; };
+		B54D8258292FEDE500DC5744 /* diary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = diary.cpp; path = "Libraries/Cataclysm-BN/src/diary.cpp"; sourceTree = "<group>"; };
+		B54D8259292FEDE500DC5744 /* construction_partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = construction_partial.h; path = "Libraries/Cataclysm-BN/src/construction_partial.h"; sourceTree = "<group>"; };
+		B54D825A292FEDE500DC5744 /* distraction_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = distraction_manager.cpp; path = "Libraries/Cataclysm-BN/src/distraction_manager.cpp"; sourceTree = "<group>"; };
+		B54D825B292FEDE500DC5744 /* consumption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = consumption.h; path = "Libraries/Cataclysm-BN/src/consumption.h"; sourceTree = "<group>"; };
+		B54D825C292FEDE500DC5744 /* character_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_functions.h; path = "Libraries/Cataclysm-BN/src/character_functions.h"; sourceTree = "<group>"; };
+		B54D825D292FEDE500DC5744 /* url_utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = url_utility.cpp; path = "Libraries/Cataclysm-BN/src/url_utility.cpp"; sourceTree = "<group>"; };
+		B54D825E292FEDE500DC5744 /* character_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_display.cpp; path = "Libraries/Cataclysm-BN/src/character_display.cpp"; sourceTree = "<group>"; };
+		B54D825F292FEDE500DC5744 /* examine_item_menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = examine_item_menu.h; path = "Libraries/Cataclysm-BN/src/examine_item_menu.h"; sourceTree = "<group>"; };
+		B54D8260292FEDE600DC5744 /* cata_unreachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cata_unreachable.h; path = "Libraries/Cataclysm-BN/src/cata_unreachable.h"; sourceTree = "<group>"; };
+		B54D8261292FEDE600DC5744 /* construction_group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = construction_group.cpp; path = "Libraries/Cataclysm-BN/src/construction_group.cpp"; sourceTree = "<group>"; };
+		B54D8262292FEDE600DC5744 /* item_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = item_functions.cpp; path = "Libraries/Cataclysm-BN/src/item_functions.cpp"; sourceTree = "<group>"; };
+		B54D8263292FEDE600DC5744 /* character_display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_display.h; path = "Libraries/Cataclysm-BN/src/character_display.h"; sourceTree = "<group>"; };
+		B54D8264292FEDE600DC5744 /* construction_group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = construction_group.h; path = "Libraries/Cataclysm-BN/src/construction_group.h"; sourceTree = "<group>"; };
+		B54D8265292FEDE600DC5744 /* construction_sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = construction_sequence.h; path = "Libraries/Cataclysm-BN/src/construction_sequence.h"; sourceTree = "<group>"; };
+		B54D8266292FEDE600DC5744 /* newcharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = newcharacter.h; path = "Libraries/Cataclysm-BN/src/newcharacter.h"; sourceTree = "<group>"; };
+		B54D8268292FEDE700DC5744 /* diary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = diary.h; path = "Libraries/Cataclysm-BN/src/diary.h"; sourceTree = "<group>"; };
+		B54D8269292FEDE700DC5744 /* construction_sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = construction_sequence.cpp; path = "Libraries/Cataclysm-BN/src/construction_sequence.cpp"; sourceTree = "<group>"; };
 		B54FDD6B25929F6400505231 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		B54FDD6D25929F9C00505231 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B54FDD6F25929FBA00505231 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -1465,7 +1512,42 @@
 		B558CB72270E0D3C00410845 /* Cataclysm-BN */ = {
 			isa = PBXGroup;
 			children = (
-				B548151F289D0255004E80FE /* player_display.cpp */,
+				B54D8260292FEDE600DC5744 /* cata_unreachable.h */,
+				B54D8248292FEDDD00DC5744 /* cata_void.h */,
+				B54D825E292FEDE500DC5744 /* character_display.cpp */,
+				B54D8263292FEDE600DC5744 /* character_display.h */,
+				B54D824B292FEDDF00DC5744 /* character_effects.h */,
+				B54D8257292FEDE400DC5744 /* character_encumbrance.h */,
+				B54D8252292FEDE300DC5744 /* character_functions.cpp */,
+				B54D825C292FEDE500DC5744 /* character_functions.h */,
+				B54D824E292FEDE100DC5744 /* character_stat.h */,
+				B54D8261292FEDE600DC5744 /* construction_group.cpp */,
+				B54D8264292FEDE600DC5744 /* construction_group.h */,
+				B54D8259292FEDE500DC5744 /* construction_partial.h */,
+				B54D8269292FEDE700DC5744 /* construction_sequence.cpp */,
+				B54D8265292FEDE600DC5744 /* construction_sequence.h */,
+				B54D825B292FEDE500DC5744 /* consumption.h */,
+				B54D8249292FEDDE00DC5744 /* diary_ui.cpp */,
+				B54D8258292FEDE500DC5744 /* diary.cpp */,
+				B54D8268292FEDE700DC5744 /* diary.h */,
+				B54D825A292FEDE500DC5744 /* distraction_manager.cpp */,
+				B54D8244292FEDDB00DC5744 /* distraction_manager.h */,
+				B54D8245292FEDDC00DC5744 /* examine_item_menu.cpp */,
+				B54D825F292FEDE500DC5744 /* examine_item_menu.h */,
+				B54D8262292FEDE600DC5744 /* item_functions.cpp */,
+				B54D8256292FEDE400DC5744 /* item_functions.h */,
+				B54D824F292FEDE200DC5744 /* map_functions.cpp */,
+				B54D8250292FEDE200DC5744 /* map_functions.h */,
+				B54D8254292FEDE400DC5744 /* mod_tracker.h */,
+				B54D824D292FEDE000DC5744 /* mutation_data.h */,
+				B54D8266292FEDE600DC5744 /* newcharacter.h */,
+				B54D8253292FEDE400DC5744 /* panels_utility.cpp */,
+				B54D824C292FEDE000DC5744 /* panels_utility.h */,
+				B54D8247292FEDDD00DC5744 /* string_editor_window.cpp */,
+				B54D824A292FEDDF00DC5744 /* string_editor_window.h */,
+				B54D8251292FEDE300DC5744 /* type_id_implement.h */,
+				B54D825D292FEDE500DC5744 /* url_utility.cpp */,
+				B54D8246292FEDDC00DC5744 /* url_utility.h */,
 				B523D75D289B05B000CD74AE /* explosion_queue.h */,
 				B523D75E289B05B000CD74AE /* generic_readers.h */,
 				B523D75C289B05B000CD74AE /* numeric_interval.h */,
@@ -2862,6 +2944,7 @@
 				B5966CA6270E121C002163AD /* char_validity_check.cpp in Sources */,
 				B5966CBD270E121D002163AD /* item.cpp in Sources */,
 				B5966CB8270E121D002163AD /* item_stack.cpp in Sources */,
+				B54D826C292FEDE700DC5744 /* diary_ui.cpp in Sources */,
 				B531B85A270E16AE00155C37 /* basecamp.cpp in Sources */,
 				B5966B0A270E11E0002163AD /* achievement.cpp in Sources */,
 				B5966B13270E11E0002163AD /* monster_oracle.cpp in Sources */,
@@ -2876,6 +2959,7 @@
 				B5966AED270E11E0002163AD /* player.cpp in Sources */,
 				B5966CD7270E121D002163AD /* cata_variant.cpp in Sources */,
 				D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
+				B54D826A292FEDE700DC5744 /* examine_item_menu.cpp in Sources */,
 				B5966B08270E11E0002163AD /* timed_event.cpp in Sources */,
 				B5966CE8270E121D002163AD /* filesystem.cpp in Sources */,
 				B5966C9F270E121C002163AD /* item_location.cpp in Sources */,
@@ -2883,6 +2967,7 @@
 				B5966B38270E11E1002163AD /* sdl_geometry.cpp in Sources */,
 				B5966AE6270E11E0002163AD /* stomach.cpp in Sources */,
 				B5966AD8270E11E0002163AD /* path_info.cpp in Sources */,
+				B54D8274292FEDE700DC5744 /* construction_group.cpp in Sources */,
 				B5966CAE270E121D002163AD /* init.cpp in Sources */,
 				B5966CDF270E121D002163AD /* monattack.cpp in Sources */,
 				B5966CA1270E121C002163AD /* cursesport.cpp in Sources */,
@@ -2892,6 +2977,7 @@
 				B5966AFE270E11E0002163AD /* relic.cpp in Sources */,
 				B5966AE2270E11E0002163AD /* npctalk_funcs.cpp in Sources */,
 				B5966C7F270E121C002163AD /* inventory.cpp in Sources */,
+				B54D8270292FEDE700DC5744 /* diary.cpp in Sources */,
 				B5966CDC270E121D002163AD /* flag.cpp in Sources */,
 				B531B84C270E16AE00155C37 /* avatar_action.cpp in Sources */,
 				B531B85E270E16AE00155C37 /* bionics_ui.cpp in Sources */,
@@ -2899,6 +2985,7 @@
 				B531B84E270E16AE00155C37 /* activity_actor.cpp in Sources */,
 				B5966CAA270E121C002163AD /* coordinate_conversions.cpp in Sources */,
 				B5966B1F270E11E0002163AD /* posix_time.cpp in Sources */,
+				B54D826D292FEDE700DC5744 /* map_functions.cpp in Sources */,
 				B531B84F270E16AE00155C37 /* cached_options.cpp in Sources */,
 				B5966CA5270E121C002163AD /* mission_ui.cpp in Sources */,
 				B5966CE4270E121D002163AD /* iuse_actor.cpp in Sources */,
@@ -2961,13 +3048,16 @@
 				B5966C98270E121C002163AD /* clzones.cpp in Sources */,
 				B50EFDAC276904EF00B02C8E /* matrix_math.cpp in Sources */,
 				B5966CD9270E121D002163AD /* gamemode_tutorial.cpp in Sources */,
+				B54D826B292FEDE700DC5744 /* string_editor_window.cpp in Sources */,
 				B5966AEA270E11E0002163AD /* npc.cpp in Sources */,
 				B5966B25270E11E0002163AD /* vehicle.cpp in Sources */,
 				B531B866270E16AE00155C37 /* activity_handlers.cpp in Sources */,
 				B531B847270E16AE00155C37 /* auto_note.cpp in Sources */,
+				B54D826F292FEDE700DC5744 /* panels_utility.cpp in Sources */,
 				B5966B24270E11E0002163AD /* string_utils.cpp in Sources */,
 				B5966C7C270E121C002163AD /* handle_action.cpp in Sources */,
 				B5966B21270E11E0002163AD /* scenario.cpp in Sources */,
+				B54D8275292FEDE700DC5744 /* item_functions.cpp in Sources */,
 				B531B864270E16AE00155C37 /* advanced_inv_pane.cpp in Sources */,
 				B531B856270E16AE00155C37 /* bionics.cpp in Sources */,
 				B5966CCD270E121D002163AD /* iteminfo_query.cpp in Sources */,
@@ -2977,6 +3067,7 @@
 				B5966C7D270E121C002163AD /* event.cpp in Sources */,
 				B5966C90270E121C002163AD /* fault.cpp in Sources */,
 				B5966ADA270E11E0002163AD /* string_formatter.cpp in Sources */,
+				B54D8272292FEDE700DC5744 /* url_utility.cpp in Sources */,
 				B5966CD6270E121D002163AD /* magic_enchantment.cpp in Sources */,
 				B5966CF2270E121E002163AD /* iuse_software_snake.cpp in Sources */,
 				B5966B2F270E11E1002163AD /* teleport.cpp in Sources */,
@@ -2984,7 +3075,6 @@
 				B5966ADC270E11E0002163AD /* overmap_location.cpp in Sources */,
 				B5966AF7270E11E0002163AD /* translations.cpp in Sources */,
 				B5966C8A270E121C002163AD /* itype.cpp in Sources */,
-				B5481520289D0255004E80FE /* player_display.cpp in Sources */,
 				B531B809270E168C00155C37 /* cata_utility.cpp in Sources */,
 				B5966B50270E11E1002163AD /* rotatable_symbols.cpp in Sources */,
 				B5966B30270E11E1002163AD /* veh_utils.cpp in Sources */,
@@ -3013,6 +3103,7 @@
 				B55910DA271F4D5E001F34CD /* weather_type.cpp in Sources */,
 				B5127666289C5723004882AA /* version.cpp in Sources */,
 				B5966C83270E121C002163AD /* editmap.cpp in Sources */,
+				B54D8271292FEDE700DC5744 /* distraction_manager.cpp in Sources */,
 				B5966CC4270E121D002163AD /* event_statistics.cpp in Sources */,
 				B5966CB2270E121D002163AD /* mission_companion.cpp in Sources */,
 				B5966B00270E11E0002163AD /* mtype.cpp in Sources */,
@@ -3034,6 +3125,7 @@
 				B5966C82270E121C002163AD /* mission_util.cpp in Sources */,
 				B531B853270E16AE00155C37 /* ballistics.cpp in Sources */,
 				B5966B3C270E11E1002163AD /* map_memory.cpp in Sources */,
+				B54D8277292FEDE700DC5744 /* construction_sequence.cpp in Sources */,
 				B531B868270E16AE00155C37 /* anatomy.cpp in Sources */,
 				B5966B48270E11E1002163AD /* mapgendata.cpp in Sources */,
 				B5966CBE270E121D002163AD /* mod_manager.cpp in Sources */,
@@ -3059,6 +3151,7 @@
 				B531B861270E16AE00155C37 /* behavior_oracle.cpp in Sources */,
 				B531B848270E16AE00155C37 /* activity_type.cpp in Sources */,
 				B5966B06270E11E0002163AD /* npctrade.cpp in Sources */,
+				B54D826E292FEDE700DC5744 /* character_functions.cpp in Sources */,
 				B5966B15270E11E0002163AD /* profession.cpp in Sources */,
 				B5966B37270E11E1002163AD /* projectile.cpp in Sources */,
 				B531B867270E16AE00155C37 /* active_tile_data.cpp in Sources */,
@@ -3103,6 +3196,7 @@
 				B5966B0F270E11E0002163AD /* vitamin.cpp in Sources */,
 				B5966AD1270E11E0002163AD /* sdl_font.cpp in Sources */,
 				B5966CE7270E121D002163AD /* mod_manager_ui.cpp in Sources */,
+				B54D8273292FEDE700DC5744 /* character_display.cpp in Sources */,
 				B5966B4A270E11E1002163AD /* veh_type.cpp in Sources */,
 				B5A5BEF625F7F9E200EEEA0F /* path_utils.m in Sources */,
 				D0AA2806054C585B62B33033 /* JSButton.m in Sources */,
@@ -3364,7 +3458,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ./Common/Binaries/glib/include;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = ./Common/Binaries/glib/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -3438,7 +3532,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ./Common/Binaries/glib/include;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = ./Common/Binaries/glib/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -3470,7 +3564,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2014;
+				CURRENT_PROJECT_VERSION = 2015;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3481,12 +3575,13 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
 				);
 				INFOPLIST_FILE = Distinct/CDDA.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 3.6.0;
+				MARKETING_VERSION = 3.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3507,7 +3602,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2014;
+				CURRENT_PROJECT_VERSION = 2015;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3518,12 +3613,13 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
 				);
 				INFOPLIST_FILE = Distinct/CDDA.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 3.6.0;
+				MARKETING_VERSION = 3.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3543,7 +3639,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2014;
+				CURRENT_PROJECT_VERSION = 2015;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3583,7 +3679,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2014;
+				CURRENT_PROJECT_VERSION = 2015;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
