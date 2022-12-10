@@ -27,10 +27,6 @@
 
 -(void)openSettings:(id)sender
 {
-    [FIRAnalytics logEventWithName:@"settings_opened"
-                        parameters:@{
-        @"myKey": @"myValue"
-    }];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 
