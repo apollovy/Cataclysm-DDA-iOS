@@ -2,26 +2,25 @@
 
 #define main CDDA_main
 
-void no_exit(int status){}
+void no_exit(__attribute__((unused)) int status){}
 #define exit no_exit
 #include "runtime_handlers.h"
 #include "main.cpp"
 #undef main
 
-#include "SDL.h"
-
 #include <UIKit/UIKit.h>
 #include "MainViewController.h"
+#import "PaywallDisplay.h"
 
 // https://stackoverflow.com/a/15318065/674557
 char** cArrayFromNSArray(NSArray* array)
 {
-    int i, count = array.count;
+    int i, count = static_cast<int>(array.count);
     char** cargs = (char**) malloc(sizeof(char*) * (count + 1));
     for(i = 0; i < count; i++) {
-        NSString *s = array[i];
+        NSString *s = array[static_cast<NSUInteger>(i)];
         const char *cstr = s.UTF8String;
-        int len = strlen(cstr);
+        int len = static_cast<int>(strlen(cstr));
         char* cstr_copy = (char*) malloc(sizeof(char) * (len + 1));
         strcpy(cstr_copy, cstr);
         cargs[i] = cstr_copy;
@@ -30,7 +29,7 @@ char** cArrayFromNSArray(NSArray* array)
     return cargs;
 }
 
-void exit_handler( int status )
+void exit_handler( __attribute__((unused)) int status )
 {
     deinitDebug();
     g.reset();
@@ -51,16 +50,22 @@ int CDDA_iOS_main(NSString* documentPath)
         @"--userdir", [documentPath stringByAppendingString:@"/"],
         
     ]];
-    int newArgumentsCount = newArguments.count;
+    int newArgumentsCount = static_cast<int>(newArguments.count);
     char** stringArgs = cArrayFromNSArray(newArguments);
     
     SDL_iPhoneSetEventPump(SDL_TRUE);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        subscribe();
+    });
     int exitCode = CDDA_main(newArgumentsCount, stringArgs);
     SDL_iPhoneSetEventPump(SDL_FALSE);
     
     dispatch_async(dispatch_get_main_queue(), ^{
         MainViewController* vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         auto window = [[UIApplication.sharedApplication windows] firstObject];
+#pragma clang diagnostic pop
         window.rootViewController = vc;
         [window makeKeyAndVisible];
     });
