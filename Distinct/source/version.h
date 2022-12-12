@@ -9,6 +9,6 @@
 #ifndef version_h
 #define version_h
 
-#define VERSION "cbn-experimental-2022-11-21-1154/ios"
+#define VERSION "cbn-experimental-2022-12-12-1443/ios"
 
 #endif /* version_h */
