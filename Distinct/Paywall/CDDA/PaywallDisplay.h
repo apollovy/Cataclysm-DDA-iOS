@@ -6,6 +6,14 @@
 #ifndef CDDA_PAYWALLDISPLAY_H
 #define CDDA_PAYWALLDISPLAY_H
 
-void subscribe();
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+bool subscribe();
+
+#ifdef __cplusplus
+};
+#endif
 
 #endif //CDDA_PAYWALLDISPLAY_H

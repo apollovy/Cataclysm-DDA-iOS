@@ -10,7 +10,6 @@ void no_exit(__attribute__((unused)) int status){}
 
 #include <UIKit/UIKit.h>
 #include "MainViewController.h"
-#import "PaywallDisplay.h"
 
 // https://stackoverflow.com/a/15318065/674557
 char** cArrayFromNSArray(NSArray* array)
@@ -39,9 +38,23 @@ void exit_handler( __attribute__((unused)) int status )
 extern "C"
 {
 #include "cdda_firebase.h"
+#import "PaywallDisplay.h"
 
-int CDDA_iOS_main(NSString* documentPath)
-{
+void subscribeSoon(int attempt=1) {
+    dispatch_after(
+            dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),
+            dispatch_get_main_queue(),
+            ^{
+                NSLog(@"Trying to subscribe to events with %i attempt.",
+                        attempt);
+                if (!subscribe()) {
+                    subscribeSoon(attempt + 1);
+                };
+            }
+    );
+}
+
+int CDDA_iOS_main(NSString* documentPath) {
     configureFirebase();
     NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
     NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
@@ -54,9 +67,7 @@ int CDDA_iOS_main(NSString* documentPath)
     char** stringArgs = cArrayFromNSArray(newArguments);
     
     SDL_iPhoneSetEventPump(SDL_TRUE);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        subscribe();
-    });
+    subscribeSoon();
     int exitCode = CDDA_main(newArgumentsCount, stringArgs);
     SDL_iPhoneSetEventPump(SDL_FALSE);
     

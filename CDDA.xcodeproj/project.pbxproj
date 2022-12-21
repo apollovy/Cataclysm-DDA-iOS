@@ -119,6 +119,11 @@
 		B5867A1B2604030A00EACF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5867A2D2604036E00EACF2C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B589261725C34C8500BE1213 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
+		B58ECFF02953628B0032DF62 /* Paywall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58ECFEF2953628B0032DF62 /* Paywall.storyboard */; };
+		B58ECFF1295362CC0032DF62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2C988EDB6E376AE72629 /* Main.storyboard */; };
+		B58ED001295363FB0032DF62 /* Paywall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58ECFEF2953628B0032DF62 /* Paywall.storyboard */; };
+		B58ED01929537C010032DF62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58ED01829537C010032DF62 /* ViewController.m */; };
+		B58ED01D29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B58ED01C29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.m */; };
 		B5966AD1270E11E0002163AD /* sdl_font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669C4270E11CE002163AD /* sdl_font.cpp */; };
 		B5966AD2270E11E0002163AD /* sdl_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669C6270E11CE002163AD /* sdl_utils.cpp */; };
 		B5966AD3270E11E0002163AD /* turret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669C8270E11CE002163AD /* turret.cpp */; };
@@ -386,10 +391,18 @@
 		B5FA7C03270CD09C00A1655A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FA7BEC270CD09C00A1655A /* Assets.xcassets */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
+		D0AA200A44F56A1907454B79 /* showPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */; };
+		D0AA20D44B84934BC444AA3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2A614571C252DF3D730A /* main.m */; };
 		D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */; };
 		D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */; };
+		D0AA233E6CABC214CE111CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AA290005E025568B94F44E /* Assets.xcassets */; };
+		D0AA24EDABA55FE3491E2C4C /* PaywallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2892ED92349910A11016 /* PaywallController.m */; };
+		D0AA24F84D01562CF1DE2599 /* showPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */; };
 		D0AA2806054C585B62B33033 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
-		D0AA28ACFDB5446177A55420 /* PaywallDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2A64F23F8E061EEE4A7C /* PaywallDisplay.mm */; };
+		D0AA2999CDF4E35D1E972ECD /* PaywallDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2A258D4B452A3FEABF2A /* PaywallDisplay.mm */; };
+		D0AA2D6D09D3E78D9A54CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */; };
+		D0AA2E20190BA733B9E5A7A1 /* PaywallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2892ED92349910A11016 /* PaywallController.m */; };
+		D0AA2F55F9123F4605542D46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2DA79D03B5F8DD3586 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -805,6 +818,11 @@
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
+		B58ECFEF2953628B0032DF62 /* Paywall.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paywall.storyboard; sourceTree = "<group>"; };
+		B58ED01829537C010032DF62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B58ED01A29537C7B0032DF62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B58ED01B29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+MainView.h"; sourceTree = "<group>"; };
+		B58ED01C29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+MainView.m"; sourceTree = "<group>"; };
 		B59669BF270E11CE002163AD /* worldfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = worldfactory.h; path = "Libraries/Cataclysm-BN/src/worldfactory.h"; sourceTree = "<group>"; };
 		B59669C0270E11CE002163AD /* inventory_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inventory_ui.h; path = "Libraries/Cataclysm-BN/src/inventory_ui.h"; sourceTree = "<group>"; };
 		B59669C1270E11CE002163AD /* achievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = achievement.h; path = "Libraries/Cataclysm-BN/src/achievement.h"; sourceTree = "<group>"; };
@@ -1384,12 +1402,24 @@
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA_CDDA_iCloud_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
+		D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showPaywall.m; sourceTree = "<group>"; };
+		D0AA23B391B22C88DF234A85 /* PaywallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallController.h; sourceTree = "<group>"; };
 		D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDAUITests.swift; sourceTree = "<group>"; };
+		D0AA26D14805CBFEDBFFA2D0 /* PaywallDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallDisplay.h; sourceTree = "<group>"; };
+		D0AA271FDF84E1FC313B8FED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0AA2892ED92349910A11016 /* PaywallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallController.m; sourceTree = "<group>"; };
+		D0AA290005E025568B94F44E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0AA290F1F1C5498955B890D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0AA2996008B2CC792AAAB1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackspaceInMenuTest.swift; sourceTree = "<group>"; };
-		D0AA2A64F23F8E061EEE4A7C /* PaywallDisplay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PaywallDisplay.mm; sourceTree = "<group>"; };
+		D0AA29E5178B1CF45444D659 /* showPaywall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showPaywall.h; sourceTree = "<group>"; };
+		D0AA2A258D4B452A3FEABF2A /* PaywallDisplay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PaywallDisplay.mm; sourceTree = "<group>"; };
+		D0AA2A614571C252DF3D730A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+Gamepad.m"; sourceTree = "<group>"; };
+		D0AA2B2DA79D03B5F8DD3586 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
-		D0AA2BC4DB533ACE01ECC538 /* PaywallDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallDisplay.h; sourceTree = "<group>"; };
+		D0AA2C988EDB6E376AE72629 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D0AA2EA7EB4AA92104AD4141 /* Paywall debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paywall debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA-CDDA iCloud debug.release.xcconfig"; path = "Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1443,6 +1473,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0AA27A6B283E606A131A934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1491,6 +1528,27 @@
 				D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */,
 			);
 			path = CDDAUITests;
+			sourceTree = "<group>";
+		};
+		B53CEB39295361AD00E6DE54 /* CDDA */ = {
+			isa = PBXGroup;
+			children = (
+				D0AA26D14805CBFEDBFFA2D0 /* PaywallDisplay.h */,
+				D0AA2A258D4B452A3FEABF2A /* PaywallDisplay.mm */,
+			);
+			path = CDDA;
+			sourceTree = "<group>";
+		};
+		B53CEB3A295361B300E6DE54 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				B58ECFEF2953628B0032DF62 /* Paywall.storyboard */,
+				D0AA23B391B22C88DF234A85 /* PaywallController.h */,
+				D0AA2892ED92349910A11016 /* PaywallController.m */,
+				D0AA29E5178B1CF45444D659 /* showPaywall.h */,
+				D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */,
+			);
+			path = Paywall;
 			sourceTree = "<group>";
 		};
 		B54932E5259BD59D00667062 /* Products */ = {
@@ -2271,6 +2329,7 @@
 				B57201C9259293EE003D2A20 /* CDDA.app */,
 				B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */,
 				B5867A02260402B600EACF2C /* CDDA.app */,
+				D0AA2EA7EB4AA92104AD4141 /* Paywall debug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2328,6 +2387,8 @@
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */,
 				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
+				B58ED01B29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.h */,
+				B58ED01C29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.m */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2356,6 +2417,7 @@
 				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
 				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
 				B5EDBF80270B957000FB4526 /* source */,
+				D0AA277D54697B14E280CFBA /* Paywall */,
 			);
 			path = Distinct;
 			sourceTree = "<group>";
@@ -2371,8 +2433,6 @@
 				B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */,
 				B57AF1FC2943D40900604616 /* cdda_firebase.m */,
 				B57AF1FF2943D47300604616 /* cdda_firebase.h */,
-				D0AA2A64F23F8E061EEE4A7C /* PaywallDisplay.mm */,
-				D0AA2BC4DB533ACE01ECC538 /* PaywallDisplay.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2408,6 +2468,32 @@
 				B5FD1F2B25A575AB00CE613D /* libintl.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		D0AA277D54697B14E280CFBA /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				B53CEB3A295361B300E6DE54 /* Paywall */,
+				B53CEB39295361AD00E6DE54 /* CDDA */,
+				D0AA2AE451D789B0B92D878F /* Paywall debug */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		D0AA2AE451D789B0B92D878F /* Paywall debug */ = {
+			isa = PBXGroup;
+			children = (
+				D0AA271FDF84E1FC313B8FED /* AppDelegate.h */,
+				D0AA2B2DA79D03B5F8DD3586 /* AppDelegate.m */,
+				D0AA290005E025568B94F44E /* Assets.xcassets */,
+				D0AA2996008B2CC792AAAB1B /* Info.plist */,
+				D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */,
+				D0AA2A614571C252DF3D730A /* main.m */,
+				D0AA2C988EDB6E376AE72629 /* Main.storyboard */,
+				B58ED01829537C010032DF62 /* ViewController.m */,
+				B58ED01A29537C7B0032DF62 /* ViewController.h */,
+			);
+			path = "Paywall debug";
 			sourceTree = "<group>";
 		};
 		D0AA2CF4E91F11B6CE004D3E /* JSDPad */ = {
@@ -2488,6 +2574,23 @@
 			productReference = B5867A02260402B600EACF2C /* CDDA.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D0AA27A8A9C4122D8B49DD7E /* Paywall debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AA2AC860C68CAC8C93F713 /* Build configuration list for PBXNativeTarget "Paywall debug" */;
+			buildPhases = (
+				D0AA225BC3EC4D9D39E0E985 /* Sources */,
+				D0AA27A6B283E606A131A934 /* Frameworks */,
+				D0AA25AAA7A45718626DD646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paywall debug";
+			productName = "Paywall debug";
+			productReference = D0AA2EA7EB4AA92104AD4141 /* Paywall debug.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2555,6 +2658,7 @@
 				B57201C8259293EE003D2A20 /* CDDA */,
 				B53804FB25AC6DB200AEB52A /* CDDAUITests */,
 				B58678B4260402B600EACF2C /* CDDA iCloud debug */,
+				D0AA27A8A9C4122D8B49DD7E /* Paywall debug */,
 			);
 		};
 /* End PBXProject section */
@@ -2723,6 +2827,7 @@
 				B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */,
 				B51598222634894D008BFD0C /* Localizable.strings in Resources */,
 				B5B01B96259BEF650023AB00 /* data in Resources */,
+				B58ECFF02953628B0032DF62 /* Paywall.storyboard in Resources */,
 				B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */,
 				B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */,
 				B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */,
@@ -2737,6 +2842,17 @@
 				B57AF2052943EB3800604616 /* GoogleService-Info.plist in Resources */,
 				B58679EE260402B600EACF2C /* Assets.xcassets in Resources */,
 				B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AA25AAA7A45718626DD646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58ECFF1295362CC0032DF62 /* Main.storyboard in Resources */,
+				D0AA233E6CABC214CE111CDA /* Assets.xcassets in Resources */,
+				D0AA2D6D09D3E78D9A54CDBA /* LaunchScreen.storyboard in Resources */,
+				B58ED001295363FB0032DF62 /* Paywall.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3233,13 +3349,16 @@
 				B5966C93270E121C002163AD /* line.cpp in Sources */,
 				B5966B0C270E11E0002163AD /* scores_ui.cpp in Sources */,
 				B5966AF8270E11E0002163AD /* vehicle_part.cpp in Sources */,
+				B58ED01D29538AF30032DF62 /* SDL_uikitviewcontroller+MainView.m in Sources */,
 				B5966CB3270E121D002163AD /* catacharset.cpp in Sources */,
 				B5966B43270E11E1002163AD /* savegame.cpp in Sources */,
 				B5966B46270E11E1002163AD /* active_item_cache.cpp in Sources */,
 				B5966B32270E11E1002163AD /* units_utility.cpp in Sources */,
 				B531B858270E16AE00155C37 /* animation.cpp in Sources */,
 				B5966B0E270E11E0002163AD /* sdlsound.cpp in Sources */,
-				D0AA28ACFDB5446177A55420 /* PaywallDisplay.mm in Sources */,
+				D0AA2999CDF4E35D1E972ECD /* PaywallDisplay.mm in Sources */,
+				D0AA24F84D01562CF1DE2599 /* showPaywall.m in Sources */,
+				D0AA2E20190BA733B9E5A7A1 /* PaywallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3254,6 +3373,18 @@
 				B5867A1B2604030A00EACF2C /* main.m in Sources */,
 				B5867A172604030100EACF2C /* AppDelegate.m in Sources */,
 				B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0AA225BC3EC4D9D39E0E985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58ED01929537C010032DF62 /* ViewController.m in Sources */,
+				D0AA20D44B84934BC444AA3F /* main.m in Sources */,
+				D0AA2F55F9123F4605542D46 /* AppDelegate.m in Sources */,
+				D0AA200A44F56A1907454B79 /* showPaywall.m in Sources */,
+				D0AA24EDABA55FE3491E2C4C /* PaywallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3360,6 +3491,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				B57201D8259293EF003D2A20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0AA290F1F1C5498955B890D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3731,6 +3870,154 @@
 			};
 			name = Release;
 		};
+		D0AA2C24F6522F7F4B46CD5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Distinct/Paywall/Paywall debug/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "tk.apollov.Paywall-debug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0AA2FE6E056E92F233C430A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Distinct/Paywall/Paywall debug/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "tk.apollov.Paywall-debug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3766,6 +4053,15 @@
 			buildConfigurations = (
 				B5867A00260402B600EACF2C /* Debug */,
 				B5867A01260402B600EACF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0AA2AC860C68CAC8C93F713 /* Build configuration list for PBXNativeTarget "Paywall debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0AA2FE6E056E92F233C430A /* Debug */,
+				D0AA2C24F6522F7F4B46CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

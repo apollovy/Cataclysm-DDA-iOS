@@ -9,6 +9,7 @@
 #import "event_bus.h"
 #import "game.h"
 
+#import "../Paywall/showPaywall.h"
 #include "PaywallDisplay.h"
 
 
@@ -17,7 +18,7 @@ class PaywallDisplay : public event_subscriber {
         switch (event.type()) {
             case event_type::character_kills_monster:
             case event_type::character_kills_character: {
-                NSLog(@"Character killed monster.");
+                showPaywall();
                 break;
             }
             default:
@@ -28,7 +29,16 @@ class PaywallDisplay : public event_subscriber {
 
 PaywallDisplay* paywallDisplay;
 
-void subscribe() {
-    paywallDisplay = new PaywallDisplay();
-    g->events().subscribe(paywallDisplay);
+bool subscribe() {
+    if (paywallDisplay == NULL) {
+        paywallDisplay = new PaywallDisplay();
+    }
+    if (g != NULL) {
+        event_bus* events = &(g->events());
+        if (events != NULL) {
+            events->subscribe(paywallDisplay);
+            return true;
+        }
+    }
+    return false;
 }
