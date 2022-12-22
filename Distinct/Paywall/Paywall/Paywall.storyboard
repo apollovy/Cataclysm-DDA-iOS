@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <device id="retina6_72" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,39 +13,82 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="PaywallController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <rect key="frame" x="0.0" y="0.0" width="932" height="430"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-Ex-Xdr">
-                                <rect key="frame" x="757" y="4" width="67" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Efm-3N-Fvm">
+                                <rect key="frame" x="0.66666666666668561" y="0.0" width="930.66666666666652" height="430"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Efm-3N-Fvm" secondAttribute="height" multiplier="1344:621" id="gRT-sn-K2w"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BuyBG.png" id="Jqz-CL-lCV">
+                                <rect key="frame" x="47" y="19" width="835" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Buy.png" translatesAutoresizingMaskIntoConstraints="NO" id="X8P-XG-ieL">
+                                <rect key="frame" x="258" y="147" width="412" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl4-oM-NXK" userLabel="Buy">
+                                <rect key="frame" x="255" y="147" width="414" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
-                                    <segue destination="iCU-6M-UEc" kind="unwind" unwindAction="showMain:" id="qP2-45-KqJ"/>
+                                    <action selector="buy:" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="nmh-vF-p86"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lb-2A-HpE">
-                                <rect key="frame" x="352" y="178" width="140" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BUY FOR $5,99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4g-sR-nbb">
+                                <rect key="frame" x="278" y="162" width="369" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Close.png" translatesAutoresizingMaskIntoConstraints="NO" id="BTi-RM-cdI">
+                                <rect key="frame" x="854" y="0.0" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NhE-oG-SEC">
+                                <rect key="frame" x="122" y="95" width="686" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <string key="text">YOU HAVE REACHED THE FREE PLAY TIME!
+IF YOU THE LIKE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-gX-cBN" userLabel="Close">
+                                <rect key="frame" x="853" y="0.0" width="29" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Buy full version"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="buy:" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="KjG-3Z-ggh"/>
+                                    <segue destination="iCU-6M-UEc" kind="unwind" unwindAction="showMain:" id="kO8-4D-Ouw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Efm-3N-Fvm" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="62u-S1-Lp3"/>
+                            <constraint firstItem="Efm-3N-Fvm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="CX8-WE-ToT"/>
+                            <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="TfD-DK-BF7"/>
+                            <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vRg-Z7-Kcf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="iCU-6M-UEc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="131.51658767772511" y="-29.23076923076923"/>
+            <point key="canvasLocation" x="124.89270386266095" y="-37.674418604651166"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BG.jpg" width="2688" height="1242"/>
+        <image name="Buy.png" width="859" height="181"/>
+        <image name="BuyBG.png" width="1752" height="729"/>
+        <image name="Close.png" width="63" height="53"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
