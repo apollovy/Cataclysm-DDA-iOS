@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FirebaseAnalytics/FirebaseAnalytics.h>
 
 #include "event.h"
 #import "event_bus.h"
@@ -17,48 +18,73 @@ extern "C" {
 }
 
 
-NSString* killCountKey = @"killCount";
+NSString* eventsCountKey = @"eventCount";
 
-NSInteger getKillCount() {
-    return [NSUserDefaults.standardUserDefaults integerForKey:killCountKey];
+NSInteger getEventsCount() {
+    return [NSUserDefaults.standardUserDefaults integerForKey:eventsCountKey];
 }
 
-void incrementKillCount() {
-    [NSUserDefaults.standardUserDefaults setInteger:getKillCount()+1 forKey:killCountKey];
+void incrementEventsCount() {
+    [NSUserDefaults.standardUserDefaults setInteger:getEventsCount() + 1 forKey:eventsCountKey];
 }
 
-NSDictionary* testGroupToKillCount = @{
+NSDictionary* testGroupToEventsCount = @{
         @"1": @10,
-        @"2": @5,
+        @"2": @20,
 };
 
-bool showPaywallIfKilledEnough() {
-    auto killCount = getKillCount();
+void logAnalytics(NSString* name, NSDictionary* params) {
+    NSMutableDictionary* newParams = [params mutableCopy];
     auto testGroup = getTestGroup();
-    NSNumber* maxKillCount = testGroupToKillCount[testGroup];
-    if (maxKillCount == NULL) {
+    [newParams addEntriesFromDictionary:@{
+            @"testGroup": testGroup,
+    }];
+    [FIRAnalytics logEventWithName:name parameters:newParams];
+}
+
+bool showPaywallIfPlayedEnough() {
+    auto eventsCount = getEventsCount();
+    auto testGroup = getTestGroup();
+    NSNumber* maxEventsCount = testGroupToEventsCount[testGroup];
+    if (maxEventsCount == NULL) {
         NSLog(@"Unknown test group %@", testGroup);
     }
-    if (killCount >= [maxKillCount longValue]) {
+    if (eventsCount >= [maxEventsCount longValue]) {
+        logAnalytics(@"paywall_shown", @{
+                @"cdda_test_group": testGroup,
+        });
         showPaywall();
         return true;
     }
     return false;
 }
 
+void logAnalyticsEventForEventType(NSString* name, event_type eventType) {
+    logAnalytics(name, @{
+                    @"cdda_event_type": [NSString stringWithFormat:@"%s",
+                                                             io::enum_to_string(eventType).data()],
+                    @"cdda_events_count": @(getEventsCount()),
+            }
+    );
+};
+
 class PaywallDisplay : public event_subscriber {
     void notify(const cata::event &event) {
-        switch (event.type()) {
-            case event_type::character_kills_monster:
-            case event_type::character_kills_character: {
-                if (!showPaywallIfKilledEnough()) {
-                    incrementKillCount();
-                }
+        event_type eventType = event.type();
+        switch (eventType) {
+            case event_type::avatar_moves:
+            case event_type::character_takes_damage:
+            case event_type::character_heals_damage: {
+                logAnalyticsEventForEventType(@"paywall_event_not_counted", eventType);
+                showPaywallIfPlayedEnough();
                 break;
             }
-            default:
-                showPaywallIfKilledEnough();
+            default: {
+                logAnalyticsEventForEventType(@"paywall_event_counted", eventType);
+                incrementEventsCount();
+                showPaywallIfPlayedEnough();
                 break;
+            }
         }
     }
 };
