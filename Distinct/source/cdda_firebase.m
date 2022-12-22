@@ -11,19 +11,20 @@
 
 NSString* testGroupKey = @"testGroup";
 
-int getTestGroup() {
-    return (int) [NSUserDefaults.standardUserDefaults integerForKey:testGroupKey];
+NSString* getTestGroup() {
+    return [NSUserDefaults.standardUserDefaults stringForKey:testGroupKey];
 }
 
 void setTestGroup() {
     int r = arc4random_uniform(2) + 1;  // 1|2
-    [NSUserDefaults.standardUserDefaults setInteger:r forKey:testGroupKey];
+    [NSUserDefaults.standardUserDefaults setObject:[NSString stringWithFormat:@"%i", r]
+                                         forKey:testGroupKey];
 }
 
 void configureFirebase() {
     [FIRApp configure];
-    int testGroup = getTestGroup();
-    if (testGroup == 0) {
+    NSString* testGroup = getTestGroup();
+    if (testGroup == nil) {
         setTestGroup();
     }
 }

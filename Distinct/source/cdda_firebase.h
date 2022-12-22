@@ -10,6 +10,6 @@
 #define cdda_firebase_h
 
 void configureFirebase();
-int getTestGroup();
+NSString* getTestGroup();
 
 #endif /* cdda_firebase_h */

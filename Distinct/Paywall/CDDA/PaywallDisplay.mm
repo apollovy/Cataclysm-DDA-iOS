@@ -12,16 +12,52 @@
 #import "../Paywall/showPaywall.h"
 #include "PaywallDisplay.h"
 
+extern "C" {
+#import "cdda_firebase.h"
+}
+
+
+NSString* killCountKey = @"killCount";
+
+NSInteger getKillCount() {
+    return [NSUserDefaults.standardUserDefaults integerForKey:killCountKey];
+}
+
+void incrementKillCount() {
+    [NSUserDefaults.standardUserDefaults setInteger:getKillCount()+1 forKey:killCountKey];
+}
+
+NSDictionary* testGroupToKillCount = @{
+        @"1": @10,
+        @"2": @5,
+};
+
+bool showPaywallIfKilledEnough() {
+    auto killCount = getKillCount();
+    auto testGroup = getTestGroup();
+    NSNumber* maxKillCount = testGroupToKillCount[testGroup];
+    if (maxKillCount == NULL) {
+        NSLog(@"Unknown test group %@", testGroup);
+    }
+    if (killCount >= [maxKillCount longValue]) {
+        showPaywall();
+        return true;
+    }
+    return false;
+}
 
 class PaywallDisplay : public event_subscriber {
     void notify(const cata::event &event) {
         switch (event.type()) {
             case event_type::character_kills_monster:
             case event_type::character_kills_character: {
-                showPaywall();
+                if (!showPaywallIfKilledEnough()) {
+                    incrementKillCount();
+                }
                 break;
             }
             default:
+                showPaywallIfKilledEnough();
                 break;
         }
     }
