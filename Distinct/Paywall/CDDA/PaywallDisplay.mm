@@ -15,6 +15,7 @@
 
 extern "C" {
 #import "cdda_firebase.h"
+#import "PaywallUnlimitedFunctionality.h"
 }
 
 
@@ -49,7 +50,7 @@ bool showPaywallIfPlayedEnough() {
     if (maxEventsCount == NULL) {
         NSLog(@"Unknown test group %@", testGroup);
     }
-    if (eventsCount >= [maxEventsCount longValue]) {
+    if (eventsCount >= [maxEventsCount longValue] && !isUnlimitedFunctionalityUnlocked()) {
         logAnalytics(@"paywall_shown", @{
                 @"cdda_test_group": testGroup,
         });
@@ -62,7 +63,7 @@ bool showPaywallIfPlayedEnough() {
 void logAnalyticsEventForEventType(NSString* name, event_type eventType) {
     logAnalytics(name, @{
                     @"cdda_event_type": [NSString stringWithFormat:@"%s",
-                                                             io::enum_to_string(eventType).data()],
+                                                                   io::enum_to_string(eventType).data()],
                     @"cdda_events_count": @(getEventsCount()),
             }
     );
