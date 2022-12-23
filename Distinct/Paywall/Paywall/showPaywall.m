@@ -3,7 +3,7 @@
 // Copyright (c) 2022 Аполлов Юрий Андреевич. All rights reserved.
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 #import "PaywallController.h"
 

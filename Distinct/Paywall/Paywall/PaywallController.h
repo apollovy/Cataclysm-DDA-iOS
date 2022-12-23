@@ -5,9 +5,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
 
 
-@interface PaywallController : UIViewController
+@interface PaywallController : UIViewController <SKProductsRequestDelegate>
 
 - (IBAction)buy:(id)sender;
 
