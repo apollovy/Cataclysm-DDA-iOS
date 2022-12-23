@@ -13,17 +13,20 @@
     SKProductsRequest* _productRequest;
 }
 
-- (IBAction)buy:(id)sender {
+- (void)viewDidLoad {
     NSString* productIdentifier = [self _getProductIdentifier];
-    NSLog(@"%@", productIdentifier);
 
-    _productRequest = [
-            [SKProductsRequest new]
-                               initWithProductIdentifiers:[NSSet setWithObject:productIdentifier]
+    _productRequest = [[SKProductsRequest new]
+                                          initWithProductIdentifiers:[NSSet setWithObject:productIdentifier]
     ];
 
     _productRequest.delegate = self;
     [_productRequest start];
+}
+
+
+- (IBAction)buy:(id)sender {
+    NSLog(@"Buy pressed");
 }
 
 - (NSString*)_getProductIdentifier {
@@ -41,8 +44,14 @@
         return;
     }
 
+
     SKProduct* product = response.products.firstObject;
-    NSLog(@"%@%@", product.price, product.priceLocale.currencySymbol);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.priceLabel
+                setText:[NSString
+                        stringWithFormat:@"%@%@", product.priceLocale.currencySymbol, product.price
+                ]];
+    });
 }
 
 @end

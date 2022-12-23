@@ -17,40 +17,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Efm-3N-Fvm">
-                                <rect key="frame" x="0.66666666666668561" y="0.0" width="930.66666666666652" height="430"/>
+                                <rect key="frame" x="0.66666666666662877" y="0.0" width="930.66666666666652" height="430"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Efm-3N-Fvm" secondAttribute="height" multiplier="1344:621" id="gRT-sn-K2w"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BuyBG.png" id="Jqz-CL-lCV">
-                                <rect key="frame" x="47" y="19" width="835" height="296"/>
+                                <rect key="frame" x="46" y="18" width="834" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Buy.png" translatesAutoresizingMaskIntoConstraints="NO" id="X8P-XG-ieL">
-                                <rect key="frame" x="258" y="147" width="412" height="88"/>
+                                <rect key="frame" x="257" y="146" width="412" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yl4-oM-NXK" userLabel="Buy">
-                                <rect key="frame" x="255" y="147" width="414" height="88"/>
+                                <rect key="frame" x="253" y="146" width="415" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <action selector="buy:" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="nmh-vF-p86"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BUY FOR $5,99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4g-sR-nbb">
-                                <rect key="frame" x="278" y="162" width="369" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BUY FOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="v4g-sR-nbb">
+                                <rect key="frame" x="275" y="161" width="197" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Close.png" translatesAutoresizingMaskIntoConstraints="NO" id="BTi-RM-cdI">
-                                <rect key="frame" x="854" y="0.0" width="27" height="23"/>
+                                <rect key="frame" x="853" y="-1" width="27" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NhE-oG-SEC">
-                                <rect key="frame" x="122" y="95" width="686" height="49"/>
+                                <rect key="frame" x="120" y="94" width="687" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <string key="text">YOU HAVE REACHED THE FREE PLAY TIME!
 IF YOU THE LIKE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
@@ -59,7 +59,7 @@ IF YOU THE LIKE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-gX-cBN" userLabel="Close">
-                                <rect key="frame" x="853" y="0.0" width="29" height="23"/>
+                                <rect key="frame" x="851" y="-1" width="29" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
@@ -67,6 +67,13 @@ IF YOU THE LIKE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
                                     <segue destination="iCU-6M-UEc" kind="unwind" unwindAction="showMain:" id="kO8-4D-Ouw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-0b-pA7">
+                                <rect key="frame" x="462" y="161" width="216" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,6 +84,9 @@ IF YOU THE LIKE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vRg-Z7-Kcf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceLabel" destination="VgU-0b-pA7" id="Not-8u-9Lb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="iCU-6M-UEc" userLabel="Exit" sceneMemberID="exit"/>

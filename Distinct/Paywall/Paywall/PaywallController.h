@@ -11,5 +11,6 @@
 @interface PaywallController : UIViewController <SKProductsRequestDelegate>
 
 - (IBAction)buy:(id)sender;
+@property IBOutlet UILabel* priceLabel;
 
 @end
