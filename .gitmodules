@@ -19,3 +19,6 @@
 [submodule "Libraries/Cataclysm-BN"]
 	path = Libraries/Cataclysm-BN
 	url = git@github.com:apollovy/Cataclysm-BN.git
+[submodule "Libraries/ReusableXibViews"]
+	path = Libraries/ReusableXibViews
+	url = git@github.com:letatas/ReusableXibViews.git
