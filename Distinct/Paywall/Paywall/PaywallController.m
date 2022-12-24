@@ -7,14 +7,18 @@
 #import <StoreKit/StoreKit.h>
 
 #import "PaywallController.h"
+
 #import "PaywallPaymentKey.h"
 #import "PaywallUnlimitedFunctionality.h"
+#import "logAnalytics.h"
 
 
-@implementation PaywallController : UIViewController {
+@implementation PaywallController {
     SKProductsRequest* _productRequest;
     SKProduct* _product;
 }
+
+# pragma mark price loading
 
 - (void)viewDidLoad {
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
@@ -29,13 +33,6 @@
     [_productRequest start];
 }
 
-- (IBAction)buy:(id)sender {
-    self.buyButton.enabled = false;
-    // TODO: Show "Processing" screen
-    SKPayment* payment = [SKPayment paymentWithProduct:_product];
-    [[SKPaymentQueue defaultQueue] addPayment:payment];
-}
-
 - (NSString*)_getProductIdentifier {
     NSURL* url = [[NSBundle mainBundle]
                             URLForResource:(NSString*) PaywallPaymentKey withExtension:@"plist"];
@@ -46,26 +43,41 @@
 - (void)productsRequest:(SKProductsRequest*)request didReceiveResponse:(SKProductsResponse*)response {
     _productRequest = NULL;
     if (response.invalidProductIdentifiers.count > 0) {
-        NSLog(@"No valid purchase identifier found! Invalid ones: %@",
-                response.invalidProductIdentifiers);
+        [self
+                logAnalyticsEvent:@"no_valid_identifiers_found"
+                withParams:@{
+                        @"invalidIdentifiers": response.invalidProductIdentifiers
+                }
+        ];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.priceLabel setText:@"NOT FOUND!"];
+        });
         return;
     }
-
 
     _product = response.products.firstObject;
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.priceLabel
-                setText:[NSString stringWithFormat:@"%@%@",
-                                                   _product.priceLocale.currencySymbol,
-                                                   _product.price
-                ]];
+                setText:[NSString
+                        stringWithFormat:@"%@%@",
+                                         self->_product.priceLocale.currencySymbol,
+                                         self->_product.price
+                ]
+        ];
         self.buyButton.enabled = true;
     });
 }
 
+# pragma mark purchase handling
+
+- (IBAction)buy:(id)sender {
+    [self logAnalyticsEvent:@"tried" withParams:@{}];
+    self.buyButton.enabled = false;
+    SKPayment* payment = [SKPayment paymentWithProduct:_product];
+    [[SKPaymentQueue defaultQueue] addPayment:payment];
+}
+
 - (void)paymentQueue:(SKPaymentQueue*)queue updatedTransactions:(NSArray*)transactions {
-    NSLog(@"- (void)paymentQueue:(SKPaymentQueue*)queue updatedTransactions:(NSArray*)"
-          "transactions {");
     for (SKPaymentTransaction* transaction in transactions) {
         switch (transaction.transactionState) {
             // Call the appropriate custom method for the transaction state.
@@ -75,23 +87,50 @@
             case SKPaymentTransactionStateDeferred:
 //                [self showTransactionAsInProgress:transaction deferred:YES];
                 break;
-            case SKPaymentTransactionStateFailed:
+            case SKPaymentTransactionStateFailed: {
+                [self
+                        logAnalyticsEvent:@"failed"
+                        withParams:@{
+                                @"error": transaction.error.localizedFailureReason
+                        }
+                ];
                 self.buyButton.enabled = true;
                 break;
+            }
             case SKPaymentTransactionStatePurchased:
-            case SKPaymentTransactionStateRestored:
+            case SKPaymentTransactionStateRestored: {
+                NSString* eventName = transaction
+                        .transactionState == SKPaymentTransactionStatePurchased
+                        ? @"succeeded"
+                        : @"restored";
+                [self
+                        logAnalyticsEvent:eventName
+                        withParams:@{
+                                @"transactionId": transaction.transactionIdentifier,
+                        }
+                ];
                 [self completeTransaction];
                 break;
-            default:
-                // For debugging
-                NSLog(@"Unexpected transaction state %@", @(transaction.transactionState));
+            }
+            default: {
+                NSString* message = @"unexpected_transaction_state";
+                int transactionState = transaction.transactionState;
+                NSLog(@"%@%d", message, transactionState);
+                [self
+                        logAnalyticsEvent:message
+                        withParams:@{
+                                @"state": [NSString
+                                        stringWithFormat:@"%d",
+                                        transactionState
+                                ]
+                        }];
                 break;
+            }
         }
     }
 }
 
 - (void)completeTransaction {
-    NSLog(@"- (void)completeTransaction {");
     unlockUnlimitedFunctionality();
     [self finishWithPaywall];
 }
@@ -99,6 +138,12 @@
 - (void)finishWithPaywall {
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
     [self dismissViewControllerAnimated:true completion:NULL];
+}
+
+#pragma mark analytics
+
+- (void)logAnalyticsEvent:(NSString*)name withParams:(NSDictionary*)params {
+    logAnalytics([NSString stringWithFormat:@"paywall_purchase_%@", name], params);
 }
 
 @end

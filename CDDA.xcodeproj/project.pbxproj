@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		260A73F8E3DA7035386F7E64 /* Pods_CDDA_CDDA_iCloud_debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */; };
+		5EC5F9B38BECD6D42BFBABC3 /* Pods_Paywall_debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */; };
+		684F03E083D73F4D59E25874 /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */; };
 		B5072BDD259D1C18002479DB /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
 		B50B447325A24ECB00628243 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
 		B50B449C25A24FB700628243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
@@ -409,12 +410,15 @@
 		D0AA233E6CABC214CE111CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AA290005E025568B94F44E /* Assets.xcassets */; };
 		D0AA24EDABA55FE3491E2C4C /* PaywallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2892ED92349910A11016 /* PaywallController.m */; };
 		D0AA24F84D01562CF1DE2599 /* showPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */; };
+		D0AA255C2FDAA3C949663D83 /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */; };
 		D0AA260D6064E55B917D0DE5 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA26F9AFE0A8402DCF05B9 /* PaywallUnlimitedFunctionality.m */; };
 		D0AA26A12F6ACA37CF114FDE /* PaywallUnlimitedGameIAPID.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2F681D6433D2F9EE456D /* PaywallUnlimitedGameIAPID.plist */; };
 		D0AA27A6699ED71A060228E4 /* PaywallPaymentKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA29E0AAA5FB3F1653C56D /* PaywallPaymentKey.m */; };
 		D0AA2806054C585B62B33033 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
 		D0AA282105D4C6C7762F149D /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA26F9AFE0A8402DCF05B9 /* PaywallUnlimitedFunctionality.m */; };
 		D0AA2999CDF4E35D1E972ECD /* PaywallDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2A258D4B452A3FEABF2A /* PaywallDisplay.mm */; };
+		D0AA2AB92D6464FBD5EB6D50 /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */; };
+		D0AA2BB7A88D634A151DC356 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
 		D0AA2BFF924D6882D9E1CABF /* PaywallUnlimitedGameIAPID.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallUnlimitedGameIAPID.plist */; };
 		D0AA2D662D8DFA3406CB7B45 /* SDL_uikitviewcontroller+MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2BF59D6243FECDE0AD2B /* SDL_uikitviewcontroller+MainView.mm */; };
 		D0AA2D6D09D3E78D9A54CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */; };
@@ -627,8 +631,10 @@
 
 /* Begin PBXFileReference section */
 		62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.release.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.release.xcconfig"; sourceTree = "<group>"; };
-		8D1E95D9EBCA66ED412EF480 /* Pods-CDDA-CDDA iCloud debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA-CDDA iCloud debug.debug.xcconfig"; path = "Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug.debug.xcconfig"; sourceTree = "<group>"; };
 		8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
+		8DD17C755D49E2A0EBF7F4AD /* Pods-Paywall debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.debug.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.debug.xcconfig"; sourceTree = "<group>"; };
+		9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paywall_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3038FE10863690F4230FCE7 /* Pods-Paywall debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.release.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.release.xcconfig"; sourceTree = "<group>"; };
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "Libraries/Cataclysm-BN/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
@@ -1418,11 +1424,12 @@
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B5FA7BEC270CD09C00A1655A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5FCB825295720C400BD43A4 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
+		B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA_CDDA_iCloud_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
 		D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showPaywall.m; sourceTree = "<group>"; };
 		D0AA23B391B22C88DF234A85 /* PaywallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallController.h; sourceTree = "<group>"; };
@@ -1433,6 +1440,7 @@
 		D0AA26D14805CBFEDBFFA2D0 /* PaywallDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallDisplay.h; sourceTree = "<group>"; };
 		D0AA26F9AFE0A8402DCF05B9 /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
 		D0AA271FDF84E1FC313B8FED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0AA27BDFA7F8DE5C2EE016A /* logAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logAnalytics.h; sourceTree = "<group>"; };
 		D0AA2892ED92349910A11016 /* PaywallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallController.m; sourceTree = "<group>"; };
 		D0AA290005E025568B94F44E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0AA290F1F1C5498955B890D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1451,7 +1459,7 @@
 		D0AA2E6635D9027F0297EC39 /* PaywallUnlimitedFunctionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallUnlimitedFunctionality.h; sourceTree = "<group>"; };
 		D0AA2EA7EB4AA92104AD4141 /* Paywall debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paywall debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA2F681D6433D2F9EE456D /* PaywallUnlimitedGameIAPID.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = PaywallUnlimitedGameIAPID.plist; sourceTree = "<group>"; };
-		F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA-CDDA iCloud debug.release.xcconfig"; path = "Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug.release.xcconfig"; sourceTree = "<group>"; };
+		D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logAnalytics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1481,6 +1489,7 @@
 				B54195C92955BBEA0035CC2F /* StoreKit.framework in Frameworks */,
 				B54FDD802592A0AD00505231 /* CoreMotion.framework in Frameworks */,
 				B54FDD7E2592A09000505231 /* GameController.framework in Frameworks */,
+				684F03E083D73F4D59E25874 /* Pods_CDDA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1501,7 +1510,6 @@
 				B58679E8260402B600EACF2C /* CoreBluetooth.framework in Frameworks */,
 				B58679E9260402B600EACF2C /* CoreMotion.framework in Frameworks */,
 				B58679EA260402B600EACF2C /* GameController.framework in Frameworks */,
-				260A73F8E3DA7035386F7E64 /* Pods_CDDA_CDDA_iCloud_debug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1510,6 +1518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54195E02955BC1F0035CC2F /* StoreKit.framework in Frameworks */,
+				5EC5F9B38BECD6D42BFBABC3 /* Pods_Paywall_debug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1521,8 +1530,8 @@
 			children = (
 				8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */,
 				62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */,
-				8D1E95D9EBCA66ED412EF480 /* Pods-CDDA-CDDA iCloud debug.debug.xcconfig */,
-				F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */,
+				8DD17C755D49E2A0EBF7F4AD /* Pods-Paywall debug.debug.xcconfig */,
+				A3038FE10863690F4230FCE7 /* Pods-Paywall debug.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2363,6 +2372,7 @@
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
 				265D23A253D509D85BDFC3B4 /* Pods */,
+				B5FCB836295721B200BD43A4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2388,6 +2398,7 @@
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5FCB825295720C400BD43A4 /* FirebaseAnalytics.xcframework */,
 				B54195C82955BBEA0035CC2F /* StoreKit.framework */,
 				B57AF1F82943D17D00604616 /* FirebaseCore.framework */,
 				B55910D2271F24B4001F34CD /* CoreServices.framework */,
@@ -2400,7 +2411,7 @@
 				B54FDD7D2592A09000505231 /* GameController.framework */,
 				B54FDD7125929FEA00505231 /* MobileCoreServices.framework */,
 				BB281804576C684487B909B9 /* Pods_CDDA.framework */,
-				CF92757F7F59F2F5E8E5D633 /* Pods_CDDA_CDDA_iCloud_debug.framework */,
+				9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2461,6 +2472,7 @@
 				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
 				B5EDBF80270B957000FB4526 /* source */,
 				D0AA277D54697B14E280CFBA /* Paywall */,
+				D0AA2CFE82D945E74EE3AEF2 /* Analytics */,
 			);
 			path = Distinct;
 			sourceTree = "<group>";
@@ -2478,6 +2490,14 @@
 				B57AF1FF2943D47300604616 /* cdda_firebase.h */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		B5FCB836295721B200BD43A4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		B5FD1F2625A575AB00CE613D /* Binaries */ = {
@@ -2552,6 +2572,15 @@
 			path = CDDA/source/JSDPad;
 			sourceTree = "<group>";
 		};
+		D0AA2CFE82D945E74EE3AEF2 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				D0AA27BDFA7F8DE5C2EE016A /* logAnalytics.h */,
+				D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2606,11 +2635,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B58679FF260402B600EACF2C /* Build configuration list for PBXNativeTarget "CDDA iCloud debug" */;
 			buildPhases = (
-				F787A51C1AD499CEB06518A2 /* [CP] Check Pods Manifest.lock */,
 				B5867A13260402F800EACF2C /* Sources */,
 				B58679DD260402B600EACF2C /* Frameworks */,
 				B58679EC260402B600EACF2C /* Resources */,
-				3CAEFD8960DD47D3BCB32009 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2625,9 +2652,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0AA2AC860C68CAC8C93F713 /* Build configuration list for PBXNativeTarget "Paywall debug" */;
 			buildPhases = (
+				F05AA889FEED57A2477E2E57 /* [CP] Check Pods Manifest.lock */,
 				D0AA225BC3EC4D9D39E0E985 /* Sources */,
 				D0AA27A6B283E606A131A934 /* Frameworks */,
 				D0AA25AAA7A45718626DD646 /* Resources */,
+				F4BA20CC26B5B66B0B98671E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2916,23 +2945,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3CAEFD8960DD47D3BCB32009 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA-CDDA iCloud debug/Pods-CDDA-CDDA iCloud debug-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		66E0DCCDC1ECEF3C111B1D52 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3047,7 +3059,7 @@
 			shellPath = /bin/sh;
 			shellScript = "echo touching mo\ntouch Libraries/Cataclysm-BN/lang/mo\n";
 		};
-		F787A51C1AD499CEB06518A2 /* [CP] Check Pods Manifest.lock */ = {
+		F05AA889FEED57A2477E2E57 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3062,11 +3074,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CDDA-CDDA iCloud debug-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Paywall debug-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4BA20CC26B5B66B0B98671E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Paywall debug/Pods-Paywall debug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Paywall debug/Pods-Paywall debug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Paywall debug/Pods-Paywall debug-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3418,6 +3447,7 @@
 				D0AA2D662D8DFA3406CB7B45 /* SDL_uikitviewcontroller+MainView.mm in Sources */,
 				D0AA260D6064E55B917D0DE5 /* PaywallUnlimitedFunctionality.m in Sources */,
 				D0AA21AC4F91AD704920A715 /* PaywallPaymentKey.m in Sources */,
+				D0AA255C2FDAA3C949663D83 /* logAnalytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3447,6 +3477,8 @@
 				D0AA24EDABA55FE3491E2C4C /* PaywallController.m in Sources */,
 				D0AA282105D4C6C7762F149D /* PaywallUnlimitedFunctionality.m in Sources */,
 				D0AA27A6699ED71A060228E4 /* PaywallPaymentKey.m in Sources */,
+				D0AA2AB92D6464FBD5EB6D50 /* logAnalytics.m in Sources */,
+				D0AA2BB7A88D634A151DC356 /* cdda_firebase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3855,7 +3887,6 @@
 		};
 		B5867A00260402B600EACF2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D1E95D9EBCA66ED412EF480 /* Pods-CDDA-CDDA iCloud debug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -3895,7 +3926,6 @@
 		};
 		B5867A01260402B600EACF2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0B4F5EED2767C60A38685B2 /* Pods-CDDA-CDDA iCloud debug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -3934,6 +3964,7 @@
 		};
 		D0AA2C24F6522F7F4B46CD5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3038FE10863690F4230FCE7 /* Pods-Paywall debug.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3959,7 +3990,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -4006,6 +4037,7 @@
 		};
 		D0AA2FE6E056E92F233C430A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD17C755D49E2A0EBF7F4AD /* Pods-Paywall debug.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -4031,7 +4063,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -15,6 +15,7 @@
 
 extern "C" {
 #import "cdda_firebase.h"
+#import "logAnalytics.h"
 #import "PaywallUnlimitedFunctionality.h"
 }
 
@@ -33,15 +34,6 @@ NSDictionary* testGroupToEventsCount = @{
         @"1": @10,
         @"2": @20,
 };
-
-void logAnalytics(NSString* name, NSDictionary* params) {
-    NSMutableDictionary* newParams = [params mutableCopy];
-    auto testGroup = getTestGroup();
-    [newParams addEntriesFromDictionary:@{
-            @"testGroup": testGroup,
-    }];
-    [FIRAnalytics logEventWithName:name parameters:newParams];
-}
 
 bool showPaywallIfPlayedEnough() {
     auto eventsCount = getEventsCount();
