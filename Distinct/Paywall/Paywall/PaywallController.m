@@ -76,7 +76,7 @@
 //                [self showTransactionAsInProgress:transaction deferred:YES];
                 break;
             case SKPaymentTransactionStateFailed:
-//                [self failedTransaction:transaction];
+                self.buyButton.enabled = true;
                 break;
             case SKPaymentTransactionStatePurchased:
             case SKPaymentTransactionStateRestored:
