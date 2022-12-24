@@ -36,7 +36,10 @@
 - (NSString*)_getProductIdentifier {
     NSURL* url = [[NSBundle mainBundle]
                             URLForResource:(NSString*) PaywallPaymentKey withExtension:@"plist"];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     NSString* productIdentifier = [NSArray arrayWithContentsOfURL:url][0];
+#pragma clang diagnostic pop
     return productIdentifier;
 }
 
@@ -88,10 +91,17 @@
 //                [self showTransactionAsInProgress:transaction deferred:YES];
                 break;
             case SKPaymentTransactionStateFailed: {
+                NSString* error = transaction.error.localizedFailureReason
+                        ?: transaction.error.localizedDescription
+                                ?: [NSString
+                                        stringWithFormat:@"%ld@%@",
+                                                         transaction.error.code,
+                                                         transaction.error.domain
+                                ];
                 [self
                         logAnalyticsEvent:@"failed"
                         withParams:@{
-                                @"error": transaction.error.localizedFailureReason
+                                @"error": error
                         }
                 ];
                 self.buyButton.enabled = true;
@@ -121,7 +131,7 @@
                         withParams:@{
                                 @"state": [NSString
                                         stringWithFormat:@"%d",
-                                        transactionState
+                                                         transactionState
                                 ]
                         }];
                 break;

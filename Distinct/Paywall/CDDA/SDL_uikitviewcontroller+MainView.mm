@@ -12,11 +12,14 @@
 
 extern "C" {
 #import "SDL_char_utils.h"
+#import "logAnalytics.h"
 }
 
 @implementation SDL_uikitviewcontroller (MainView)
--(IBAction)showMain:(UIStoryboardSegue*)segue {
+- (IBAction)showMain:(UIStoryboardSegue*)segue {
+    bool gameFound = false;
     if (g != NULL) {
+        gameFound = true;
         g->save();
         g->uquit = QUIT_SAVED;
         g->u.action_taken();
@@ -30,8 +33,9 @@ extern "C" {
                     SDL_send_keysym(SDLK_ESCAPE, KMOD_NONE);
                 }
         );
-    } else {
-        NSLog(@"No game to save while returning to main screen!");
     }
+    logAnalytics(@"paywall_dismissed", @{
+            @"gameFound": @((int) gameFound),
+    });
 }
 @end

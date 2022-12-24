@@ -9,13 +9,24 @@
 #import "cdda_firebase.h"
 
 #import "logAnalytics.h"
+#import "PaywallUnlimitedFunctionality.h"
 
+
+NSString* makeCDDAKeyName(NSString* key) {
+    return [NSString stringWithFormat:@"cdda_%@", key];
+}
 
 void logAnalytics(NSString* name, NSDictionary* params) {
-    NSMutableDictionary* newParams = [params mutableCopy];
-    NSString* testGroup = getTestGroup();
-    [newParams addEntriesFromDictionary:@{
-            @"testGroup": testGroup,
+    NSMutableDictionary* newParams = [@{
+            makeCDDAKeyName(@"testGroup"): getTestGroup(),
+            makeCDDAKeyName(@"isUnlimitedFunctionalityUnlocked"): @(
+                    (int) isUnlimitedFunctionalityUnlocked()),
+    } mutableCopy];
+    [params enumerateKeysAndObjectsUsingBlock:^(NSString* key, id value, bool* stop) {
+        [newParams
+                setValue:value
+                forKey:makeCDDAKeyName(key)
+        ];
     }];
-    [FIRAnalytics logEventWithName:name parameters:newParams];
+    [FIRAnalytics logEventWithName:makeCDDAKeyName(name) parameters:newParams];
 }

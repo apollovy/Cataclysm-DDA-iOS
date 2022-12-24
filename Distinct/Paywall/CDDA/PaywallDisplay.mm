@@ -4,7 +4,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <FirebaseAnalytics/FirebaseAnalytics.h>
 
 #include "event.h"
 #import "event_bus.h"
@@ -44,7 +43,7 @@ bool showPaywallIfPlayedEnough() {
     }
     if (eventsCount >= [maxEventsCount longValue] && !isUnlimitedFunctionalityUnlocked()) {
         logAnalytics(@"paywall_shown", @{
-                @"cdda_test_group": testGroup,
+                @"test_group": testGroup,
         });
         showPaywall();
         return true;
@@ -54,9 +53,9 @@ bool showPaywallIfPlayedEnough() {
 
 void logAnalyticsEventForEventType(NSString* name, event_type eventType) {
     logAnalytics(name, @{
-                    @"cdda_event_type": [NSString stringWithFormat:@"%s",
-                                                                   io::enum_to_string(eventType).data()],
-                    @"cdda_events_count": @(getEventsCount()),
+                    @"event_type": [NSString
+                            stringWithFormat:@"%s", io::enum_to_string(eventType).data()],
+                    @"events_count": @(getEventsCount()),
             }
     );
 };
@@ -68,7 +67,6 @@ class PaywallDisplay : public event_subscriber {
             case event_type::avatar_moves:
             case event_type::character_takes_damage:
             case event_type::character_heals_damage: {
-                logAnalyticsEventForEventType(@"paywall_event_not_counted", eventType);
                 showPaywallIfPlayedEnough();
                 break;
             }
