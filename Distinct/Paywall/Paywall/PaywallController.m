@@ -17,10 +17,23 @@
     SKProductsRequest* _productRequest;
     SKProduct* _product;
 }
+    
+- (UILabel*) priceLabel {
+    return self.paywallBuyArea.priceLabel;
+}
+
+- (UIButton*) buyButton {
+    return self.paywallBuyArea.buyButton;
+}
+
 
 # pragma mark price loading
 
 - (void)viewDidLoad {
+    [self.buyButton
+     addTarget:self
+     action:@selector(buy:)
+     forControlEvents:UIControlEventPrimaryActionTriggered];
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     NSString* productIdentifier = [self _getProductIdentifier];
 
@@ -73,7 +86,7 @@
 
 # pragma mark purchase handling
 
-- (IBAction)buy:(id)sender {
+- (void)buy:(id)sender {
     [self logAnalyticsEvent:@"tried" withParams:@{}];
     self.buyButton.enabled = false;
     SKPayment* payment = [SKPayment paymentWithProduct:_product];

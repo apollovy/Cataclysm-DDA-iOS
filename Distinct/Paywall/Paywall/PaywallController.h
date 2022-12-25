@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <StoreKit/StoreKit.h>
 
+#import "CDDA-Swift.h"
+
 @interface PaywallController : UIViewController <SKProductsRequestDelegate, SKPaymentTransactionObserver>
-- (IBAction)buy:(id)sender;
-@property IBOutlet UILabel* priceLabel;
-@property IBOutlet UIButton* buyButton;
+@property IBOutlet PaywallBuyArea* paywallBuyArea;
 @end
 
 #endif  // PaywallControllerH
+

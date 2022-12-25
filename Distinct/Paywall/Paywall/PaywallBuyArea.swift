@@ -7,4 +7,7 @@ import UIKit
 
 @IBDesignable class PaywallBuyAreaWrapper : NibWrapperView<PaywallBuyArea> { }
 
-class PaywallBuyArea: UIView { }
+public class PaywallBuyArea: UIView {
+    @IBOutlet public var priceLabel: UILabel!
+    @IBOutlet public var buyButton: UIButton!
+}
