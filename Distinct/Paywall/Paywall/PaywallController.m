@@ -11,6 +11,7 @@
 #import "PaywallPaymentKey.h"
 #import "PaywallUnlimitedFunctionality.h"
 #import "logAnalytics.h"
+#import "PaywallControllerCloseDelegate.h"
 
 
 @implementation PaywallController {
@@ -161,6 +162,12 @@
 - (void)finishWithPaywall {
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
     [self dismissViewControllerAnimated:true completion:NULL];
+}
+
+#pragma mark closing
+
+- (IBAction) close {
+    [[PaywallControllerCloseDelegate new] close:self];
 }
 
 #pragma mark analytics

@@ -396,6 +396,7 @@
 		B5B01B96259BEF650023AB00 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
 		B5B7F8D62602C86B0007594B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */; };
+		B5CFB7852958BCC50068075E /* PaywallControllerCloseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CFB7832958BCC50068075E /* PaywallControllerCloseDelegate.m */; };
 		B5D4B2062954EAA0002C1FA5 /* PaywallBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D4B1ED2954EAA0002C1FA5 /* PaywallBuy.png */; };
 		B5D4B2072954EAA0002C1FA5 /* PaywallBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D4B1ED2954EAA0002C1FA5 /* PaywallBuy.png */; };
 		B5D4B2082954EAA0002C1FA5 /* PaywallBuyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D4B2042954EAA0002C1FA5 /* PaywallBuyBG.png */; };
@@ -1448,6 +1449,8 @@
 		B5B01B95259BEF650023AB00 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = "Libraries/Cataclysm-BN/data"; sourceTree = SOURCE_ROOT; };
 		B5B01B99259BF0690023AB00 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		B5CF696825F38BC3009F929E /* CDDA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CDDA.entitlements; sourceTree = "<group>"; };
+		B5CFB7832958BCC50068075E /* PaywallControllerCloseDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallControllerCloseDelegate.m; sourceTree = "<group>"; };
+		B5CFB79D2958BCD40068075E /* PaywallControllerCloseDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallControllerCloseDelegate.h; sourceTree = "<group>"; };
 		B5D4B1ED2954EAA0002C1FA5 /* PaywallBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuy.png; sourceTree = "<group>"; };
 		B5D4B2042954EAA0002C1FA5 /* PaywallBuyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuyBG.png; sourceTree = "<group>"; };
 		B5D4B2052954EAA0002C1FA5 /* PaywallBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaywallBG.jpg; sourceTree = "<group>"; };
@@ -1661,6 +1664,7 @@
 				D0AA269FCDF5FC7C00BB1285 /* PaywallPaymentKey.m */,
 				B5FCB88629576EFE00BD43A4 /* PaywallBuyArea.xib */,
 				D0AA2876D25EE60CFB9CA049 /* PaywallBuyArea.swift */,
+				B5CFB79D2958BCD40068075E /* PaywallControllerCloseDelegate.h */,
 			);
 			path = Paywall;
 			sourceTree = "<group>";
@@ -2621,6 +2625,7 @@
 				B5A7FC702954FE9300505C7B /* SceneDelegate.m */,
 				B5A7FC722954FEA700505C7B /* SceneDelegate.h */,
 				D0AA2F681D6433D2F9EE456D /* PaywallUnlimitedGameIAPID.plist */,
+				B5CFB7832958BCC50068075E /* PaywallControllerCloseDelegate.m */,
 			);
 			path = "Paywall debug";
 			sourceTree = "<group>";
@@ -3550,6 +3555,7 @@
 			files = (
 				B58ED01929537C010032DF62 /* ViewController.m in Sources */,
 				B5A7FC712954FE9300505C7B /* SceneDelegate.m in Sources */,
+				B5CFB7852958BCC50068075E /* PaywallControllerCloseDelegate.m in Sources */,
 				D0AA20D44B84934BC444AA3F /* main.m in Sources */,
 				D0AA2F55F9123F4605542D46 /* AppDelegate.m in Sources */,
 				D0AA200A44F56A1907454B79 /* showPaywall.m in Sources */,

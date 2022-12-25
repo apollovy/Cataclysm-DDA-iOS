@@ -12,7 +12,6 @@
 
 @interface ViewController : UIViewController
 
--(IBAction)showMain:(UIStoryboardSegue*)segue;
 -(IBAction)showPaywall:(id)sender;
 
 @end

@@ -22,18 +22,18 @@
                                     <constraint firstAttribute="width" secondItem="Efm-3N-Fvm" secondAttribute="height" multiplier="1344:621" id="gRT-sn-K2w"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-gX-cBN" userLabel="Close">
+                            <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-JR-x5P" customClass="PaywallBuyAreaWrapper" customModule="CDDA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24" width="1366" height="980"/>
+                            </view>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-gX-cBN" userLabel="Close">
                                 <rect key="frame" x="1228" y="0.0" width="118" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="PaywallClose.png"/>
                                 <connections>
-                                    <segue destination="iCU-6M-UEc" kind="unwind" unwindAction="showMain:" id="kO8-4D-Ouw"/>
+                                    <action selector="close" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="V8e-aV-KOu"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-JR-x5P" customClass="PaywallBuyAreaWrapper" customModule="CDDA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24" width="1366" height="980"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -53,7 +53,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="iCU-6M-UEc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="124.24892703862662" y="-40.465116279069768"/>
         </scene>
