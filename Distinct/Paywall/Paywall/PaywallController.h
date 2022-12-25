@@ -14,7 +14,7 @@
 
 @interface PaywallController : UIViewController <SKProductsRequestDelegate, SKPaymentTransactionObserver>
 @property IBOutlet PaywallBuyArea* paywallBuyArea;
-- (IBAction) close;
 @end
 
 #endif  // PaywallControllerH
+

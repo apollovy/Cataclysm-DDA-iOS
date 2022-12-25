@@ -31,7 +31,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="PaywallClose.png"/>
                                 <connections>
-                                    <action selector="close" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="V8e-aV-KOu"/>
+                                    <segue destination="iCU-6M-UEc" kind="unwind" unwindAction="showMain:" id="EaR-LZ-PP7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,6 +53,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="iCU-6M-UEc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="124.24892703862662" y="-40.465116279069768"/>
         </scene>
