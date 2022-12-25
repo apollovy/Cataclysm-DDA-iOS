@@ -433,6 +433,8 @@
 		D0AA2D662D8DFA3406CB7B45 /* SDL_uikitviewcontroller+MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2BF59D6243FECDE0AD2B /* SDL_uikitviewcontroller+MainView.mm */; };
 		D0AA2D6D09D3E78D9A54CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */; };
 		D0AA2E20190BA733B9E5A7A1 /* PaywallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2892ED92349910A11016 /* PaywallController.m */; };
+		D0AA2E80386DB74E0591B0ED /* CDDANibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA21AF042B96F493A4A68C /* CDDANibWrapperView.swift */; };
+		D0AA2ED80A67BF02A6B70E8D /* CDDANibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA21AF042B96F493A4A68C /* CDDANibWrapperView.swift */; };
 		D0AA2F55F9123F4605542D46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2DA79D03B5F8DD3586 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -1462,6 +1464,7 @@
 		B5FD200325A57A9F00CE613D /* mo */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mo; path = "Libraries/Cataclysm-DDA/lang/mo"; sourceTree = SOURCE_ROOT; };
 		BB281804576C684487B909B9 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
+		D0AA21AF042B96F493A4A68C /* CDDANibWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDANibWrapperView.swift; sourceTree = "<group>"; };
 		D0AA22AFEE3BBFDE68705F29 /* showPaywall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showPaywall.m; sourceTree = "<group>"; };
 		D0AA23B391B22C88DF234A85 /* PaywallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallController.h; sourceTree = "<group>"; };
 		D0AA24036DCBEE89AA86416A /* PaywallPaymentKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallPaymentKey.h; sourceTree = "<group>"; };
@@ -2536,6 +2539,7 @@
 				B5EDBF80270B957000FB4526 /* source */,
 				D0AA277D54697B14E280CFBA /* Paywall */,
 				D0AA2CFE82D945E74EE3AEF2 /* Analytics */,
+				D0AA21AF042B96F493A4A68C /* CDDANibWrapperView.swift */,
 			);
 			path = Distinct;
 			sourceTree = "<group>";
@@ -3527,6 +3531,7 @@
 				D0AA255C2FDAA3C949663D83 /* logAnalytics.m in Sources */,
 				D0AA2C9928DBF2769B0F36C8 /* PaywallPaymentKey.m in Sources */,
 				D0AA2654EA01D4B70C3CFCB5 /* PaywallBuyArea.swift in Sources */,
+				D0AA2E80386DB74E0591B0ED /* CDDANibWrapperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3562,6 +3567,7 @@
 				D0AA2725C7648BA24093F14D /* PaywallPaymentKey.m in Sources */,
 				D0AA251374CEDEA856AF4B90 /* PaywallBuyArea.swift in Sources */,
 				B504BF332957A47C00EF24DA /* NibWrapped.swift in Sources */,
+				D0AA2ED80A67BF02A6B70E8D /* CDDANibWrapperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

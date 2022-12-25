@@ -5,7 +5,7 @@
 
 import UIKit
 
-@IBDesignable class PaywallBuyAreaWrapper : NibWrapperView<PaywallBuyArea> { }
+@IBDesignable class PaywallBuyAreaWrapper : CDDANibWrapperView<PaywallBuyArea> { }
 
 public class PaywallBuyArea: UIView {
     @IBOutlet public var priceLabel: UILabel!
