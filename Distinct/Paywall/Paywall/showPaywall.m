@@ -9,11 +9,11 @@
 
 #import "showPaywall.h"
 
-void showPaywall() {
+void showPaywall(void) {
     PaywallController* controller = [[UIStoryboard storyboardWithName:@"Paywall"
                                                    bundle:nil]
                                                    instantiateInitialViewController];
-    controller.modalPresentationStyle = UIModalPresentationFullScreen;
+    controller.modalPresentationStyle = UIModalPresentationOverFullScreen;
     UIWindow* window = [[UIApplication.sharedApplication windows] firstObject];
     [window.rootViewController showViewController:controller sender:nil];
 }
