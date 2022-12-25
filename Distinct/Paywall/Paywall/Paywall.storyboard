@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_72" orientation="landscape" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,29 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="PaywallController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="932" height="430"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="PaywallBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Efm-3N-Fvm">
-                                <rect key="frame" x="0.66666666666668561" y="0.0" width="930.66666666666652" height="430"/>
+                                <rect key="frame" x="-80" y="0.0" width="896" height="414"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Efm-3N-Fvm" secondAttribute="height" multiplier="1344:621" id="gRT-sn-K2w"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PaywallClose.png" translatesAutoresizingMaskIntoConstraints="NO" id="BTi-RM-cdI">
-                                <rect key="frame" x="850" y="-1" width="27" height="24"/>
+                                <rect key="frame" x="661" y="-2" width="21" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-gX-cBN" userLabel="Close">
-                                <rect key="frame" x="848" y="-1" width="29" height="24"/>
+                                <rect key="frame" x="659" y="-2" width="23" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <connections>
                                     <segue destination="iCU-6M-UEc" kind="unwind" unwindAction="showMain:" id="kO8-4D-Ouw"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-JR-x5P" customClass="PaywallBuyAreaWrapper" customModule="CDDA" customModuleProvider="target">
-                                <rect key="frame" x="345" y="151" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-JR-x5P" customClass="PaywallBuyAreaWrapper" customModule="CDDA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -45,7 +43,11 @@
                         <constraints>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="62u-S1-Lp3"/>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="CX8-WE-ToT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="L5h-JR-x5P" secondAttribute="leading" id="E5O-pk-KZ6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="L5h-JR-x5P" secondAttribute="bottom" id="SOz-BM-TT4"/>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="TfD-DK-BF7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="L5h-JR-x5P" secondAttribute="top" id="VgQ-2K-rRR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="L5h-JR-x5P" secondAttribute="trailing" id="XcS-ce-Ibh"/>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vRg-Z7-Kcf"/>
                         </constraints>
                     </view>
@@ -53,7 +55,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="iCU-6M-UEc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="124.89270386266095" y="-37.674418604651166"/>
+            <point key="canvasLocation" x="124.24892703862662" y="-40.465116279069768"/>
         </scene>
     </scenes>
     <resources>

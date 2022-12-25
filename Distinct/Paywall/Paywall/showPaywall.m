@@ -13,6 +13,7 @@ void showPaywall() {
     PaywallController* controller = [[UIStoryboard storyboardWithName:@"Paywall"
                                                    bundle:nil]
                                                    instantiateInitialViewController];
+    controller.modalPresentationStyle = UIModalPresentationFullScreen;
     UIWindow* window = [[UIApplication.sharedApplication windows] firstObject];
     [window.rootViewController showViewController:controller sender:nil];
 }
