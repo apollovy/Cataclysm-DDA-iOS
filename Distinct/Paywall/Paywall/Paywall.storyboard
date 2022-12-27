@@ -23,10 +23,33 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5h-JR-x5P" customClass="PaywallBuyAreaWrapper" customModule="CDDA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="24" width="1366" height="980"/>
+                                <rect key="frame" x="0.0" y="24" width="1366" height="935.5"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZPh-um-Rlb" userLabel="TOC / Privacy policy">
+                                <rect key="frame" x="437" y="959.5" width="492" height="34.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vC-Q3-YID">
+                                        <rect key="frame" x="0.0" y="0.0" width="226" height="34.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="TERMS AND CONDITIONS"/>
+                                        <connections>
+                                            <action selector="onTermsPress" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="lAX-aP-Ih4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxa-xp-7X0">
+                                        <rect key="frame" x="266" y="0.0" width="226" height="34.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="PRIVACY POLICY"/>
+                                        <connections>
+                                            <action selector="onPolicyPress" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="CHU-GV-sAn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-gX-cBN" userLabel="Close">
-                                <rect key="frame" x="1228" y="0.0" width="118" height="131"/>
+                                <rect key="frame" x="1227" y="0.0" width="119" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="PaywallClose.png"/>
@@ -41,11 +64,13 @@
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="62u-S1-Lp3"/>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="CX8-WE-ToT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="L5h-JR-x5P" secondAttribute="leading" id="E5O-pk-KZ6"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="L5h-JR-x5P" secondAttribute="bottom" id="SOz-BM-TT4"/>
+                            <constraint firstItem="L5h-JR-x5P" firstAttribute="bottom" secondItem="ZPh-um-Rlb" secondAttribute="top" id="SOz-BM-TT4"/>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="TfD-DK-BF7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="L5h-JR-x5P" secondAttribute="top" id="VgQ-2K-rRR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="L5h-JR-x5P" secondAttribute="trailing" id="XcS-ce-Ibh"/>
+                            <constraint firstItem="ZPh-um-Rlb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lxT-71-PhC"/>
                             <constraint firstItem="Efm-3N-Fvm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vRg-Z7-Kcf"/>
+                            <constraint firstItem="ZPh-um-Rlb" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" priority="999" constant="-10" id="yPu-X9-Mls"/>
                         </constraints>
                     </view>
                     <connections>

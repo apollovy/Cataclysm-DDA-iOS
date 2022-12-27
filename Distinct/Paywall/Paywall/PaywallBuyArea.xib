@@ -81,7 +81,7 @@ IF YOU LIKE THE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
                                         <constraint firstItem="rps-Ma-i0X" firstAttribute="trailing" secondItem="FgQ-6B-6au" secondAttribute="trailing" id="mr8-Oq-dSL"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-o7-DGz">
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-o7-DGz">
                                     <rect key="frame" x="505.66666666666663" y="130" width="331" height="150.33333333333337"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>

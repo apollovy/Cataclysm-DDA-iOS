@@ -14,6 +14,7 @@
 
 
 @implementation PaywallController {
+    NSDictionary* _config;
     SKProductsRequest* _productRequest;
     SKProduct* _product;
 }
@@ -38,6 +39,14 @@
     }
 }
 
+- (void) onTermsPress {
+    [UIApplication.sharedApplication openURL:[NSURL URLWithString:_config[@"TermsURL"]] options:@{} completionHandler:NULL];
+}
+
+- (void) onPolicyPress {
+    [UIApplication.sharedApplication openURL:[NSURL URLWithString:_config[@"PrivacyPolicyURL"]] options:@{} completionHandler:NULL];
+}
+
 # pragma mark price loading
 
 - (void)viewDidLoad {
@@ -49,7 +58,8 @@
     }
 
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-    NSString* productIdentifier = [self _getProductIdentifier];
+    [self _initializePaywallConfig];
+    NSString* productIdentifier = _config[@"ProductIdentifier"];
 
     _productRequest = [[SKProductsRequest
             new]
@@ -60,14 +70,10 @@
     [_productRequest start];
 }
 
-- (NSString*)_getProductIdentifier {
+- (void)_initializePaywallConfig {
     NSURL* url = [[NSBundle mainBundle]
-                            URLForResource:(NSString*) PaywallPaymentKey withExtension:@"plist"];
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    NSString* productIdentifier = [NSArray arrayWithContentsOfURL:url][0];
-#pragma clang diagnostic pop
-    return productIdentifier;
+                            URLForResource:(NSString*) @"PaywallSettings" withExtension:@"plist"];
+    _config = [NSDictionary dictionaryWithContentsOfURL:url];
 }
 
 - (void)productsRequest:(SKProductsRequest*)request didReceiveResponse:(SKProductsResponse*)response {

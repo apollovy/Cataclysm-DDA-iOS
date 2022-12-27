@@ -105,6 +105,7 @@
 		B559EDB525AB85A50065602D /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
 		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
+		B568451B295ACE1900CD2242 /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B568451A295ACA7B00CD2242 /* PaywallSettings.plist */; };
 		B577559B2605EA81006D29B1 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B57AF1FD2943D40900604616 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
 		B57AF1FE2943D40900604616 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
@@ -421,14 +422,13 @@
 		D0AA255C2FDAA3C949663D83 /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */; };
 		D0AA260D6064E55B917D0DE5 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA26F9AFE0A8402DCF05B9 /* PaywallUnlimitedFunctionality.m */; };
 		D0AA2654EA01D4B70C3CFCB5 /* PaywallBuyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2876D25EE60CFB9CA049 /* PaywallBuyArea.swift */; };
-		D0AA26A12F6ACA37CF114FDE /* PaywallUnlimitedGameIAPID.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2F681D6433D2F9EE456D /* PaywallUnlimitedGameIAPID.plist */; };
 		D0AA2725C7648BA24093F14D /* PaywallPaymentKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA269FCDF5FC7C00BB1285 /* PaywallPaymentKey.m */; };
 		D0AA2806054C585B62B33033 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
 		D0AA282105D4C6C7762F149D /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA26F9AFE0A8402DCF05B9 /* PaywallUnlimitedFunctionality.m */; };
 		D0AA2999CDF4E35D1E972ECD /* PaywallDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2A258D4B452A3FEABF2A /* PaywallDisplay.mm */; };
 		D0AA2AB92D6464FBD5EB6D50 /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */; };
 		D0AA2BB7A88D634A151DC356 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
-		D0AA2BFF924D6882D9E1CABF /* PaywallUnlimitedGameIAPID.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallUnlimitedGameIAPID.plist */; };
+		D0AA2BFF924D6882D9E1CABF /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallSettings.plist */; };
 		D0AA2C9928DBF2769B0F36C8 /* PaywallPaymentKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA269FCDF5FC7C00BB1285 /* PaywallPaymentKey.m */; };
 		D0AA2D662D8DFA3406CB7B45 /* SDL_uikitviewcontroller+MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2BF59D6243FECDE0AD2B /* SDL_uikitviewcontroller+MainView.mm */; };
 		D0AA2D6D09D3E78D9A54CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */; };
@@ -861,6 +861,7 @@
 		B560EEB125D9B27200FDE1C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UIControls.strings; sourceTree = "<group>"; };
 		B560EEB225D9B27200FDE1C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
+		B568451A295ACA7B00CD2242 /* PaywallSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		B57201C9259293EE003D2A20 /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1489,10 +1490,9 @@
 		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
 		D0AA2BF59D6243FECDE0AD2B /* SDL_uikitviewcontroller+MainView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+MainView.mm"; sourceTree = "<group>"; };
 		D0AA2C988EDB6E376AE72629 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallUnlimitedGameIAPID.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = PaywallUnlimitedGameIAPID.plist; sourceTree = "<group>"; };
+		D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		D0AA2E6635D9027F0297EC39 /* PaywallUnlimitedFunctionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallUnlimitedFunctionality.h; sourceTree = "<group>"; };
 		D0AA2EA7EB4AA92104AD4141 /* Paywall debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paywall debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AA2F681D6433D2F9EE456D /* PaywallUnlimitedGameIAPID.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = PaywallUnlimitedGameIAPID.plist; sourceTree = "<group>"; };
 		D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logAnalytics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1640,8 +1640,8 @@
 			children = (
 				D0AA26D14805CBFEDBFFA2D0 /* PaywallDisplay.h */,
 				D0AA2A258D4B452A3FEABF2A /* PaywallDisplay.mm */,
+				D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallSettings.plist */,
 				D0AA2BF59D6243FECDE0AD2B /* SDL_uikitviewcontroller+MainView.mm */,
-				D0AA2DE2CF36FD9E4E6DEAA6 /* PaywallUnlimitedGameIAPID.plist */,
 			);
 			path = CDDA;
 			sourceTree = "<group>";
@@ -2620,11 +2620,11 @@
 				D0AA244D546B167CA8745E4E /* LaunchScreen.storyboard */,
 				D0AA2A614571C252DF3D730A /* main.m */,
 				D0AA2C988EDB6E376AE72629 /* Main.storyboard */,
+				B568451A295ACA7B00CD2242 /* PaywallSettings.plist */,
+				B5A7FC722954FEA700505C7B /* SceneDelegate.h */,
+				B5A7FC702954FE9300505C7B /* SceneDelegate.m */,
 				B58ED01A29537C7B0032DF62 /* ViewController.h */,
 				B58ED01829537C010032DF62 /* ViewController.m */,
-				B5A7FC702954FE9300505C7B /* SceneDelegate.m */,
-				B5A7FC722954FEA700505C7B /* SceneDelegate.h */,
-				D0AA2F681D6433D2F9EE456D /* PaywallUnlimitedGameIAPID.plist */,
 			);
 			path = "Paywall debug";
 			sourceTree = "<group>";
@@ -2989,7 +2989,7 @@
 				B5D4B2082954EAA0002C1FA5 /* PaywallBuyBG.png in Resources */,
 				B5D7B03125A62EB400844611 /* icon_1024x1024.png in Resources */,
 				B5D4B2062954EAA0002C1FA5 /* PaywallBuy.png in Resources */,
-				D0AA2BFF924D6882D9E1CABF /* PaywallUnlimitedGameIAPID.plist in Resources */,
+				D0AA2BFF924D6882D9E1CABF /* PaywallSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3012,11 +3012,11 @@
 				B5A7FC2F2954F4AE00505C7B /* PaywallClose.png in Resources */,
 				B58ECFF1295362CC0032DF62 /* Main.storyboard in Resources */,
 				D0AA233E6CABC214CE111CDA /* Assets.xcassets in Resources */,
+				B568451B295ACE1900CD2242 /* PaywallSettings.plist in Resources */,
 				D0AA2D6D09D3E78D9A54CDBA /* LaunchScreen.storyboard in Resources */,
 				B5D4B2072954EAA0002C1FA5 /* PaywallBuy.png in Resources */,
 				B58ED001295363FB0032DF62 /* Paywall.storyboard in Resources */,
 				B5FCB88829576EFE00BD43A4 /* PaywallBuyArea.xib in Resources */,
-				D0AA26A12F6ACA37CF114FDE /* PaywallUnlimitedGameIAPID.plist in Resources */,
 				D0AA24D46B39C9705CFB5DCC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3928,7 +3928,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3006;
+				CURRENT_PROJECT_VERSION = 3008;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3966,7 +3966,7 @@
 				CODE_SIGN_ENTITLEMENTS = Distinct/CDDA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3006;
+				CURRENT_PROJECT_VERSION = 3008;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4002,7 +4002,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3006;
+				CURRENT_PROJECT_VERSION = 3008;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4041,7 +4041,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3006;
+				CURRENT_PROJECT_VERSION = 3008;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4107,7 +4107,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3006;
+				CURRENT_PROJECT_VERSION = 3008;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -4180,7 +4180,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3006;
+				CURRENT_PROJECT_VERSION = 3008;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
