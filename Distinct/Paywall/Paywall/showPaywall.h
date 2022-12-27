@@ -12,7 +12,7 @@
 extern "C" {
 #endif
 
-void showPaywall();
+void showPaywall(void);
 
 #ifdef __cplusplus
 };

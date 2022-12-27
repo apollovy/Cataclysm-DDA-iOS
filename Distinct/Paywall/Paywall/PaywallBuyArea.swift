@@ -10,4 +10,5 @@ import UIKit
 public class PaywallBuyArea: UIView {
     @IBOutlet public var priceLabel: UILabel!
     @IBOutlet public var buyButton: UIButton!
+    @IBOutlet public var restoreButton: UIButton!
 }

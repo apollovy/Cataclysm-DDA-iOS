@@ -22,18 +22,32 @@
     return self.paywallBuyArea.priceLabel;
 }
 
-- (UIButton*) buyButton {
-    return self.paywallBuyArea.buyButton;
+- (NSArray<UIButton*>*) buyButtons {
+    return @[self.paywallBuyArea.buyButton, self.paywallBuyArea.restoreButton];
 }
 
+- (void) enableBuyButtons {
+    for (UIButton* button in self.buyButtons){
+        button.enabled = true;
+    }
+}
+
+- (void) disableBuyButtons {
+    for (UIButton* button in self.buyButtons){
+        button.enabled = false;
+    }
+}
 
 # pragma mark price loading
 
 - (void)viewDidLoad {
-    [self.buyButton
-     addTarget:self
-     action:@selector(buy:)
-     forControlEvents:UIControlEventPrimaryActionTriggered];
+    for (UIButton* button in self.buyButtons) {
+        [button
+         addTarget:self
+         action:@selector(buy:)
+         forControlEvents:UIControlEventPrimaryActionTriggered];
+    }
+
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     NSString* productIdentifier = [self _getProductIdentifier];
 
@@ -80,7 +94,7 @@
                                          self->_product.price
                 ]
         ];
-        self.buyButton.enabled = true;
+        [self enableBuyButtons];
     });
 }
 
@@ -88,7 +102,7 @@
 
 - (void)buy:(id)sender {
     [self logAnalyticsEvent:@"tried" withParams:@{}];
-    self.buyButton.enabled = false;
+    [self disableBuyButtons];
     SKPayment* payment = [SKPayment paymentWithProduct:_product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
 }
@@ -117,7 +131,7 @@
                                 @"error": error
                         }
                 ];
-                self.buyButton.enabled = true;
+                [self enableBuyButtons];
                 break;
             }
             case SKPaymentTransactionStatePurchased:

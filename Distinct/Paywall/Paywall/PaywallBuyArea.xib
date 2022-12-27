@@ -25,45 +25,46 @@
                             <rect key="frame" x="0.0" y="0.0" width="1342" height="280.66666666666669"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" minimumFontSize="27" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-aC-VED" userLabel="YOU HAVE REACHED THE FREE PLAY TIME! IF YOU LIKE THE GAME, PAY ONLY ONCE AND PLAY FOREVER">
-                                    <rect key="frame" x="80.666666666666629" y="87.333333333333329" width="1181" height="193.33333333333337"/>
+                                    <rect key="frame" x="80.666666666666629" y="43.666666666666671" width="1181" height="193.33333333333331"/>
                                     <string key="text">YOU HAVE REACHED THE FREE PLAY TIME!
 IF YOU LIKE THE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="54"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="WfW-aC-VED" firstAttribute="bottom" secondItem="zIJ-bK-y4M" secondAttribute="bottom" id="HES-yZ-adL"/>
+                                <constraint firstItem="WfW-aC-VED" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="zIJ-bK-y4M" secondAttribute="bottom" constant="-20" id="HES-yZ-adL"/>
+                                <constraint firstItem="WfW-aC-VED" firstAttribute="centerY" secondItem="zIJ-bK-y4M" secondAttribute="centerY" id="IrQ-nZ-u49"/>
                                 <constraint firstItem="WfW-aC-VED" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zIJ-bK-y4M" secondAttribute="leading" constant="20" id="QH1-pn-86H"/>
                                 <constraint firstItem="WfW-aC-VED" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="zIJ-bK-y4M" secondAttribute="trailing" constant="-20" id="Tiw-YE-EAk"/>
                                 <constraint firstItem="WfW-aC-VED" firstAttribute="centerX" secondItem="zIJ-bK-y4M" secondAttribute="centerX" id="ctU-G1-ekQ"/>
-                                <constraint firstItem="WfW-aC-VED" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zIJ-bK-y4M" secondAttribute="top" id="day-RB-mLt"/>
+                                <constraint firstItem="WfW-aC-VED" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zIJ-bK-y4M" secondAttribute="top" constant="20" id="day-RB-mLt"/>
                             </constraints>
                         </view>
-                        <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="XbY-Ju-c8I" userLabel="BuyButtonViewWrapper">
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="6Sr-UA-oCi" userLabel="BuyButtonsViewStack">
                             <rect key="frame" x="0.0" y="280.66666666666674" width="1342" height="280.33333333333326"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-6B-6au" userLabel="BuyButtonView">
-                                    <rect key="frame" x="469.66666666666674" y="49.666666666666629" width="403" height="181"/>
+                                    <rect key="frame" x="469.66666666666674" y="0.0" width="403" height="150"/>
                                     <subviews>
                                         <button contentMode="scaleToFill" enabled="NO" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rps-Ma-i0X" userLabel="BuyButton">
-                                            <rect key="frame" x="0.0" y="0.0" width="403" height="181"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="403" height="150"/>
                                             <state key="normal" image="PaywallBuy.png"/>
                                         </button>
                                         <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="j9I-1N-QV9" userLabel="Buy for X stack">
-                                            <rect key="frame" x="20" y="0.0" width="363" height="181"/>
+                                            <rect key="frame" x="20" y="0.0" width="363" height="150"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="BUY FOR " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jyN-Bk-ou1">
-                                                    <rect key="frame" x="0.0" y="52.000000000000007" width="291" height="76.666666666666686"/>
+                                                    <rect key="frame" x="0.0" y="36.666666666666636" width="291" height="76.666666666666686"/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="64"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="vII-re-zsj">
-                                                    <rect key="frame" x="310.99999999999994" y="52.000000000000007" width="52" height="76.666666666666686"/>
+                                                    <rect key="frame" x="310.99999999999994" y="36.666666666666636" width="52" height="76.666666666666686"/>
                                                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="64"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -80,16 +81,16 @@ IF YOU LIKE THE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
                                         <constraint firstItem="rps-Ma-i0X" firstAttribute="trailing" secondItem="FgQ-6B-6au" secondAttribute="trailing" id="mr8-Oq-dSL"/>
                                     </constraints>
                                 </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0X7-o7-DGz">
+                                    <rect key="frame" x="505.66666666666663" y="130" width="331" height="150.33333333333337"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="RESTORE PURCHASE">
+                                        <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
+                                    </buttonConfiguration>
+                                </button>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="FgQ-6B-6au" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="XbY-Ju-c8I" secondAttribute="bottom" constant="-20" id="1ax-1x-L7U"/>
-                                <constraint firstItem="FgQ-6B-6au" firstAttribute="centerX" secondItem="XbY-Ju-c8I" secondAttribute="centerX" id="4ha-qm-RaM"/>
-                                <constraint firstItem="FgQ-6B-6au" firstAttribute="centerY" secondItem="XbY-Ju-c8I" secondAttribute="centerY" id="57m-9e-uD6"/>
-                                <constraint firstItem="FgQ-6B-6au" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XbY-Ju-c8I" secondAttribute="leading" constant="20" id="Etu-um-l9g"/>
-                                <constraint firstItem="FgQ-6B-6au" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XbY-Ju-c8I" secondAttribute="top" constant="20" id="doy-YU-Z59"/>
-                                <constraint firstItem="FgQ-6B-6au" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="XbY-Ju-c8I" secondAttribute="trailing" constant="-20" id="e8c-Wi-E9F"/>
-                            </constraints>
-                        </view>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>
@@ -108,6 +109,7 @@ IF YOU LIKE THE GAME, PAY ONLY ONCE AND PLAY FOREVER</string>
             <connections>
                 <outlet property="buyButton" destination="rps-Ma-i0X" id="e0s-hE-5AD"/>
                 <outlet property="priceLabel" destination="vII-re-zsj" id="RAo-3g-u0F"/>
+                <outlet property="restoreButton" destination="0X7-o7-DGz" id="gNH-Z7-d0a"/>
             </connections>
             <point key="canvasLocation" x="-10.300429184549357" y="-443.02325581395348"/>
         </view>
