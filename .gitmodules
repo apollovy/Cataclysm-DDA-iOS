@@ -22,3 +22,6 @@
 [submodule "Libraries/ReusableXibViews"]
 	path = Libraries/ReusableXibViews
 	url = git@github.com:letatas/ReusableXibViews.git
+[submodule "Libraries/CDDA-Paywall"]
+	path = Libraries/CDDA-Paywall
+	url = git@github.com:apollovy/CDDA-Paywall.git
