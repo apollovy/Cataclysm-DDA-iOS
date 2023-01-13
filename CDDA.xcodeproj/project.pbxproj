@@ -106,8 +106,6 @@
 		B560EE8825D9822000FDE1C4 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B560EE9225D996AE00FDE1C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
 		B577559B2605EA81006D29B1 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
-		B57AF1FD2943D40900604616 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
-		B57AF1FE2943D40900604616 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
 		B57AF2042943EB3800604616 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57AF2032943EB3800604616 /* GoogleService-Info.plist */; };
 		B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B58679DF260402B600EACF2C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
@@ -394,6 +392,7 @@
 		B5FA7C03270CD09C00A1655A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FA7BEC270CD09C00A1655A /* Assets.xcassets */; };
 		B5FD200625A57ADF00CE613D /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5FD200325A57A9F00CE613D /* mo */; };
 		B8090C69A2D68FB301C06C8A /* Pods_CDDA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB281804576C684487B909B9 /* Pods_CDDA.framework */; };
+		D0AA2067C4FBC5E8A7787E0E /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2954CD3CA18FF7B428C5 /* cdda_firebase.m */; };
 		D0AA20769F1FA9D76800B6E3 /* PaywallBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2D804DC5FF88B11FD402 /* PaywallBuy.png */; };
 		D0AA2080425A10EDB79772A8 /* PaywallBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2562F15495CAD3BBB6CB /* PaywallBG.jpg */; };
 		D0AA20A76711F4EBC259ED21 /* PaywallNibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA200358413EC89119F93E /* PaywallNibWrapperView.swift */; };
@@ -401,13 +400,14 @@
 		D0AA2185836D0F12AD2A4F06 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA28795F773626257D75ED /* PaywallUnlimitedFunctionality.m */; };
 		D0AA223F41421E88897B013C /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */; };
 		D0AA23180E14D0FD9CCF8A8A /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA234DCE3B4A80E4FAABFB /* PaywallSettings.plist */; };
+		D0AA2355B92B4AAA7730BEA3 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2954CD3CA18FF7B428C5 /* cdda_firebase.m */; };
 		D0AA2499AB7A12B4935BCE69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA25508EAB753941BD3903 /* ViewController.m */; };
 		D0AA24CCE8BDEA50DDB65DF5 /* showPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA25433EC32D786A5915AC /* showPaywall.m */; };
 		D0AA24CD6EBBC60357D51565 /* showPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA25433EC32D786A5915AC /* showPaywall.m */; };
 		D0AA24D46B39C9705CFB5DCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57AF2032943EB3800604616 /* GoogleService-Info.plist */; };
 		D0AA24DD6DB88433537BDCF0 /* PaywallBuyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AA29AEF10ECA4AF8209922 /* PaywallBuyBG.png */; };
+		D0AA254AF6D270BE849888FB /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2E3DCE8BE1FF69C6B4E8 /* logAnalytics.m */; };
 		D0AA2551D54BEBDEBFE4B821 /* PaywallDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B98EF8FCE7CACE3DAEE /* PaywallDisplay.mm */; };
-		D0AA255C2FDAA3C949663D83 /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */; };
 		D0AA256712223EA518797DC0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA21E286924E9D58C51F75 /* SceneDelegate.m */; };
 		D0AA256B59C5E1F05F5EB645 /* PaywallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B93757D6B72FFDA249E /* PaywallController.m */; };
 		D0AA2626491E5BFDB95966E0 /* PaywallClose.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AA21588CB661C662C1E399 /* PaywallClose.png */; };
@@ -416,17 +416,18 @@
 		D0AA26E739163028B2ABFAEF /* PaywallController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B93757D6B72FFDA249E /* PaywallController.m */; };
 		D0AA27706BA449546C76CDF1 /* PaywallBuyArea.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2EEF0D83060F73A0D720 /* PaywallBuyArea.xib */; };
 		D0AA2806054C585B62B33033 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
+		D0AA2841AE706B930523404B /* getSetTestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA29EA2A931F3A4033ED0A /* getSetTestGroup.m */; };
 		D0AA289E054F8FA3EED92CC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA284B44CEABDE56960958 /* AppDelegate.m */; };
 		D0AA28C33B791F4CA0879C53 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA28795F773626257D75ED /* PaywallUnlimitedFunctionality.m */; };
 		D0AA292FC4D10A09E9B436FE /* PaywallBuyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2F28F250FB7A4335DCA6 /* PaywallBuyArea.swift */; };
 		D0AA2A09898801285CC81A61 /* Paywall.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AA21D09FD3D3E187E1B91F /* Paywall.storyboard */; };
 		D0AA2AA2DD07D72929774195 /* PaywallClose.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AA21588CB661C662C1E399 /* PaywallClose.png */; };
-		D0AA2AB92D6464FBD5EB6D50 /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */; };
+		D0AA2B3A7649E0617E059BCD /* getSetTestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA29EA2A931F3A4033ED0A /* getSetTestGroup.m */; };
 		D0AA2B4484BD3E51D6AE8ADC /* PaywallBuyArea.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2EEF0D83060F73A0D720 /* PaywallBuyArea.xib */; };
 		D0AA2B4A55C118776CB88E5C /* PaywallBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AA2D804DC5FF88B11FD402 /* PaywallBuy.png */; };
-		D0AA2BB7A88D634A151DC356 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = B57AF1FC2943D40900604616 /* cdda_firebase.m */; };
 		D0AA2BCA93022B69A3E559B6 /* SDL_uikitviewcontroller+MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0AA21841C249C238317688C /* SDL_uikitviewcontroller+MainView.mm */; };
 		D0AA2C72421FFBC06A136007 /* PaywallBuyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = D0AA29AEF10ECA4AF8209922 /* PaywallBuyBG.png */; };
+		D0AA2C9A9E3FC64AE0134C0B /* logAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2E3DCE8BE1FF69C6B4E8 /* logAnalytics.m */; };
 		D0AA2CB5D44E3B45595879CE /* PaywallBuyArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2F28F250FB7A4335DCA6 /* PaywallBuyArea.swift */; };
 		D0AA2D0DD609B4E46E5C7B1A /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0AA284EFA8442E99DE6DBCD /* PaywallSettings.plist */; };
 		D0AA2D49F71788E80FB75592 /* PaywallNibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA200358413EC89119F93E /* PaywallNibWrapperView.swift */; };
@@ -864,8 +865,6 @@
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B57201DA259293EF003D2A20 /* CDDA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CDDA.plist; sourceTree = "<group>"; };
 		B57AF1F82943D17D00604616 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B57AF1FC2943D40900604616 /* cdda_firebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdda_firebase.m; sourceTree = "<group>"; };
-		B57AF1FF2943D47300604616 /* cdda_firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
 		B57AF2032943EB3800604616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1467,8 +1466,10 @@
 		D0AA21D09FD3D3E187E1B91F /* Paywall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paywall.storyboard; sourceTree = "<group>"; };
 		D0AA21E286924E9D58C51F75 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		D0AA22E89C0C65BC4E56834C /* PaywallBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuy.png; sourceTree = "<group>"; };
+		D0AA22EFEEBDAA4EDB23C43F /* logAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logAnalytics.h; sourceTree = "<group>"; };
 		D0AA230D7EDE05E0BE632723 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AA234DCE3B4A80E4FAABFB /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = PaywallSettings.plist; sourceTree = "<group>"; };
+		D0AA238E51E9785C5F120F6E /* cdda_firebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdda_firebase.m; sourceTree = "<group>"; };
 		D0AA23BB92D8DED3D4B884A2 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		D0AA23E1404A8E874DA3D96E /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		D0AA24157F2F0F64D8007081 /* SDL_uikitviewcontroller+MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+MainView.h"; sourceTree = "<group>"; };
@@ -1485,15 +1486,18 @@
 		D0AA2681C4A337A48B6830FD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D0AA2698C2D7ECFAD3C341D7 /* PaywallPaymentKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallPaymentKey.h; sourceTree = "<group>"; };
 		D0AA26CB84BB4BF2A45A0942 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
-		D0AA27BDFA7F8DE5C2EE016A /* logAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logAnalytics.h; sourceTree = "<group>"; };
 		D0AA284B44CEABDE56960958 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0AA284EFA8442E99DE6DBCD /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		D0AA28795F773626257D75ED /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
 		D0AA28D6EE77185DC8607B39 /* PaywallBuyArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaywallBuyArea.swift; sourceTree = "<group>"; };
 		D0AA28E884AEDE5273ED6611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0AA2954CD3CA18FF7B428C5 /* cdda_firebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdda_firebase.m; sourceTree = "<group>"; };
+		D0AA29AEDDFDC5EA9E37F8B4 /* getSetTestGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getSetTestGroup.h; sourceTree = "<group>"; };
 		D0AA29AEF10ECA4AF8209922 /* PaywallBuyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuyBG.png; sourceTree = "<group>"; };
 		D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackspaceInMenuTest.swift; sourceTree = "<group>"; };
+		D0AA29EA2A931F3A4033ED0A /* getSetTestGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = getSetTestGroup.m; sourceTree = "<group>"; };
 		D0AA2A8AC9B5AEA2DBCE83A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
 		D0AA2B004FCE322D73E80703 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+Gamepad.m"; sourceTree = "<group>"; };
 		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
@@ -1505,6 +1509,8 @@
 		D0AA2D37382B222820DD6440 /* PaywallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaywallController.h; sourceTree = "<group>"; };
 		D0AA2D46C361FBB24AC77FB1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D0AA2D804DC5FF88B11FD402 /* PaywallBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuy.png; sourceTree = "<group>"; };
+		D0AA2DE057221DBB125DC1F7 /* cdda_firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
+		D0AA2E3DCE8BE1FF69C6B4E8 /* logAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logAnalytics.m; sourceTree = "<group>"; };
 		D0AA2EA7EB4AA92104AD4141 /* Paywall debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paywall debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AA2EEF0D83060F73A0D720 /* PaywallBuyArea.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaywallBuyArea.xib; sourceTree = "<group>"; };
 		D0AA2F0F0738F0A0E198769B /* SDL_uikitviewcontroller+MainView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+MainView.mm"; sourceTree = "<group>"; };
@@ -1515,7 +1521,6 @@
 		D0AA2F7BECEAC9B387018AE3 /* showPaywall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showPaywall.m; sourceTree = "<group>"; };
 		D0AA2F8BA86B05D1521C3589 /* PaywallBuyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuyBG.png; sourceTree = "<group>"; };
 		D0AA2FAAE08938C986DCD259 /* showPaywall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showPaywall.h; sourceTree = "<group>"; };
-		D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logAnalytics.m; sourceTree = "<group>"; };
 		D0AA2FF3284A9790EAF94D42 /* PaywallPaymentKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallPaymentKey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1643,6 +1648,8 @@
 			children = (
 				B531B869270E19E700155C37 /* runtime_handlers.h */,
 				B5127665289C5723004882AA /* version.cpp */,
+				D0AA238E51E9785C5F120F6E /* cdda_firebase.m */,
+				D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */,
 			);
 			path = overrides;
 			sourceTree = "<group>";
@@ -2528,7 +2535,6 @@
 				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
 				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
 				B5EDBF80270B957000FB4526 /* source */,
-				D0AA2CFE82D945E74EE3AEF2 /* Analytics */,
 			);
 			path = Distinct;
 			sourceTree = "<group>";
@@ -2542,8 +2548,6 @@
 				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
 				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
 				B5F97C66259C08B500C5A910 /* CDDA_iOS_main.mm */,
-				B57AF1FC2943D40900604616 /* cdda_firebase.m */,
-				B57AF1FF2943D47300604616 /* cdda_firebase.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -2595,6 +2599,7 @@
 				D0AA28562319D71B1301E900 /* CDDA */,
 				D0AA2F89447E7D0FDE3E956A /* Paywall */,
 				D0AA2489DE4FA25ED7B7ACC2 /* Paywall debug */,
+				D0AA2DFB657B758887C51F60 /* Analytics */,
 			);
 			name = "CDDA-Paywall";
 			path = "Libraries/CDDA-Paywall";
@@ -2673,11 +2678,15 @@
 			path = CDDA/source/JSDPad;
 			sourceTree = "<group>";
 		};
-		D0AA2CFE82D945E74EE3AEF2 /* Analytics */ = {
+		D0AA2DFB657B758887C51F60 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				D0AA27BDFA7F8DE5C2EE016A /* logAnalytics.h */,
-				D0AA2FBD3F58FCF9AFCB234C /* logAnalytics.m */,
+				D0AA22EFEEBDAA4EDB23C43F /* logAnalytics.h */,
+				D0AA2E3DCE8BE1FF69C6B4E8 /* logAnalytics.m */,
+				D0AA2DE057221DBB125DC1F7 /* cdda_firebase.h */,
+				D0AA2954CD3CA18FF7B428C5 /* cdda_firebase.m */,
+				D0AA29EA2A931F3A4033ED0A /* getSetTestGroup.m */,
+				D0AA29AEDDFDC5EA9E37F8B4 /* getSetTestGroup.h */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -3371,7 +3380,6 @@
 				B504BF302957A47B00EF24DA /* NibWrapped.swift in Sources */,
 				B5966CA7270E121C002163AD /* faction.cpp in Sources */,
 				B5412CF42605FEF20034128C /* ZipArchiver.swift in Sources */,
-				B57AF1FD2943D40900604616 /* cdda_firebase.m in Sources */,
 				B5966B45270E11E1002163AD /* start_location.cpp in Sources */,
 				B5966C86270E121C002163AD /* debug_menu.cpp in Sources */,
 				B5966C8E270E121C002163AD /* mission_place.cpp in Sources */,
@@ -3579,7 +3587,6 @@
 				B5966B32270E11E1002163AD /* units_utility.cpp in Sources */,
 				B531B858270E16AE00155C37 /* animation.cpp in Sources */,
 				B5966B0E270E11E0002163AD /* sdlsound.cpp in Sources */,
-				D0AA255C2FDAA3C949663D83 /* logAnalytics.m in Sources */,
 				D0AA2BCA93022B69A3E559B6 /* SDL_uikitviewcontroller+MainView.mm in Sources */,
 				D0AA2551D54BEBDEBFE4B821 /* PaywallDisplay.mm in Sources */,
 				D0AA2D4B783327550A6C55AD /* PaywallPaymentKey.m in Sources */,
@@ -3588,6 +3595,9 @@
 				D0AA24CD6EBBC60357D51565 /* showPaywall.m in Sources */,
 				D0AA292FC4D10A09E9B436FE /* PaywallBuyArea.swift in Sources */,
 				D0AA256B59C5E1F05F5EB645 /* PaywallController.m in Sources */,
+				D0AA2C9A9E3FC64AE0134C0B /* logAnalytics.m in Sources */,
+				D0AA2355B92B4AAA7730BEA3 /* cdda_firebase.m in Sources */,
+				D0AA2B3A7649E0617E059BCD /* getSetTestGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3598,7 +3608,6 @@
 				B5412D15260602D50034128C /* MainViewController.m in Sources */,
 				B5867A2D2604036E00EACF2C /* path_utils.m in Sources */,
 				B5C0E1D6261A483700628F9A /* CDDA_iOS_main.mm in Sources */,
-				B57AF1FE2943D40900604616 /* cdda_firebase.m in Sources */,
 				B5867A1B2604030A00EACF2C /* main.m in Sources */,
 				B5867A172604030100EACF2C /* AppDelegate.m in Sources */,
 				B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */,
@@ -3610,8 +3619,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B504BF352957A47C00EF24DA /* UIView+Nib.swift in Sources */,
-				D0AA2AB92D6464FBD5EB6D50 /* logAnalytics.m in Sources */,
-				D0AA2BB7A88D634A151DC356 /* cdda_firebase.m in Sources */,
 				B504BF342957A47C00EF24DA /* NibWrapperView.swift in Sources */,
 				B504BF332957A47C00EF24DA /* NibWrapped.swift in Sources */,
 				D0AA2E5637D6BE12837DDAD9 /* PaywallPaymentKey.m in Sources */,
@@ -3624,6 +3631,9 @@
 				D0AA256712223EA518797DC0 /* SceneDelegate.m in Sources */,
 				D0AA289E054F8FA3EED92CC0 /* AppDelegate.m in Sources */,
 				D0AA2499AB7A12B4935BCE69 /* ViewController.m in Sources */,
+				D0AA254AF6D270BE849888FB /* logAnalytics.m in Sources */,
+				D0AA2067C4FBC5E8A7787E0E /* cdda_firebase.m in Sources */,
+				D0AA2841AE706B930523404B /* getSetTestGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
