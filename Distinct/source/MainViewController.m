@@ -6,7 +6,6 @@
 //  Copyright © 2021 Аполлов Юрий Андреевич. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-@import FirebaseAnalytics;
 
 #import "CDDA-Swift.h"
 
