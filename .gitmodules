@@ -16,12 +16,12 @@
 [submodule "Common"]
 	path = Common
 	url = git@github.com:apollovy/Cataclysm-DDA-iOS-commons.git
-[submodule "Libraries/Cataclysm-BN"]
-	path = Libraries/Cataclysm-BN
+[submodule "submodule/Cataclysm-BN"]
+	path = submodule/Cataclysm-BN
 	url = git@github.com:apollovy/Cataclysm-BN.git
-[submodule "Libraries/ReusableXibViews"]
-	path = Libraries/ReusableXibViews
-	url = git@github.com:letatas/ReusableXibViews.git
 [submodule "Libraries/CDDA-Paywall"]
 	path = Libraries/CDDA-Paywall
 	url = git@github.com:apollovy/CDDA-Paywall.git
+[submodule "submodule/Cataclysm-DDA"]
+	path = submodule/Cataclysm-DDA
+	url = git@github.com:apollovy/Cataclysm-DDA.git
