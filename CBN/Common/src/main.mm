@@ -5,7 +5,7 @@
 void no_exit(__attribute__((unused)) int status){}
 #define exit no_exit
 #include "runtime_handlers.h"
-#include "../worktree/Cataclysm-BN/src/main.cpp"
+#include "../../worktree/Cataclysm-BN/src/main.cpp"
 #undef main
 
 #include <UIKit/UIKit.h>

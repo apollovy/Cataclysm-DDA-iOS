@@ -10,7 +10,6 @@
 #import "CDDA-Swift.h"
 
 #import "path_utils.h"
-#import "CDDA_iOS_main.h"
 
 #import "MainViewController.h"
 
@@ -26,7 +25,10 @@
 
 -(void)openSettings:(id)sender
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+#pragma clang diagnostic pop
 }
 
 -(void)save:(id)sender
@@ -42,7 +44,7 @@
             return;
         }
 
-        [ZipArchiver zip:getDocumentURL() destination:url errorPtr:&error progress:^(double progress)
+        [ZipArchiver zip:getDocumentURL() destination:url errorPtr:&error progress:^(float progress)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.progressView.progress = progress;
@@ -60,9 +62,12 @@
             [self _showMainScreenWithMessage:NSLocalizedString(@"Save successful", @"") error:error];
             return;
         }
-        
+
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "UnreachableCode"
         [self _showProgressScreenWithLabel:NSLocalizedString(@"Uploading...", @"")];
         [self _watchProgressForURL:url finishingWith:@selector(_checkUploadFinished:)];
+#pragma clang diagnostic pop
     });
 }
 
@@ -82,15 +87,21 @@
         if (TARGET_OS_SIMULATOR)
         {
             [self _unzip:url];
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "UnreachableCode"
         } else {
             [self _watchProgressForURL:url finishingWith:@selector(_checkDownloadFinishedAndUnzip:)];
+#pragma clang diagnostic pop
         }
     });
 }
 
 -(void)previousVersion:(id)sender
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://apps.apple.com/app/cataclysm-roguelike-rpg-0-e/id1547835881"]];
+#pragma clang diagnostic pop
 }
 
 -(void)_watchProgressForURL:(NSURL*)url finishingWith:(SEL)selector
@@ -136,16 +147,16 @@
     NSError* error = nil;
 
     [[NSFileManager.defaultManager contentsOfDirectoryAtPath:documentPath error:&error] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSError* error = nil;
+        NSError* error1 = nil;
         
         if (![ZipArchiver.savedDirs containsObject:obj])
             return;
 
-        [NSFileManager.defaultManager removeItemAtPath:[documentPath stringByAppendingPathComponent:obj] error:&error];
+        [NSFileManager.defaultManager removeItemAtPath:[documentPath stringByAppendingPathComponent:obj] error:&error1];
     
-        if (error)
+        if (error1)
         {
-            [self _showMainScreenWithMessage:NSLocalizedString(@"Removing file failed", "") error:error];
+            [self _showMainScreenWithMessage:NSLocalizedString(@"Removing file failed", "") error:error1];
             return;
         }
     }];
@@ -156,7 +167,7 @@
         return;
     }
 
-    [ZipArchiver unzip:url destination:documentURL errorPtr:&error progress:^(double progress) {
+    [ZipArchiver unzip:url destination:documentURL errorPtr:&error progress:^(float progress) {
         dispatch_async(dispatch_get_main_queue(), ^{
             self.progressView.progress = progress;
         });

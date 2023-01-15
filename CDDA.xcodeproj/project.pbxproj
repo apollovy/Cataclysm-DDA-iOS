@@ -7,7 +7,358 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A252EA703B7FAB4517AD075B /* Pods_CBNfreeIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55D63D8A17D4928CECFA05C /* Pods_CBNfreeIAP.framework */; };
+		A252EA703B7FAB4517AD075B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		B501C91C297411E800CB965C /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EF270E11D0002163AD /* text_snippets.cpp */; };
+		B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
+		B501C91E297411E800CB965C /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C07270E1216002163AD /* item.cpp */; };
+		B501C91F297411E800CB965C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
+		B501C920297411E800CB965C /* magic_enchantment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C35270E1218002163AD /* magic_enchantment.cpp */; };
+		B501C921297411E800CB965C /* melee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AA4270E11DB002163AD /* melee.cpp */; };
+		B501C922297411E800CB965C /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F0270E11D0002163AD /* npc.cpp */; };
+		B501C923297411E800CB965C /* recipe_groups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A08270E11D0002163AD /* recipe_groups.cpp */; };
+		B501C924297411E800CB965C /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B72270E120F002163AD /* help.cpp */; };
+		B501C925297411E800CB965C /* sdl_geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A89270E11D9002163AD /* sdl_geometry.cpp */; };
+		B501C926297411E800CB965C /* main_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EE270E11D0002163AD /* main_menu.cpp */; };
+		B501C927297411E800CB965C /* stats_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669DB270E11CF002163AD /* stats_tracker.cpp */; };
+		B501C928297411E800CB965C /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C32270E1218002163AD /* input.cpp */; };
+		B501C929297411E800CB965C /* iuse_software.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BF4270E1216002163AD /* iuse_software.cpp */; };
+		B501C92A297411E800CB965C /* disease.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C72270E121B002163AD /* disease.cpp */; };
+		B501C92B297411E800CB965C /* safemode_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A68270E11D6002163AD /* safemode_ui.cpp */; };
+		B501C92C297411E800CB965C /* pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AAE270E11DC002163AD /* pickup.cpp */; };
+		B501C92D297411E800CB965C /* popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A9B270E11DA002163AD /* popup.cpp */; };
+		B501C92E297411E800CB965C /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
+		B501C92F297411E800CB965C /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C75270E121C002163AD /* character.cpp */; };
+		B501C930297411E800CB965C /* name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A4D270E11D4002163AD /* name.cpp */; };
+		B501C931297411E800CB965C /* cata_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B7F2270E168C00155C37 /* cata_utility.cpp */; };
+		B501C932297411E800CB965C /* advanced_inv_area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B811270E16AA00155C37 /* advanced_inv_area.cpp */; };
+		B501C933297411E800CB965C /* item_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C03270E1216002163AD /* item_search.cpp */; };
+		B501C934297411E800CB965C /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
+		B501C935297411E800CB965C /* faction_camp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BDF270E1215002163AD /* faction_camp.cpp */; };
+		B501C936297411E800CB965C /* player_hardcoded_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669FA270E11D0002163AD /* player_hardcoded_effects.cpp */; };
+		B501C937297411E800CB965C /* crash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B9E270E1212002163AD /* crash.cpp */; };
+		B501C938297411E800CB965C /* teleport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A76270E11D7002163AD /* teleport.cpp */; };
+		B501C939297411E800CB965C /* language.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C1F270E1217002163AD /* language.cpp */; };
+		B501C93A297411E800CB965C /* inventory_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BC9270E1214002163AD /* inventory_ui.cpp */; };
+		B501C93B297411E800CB965C /* auto_pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B81C270E16AB00155C37 /* auto_pickup.cpp */; };
+		B501C93C297411E800CB965C /* mutation_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669CB270E11CE002163AD /* mutation_type.cpp */; };
+		B501C93D297411E800CB965C /* mission_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B73270E120F002163AD /* mission_util.cpp */; };
+		B501C93E297411E800CB965C /* fmtlib_format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B60270E120E002163AD /* fmtlib_format.cpp */; };
+		B501C93F297411E800CB965C /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
+		B501C940297411E800CB965C /* suffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AC5270E11DF002163AD /* suffer.cpp */; };
+		B501C941297411E800CB965C /* activity_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B816270E16AB00155C37 /* activity_actor.cpp */; };
+		B501C942297411E800CB965C /* loading_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BCE270E1214002163AD /* loading_ui.cpp */; };
+		B501C943297411E800CB965C /* iuse_software_kitten.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C2B270E1218002163AD /* iuse_software_kitten.cpp */; };
+		B501C944297411E800CB965C /* visitable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A42270E11D3002163AD /* visitable.cpp */; };
+		B501C945297411E800CB965C /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B66270E120E002163AD /* event.cpp */; };
+		B501C946297411E800CB965C /* mapgendata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AA6270E11DB002163AD /* mapgendata.cpp */; };
+		B501C947297411E800CB965C /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C59270E121A002163AD /* color.cpp */; };
+		B501C948297411E800CB965C /* dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C68270E121B002163AD /* dump.cpp */; };
+		B501C949297411E800CB965C /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ABB270E11DD002163AD /* map.cpp */; };
+		B501C94A297411E800CB965C /* animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B828270E16AC00155C37 /* animation.cpp */; };
+		B501C94B297411E800CB965C /* ammo_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B823270E16AC00155C37 /* ammo_effect.cpp */; };
+		B501C94C297411E800CB965C /* iexamine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B7F270E1210002163AD /* iexamine.cpp */; };
+		B501C94D297411E800CB965C /* weather_gen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ABA270E11DD002163AD /* weather_gen.cpp */; };
+		B501C94E297411E800CB965C /* computer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C43270E1219002163AD /* computer.cpp */; };
+		B501C94F297411E800CB965C /* sdl_font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669C4270E11CE002163AD /* sdl_font.cpp */; };
+		B501C950297411E800CB965C /* magic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A35270E11D2002163AD /* magic.cpp */; };
+		B501C951297411E800CB965C /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BE6270E1215002163AD /* init.cpp */; };
+		B501C952297411E800CB965C /* cata_tiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B831270E16AD00155C37 /* cata_tiles.cpp */; };
+		B501C953297411E800CB965C /* craft_command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C14270E1217002163AD /* craft_command.cpp */; };
+		B501C954297411E800CB965C /* bionics_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B839270E16AD00155C37 /* bionics_ui.cpp */; };
+		B501C955297411E800CB965C /* cata_libintl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B82F270E16AC00155C37 /* cata_libintl.cpp */; };
+		B501C956297411E800CB965C /* overlay_ordering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D1270E11CF002163AD /* overlay_ordering.cpp */; };
+		B501C957297411E800CB965C /* veh_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AA9270E11DC002163AD /* veh_type.cpp */; };
+		B501C958297411E800CB965C /* event_bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BD0270E1214002163AD /* event_bus.cpp */; };
+		B501C959297411E800CB965C /* item_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BF9270E1216002163AD /* item_stack.cpp */; };
+		B501C95A297411E800CB965C /* debug_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B80270E1210002163AD /* debug_menu.cpp */; };
+		B501C95B297411E800CB965C /* iuse_software_minesweeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B97270E1211002163AD /* iuse_software_minesweeper.cpp */; };
+		B501C95C297411E800CB965C /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C33270E1218002163AD /* mission.cpp */; };
+		B501C95D297411E800CB965C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
+		B501C95E297411E800CB965C /* event_statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C12270E1217002163AD /* event_statistics.cpp */; };
+		B501C95F297411E800CB965C /* fault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B98270E1211002163AD /* fault.cpp */; };
+		B501C960297411E800CB965C /* active_item_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AA3270E11DB002163AD /* active_item_cache.cpp */; };
+		B501C961297411E800CB965C /* fungal_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C55270E121A002163AD /* fungal_effects.cpp */; };
+		B501C962297411E800CB965C /* mod_tileset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C04270E1216002163AD /* mod_tileset.cpp */; };
+		B501C963297411E800CB965C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
+		B501C964297411E800CB965C /* morale_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669FB270E11D0002163AD /* morale_types.cpp */; };
+		B501C965297411E800CB965C /* sdl_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669C6270E11CE002163AD /* sdl_utils.cpp */; };
+		B501C966297411E800CB965C /* safe_reference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669ED270E11D0002163AD /* safe_reference.cpp */; };
+		B501C967297411E800CB965C /* drawing_primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C10270E1217002163AD /* drawing_primitives.cpp */; };
+		B501C968297411E800CB965C /* cached_options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B81A270E16AB00155C37 /* cached_options.cpp */; };
+		B501C969297411E800CB965C /* magic_spell_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B88270E1211002163AD /* magic_spell_effect.cpp */; };
+		B501C96A297411E800CB965C /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D0270E11CF002163AD /* path_info.cpp */; };
+		B501C96B297411E800CB965C /* scenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A5A270E11D5002163AD /* scenario.cpp */; };
+		B501C96C297411E800CB965C /* explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B9F270E1212002163AD /* explosion.cpp */; };
+		B501C96D297411E800CB965C /* mapbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A5C270E11D5002163AD /* mapbuffer.cpp */; };
+		B501C96E297411E800CB965C /* string_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A69270E11D6002163AD /* string_id.cpp */; };
+		B501C96F297411E800CB965C /* vehicle_use.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A6C270E11D6002163AD /* vehicle_use.cpp */; };
+		B501C970297411E800CB965C /* monfaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C64270E121B002163AD /* monfaction.cpp */; };
+		B501C971297411E800CB965C /* url_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D825D292FEDE500DC5744 /* url_utility.cpp */; };
+		B501C972297411E800CB965C /* map_field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669DE270E11CF002163AD /* map_field.cpp */; };
+		B501C973297411E800CB965C /* map_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A84270E11D9002163AD /* map_selector.cpp */; };
+		B501C974297411E800CB965C /* handle_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B62270E120E002163AD /* handle_action.cpp */; };
+		B501C975297411E800CB965C /* character_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D825E292FEDE500DC5744 /* character_display.cpp */; };
+		B501C976297411E800CB965C /* gates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BE4270E1215002163AD /* gates.cpp */; };
+		B501C977297411E800CB965C /* mapsharing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ACC270E11DF002163AD /* mapsharing.cpp */; };
+		B501C978297411E800CB965C /* coordinate_conversions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BDE270E1214002163AD /* coordinate_conversions.cpp */; };
+		B501C979297411E800CB965C /* mission_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C34270E1218002163AD /* mission_end.cpp */; };
+		B501C97A297411E800CB965C /* sdltiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A15270E11D1002163AD /* sdltiles.cpp */; };
+		B501C97B297411E800CB965C /* simplexnoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AA7270E11DB002163AD /* simplexnoise.cpp */; };
+		B501C97C297411E800CB965C /* worldfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A8F270E11DA002163AD /* worldfactory.cpp */; };
+		B501C97D297411E800CB965C /* iuse_software_sokoban.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C2F270E1218002163AD /* iuse_software_sokoban.cpp */; };
+		B501C97E297411E800CB965C /* character_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B89270E1211002163AD /* character_oracle.cpp */; };
+		B501C97F297411E800CB965C /* descriptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C20270E1218002163AD /* descriptions.cpp */; };
+		B501C980297411E800CB965C /* iuse_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C58270E121A002163AD /* iuse_actor.cpp */; };
+		B501C981297411E800CB965C /* char_validity_check.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BD8270E1214002163AD /* char_validity_check.cpp */; };
+		B501C982297411E800CB965C /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F5270E11D0002163AD /* player.cpp */; };
+		B501C983297411E800CB965C /* mondeath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B79270E1210002163AD /* mondeath.cpp */; };
+		B501C984297411E800CB965C /* missiondef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BDA270E1214002163AD /* missiondef.cpp */; };
+		B501C985297411E800CB965C /* achievement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A34270E11D2002163AD /* achievement.cpp */; };
+		B501C986297411E800CB965C /* monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A00270E11D0002163AD /* monster.cpp */; };
+		B501C987297411E800CB965C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
+		B501C988297411E800CB965C /* addiction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B829270E16AC00155C37 /* addiction.cpp */; };
+		B501C989297411E800CB965C /* damage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BBE270E1213002163AD /* damage.cpp */; };
+		B501C98A297411E800CB965C /* start_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AA2270E11DB002163AD /* start_location.cpp */; };
+		B501C98B297411E800CB965C /* recipe_dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A0A270E11D1002163AD /* recipe_dictionary.cpp */; };
+		B501C98C297411E800CB965C /* savegame_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F2270E11D0002163AD /* savegame_json.cpp */; };
+		B501C98D297411E800CB965C /* wcwidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ABE270E11DE002163AD /* wcwidth.cpp */; };
+		B501C98E297411E800CB965C /* ranged_aoe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA1276904EF00B02C8E /* ranged_aoe.cpp */; };
+		B501C98F297411E800CB965C /* avatar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B826270E16AC00155C37 /* avatar.cpp */; };
+		B501C990297411E800CB965C /* gamemode_defense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C2E270E1218002163AD /* gamemode_defense.cpp */; };
+		B501C991297411E800CB965C /* basecamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B82E270E16AC00155C37 /* basecamp.cpp */; };
+		B501C992297411E800CB965C /* trapfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A51270E11D4002163AD /* trapfunc.cpp */; };
+		B501C993297411E800CB965C /* pixel_minimap_projectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A3B270E11D2002163AD /* pixel_minimap_projectors.cpp */; };
+		B501C994297411E800CB965C /* savegame_legacy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB0270E11DC002163AD /* savegame_legacy.cpp */; };
+		B501C995297411E800CB965C /* overmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A87270E11D9002163AD /* overmap.cpp */; };
+		B501C996297411E800CB965C /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
+		B501C997297411E800CB965C /* map_item_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A28270E11D1002163AD /* map_item_stack.cpp */; };
+		B501C998297411E800CB965C /* scores_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A36270E11D2002163AD /* scores_ui.cpp */; };
+		B501C99A297411E800CB965C /* harvest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B84270E1210002163AD /* harvest.cpp */; };
+		B501C99B297411E800CB965C /* vehicle_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A97270E11DA002163AD /* vehicle_group.cpp */; };
+		B501C99C297411E800CB965C /* mapgenformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A14270E11D1002163AD /* mapgenformat.cpp */; };
+		B501C99D297411E800CB965C /* units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F3270E11D0002163AD /* units.cpp */; };
+		B501C99E297411E800CB965C /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
+		B501C99F297411E800CB965C /* ascii_art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B840270E16AD00155C37 /* ascii_art.cpp */; };
+		B501C9A0297411E800CB965C /* mongroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C0E270E1217002163AD /* mongroup.cpp */; };
+		B501C9A1297411E800CB965C /* construction_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C39270E1219002163AD /* construction_category.cpp */; };
+		B501C9A2297411E800CB965C /* dependency_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C0C270E1217002163AD /* dependency_tree.cpp */; };
+		B501C9A3297411E800CB965C /* requirements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AAC270E11DC002163AD /* requirements.cpp */; };
+		B501C9A4297411E800CB965C /* ammo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B830270E16AC00155C37 /* ammo.cpp */; };
+		B501C9A5297411E800CB965C /* mutation_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669CF270E11CF002163AD /* mutation_ui.cpp */; };
+		B501C9A6297411E800CB965C /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A9C270E11DB002163AD /* rng.cpp */; };
+		B501C9A7297411E800CB965C /* wish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A04270E11D0002163AD /* wish.cpp */; };
+		B501C9A8297411E800CB965C /* vehicle_move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A1B270E11D1002163AD /* vehicle_move.cpp */; };
+		B501C9A9297411E800CB965C /* veh_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A7A270E11D8002163AD /* veh_utils.cpp */; };
+		B501C9AA297411E800CB965C /* weather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669E7270E11CF002163AD /* weather.cpp */; };
+		B501C9AB297411E800CB965C /* tileray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A19270E11D1002163AD /* tileray.cpp */; };
+		B501C9AC297411E800CB965C /* submap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AC7270E11DF002163AD /* submap.cpp */; };
+		B501C9AD297411E800CB965C /* crafting_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C57270E121A002163AD /* crafting_gui.cpp */; };
+		B501C9AE297411E800CB965C /* newcharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A65270E11D6002163AD /* newcharacter.cpp */; };
+		B501C9AF297411E800CB965C /* messages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C2A270E1218002163AD /* messages.cpp */; };
+		B501C9B0297411E800CB965C /* drop_token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C63270E121B002163AD /* drop_token.cpp */; };
+		B501C9B1297411E800CB965C /* skill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A66270E11D6002163AD /* skill.cpp */; };
+		B501C9B2297411E800CB965C /* memorial_logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C0B270E1217002163AD /* memorial_logger.cpp */; };
+		B501C9B3297411E800CB965C /* lightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B6F270E120F002163AD /* lightmap.cpp */; };
+		B501C9B4297411E800CB965C /* wisheffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9D276904EF00B02C8E /* wisheffect.cpp */; };
+		B501C9B5297411E800CB965C /* mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ACB270E11DF002163AD /* mapgen.cpp */; };
+		B501C9B6297411E800CB965C /* turret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669C8270E11CE002163AD /* turret.cpp */; };
+		B501C9B7297411E800CB965C /* clothing_mod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B67270E120F002163AD /* clothing_mod.cpp */; };
+		B501C9B8297411E800CB965C /* magic_ter_fur_transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A91270E11DA002163AD /* magic_ter_fur_transform.cpp */; };
+		B501C9B9297411E800CB965C /* character_martial_arts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B8F270E1211002163AD /* character_martial_arts.cpp */; };
+		B501C9BA297411E800CB965C /* overmap_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D4270E11CF002163AD /* overmap_location.cpp */; };
+		B501C9BB297411E800CB965C /* mutation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB1270E11DD002163AD /* mutation.cpp */; };
+		B501C9BC297411E800CB965C /* monattack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C51270E121A002163AD /* monattack.cpp */; };
+		B501C9BD297411E800CB965C /* ranged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A59270E11D5002163AD /* ranged.cpp */; };
+		B501C9BE297411E800CB965C /* iuse_software_lightson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BC5270E1213002163AD /* iuse_software_lightson.cpp */; };
+		B501C9BF297411E800CB965C /* mapgen_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D8270E11CF002163AD /* mapgen_functions.cpp */; };
+		B501C9C0297411E800CB965C /* activity_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B80B270E16AA00155C37 /* activity_type.cpp */; };
+		B501C9C1297411E800CB965C /* event_field_transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C01270E1216002163AD /* event_field_transformations.cpp */; };
+		B501C9C2297411E800CB965C /* iuse_software_snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C76270E121C002163AD /* iuse_software_snake.cpp */; };
+		B501C9C3297411E800CB965C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B501C9C4297411E800CB965C /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ACD270E11DF002163AD /* action.cpp */; };
+		B501C9C5297411E800CB965C /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA2276904EF00B02C8E /* shape.cpp */; };
+		B501C9C6297411E800CB965C /* distribution_grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BF8270E1216002163AD /* distribution_grid.cpp */; };
+		B501C9C7297411E800CB965C /* auto_note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B80A270E16AA00155C37 /* auto_note.cpp */; };
+		B501C9C8297411E800CB965C /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A62270E11D6002163AD /* vehicle.cpp */; };
+		B501C9C9297411E800CB965C /* scent_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A48270E11D4002163AD /* scent_map.cpp */; };
+		B501C9CA297411E800CB965C /* artifact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B83A270E16AD00155C37 /* artifact.cpp */; };
+		B501C9CB297411E800CB965C /* vehicle_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AC8270E11DF002163AD /* vehicle_display.cpp */; };
+		B501C9CC297411E800CB965C /* profession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A41270E11D3002163AD /* profession.cpp */; };
+		B501C9CD297411E800CB965C /* advanced_inv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B814270E16AB00155C37 /* advanced_inv.cpp */; };
+		B501C9CE297411E800CB965C /* diary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8258292FEDE500DC5744 /* diary.cpp */; };
+		B501C9CF297411E800CB965C /* examine_item_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8245292FEDDC00DC5744 /* examine_item_menu.cpp */; };
+		B501C9D0297411E800CB965C /* advanced_inv_listitem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B83B270E16AD00155C37 /* advanced_inv_listitem.cpp */; };
+		B501C9D1297411E800CB965C /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C1B270E1217002163AD /* debug.cpp */; };
+		B501C9D2297411E800CB965C /* player_activity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669CC270E11CE002163AD /* player_activity.cpp */; };
+		B501C9D3297411E800CB965C /* field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BA5270E1212002163AD /* field.cpp */; };
+		B501C9D4297411E800CB965C /* morale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AC1270E11DE002163AD /* morale.cpp */; };
+		B501C9D5297411E800CB965C /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BDC270E1214002163AD /* json.cpp */; };
+		B501C9D6297411E800CB965C /* clzones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BAC270E1212002163AD /* clzones.cpp */; };
+		B501C9D7297411E800CB965C /* iuse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BAF270E1212002163AD /* iuse.cpp */; };
+		B501C9D8297411E800CB965C /* matrix_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA3276904EF00B02C8E /* matrix_math.cpp */; };
+		B501C9D9297411E800CB965C /* units_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A7D270E11D8002163AD /* units_utility.cpp */; };
+		B501C9DA297411E800CB965C /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA238E51E9785C5F120F6E /* cdda_firebase.m */; };
+		B501C9DB297411E800CB965C /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A3D270E11D3002163AD /* point.cpp */; };
+		B501C9DC297411E800CB965C /* anatomy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B846270E16AE00155C37 /* anatomy.cpp */; };
+		B501C9DD297411E800CB965C /* overmap_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A44270E11D3002163AD /* overmap_noise.cpp */; };
+		B501C9DE297411E800CB965C /* crafting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C6E270E121B002163AD /* crafting.cpp */; };
+		B501C9DF297411E800CB965C /* item_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8262292FEDE600DC5744 /* item_functions.cpp */; };
+		B501C9E0297411E800CB965C /* veh_interact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A52270E11D4002163AD /* veh_interact.cpp */; };
+		B501C9E1297411E800CB965C /* live_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C5A270E121A002163AD /* live_view.cpp */; };
+		B501C9E2297411E800CB965C /* vitamin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A3A270E11D2002163AD /* vitamin.cpp */; };
+		B501C9E3297411E800CB965C /* condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BAA270E1212002163AD /* condition.cpp */; };
+		B501C9E4297411E800CB965C /* mutation_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A23270E11D1002163AD /* mutation_data.cpp */; };
+		B501C9E5297411E800CB965C /* ballistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B81F270E16AB00155C37 /* ballistics.cpp */; };
+		B501C9E6297411E800CB965C /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B68270E120F002163AD /* inventory.cpp */; };
+		B501C9E7297411E800CB965C /* game_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C23270E1218002163AD /* game_inventory.cpp */; };
+		B501C9E8297411E800CB965C /* string_editor_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8247292FEDDD00DC5744 /* string_editor_window.cpp */; };
+		B501C9E9297411E800CB965C /* item_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BC6270E1213002163AD /* item_location.cpp */; };
+		B501C9EA297411E800CB965C /* vehicle_part.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A11270E11D1002163AD /* vehicle_part.cpp */; };
+		B501C9EB297411E800CB965C /* speech.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A8A270E11D9002163AD /* speech.cpp */; };
+		B501C9EC297411E800CB965C /* wincurse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A1A270E11D1002163AD /* wincurse.cpp */; };
+		B501C9ED297411E800CB965C /* regional_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A7C270E11D8002163AD /* regional_settings.cpp */; };
+		B501C9EE297411E800CB965C /* overmapbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669FC270E11D0002163AD /* overmapbuffer.cpp */; };
+		B501C9EF297411E800CB965C /* flag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C44270E1219002163AD /* flag.cpp */; };
+		B501C9F0297411E800CB965C /* mtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A22270E11D1002163AD /* mtype.cpp */; };
+		B501C9F1297411E800CB965C /* distraction_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D825A292FEDE500DC5744 /* distraction_manager.cpp */; };
+		B501C9F2297411E800CB965C /* npcmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A26270E11D1002163AD /* npcmove.cpp */; };
+		B501C9F3297411E800CB965C /* string_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A61270E11D5002163AD /* string_utils.cpp */; };
+		B501C9F4297411E800CB965C /* npctalk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A99270E11DA002163AD /* npctalk.cpp */; };
+		B501C9F5297411E800CB965C /* computer_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C54270E121A002163AD /* computer_session.cpp */; };
+		B501C9F6297411E800CB965C /* rotatable_symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB4270E11DD002163AD /* rotatable_symbols.cpp */; };
+		B501C9F7297411E800CB965C /* savegame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A9E270E11DB002163AD /* savegame.cpp */; };
+		B501C9F8297411E800CB965C /* item_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C1E270E1217002163AD /* item_action.cpp */; };
+		B501C9F9297411E800CB965C /* weather_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B55910D0271F2457001F34CD /* weather_type.cpp */; };
+		B501C9FA297411E800CB965C /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BA1270E1212002163AD /* line.cpp */; };
+		B501C9FB297411E800CB965C /* map_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A93270E11DA002163AD /* map_memory.cpp */; };
+		B501C9FC297411E800CB965C /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
+		B501C9FD297411E800CB965C /* npctalk_funcs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669E4270E11CF002163AD /* npctalk_funcs.cpp */; };
+		B501C9FE297411E800CB965C /* iteminfo_query.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C29270E1218002163AD /* iteminfo_query.cpp */; };
+		B501C9FF297411E800CB965C /* mapdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A29270E11D1002163AD /* mapdata.cpp */; };
+		B501CA00297411E800CB965C /* filesystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C5C270E121A002163AD /* filesystem.cpp */; };
+		B501CA01297411E800CB965C /* mattack_actors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A3C270E11D2002163AD /* mattack_actors.cpp */; };
+		B501CA02297411E800CB965C /* diary_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8249292FEDDE00DC5744 /* diary_ui.cpp */; };
+		B501CA03297411E800CB965C /* sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A32270E11D2002163AD /* sounds.cpp */; };
+		B501CA04297411E800CB965C /* lru_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C2D270E1218002163AD /* lru_cache.cpp */; };
+		B501CA05297411E800CB965C /* panels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D6270E11CF002163AD /* panels.cpp */; };
+		B501CA06297411E800CB965C /* calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B841270E16AD00155C37 /* calendar.cpp */; };
+		B501CA07297411E800CB965C /* pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A5F270E11D5002163AD /* pathfinding.cpp */; };
+		B501CA08297411E800CB965C /* magic_teleporter_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F8270E11D0002163AD /* magic_teleporter_list.cpp */; };
+		B501CA09297411E800CB965C /* cursesport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BCA270E1214002163AD /* cursesport.cpp */; };
+		B501CA0A297411E800CB965C /* monexamine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BB5270E1213002163AD /* monexamine.cpp */; };
+		B501CA0B297411E800CB965C /* monstergenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669E9270E11CF002163AD /* monstergenerator.cpp */; };
+		B501CA0C297411E800CB965C /* string_input_popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A30270E11D2002163AD /* string_input_popup.cpp */; };
+		B501CA0D297411E800CB965C /* active_tile_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B845270E16AE00155C37 /* active_tile_data.cpp */; };
+		B501CA0F297411E800CB965C /* ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A4E270E11D4002163AD /* ui.cpp */; };
+		B501CA10297411E800CB965C /* catacharset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BED270E1215002163AD /* catacharset.cpp */; };
+		B501CA11297411E800CB965C /* bionics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B825270E16AC00155C37 /* bionics.cpp */; };
+		B501CA12297411E800CB965C /* kill_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C52270E121A002163AD /* kill_tracker.cpp */; };
+		B501CA13297411E800CB965C /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B501CA14297411E800CB965C /* timed_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A31270E11D2002163AD /* timed_event.cpp */; };
+		B501CA15297411E800CB965C /* emit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BF0270E1215002163AD /* emit.cpp */; };
+		B501CA16297411E800CB965C /* monmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BE5270E1215002163AD /* monmove.cpp */; };
+		B501CA17297411E800CB965C /* item_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C45270E1219002163AD /* item_group.cpp */; };
+		B501CA18297411E800CB965C /* construction_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8269292FEDE700DC5744 /* construction_sequence.cpp */; };
+		B501CA19297411E800CB965C /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
+		B501CA1A297411E800CB965C /* martialarts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F7270E11D0002163AD /* martialarts.cpp */; };
+		B501CA1B297411E800CB965C /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */; };
+		B501CA1C297411E800CB965C /* posix_time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A57270E11D5002163AD /* posix_time.cpp */; };
+		B501CA1D297411E800CB965C /* map_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D824F292FEDE200DC5744 /* map_functions.cpp */; };
+		B501CA1E297411E800CB965C /* character_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8252292FEDE300DC5744 /* character_functions.cpp */; };
+		B501CA1F297411E800CB965C /* avatar_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B812270E16AB00155C37 /* avatar_action.cpp */; };
+		B501CA20297411E800CB965C /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
+		B501CA21297411E800CB965C /* bodypart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B81E270E16AB00155C37 /* bodypart.cpp */; };
+		B501CA22297411E800CB965C /* mission_place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B94270E1211002163AD /* mission_place.cpp */; };
+		B501CA23297411E800CB965C /* sdlsound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A39270E11D2002163AD /* sdlsound.cpp */; };
+		B501CA24297411E800CB965C /* creature_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BE8270E1215002163AD /* creature_tracker.cpp */; };
+		B501CA25297411E800CB965C /* gamemode_tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C38270E1219002163AD /* gamemode_tutorial.cpp */; };
+		B501CA26297411E800CB965C /* cata_variant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C36270E1219002163AD /* cata_variant.cpp */; };
+		B501CA27297411E800CB965C /* construction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B93270E1211002163AD /* construction.cpp */; };
+		B501CA28297411E800CB965C /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A86270E11D9002163AD /* options.cpp */; };
+		B501CA29297411E800CB965C /* armor_layers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B810270E16AA00155C37 /* armor_layers.cpp */; };
+		B501CA2A297411E800CB965C /* activity_handlers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B844270E16AE00155C37 /* activity_handlers.cpp */; };
+		B501CA2B297411E800CB965C /* item_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C5E270E121A002163AD /* item_category.cpp */; };
+		B501CA2C297411E800CB965C /* consumption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BC4270E1213002163AD /* consumption.cpp */; };
+		B501CA2D297411E800CB965C /* vehicle_autodrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */; };
+		B501CA2E297411E800CB965C /* effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BEB270E1215002163AD /* effect.cpp */; };
+		B501CA2F297411E800CB965C /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
+		B501CA30297411E800CB965C /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A67270E11D6002163AD /* output.cpp */; };
+		B501CA31297411E800CB965C /* relic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A1F270E11D1002163AD /* relic.cpp */; };
+		B501CA32297411E800CB965C /* panels_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8253292FEDE400DC5744 /* panels_utility.cpp */; };
+		B501CA33297411E800CB965C /* ui_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A6F270E11D7002163AD /* ui_manager.cpp */; };
+		B501CA34297411E800CB965C /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A4F270E11D4002163AD /* material.cpp */; };
+		B501CA35297411E800CB965C /* vehicle_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A6E270E11D7002163AD /* vehicle_selector.cpp */; };
+		B501CA36297411E800CB965C /* behavior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B824270E16AC00155C37 /* behavior.cpp */; };
+		B501CA37297411E800CB965C /* behavior_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B83E270E16AD00155C37 /* behavior_oracle.cpp */; };
+		B501CA38297411E800CB965C /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C60270E121B002163AD /* game.cpp */; };
+		B501CA39297411E800CB965C /* activity_item_handling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B843270E16AE00155C37 /* activity_item_handling.cpp */; };
+		B501CA3A297411E800CB965C /* gamemode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C18270E1217002163AD /* gamemode.cpp */; };
+		B501CA3B297411E800CB965C /* editmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B75270E120F002163AD /* editmap.cpp */; };
+		B501CA3C297411E800CB965C /* projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A88270E11D9002163AD /* projectile.cpp */; };
+		B501CA3D297411E800CB965C /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
+		B501CA3E297411E800CB965C /* trait_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB8270E11DD002163AD /* trait_group.cpp */; };
+		B501CA3F297411E800CB965C /* npc_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB7270E11DD002163AD /* npc_class.cpp */; };
+		B501CA40297411E800CB965C /* game_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B8D270E1211002163AD /* game_ui.cpp */; };
+		B501CA41297411E800CB965C /* creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BE9270E1215002163AD /* creature.cpp */; };
+		B501CA42297411E800CB965C /* construction_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8261292FEDE600DC5744 /* construction_group.cpp */; };
+		B501CA43297411E800CB965C /* mod_manager_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C5B270E121A002163AD /* mod_manager_ui.cpp */; };
+		B501CA44297411E800CB965C /* handle_liquid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BEF270E1215002163AD /* handle_liquid.cpp */; };
+		B501CA45297411E800CB965C /* dialogue_win.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BCC270E1214002163AD /* dialogue_win.cpp */; };
+		B501CA46297411E800CB965C /* recipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A2B270E11D2002163AD /* recipe.cpp */; };
+		B501CA47297411E800CB965C /* behavior_strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B81D270E16AB00155C37 /* behavior_strategy.cpp */; };
+		B501CA48297411E800CB965C /* translations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A0E270E11D1002163AD /* translations.cpp */; };
+		B501CA49297411E800CB965C /* monster_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A3F270E11D3002163AD /* monster_oracle.cpp */; };
+		B501CA4A297411E800CB965C /* npctrade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A2D270E11D2002163AD /* npctrade.cpp */; };
+		B501CA4B297411E800CB965C /* item_contents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C69270E121B002163AD /* item_contents.cpp */; };
+		B501CA4C297411E800CB965C /* ncurses_def.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669CD270E11CE002163AD /* ncurses_def.cpp */; };
+		B501CA4D297411E800CB965C /* mission_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BD5270E1214002163AD /* mission_ui.cpp */; };
+		B501CA4E297411E800CB965C /* mission_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BB8270E1213002163AD /* mission_start.cpp */; };
+		B501CA4F297411E800CB965C /* faction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BD9270E1214002163AD /* faction.cpp */; };
+		B501CA50297411E800CB965C /* skill_boost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669E8270E11CF002163AD /* skill_boost.cpp */; };
+		B501CA51297411E800CB965C /* itype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B8A270E1211002163AD /* itype.cpp */; };
+		B501CA52297411E800CB965C /* bonuses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B80C270E16AA00155C37 /* bonuses.cpp */; };
+		B501CA53297411E800CB965C /* mission_companion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BEC270E1215002163AD /* mission_companion.cpp */; };
+		B501CA54297411E800CB965C /* dispersion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C28270E1218002163AD /* dispersion.cpp */; };
+		B501CA55297411E800CB965C /* grab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BFB270E1216002163AD /* grab.cpp */; };
+		B501CA56297411E800CB965C /* overmap_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A80270E11D8002163AD /* overmap_ui.cpp */; };
+		B501CA57297411E800CB965C /* advanced_inv_pane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B842270E16AD00155C37 /* advanced_inv_pane.cpp */; };
+		B501CA58297411E800CB965C /* string_id_null_ids.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A71270E11D7002163AD /* string_id_null_ids.cpp */; };
+		B501CA59297411E800CB965C /* ime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BA3270E1212002163AD /* ime.cpp */; };
+		B501CA5A297411E800CB965C /* mod_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C09270E1216002163AD /* mod_manager.cpp */; };
+		B501CA5B297411E800CB965C /* trap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D3270E11CF002163AD /* trap.cpp */; };
+		B501CA5C297411E800CB965C /* sdl_wrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A98270E11DA002163AD /* sdl_wrappers.cpp */; };
+		B501CA5D297411E800CB965C /* string_formatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669D2270E11CF002163AD /* string_formatter.cpp */; };
+		B501CA5E297411E800CB965C /* map_extras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A21270E11D1002163AD /* map_extras.cpp */; };
+		B501CA5F297411E800CB965C /* pixel_minimap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A95270E11DA002163AD /* pixel_minimap.cpp */; };
+		B501CA60297411E800CB965C /* item_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C37270E1219002163AD /* item_factory.cpp */; };
+		B501CA61297411E800CB965C /* field_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BAB270E1212002163AD /* field_type.cpp */; };
+		B501CA62297411E800CB965C /* overmap_connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A40270E11D3002163AD /* overmap_connection.cpp */; };
+		B501CA63297411E800CB965C /* stomach.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EA270E11CF002163AD /* stomach.cpp */; };
+		B501CA64297411E800CB965C /* mondefense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C50270E121A002163AD /* mondefense.cpp */; };
+		B501CA66297411E800CB965C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
+		B501CA67297411E800CB965C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
+		B501CA68297411E800CB965C /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5654D2A259BC9DE00AABE12 /* libSDL2.a */; };
+		B501CA69297411E800CB965C /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
+		B501CA6A297411E800CB965C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55910D2271F24B4001F34CD /* CoreServices.framework */; };
+		B501CA6B297411E800CB965C /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
+		B501CA6C297411E800CB965C /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
+		B501CA6D297411E800CB965C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6D25929F9C00505231 /* AudioToolbox.framework */; };
+		B501CA6E297411E800CB965C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6F25929FBA00505231 /* AVFoundation.framework */; };
+		B501CA6F297411E800CB965C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
+		B501CA70297411E800CB965C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD6B25929F6400505231 /* CoreBluetooth.framework */; };
+		B501CA71297411E800CB965C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54195C82955BBEA0035CC2F /* StoreKit.framework */; };
+		B501CA72297411E800CB965C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
+		B501CA73297411E800CB965C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
+		B501CA76297411E800CB965C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
+		B501CA77297411E800CB965C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
+		B501CA79297411E800CB965C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B555591025D5BC8F00CD2E90 /* Settings.bundle */; };
+		B501CA7A297411E800CB965C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
+		B501CA7C297411E800CB965C /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
+		B501CA7E297411E800CB965C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
+		B501CA7F297411E800CB965C /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
+		B501CA81297411E800CB965C /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
+		B501CA82297411E800CB965C /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
+		B501CA85297411E800CB965C /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
@@ -28,15 +379,12 @@
 		B576B3C32972F94D00221544 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B576B3C62972F94D00221544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B576B3C72972F94D00221544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
-		B576B3C82972F94D00221544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FA7BEC270CD09C00A1655A /* Assets.xcassets */; };
 		B576B3C92972F94D00221544 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B555591025D5BC8F00CD2E90 /* Settings.bundle */; };
 		B576B3CA2972F94D00221544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
-		B576B3CB2972F94D00221544 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57AF2032943EB3800604616 /* GoogleService-Info.plist */; };
 		B576B3CC2972F94D00221544 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B576B3CD2972F94D00221544 /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D5CB492971C64B00CA0FC0 /* PaywallSettings.plist */; };
 		B576B3CE2972F94D00221544 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
 		B576B3CF2972F94D00221544 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5B01B95259BEF650023AB00 /* data */; };
-		B576B3D02972F94D00221544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */; };
 		B576B3D12972F94D00221544 /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
 		B576B3D22972F94D00221544 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B576B3D52972F94D00221544 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
@@ -364,12 +712,18 @@
 		B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B576B5572973040600221544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B576B5582973040600221544 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
-		B576B5592973044300221544 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA238E51E9785C5F120F6E /* cdda_firebase.m */; };
 		B576B55A2973044300221544 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 		B576B55B2973044300221544 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B576B55C2973045600221544 /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
-		B576B59C29730D0B00221544 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B576B59A29730D0200221544 /* mo */; };
 		B576B59E29730FF500221544 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
+		B57B28012974157D0043A513 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B57B27F7297415770043A513 /* InfoPlist.strings */; };
+		B57B28022974157F0043A513 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B501CAA82974124E00CB965C /* InfoPlist.strings */; };
+		B57B282929741C250043A513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57B282829741C250043A513 /* Assets.xcassets */; };
+		B57B282A29741C250043A513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57B282829741C250043A513 /* Assets.xcassets */; };
+		B57B282D29741CA90043A513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57B282B29741CA80043A513 /* GoogleService-Info.plist */; };
+		B57B283129741D680043A513 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B57B282E29741D510043A513 /* mo */; };
+		B57B283229741DBB0043A513 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B57B282E29741D510043A513 /* mo */; };
+		B57B283429741FC20043A513 /* subscribe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B57B283329741FC20043A513 /* subscribe.cpp */; };
 		B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B58679DF260402B600EACF2C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B58679E0260402B600EACF2C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
@@ -388,9 +742,39 @@
 		B5867A1B2604030A00EACF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5867A2D2604036E00EACF2C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */; };
+		E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */; };
+		F71C319D074BA0A92F99666D /* Pods_CBN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C4C44C48B333F1514F9AC /* Pods_CBN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B501C913297411E800CB965C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54932E4259BD59D00667062 /* SDL_image.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1FA72F07AF4C45004B6283;
+			remoteInfo = "libSDL_image-iOS";
+		};
+		B501C915297411E800CB965C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BE48FD6807AFA17000BB41DA;
+			remoteInfo = "libSDL_ttf-iOS";
+		};
+		B501C917297411E800CB965C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5493315259BE20000667062 /* SDL_mixer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1FA90707AF96B2004B6283;
+			remoteInfo = "libSDL_mixer-iOS";
+		};
+		B501C919297411E800CB965C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A7D88D1723E24D3B00DCD162;
+			remoteInfo = "Static Library-iOS";
+		};
 		B5312A3225A1160F00357241 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5312A2E25A1160F00357241 /* JSController.xcodeproj */;
@@ -562,6 +946,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		B501CA84297411E800CB965C /* Copy gfx to data */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = data;
+			dstSubfolderSpec = 1;
+			files = (
+				B501CA85297411E800CB965C /* gfx in Copy gfx to data */,
+			);
+			name = "Copy gfx to data";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B501CA88297411E800CB965C /* Copy mo to lang */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = lang;
+			dstSubfolderSpec = 1;
+			files = (
+				B57B283229741DBB0043A513 /* mo in Copy mo to lang */,
+			);
+			name = "Copy mo to lang";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B576B3D42972F94D00221544 /* Copy gfx to data */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -579,7 +985,7 @@
 			dstPath = lang;
 			dstSubfolderSpec = 1;
 			files = (
-				B576B59C29730D0B00221544 /* mo in Copy mo to lang */,
+				B57B283129741D680043A513 /* mo in Copy mo to lang */,
 			);
 			name = "Copy mo to lang";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,10 +995,28 @@
 /* Begin PBXFileReference section */
 		5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBNfreeIAP.release.xcconfig"; path = "Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP.release.xcconfig"; sourceTree = "<group>"; };
 		62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.release.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.release.xcconfig"; sourceTree = "<group>"; };
+		6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBN.release.xcconfig"; path = "Target Support Files/Pods-CBN/Pods-CBN.release.xcconfig"; sourceTree = "<group>"; };
+		757C4C44C48B333F1514F9AC /* Pods_CBN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBNfreeIAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
 		8DD17C755D49E2A0EBF7F4AD /* Pods-Paywall debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.debug.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.debug.xcconfig"; sourceTree = "<group>"; };
+		992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBN.debug.xcconfig"; path = "Target Support Files/Pods-CBN/Pods-CBN.debug.xcconfig"; sourceTree = "<group>"; };
 		9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paywall_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3038FE10863690F4230FCE7 /* Pods-Paywall debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.release.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.release.xcconfig"; sourceTree = "<group>"; };
+		B501CA8F297411E800CB965C /* CBN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B501CAA92974124E00CB965C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAAA2974124E00CB965C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAAB2974124E00CB965C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAAC2974124E00CB965C /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		B501CAAD2974124E00CB965C /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAAF2974124E00CB965C /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAB02974124E00CB965C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAB12974124E00CB965C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAB22974124E00CB965C /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CAB32974124E00CB965C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B501CAB42974124E00CB965C /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B501CBE52974154600CB965C /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		B501CBE62974154700CB965C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5072BB8259CE883002479DB /* gfx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gfx; path = "worktree/Cataclysm-BN/gfx"; sourceTree = SOURCE_ROOT; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
@@ -767,35 +1191,34 @@
 		B55910D0271F2457001F34CD /* weather_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = weather_type.cpp; path = "worktree/Cataclysm-BN/src/weather_type.cpp"; sourceTree = "<group>"; };
 		B55910D2271F24B4001F34CD /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		B559EDAC25AB85A40065602D /* dPad-None@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dPad-None@2x.png"; sourceTree = "<group>"; };
-		B55D63D8A17D4928CECFA05C /* Pods_CBNfreeIAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBNfreeIAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B560EE8925D9822000FDE1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UIControls.storyboard; sourceTree = "<group>"; };
 		B560EE8D25D9824800FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EE9125D996AE00FDE1C4 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EE9525D99A6200FDE1C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EE9625D99A6300FDE1C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EE9925D99C6200FDE1C4 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EE9A25D99C6300FDE1C4 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EE9D25D9A14A00FDE1C4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EE9E25D9A14B00FDE1C4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EEA125D9A66600FDE1C4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EEA225D9A66600FDE1C4 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EEA525D9A70F00FDE1C4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EEA625D9A71000FDE1C4 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EEA925D9AA0900FDE1C4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EEAA25D9AA0900FDE1C4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EEAD25D9B0CF00FDE1C4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EEAE25D9B0D000FDE1C4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B560EEB125D9B27200FDE1C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UIControls.strings; sourceTree = "<group>"; };
-		B560EEB225D9B27200FDE1C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5654D11259BC9DE00AABE12 /* SDL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL.xcodeproj; path = Libraries/SDL/Xcode/SDL/SDL.xcodeproj; sourceTree = "<group>"; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B576B3DF2972F94D00221544 /* CBNfreeIAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBNfreeIAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B576B57C297309FF00221544 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B576B57E29730A3600221544 /* App.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
-		B576B59A29730D0200221544 /* mo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mo; path = "worktree/Cataclysm-BN/lang/mo"; sourceTree = SOURCE_ROOT; };
 		B57AF1F82943D17D00604616 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B57AF2032943EB3800604616 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B57B27F8297415770043A513 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27F9297415770043A513 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27FA297415770043A513 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27FB297415770043A513 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27FC297415770043A513 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27FD297415770043A513 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27FE297415770043A513 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B27FF297415770043A513 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B2800297415770043A513 /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B57B282829741C250043A513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57B282B29741CA80043A513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B57B282E29741D510043A513 /* mo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mo; path = "worktree/Cataclysm-BN/lang/mo"; sourceTree = SOURCE_ROOT; };
+		B57B283329741FC20043A513 /* subscribe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = subscribe.cpp; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
@@ -1376,7 +1799,6 @@
 		B5D5CB4C2971C64B00CA0FC0 /* SDL_uikitviewcontroller+MainView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+MainView.mm"; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		B5FA7BEC270CD09C00A1655A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5FCB825295720C400BD43A4 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
@@ -1393,6 +1815,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B501CA65297411E800CB965C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B501CA66297411E800CB965C /* CoreHaptics.framework in Frameworks */,
+				B501CA67297411E800CB965C /* libintl.a in Frameworks */,
+				B501CA68297411E800CB965C /* libSDL2.a in Frameworks */,
+				B501CA69297411E800CB965C /* libSDL2_mixer.a in Frameworks */,
+				B501CA6A297411E800CB965C /* CoreServices.framework in Frameworks */,
+				B501CA6B297411E800CB965C /* libSDL2_ttf.a in Frameworks */,
+				B501CA6C297411E800CB965C /* libSDL2_image.a in Frameworks */,
+				B501CA6D297411E800CB965C /* AudioToolbox.framework in Frameworks */,
+				B501CA6E297411E800CB965C /* AVFoundation.framework in Frameworks */,
+				B501CA6F297411E800CB965C /* libiconv.tbd in Frameworks */,
+				B501CA70297411E800CB965C /* CoreBluetooth.framework in Frameworks */,
+				B501CA71297411E800CB965C /* StoreKit.framework in Frameworks */,
+				B501CA72297411E800CB965C /* CoreMotion.framework in Frameworks */,
+				B501CA73297411E800CB965C /* GameController.framework in Frameworks */,
+				F71C319D074BA0A92F99666D /* Pods_CBN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B53804F925AC6DB200AEB52A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1418,7 +1862,8 @@
 				B576B3C12972F94D00221544 /* StoreKit.framework in Frameworks */,
 				B576B3C22972F94D00221544 /* CoreMotion.framework in Frameworks */,
 				B576B3C32972F94D00221544 /* GameController.framework in Frameworks */,
-				A252EA703B7FAB4517AD075B /* Pods_CBNfreeIAP.framework in Frameworks */,
+				A252EA703B7FAB4517AD075B /* (null) in Frameworks */,
+				E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1454,8 +1899,52 @@
 				A3038FE10863690F4230FCE7 /* Pods-Paywall debug.release.xcconfig */,
 				CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */,
 				5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */,
+				992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */,
+				6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B501CAA72974124E00CB965C /* CBN */ = {
+			isa = PBXGroup;
+			children = (
+				B501CAA82974124E00CB965C /* InfoPlist.strings */,
+				B501CAAC2974124E00CB965C /* App.entitlements */,
+				B501CAB32974124E00CB965C /* Info.plist */,
+			);
+			path = CBN;
+			sourceTree = "<group>";
+		};
+		B501CABE2974148E00CB965C /* Versions */ = {
+			isa = PBXGroup;
+			children = (
+				B501CAA72974124E00CB965C /* CBN */,
+				B576B57A297306C600221544 /* CBNfreeIAP */,
+			);
+			path = Versions;
+			sourceTree = "<group>";
+		};
+		B501CABF2974149E00CB965C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B57B282E29741D510043A513 /* mo */,
+				B57B282829741C250043A513 /* Assets.xcassets */,
+				B501CAC0297414AD00CB965C /* src */,
+				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B501CAC0297414AD00CB965C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B558CB72270E0D3C00410845 /* Cataclysm-BN */,
+				B5B01B99259BF0690023AB00 /* version.h */,
+				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
+				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
+				B5F97C66259C08B500C5A910 /* main.mm */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		B50B447725A24F5600628243 /* JSDPad */ = {
@@ -1481,6 +1970,7 @@
 				B5127665289C5723004882AA /* version.cpp */,
 				D0AA238E51E9785C5F120F6E /* cdda_firebase.m */,
 				D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */,
+				B57B283329741FC20043A513 /* subscribe.cpp */,
 			);
 			path = overrides;
 			sourceTree = "<group>";
@@ -2204,7 +2694,7 @@
 				B59669BF270E11CE002163AD /* worldfactory.h */,
 			);
 			name = "Cataclysm-BN";
-			path = ..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		B5654D12259BC9DE00AABE12 /* Products */ = {
@@ -2259,6 +2749,7 @@
 		B57201C0259293EE003D2A20 = {
 			isa = PBXGroup;
 			children = (
+				B57B282B29741CA80043A513 /* GoogleService-Info.plist */,
 				B576B57B297306E300221544 /* CBN */,
 				B5EDBF7F270B951500FB4526 /* Distinct */,
 				B5EDBF68270B94AB00FB4526 /* Common */,
@@ -2276,6 +2767,7 @@
 				B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */,
 				B5867A02260402B600EACF2C /* CDDA.app */,
 				B576B3DF2972F94D00221544 /* CBNfreeIAP.app */,
+				B501CA8F297411E800CB965C /* CBN.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2283,10 +2775,9 @@
 		B576B57A297306C600221544 /* CBNfreeIAP */ = {
 			isa = PBXGroup;
 			children = (
-				B576B57E29730A3600221544 /* App.entitlements */,
-				B576B57C297309FF00221544 /* Info.plist */,
-				B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */,
-				B57AF2032943EB3800604616 /* GoogleService-Info.plist */,
+				B57B27F7297415770043A513 /* InfoPlist.strings */,
+				B501CBE52974154600CB965C /* App.entitlements */,
+				B501CBE62974154700CB965C /* Info.plist */,
 			);
 			path = CBNfreeIAP;
 			sourceTree = "<group>";
@@ -2294,15 +2785,8 @@
 		B576B57B297306E300221544 /* CBN */ = {
 			isa = PBXGroup;
 			children = (
-				B558CB72270E0D3C00410845 /* Cataclysm-BN */,
-				B5B01B99259BF0690023AB00 /* version.h */,
-				B576B59A29730D0200221544 /* mo */,
-				B5FA7BEC270CD09C00A1655A /* Assets.xcassets */,
-				B5A5BED725F7DEB400EEEA0F /* MainViewController.h */,
-				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
-				B5F97C66259C08B500C5A910 /* main.mm */,
-				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
-				B576B57A297306C600221544 /* CBNfreeIAP */,
+				B501CABF2974149E00CB965C /* Common */,
+				B501CABE2974148E00CB965C /* Versions */,
 			);
 			path = CBN;
 			sourceTree = "<group>";
@@ -2331,7 +2815,8 @@
 				B54FDD7D2592A09000505231 /* GameController.framework */,
 				B54FDD7125929FEA00505231 /* MobileCoreServices.framework */,
 				9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */,
-				B55D63D8A17D4928CECFA05C /* Pods_CBNfreeIAP.framework */,
+				757C4C44C48B333F1514F9AC /* Pods_CBN.framework */,
+				837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2471,6 +2956,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B501C911297411E800CB965C /* CBN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B501CA8C297411E800CB965C /* Build configuration list for PBXNativeTarget "CBN" */;
+			buildPhases = (
+				B501C91A297411E800CB965C /* [CP] Check Pods Manifest.lock */,
+				B501C91B297411E800CB965C /* Sources */,
+				B501CA65297411E800CB965C /* Frameworks */,
+				B501CA75297411E800CB965C /* Resources */,
+				B501CA83297411E800CB965C /* Touch gfx dir to always have its copying to the product */,
+				B501CA84297411E800CB965C /* Copy gfx to data */,
+				B501CA86297411E800CB965C /* Compile lang/mo if po changed */,
+				B501CA87297411E800CB965C /* Touch lang/mo dir to always have its copying to the product */,
+				B501CA88297411E800CB965C /* Copy mo to lang */,
+				B501CA8A297411E800CB965C /* Remove redundant directories from data */,
+				B501CA8B297411E800CB965C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B501C912297411E800CB965C /* PBXTargetDependency */,
+				B501C914297411E800CB965C /* PBXTargetDependency */,
+				B501C916297411E800CB965C /* PBXTargetDependency */,
+				B501C918297411E800CB965C /* PBXTargetDependency */,
+			);
+			name = CBN;
+			productName = CDDA;
+			productReference = B501CA8F297411E800CB965C /* CBN.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B53804FB25AC6DB200AEB52A /* CDDAUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B538050325AC6DB200AEB52A /* Build configuration list for PBXNativeTarget "CDDAUITests" */;
@@ -2594,6 +3108,7 @@
 			);
 			projectRoot = "";
 			targets = (
+				B501C911297411E800CB965C /* CBN */,
 				B576B2612972F94D00221544 /* CBNfreeIAP */,
 				B53804FB25AC6DB200AEB52A /* CDDAUITests */,
 				B58678B4260402B600EACF2C /* CDDA iCloud debug */,
@@ -2745,6 +3260,24 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B501CA75297411E800CB965C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B501CA76297411E800CB965C /* Main.storyboard in Resources */,
+				B501CA77297411E800CB965C /* Assets.xcassets in Resources */,
+				B57B282929741C250043A513 /* Assets.xcassets in Resources */,
+				B501CA79297411E800CB965C /* Settings.bundle in Resources */,
+				B501CA7A297411E800CB965C /* LaunchScreen.storyboard in Resources */,
+				B501CA7C297411E800CB965C /* UIControls.storyboard in Resources */,
+				B501CA7E297411E800CB965C /* Localizable.strings in Resources */,
+				B501CA7F297411E800CB965C /* data in Resources */,
+				B501CA81297411E800CB965C /* dPad-None@2x.png in Resources */,
+				B57B28022974157F0043A513 /* InfoPlist.strings in Resources */,
+				B501CA82297411E800CB965C /* icon_1024x1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B53804FA25AC6DB200AEB52A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2756,18 +3289,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57B282D29741CA90043A513 /* GoogleService-Info.plist in Resources */,
 				B576B3C62972F94D00221544 /* Main.storyboard in Resources */,
 				B576B3C72972F94D00221544 /* Assets.xcassets in Resources */,
-				B576B3C82972F94D00221544 /* Assets.xcassets in Resources */,
 				B576B3C92972F94D00221544 /* Settings.bundle in Resources */,
 				B576B3CA2972F94D00221544 /* LaunchScreen.storyboard in Resources */,
-				B576B3CB2972F94D00221544 /* GoogleService-Info.plist in Resources */,
 				B576B3CC2972F94D00221544 /* UIControls.storyboard in Resources */,
 				B576B3CD2972F94D00221544 /* PaywallSettings.plist in Resources */,
 				B576B3CE2972F94D00221544 /* Localizable.strings in Resources */,
 				B576B3CF2972F94D00221544 /* data in Resources */,
-				B576B3D02972F94D00221544 /* InfoPlist.strings in Resources */,
 				B576B3D12972F94D00221544 /* dPad-None@2x.png in Resources */,
+				B57B28012974157D0043A513 /* InfoPlist.strings in Resources */,
+				B57B282A29741C250043A513 /* Assets.xcassets in Resources */,
 				B576B3D22972F94D00221544 /* icon_1024x1024.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2785,6 +3318,121 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B501C91A297411E800CB965C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CBN-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B501CA83297411E800CB965C /* Touch gfx dir to always have its copying to the product */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Touch gfx dir to always have its copying to the product";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo touching gfx\ntouch worktree/Cataclysm-BN/gfx\n";
+			showEnvVarsInLog = 0;
+		};
+		B501CA86297411E800CB965C /* Compile lang/mo if po changed */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Libraries/Cataclysm-DDA/lang/po/cataclysm-dda.pot",
+			);
+			name = "Compile lang/mo if po changed";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Libraries/Cataclysm-DDA/lang/mo",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "echo compiling mo\ncd worktree/Cataclysm-BN/lang && ./compile_mo.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		B501CA87297411E800CB965C /* Touch lang/mo dir to always have its copying to the product */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Touch lang/mo dir to always have its copying to the product";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo touching mo\ntouch worktree/Cataclysm-BN/lang/mo\n";
+		};
+		B501CA8A297411E800CB965C /* Remove redundant directories from data */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove redundant directories from data";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -d \"${CODESIGNING_FOLDER_PATH}\"/data/osx ]]; then\n    rm -r \"${CODESIGNING_FOLDER_PATH}\"/data/osx\nfi\n";
+		};
+		B501CA8B297411E800CB965C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CBN/Pods-CBN-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CBN/Pods-CBN-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CBN/Pods-CBN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B576B26A2972F94D00221544 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2903,6 +3551,341 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B501C91B297411E800CB965C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B501C91C297411E800CB965C /* text_snippets.cpp in Sources */,
+				B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */,
+				B501C91E297411E800CB965C /* item.cpp in Sources */,
+				B501C91F297411E800CB965C /* ZipArchiver.swift in Sources */,
+				B501C920297411E800CB965C /* magic_enchantment.cpp in Sources */,
+				B501C921297411E800CB965C /* melee.cpp in Sources */,
+				B501C922297411E800CB965C /* npc.cpp in Sources */,
+				B501C923297411E800CB965C /* recipe_groups.cpp in Sources */,
+				B501C924297411E800CB965C /* help.cpp in Sources */,
+				B501C925297411E800CB965C /* sdl_geometry.cpp in Sources */,
+				B501C926297411E800CB965C /* main_menu.cpp in Sources */,
+				B501C927297411E800CB965C /* stats_tracker.cpp in Sources */,
+				B501C928297411E800CB965C /* input.cpp in Sources */,
+				B501C929297411E800CB965C /* iuse_software.cpp in Sources */,
+				B501C92A297411E800CB965C /* disease.cpp in Sources */,
+				B501C92B297411E800CB965C /* safemode_ui.cpp in Sources */,
+				B501C92C297411E800CB965C /* pickup.cpp in Sources */,
+				B501C92D297411E800CB965C /* popup.cpp in Sources */,
+				B501C92E297411E800CB965C /* SDL_char_utils.m in Sources */,
+				B501C92F297411E800CB965C /* character.cpp in Sources */,
+				B501C930297411E800CB965C /* name.cpp in Sources */,
+				B501C931297411E800CB965C /* cata_utility.cpp in Sources */,
+				B501C932297411E800CB965C /* advanced_inv_area.cpp in Sources */,
+				B501C933297411E800CB965C /* item_search.cpp in Sources */,
+				B501C934297411E800CB965C /* ShowAndFixGestureRecognizer.swift in Sources */,
+				B501C935297411E800CB965C /* faction_camp.cpp in Sources */,
+				B501C936297411E800CB965C /* player_hardcoded_effects.cpp in Sources */,
+				B501C937297411E800CB965C /* crash.cpp in Sources */,
+				B501C938297411E800CB965C /* teleport.cpp in Sources */,
+				B501C939297411E800CB965C /* language.cpp in Sources */,
+				B501C93A297411E800CB965C /* inventory_ui.cpp in Sources */,
+				B501C93B297411E800CB965C /* auto_pickup.cpp in Sources */,
+				B501C93C297411E800CB965C /* mutation_type.cpp in Sources */,
+				B501C93D297411E800CB965C /* mission_util.cpp in Sources */,
+				B501C93E297411E800CB965C /* fmtlib_format.cpp in Sources */,
+				B501C93F297411E800CB965C /* PageUpDownPanGestureRecognizer.swift in Sources */,
+				B501C940297411E800CB965C /* suffer.cpp in Sources */,
+				B501C941297411E800CB965C /* activity_actor.cpp in Sources */,
+				B501C942297411E800CB965C /* loading_ui.cpp in Sources */,
+				B501C943297411E800CB965C /* iuse_software_kitten.cpp in Sources */,
+				B501C944297411E800CB965C /* visitable.cpp in Sources */,
+				B501C945297411E800CB965C /* event.cpp in Sources */,
+				B501C946297411E800CB965C /* mapgendata.cpp in Sources */,
+				B501C947297411E800CB965C /* color.cpp in Sources */,
+				B501C948297411E800CB965C /* dump.cpp in Sources */,
+				B501C949297411E800CB965C /* map.cpp in Sources */,
+				B57B283429741FC20043A513 /* subscribe.cpp in Sources */,
+				B501C94A297411E800CB965C /* animation.cpp in Sources */,
+				B501C94B297411E800CB965C /* ammo_effect.cpp in Sources */,
+				B501C94C297411E800CB965C /* iexamine.cpp in Sources */,
+				B501C94D297411E800CB965C /* weather_gen.cpp in Sources */,
+				B501C94E297411E800CB965C /* computer.cpp in Sources */,
+				B501C94F297411E800CB965C /* sdl_font.cpp in Sources */,
+				B501C950297411E800CB965C /* magic.cpp in Sources */,
+				B501C951297411E800CB965C /* init.cpp in Sources */,
+				B501C952297411E800CB965C /* cata_tiles.cpp in Sources */,
+				B501C953297411E800CB965C /* craft_command.cpp in Sources */,
+				B501C954297411E800CB965C /* bionics_ui.cpp in Sources */,
+				B501C955297411E800CB965C /* cata_libintl.cpp in Sources */,
+				B501C956297411E800CB965C /* overlay_ordering.cpp in Sources */,
+				B501C957297411E800CB965C /* veh_type.cpp in Sources */,
+				B501C958297411E800CB965C /* event_bus.cpp in Sources */,
+				B501C959297411E800CB965C /* item_stack.cpp in Sources */,
+				B501C95A297411E800CB965C /* debug_menu.cpp in Sources */,
+				B501C95B297411E800CB965C /* iuse_software_minesweeper.cpp in Sources */,
+				B501C95C297411E800CB965C /* mission.cpp in Sources */,
+				B501C95D297411E800CB965C /* path_utils.m in Sources */,
+				B501C95E297411E800CB965C /* event_statistics.cpp in Sources */,
+				B501C95F297411E800CB965C /* fault.cpp in Sources */,
+				B501C960297411E800CB965C /* active_item_cache.cpp in Sources */,
+				B501C961297411E800CB965C /* fungal_effects.cpp in Sources */,
+				B501C962297411E800CB965C /* mod_tileset.cpp in Sources */,
+				B501C963297411E800CB965C /* main.m in Sources */,
+				B501C964297411E800CB965C /* morale_types.cpp in Sources */,
+				B501C965297411E800CB965C /* sdl_utils.cpp in Sources */,
+				B501C966297411E800CB965C /* safe_reference.cpp in Sources */,
+				B501C967297411E800CB965C /* drawing_primitives.cpp in Sources */,
+				B501C968297411E800CB965C /* cached_options.cpp in Sources */,
+				B501C969297411E800CB965C /* magic_spell_effect.cpp in Sources */,
+				B501C96A297411E800CB965C /* path_info.cpp in Sources */,
+				B501C96B297411E800CB965C /* scenario.cpp in Sources */,
+				B501C96C297411E800CB965C /* explosion.cpp in Sources */,
+				B501C96D297411E800CB965C /* mapbuffer.cpp in Sources */,
+				B501C96E297411E800CB965C /* string_id.cpp in Sources */,
+				B501C96F297411E800CB965C /* vehicle_use.cpp in Sources */,
+				B501C970297411E800CB965C /* monfaction.cpp in Sources */,
+				B501C971297411E800CB965C /* url_utility.cpp in Sources */,
+				B501C972297411E800CB965C /* map_field.cpp in Sources */,
+				B501C973297411E800CB965C /* map_selector.cpp in Sources */,
+				B501C974297411E800CB965C /* handle_action.cpp in Sources */,
+				B501C975297411E800CB965C /* character_display.cpp in Sources */,
+				B501C976297411E800CB965C /* gates.cpp in Sources */,
+				B501C977297411E800CB965C /* mapsharing.cpp in Sources */,
+				B501C978297411E800CB965C /* coordinate_conversions.cpp in Sources */,
+				B501C979297411E800CB965C /* mission_end.cpp in Sources */,
+				B501C97A297411E800CB965C /* sdltiles.cpp in Sources */,
+				B501C97B297411E800CB965C /* simplexnoise.cpp in Sources */,
+				B501C97C297411E800CB965C /* worldfactory.cpp in Sources */,
+				B501C97D297411E800CB965C /* iuse_software_sokoban.cpp in Sources */,
+				B501C97E297411E800CB965C /* character_oracle.cpp in Sources */,
+				B501C97F297411E800CB965C /* descriptions.cpp in Sources */,
+				B501C980297411E800CB965C /* iuse_actor.cpp in Sources */,
+				B501C981297411E800CB965C /* char_validity_check.cpp in Sources */,
+				B501C982297411E800CB965C /* player.cpp in Sources */,
+				B501C983297411E800CB965C /* mondeath.cpp in Sources */,
+				B501C984297411E800CB965C /* missiondef.cpp in Sources */,
+				B501C985297411E800CB965C /* achievement.cpp in Sources */,
+				B501C986297411E800CB965C /* monster.cpp in Sources */,
+				B501C987297411E800CB965C /* MainViewController.m in Sources */,
+				B501C988297411E800CB965C /* addiction.cpp in Sources */,
+				B501C989297411E800CB965C /* damage.cpp in Sources */,
+				B501C98A297411E800CB965C /* start_location.cpp in Sources */,
+				B501C98B297411E800CB965C /* recipe_dictionary.cpp in Sources */,
+				B501C98C297411E800CB965C /* savegame_json.cpp in Sources */,
+				B501C98D297411E800CB965C /* wcwidth.cpp in Sources */,
+				B501C98E297411E800CB965C /* ranged_aoe.cpp in Sources */,
+				B501C98F297411E800CB965C /* avatar.cpp in Sources */,
+				B501C990297411E800CB965C /* gamemode_defense.cpp in Sources */,
+				B501C991297411E800CB965C /* basecamp.cpp in Sources */,
+				B501C992297411E800CB965C /* trapfunc.cpp in Sources */,
+				B501C993297411E800CB965C /* pixel_minimap_projectors.cpp in Sources */,
+				B501C994297411E800CB965C /* savegame_legacy.cpp in Sources */,
+				B501C995297411E800CB965C /* overmap.cpp in Sources */,
+				B501C996297411E800CB965C /* JSButton.m in Sources */,
+				B501C997297411E800CB965C /* map_item_stack.cpp in Sources */,
+				B501C998297411E800CB965C /* scores_ui.cpp in Sources */,
+				B501C99A297411E800CB965C /* harvest.cpp in Sources */,
+				B501C99B297411E800CB965C /* vehicle_group.cpp in Sources */,
+				B501C99C297411E800CB965C /* mapgenformat.cpp in Sources */,
+				B501C99D297411E800CB965C /* units.cpp in Sources */,
+				B501C99E297411E800CB965C /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
+				B501C99F297411E800CB965C /* ascii_art.cpp in Sources */,
+				B501C9A0297411E800CB965C /* mongroup.cpp in Sources */,
+				B501C9A1297411E800CB965C /* construction_category.cpp in Sources */,
+				B501C9A2297411E800CB965C /* dependency_tree.cpp in Sources */,
+				B501C9A3297411E800CB965C /* requirements.cpp in Sources */,
+				B501C9A4297411E800CB965C /* ammo.cpp in Sources */,
+				B501C9A5297411E800CB965C /* mutation_ui.cpp in Sources */,
+				B501C9A6297411E800CB965C /* rng.cpp in Sources */,
+				B501C9A7297411E800CB965C /* wish.cpp in Sources */,
+				B501C9A8297411E800CB965C /* vehicle_move.cpp in Sources */,
+				B501C9A9297411E800CB965C /* veh_utils.cpp in Sources */,
+				B501C9AA297411E800CB965C /* weather.cpp in Sources */,
+				B501C9AB297411E800CB965C /* tileray.cpp in Sources */,
+				B501C9AC297411E800CB965C /* submap.cpp in Sources */,
+				B501C9AD297411E800CB965C /* crafting_gui.cpp in Sources */,
+				B501C9AE297411E800CB965C /* newcharacter.cpp in Sources */,
+				B501C9AF297411E800CB965C /* messages.cpp in Sources */,
+				B501C9B0297411E800CB965C /* drop_token.cpp in Sources */,
+				B501C9B1297411E800CB965C /* skill.cpp in Sources */,
+				B501C9B2297411E800CB965C /* memorial_logger.cpp in Sources */,
+				B501C9B3297411E800CB965C /* lightmap.cpp in Sources */,
+				B501C9B4297411E800CB965C /* wisheffect.cpp in Sources */,
+				B501C9B5297411E800CB965C /* mapgen.cpp in Sources */,
+				B501C9B6297411E800CB965C /* turret.cpp in Sources */,
+				B501C9B7297411E800CB965C /* clothing_mod.cpp in Sources */,
+				B501C9B8297411E800CB965C /* magic_ter_fur_transform.cpp in Sources */,
+				B501C9B9297411E800CB965C /* character_martial_arts.cpp in Sources */,
+				B501C9BA297411E800CB965C /* overmap_location.cpp in Sources */,
+				B501C9BB297411E800CB965C /* mutation.cpp in Sources */,
+				B501C9BC297411E800CB965C /* monattack.cpp in Sources */,
+				B501C9BD297411E800CB965C /* ranged.cpp in Sources */,
+				B501C9BE297411E800CB965C /* iuse_software_lightson.cpp in Sources */,
+				B501C9BF297411E800CB965C /* mapgen_functions.cpp in Sources */,
+				B501C9C0297411E800CB965C /* activity_type.cpp in Sources */,
+				B501C9C1297411E800CB965C /* event_field_transformations.cpp in Sources */,
+				B501C9C2297411E800CB965C /* iuse_software_snake.cpp in Sources */,
+				B501C9C3297411E800CB965C /* AppDelegate.m in Sources */,
+				B501C9C4297411E800CB965C /* action.cpp in Sources */,
+				B501C9C5297411E800CB965C /* shape.cpp in Sources */,
+				B501C9C6297411E800CB965C /* distribution_grid.cpp in Sources */,
+				B501C9C7297411E800CB965C /* auto_note.cpp in Sources */,
+				B501C9C8297411E800CB965C /* vehicle.cpp in Sources */,
+				B501C9C9297411E800CB965C /* scent_map.cpp in Sources */,
+				B501C9CA297411E800CB965C /* artifact.cpp in Sources */,
+				B501C9CB297411E800CB965C /* vehicle_display.cpp in Sources */,
+				B501C9CC297411E800CB965C /* profession.cpp in Sources */,
+				B501C9CD297411E800CB965C /* advanced_inv.cpp in Sources */,
+				B501C9CE297411E800CB965C /* diary.cpp in Sources */,
+				B501C9CF297411E800CB965C /* examine_item_menu.cpp in Sources */,
+				B501C9D0297411E800CB965C /* advanced_inv_listitem.cpp in Sources */,
+				B501C9D1297411E800CB965C /* debug.cpp in Sources */,
+				B501C9D2297411E800CB965C /* player_activity.cpp in Sources */,
+				B501C9D3297411E800CB965C /* field.cpp in Sources */,
+				B501C9D4297411E800CB965C /* morale.cpp in Sources */,
+				B501C9D5297411E800CB965C /* json.cpp in Sources */,
+				B501C9D6297411E800CB965C /* clzones.cpp in Sources */,
+				B501C9D7297411E800CB965C /* iuse.cpp in Sources */,
+				B501C9D8297411E800CB965C /* matrix_math.cpp in Sources */,
+				B501C9D9297411E800CB965C /* units_utility.cpp in Sources */,
+				B501C9DA297411E800CB965C /* cdda_firebase.m in Sources */,
+				B501C9DB297411E800CB965C /* point.cpp in Sources */,
+				B501C9DC297411E800CB965C /* anatomy.cpp in Sources */,
+				B501C9DD297411E800CB965C /* overmap_noise.cpp in Sources */,
+				B501C9DE297411E800CB965C /* crafting.cpp in Sources */,
+				B501C9DF297411E800CB965C /* item_functions.cpp in Sources */,
+				B501C9E0297411E800CB965C /* veh_interact.cpp in Sources */,
+				B501C9E1297411E800CB965C /* live_view.cpp in Sources */,
+				B501C9E2297411E800CB965C /* vitamin.cpp in Sources */,
+				B501C9E3297411E800CB965C /* condition.cpp in Sources */,
+				B501C9E4297411E800CB965C /* mutation_data.cpp in Sources */,
+				B501C9E5297411E800CB965C /* ballistics.cpp in Sources */,
+				B501C9E6297411E800CB965C /* inventory.cpp in Sources */,
+				B501C9E7297411E800CB965C /* game_inventory.cpp in Sources */,
+				B501C9E8297411E800CB965C /* string_editor_window.cpp in Sources */,
+				B501C9E9297411E800CB965C /* item_location.cpp in Sources */,
+				B501C9EA297411E800CB965C /* vehicle_part.cpp in Sources */,
+				B501C9EB297411E800CB965C /* speech.cpp in Sources */,
+				B501C9EC297411E800CB965C /* wincurse.cpp in Sources */,
+				B501C9ED297411E800CB965C /* regional_settings.cpp in Sources */,
+				B501C9EE297411E800CB965C /* overmapbuffer.cpp in Sources */,
+				B501C9EF297411E800CB965C /* flag.cpp in Sources */,
+				B501C9F0297411E800CB965C /* mtype.cpp in Sources */,
+				B501C9F1297411E800CB965C /* distraction_manager.cpp in Sources */,
+				B501C9F2297411E800CB965C /* npcmove.cpp in Sources */,
+				B501C9F3297411E800CB965C /* string_utils.cpp in Sources */,
+				B501C9F4297411E800CB965C /* npctalk.cpp in Sources */,
+				B501C9F5297411E800CB965C /* computer_session.cpp in Sources */,
+				B501C9F6297411E800CB965C /* rotatable_symbols.cpp in Sources */,
+				B501C9F7297411E800CB965C /* savegame.cpp in Sources */,
+				B501C9F8297411E800CB965C /* item_action.cpp in Sources */,
+				B501C9F9297411E800CB965C /* weather_type.cpp in Sources */,
+				B501C9FA297411E800CB965C /* line.cpp in Sources */,
+				B501C9FB297411E800CB965C /* map_memory.cpp in Sources */,
+				B501C9FC297411E800CB965C /* GamePadViewController.m in Sources */,
+				B501C9FD297411E800CB965C /* npctalk_funcs.cpp in Sources */,
+				B501C9FE297411E800CB965C /* iteminfo_query.cpp in Sources */,
+				B501C9FF297411E800CB965C /* mapdata.cpp in Sources */,
+				B501CA00297411E800CB965C /* filesystem.cpp in Sources */,
+				B501CA01297411E800CB965C /* mattack_actors.cpp in Sources */,
+				B501CA02297411E800CB965C /* diary_ui.cpp in Sources */,
+				B501CA03297411E800CB965C /* sounds.cpp in Sources */,
+				B501CA04297411E800CB965C /* lru_cache.cpp in Sources */,
+				B501CA05297411E800CB965C /* panels.cpp in Sources */,
+				B501CA06297411E800CB965C /* calendar.cpp in Sources */,
+				B501CA07297411E800CB965C /* pathfinding.cpp in Sources */,
+				B501CA08297411E800CB965C /* magic_teleporter_list.cpp in Sources */,
+				B501CA09297411E800CB965C /* cursesport.cpp in Sources */,
+				B501CA0A297411E800CB965C /* monexamine.cpp in Sources */,
+				B501CA0B297411E800CB965C /* monstergenerator.cpp in Sources */,
+				B501CA0C297411E800CB965C /* string_input_popup.cpp in Sources */,
+				B501CA0D297411E800CB965C /* active_tile_data.cpp in Sources */,
+				B501CA0F297411E800CB965C /* ui.cpp in Sources */,
+				B501CA10297411E800CB965C /* catacharset.cpp in Sources */,
+				B501CA11297411E800CB965C /* bionics.cpp in Sources */,
+				B501CA12297411E800CB965C /* kill_tracker.cpp in Sources */,
+				B501CA13297411E800CB965C /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
+				B501CA14297411E800CB965C /* timed_event.cpp in Sources */,
+				B501CA15297411E800CB965C /* emit.cpp in Sources */,
+				B501CA16297411E800CB965C /* monmove.cpp in Sources */,
+				B501CA17297411E800CB965C /* item_group.cpp in Sources */,
+				B501CA18297411E800CB965C /* construction_sequence.cpp in Sources */,
+				B501CA19297411E800CB965C /* SDL_uikitview+CDDA.m in Sources */,
+				B501CA1A297411E800CB965C /* martialarts.cpp in Sources */,
+				B501CA1B297411E800CB965C /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
+				B501CA1C297411E800CB965C /* posix_time.cpp in Sources */,
+				B501CA1D297411E800CB965C /* map_functions.cpp in Sources */,
+				B501CA1E297411E800CB965C /* character_functions.cpp in Sources */,
+				B501CA1F297411E800CB965C /* avatar_action.cpp in Sources */,
+				B501CA20297411E800CB965C /* MenuButton.swift in Sources */,
+				B501CA21297411E800CB965C /* bodypart.cpp in Sources */,
+				B501CA22297411E800CB965C /* mission_place.cpp in Sources */,
+				B501CA23297411E800CB965C /* sdlsound.cpp in Sources */,
+				B501CA24297411E800CB965C /* creature_tracker.cpp in Sources */,
+				B501CA25297411E800CB965C /* gamemode_tutorial.cpp in Sources */,
+				B501CA26297411E800CB965C /* cata_variant.cpp in Sources */,
+				B501CA27297411E800CB965C /* construction.cpp in Sources */,
+				B501CA28297411E800CB965C /* options.cpp in Sources */,
+				B501CA29297411E800CB965C /* armor_layers.cpp in Sources */,
+				B501CA2A297411E800CB965C /* activity_handlers.cpp in Sources */,
+				B501CA2B297411E800CB965C /* item_category.cpp in Sources */,
+				B501CA2C297411E800CB965C /* consumption.cpp in Sources */,
+				B501CA2D297411E800CB965C /* vehicle_autodrive.cpp in Sources */,
+				B501CA2E297411E800CB965C /* effect.cpp in Sources */,
+				B501CA2F297411E800CB965C /* version.cpp in Sources */,
+				B501CA30297411E800CB965C /* output.cpp in Sources */,
+				B501CA31297411E800CB965C /* relic.cpp in Sources */,
+				B501CA32297411E800CB965C /* panels_utility.cpp in Sources */,
+				B501CA33297411E800CB965C /* ui_manager.cpp in Sources */,
+				B501CA34297411E800CB965C /* material.cpp in Sources */,
+				B501CA35297411E800CB965C /* vehicle_selector.cpp in Sources */,
+				B501CA36297411E800CB965C /* behavior.cpp in Sources */,
+				B501CA37297411E800CB965C /* behavior_oracle.cpp in Sources */,
+				B501CA38297411E800CB965C /* game.cpp in Sources */,
+				B501CA39297411E800CB965C /* activity_item_handling.cpp in Sources */,
+				B501CA3A297411E800CB965C /* gamemode.cpp in Sources */,
+				B501CA3B297411E800CB965C /* editmap.cpp in Sources */,
+				B501CA3C297411E800CB965C /* projectile.cpp in Sources */,
+				B501CA3D297411E800CB965C /* main.mm in Sources */,
+				B501CA3E297411E800CB965C /* trait_group.cpp in Sources */,
+				B501CA3F297411E800CB965C /* npc_class.cpp in Sources */,
+				B501CA40297411E800CB965C /* game_ui.cpp in Sources */,
+				B501CA41297411E800CB965C /* creature.cpp in Sources */,
+				B501CA42297411E800CB965C /* construction_group.cpp in Sources */,
+				B501CA43297411E800CB965C /* mod_manager_ui.cpp in Sources */,
+				B501CA44297411E800CB965C /* handle_liquid.cpp in Sources */,
+				B501CA45297411E800CB965C /* dialogue_win.cpp in Sources */,
+				B501CA46297411E800CB965C /* recipe.cpp in Sources */,
+				B501CA47297411E800CB965C /* behavior_strategy.cpp in Sources */,
+				B501CA48297411E800CB965C /* translations.cpp in Sources */,
+				B501CA49297411E800CB965C /* monster_oracle.cpp in Sources */,
+				B501CA4A297411E800CB965C /* npctrade.cpp in Sources */,
+				B501CA4B297411E800CB965C /* item_contents.cpp in Sources */,
+				B501CA4C297411E800CB965C /* ncurses_def.cpp in Sources */,
+				B501CA4D297411E800CB965C /* mission_ui.cpp in Sources */,
+				B501CA4E297411E800CB965C /* mission_start.cpp in Sources */,
+				B501CA4F297411E800CB965C /* faction.cpp in Sources */,
+				B501CA50297411E800CB965C /* skill_boost.cpp in Sources */,
+				B501CA51297411E800CB965C /* itype.cpp in Sources */,
+				B501CA52297411E800CB965C /* bonuses.cpp in Sources */,
+				B501CA53297411E800CB965C /* mission_companion.cpp in Sources */,
+				B501CA54297411E800CB965C /* dispersion.cpp in Sources */,
+				B501CA55297411E800CB965C /* grab.cpp in Sources */,
+				B501CA56297411E800CB965C /* overmap_ui.cpp in Sources */,
+				B501CA57297411E800CB965C /* advanced_inv_pane.cpp in Sources */,
+				B501CA58297411E800CB965C /* string_id_null_ids.cpp in Sources */,
+				B501CA59297411E800CB965C /* ime.cpp in Sources */,
+				B501CA5A297411E800CB965C /* mod_manager.cpp in Sources */,
+				B501CA5B297411E800CB965C /* trap.cpp in Sources */,
+				B501CA5C297411E800CB965C /* sdl_wrappers.cpp in Sources */,
+				B501CA5D297411E800CB965C /* string_formatter.cpp in Sources */,
+				B501CA5E297411E800CB965C /* map_extras.cpp in Sources */,
+				B501CA5F297411E800CB965C /* pixel_minimap.cpp in Sources */,
+				B501CA60297411E800CB965C /* item_factory.cpp in Sources */,
+				B501CA61297411E800CB965C /* field_type.cpp in Sources */,
+				B501CA62297411E800CB965C /* overmap_connection.cpp in Sources */,
+				B501CA63297411E800CB965C /* stomach.cpp in Sources */,
+				B501CA64297411E800CB965C /* mondefense.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B53804F825AC6DB200AEB52A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3106,7 +4089,6 @@
 				B576B4E8297303D500221544 /* iuse.cpp in Sources */,
 				B576B53A297303D500221544 /* matrix_math.cpp in Sources */,
 				B576B450297303D500221544 /* units_utility.cpp in Sources */,
-				B576B5592973044300221544 /* cdda_firebase.m in Sources */,
 				B576B444297303D500221544 /* point.cpp in Sources */,
 				B576B498297303D500221544 /* anatomy.cpp in Sources */,
 				B576B4B6297303D500221544 /* overmap_noise.cpp in Sources */,
@@ -3262,6 +4244,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B501C912297411E800CB965C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libSDL_image-iOS";
+			targetProxy = B501C913297411E800CB965C /* PBXContainerItemProxy */;
+		};
+		B501C914297411E800CB965C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libSDL_ttf-iOS";
+			targetProxy = B501C915297411E800CB965C /* PBXContainerItemProxy */;
+		};
+		B501C916297411E800CB965C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libSDL_mixer-iOS";
+			targetProxy = B501C917297411E800CB965C /* PBXContainerItemProxy */;
+		};
+		B501C918297411E800CB965C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Static Library-iOS";
+			targetProxy = B501C919297411E800CB965C /* PBXContainerItemProxy */;
+		};
 		B576B2622972F94D00221544 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libSDL_image-iOS";
@@ -3285,6 +4287,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B501CAA82974124E00CB965C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B501CAA92974124E00CB965C /* de */,
+				B501CAAA2974124E00CB965C /* ja */,
+				B501CAAB2974124E00CB965C /* es */,
+				B501CAAD2974124E00CB965C /* ko */,
+				B501CAAF2974124E00CB965C /* hu */,
+				B501CAB02974124E00CB965C /* ru */,
+				B501CAB12974124E00CB965C /* fr */,
+				B501CAB22974124E00CB965C /* pt */,
+				B501CAB42974124E00CB965C /* zh */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		B51597E22634833A008BFD0C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3337,22 +4355,6 @@
 			name = UIControls.storyboard;
 			sourceTree = "<group>";
 		};
-		B560EE9025D996AE00FDE1C4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B560EE9125D996AE00FDE1C4 /* hu */,
-				B560EE9625D99A6300FDE1C4 /* es */,
-				B560EE9A25D99C6300FDE1C4 /* zh */,
-				B560EE9E25D9A14B00FDE1C4 /* ko */,
-				B560EEA225D9A66600FDE1C4 /* de */,
-				B560EEA625D9A71000FDE1C4 /* pt */,
-				B560EEAA25D9AA0900FDE1C4 /* ru */,
-				B560EEAE25D9B0D000FDE1C4 /* fr */,
-				B560EEB225D9B27200FDE1C4 /* ja */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3361,9 +4363,83 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		B57B27F7297415770043A513 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57B27F8297415770043A513 /* de */,
+				B57B27F9297415770043A513 /* ja */,
+				B57B27FA297415770043A513 /* es */,
+				B57B27FB297415770043A513 /* ko */,
+				B57B27FC297415770043A513 /* hu */,
+				B57B27FD297415770043A513 /* ru */,
+				B57B27FE297415770043A513 /* fr */,
+				B57B27FF297415770043A513 /* pt */,
+				B57B2800297415770043A513 /* zh */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B501CA8D297411E800CB965C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
+				CURRENT_PROJECT_VERSION = 3008;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
+				);
+				INFOPLIST_FILE = CBN/Versions/CBN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 4.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B501CA8E297411E800CB965C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
+				CURRENT_PROJECT_VERSION = 3008;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
+				);
+				INFOPLIST_FILE = CBN/Versions/CBN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 4.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B538050425AC6DB200AEB52A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3591,7 +4667,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CBN/CBNfreeIAP/App.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
 				CURRENT_PROJECT_VERSION = 3008;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3601,7 +4677,7 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
 				);
-				INFOPLIST_FILE = CBN/CBNfreeIAP/Info.plist;
+				INFOPLIST_FILE = CBN/Versions/CBNfreeIAP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3620,7 +4696,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CBN/CBNfreeIAP/App.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
 				CURRENT_PROJECT_VERSION = 3008;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3630,7 +4706,7 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
 				);
-				INFOPLIST_FILE = CBN/CBNfreeIAP/Info.plist;
+				INFOPLIST_FILE = CBN/Versions/CBNfreeIAP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3725,6 +4801,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B501CA8C297411E800CB965C /* Build configuration list for PBXNativeTarget "CBN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B501CA8D297411E800CB965C /* Debug */,
+				B501CA8E297411E800CB965C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B538050325AC6DB200AEB52A /* Build configuration list for PBXNativeTarget "CDDAUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
