@@ -106,7 +106,7 @@ EXTERNAL SOURCES:
     :path: "./Libraries/CDDA-Paywall"
 
 SPEC CHECKSUMS:
-  CDDA-Paywall: b31831e51b4b8cabfea5dd1c5ef9d8b02373a700
+  CDDA-Paywall: f80d18cfc42b8dc52729f2cd3fd0e541a2034523
   FirebaseAnalytics: 036232b6a1e2918e5f67572417be1173576245f3
   FirebaseCore: 988754646ab3bd4bdcb740f1bfe26b9f6c0d5f2a
   FirebaseCoreInternal: 29b76f784d607df8b2a1259d73c3f04f1210137b

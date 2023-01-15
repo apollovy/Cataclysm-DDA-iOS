@@ -44,10 +44,10 @@
             return;
         }
 
-        [ZipArchiver zip:getDocumentURL() destination:url errorPtr:&error progress:^(float progress)
+        [ZipArchiver zip:getDocumentURL() destination:url errorPtr:&error progress:^(double progress)
         {
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.progressView.progress = progress;
+                self.progressView.progress = (float)progress;
             });
         }];
         
@@ -167,9 +167,9 @@
         return;
     }
 
-    [ZipArchiver unzip:url destination:documentURL errorPtr:&error progress:^(float progress) {
+    [ZipArchiver unzip:url destination:documentURL errorPtr:&error progress:^(double progress) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.progressView.progress = progress;
+            self.progressView.progress = (float)progress;
         });
     }];
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A252EA703B7FAB4517AD075B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		A252EA703B7FAB4517AD075B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		B501C91C297411E800CB965C /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EF270E11D0002163AD /* text_snippets.cpp */; };
 		B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
 		B501C91E297411E800CB965C /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C07270E1216002163AD /* item.cpp */; };
@@ -261,7 +261,6 @@
 		B501CA18297411E800CB965C /* construction_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8269292FEDE700DC5744 /* construction_sequence.cpp */; };
 		B501CA19297411E800CB965C /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B501CA1A297411E800CB965C /* martialarts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F7270E11D0002163AD /* martialarts.cpp */; };
-		B501CA1B297411E800CB965C /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */; };
 		B501CA1C297411E800CB965C /* posix_time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A57270E11D5002163AD /* posix_time.cpp */; };
 		B501CA1D297411E800CB965C /* map_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D824F292FEDE200DC5744 /* map_functions.cpp */; };
 		B501CA1E297411E800CB965C /* character_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B54D8252292FEDE300DC5744 /* character_functions.cpp */; };
@@ -359,6 +358,10 @@
 		B501CA81297411E800CB965C /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
 		B501CA82297411E800CB965C /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
 		B501CA85297411E800CB965C /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5072BB8259CE883002479DB /* gfx */; };
+		B511BB8F29744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
+		B511BB9029744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
+		B511BB9129744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
+		B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
@@ -705,7 +708,6 @@
 		B576B54F2973040600221544 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B576B5502973040600221544 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B576B5512973040600221544 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
-		B576B5522973040600221544 /* SDL_uikitviewcontroller+Gamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */; };
 		B576B5532973040600221544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B576B5542973040600221544 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B576B5552973040600221544 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
@@ -1034,6 +1036,25 @@
 		B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle_autodrive.cpp; path = "worktree/Cataclysm-BN/src/vehicle_autodrive.cpp"; sourceTree = "<group>"; };
 		B50EFDA6276904EF00B02C8E /* point_float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point_float.h; path = "worktree/Cataclysm-BN/src/point_float.h"; sourceTree = "<group>"; };
 		B50EFDA7276904EF00B02C8E /* activity_actor_definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = activity_actor_definitions.h; path = "worktree/Cataclysm-BN/src/activity_actor_definitions.h"; sourceTree = "<group>"; };
+		B511BB8B29744DCD00139993 /* game_dependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_dependent.h; sourceTree = "<group>"; };
+		B511BB8C29744DCD00139993 /* game_dependent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_dependent.mm; sourceTree = "<group>"; };
+		B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+Gamepad.mm"; sourceTree = "<group>"; };
+		B511BB96297455AF00139993 /* PaywallBuyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuyBG.png; sourceTree = "<group>"; };
+		B511BB97297455AF00139993 /* PaywallController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallController.h; sourceTree = "<group>"; };
+		B511BB98297455AF00139993 /* PaywallPaymentKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallPaymentKey.m; sourceTree = "<group>"; };
+		B511BB99297455AF00139993 /* showPaywall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showPaywall.h; sourceTree = "<group>"; };
+		B511BB9A297455AF00139993 /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
+		B511BB9B297455AF00139993 /* PaywallBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaywallBG.jpg; sourceTree = "<group>"; };
+		B511BB9C297455AF00139993 /* PaywallBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuy.png; sourceTree = "<group>"; };
+		B511BB9D297455AF00139993 /* Paywall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paywall.storyboard; sourceTree = "<group>"; };
+		B511BB9E297455AF00139993 /* PaywallClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallClose.png; sourceTree = "<group>"; };
+		B511BB9F297455AF00139993 /* PaywallBuyArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallBuyArea.swift; sourceTree = "<group>"; };
+		B511BBA0297455AF00139993 /* showPaywall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showPaywall.m; sourceTree = "<group>"; };
+		B511BBA1297455AF00139993 /* PaywallPaymentKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallPaymentKey.h; sourceTree = "<group>"; };
+		B511BBA2297455AF00139993 /* PaywallNibWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallNibWrapperView.swift; sourceTree = "<group>"; };
+		B511BBA3297455AF00139993 /* PaywallBuyArea.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaywallBuyArea.xib; sourceTree = "<group>"; };
+		B511BBA4297455AF00139993 /* PaywallController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallController.m; sourceTree = "<group>"; };
+		B511BBA5297455AF00139993 /* PaywallUnlimitedFunctionality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallUnlimitedFunctionality.h; sourceTree = "<group>"; };
 		B5127665289C5723004882AA /* version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = version.cpp; sourceTree = "<group>"; };
 		B51597E12634833A008BFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51597FD2634834C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -1810,7 +1831,6 @@
 		D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDAUITests.swift; sourceTree = "<group>"; };
 		D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackspaceInMenuTest.swift; sourceTree = "<group>"; };
 		D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
-		D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+Gamepad.m"; sourceTree = "<group>"; };
 		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1862,7 +1882,7 @@
 				B576B3C12972F94D00221544 /* StoreKit.framework in Frameworks */,
 				B576B3C22972F94D00221544 /* CoreMotion.framework in Frameworks */,
 				B576B3C32972F94D00221544 /* GameController.framework in Frameworks */,
-				A252EA703B7FAB4517AD075B /* (null) in Frameworks */,
+				A252EA703B7FAB4517AD075B /* BuildFile in Frameworks */,
 				E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1953,6 +1973,30 @@
 				B559EDAC25AB85A40065602D /* dPad-None@2x.png */,
 			);
 			path = JSDPad;
+			sourceTree = "<group>";
+		};
+		B511BB95297455AF00139993 /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				B511BB96297455AF00139993 /* PaywallBuyBG.png */,
+				B511BB97297455AF00139993 /* PaywallController.h */,
+				B511BB98297455AF00139993 /* PaywallPaymentKey.m */,
+				B511BB99297455AF00139993 /* showPaywall.h */,
+				B511BB9A297455AF00139993 /* PaywallUnlimitedFunctionality.m */,
+				B511BB9B297455AF00139993 /* PaywallBG.jpg */,
+				B511BB9C297455AF00139993 /* PaywallBuy.png */,
+				B511BB9D297455AF00139993 /* Paywall.storyboard */,
+				B511BB9E297455AF00139993 /* PaywallClose.png */,
+				B511BB9F297455AF00139993 /* PaywallBuyArea.swift */,
+				B511BBA0297455AF00139993 /* showPaywall.m */,
+				B511BBA1297455AF00139993 /* PaywallPaymentKey.h */,
+				B511BBA2297455AF00139993 /* PaywallNibWrapperView.swift */,
+				B511BBA3297455AF00139993 /* PaywallBuyArea.xib */,
+				B511BBA4297455AF00139993 /* PaywallController.m */,
+				B511BBA5297455AF00139993 /* PaywallUnlimitedFunctionality.h */,
+			);
+			name = Paywall;
+			path = "Libraries/CDDA-Paywall/src/Paywall";
 			sourceTree = "<group>";
 		};
 		B5312A2F25A1160F00357241 /* Products */ = {
@@ -2824,6 +2868,9 @@
 		B5B01B98259BF0480023AB00 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B511BB8B29744DCD00139993 /* game_dependent.h */,
+				B511BB8C29744DCD00139993 /* game_dependent.mm */,
+				B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */,
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
 				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
@@ -2841,7 +2888,6 @@
 				B5A5BEE925F7F31F00EEEA0F /* path_utils.m */,
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
 				B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */,
-				D0AA2B2BE4EDC2E0E3812E25 /* SDL_uikitviewcontroller+Gamepad.m */,
 				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
 				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
@@ -2855,6 +2901,7 @@
 		B5D5CB472971C62400CA0FC0 /* CDDA-Paywall */ = {
 			isa = PBXGroup;
 			children = (
+				B511BB95297455AF00139993 /* Paywall */,
 				B5D5CB482971C64B00CA0FC0 /* CDDA */,
 			);
 			name = "CDDA-Paywall";
@@ -3017,6 +3064,7 @@
 				B576B3D82972F94D00221544 /* Copy mo to lang */,
 				B576B3DA2972F94D00221544 /* Remove redundant directories from data */,
 				B576B3DB2972F94D00221544 /* [CP] Embed Pods Frameworks */,
+				33AED6A7CFCE6C31554A460A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -3318,6 +3366,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33AED6A7CFCE6C31554A460A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B501C91A297411E800CB965C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3780,6 +3845,7 @@
 				B501C9FA297411E800CB965C /* line.cpp in Sources */,
 				B501C9FB297411E800CB965C /* map_memory.cpp in Sources */,
 				B501C9FC297411E800CB965C /* GamePadViewController.m in Sources */,
+				B511BB8F29744DCD00139993 /* game_dependent.mm in Sources */,
 				B501C9FD297411E800CB965C /* npctalk_funcs.cpp in Sources */,
 				B501C9FE297411E800CB965C /* iteminfo_query.cpp in Sources */,
 				B501C9FF297411E800CB965C /* mapdata.cpp in Sources */,
@@ -3809,7 +3875,6 @@
 				B501CA18297411E800CB965C /* construction_sequence.cpp in Sources */,
 				B501CA19297411E800CB965C /* SDL_uikitview+CDDA.m in Sources */,
 				B501CA1A297411E800CB965C /* martialarts.cpp in Sources */,
-				B501CA1B297411E800CB965C /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
 				B501CA1C297411E800CB965C /* posix_time.cpp in Sources */,
 				B501CA1D297411E800CB965C /* map_functions.cpp in Sources */,
 				B501CA1E297411E800CB965C /* character_functions.cpp in Sources */,
@@ -3860,6 +3925,7 @@
 				B501CA4B297411E800CB965C /* item_contents.cpp in Sources */,
 				B501CA4C297411E800CB965C /* ncurses_def.cpp in Sources */,
 				B501CA4D297411E800CB965C /* mission_ui.cpp in Sources */,
+				B511BB9129744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B501CA4E297411E800CB965C /* mission_start.cpp in Sources */,
 				B501CA4F297411E800CB965C /* faction.cpp in Sources */,
 				B501CA50297411E800CB965C /* skill_boost.cpp in Sources */,
@@ -4124,6 +4190,7 @@
 				B576B4F7297303D500221544 /* map_memory.cpp in Sources */,
 				B576B5512973040600221544 /* GamePadViewController.m in Sources */,
 				B576B45A297303D500221544 /* npctalk_funcs.cpp in Sources */,
+				B511BB9029744DCD00139993 /* game_dependent.mm in Sources */,
 				B576B506297303D500221544 /* iteminfo_query.cpp in Sources */,
 				B576B4A0297303D500221544 /* mapdata.cpp in Sources */,
 				B576B53D297303D500221544 /* filesystem.cpp in Sources */,
@@ -4153,7 +4220,6 @@
 				B576B41A297303D500221544 /* construction_sequence.cpp in Sources */,
 				B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */,
 				B576B4D5297303D500221544 /* martialarts.cpp in Sources */,
-				B576B5522973040600221544 /* SDL_uikitviewcontroller+Gamepad.m in Sources */,
 				B576B4FD297303D500221544 /* posix_time.cpp in Sources */,
 				B576B44E297303D500221544 /* map_functions.cpp in Sources */,
 				B576B504297303D500221544 /* character_functions.cpp in Sources */,
@@ -4204,6 +4270,7 @@
 				B576B486297303D500221544 /* item_contents.cpp in Sources */,
 				B576B425297303D500221544 /* ncurses_def.cpp in Sources */,
 				B576B4E2297303D500221544 /* mission_ui.cpp in Sources */,
+				B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B576B4F5297303D500221544 /* mission_start.cpp in Sources */,
 				B576B452297303D500221544 /* faction.cpp in Sources */,
 				B576B428297303D500221544 /* skill_boost.cpp in Sources */,
