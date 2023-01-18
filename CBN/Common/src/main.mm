@@ -38,7 +38,7 @@ void exit_handler( __attribute__((unused)) int status )
 extern "C"
 {
 #include "cdda_firebase.h"
-#import "PaywallDisplay.h"
+#import "subscribeDisplayingPaywallToCDDAEvents.h"
 
 void subscribeSoon(int attempt=1) {
     dispatch_after(
@@ -47,7 +47,7 @@ void subscribeSoon(int attempt=1) {
             ^{
                 NSLog(@"Trying to subscribe to events with %i attempt.",
                         attempt);
-                if (!subscribe()) {
+                if (!subscribeDisplayingPaywallToCDDAEvents()) {
                     subscribeSoon(attempt + 1);
                 };
             }

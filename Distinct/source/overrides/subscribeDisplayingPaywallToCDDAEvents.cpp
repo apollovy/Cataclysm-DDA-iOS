@@ -9,7 +9,7 @@
 extern "C" {
 #endif
 
-bool subscribe() {return true;}
+bool subscribeDisplayingPaywallToCDDAEvents() {return true;}
 
 #ifdef __cplusplus
 };
