@@ -39,6 +39,7 @@ extern "C"
 {
 #include "cdda_firebase.h"
 #import "subscribeDisplayingPaywallToCDDAEvents.h"
+#import "displayInitialPaywall.h"
 
 void subscribeSoon(int attempt=1) {
     dispatch_after(
@@ -67,6 +68,13 @@ int CDDA_iOS_main(NSString* documentPath) {
     char** stringArgs = cArrayFromNSArray(newArguments);
     
     SDL_iPhoneSetEventPump(SDL_TRUE);
+    dispatch_after(
+                   dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),
+                   dispatch_get_main_queue(),
+                   ^{
+                       displayInitialPaywall();
+                   }
+                   );
     subscribeSoon();
     int exitCode = CDDA_main(newArgumentsCount, stringArgs);
     SDL_iPhoneSetEventPump(SDL_FALSE);

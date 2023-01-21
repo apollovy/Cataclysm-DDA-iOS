@@ -363,6 +363,11 @@
 		B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
+		B53D9DE4297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
+		B53D9E08297BEA1800A23F16 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
+		B53D9E0A297BEACB00A23F16 /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
+		B53D9E0D297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
+		B53D9E13297BF53600A23F16 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
 		B55910D4271F2683001F34CD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55910D2271F24B4001F34CD /* CoreServices.framework */; };
 		B576B3B52972F94D00221544 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
@@ -697,7 +702,6 @@
 		B576B547297303D500221544 /* descriptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C20270E1218002163AD /* descriptions.cpp */; };
 		B576B548297303D500221544 /* iuse_software_sokoban.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C2F270E1218002163AD /* iuse_software_sokoban.cpp */; };
 		B576B549297303D500221544 /* magic_ter_fur_transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A91270E11DA002163AD /* magic_ter_fur_transform.cpp */; };
-		B576B54B297303EC00221544 /* SDL_uikitviewcontroller+MainView.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5D5CB4C2971C64B00CA0FC0 /* SDL_uikitviewcontroller+MainView.mm */; };
 		B576B54C2973040600221544 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B576B54D2973040600221544 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B576B54E2973040600221544 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
@@ -931,22 +935,6 @@
 		B511BB8B29744DCD00139993 /* game_dependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_dependent.h; sourceTree = "<group>"; };
 		B511BB8C29744DCD00139993 /* game_dependent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_dependent.mm; sourceTree = "<group>"; };
 		B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+Gamepad.mm"; sourceTree = "<group>"; };
-		B511BB96297455AF00139993 /* PaywallBuyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuyBG.png; sourceTree = "<group>"; };
-		B511BB97297455AF00139993 /* PaywallController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallController.h; sourceTree = "<group>"; };
-		B511BB98297455AF00139993 /* PaywallPaymentKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallPaymentKey.m; sourceTree = "<group>"; };
-		B511BB99297455AF00139993 /* showPaywall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = showPaywall.h; sourceTree = "<group>"; };
-		B511BB9A297455AF00139993 /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
-		B511BB9B297455AF00139993 /* PaywallBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaywallBG.jpg; sourceTree = "<group>"; };
-		B511BB9C297455AF00139993 /* PaywallBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallBuy.png; sourceTree = "<group>"; };
-		B511BB9D297455AF00139993 /* Paywall.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Paywall.storyboard; sourceTree = "<group>"; };
-		B511BB9E297455AF00139993 /* PaywallClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PaywallClose.png; sourceTree = "<group>"; };
-		B511BB9F297455AF00139993 /* PaywallBuyArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallBuyArea.swift; sourceTree = "<group>"; };
-		B511BBA0297455AF00139993 /* showPaywall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = showPaywall.m; sourceTree = "<group>"; };
-		B511BBA1297455AF00139993 /* PaywallPaymentKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallPaymentKey.h; sourceTree = "<group>"; };
-		B511BBA2297455AF00139993 /* PaywallNibWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallNibWrapperView.swift; sourceTree = "<group>"; };
-		B511BBA3297455AF00139993 /* PaywallBuyArea.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaywallBuyArea.xib; sourceTree = "<group>"; };
-		B511BBA4297455AF00139993 /* PaywallController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaywallController.m; sourceTree = "<group>"; };
-		B511BBA5297455AF00139993 /* PaywallUnlimitedFunctionality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallUnlimitedFunctionality.h; sourceTree = "<group>"; };
 		B5127665289C5723004882AA /* version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = version.cpp; sourceTree = "<group>"; };
 		B51597E12634833A008BFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51597FD2634834C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -1047,6 +1035,15 @@
 		B538050025AC6DB200AEB52A /* CDDAUITests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CDDAUITests.plist; sourceTree = "<group>"; };
 		B538050825AC6E3500AEB52A /* CDDAUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDAUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ReturnToMainMenuPaywallCloseActionDelegate.mm; sourceTree = "<group>"; };
+		B53D9DEF297BDAD900A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReturnToMainMenuPaywallCloseActionDelegate.h; sourceTree = "<group>"; };
+		B53D9DFC297BE9D700A23F16 /* displayInitialPaywall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = displayInitialPaywall.h; sourceTree = "<group>"; };
+		B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = displayInitialPaywall.c; sourceTree = "<group>"; };
+		B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = displayInitialPaywall.m; sourceTree = "<group>"; };
+		B53D9E0B297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClosePaywallPaywallCloseActionDelegate.h; sourceTree = "<group>"; };
+		B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClosePaywallPaywallCloseActionDelegate.m; sourceTree = "<group>"; };
+		B53D9E12297BF53600A23F16 /* EventsCountManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsCountManager.m; sourceTree = "<group>"; };
+		B53D9E1E297BF54400A23F16 /* EventsCountManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsCountManager.h; sourceTree = "<group>"; };
 		B5412CF32605FEF20034128C /* ZipArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchiver.swift; sourceTree = "<group>"; };
 		B54195C82955BBEA0035CC2F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B5436B4825C4D18D006579B4 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
@@ -1708,7 +1705,6 @@
 		B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PaywallDisplayEventSubscriber.mm; sourceTree = "<group>"; };
 		B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		B5BD7A1D29770896001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subscribeDisplayingPaywallToCDDAEvents.h; sourceTree = "<group>"; };
-		B5D5CB4C2971C64B00CA0FC0 /* SDL_uikitviewcontroller+MainView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+MainView.mm"; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5E92833297843C600119709 /* SDL_uikitviewcontroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_uikitviewcontroller.h; sourceTree = "<group>"; };
 		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
@@ -1864,30 +1860,6 @@
 			path = JSDPad;
 			sourceTree = "<group>";
 		};
-		B511BB95297455AF00139993 /* Paywall */ = {
-			isa = PBXGroup;
-			children = (
-				B511BB96297455AF00139993 /* PaywallBuyBG.png */,
-				B511BB97297455AF00139993 /* PaywallController.h */,
-				B511BB98297455AF00139993 /* PaywallPaymentKey.m */,
-				B511BB99297455AF00139993 /* showPaywall.h */,
-				B511BB9A297455AF00139993 /* PaywallUnlimitedFunctionality.m */,
-				B511BB9B297455AF00139993 /* PaywallBG.jpg */,
-				B511BB9C297455AF00139993 /* PaywallBuy.png */,
-				B511BB9D297455AF00139993 /* Paywall.storyboard */,
-				B511BB9E297455AF00139993 /* PaywallClose.png */,
-				B511BB9F297455AF00139993 /* PaywallBuyArea.swift */,
-				B511BBA0297455AF00139993 /* showPaywall.m */,
-				B511BBA1297455AF00139993 /* PaywallPaymentKey.h */,
-				B511BBA2297455AF00139993 /* PaywallNibWrapperView.swift */,
-				B511BBA3297455AF00139993 /* PaywallBuyArea.xib */,
-				B511BBA4297455AF00139993 /* PaywallController.m */,
-				B511BBA5297455AF00139993 /* PaywallUnlimitedFunctionality.h */,
-			);
-			name = Paywall;
-			path = "Libraries/CDDA-Paywall/src/Paywall";
-			sourceTree = "<group>";
-		};
 		B5312A2F25A1160F00357241 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1904,6 +1876,7 @@
 				D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */,
 				B531B869270E19E700155C37 /* runtime_handlers.h */,
 				D0AA238E51E9785C5F120F6E /* cdda_firebase.m */,
+				B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */,
 			);
 			path = overrides;
 			sourceTree = "<group>";
@@ -2771,7 +2744,6 @@
 		B5D5CB472971C62400CA0FC0 /* CDDA-Paywall */ = {
 			isa = PBXGroup;
 			children = (
-				B511BB95297455AF00139993 /* Paywall */,
 				B5D5CB482971C64B00CA0FC0 /* CDDA */,
 			);
 			name = "CDDA-Paywall";
@@ -2781,7 +2753,13 @@
 			isa = PBXGroup;
 			children = (
 				B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */,
-				B5D5CB4C2971C64B00CA0FC0 /* SDL_uikitviewcontroller+MainView.mm */,
+				B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */,
+				B53D9DEF297BDAD900A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.h */,
+				B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */,
+				B53D9E0B297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.h */,
+				B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */,
+				B53D9E12297BF53600A23F16 /* EventsCountManager.m */,
+				B53D9E1E297BF54400A23F16 /* EventsCountManager.h */,
 			);
 			name = CDDA;
 			path = "Libraries/CDDA-Paywall/src/CDDA";
@@ -2815,6 +2793,7 @@
 				B5BD7A1D29770896001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.h */,
 				B531B86A270E1A7400155C37 /* overrides */,
 				B58678852603E78800EACF2C /* iCloud debug */,
+				B53D9DFC297BE9D700A23F16 /* displayInitialPaywall.h */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -3694,6 +3673,7 @@
 				B501CA48297411E800CB965C /* translations.cpp in Sources */,
 				B501CA49297411E800CB965C /* monster_oracle.cpp in Sources */,
 				B501CA4A297411E800CB965C /* npctrade.cpp in Sources */,
+				B53D9E08297BEA1800A23F16 /* displayInitialPaywall.c in Sources */,
 				B501CA4B297411E800CB965C /* item_contents.cpp in Sources */,
 				B501CA4C297411E800CB965C /* ncurses_def.cpp in Sources */,
 				B501CA4D297411E800CB965C /* mission_ui.cpp in Sources */,
@@ -3781,6 +3761,7 @@
 				B576B441297303D500221544 /* event.cpp in Sources */,
 				B576B471297303D500221544 /* mapgendata.cpp in Sources */,
 				B576B4BC297303D500221544 /* color.cpp in Sources */,
+				B53D9DE4297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
 				B576B432297303D500221544 /* dump.cpp in Sources */,
 				B576B443297303D500221544 /* map.cpp in Sources */,
 				B576B422297303D500221544 /* animation.cpp in Sources */,
@@ -3798,6 +3779,7 @@
 				B576B4F6297303D500221544 /* overlay_ordering.cpp in Sources */,
 				B576B445297303D500221544 /* veh_type.cpp in Sources */,
 				B576B45E297303D500221544 /* event_bus.cpp in Sources */,
+				B53D9E0A297BEACB00A23F16 /* displayInitialPaywall.m in Sources */,
 				B576B4A5297303D500221544 /* item_stack.cpp in Sources */,
 				B576B48A297303D500221544 /* debug_menu.cpp in Sources */,
 				B576B453297303D500221544 /* iuse_software_minesweeper.cpp in Sources */,
@@ -3839,6 +3821,7 @@
 				B576B531297303D500221544 /* character_oracle.cpp in Sources */,
 				B576B547297303D500221544 /* descriptions.cpp in Sources */,
 				B576B518297303D500221544 /* iuse_actor.cpp in Sources */,
+				B53D9E13297BF53600A23F16 /* EventsCountManager.m in Sources */,
 				B576B4DE297303D500221544 /* char_validity_check.cpp in Sources */,
 				B576B4FF297303D500221544 /* player.cpp in Sources */,
 				B576B524297303D500221544 /* mondeath.cpp in Sources */,
@@ -3863,7 +3846,6 @@
 				B576B59E29730FF500221544 /* JSButton.m in Sources */,
 				B576B415297303D500221544 /* map_item_stack.cpp in Sources */,
 				B576B4C1297303D500221544 /* scores_ui.cpp in Sources */,
-				B576B54B297303EC00221544 /* SDL_uikitviewcontroller+MainView.mm in Sources */,
 				B576B51F297303D500221544 /* harvest.cpp in Sources */,
 				B576B4A7297303D500221544 /* vehicle_group.cpp in Sources */,
 				B576B4FE297303D500221544 /* mapgenformat.cpp in Sources */,
@@ -4043,6 +4025,7 @@
 				B576B425297303D500221544 /* ncurses_def.cpp in Sources */,
 				B576B4E2297303D500221544 /* mission_ui.cpp in Sources */,
 				B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
+				B53D9E0D297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B576B4F5297303D500221544 /* mission_start.cpp in Sources */,
 				B576B452297303D500221544 /* faction.cpp in Sources */,
 				B576B428297303D500221544 /* skill_boost.cpp in Sources */,
