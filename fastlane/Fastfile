@@ -19,13 +19,13 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     increment_build_number(xcodeproj: "CDDA.xcodeproj")
-    build_app(workspace: "CDDA.xcworkspace", scheme: "CDDA Release")
+    build_app(workspace: "CDDA.xcworkspace", scheme: "CBNfreeIAP")
     upload_to_testflight
     sentry
   end
 
   lane :clean do
-    for scheme in ["CDDA Release", "CDDA Debug"]
+    for scheme in ["CBN", "CBNfreeIAP"]
       xcclean workspace: "CDDA.xcworkspace", scheme: scheme
     end
   end

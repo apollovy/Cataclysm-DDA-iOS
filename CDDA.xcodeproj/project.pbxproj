@@ -4199,7 +4199,7 @@
 			baseConfigurationReference = 992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3008;
+				CURRENT_PROJECT_VERSION = 3009;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4228,7 +4228,7 @@
 			baseConfigurationReference = 6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3008;
+				CURRENT_PROJECT_VERSION = 3009;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4476,7 +4476,7 @@
 			baseConfigurationReference = CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3008;
+				CURRENT_PROJECT_VERSION = 3009;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4491,7 +4491,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 4.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4505,7 +4505,7 @@
 			baseConfigurationReference = 5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3008;
+				CURRENT_PROJECT_VERSION = 3009;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4520,7 +4520,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 4.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4537,7 +4537,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3008;
+				CURRENT_PROJECT_VERSION = 3009;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4576,7 +4576,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3008;
+				CURRENT_PROJECT_VERSION = 3009;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
