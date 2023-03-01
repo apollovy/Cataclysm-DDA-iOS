@@ -362,6 +362,7 @@
 		B511BB9129744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
+		B518A567297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B53D9DE4297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
 		B53D9E08297BEA1800A23F16 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
@@ -370,6 +371,17 @@
 		B53D9E13297BF53600A23F16 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
 		B55910D4271F2683001F34CD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55910D2271F24B4001F34CD /* CoreServices.framework */; };
+		B5625B4229AF803400BA1FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5625B4129AF803400BA1FDF /* main.m */; };
+		B5625BA429AFB87400BA1FDF /* avatar_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9829AFB87100BA1FDF /* avatar_functions.cpp */; };
+		B5625BA529AFB87400BA1FDF /* avatar_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9829AFB87100BA1FDF /* avatar_functions.cpp */; };
+		B5625BA629AFB87400BA1FDF /* character_turn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9929AFB87100BA1FDF /* character_turn.cpp */; };
+		B5625BA729AFB87400BA1FDF /* character_turn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9929AFB87100BA1FDF /* character_turn.cpp */; };
+		B5625BA829AFB87400BA1FDF /* json_source_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9A29AFB87200BA1FDF /* json_source_location.cpp */; };
+		B5625BA929AFB87400BA1FDF /* json_source_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9A29AFB87200BA1FDF /* json_source_location.cpp */; };
+		B5625BAA29AFB87400BA1FDF /* rot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9D29AFB87200BA1FDF /* rot.cpp */; };
+		B5625BAB29AFB87400BA1FDF /* rot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9D29AFB87200BA1FDF /* rot.cpp */; };
+		B5625BAC29AFB87400BA1FDF /* character_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625BA229AFB87300BA1FDF /* character_effects.cpp */; };
+		B5625BAD29AFB87400BA1FDF /* character_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625BA229AFB87300BA1FDF /* character_effects.cpp */; };
 		B576B3B52972F94D00221544 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B576B3B72972F94D00221544 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B576B3B92972F94D00221544 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -958,6 +970,7 @@
 		B515981D26348784008BFD0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B515981E26348785008BFD0C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
+		B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
 		B523D75A289B05AF00CD74AE /* units_probability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = units_probability.h; path = "worktree/Cataclysm-BN/src/units_probability.h"; sourceTree = "<group>"; };
 		B523D75C289B05B000CD74AE /* numeric_interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = numeric_interval.h; path = "worktree/Cataclysm-BN/src/numeric_interval.h"; sourceTree = "<group>"; };
 		B523D75D289B05B000CD74AE /* explosion_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = explosion_queue.h; path = "worktree/Cataclysm-BN/src/explosion_queue.h"; sourceTree = "<group>"; };
@@ -1111,6 +1124,21 @@
 		B560EEA925D9AA0900FDE1C4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/UIControls.strings; sourceTree = "<group>"; };
 		B560EEAD25D9B0CF00FDE1C4 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/UIControls.strings; sourceTree = "<group>"; };
 		B560EEB125D9B27200FDE1C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/UIControls.strings; sourceTree = "<group>"; };
+		B5625B2D29AF803300BA1FDF /* playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5625B4129AF803400BA1FDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5625B5229AF86FD00BA1FDF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5625B9829AFB87100BA1FDF /* avatar_functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = avatar_functions.cpp; path = "worktree/Cataclysm-BN/src/avatar_functions.cpp"; sourceTree = "<group>"; };
+		B5625B9929AFB87100BA1FDF /* character_turn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_turn.cpp; path = "worktree/Cataclysm-BN/src/character_turn.cpp"; sourceTree = "<group>"; };
+		B5625B9A29AFB87200BA1FDF /* json_source_location.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_source_location.cpp; path = "worktree/Cataclysm-BN/src/json_source_location.cpp"; sourceTree = "<group>"; };
+		B5625B9B29AFB87200BA1FDF /* character_turn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = character_turn.h; path = "worktree/Cataclysm-BN/src/character_turn.h"; sourceTree = "<group>"; };
+		B5625B9C29AFB87200BA1FDF /* json_source_location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json_source_location.h; path = "worktree/Cataclysm-BN/src/json_source_location.h"; sourceTree = "<group>"; };
+		B5625B9D29AFB87200BA1FDF /* rot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rot.cpp; path = "worktree/Cataclysm-BN/src/rot.cpp"; sourceTree = "<group>"; };
+		B5625B9E29AFB87200BA1FDF /* bionics_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bionics_ui.h; path = "worktree/Cataclysm-BN/src/bionics_ui.h"; sourceTree = "<group>"; };
+		B5625B9F29AFB87300BA1FDF /* avatar_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = avatar_functions.h; path = "worktree/Cataclysm-BN/src/avatar_functions.h"; sourceTree = "<group>"; };
+		B5625BA029AFB87300BA1FDF /* mutation_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutation_ui.h; path = "worktree/Cataclysm-BN/src/mutation_ui.h"; sourceTree = "<group>"; };
+		B5625BA129AFB87300BA1FDF /* rot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rot.h; path = "worktree/Cataclysm-BN/src/rot.h"; sourceTree = "<group>"; };
+		B5625BA229AFB87300BA1FDF /* character_effects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_effects.cpp; path = "worktree/Cataclysm-BN/src/character_effects.cpp"; sourceTree = "<group>"; };
+		B5625BA329AFB87400BA1FDF /* armor_layers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = armor_layers.h; path = "worktree/Cataclysm-BN/src/armor_layers.h"; sourceTree = "<group>"; };
 		B57201D5259293EF003D2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57201D8259293EF003D2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B576B3DF2972F94D00221544 /* CBNfreeIAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBNfreeIAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1751,6 +1779,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5625B2A29AF803300BA1FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B576B3B42972F94D00221544 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1922,6 +1957,18 @@
 		B558CB72270E0D3C00410845 /* Cataclysm-BN */ = {
 			isa = PBXGroup;
 			children = (
+				B5625BA329AFB87400BA1FDF /* armor_layers.h */,
+				B5625B9829AFB87100BA1FDF /* avatar_functions.cpp */,
+				B5625B9F29AFB87300BA1FDF /* avatar_functions.h */,
+				B5625B9E29AFB87200BA1FDF /* bionics_ui.h */,
+				B5625BA229AFB87300BA1FDF /* character_effects.cpp */,
+				B5625B9929AFB87100BA1FDF /* character_turn.cpp */,
+				B5625B9B29AFB87200BA1FDF /* character_turn.h */,
+				B5625B9A29AFB87200BA1FDF /* json_source_location.cpp */,
+				B5625B9C29AFB87200BA1FDF /* json_source_location.h */,
+				B5625BA029AFB87300BA1FDF /* mutation_ui.h */,
+				B5625B9D29AFB87200BA1FDF /* rot.cpp */,
+				B5625BA129AFB87300BA1FDF /* rot.h */,
 				B5966A34270E11D2002163AD /* achievement.cpp */,
 				B5966ACD270E11DF002163AD /* action.cpp */,
 				B5966AA3270E11DB002163AD /* active_item_cache.cpp */,
@@ -2603,6 +2650,15 @@
 			path = ../../..;
 			sourceTree = "<group>";
 		};
+		B5625B2E29AF803300BA1FDF /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				B5625B5229AF86FD00BA1FDF /* Info.plist */,
+				B5625B4129AF803400BA1FDF /* main.m */,
+			);
+			path = playground;
+			sourceTree = "<group>";
+		};
 		B56E7DEA259BA378000701EF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -2638,6 +2694,7 @@
 				B576B57B297306E300221544 /* CBN */,
 				B5EDBF7F270B951500FB4526 /* Distinct */,
 				B5EDBF68270B94AB00FB4526 /* Common */,
+				B5625B2E29AF803300BA1FDF /* playground */,
 				B599341525929CCE0074C0C0 /* Frameworks */,
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
@@ -2653,6 +2710,7 @@
 				B5867A02260402B600EACF2C /* CDDA.app */,
 				B576B3DF2972F94D00221544 /* CBNfreeIAP.app */,
 				B501CA8F297411E800CB965C /* CBN.app */,
+				B5625B2D29AF803300BA1FDF /* playground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2790,6 +2848,7 @@
 		B5EDBF80270B957000FB4526 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */,
 				B5BD7A1D29770896001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.h */,
 				B531B86A270E1A7400155C37 /* overrides */,
 				B58678852603E78800EACF2C /* iCloud debug */,
@@ -2896,6 +2955,23 @@
 			productReference = B53804FC25AC6DB200AEB52A /* CDDAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B5625B2C29AF803300BA1FDF /* playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5625B4F29AF803400BA1FDF /* Build configuration list for PBXNativeTarget "playground" */;
+			buildPhases = (
+				B5625B2929AF803300BA1FDF /* Sources */,
+				B5625B2A29AF803300BA1FDF /* Frameworks */,
+				B5625B2B29AF803300BA1FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playground;
+			productName = playground;
+			productReference = B5625B2D29AF803300BA1FDF /* playground.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B576B2612972F94D00221544 /* CBNfreeIAP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B576B3DC2972F94D00221544 /* Build configuration list for PBXNativeTarget "CBNfreeIAP" */;
@@ -2956,6 +3032,9 @@
 						LastSwiftMigration = 1230;
 						TestTargetID = B57201C8259293EE003D2A20;
 					};
+					B5625B2C29AF803300BA1FDF = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = B57201C4259293EE003D2A20 /* Build configuration list for PBXProject "CDDA" */;
@@ -3002,6 +3081,7 @@
 				B576B2612972F94D00221544 /* CBNfreeIAP */,
 				B53804FB25AC6DB200AEB52A /* CDDAUITests */,
 				B58678B4260402B600EACF2C /* CDDA iCloud debug */,
+				B5625B2C29AF803300BA1FDF /* playground */,
 			);
 		};
 /* End PBXProject section */
@@ -3078,6 +3158,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B53804FA25AC6DB200AEB52A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5625B2B29AF803300BA1FDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3421,7 +3508,9 @@
 				B501C94B297411E800CB965C /* ammo_effect.cpp in Sources */,
 				B501C94C297411E800CB965C /* iexamine.cpp in Sources */,
 				B501C94D297411E800CB965C /* weather_gen.cpp in Sources */,
+				B5625BAC29AFB87400BA1FDF /* character_effects.cpp in Sources */,
 				B501C94E297411E800CB965C /* computer.cpp in Sources */,
+				B5625BA829AFB87400BA1FDF /* json_source_location.cpp in Sources */,
 				B501C94F297411E800CB965C /* sdl_font.cpp in Sources */,
 				B501C950297411E800CB965C /* magic.cpp in Sources */,
 				B501C951297411E800CB965C /* init.cpp in Sources */,
@@ -3438,6 +3527,7 @@
 				B501C95C297411E800CB965C /* mission.cpp in Sources */,
 				B501C95D297411E800CB965C /* path_utils.m in Sources */,
 				B501C95E297411E800CB965C /* event_statistics.cpp in Sources */,
+				B518A567297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m in Sources */,
 				B501C95F297411E800CB965C /* fault.cpp in Sources */,
 				B501C960297411E800CB965C /* active_item_cache.cpp in Sources */,
 				B501C961297411E800CB965C /* fungal_effects.cpp in Sources */,
@@ -3563,6 +3653,7 @@
 				B501C9D9297411E800CB965C /* units_utility.cpp in Sources */,
 				B501C9DA297411E800CB965C /* cdda_firebase.m in Sources */,
 				B501C9DB297411E800CB965C /* point.cpp in Sources */,
+				B5625BA629AFB87400BA1FDF /* character_turn.cpp in Sources */,
 				B501C9DC297411E800CB965C /* anatomy.cpp in Sources */,
 				B501C9DD297411E800CB965C /* overmap_noise.cpp in Sources */,
 				B501C9DE297411E800CB965C /* crafting.cpp in Sources */,
@@ -3610,6 +3701,7 @@
 				B501CA07297411E800CB965C /* pathfinding.cpp in Sources */,
 				B501CA08297411E800CB965C /* magic_teleporter_list.cpp in Sources */,
 				B501CA09297411E800CB965C /* cursesport.cpp in Sources */,
+				B5625BA429AFB87400BA1FDF /* avatar_functions.cpp in Sources */,
 				B501CA0A297411E800CB965C /* monexamine.cpp in Sources */,
 				B501CA0B297411E800CB965C /* monstergenerator.cpp in Sources */,
 				B501CA0C297411E800CB965C /* string_input_popup.cpp in Sources */,
@@ -3663,6 +3755,7 @@
 				B501CA3E297411E800CB965C /* trait_group.cpp in Sources */,
 				B501CA3F297411E800CB965C /* npc_class.cpp in Sources */,
 				B501CA40297411E800CB965C /* game_ui.cpp in Sources */,
+				B5625BAA29AFB87400BA1FDF /* rot.cpp in Sources */,
 				B501CA41297411E800CB965C /* creature.cpp in Sources */,
 				B501CA42297411E800CB965C /* construction_group.cpp in Sources */,
 				B501CA43297411E800CB965C /* mod_manager_ui.cpp in Sources */,
@@ -3710,6 +3803,14 @@
 			files = (
 				B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */,
 				D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5625B2929AF803300BA1FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5625B4229AF803400BA1FDF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3830,6 +3931,7 @@
 				B576B44C297303D500221544 /* monster.cpp in Sources */,
 				B576B55B2973044300221544 /* MainViewController.m in Sources */,
 				B576B4CC297303D500221544 /* addiction.cpp in Sources */,
+				B5625BA929AFB87400BA1FDF /* json_source_location.cpp in Sources */,
 				B576B4B3297303D500221544 /* damage.cpp in Sources */,
 				B576B4CF297303D500221544 /* start_location.cpp in Sources */,
 				B576B4DD297303D500221544 /* recipe_dictionary.cpp in Sources */,
@@ -3883,6 +3985,7 @@
 				B576B487297303D500221544 /* monattack.cpp in Sources */,
 				B576B458297303D500221544 /* ranged.cpp in Sources */,
 				B576B478297303D500221544 /* iuse_software_lightson.cpp in Sources */,
+				B5625BA729AFB87400BA1FDF /* character_turn.cpp in Sources */,
 				B576B439297303D500221544 /* mapgen_functions.cpp in Sources */,
 				B576B440297303D500221544 /* activity_type.cpp in Sources */,
 				B576B4AB297303D500221544 /* event_field_transformations.cpp in Sources */,
@@ -3904,6 +4007,7 @@
 				B576B4AD297303D500221544 /* debug.cpp in Sources */,
 				B576B479297303D500221544 /* player_activity.cpp in Sources */,
 				B576B43A297303D500221544 /* field.cpp in Sources */,
+				B5625BAB29AFB87400BA1FDF /* rot.cpp in Sources */,
 				B576B44A297303D500221544 /* morale.cpp in Sources */,
 				B576B417297303D500221544 /* json.cpp in Sources */,
 				B576B532297303D500221544 /* clzones.cpp in Sources */,
@@ -3924,6 +4028,7 @@
 				B576B4C6297303D500221544 /* inventory.cpp in Sources */,
 				B576B4F9297303D500221544 /* game_inventory.cpp in Sources */,
 				B576B516297303D500221544 /* string_editor_window.cpp in Sources */,
+				B5625BAD29AFB87400BA1FDF /* character_effects.cpp in Sources */,
 				B576B448297303D500221544 /* item_location.cpp in Sources */,
 				B576B4D3297303D500221544 /* vehicle_part.cpp in Sources */,
 				B576B4AE297303D500221544 /* speech.cpp in Sources */,
@@ -3990,6 +4095,7 @@
 				B576B494297303D500221544 /* armor_layers.cpp in Sources */,
 				B576B45D297303D500221544 /* activity_handlers.cpp in Sources */,
 				B576B53E297303D500221544 /* item_category.cpp in Sources */,
+				B5625BA529AFB87400BA1FDF /* avatar_functions.cpp in Sources */,
 				B576B446297303D500221544 /* consumption.cpp in Sources */,
 				B576B437297303D500221544 /* vehicle_autodrive.cpp in Sources */,
 				B576B49F297303D500221544 /* effect.cpp in Sources */,
@@ -4199,7 +4305,7 @@
 			baseConfigurationReference = 992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3009;
+				CURRENT_PROJECT_VERSION = 2020;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4228,7 +4334,7 @@
 			baseConfigurationReference = 6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3009;
+				CURRENT_PROJECT_VERSION = 2020;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4306,6 +4412,73 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CDDA;
+			};
+			name = Release;
+		};
+		B5625B4329AF803400BA1FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = playground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.playground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5625B4429AF803400BA1FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = playground/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.playground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -4476,7 +4649,7 @@
 			baseConfigurationReference = CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3009;
+				CURRENT_PROJECT_VERSION = 3010;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4491,7 +4664,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 4.1.0;
+				MARKETING_VERSION = 4.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4505,7 +4678,7 @@
 			baseConfigurationReference = 5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3009;
+				CURRENT_PROJECT_VERSION = 3010;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4520,7 +4693,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 4.1.0;
+				MARKETING_VERSION = 4.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4537,7 +4710,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3009;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4576,7 +4749,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3009;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3NJUD9MLAB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4623,6 +4796,15 @@
 			buildConfigurations = (
 				B538050425AC6DB200AEB52A /* Debug */,
 				B538050525AC6DB200AEB52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5625B4F29AF803400BA1FDF /* Build configuration list for PBXNativeTarget "playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5625B4329AF803400BA1FDF /* Debug */,
+				B5625B4429AF803400BA1FDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
