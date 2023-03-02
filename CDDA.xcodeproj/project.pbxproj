@@ -1715,6 +1715,7 @@
 		B5966C78270E121C002163AD /* fmtlib_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmtlib_core.h; path = "worktree/Cataclysm-BN/src/fmtlib_core.h"; sourceTree = "<group>"; };
 		B5966C79270E121C002163AD /* requirements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = requirements.h; path = "worktree/Cataclysm-BN/src/requirements.h"; sourceTree = "<group>"; };
 		B5966C7A270E121C002163AD /* iuse_software_sokoban.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iuse_software_sokoban.h; path = "worktree/Cataclysm-BN/src/iuse_software_sokoban.h"; sourceTree = "<group>"; };
+		B59CEDA729B0CDB70075BC6E /* PaywallUnlimitedFunctionality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaywallUnlimitedFunctionality.h; sourceTree = "<group>"; };
 		B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitview+CDDA.h"; sourceTree = "<group>"; };
 		B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
 		B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
@@ -2848,6 +2849,7 @@
 		B5EDBF80270B957000FB4526 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				B59CEDA729B0CDB70075BC6E /* PaywallUnlimitedFunctionality.h */,
 				B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */,
 				B5BD7A1D29770896001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.h */,
 				B531B86A270E1A7400155C37 /* overrides */,
@@ -4305,7 +4307,7 @@
 			baseConfigurationReference = 992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
-				CURRENT_PROJECT_VERSION = 2020;
+				CURRENT_PROJECT_VERSION = 2021;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4320,7 +4322,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 3.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4334,7 +4336,7 @@
 			baseConfigurationReference = 6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBN/App.entitlements;
-				CURRENT_PROJECT_VERSION = 2020;
+				CURRENT_PROJECT_VERSION = 2021;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4349,7 +4351,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 4.0.0;
+				MARKETING_VERSION = 3.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4649,7 +4651,7 @@
 			baseConfigurationReference = CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3010;
+				CURRENT_PROJECT_VERSION = 3011;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -4678,7 +4680,7 @@
 			baseConfigurationReference = 5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3010;
+				CURRENT_PROJECT_VERSION = 3011;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
