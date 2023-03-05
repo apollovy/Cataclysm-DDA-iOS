@@ -7080,7 +7080,6 @@
 			baseConfigurationReference = AB7CE7FDAB55628876236D9C /* Pods-CDDA0F.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.F/App.entitlements;
-				CURRENT_PROJECT_VERSION = 1025;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -7095,7 +7094,6 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.3.3;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -7109,7 +7107,6 @@
 			baseConfigurationReference = D710729048186531BCA67AEE /* Pods-CDDA0F.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.F/App.entitlements;
-				CURRENT_PROJECT_VERSION = 1025;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -7124,7 +7121,6 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MARKETING_VERSION = 2.3.3;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0F;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
