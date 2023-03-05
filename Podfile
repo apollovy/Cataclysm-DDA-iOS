@@ -10,3 +10,6 @@ end
 
 target 'CBN' do
 end
+
+target 'CDDA0F' do
+end
