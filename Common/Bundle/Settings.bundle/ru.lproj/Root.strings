@@ -1,0 +1,19 @@
+/* (No Comment) */
+"Invert panning direction" = "Инвертировать направление панорамирования";
+
+/* (No Comment) */
+"Invert scrolling direction" = "Инвертировать направление прокрутки";
+
+/* (No Comment) */
+"Keyboard show/hide time" = "Время отображения / скрытия клавиатуры";
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+"Overlay UI enabled" = "Пользовательский интерфейс наложения включен";
+
+/* (No Comment) */
+"Panning with 1 finger" = "Панорамирование одним пальцем";
+
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "Изменение размера окна игры при переключении клавиатуры (только для iPad)";
+
+"Autoresize screen resolution" = "Автоматическое изменение разрешения экрана";

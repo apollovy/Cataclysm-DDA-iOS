@@ -1,0 +1,19 @@
+/* (No Comment) */
+"Invert panning direction" = "Fordított panoráma irány";
+
+/* (No Comment) */
+"Invert scrolling direction" = "Fordítsa meg a görgetési irányt";
+
+/* (No Comment) */
+"Keyboard show/hide time" = "A billentyűzet megjelenítése / elrejtése";
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+"Overlay UI enabled" = "Az overlay felhasználói felület engedélyezve";
+
+/* (No Comment) */
+"Panning with 1 finger" = "Pásztázás 1 ujjal";
+
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "A játékablak átméretezése a billentyűzet váltásakor (csak iPad esetén)";
+
+"Autoresize screen resolution" = "Képernyőfelbontás automatikus méretezése";

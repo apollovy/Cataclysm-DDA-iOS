@@ -1,0 +1,19 @@
+/* (No Comment) */
+"Invert panning direction" = "パンの方向を反転します";
+
+/* (No Comment) */
+"Invert scrolling direction" = "スクロール方向を反転します";
+
+/* (No Comment) */
+"Keyboard show/hide time" = "キーボードの表示/非表示時間";
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+"Overlay UI enabled" = "オーバーレイUIが有効";
+
+/* (No Comment) */
+"Panning with 1 finger" = "1本の指でパンする";
+
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "キーボードを切り替えるときにゲームウィンドウのサイズを変更する（iPadのみ）";
+
+"Autoresize screen resolution" = "画面解像度の自動サイズ変更";

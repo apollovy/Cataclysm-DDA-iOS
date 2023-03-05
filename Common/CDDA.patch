@@ -1,0 +1,15 @@
+diff --git a/src/game.cpp b/src/game.cpp
+index 649942dc11..81ea9b1f14 100644
+--- a/src/game.cpp
++++ b/src/game.cpp
+@@ -514,10 +514,6 @@ void game_ui::init_ui()
+ #if defined(TILES) || defined(_WIN32)
+     TERMX = get_terminal_width();
+     TERMY = get_terminal_height();
+-
+-    get_options().get_option( "TERMINAL_X" ).setValue( TERMX * get_scaling_factor() );
+-    get_options().get_option( "TERMINAL_Y" ).setValue( TERMY * get_scaling_factor() );
+-    get_options().save();
+ #else
+     ensure_term_size();
+

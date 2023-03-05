@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Support project"; ObjectID = "E6P-R0-0cK"; */
+"E6P-R0-0cK.normalTitle" = "Previous version";
+
+/* Class = "UIButton"; normalTitle = "PLAY!"; ObjectID = "GNa-EF-oDD"; */
+"GNa-EF-oDD.normalTitle" = "Settings";
+
+/* Class = "UIButton"; normalTitle = "Load from iCloud"; ObjectID = "U5L-S4-qjM"; */
+"U5L-S4-qjM.normalTitle" = "Load from iCloud";
+
+/* Class = "UIButton"; normalTitle = "Save to iCloud"; ObjectID = "YT2-X9-ZgQ"; */
+"YT2-X9-ZgQ.normalTitle" = "Save to iCloud";
+
+/* Class = "UILabel"; text = "I am the label"; ObjectID = "wOI-UV-xyF"; */
+"wOI-UV-xyF.text" = "I am the label";

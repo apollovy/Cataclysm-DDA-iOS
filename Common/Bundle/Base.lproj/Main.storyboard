@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_1024x1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="OqX-J6-ba5">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <stackView opaque="NO" alpha="0.25" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-V7-1Zo" userLabel="Progress">
+                                <rect key="frame" x="0.0" y="149" width="667" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am the label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wOI-UV-xyF">
+                                        <rect key="frame" x="167" y="0.0" width="333.5" height="73"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ud5-fe-ONn">
+                                        <rect key="frame" x="0.0" y="73" width="667" height="4"/>
+                                        <color key="progressTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ud5-fe-ONn" firstAttribute="width" secondItem="nh7-V7-1Zo" secondAttribute="width" id="UGu-eq-Ba1"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-7r-OEW">
+                                <rect key="frame" x="117" y="19.5" width="433" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
+                                        <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openSettings:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="M2o-xQ-eB8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-X9-ZgQ">
+                                        <rect key="frame" x="0.0" y="84" width="433" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Save to iCloud">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FiZ-M1-amQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5L-S4-qjM">
+                                        <rect key="frame" x="0.0" y="168" width="433" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Load from iCloud">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="load:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="BNZ-63-XoH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-R0-0cK">
+                                        <rect key="frame" x="0.0" y="252" width="433" height="84"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <size key="titleShadowOffset" width="1" height="1"/>
+                                        <state key="normal" title="Previous version">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousVersion:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="eun-uC-THy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7rd-Zh-857"/>
+                            <constraint firstAttribute="trailing" secondItem="OqX-J6-ba5" secondAttribute="trailing" id="9k6-rz-cIH"/>
+                            <constraint firstItem="bbo-7r-OEW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GWa-Dz-Bak"/>
+                            <constraint firstItem="bbo-7r-OEW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I5v-wP-aKV"/>
+                            <constraint firstItem="OqX-J6-ba5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ID6-Vg-GAB"/>
+                            <constraint firstItem="nh7-V7-1Zo" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="LkS-RU-TWD"/>
+                            <constraint firstItem="nh7-V7-1Zo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJm-ef-Qlx"/>
+                            <constraint firstItem="OqX-J6-ba5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X3l-u6-1lS"/>
+                            <constraint firstAttribute="bottom" secondItem="OqX-J6-ba5" secondAttribute="bottom" id="h67-c1-PCc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttons" destination="bbo-7r-OEW" id="QPe-JW-ua4"/>
+                        <outlet property="label" destination="wOI-UV-xyF" id="ngH-GX-c9q"/>
+                        <outlet property="progressView" destination="ud5-fe-ONn" id="9j4-qp-fgr"/>
+                        <outlet property="progressWrapper" destination="nh7-V7-1Zo" id="CQH-vU-lEa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420.53973013493254" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_1024x1024.png" width="1024" height="1024"/>
+    </resources>
+</document>

@@ -1,0 +1,19 @@
+/* (No Comment) */
+"Invert panning direction" = "反转摇摄方向";
+
+/* (No Comment) */
+"Invert scrolling direction" = "反转滚动方向";
+
+/* (No Comment) */
+"Keyboard show/hide time" = "键盘显示/隐藏时间";
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+"Overlay UI enabled" = "启用重叠式用户界面";
+
+/* (No Comment) */
+"Panning with 1 finger" = "用一根手指平移";
+
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "切换键盘时调整游戏窗口的大小（仅限iPad）";
+
+"Autoresize screen resolution" = "自动调整屏幕分辨率";

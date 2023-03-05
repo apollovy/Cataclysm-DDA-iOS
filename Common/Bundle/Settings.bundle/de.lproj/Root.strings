@@ -1,0 +1,19 @@
+/* (No Comment) */
+"Invert panning direction" = "Schwenkrichtung umkehren";
+
+/* (No Comment) */
+"Invert scrolling direction" = "Bildlaufrichtung umkehren";
+
+/* (No Comment) */
+"Keyboard show/hide time" = "Ein- / Ausblenden der Tastaturzeit";
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+"Overlay UI enabled" = "Overlay-Benutzeroberfläche aktiviert";
+
+/* (No Comment) */
+"Panning with 1 finger" = "Schwenken mit 1 Finger";
+
+/* (No Comment) */
+"Resize game window when toggling keyboard (iPad only)" = "Ändern Sie die Größe des Spielfensters, wenn Sie die Tastatur umschalten (nur iPad).";
+
+"Autoresize screen resolution" = "Bildschirmauflösung automatisch anpassen";
