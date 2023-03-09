@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,16 +42,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bbo-7r-OEW">
                                 <rect key="frame" x="117" y="19.5" width="433" height="336"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-R0-0cK">
                                         <rect key="frame" x="0.0" y="0.0" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Settings">
+                                        <state key="normal" title="PLAY!">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="openSettings:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="M2o-xQ-eB8"/>
+                                            <action selector="play:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="uWS-sO-Qk7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-X9-ZgQ">
@@ -78,16 +78,16 @@
                                             <action selector="load:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="BNZ-63-XoH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-R0-0cK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-EF-oDD">
                                         <rect key="frame" x="0.0" y="252" width="433" height="84"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
-                                        <state key="normal" title="Previous version">
+                                        <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="previousVersion:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="eun-uC-THy"/>
+                                            <action selector="openSettings:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="M2o-xQ-eB8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -110,6 +110,7 @@
                     <connections>
                         <outlet property="buttons" destination="bbo-7r-OEW" id="QPe-JW-ua4"/>
                         <outlet property="label" destination="wOI-UV-xyF" id="ngH-GX-c9q"/>
+                        <outlet property="playButton" destination="E6P-R0-0cK" id="TOm-3G-Vh3"/>
                         <outlet property="progressView" destination="ud5-fe-ONn" id="9j4-qp-fgr"/>
                         <outlet property="progressWrapper" destination="nh7-V7-1Zo" id="CQH-vU-lEa"/>
                     </connections>

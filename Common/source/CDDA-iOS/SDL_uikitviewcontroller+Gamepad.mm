@@ -17,6 +17,7 @@
 #import "SDL_uikitviewcontroller+Gamepad.h"
 #import "GamePadViewController.h"
 #import "game_dependent.h"
+#import "MainViewController.h"
 
 
 extern bool resize_term(int, int);
@@ -141,6 +142,10 @@ std::unique_ptr<ui_adaptor> _uiAdaptor;
     [self resizeRootView];
     UIWindow* window = [[UIApplication.sharedApplication windows] firstObject];
     window.rootViewController = self;
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MainViewController *vc = [sb instantiateInitialViewController];
+    [self presentViewController:vc animated:YES completion:NULL];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

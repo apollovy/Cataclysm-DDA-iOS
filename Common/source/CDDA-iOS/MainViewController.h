@@ -14,12 +14,15 @@
 - (IBAction)openSettings:(id)sender;
 - (IBAction)save:(id)sender;
 - (IBAction)load:(id)sender;
-- (IBAction)previousVersion:(id)sender;
+- (IBAction)play:(id)sender;
 
 @property IBOutlet UIView* buttons;
 
 @property IBOutlet UIView* progressWrapper;
 @property IBOutlet UILabel* label;
 @property IBOutlet UIProgressView* progressView;
+@property IBOutlet UIButton* playButton;
+
+@property BOOL hidePlayButton;
 
 @end

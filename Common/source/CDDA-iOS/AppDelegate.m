@@ -9,33 +9,7 @@
 
 #import "path_utils.h"
 #import "CDDA_iOS_main.h"
-
-
-static void unFullScreen(NSString *documentPath) {
-    NSError* error = nil;
-    NSString* optionsPath = [documentPath stringByAppendingString:@"/config/options.json"];
-    NSInputStream* readStream = [NSInputStream inputStreamWithFileAtPath:optionsPath];
-    [readStream open];
-    NSArray<NSDictionary<NSString*, NSString*>*>* settings = [NSJSONSerialization JSONObjectWithStream:readStream options:NSJSONReadingMutableContainers
-                                        error:&error];
-    [readStream close];
-    
-    if (!settings) {return;}
-    
-    for (NSDictionary<NSString*, NSString*>* setting in settings)
-    {
-        if ([[setting valueForKey:@"name"] isEqual: @"FULLSCREEN"])
-        {
-            [setting setValue:@"no" forKey:@"value"];
-            break;
-        }
-    }
-    
-    NSOutputStream* writeStream = [NSOutputStream outputStreamToFileAtPath:optionsPath append:NO];
-    [writeStream open];
-    [NSJSONSerialization writeJSONObject:settings toStream:writeStream options:0 error:&error];
-    [writeStream close];
-}
+#import "unFullScreen.h"
 
 
 @implementation AppDelegate
@@ -60,12 +34,6 @@ static void unFullScreen(NSString *documentPath) {
         self.launchWindow = nil;
     }
     mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // TODO: return this when Main.storyboard will work OK when it's initial for the app on GPU-enhanced devices
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    UIViewController *vc = [sb instantiateInitialViewController];
-//    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//    mainWindow.rootViewController = vc;
-//    [mainWindow makeKeyAndVisible];
     NSString* documentPath = getDocumentURL().path;
     unFullScreen(documentPath);
     CDDA_iOS_main(documentPath);

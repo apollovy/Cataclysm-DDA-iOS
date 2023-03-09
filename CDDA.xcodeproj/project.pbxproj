@@ -138,7 +138,6 @@
 		B501C99B297411E800CB965C /* vehicle_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A97270E11DA002163AD /* vehicle_group.cpp */; };
 		B501C99C297411E800CB965C /* mapgenformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A14270E11D1002163AD /* mapgenformat.cpp */; };
 		B501C99D297411E800CB965C /* units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669F3270E11D0002163AD /* units.cpp */; };
-		B501C99E297411E800CB965C /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B501C99F297411E800CB965C /* ascii_art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B840270E16AD00155C37 /* ascii_art.cpp */; };
 		B501C9A0297411E800CB965C /* mongroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C0E270E1217002163AD /* mongroup.cpp */; };
 		B501C9A1297411E800CB965C /* construction_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C39270E1219002163AD /* construction_category.cpp */; };
@@ -254,7 +253,6 @@
 		B501CA10297411E800CB965C /* catacharset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BED270E1215002163AD /* catacharset.cpp */; };
 		B501CA11297411E800CB965C /* bionics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B825270E16AC00155C37 /* bionics.cpp */; };
 		B501CA12297411E800CB965C /* kill_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C52270E121A002163AD /* kill_tracker.cpp */; };
-		B501CA13297411E800CB965C /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B501CA14297411E800CB965C /* timed_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A31270E11D2002163AD /* timed_event.cpp */; };
 		B501CA15297411E800CB965C /* emit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BF0270E1215002163AD /* emit.cpp */; };
 		B501CA16297411E800CB965C /* monmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BE5270E1215002163AD /* monmove.cpp */; };
@@ -355,10 +353,11 @@
 		B501CA7E297411E800CB965C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
 		B501CA81297411E800CB965C /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
 		B501CA82297411E800CB965C /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
+		B505C87529B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
+		B505C87629B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
+		B505C87729B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
 		B511BB8F29744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B511BB9029744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
-		B511BB9129744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
-		B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B518A567297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
 		B526C62529B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
@@ -715,13 +714,11 @@
 		B576B549297303D500221544 /* magic_ter_fur_transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A91270E11DA002163AD /* magic_ter_fur_transform.cpp */; };
 		B576B54C2973040600221544 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B576B54D2973040600221544 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
-		B576B54E2973040600221544 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B576B54F2973040600221544 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B576B5502973040600221544 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B576B5512973040600221544 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
 		B576B5532973040600221544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B576B5542973040600221544 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
-		B576B5552973040600221544 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B576B5572973040600221544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B576B5582973040600221544 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
@@ -751,6 +748,15 @@
 		B5867A172604030100EACF2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B5867A1B2604030A00EACF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5867A2D2604036E00EACF2C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
+		B590B5EB29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B590B5EC29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B590B5ED29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
+		B590B5EE29B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
+		B590B5EF29B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
+		B590B5F029B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
+		B590B5F129B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
+		B590B5F229B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
+		B590B5F329B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B5A20E0329B4892000035DE0 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A20DFF29B4891E00035DE0 /* CDDA_iOS_main.mm */; };
 		B5A20E0529B489D300035DE0 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A20E0629B489D300035DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
@@ -758,11 +764,8 @@
 		B5A20E0829B489D300035DE0 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B5A20E0929B489D300035DE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B5A20E0A29B489D300035DE0 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
-		B5A20E0B29B489D300035DE0 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B5A20E0C29B489D300035DE0 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B5A20E0D29B489D300035DE0 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
-		B5A20E0E29B489D300035DE0 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */; };
-		B5A20E0F29B489D300035DE0 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B5A20E1029B489D300035DE0 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B5A20E1129B489D300035DE0 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B5A20E1229B489D300035DE0 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
@@ -1319,6 +1322,8 @@
 		B501CAB42974124E00CB965C /* zh */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh; path = zh.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B501CBE52974154600CB965C /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		B501CBE62974154700CB965C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B505C87429B748B600E94E10 /* unFullScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unFullScreen.m; sourceTree = "<group>"; };
+		B505C87829B748E100E94E10 /* unFullScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unFullScreen.h; sourceTree = "<group>"; };
 		B50B447025A24ECA00628243 /* GamePadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePadViewController.h; sourceTree = "<group>"; };
 		B50B447125A24ECB00628243 /* GamePadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePadViewController.m; sourceTree = "<group>"; };
 		B50EFD9D276904EF00B02C8E /* wisheffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wisheffect.cpp; path = "worktree/Cataclysm-BN/src/wisheffect.cpp"; sourceTree = "<group>"; };
@@ -1329,7 +1334,6 @@
 		B50EFDA5276904EF00B02C8E /* vehicle_autodrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vehicle_autodrive.cpp; path = "worktree/Cataclysm-BN/src/vehicle_autodrive.cpp"; sourceTree = "<group>"; };
 		B511BB8B29744DCD00139993 /* game_dependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_dependent.h; sourceTree = "<group>"; };
 		B511BB8C29744DCD00139993 /* game_dependent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_dependent.mm; sourceTree = "<group>"; };
-		B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+Gamepad.mm"; sourceTree = "<group>"; };
 		B5127665289C5723004882AA /* version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = version.cpp; sourceTree = "<group>"; };
 		B51597E12634833A008BFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51597FD2634834C008BFD0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -1355,8 +1359,6 @@
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
 		B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
 		B526C62729B4AF4F0086172F /* version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = version.cpp; sourceTree = "<group>"; };
-		B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
-		B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
 		B5312A2E25A1160F00357241 /* JSController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSController.xcodeproj; path = Libraries/JSController/JSController.xcodeproj; sourceTree = "<group>"; };
 		B531B7F2270E168C00155C37 /* cata_utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cata_utility.cpp; path = "worktree/Cataclysm-BN/src/cata_utility.cpp"; sourceTree = "<group>"; };
 		B531B80A270E16AA00155C37 /* auto_note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = auto_note.cpp; path = "worktree/Cataclysm-BN/src/auto_note.cpp"; sourceTree = "<group>"; };
@@ -1410,8 +1412,6 @@
 		B5412CF32605FEF20034128C /* ZipArchiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipArchiver.swift; sourceTree = "<group>"; };
 		B54195C82955BBEA0035CC2F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B5436B4825C4D18D006579B4 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
-		B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
-		B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
 		B54932E4259BD59D00667062 /* SDL_image.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_image.xcodeproj; path = "Libraries/SDL_image/Xcode-iOS/SDL_image.xcodeproj"; sourceTree = "<group>"; };
 		B54932F0259BDD2100667062 /* SDL_ttf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_ttf.xcodeproj; path = "Libraries/SDL_ttf/Xcode-iOS/SDL_ttf.xcodeproj"; sourceTree = "<group>"; };
 		B5493315259BE20000667062 /* SDL_mixer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDL_mixer.xcodeproj; path = "Libraries/SDL_mixer/Xcode-iOS/SDL_mixer.xcodeproj"; sourceTree = "<group>"; };
@@ -1479,6 +1479,13 @@
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
 		B589261625C34C8500BE1213 /* SDL_char_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDL_char_utils.m; sourceTree = "<group>"; };
 		B589263425C34CB500BE1213 /* SDL_char_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_char_utils.h; sourceTree = "<group>"; };
+		B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.m"; sourceTree = "<group>"; };
+		B590B5E529B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
+		B590B5E629B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+VirtualKeyboardInput.h"; sourceTree = "<group>"; };
+		B590B5E729B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.h"; sourceTree = "<group>"; };
+		B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+Gamepad.mm"; sourceTree = "<group>"; };
+		B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
+		B590B5EA29B9BD5700AF8258 /* SDL_uikitviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_uikitviewcontroller.h; sourceTree = "<group>"; };
 		B59669C4270E11CE002163AD /* sdl_font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_font.cpp; path = "worktree/Cataclysm-BN/src/sdl_font.cpp"; sourceTree = "<group>"; };
 		B59669C6270E11CE002163AD /* sdl_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_utils.cpp; path = "worktree/Cataclysm-BN/src/sdl_utils.cpp"; sourceTree = "<group>"; };
 		B59669C8270E11CE002163AD /* turret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = turret.cpp; path = "worktree/Cataclysm-BN/src/turret.cpp"; sourceTree = "<group>"; };
@@ -2073,7 +2080,6 @@
 		B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		B5BD7A1D29770896001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subscribeDisplayingPaywallToCDDAEvents.h; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
-		B5E92833297843C600119709 /* SDL_uikitviewcontroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_uikitviewcontroller.h; sourceTree = "<group>"; };
 		B5ED454429B47C950015647C /* CDDA0F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA0F.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ED454D29B47DA20015647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5ED454E29B47DBA0015647C /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
@@ -2086,11 +2092,9 @@
 		CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBNfreeIAP.debug.xcconfig"; path = "Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
 		D0AA238E51E9785C5F120F6E /* cdda_firebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdda_firebase.m; sourceTree = "<group>"; };
-		D0AA24157F2F0F64D8007081 /* SDL_uikitviewcontroller+MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+MainView.h"; sourceTree = "<group>"; };
 		D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDDAUITests.swift; sourceTree = "<group>"; };
 		D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackspaceInMenuTest.swift; sourceTree = "<group>"; };
 		D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
-		D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitviewcontroller+Gamepad.h"; sourceTree = "<group>"; };
 		D710729048186531BCA67AEE /* Pods-CDDA0F.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0F.release.xcconfig"; path = "Target Support Files/Pods-CDDA0F/Pods-CDDA0F.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2292,15 +2296,16 @@
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
 				B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */,
 				B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */,
-				B5E92833297843C600119709 /* SDL_uikitviewcontroller.h */,
-				D0AA2B78A7C47E4B63A69317 /* SDL_uikitviewcontroller+Gamepad.h */,
-				B511BB8D29744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm */,
-				B5466E70259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
-				B5466E71259F991200E31918 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
-				D0AA24157F2F0F64D8007081 /* SDL_uikitviewcontroller+MainView.h */,
-				B5312A1225A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
-				B5312A1325A0EE3F00357241 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
+				B590B5EA29B9BD5700AF8258 /* SDL_uikitviewcontroller.h */,
+				B590B5E529B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.h */,
+				B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */,
+				B590B5E729B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.h */,
+				B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */,
+				B590B5E629B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.h */,
+				B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */,
 				B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */,
+				B505C87829B748E100E94E10 /* unFullScreen.h */,
+				B505C87429B748B600E94E10 /* unFullScreen.m */,
 				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
 			);
 			path = "CDDA-iOS";
@@ -4043,6 +4048,7 @@
 				B501C940297411E800CB965C /* suffer.cpp in Sources */,
 				B501C941297411E800CB965C /* activity_actor.cpp in Sources */,
 				B501C942297411E800CB965C /* loading_ui.cpp in Sources */,
+				B590B5EE29B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B501C943297411E800CB965C /* iuse_software_kitten.cpp in Sources */,
 				B501C944297411E800CB965C /* visitable.cpp in Sources */,
 				B501C945297411E800CB965C /* event.cpp in Sources */,
@@ -4103,6 +4109,7 @@
 				B501C979297411E800CB965C /* mission_end.cpp in Sources */,
 				B501C97A297411E800CB965C /* sdltiles.cpp in Sources */,
 				B501C97B297411E800CB965C /* simplexnoise.cpp in Sources */,
+				B505C87529B748B600E94E10 /* unFullScreen.m in Sources */,
 				B501C97C297411E800CB965C /* worldfactory.cpp in Sources */,
 				B501C97D297411E800CB965C /* iuse_software_sokoban.cpp in Sources */,
 				B501C97E297411E800CB965C /* character_oracle.cpp in Sources */,
@@ -4137,7 +4144,6 @@
 				B501C99B297411E800CB965C /* vehicle_group.cpp in Sources */,
 				B501C99C297411E800CB965C /* mapgenformat.cpp in Sources */,
 				B501C99D297411E800CB965C /* units.cpp in Sources */,
-				B501C99E297411E800CB965C /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B501C99F297411E800CB965C /* ascii_art.cpp in Sources */,
 				B501C9A0297411E800CB965C /* mongroup.cpp in Sources */,
 				B501C9A1297411E800CB965C /* construction_category.cpp in Sources */,
@@ -4152,6 +4158,7 @@
 				B501C9AA297411E800CB965C /* weather.cpp in Sources */,
 				B501C9AB297411E800CB965C /* tileray.cpp in Sources */,
 				B501C9AC297411E800CB965C /* submap.cpp in Sources */,
+				B590B5EB29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B501C9AD297411E800CB965C /* crafting_gui.cpp in Sources */,
 				B501C9AE297411E800CB965C /* newcharacter.cpp in Sources */,
 				B501C9AF297411E800CB965C /* messages.cpp in Sources */,
@@ -4243,6 +4250,7 @@
 				B501CA02297411E800CB965C /* diary_ui.cpp in Sources */,
 				B501CA03297411E800CB965C /* sounds.cpp in Sources */,
 				B501CA04297411E800CB965C /* lru_cache.cpp in Sources */,
+				B590B5F129B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B501CA05297411E800CB965C /* panels.cpp in Sources */,
 				B501CA06297411E800CB965C /* calendar.cpp in Sources */,
 				B501CA07297411E800CB965C /* pathfinding.cpp in Sources */,
@@ -4257,7 +4265,6 @@
 				B501CA10297411E800CB965C /* catacharset.cpp in Sources */,
 				B501CA11297411E800CB965C /* bionics.cpp in Sources */,
 				B501CA12297411E800CB965C /* kill_tracker.cpp in Sources */,
-				B501CA13297411E800CB965C /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B501CA14297411E800CB965C /* timed_event.cpp in Sources */,
 				B501CA15297411E800CB965C /* emit.cpp in Sources */,
 				B501CA16297411E800CB965C /* monmove.cpp in Sources */,
@@ -4316,7 +4323,6 @@
 				B501CA4B297411E800CB965C /* item_contents.cpp in Sources */,
 				B501CA4C297411E800CB965C /* ncurses_def.cpp in Sources */,
 				B501CA4D297411E800CB965C /* mission_ui.cpp in Sources */,
-				B511BB9129744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B501CA4E297411E800CB965C /* mission_start.cpp in Sources */,
 				B501CA4F297411E800CB965C /* faction.cpp in Sources */,
 				B501CA50297411E800CB965C /* skill_boost.cpp in Sources */,
@@ -4453,6 +4459,7 @@
 				B576B502297303D500221544 /* vehicle_use.cpp in Sources */,
 				B576B433297303D500221544 /* monfaction.cpp in Sources */,
 				B576B4D0297303D500221544 /* url_utility.cpp in Sources */,
+				B505C87629B748B600E94E10 /* unFullScreen.m in Sources */,
 				B576B52A297303D500221544 /* map_field.cpp in Sources */,
 				B576B475297303D500221544 /* map_selector.cpp in Sources */,
 				B576B482297303D500221544 /* handle_action.cpp in Sources */,
@@ -4498,7 +4505,6 @@
 				B576B4A7297303D500221544 /* vehicle_group.cpp in Sources */,
 				B576B4FE297303D500221544 /* mapgenformat.cpp in Sources */,
 				B576B540297303D500221544 /* units.cpp in Sources */,
-				B576B5552973040600221544 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B576B414297303D500221544 /* ascii_art.cpp in Sources */,
 				B576B542297303D500221544 /* mongroup.cpp in Sources */,
 				B576B47B297303D500221544 /* construction_category.cpp in Sources */,
@@ -4593,6 +4599,7 @@
 				B576B4D9297303D500221544 /* item_action.cpp in Sources */,
 				B576B4C4297303D500221544 /* weather_type.cpp in Sources */,
 				B576B48E297303D500221544 /* line.cpp in Sources */,
+				B590B5F229B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B576B4F7297303D500221544 /* map_memory.cpp in Sources */,
 				B576B5512973040600221544 /* GamePadViewController.m in Sources */,
 				B576B45A297303D500221544 /* npctalk_funcs.cpp in Sources */,
@@ -4617,13 +4624,13 @@
 				B576B520297303D500221544 /* catacharset.cpp in Sources */,
 				B576B4AC297303D500221544 /* bionics.cpp in Sources */,
 				B576B4DC297303D500221544 /* kill_tracker.cpp in Sources */,
-				B576B54E2973040600221544 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B576B4C3297303D500221544 /* timed_event.cpp in Sources */,
 				B576B41D297303D500221544 /* emit.cpp in Sources */,
 				B576B474297303D500221544 /* monmove.cpp in Sources */,
 				B576B438297303D500221544 /* item_group.cpp in Sources */,
 				B576B41A297303D500221544 /* construction_sequence.cpp in Sources */,
 				B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */,
+				B590B5EC29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B576B4D5297303D500221544 /* martialarts.cpp in Sources */,
 				B576B4FD297303D500221544 /* posix_time.cpp in Sources */,
 				B576B44E297303D500221544 /* map_functions.cpp in Sources */,
@@ -4657,6 +4664,7 @@
 				B576B4F4297303D500221544 /* activity_item_handling.cpp in Sources */,
 				B576B45B297303D500221544 /* gamemode.cpp in Sources */,
 				B576B4D1297303D500221544 /* editmap.cpp in Sources */,
+				B590B5EF29B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B576B4EB297303D500221544 /* projectile.cpp in Sources */,
 				B576B55A2973044300221544 /* main.mm in Sources */,
 				B576B435297303D500221544 /* trait_group.cpp in Sources */,
@@ -4675,7 +4683,6 @@
 				B576B486297303D500221544 /* item_contents.cpp in Sources */,
 				B576B425297303D500221544 /* ncurses_def.cpp in Sources */,
 				B576B4E2297303D500221544 /* mission_ui.cpp in Sources */,
-				B511BB9229744DCD00139993 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B53D9E0D297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B576B4F5297303D500221544 /* mission_start.cpp in Sources */,
 				B576B452297303D500221544 /* faction.cpp in Sources */,
@@ -4754,7 +4761,6 @@
 				B5A2FDDA29B4836000035DE0 /* proficiency.cpp in Sources */,
 				B5A2FDD829B4836000035DE0 /* skill.cpp in Sources */,
 				B5A2FDB729B4836000035DE0 /* units_utility.cpp in Sources */,
-				B5A20E0F29B489D300035DE0 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B5A2FD8729B4836000035DE0 /* rotatable_symbols.cpp in Sources */,
 				B5A2FE1629B4836100035DE0 /* monattack.cpp in Sources */,
 				B5A2FE1B29B4836100035DE0 /* iuse_software.cpp in Sources */,
@@ -4847,7 +4853,6 @@
 				B5A2FD8F29B4836000035DE0 /* action.cpp in Sources */,
 				B5A2FE0529B4836100035DE0 /* json.cpp in Sources */,
 				B5A2FE3D29B4836100035DE0 /* avatar.cpp in Sources */,
-				B5A20E0B29B489D300035DE0 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B5A2FE4529B4836100035DE0 /* ammo_effect.cpp in Sources */,
 				B5A2FDFD29B4836100035DE0 /* melee.cpp in Sources */,
 				B5A2FD5F29B4836000035DE0 /* crash.cpp in Sources */,
@@ -4872,6 +4877,7 @@
 				B5A2FDAA29B4836000035DE0 /* popup.cpp in Sources */,
 				B5A2FD3F29B4835F00035DE0 /* activity_item_handling.cpp in Sources */,
 				B526C62829B4AF4F0086172F /* version.cpp in Sources */,
+				B590B5F029B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B5A2FD3229B4835F00035DE0 /* game.cpp in Sources */,
 				B5A2FE4229B4836100035DE0 /* point.cpp in Sources */,
 				B5A2FD9A29B4836000035DE0 /* monster.cpp in Sources */,
@@ -4910,11 +4916,11 @@
 				B5A2FD8B29B4836000035DE0 /* auto_pickup.cpp in Sources */,
 				B5A2FD9B29B4836000035DE0 /* mutation_data.cpp in Sources */,
 				B5A20E1129B489D300035DE0 /* MenuButton.swift in Sources */,
-				B5A20E0E29B489D300035DE0 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B5A2FD2F29B4835F00035DE0 /* projectile.cpp in Sources */,
 				B5A2FDE729B4836000035DE0 /* gates.cpp in Sources */,
 				B5A2FD9329B4836000035DE0 /* gamemode_defense.cpp in Sources */,
 				B5A2FE3529B4836100035DE0 /* weather_type.cpp in Sources */,
+				B590B5ED29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B5A2FDAB29B4836000035DE0 /* event_field_transformations.cpp in Sources */,
 				B5A2FE2C29B4836100035DE0 /* scores_ui.cpp in Sources */,
 				B5A2FD7029B4836000035DE0 /* shadowcasting.cpp in Sources */,
@@ -4923,6 +4929,7 @@
 				B5A2FD9E29B4836000035DE0 /* mission_companion.cpp in Sources */,
 				B5A2FD4229B4835F00035DE0 /* savegame.cpp in Sources */,
 				B5A2FE2929B4836100035DE0 /* mapgen_functions.cpp in Sources */,
+				B590B5F329B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B5A2FD6A29B4836000035DE0 /* path_info.cpp in Sources */,
 				B5A2FE0F29B4836100035DE0 /* char_validity_check.cpp in Sources */,
 				B5A2FE1C29B4836100035DE0 /* item_stack.cpp in Sources */,
@@ -5025,6 +5032,7 @@
 				B5A2FD3329B4835F00035DE0 /* activity_actor.cpp in Sources */,
 				B5A2FDAE29B4836000035DE0 /* units.cpp in Sources */,
 				B5A2FD2C29B4835F00035DE0 /* cached_options.cpp in Sources */,
+				B505C87729B748B600E94E10 /* unFullScreen.m in Sources */,
 				B5A2FD6C29B4836000035DE0 /* npcmove.cpp in Sources */,
 				B5A2FDCF29B4836000035DE0 /* construction_group.cpp in Sources */,
 				B5A2FD3529B4835F00035DE0 /* field_type.cpp in Sources */,

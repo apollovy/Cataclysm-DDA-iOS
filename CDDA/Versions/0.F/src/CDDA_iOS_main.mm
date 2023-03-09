@@ -34,7 +34,6 @@ int CDDA_iOS_main(NSString* documentPath)
     NSArray<NSString*>* newArguments = [arguments arrayByAddingObjectsFromArray:@[
         @"--datadir", datadir,
         @"--userdir", [documentPath stringByAppendingString:@"/"],
-        
     ]];
     int newArgumentsCount = newArguments.count;
     const char** stringArgs = cArrayFromNSArray(newArguments);
@@ -45,6 +44,7 @@ int CDDA_iOS_main(NSString* documentPath)
     
     dispatch_async(dispatch_get_main_queue(), ^{
         MainViewController* vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+        vc.hidePlayButton = YES;
         auto window = [[UIApplication.sharedApplication windows] firstObject];
         window.rootViewController = vc;
         [window makeKeyAndVisible];

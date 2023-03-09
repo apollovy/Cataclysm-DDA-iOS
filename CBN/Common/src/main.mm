@@ -84,6 +84,7 @@ int CDDA_iOS_main(NSString* documentPath) {
     
     dispatch_async(dispatch_get_main_queue(), ^{
         MainViewController* vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+        vc.hidePlayButton = YES;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
         auto window = [[UIApplication.sharedApplication windows] firstObject];

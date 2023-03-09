@@ -20,6 +20,8 @@
 {
     [super viewDidLoad];
     
+    self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self.playButton setHidden:self.hidePlayButton];
     self.progressWrapper.alpha = 0;
 }
 
@@ -96,12 +98,9 @@
     });
 }
 
--(void)previousVersion:(id)sender
+-(void)play:(id)sender
 {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    [UIApplication.sharedApplication openURL:[NSURL URLWithString:@"https://apps.apple.com/app/cataclysm-roguelike-rpg-0-e/id1547835881"]];
-#pragma clang diagnostic pop
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 -(void)_watchProgressForURL:(NSURL*)url finishingWith:(SEL)selector
