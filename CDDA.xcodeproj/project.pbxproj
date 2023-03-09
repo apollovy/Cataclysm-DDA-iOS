@@ -1740,7 +1740,6 @@
 		B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
 		B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		B5A20DFF29B4891E00035DE0 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
-		B5A20E0029B4891F00035DE0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B5A20E0129B4892000035DE0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B5A20E1729B4A19700035DE0 /* gfx */ = {isa = PBXFileReference; lastKnownFileType = text; name = gfx; path = "worktree/Cataclysm-BN/gfx"; sourceTree = SOURCE_ROOT; };
 		B5A20E1829B4A19700035DE0 /* data */ = {isa = PBXFileReference; lastKnownFileType = text; name = data; path = "worktree/Cataclysm-BN/data"; sourceTree = SOURCE_ROOT; };
@@ -2250,7 +2249,6 @@
 			children = (
 				B558CB72270E0D3C00410845 /* Cataclysm-BN */,
 				B5F97C66259C08B500C5A910 /* main.mm */,
-				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
 				B5127665289C5723004882AA /* version.cpp */,
 			);
 			path = src;
@@ -2285,6 +2283,7 @@
 				B50B447125A24ECB00628243 /* GamePadViewController.m */,
 				B5A5BED625F7DEB300EEEA0F /* main.m */,
 				B5A20E0129B4892000035DE0 /* MainViewController.h */,
+				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
 				B5436B4825C4D18D006579B4 /* MenuButton.swift */,
 				B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */,
 				B5A5BEF025F7F51300EEEA0F /* path_utils.h */,
@@ -2807,7 +2806,6 @@
 			isa = PBXGroup;
 			children = (
 				B5A20DFF29B4891E00035DE0 /* CDDA_iOS_main.mm */,
-				B5A20E0029B4891F00035DE0 /* MainViewController.m */,
 				B526C62729B4AF4F0086172F /* version.cpp */,
 			);
 			path = src;
