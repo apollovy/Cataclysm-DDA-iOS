@@ -1,15 +1,10 @@
 #include <Foundation/Foundation.h>
 
-#define main CDDA_main
-
-void no_exit(__attribute__((unused)) int status){}
-#define exit no_exit
-#include "runtime_handlers.h"
-#include "../../worktree/Cataclysm-BN/src/main.cpp"
-#undef main
+#include "CDDA_main.h"
 
 #include <UIKit/UIKit.h>
 #include "MainViewController.h"
+#import <SDL2/SDL.h>
 
 // https://stackoverflow.com/a/15318065/674557
 char** cArrayFromNSArray(NSArray* array)
@@ -31,7 +26,6 @@ char** cArrayFromNSArray(NSArray* array)
 void exit_handler( __attribute__((unused)) int status )
 {
     deinitDebug();
-    g.reset();
     catacurses::endwin();
 }
 

@@ -292,7 +292,6 @@
 		B501CA3A297411E800CB965C /* gamemode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C18270E1217002163AD /* gamemode.cpp */; };
 		B501CA3B297411E800CB965C /* editmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B75270E120F002163AD /* editmap.cpp */; };
 		B501CA3C297411E800CB965C /* projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A88270E11D9002163AD /* projectile.cpp */; };
-		B501CA3D297411E800CB965C /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 		B501CA3E297411E800CB965C /* trait_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB8270E11DD002163AD /* trait_group.cpp */; };
 		B501CA3F297411E800CB965C /* npc_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966AB7270E11DD002163AD /* npc_class.cpp */; };
 		B501CA40297411E800CB965C /* game_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966B8D270E1211002163AD /* game_ui.cpp */; };
@@ -722,7 +721,6 @@
 		B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B576B5572973040600221544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B576B5582973040600221544 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
-		B576B55A2973044300221544 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5F97C66259C08B500C5A910 /* main.mm */; };
 		B576B55B2973044300221544 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B576B59E29730FF500221544 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
 		B57B28012974157D0043A513 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B57B27F7297415770043A513 /* InfoPlist.strings */; };
@@ -757,7 +755,16 @@
 		B590B5F129B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B590B5F229B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B590B5F329B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
-		B5A20E0329B4892000035DE0 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A20DFF29B4891E00035DE0 /* CDDA_iOS_main.mm */; };
+		B590B5F729B9E03B00AF8258 /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B590B5F629B9E03B00AF8258 /* CDDA_main.cpp */; };
+		B590B5F829B9E03B00AF8258 /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B590B5F629B9E03B00AF8258 /* CDDA_main.cpp */; };
+		B590B5FE29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
+		B590B5FF29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
+		B590B60029B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
+		B590B60429B9E45400AF8258 /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B590B60329B9E45400AF8258 /* CDDA_main.cpp */; };
+		B590B60529B9E86E00AF8258 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA238E51E9785C5F120F6E /* cdda_firebase.m */; };
+		B590B60629B9E87E00AF8258 /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */; };
+		B590B60729B9E88400AF8258 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
+		B590B60829B9E88700AF8258 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
 		B5A20E0529B489D300035DE0 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A20E0629B489D300035DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5A20E0729B489D300035DE0 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
@@ -1486,6 +1493,11 @@
 		B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+Gamepad.mm"; sourceTree = "<group>"; };
 		B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
 		B590B5EA29B9BD5700AF8258 /* SDL_uikitviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_uikitviewcontroller.h; sourceTree = "<group>"; };
+		B590B5F629B9E03B00AF8258 /* CDDA_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDDA_main.cpp; sourceTree = "<group>"; };
+		B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
+		B590B60129B9E18100AF8258 /* CDDA_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_main.h; sourceTree = "<group>"; };
+		B590B60229B9E1F500AF8258 /* CDDA_main_patch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_main_patch.h; sourceTree = "<group>"; };
+		B590B60329B9E45400AF8258 /* CDDA_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDDA_main.cpp; sourceTree = "<group>"; };
 		B59669C4270E11CE002163AD /* sdl_font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_font.cpp; path = "worktree/Cataclysm-BN/src/sdl_font.cpp"; sourceTree = "<group>"; };
 		B59669C6270E11CE002163AD /* sdl_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_utils.cpp; path = "worktree/Cataclysm-BN/src/sdl_utils.cpp"; sourceTree = "<group>"; };
 		B59669C8270E11CE002163AD /* turret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = turret.cpp; path = "worktree/Cataclysm-BN/src/turret.cpp"; sourceTree = "<group>"; };
@@ -1746,7 +1758,6 @@
 		B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDL_uikitview+CDDA.h"; sourceTree = "<group>"; };
 		B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitview+CDDA.m"; sourceTree = "<group>"; };
 		B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageUpDownPanGestureRecognizer.swift; sourceTree = "<group>"; };
-		B5A20DFF29B4891E00035DE0 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B5A20E0129B4892000035DE0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B5A20E1729B4A19700035DE0 /* gfx */ = {isa = PBXFileReference; lastKnownFileType = text; name = gfx; path = "worktree/Cataclysm-BN/gfx"; sourceTree = SOURCE_ROOT; };
 		B5A20E1829B4A19700035DE0 /* data */ = {isa = PBXFileReference; lastKnownFileType = text; name = data; path = "worktree/Cataclysm-BN/data"; sourceTree = SOURCE_ROOT; };
@@ -2084,7 +2095,6 @@
 		B5ED454D29B47DA20015647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5ED454E29B47DBA0015647C /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		B5ED454F29B47DE10015647C /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
-		B5F97C66259C08B500C5A910 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B5FCB825295720C400BD43A4 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
@@ -2252,7 +2262,7 @@
 			isa = PBXGroup;
 			children = (
 				B558CB72270E0D3C00410845 /* Cataclysm-BN */,
-				B5F97C66259C08B500C5A910 /* main.mm */,
+				B590B5F629B9E03B00AF8258 /* CDDA_main.cpp */,
 				B5127665289C5723004882AA /* version.cpp */,
 			);
 			path = src;
@@ -2281,6 +2291,8 @@
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
 				B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */,
 				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
+				B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */,
+				B590B60129B9E18100AF8258 /* CDDA_main.h */,
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
 				B511BB8C29744DCD00139993 /* game_dependent.mm */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
@@ -2323,6 +2335,7 @@
 			isa = PBXGroup;
 			children = (
 				B531B869270E19E700155C37 /* runtime_handlers.h */,
+				B590B60229B9E1F500AF8258 /* CDDA_main_patch.h */,
 			);
 			path = "CDDA-overrides";
 			sourceTree = "<group>";
@@ -2810,7 +2823,7 @@
 		B5A20DFE29B488FF00035DE0 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				B5A20DFF29B4891E00035DE0 /* CDDA_iOS_main.mm */,
+				B590B60329B9E45400AF8258 /* CDDA_main.cpp */,
 				B526C62729B4AF4F0086172F /* version.cpp */,
 			);
 			path = src;
@@ -4243,6 +4256,7 @@
 				B501C9FC297411E800CB965C /* GamePadViewController.m in Sources */,
 				B511BB8F29744DCD00139993 /* game_dependent.mm in Sources */,
 				B501C9FD297411E800CB965C /* npctalk_funcs.cpp in Sources */,
+				B590B5F729B9E03B00AF8258 /* CDDA_main.cpp in Sources */,
 				B501C9FE297411E800CB965C /* iteminfo_query.cpp in Sources */,
 				B501C9FF297411E800CB965C /* mapdata.cpp in Sources */,
 				B501CA00297411E800CB965C /* filesystem.cpp in Sources */,
@@ -4304,7 +4318,6 @@
 				B501CA3A297411E800CB965C /* gamemode.cpp in Sources */,
 				B501CA3B297411E800CB965C /* editmap.cpp in Sources */,
 				B501CA3C297411E800CB965C /* projectile.cpp in Sources */,
-				B501CA3D297411E800CB965C /* main.mm in Sources */,
 				B501CA3E297411E800CB965C /* trait_group.cpp in Sources */,
 				B501CA3F297411E800CB965C /* npc_class.cpp in Sources */,
 				B501CA40297411E800CB965C /* game_ui.cpp in Sources */,
@@ -4343,6 +4356,7 @@
 				B501CA5F297411E800CB965C /* pixel_minimap.cpp in Sources */,
 				B501CA60297411E800CB965C /* item_factory.cpp in Sources */,
 				B501CA61297411E800CB965C /* field_type.cpp in Sources */,
+				B590B5FE29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */,
 				B501CA62297411E800CB965C /* overmap_connection.cpp in Sources */,
 				B501CA63297411E800CB965C /* stomach.cpp in Sources */,
 				B501CA64297411E800CB965C /* mondefense.cpp in Sources */,
@@ -4559,6 +4573,7 @@
 				B576B4AD297303D500221544 /* debug.cpp in Sources */,
 				B576B479297303D500221544 /* player_activity.cpp in Sources */,
 				B576B43A297303D500221544 /* field.cpp in Sources */,
+				B590B5FF29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */,
 				B5625BAB29AFB87400BA1FDF /* rot.cpp in Sources */,
 				B576B44A297303D500221544 /* morale.cpp in Sources */,
 				B576B417297303D500221544 /* json.cpp in Sources */,
@@ -4648,6 +4663,7 @@
 				B576B494297303D500221544 /* armor_layers.cpp in Sources */,
 				B576B45D297303D500221544 /* activity_handlers.cpp in Sources */,
 				B576B53E297303D500221544 /* item_category.cpp in Sources */,
+				B590B5F829B9E03B00AF8258 /* CDDA_main.cpp in Sources */,
 				B5625BA529AFB87400BA1FDF /* avatar_functions.cpp in Sources */,
 				B576B446297303D500221544 /* consumption.cpp in Sources */,
 				B576B437297303D500221544 /* vehicle_autodrive.cpp in Sources */,
@@ -4666,7 +4682,6 @@
 				B576B4D1297303D500221544 /* editmap.cpp in Sources */,
 				B590B5EF29B9BD5800AF8258 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B576B4EB297303D500221544 /* projectile.cpp in Sources */,
-				B576B55A2973044300221544 /* main.mm in Sources */,
 				B576B435297303D500221544 /* trait_group.cpp in Sources */,
 				B576B454297303D500221544 /* npc_class.cpp in Sources */,
 				B576B442297303D500221544 /* game_ui.cpp in Sources */,
@@ -4737,6 +4752,7 @@
 				B5A2FDB929B4836000035DE0 /* turret.cpp in Sources */,
 				B5A2FDC529B4836000035DE0 /* clothing_mod.cpp in Sources */,
 				B5A2FD5729B4835F00035DE0 /* help.cpp in Sources */,
+				B590B60629B9E87E00AF8258 /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */,
 				B5A2FDDF29B4836000035DE0 /* overmap_ui.cpp in Sources */,
 				B5A2FD2E29B4835F00035DE0 /* character_martial_arts.cpp in Sources */,
 				B5A2FD4929B4835F00035DE0 /* field.cpp in Sources */,
@@ -4906,8 +4922,10 @@
 				B5A2FD2729B4835F00035DE0 /* line.cpp in Sources */,
 				B5A2FE1129B4836100035DE0 /* posix_time.cpp in Sources */,
 				B5A2FD8D29B4836000035DE0 /* input.cpp in Sources */,
+				B590B60029B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */,
 				B5A2FDF329B4836100035DE0 /* mongroup.cpp in Sources */,
 				B5A2FE1229B4836100035DE0 /* weather.cpp in Sources */,
+				B590B60829B9E88700AF8258 /* PaywallUnlimitedFunctionality.m in Sources */,
 				B5A2FD4529B4835F00035DE0 /* armor_layers.cpp in Sources */,
 				B5A2FE4429B4836100035DE0 /* mattack_actors.cpp in Sources */,
 				B5A2FDCE29B4836000035DE0 /* magic_enchantment.cpp in Sources */,
@@ -4941,6 +4959,7 @@
 				B5A2FE1729B4836100035DE0 /* harvest.cpp in Sources */,
 				B5A2FD7529B4836000035DE0 /* mission_place.cpp in Sources */,
 				B5A20E1229B489D300035DE0 /* GamePadViewController.m in Sources */,
+				B590B60729B9E88400AF8258 /* displayInitialPaywall.c in Sources */,
 				B5A2FD6329B4836000035DE0 /* mission_util.cpp in Sources */,
 				B5A2FE3129B4836100035DE0 /* iteminfo_query.cpp in Sources */,
 				B5A2FE1429B4836100035DE0 /* item_contents.cpp in Sources */,
@@ -4965,10 +4984,12 @@
 				B5A2FD6029B4836000035DE0 /* visitable.cpp in Sources */,
 				B5A2FD2D29B4835F00035DE0 /* string_id_null_ids.cpp in Sources */,
 				B5A2FD9C29B4836000035DE0 /* map_field.cpp in Sources */,
+				B590B60529B9E86E00AF8258 /* cdda_firebase.m in Sources */,
 				B5A2FE2529B4836100035DE0 /* effect.cpp in Sources */,
 				B5A2FD8329B4836000035DE0 /* ui.cpp in Sources */,
 				B5A2FE0D29B4836100035DE0 /* vehicle_part.cpp in Sources */,
 				B5A2FD2A29B4835F00035DE0 /* iuse_software_snake.cpp in Sources */,
+				B590B60429B9E45400AF8258 /* CDDA_main.cpp in Sources */,
 				B5A2FD6F29B4836000035DE0 /* filesystem.cpp in Sources */,
 				B5A2FD4829B4835F00035DE0 /* flag.cpp in Sources */,
 				B5A2FE3329B4836100035DE0 /* player_display.cpp in Sources */,
@@ -4998,7 +5019,6 @@
 				B5A2FD4F29B4835F00035DE0 /* inventory_ui.cpp in Sources */,
 				B5A2FDDC29B4836000035DE0 /* behavior_strategy.cpp in Sources */,
 				B5A2FD7129B4836000035DE0 /* creature_tracker.cpp in Sources */,
-				B5A20E0329B4892000035DE0 /* CDDA_iOS_main.mm in Sources */,
 				B5A2FD3829B4835F00035DE0 /* newcharacter.cpp in Sources */,
 				B5A2FD8529B4836000035DE0 /* pixel_minimap_projectors.cpp in Sources */,
 				B5A2FD1C29B4835F00035DE0 /* iuse_software_sokoban.cpp in Sources */,
@@ -5222,6 +5242,10 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
@@ -5251,6 +5275,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5561,6 +5589,10 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
@@ -5590,6 +5622,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5698,6 +5734,10 @@
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry/Sentry.framework/Headers\"",
@@ -5728,6 +5768,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
