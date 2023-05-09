@@ -36,7 +36,7 @@ extern "C"
 #import "displayInitialPaywall.h"
 #import "PaywallUnlimitedFunctionality.h"
 
-void subscribeSoon(int attempt=1) {
+void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(int attempt=1) {
     dispatch_after(
             dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),
             dispatch_get_main_queue(),
@@ -44,7 +44,7 @@ void subscribeSoon(int attempt=1) {
                 NSLog(@"Trying to subscribe to events with %i attempt.",
                         attempt);
                 if (!subscribeDisplayingPaywallToCDDAEvents()) {
-                    subscribeSoon(attempt + 1);
+                    repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(attempt + 1);
                 };
             }
     );
@@ -64,14 +64,7 @@ int CDDA_iOS_main(NSString* documentPath) {
     
     SDL_iPhoneSetEventPump(SDL_TRUE);
     if (!isUnlimitedFunctionalityUnlocked()) {
-        dispatch_after(
-                       dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),
-                       dispatch_get_main_queue(),
-                       ^{
-                           displayInitialPaywall();
-                       }
-                       );
-        subscribeSoon();
+        repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds();
     }
     int exitCode = CDDA_main(newArgumentsCount, stringArgs);
     SDL_iPhoneSetEventPump(SDL_FALSE);

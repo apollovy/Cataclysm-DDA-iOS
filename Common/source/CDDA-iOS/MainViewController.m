@@ -12,6 +12,7 @@
 #import "path_utils.h"
 
 #import "MainViewController.h"
+#import "displayInitialPaywall.h"
 
 
 @implementation MainViewController
@@ -25,6 +26,10 @@
     self.progressWrapper.alpha = 0;
 }
 
+-(void)viewDidDisappear:(BOOL)animated
+{
+    displayInitialPaywall();
+}
 -(void)openSettings:(id)sender
 {
 #pragma clang diagnostic push

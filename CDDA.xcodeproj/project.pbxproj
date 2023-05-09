@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		481D1EC3C0CC73169D37E4FC /* Pods_CDDA0F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18632A7B4982B04B949BB799 /* Pods_CDDA0F.framework */; };
+		481D1EC3C0CC73169D37E4FC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		61E64ADA4D769823A63C9CB9 /* Pods_CDDA0G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */; };
 		A252EA703B7FAB4517AD075B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		B501C91C297411E800CB965C /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EF270E11D0002163AD /* text_snippets.cpp */; };
 		B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
@@ -359,6 +360,11 @@
 		B511BB9029744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B518A567297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
+		B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
+		B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
+		B5237F392A095526006B3BE8 /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
+		B5237F3A2A095526006B3BE8 /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
+		B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
 		B526C62529B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B526C62629B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B526C62829B4AF4F0086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B526C62729B4AF4F0086172F /* version.cpp */; };
@@ -381,7 +387,6 @@
 		B5625BAB29AFB87400BA1FDF /* rot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9D29AFB87200BA1FDF /* rot.cpp */; };
 		B5625BAC29AFB87400BA1FDF /* character_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625BA229AFB87300BA1FDF /* character_effects.cpp */; };
 		B5625BAD29AFB87400BA1FDF /* character_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625BA229AFB87300BA1FDF /* character_effects.cpp */; };
-		B57098E12A0926E1002EF848 /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */; };
 		B57098EC2A0926E1002EF848 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B570990D2A0926E1002EF848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
 		B57099102A0926E1002EF848 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
@@ -391,13 +396,10 @@
 		B570996E2A0926E1002EF848 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
 		B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
-		B570998E2A0926E1002EF848 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
 		B57099962A0926E1002EF848 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B57099AF2A0926E1002EF848 /* GamePadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50B447125A24ECB00628243 /* GamePadViewController.m */; };
-		B57099B02A0926E1002EF848 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
-		B57099C92A0926E1002EF848 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA238E51E9785C5F120F6E /* cdda_firebase.m */; };
 		B57099D32A0926E1002EF848 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B57099FA2A0926E1002EF848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B57099FB2A0926E1002EF848 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
@@ -416,7 +418,6 @@
 		B5709A272A0926E1002EF848 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54195C82955BBEA0035CC2F /* StoreKit.framework */; };
 		B5709A282A0926E1002EF848 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B5709A292A0926E1002EF848 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
-		B5709A2A2A0926E1002EF848 /* Pods_CDDA0F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18632A7B4982B04B949BB799 /* Pods_CDDA0F.framework */; };
 		B5709A2C2A0926E1002EF848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B5709A2D2A0926E1002EF848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B5709A2F2A0926E1002EF848 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B555591025D5BC8F00CD2E90 /* Settings.bundle */; };
@@ -1153,6 +1154,8 @@
 		B57B282D29741CA90043A513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57B282B29741CA80043A513 /* GoogleService-Info.plist */; };
 		B57B283129741D680043A513 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B57B282E29741D510043A513 /* mo */; };
 		B57B283229741DBB0043A513 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B57B282E29741D510043A513 /* mo */; };
+		B58480642A0A785600ADA17D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B58480592A0A785600ADA17D /* GoogleService-Info.plist */; };
+		B58480662A0A794B00ADA17D /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B58480652A0A794700ADA17D /* PaywallSettings.plist */; };
 		B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B58679DF260402B600EACF2C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B58679E0260402B600EACF2C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
@@ -1520,6 +1523,8 @@
 		B5A2FE5729B4869F00035DE0 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5ED454F29B47DE10015647C /* icon_1024x1024.png */; };
 		B5A2FE5829B486C200035DE0 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5A2FE5029B4868300035DE0 /* gfx */; };
 		B5A2FE5929B486D400035DE0 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5A2FE5229B4868400035DE0 /* mo */; };
+		B5A805282A0AC871009F8876 /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */; };
+		B5A8052C2A0ACADF009F8876 /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A8052B2A0AC94D009F8876 /* getEventTypeCategory.cpp */; };
 		B5BD79F6297705F8001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */; };
 		B5BD7A19297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
 		B5BD7A1C29770707001E3EAA /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */; };
@@ -1537,6 +1542,7 @@
 		B5ED452929B47C950015647C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B5ED452A29B47C950015647C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */; };
+		D138F4137888FA6D3BA8DBFE /* Pods_CDDA0F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F201E72B3AD3AE3BF8FFCB18 /* Pods_CDDA0F.framework */; };
 		E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */; };
 		F71C319D074BA0A92F99666D /* Pods_CBN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C4C44C48B333F1514F9AC /* Pods_CBN.framework */; };
 /* End PBXBuildFile section */
@@ -1769,14 +1775,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		18632A7B4982B04B949BB799 /* Pods_CDDA0F.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA0F.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBNfreeIAP.release.xcconfig"; path = "Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP.release.xcconfig"; sourceTree = "<group>"; };
 		62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.release.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.release.xcconfig"; sourceTree = "<group>"; };
+		682E346F6D652CB3386A9607 /* Pods-CDDA0G.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0G.debug.xcconfig"; path = "Target Support Files/Pods-CDDA0G/Pods-CDDA0G.debug.xcconfig"; sourceTree = "<group>"; };
 		6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBN.release.xcconfig"; path = "Target Support Files/Pods-CBN/Pods-CBN.release.xcconfig"; sourceTree = "<group>"; };
 		757C4C44C48B333F1514F9AC /* Pods_CBN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBNfreeIAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
 		8DD17C755D49E2A0EBF7F4AD /* Pods-Paywall debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.debug.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.debug.xcconfig"; sourceTree = "<group>"; };
+		90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA0G.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992B789ABD77689A2D5EC16A /* Pods-CBN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBN.debug.xcconfig"; path = "Target Support Files/Pods-CBN/Pods-CBN.debug.xcconfig"; sourceTree = "<group>"; };
 		9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paywall_debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3038FE10863690F4230FCE7 /* Pods-Paywall debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.release.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.release.xcconfig"; sourceTree = "<group>"; };
@@ -2340,6 +2347,8 @@
 		B57B282829741C250043A513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B57B282B29741CA80043A513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B57B282E29741D510043A513 /* mo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mo; path = "worktree/Cataclysm-BN/lang/mo"; sourceTree = SOURCE_ROOT; };
+		B58480592A0A785600ADA17D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B58480652A0A794700ADA17D /* PaywallSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
@@ -2945,6 +2954,10 @@
 		B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_iOS_main.h; sourceTree = "<group>"; };
 		B5A5BEE925F7F31F00EEEA0F /* path_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = path_utils.m; sourceTree = "<group>"; };
 		B5A5BEF025F7F51300EEEA0F /* path_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = path_utils.h; sourceTree = "<group>"; };
+		B5A805232A0AC781009F8876 /* EventTypeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTypeCategory.h; sourceTree = "<group>"; };
+		B5A805262A0AC7EC009F8876 /* getEventTypeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getEventTypeCategory.h; sourceTree = "<group>"; };
+		B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getEventTypeCategory.cpp; sourceTree = "<group>"; };
+		B5A8052B2A0AC94D009F8876 /* getEventTypeCategory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getEventTypeCategory.cpp; sourceTree = "<group>"; };
 		B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = subscribeDisplayingPaywallToCDDAEvents.cpp; sourceTree = "<group>"; };
 		B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PaywallDisplayEventSubscriber.mm; sourceTree = "<group>"; };
 		B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
@@ -2958,6 +2971,7 @@
 		B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
+		B84339897945E68A045E797E /* Pods-CDDA0G.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0G.release.xcconfig"; path = "Target Support Files/Pods-CDDA0G/Pods-CDDA0G.release.xcconfig"; sourceTree = "<group>"; };
 		CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBNfreeIAP.debug.xcconfig"; path = "Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
 		D0AA238E51E9785C5F120F6E /* cdda_firebase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cdda_firebase.m; sourceTree = "<group>"; };
@@ -2965,6 +2979,7 @@
 		D0AA29BE017770770521AE8B /* BackspaceInMenuTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackspaceInMenuTest.swift; sourceTree = "<group>"; };
 		D0AA2AB0F3F3686FB5EFF57C /* cdda_firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cdda_firebase.h; sourceTree = "<group>"; };
 		D710729048186531BCA67AEE /* Pods-CDDA0F.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0F.release.xcconfig"; path = "Target Support Files/Pods-CDDA0F/Pods-CDDA0F.release.xcconfig"; sourceTree = "<group>"; };
+		F201E72B3AD3AE3BF8FFCB18 /* Pods_CDDA0F.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA0F.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3020,7 +3035,7 @@
 				B5709A272A0926E1002EF848 /* StoreKit.framework in Frameworks */,
 				B5709A282A0926E1002EF848 /* CoreMotion.framework in Frameworks */,
 				B5709A292A0926E1002EF848 /* GameController.framework in Frameworks */,
-				B5709A2A2A0926E1002EF848 /* Pods_CDDA0F.framework in Frameworks */,
+				61E64ADA4D769823A63C9CB9 /* Pods_CDDA0G.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3082,7 +3097,8 @@
 				B5ED452829B47C950015647C /* StoreKit.framework in Frameworks */,
 				B5ED452929B47C950015647C /* CoreMotion.framework in Frameworks */,
 				B5ED452A29B47C950015647C /* GameController.framework in Frameworks */,
-				481D1EC3C0CC73169D37E4FC /* Pods_CDDA0F.framework in Frameworks */,
+				481D1EC3C0CC73169D37E4FC /* (null) in Frameworks */,
+				D138F4137888FA6D3BA8DBFE /* Pods_CDDA0F.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3102,6 +3118,8 @@
 				6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */,
 				AB7CE7FDAB55628876236D9C /* Pods-CDDA0F.debug.xcconfig */,
 				D710729048186531BCA67AEE /* Pods-CDDA0F.release.xcconfig */,
+				682E346F6D652CB3386A9607 /* Pods-CDDA0G.debug.xcconfig */,
+				B84339897945E68A045E797E /* Pods-CDDA0G.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -3621,6 +3639,7 @@
 		B5709A4F2A09279C002EF848 /* 0.G */ = {
 			isa = PBXGroup;
 			children = (
+				B58480592A0A785600ADA17D /* GoogleService-Info.plist */,
 				B5709A662A092AAC002EF848 /* CDDA */,
 				B5709A5E2A092837002EF848 /* src */,
 				B5709A522A092821002EF848 /* App.entitlements */,
@@ -4076,7 +4095,6 @@
 		B576B57A297306C600221544 /* CBNfreeIAP */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */,
 				B57B27F7297415770043A513 /* InfoPlist.strings */,
 				B501CBE52974154600CB965C /* App.entitlements */,
 				B501CBE62974154700CB965C /* Info.plist */,
@@ -4119,7 +4137,8 @@
 				9C4C91998CA335082E2A8080 /* Pods_Paywall_debug.framework */,
 				757C4C44C48B333F1514F9AC /* Pods_CBN.framework */,
 				837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */,
-				18632A7B4982B04B949BB799 /* Pods_CDDA0F.framework */,
+				90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */,
+				F201E72B3AD3AE3BF8FFCB18 /* Pods_CDDA0F.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4477,6 +4496,24 @@
 			path = CDDA;
 			sourceTree = "<group>";
 		};
+		B5A805242A0AC7CE009F8876 /* CDDA */ = {
+			isa = PBXGroup;
+			children = (
+				B58480652A0A794700ADA17D /* PaywallSettings.plist */,
+				B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */,
+			);
+			path = CDDA;
+			sourceTree = "<group>";
+		};
+		B5A805252A0AC7D4009F8876 /* CBN */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */,
+				B5A8052B2A0AC94D009F8876 /* getEventTypeCategory.cpp */,
+			);
+			path = CBN;
+			sourceTree = "<group>";
+		};
 		B5B01B98259BF0480023AB00 /* source */ = {
 			isa = PBXGroup;
 			children = (
@@ -4500,14 +4537,18 @@
 		B5D5CB482971C64B00CA0FC0 /* CDDA */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */,
-				B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */,
-				B53D9DEF297BDAD900A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.h */,
-				B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */,
+				B5A805252A0AC7D4009F8876 /* CBN */,
+				B5A805242A0AC7CE009F8876 /* CDDA */,
 				B53D9E0B297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.h */,
 				B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */,
-				B53D9E12297BF53600A23F16 /* EventsCountManager.m */,
+				B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */,
 				B53D9E1E297BF54400A23F16 /* EventsCountManager.h */,
+				B53D9E12297BF53600A23F16 /* EventsCountManager.m */,
+				B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */,
+				B53D9DEF297BDAD900A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.h */,
+				B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */,
+				B5A805232A0AC781009F8876 /* EventTypeCategory.h */,
+				B5A805262A0AC7EC009F8876 /* getEventTypeCategory.h */,
 			);
 			name = CDDA;
 			path = "Libraries/CDDA-Paywall/src/CDDA";
@@ -4693,6 +4734,7 @@
 				B5709A3C2A0926E1002EF848 /* Copy mo to lang */,
 				B5709A3E2A0926E1002EF848 /* Remove redundant directories from data */,
 				B5709A3F2A0926E1002EF848 /* [CP] Embed Pods Frameworks */,
+				F0DAC377790271C417AEB9B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4944,7 +4986,9 @@
 				B5709A2F2A0926E1002EF848 /* Settings.bundle in Resources */,
 				B5709A302A0926E1002EF848 /* LaunchScreen.storyboard in Resources */,
 				B5709A312A0926E1002EF848 /* UIControls.storyboard in Resources */,
+				B58480642A0A785600ADA17D /* GoogleService-Info.plist in Resources */,
 				B5709A322A0926E1002EF848 /* Localizable.strings in Resources */,
+				B58480662A0A794B00ADA17D /* PaywallSettings.plist in Resources */,
 				B5709A342A0926E1002EF848 /* dPad-None@2x.png in Resources */,
 				B5709ACB2A092B7F002EF848 /* data in Resources */,
 				B5709A642A0928CE002EF848 /* Assets.xcassets in Resources */,
@@ -5151,7 +5195,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CDDA0F-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CDDA0G-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5241,15 +5285,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CDDA0F/Pods-CDDA0F-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CDDA0F/Pods-CDDA0F-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0F/Pods-CDDA0F-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B576B26A2972F94D00221544 /* [CP] Check Pods Manifest.lock */ = {
@@ -5481,6 +5525,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0F/Pods-CDDA0F-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DAC377790271C417AEB9B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -5862,8 +5923,8 @@
 				B5709BA42A092B8A002EF848 /* worldfactory.cpp in Sources */,
 				B5709CBE2A092CE9002EF848 /* unicode.cpp in Sources */,
 				B5709D492A092CED002EF848 /* scent_block.cpp in Sources */,
-				B57098E12A0926E1002EF848 /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */,
 				B5709B942A092B89002EF848 /* bodypart.cpp in Sources */,
+				B5A805282A0AC871009F8876 /* getEventTypeCategory.cpp in Sources */,
 				B5709CE32A092CEA002EF848 /* skill.cpp in Sources */,
 				B5709B722A092B88002EF848 /* character_ammo.cpp in Sources */,
 				B5709CD22A092CE9002EF848 /* vehicle_display.cpp in Sources */,
@@ -5941,6 +6002,7 @@
 				B5709B3A2A092B87002EF848 /* weather.cpp in Sources */,
 				B5709B4C2A092B88002EF848 /* character_modifier.cpp in Sources */,
 				B5709CD72A092CEA002EF848 /* talker_monster.cpp in Sources */,
+				B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */,
 				B5709B332A092B87002EF848 /* iuse_software_kitten.cpp in Sources */,
 				B5709D0D2A092CEB002EF848 /* missiondef.cpp in Sources */,
 				B5709D1F2A092CEC002EF848 /* smart_controller_ui.cpp in Sources */,
@@ -6032,7 +6094,6 @@
 				B5709CD62A092CE9002EF848 /* mapgendata.cpp in Sources */,
 				B5709B752A092B88002EF848 /* auto_note.cpp in Sources */,
 				B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */,
-				B570998E2A0926E1002EF848 /* PaywallUnlimitedFunctionality.m in Sources */,
 				B5709B6E2A092B88002EF848 /* construction_category.cpp in Sources */,
 				B5709B432A092B87002EF848 /* weakpoint.cpp in Sources */,
 				B5709CEF2A092CEA002EF848 /* regional_settings.cpp in Sources */,
@@ -6071,6 +6132,8 @@
 				B5709B4F2A092B88002EF848 /* item.cpp in Sources */,
 				B5709B6A2A092B88002EF848 /* json_loader.cpp in Sources */,
 				B5709BCC2A092C3A002EF848 /* event_field_transformations.cpp in Sources */,
+				B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
+				B5237F392A095526006B3BE8 /* PaywallDisplayEventSubscriber.mm in Sources */,
 				B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B5709B3E2A092B87002EF848 /* debug_menu.cpp in Sources */,
 				B5709D4D2A092CED002EF848 /* mission_start.cpp in Sources */,
@@ -6089,7 +6152,6 @@
 				B5709B882A092B89002EF848 /* creature_tracker.cpp in Sources */,
 				B5709CDD2A092CEA002EF848 /* item_location.cpp in Sources */,
 				B5709B672A092B88002EF848 /* line.cpp in Sources */,
-				B57099B02A0926E1002EF848 /* displayInitialPaywall.c in Sources */,
 				B5709D162A092CEB002EF848 /* sdltiles.cpp in Sources */,
 				B5709B152A092B86002EF848 /* wcwidth.cpp in Sources */,
 				B5709CFA2A092CEB002EF848 /* output.cpp in Sources */,
@@ -6106,7 +6168,6 @@
 				B5709D272A092CEC002EF848 /* inventory_ui.cpp in Sources */,
 				B5709B612A092B88002EF848 /* advanced_inv_pane.cpp in Sources */,
 				B5709B2A2A092B87002EF848 /* map.cpp in Sources */,
-				B57099C92A0926E1002EF848 /* cdda_firebase.m in Sources */,
 				B5709B5C2A092B88002EF848 /* widget.cpp in Sources */,
 				B5709B8D2A092B89002EF848 /* animation.cpp in Sources */,
 				B5709CA12A092CE8002EF848 /* item_action.cpp in Sources */,
@@ -6147,6 +6208,7 @@
 				B5709B0C2A092B86002EF848 /* iuse_software_snake.cpp in Sources */,
 				B5709B812A092B89002EF848 /* iuse_software_lightson.cpp in Sources */,
 				B5709B312A092B87002EF848 /* mapgen.cpp in Sources */,
+				B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B5709CF62A092CEA002EF848 /* stomach.cpp in Sources */,
 				B5709D4A2A092CED002EF848 /* mod_manager.cpp in Sources */,
 				B57099D32A0926E1002EF848 /* MainViewController.m in Sources */,
@@ -6245,6 +6307,7 @@
 				B5709B3B2A092B87002EF848 /* construction.cpp in Sources */,
 				B5709B392A092B87002EF848 /* vehicle_part.cpp in Sources */,
 				B5709CB42A092CE9002EF848 /* player_activity.cpp in Sources */,
+				B5237F3A2A095526006B3BE8 /* displayInitialPaywall.m in Sources */,
 				B5709D102A092CEB002EF848 /* units.cpp in Sources */,
 				B5709B702A092B88002EF848 /* distribution.cpp in Sources */,
 				B5709CA42A092CE8002EF848 /* ui_manager.cpp in Sources */,
@@ -6434,6 +6497,7 @@
 				B576B4B8297303D500221544 /* auto_note.cpp in Sources */,
 				B576B4A8297303D500221544 /* vehicle.cpp in Sources */,
 				B576B489297303D500221544 /* scent_map.cpp in Sources */,
+				B5A8052C2A0ACADF009F8876 /* getEventTypeCategory.cpp in Sources */,
 				B576B50A297303D500221544 /* artifact.cpp in Sources */,
 				B576B528297303D500221544 /* vehicle_display.cpp in Sources */,
 				B576B4F0297303D500221544 /* profession.cpp in Sources */,
@@ -7328,7 +7392,7 @@
 		};
 		B5709A412A0926E1002EF848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB7CE7FDAB55628876236D9C /* Pods-CDDA0F.debug.xcconfig */;
+			baseConfigurationReference = 682E346F6D652CB3386A9607 /* Pods-CDDA0G.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.G/App.entitlements;
 				CURRENT_PROJECT_VERSION = 4000;
@@ -7364,7 +7428,7 @@
 		};
 		B5709A422A0926E1002EF848 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D710729048186531BCA67AEE /* Pods-CDDA0F.release.xcconfig */;
+			baseConfigurationReference = B84339897945E68A045E797E /* Pods-CDDA0G.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.G/App.entitlements;
 				CURRENT_PROJECT_VERSION = 4000;
