@@ -78,16 +78,19 @@ PODS:
   - PromisesObjC (2.1.1)
   - ReusableXibViews (0.1.1)
   - SDL2 (2.0)
-  - Sentry (6.2.1):
-    - Sentry/Core (= 6.2.1)
-  - Sentry/Core (6.2.1)
+  - Sentry (8.5.0):
+    - Sentry/Core (= 8.5.0)
+    - SentryPrivate (= 8.5.0)
+  - Sentry/Core (8.5.0):
+    - SentryPrivate (= 8.5.0)
+  - SentryPrivate (8.5.0)
   - Zip (2.1.1)
 
 DEPENDENCIES:
   - CDDA-Paywall (from `./Libraries/CDDA-Paywall`)
   - SDL2 (from `./Libraries/SDL`)
-  - Sentry (= 6.2.1)
-  - Zip (~> 2.1)
+  - Sentry (~> 8)
+  - Zip (~> 2)
 
 SPEC REPOS:
   trunk:
@@ -101,6 +104,7 @@ SPEC REPOS:
     - PromisesObjC
     - ReusableXibViews
     - Sentry
+    - SentryPrivate
     - Zip
 
 EXTERNAL SOURCES:
@@ -121,9 +125,10 @@ SPEC CHECKSUMS:
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
   ReusableXibViews: 9e89f4415d8d62faf7e4f43b4bbf3298e811607a
   SDL2: 48b3bf5423c6eade6d2c8a2f669e8bad8f15455d
-  Sentry: 9b922b396b0e0bca8516a10e36b0ea3ebea5faf7
+  Sentry: 3be3f42e40e5a552935552e115744d5810a216d9
+  SentryPrivate: 8c9463280e282527f938d1a5d1d60f8e10ff279b
   Zip: 414f59909701fda9a84ab774ebe0f5449b1082cc
 
-PODFILE CHECKSUM: 77208f46e9ccd593287e5fab405d3b85151705e2
+PODFILE CHECKSUM: 0154709bc851f01af0d96ba0e55c1b1329041e10
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0

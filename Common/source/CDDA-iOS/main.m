@@ -15,14 +15,14 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        [SentrySDK startWithOptions: @{
-            @"dsn": [[NSBundle mainBundle] objectForInfoDictionaryKey: @"SentryDSN"],
+        [SentrySDK startWithConfigureOptions:^(SentryOptions *options) {
+            options.dsn = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"SentryDSN"];
 #ifdef DEBUG
-            @"debug": @YES,
-            @"environment": @"development",
+            options.debug = YES;
+            options.environment = @"development";
 #else
-            @"debug": @NO,
-            @"environment": @"production",
+            options.debug = NO;
+            options.environment = @"production";
 #endif
         }];
 

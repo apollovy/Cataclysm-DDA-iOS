@@ -1,7 +1,7 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
-pod 'Sentry', '6.2.1'  # FIXME: less strong dependency. Bump to v7
-pod 'Zip', '~> 2.1'  # FIXME: less strong dependency
+pod 'Sentry', '~> 8'
+pod 'Zip', '~> 2'
 pod 'SDL2', :path => './Libraries/SDL'
 
 target 'CBNfreeIAP' do
