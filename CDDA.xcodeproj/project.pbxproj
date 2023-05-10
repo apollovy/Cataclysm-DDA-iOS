@@ -7395,7 +7395,7 @@
 			baseConfigurationReference = 682E346F6D652CB3386A9607 /* Pods-CDDA0G.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.G/App.entitlements;
-				CURRENT_PROJECT_VERSION = 4000;
+				CURRENT_PROJECT_VERSION = 4001;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -7431,7 +7431,7 @@
 			baseConfigurationReference = B84339897945E68A045E797E /* Pods-CDDA0G.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.G/App.entitlements;
-				CURRENT_PROJECT_VERSION = 4000;
+				CURRENT_PROJECT_VERSION = 4001;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
