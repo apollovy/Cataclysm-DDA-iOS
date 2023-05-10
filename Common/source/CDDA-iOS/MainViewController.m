@@ -13,6 +13,7 @@
 
 #import "MainViewController.h"
 #import "displayInitialPaywall.h"
+#import "PaywallUnlimitedFunctionality.h"
 
 
 @implementation MainViewController
@@ -28,7 +29,10 @@
 
 -(void)viewDidDisappear:(BOOL)animated
 {
-    displayInitialPaywall();
+    [super viewDidDisappear:animated];
+    if (!isUnlimitedFunctionalityUnlocked()) {
+        displayInitialPaywall();
+    }
 }
 -(void)openSettings:(id)sender
 {
