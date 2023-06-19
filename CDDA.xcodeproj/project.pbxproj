@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BFDEEB9D1041E545F06929A /* Pods_CDDA0GFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8394EE004B8B0EFBE5ED61E3 /* Pods_CDDA0GFramework.framework */; };
 		481D1EC3C0CC73169D37E4FC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		61E64ADA4D769823A63C9CB9 /* Pods_CDDA0G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */; };
 		A252EA703B7FAB4517AD075B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		B34ADF90185FF99A42B745AE /* Pods_DynLoadTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB87C639FC57721EA8ECD47 /* Pods_DynLoadTest.framework */; };
 		B501C91C297411E800CB965C /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EF270E11D0002163AD /* text_snippets.cpp */; };
 		B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
 		B501C91E297411E800CB965C /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C07270E1216002163AD /* item.cpp */; };
@@ -1528,6 +1530,394 @@
 		B5BD79F6297705F8001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */; };
 		B5BD7A19297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
 		B5BD7A1C29770707001E3EAA /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */; };
+		B5CD3DC02A40B323008E4118 /* character_martial_arts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD22A092B7F002EF848 /* character_martial_arts.cpp */; };
+		B5CD3DC12A40B323008E4118 /* string_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C9B2A092CE7002EF848 /* string_id.cpp */; };
+		B5CD3DC22A40B323008E4118 /* pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C952A092CE7002EF848 /* pickup.cpp */; };
+		B5CD3DC32A40B323008E4118 /* iexamine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF32A092CD3002EF848 /* iexamine.cpp */; };
+		B5CD3DC42A40B323008E4118 /* dependency_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC52A092B7E002EF848 /* dependency_tree.cpp */; };
+		B5CD3DC52A40B323008E4118 /* lru_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ACA2A092B7F002EF848 /* lru_cache.cpp */; };
+		B5CD3DC62A40B323008E4118 /* computer_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AAD2A092B7B002EF848 /* computer_session.cpp */; };
+		B5CD3DC72A40B323008E4118 /* game_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC02A092C38002EF848 /* game_inventory.cpp */; };
+		B5CD3DC82A40B323008E4118 /* translation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C352A092CDB002EF848 /* translation.cpp */; };
+		B5CD3DC92A40B323008E4118 /* init.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C822A092CE4002EF848 /* init.cpp */; };
+		B5CD3DCA2A40B323008E4118 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C772A092CE3002EF848 /* material.cpp */; };
+		B5CD3DCB2A40B323008E4118 /* dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A832A092B77002EF848 /* dump.cpp */; };
+		B5CD3DCC2A40B323008E4118 /* map_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AFE2A092B85002EF848 /* map_memory.cpp */; };
+		B5CD3DCD2A40B323008E4118 /* morale_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BEF2A092CD2002EF848 /* morale_types.cpp */; };
+		B5CD3DCE2A40B323008E4118 /* npctrade_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C3B2A092CDC002EF848 /* npctrade_utils.cpp */; };
+		B5CD3DCF2A40B323008E4118 /* active_item_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF92A092B84002EF848 /* active_item_cache.cpp */; };
+		B5CD3DD02A40B323008E4118 /* fungal_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BA82A092C35002EF848 /* fungal_effects.cpp */; };
+		B5CD3DD12A40B323008E4118 /* item_contents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C872A092CE5002EF848 /* item_contents.cpp */; };
+		B5CD3DD22A40B323008E4118 /* effect_source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BAD2A092C36002EF848 /* effect_source.cpp */; };
+		B5CD3DD32A40B323008E4118 /* npc_attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BFF2A092CD4002EF848 /* npc_attack.cpp */; };
+		B5CD3DD42A40B323008E4118 /* visitable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A702A092B74002EF848 /* visitable.cpp */; };
+		B5CD3DD52A40B323008E4118 /* ui_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BED2A092CD2002EF848 /* ui_manager.cpp */; };
+		B5CD3DD62A40B323008E4118 /* overmapbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C032A092CD5002EF848 /* overmapbuffer.cpp */; };
+		B5CD3DD72A40B323008E4118 /* weather_gen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ADC2A092B81002EF848 /* weather_gen.cpp */; };
+		B5CD3DD82A40B323008E4118 /* construction_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD12A092B7F002EF848 /* construction_category.cpp */; };
+		B5CD3DD92A40B323008E4118 /* iuse_software_snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A6E2A092B74002EF848 /* iuse_software_snake.cpp */; };
+		B5CD3DDA2A40B323008E4118 /* widget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ABE2A092B7D002EF848 /* widget.cpp */; };
+		B5CD3DDB2A40B323008E4118 /* game_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BBC2A092C38002EF848 /* game_ui.cpp */; };
+		B5CD3DDC2A40B323008E4118 /* relic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C8D2A092CE6002EF848 /* relic.cpp */; };
+		B5CD3DDD2A40B323008E4118 /* ordered_static_globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C8F2A092CE6002EF848 /* ordered_static_globals.cpp */; };
+		B5CD3DDE2A40B323008E4118 /* medical_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C902A092CE6002EF848 /* medical_ui.cpp */; };
+		B5CD3DDF2A40B323008E4118 /* gamemode_defense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB72A092C37002EF848 /* gamemode_defense.cpp */; };
+		B5CD3DE02A40B323008E4118 /* savegame_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C332A092CDB002EF848 /* savegame_json.cpp */; };
+		B5CD3DE12A40B323008E4118 /* skill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C2C2A092CDA002EF848 /* skill.cpp */; };
+		B5CD3DE22A40B323008E4118 /* talker_monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C202A092CD8002EF848 /* talker_monster.cpp */; };
+		B5CD3DE32A40B323008E4118 /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AAF2A092B7B002EF848 /* action.cpp */; };
+		B5CD3DE42A40B323008E4118 /* text_style_check_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C412A092CDC002EF848 /* text_style_check_reader.cpp */; };
+		B5CD3DE52A40B323008E4118 /* try_parse_integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C832A092CE4002EF848 /* try_parse_integer.cpp */; };
+		B5CD3DE62A40B323008E4118 /* ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C882A092CE5002EF848 /* ui.cpp */; };
+		B5CD3DE72A40B323008E4118 /* character_body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ADF2A092B81002EF848 /* character_body.cpp */; };
+		B5CD3DE82A40B323008E4118 /* activity_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC02A092B7D002EF848 /* activity_tracker.cpp */; };
+		B5CD3DE92A40B323008E4118 /* npctalk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C9C2A092CE7002EF848 /* npctalk.cpp */; };
+		B5CD3DEA2A40B323008E4118 /* smart_controller_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C682A092CE1002EF848 /* smart_controller_ui.cpp */; };
+		B5CD3DEB2A40B323008E4118 /* butchery_requirements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A7D2A092B76002EF848 /* butchery_requirements.cpp */; };
+		B5CD3DEC2A40B323008E4118 /* past_games_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C252A092CD9002EF848 /* past_games_info.cpp */; };
+		B5CD3DED2A40B323008E4118 /* reachability_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C142A092CD7002EF848 /* reachability_cache.cpp */; };
+		B5CD3DEE2A40B323008E4118 /* computer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC12A092B7E002EF848 /* computer.cpp */; };
+		B5CD3DEF2A40B323008E4118 /* player_hardcoded_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C6A2A092CE1002EF848 /* player_hardcoded_effects.cpp */; };
+		B5CD3DF02A40B323008E4118 /* recipe_dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C2D2A092CDA002EF848 /* recipe_dictionary.cpp */; };
+		B5CD3DF12A40B323008E4118 /* character_crafting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A7C2A092B76002EF848 /* character_crafting.cpp */; };
+		B5CD3DF22A40B323008E4118 /* ammo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF42A092B84002EF848 /* ammo.cpp */; };
+		B5CD3DF32A40B323008E4118 /* scenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C9A2A092CE7002EF848 /* scenario.cpp */; };
+		B5CD3DF42A40B323008E4118 /* anatomy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE22A092B81002EF848 /* anatomy.cpp */; };
+		B5CD3DF52A40B323008E4118 /* character_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ACE2A092B7F002EF848 /* character_inventory.cpp */; };
+		B5CD3DF62A40B323008E4118 /* speed_description.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C632A092CE1002EF848 /* speed_description.cpp */; };
+		B5CD3DF72A40B323008E4118 /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C072A092CD5002EF848 /* unicode.cpp */; };
+		B5CD3DF82A40B323008E4118 /* vehicle_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C2A2A092CD9002EF848 /* vehicle_group.cpp */; };
+		B5CD3DFA2A40B323008E4118 /* activity_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A872A092B77002EF848 /* activity_type.cpp */; };
+		B5CD3DFB2A40B323008E4118 /* advanced_inv_pane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC32A092B7E002EF848 /* advanced_inv_pane.cpp */; };
+		B5CD3DFC2A40B323008E4118 /* advanced_inv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB82A092B7C002EF848 /* advanced_inv.cpp */; };
+		B5CD3DFD2A40B323008E4118 /* animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF12A092B83002EF848 /* animation.cpp */; };
+		B5CD3DFE2A40B323008E4118 /* character_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A7E2A092B76002EF848 /* character_oracle.cpp */; };
+		B5CD3DFF2A40B323008E4118 /* creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB32A092B7C002EF848 /* creature.cpp */; };
+		B5CD3E002A40B323008E4118 /* character_guns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A792A092B75002EF848 /* character_guns.cpp */; };
+		B5CD3E012A40B323008E4118 /* activity_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A742A092B75002EF848 /* activity_actor.cpp */; };
+		B5CD3E022A40B323008E4118 /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C302A092CDA002EF848 /* rng.cpp */; };
+		B5CD3E032A40B323008E4118 /* explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB42A092C37002EF848 /* explosion.cpp */; };
+		B5CD3E042A40B323008E4118 /* stomach.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C3F2A092CDC002EF848 /* stomach.cpp */; };
+		B5CD3E052A40B323008E4118 /* flexbuffer_json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BAA2A092C35002EF848 /* flexbuffer_json.cpp */; };
+		B5CD3E062A40B323008E4118 /* suffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF22A092CD2002EF848 /* suffer.cpp */; };
+		B5CD3E072A40B323008E4118 /* trait_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C082A092CD5002EF848 /* trait_group.cpp */; };
+		B5CD3E082A40B323008E4118 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709D622A09366A002EF848 /* util.cpp */; };
+		B5CD3E092A40B323008E4118 /* event_bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC52A092C39002EF848 /* event_bus.cpp */; };
+		B5CD3E0A2A40B323008E4118 /* item_category.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF62A092CD3002EF848 /* item_category.cpp */; };
+		B5CD3E0B2A40B323008E4118 /* idl_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709D612A09366A002EF848 /* idl_parser.cpp */; };
+		B5CD3E0C2A40B323008E4118 /* crafting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B032A092B85002EF848 /* crafting.cpp */; };
+		B5CD3E0D2A40B323008E4118 /* disease.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD72A092B80002EF848 /* disease.cpp */; };
+		B5CD3E0E2A40B323008E4118 /* assign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE52A092B82002EF848 /* assign.cpp */; };
+		B5CD3E0F2A40B323008E4118 /* npctrade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C322A092CDA002EF848 /* npctrade.cpp */; };
+		B5CD3E102A40B323008E4118 /* bodypart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF82A092B84002EF848 /* bodypart.cpp */; };
+		B5CD3E112A40B323008E4118 /* translation_plural_evaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C652A092CE1002EF848 /* translation_plural_evaluator.cpp */; };
+		B5CD3E122A40B323008E4118 /* achievement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A862A092B77002EF848 /* achievement.cpp */; };
+		B5CD3E132A40B323008E4118 /* missiondef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C562A092CDF002EF848 /* missiondef.cpp */; };
+		B5CD3E142A40B323008E4118 /* dispersion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AFF2A092B85002EF848 /* dispersion.cpp */; };
+		B5CD3E152A40B323008E4118 /* ranged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C572A092CDF002EF848 /* ranged.cpp */; };
+		B5CD3E162A40B323008E4118 /* mutation_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF72A092CD3002EF848 /* mutation_type.cpp */; };
+		B5CD3E172A40B323008E4118 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A8C2A092B77002EF848 /* map.cpp */; };
+		B5CD3E182A40B323008E4118 /* mutation_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C3C2A092CDC002EF848 /* mutation_data.cpp */; };
+		B5CD3E192A40B323008E4118 /* mutation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C862A092CE5002EF848 /* mutation.cpp */; };
+		B5CD3E1A2A40B323008E4118 /* monster_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C8C2A092CE6002EF848 /* monster_oracle.cpp */; };
+		B5CD3E1B2A40B323008E4118 /* shadowcasting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C892A092CE5002EF848 /* shadowcasting.cpp */; };
+		B5CD3E1C2A40B323008E4118 /* cellular_automata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AEB2A092B82002EF848 /* cellular_automata.cpp */; };
+		B5CD3E1D2A40B323008E4118 /* mattack_actors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C7D2A092CE4002EF848 /* mattack_actors.cpp */; };
+		B5CD3E1E2A40B323008E4118 /* fault.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC72A092C39002EF848 /* fault.cpp */; };
+		B5CD3E1F2A40B323008E4118 /* mongroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C5E2A092CE0002EF848 /* mongroup.cpp */; };
+		B5CD3E202A40B323008E4118 /* ballistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ABD2A092B7D002EF848 /* ballistics.cpp */; };
+		B5CD3E212A40B323008E4118 /* json_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ACD2A092B7F002EF848 /* json_loader.cpp */; };
+		B5CD3E222A40B323008E4118 /* item_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BEA2A092CD2002EF848 /* item_action.cpp */; };
+		B5CD3E232A40B323008E4118 /* panels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C472A092CDD002EF848 /* panels.cpp */; };
+		B5CD3E242A40B323008E4118 /* translation_document.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C8B2A092CE5002EF848 /* translation_document.cpp */; };
+		B5CD3E252A40B323008E4118 /* emit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC12A092C39002EF848 /* emit.cpp */; };
+		B5CD3E262A40B323008E4118 /* bodygraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ABF2A092B7D002EF848 /* bodygraph.cpp */; };
+		B5CD3E272A40B323008E4118 /* mapsharing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C0D2A092CD6002EF848 /* mapsharing.cpp */; };
+		B5CD3E282A40B323008E4118 /* auto_pickup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A992A092B79002EF848 /* auto_pickup.cpp */; };
+		B5CD3E292A40B323008E4118 /* string_formatter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C282A092CD9002EF848 /* string_formatter.cpp */; };
+		B5CD3E2A2A40B323008E4118 /* start_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C812A092CE4002EF848 /* start_location.cpp */; };
+		B5CD3E2B2A40B323008E4118 /* contents_change_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A722A092B75002EF848 /* contents_change_handler.cpp */; };
+		B5CD3E2C2A40B323008E4118 /* char_validity_check.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B022A092B85002EF848 /* char_validity_check.cpp */; };
+		B5CD3E2D2A40B323008E4118 /* descriptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A8A2A092B77002EF848 /* descriptions.cpp */; };
+		B5CD3E2E2A40B323008E4118 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE12A092B81002EF848 /* debug.cpp */; };
+		B5CD3E2F2A40B323008E4118 /* submap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C782A092CE3002EF848 /* submap.cpp */; };
+		B5CD3E302A40B323008E4118 /* test_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C6B2A092CE2002EF848 /* test_data.cpp */; };
+		B5CD3E312A40B323008E4118 /* mission_companion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C092A092CD5002EF848 /* mission_companion.cpp */; };
+		B5CD3E322A40B323008E4118 /* music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C9F2A092CE8002EF848 /* music.cpp */; };
+		B5CD3E332A40B323008E4118 /* projectile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C742A092CE3002EF848 /* projectile.cpp */; };
+		B5CD3E342A40B323008E4118 /* iuse_software_lightson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE42A092B82002EF848 /* iuse_software_lightson.cpp */; };
+		B5CD3E352A40B323008E4118 /* item_search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ACC2A092B7F002EF848 /* item_search.cpp */; };
+		B5CD3E362A40B323008E4118 /* item_pocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C5C2A092CE0002EF848 /* item_pocket.cpp */; };
+		B5CD3E372A40B323008E4118 /* veh_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C622A092CE0002EF848 /* veh_type.cpp */; };
+		B5CD3E382A40B323008E4118 /* wincurse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB72A092B7C002EF848 /* wincurse.cpp */; };
+		B5CD3E392A40B323008E4118 /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C272A092CD9002EF848 /* npc.cpp */; };
+		B5CD3E3A2A40B323008E4118 /* clzones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ABA2A092B7D002EF848 /* clzones.cpp */; };
+		B5CD3E3B2A40B323008E4118 /* translation_gendered.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF52A092CD3002EF848 /* translation_gendered.cpp */; };
+		B5CD3E3C2A40B323008E4118 /* martialarts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C442A092CDD002EF848 /* martialarts.cpp */; };
+		B5CD3E3D2A40B323008E4118 /* proficiency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C6E2A092CE2002EF848 /* proficiency.cpp */; };
+		B5CD3E3E2A40B323008E4118 /* iuse_software_kitten.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A952A092B78002EF848 /* iuse_software_kitten.cpp */; };
+		B5CD3E3F2A40B323008E4118 /* ascii_art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA82A092B7B002EF848 /* ascii_art.cpp */; };
+		B5CD3E402A40B323008E4118 /* sdl_geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C342A092CDB002EF848 /* sdl_geometry.cpp */; };
+		B5CD3E412A40B323008E4118 /* veh_interact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BFE2A092CD4002EF848 /* veh_interact.cpp */; };
+		B5CD3E422A40B323008E4118 /* itype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A8D2A092B78002EF848 /* itype.cpp */; };
+		B5CD3E432A40B323008E4118 /* overmap_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF82A092CD3002EF848 /* overmap_location.cpp */; };
+		B5CD3E442A40B323008E4118 /* vehicle_use.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC82A092B7E002EF848 /* vehicle_use.cpp */; };
+		B5CD3E452A40B323008E4118 /* magic_spell_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AAC2A092B7B002EF848 /* magic_spell_effect.cpp */; };
+		B5CD3E462A40B323008E4118 /* character_morale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE02A092B81002EF848 /* character_morale.cpp */; };
+		B5CD3E472A40B323008E4118 /* talker_character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C482A092CDD002EF848 /* talker_character.cpp */; };
+		B5CD3E482A40B323008E4118 /* teleport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C152A092CD7002EF848 /* teleport.cpp */; };
+		B5CD3E492A40B323008E4118 /* iuse_actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB92A092B7D002EF848 /* iuse_actor.cpp */; };
+		B5CD3E4A2A40B323008E4118 /* shop_cons_rate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C0C2A092CD6002EF848 /* shop_cons_rate.cpp */; };
+		B5CD3E4B2A40B323008E4118 /* mod_tileset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C3D2A092CDC002EF848 /* mod_tileset.cpp */; };
+		B5CD3E4C2A40B323008E4118 /* filesystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BBF2A092C38002EF848 /* filesystem.cpp */; };
+		B5CD3E4D2A40B323008E4118 /* lightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD42A092B80002EF848 /* lightmap.cpp */; };
+		B5CD3E4E2A40B323008E4118 /* mood_face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF42A092CD3002EF848 /* mood_face.cpp */; };
+		B5CD3E502A40B323008E4118 /* advanced_inv_listitem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ACF2A092B7F002EF848 /* advanced_inv_listitem.cpp */; };
+		B5CD3E512A40B323008E4118 /* item_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A782A092B75002EF848 /* item_stack.cpp */; };
+		B5CD3E522A40B323008E4118 /* iuse_software.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A7B2A092B76002EF848 /* iuse_software.cpp */; };
+		B5CD3E532A40B323008E4118 /* ammo_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A7F2A092B76002EF848 /* ammo_effect.cpp */; };
+		B5CD3E542A40B323008E4118 /* map_item_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A882A092B77002EF848 /* map_item_stack.cpp */; };
+		B5CD3E552A40B323008E4118 /* overmap_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF92A092CD3002EF848 /* overmap_ui.cpp */; };
+		B5CD3E562A40B323008E4118 /* scores_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C2F2A092CDA002EF848 /* scores_ui.cpp */; };
+		B5CD3E572A40B323008E4118 /* wish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA12A092B7A002EF848 /* wish.cpp */; };
+		B5CD3E582A40B323008E4118 /* overlay_ordering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C982A092CE7002EF848 /* overlay_ordering.cpp */; };
+		B5CD3E592A40B323008E4118 /* popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C402A092CDC002EF848 /* popup.cpp */; };
+		B5CD3E5A2A40B323008E4118 /* help.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C312A092CDA002EF848 /* help.cpp */; };
+		B5CD3E5B2A40B323008E4118 /* map_field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ABC2A092B7D002EF848 /* map_field.cpp */; };
+		B5CD3E5C2A40B323008E4118 /* cata_variant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B092A092B86002EF848 /* cata_variant.cpp */; };
+		B5CD3E5D2A40B323008E4118 /* pixel_minimap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C452A092CDD002EF848 /* pixel_minimap.cpp */; };
+		B5CD3E5E2A40B323008E4118 /* speech.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C602A092CE0002EF848 /* speech.cpp */; };
+		B5CD3E5F2A40B323008E4118 /* skill_boost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C762A092CE3002EF848 /* skill_boost.cpp */; };
+		B5CD3E602A40B323008E4118 /* mapgen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A932A092B78002EF848 /* mapgen.cpp */; };
+		B5CD3E612A40B323008E4118 /* compatibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A8B2A092B77002EF848 /* compatibility.cpp */; };
+		B5CD3E622A40B323008E4118 /* bionics_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF62A092B84002EF848 /* bionics_ui.cpp */; };
+		B5CD3E632A40B323008E4118 /* flag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC32A092C39002EF848 /* flag.cpp */; };
+		B5CD3E642A40B323008E4118 /* diary_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A762A092B75002EF848 /* diary_ui.cpp */; };
+		B5CD3E652A40B323008E4118 /* morale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C582A092CDF002EF848 /* morale.cpp */; };
+		B5CD3E662A40B323008E4118 /* damage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A902A092B78002EF848 /* damage.cpp */; };
+		B5CD3E672A40B323008E4118 /* mod_manager_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C4E2A092CDE002EF848 /* mod_manager_ui.cpp */; };
+		B5CD3E682A40B323008E4118 /* behavior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD62A092B80002EF848 /* behavior.cpp */; };
+		B5CD3E692A40B323008E4118 /* localized_comparator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A982A092B79002EF848 /* localized_comparator.cpp */; };
+		B5CD3E6A2A40B323008E4118 /* activity_item_handling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AFA2A092B85002EF848 /* activity_item_handling.cpp */; };
+		B5CD3E6B2A40B323008E4118 /* character_escape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF32A092B84002EF848 /* character_escape.cpp */; };
+		B5CD3E6C2A40B323008E4118 /* do_turn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A852A092B77002EF848 /* do_turn.cpp */; };
+		B5CD3E6D2A40B323008E4118 /* mapgenformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C6F2A092CE2002EF848 /* mapgenformat.cpp */; };
+		B5CD3E6E2A40B323008E4118 /* ncurses_def.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C662A092CE1002EF848 /* ncurses_def.cpp */; };
+		B5CD3E6F2A40B323008E4118 /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB22A092C37002EF848 /* event.cpp */; };
+		B5CD3E702A40B323008E4118 /* player_activity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BFD2A092CD4002EF848 /* player_activity.cpp */; };
+		B5CD3E712A40B323008E4118 /* point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C692A092CE1002EF848 /* point.cpp */; };
+		B5CD3E722A40B323008E4118 /* mutation_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BEE2A092CD2002EF848 /* mutation_ui.cpp */; };
+		B5CD3E732A40B323008E4118 /* sdl_wrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C122A092CD6002EF848 /* sdl_wrappers.cpp */; };
+		B5CD3E742A40B323008E4118 /* talker_avatar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1C2A092CD8002EF848 /* talker_avatar.cpp */; };
+		B5CD3E752A40B323008E4118 /* coordinate_conversions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AAB2A092B7B002EF848 /* coordinate_conversions.cpp */; };
+		B5CD3E762A40B323008E4118 /* sdl_gamepad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C8E2A092CE6002EF848 /* sdl_gamepad.cpp */; };
+		B5CD3E772A40B323008E4118 /* sdltiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C5F2A092CE0002EF848 /* sdltiles.cpp */; };
+		B5CD3E782A40B323008E4118 /* trapfunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C182A092CD7002EF848 /* trapfunc.cpp */; };
+		B5CD3E792A40B323008E4118 /* faction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB92A092C38002EF848 /* faction.cpp */; };
+		B5CD3E7A2A40B323008E4118 /* scent_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C002A092CD4002EF848 /* scent_map.cpp */; };
+		B5CD3E7B2A40B323008E4118 /* gamemode_tutorial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BBE2A092C38002EF848 /* gamemode_tutorial.cpp */; };
+		B5CD3E7C2A40B323008E4118 /* mod_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C932A092CE6002EF848 /* mod_manager.cpp */; };
+		B5CD3E7D2A40B323008E4118 /* clothing_mod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A822A092B76002EF848 /* clothing_mod.cpp */; };
+		B5CD3E7E2A40B323008E4118 /* sdlsound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C732A092CE3002EF848 /* sdlsound.cpp */; };
+		B5CD3E7F2A40B323008E4118 /* iuse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF72A092B84002EF848 /* iuse.cpp */; };
+		B5CD3E802A40B323008E4118 /* field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BA92A092C35002EF848 /* field.cpp */; };
+		B5CD3E812A40B323008E4118 /* shearing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C992A092CE7002EF848 /* shearing.cpp */; };
+		B5CD3E822A40B323008E4118 /* handle_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB32A092C37002EF848 /* handle_action.cpp */; };
+		B5CD3E832A40B323008E4118 /* melee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C0B2A092CD6002EF848 /* melee.cpp */; };
+		B5CD3E842A40B323008E4118 /* npctalk_funcs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C422A092CDC002EF848 /* npctalk_funcs.cpp */; };
+		B5CD3E852A40B323008E4118 /* magic_teleporter_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A9E2A092B79002EF848 /* magic_teleporter_list.cpp */; };
+		B5CD3E862A40B323008E4118 /* rotatable_symbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C9E2A092CE8002EF848 /* rotatable_symbols.cpp */; };
+		B5CD3E872A40B323008E4118 /* sounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C462A092CDD002EF848 /* sounds.cpp */; };
+		B5CD3E882A40B323008E4118 /* dialogue_chatbin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE92A092B82002EF848 /* dialogue_chatbin.cpp */; };
+		B5CD3E892A40B323008E4118 /* worldfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B082A092B86002EF848 /* worldfactory.cpp */; };
+		B5CD3E8A2A40B323008E4118 /* character_proficiency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF02A092B83002EF848 /* character_proficiency.cpp */; };
+		B5CD3E8B2A40B323008E4118 /* gamemode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC42A092C39002EF848 /* gamemode.cpp */; };
+		B5CD3E8C2A40B323008E4118 /* demangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA92A092B7B002EF848 /* demangle.cpp */; };
+		B5CD3E8D2A40B323008E4118 /* kill_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A972A092B79002EF848 /* kill_tracker.cpp */; };
+		B5CD3E8E2A40B323008E4118 /* advanced_inv_pagination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A712A092B74002EF848 /* advanced_inv_pagination.cpp */; };
+		B5CD3E8F2A40B323008E4118 /* magic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A962A092B79002EF848 /* magic.cpp */; };
+		B5CD3E902A40B323008E4118 /* mapdata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A9F2A092B7A002EF848 /* mapdata.cpp */; };
+		B5CD3E912A40B323008E4118 /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AFC2A092B85002EF848 /* json.cpp */; };
+		B5CD3E922A40B323008E4118 /* monmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C0E2A092CD6002EF848 /* monmove.cpp */; };
+		B5CD3E932A40B323008E4118 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C542A092CDF002EF848 /* inventory.cpp */; };
+		B5CD3E942A40B323008E4118 /* mtype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C672A092CE1002EF848 /* mtype.cpp */; };
+		B5CD3E952A40B323008E4118 /* string_editor_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C362A092CDB002EF848 /* string_editor_window.cpp */; };
+		B5CD3E962A40B323008E4118 /* consumption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE32A092B82002EF848 /* consumption.cpp */; };
+		B5CD3E972A40B323008E4118 /* main_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A802A092B76002EF848 /* main_menu.cpp */; };
+		B5CD3E982A40B323008E4118 /* monexamine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C522A092CDE002EF848 /* monexamine.cpp */; };
+		B5CD3E992A40B323008E4118 /* string_input_popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BFC2A092CD4002EF848 /* string_input_popup.cpp */; };
+		B5CD3E9A2A40B323008E4118 /* cached_options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B062A092B86002EF848 /* cached_options.cpp */; };
+		B5CD3E9B2A40B323008E4118 /* iuse_software_minesweeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF52A092B84002EF848 /* iuse_software_minesweeper.cpp */; };
+		B5CD3E9C2A40B323008E4118 /* loading_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA42A092B7A002EF848 /* loading_ui.cpp */; };
+		B5CD3E9D2A40B323008E4118 /* npcmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C0F2A092CD6002EF848 /* npcmove.cpp */; };
+		B5CD3E9E2A40B323008E4118 /* safemode_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C5D2A092CE0002EF848 /* safemode_ui.cpp */; };
+		B5CD3E9F2A40B323008E4118 /* trap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BFB2A092CD4002EF848 /* trap.cpp */; };
+		B5CD3EA02A40B323008E4118 /* units.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C592A092CDF002EF848 /* units.cpp */; };
+		B5CD3EA12A40B323008E4118 /* dialogue_win.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AEE2A092B83002EF848 /* dialogue_win.cpp */; };
+		B5CD3EA22A40B323008E4118 /* vehicle_part.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A9B2A092B79002EF848 /* vehicle_part.cpp */; };
+		B5CD3EA32A40B323008E4118 /* editmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB02A092B7B002EF848 /* editmap.cpp */; };
+		B5CD3EA42A40B323008E4118 /* mission_end.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C4B2A092CDE002EF848 /* mission_end.cpp */; };
+		B5CD3EA52A40B323008E4118 /* debug_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA02A092B7A002EF848 /* debug_menu.cpp */; };
+		B5CD3EA62A40B323008E4118 /* mondefense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BEC2A092CD2002EF848 /* mondefense.cpp */; };
+		B5CD3EA72A40B323008E4118 /* event_field_transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BAB2A092C36002EF848 /* event_field_transformations.cpp */; };
+		B5CD3EA82A40B323008E4118 /* monstergenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C642A092CE1002EF848 /* monstergenerator.cpp */; };
+		B5CD3EA92A40B323008E4118 /* savegame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C3A2A092CDB002EF848 /* savegame.cpp */; };
+		B5CD3EAA2A40B323008E4118 /* weakpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA52A092B7A002EF848 /* weakpoint.cpp */; };
+		B5CD3EAB2A40B323008E4118 /* overmap_connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C972A092CE7002EF848 /* overmap_connection.cpp */; };
+		B5CD3EAC2A40B323008E4118 /* behavior_strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD92A092B80002EF848 /* behavior_strategy.cpp */; };
+		B5CD3EAD2A40B323008E4118 /* harvest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB62A092C37002EF848 /* harvest.cpp */; };
+		B5CD3EAE2A40B323008E4118 /* level_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AED2A092B83002EF848 /* level_cache.cpp */; };
+		B5CD3EAF2A40B323008E4118 /* monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C552A092CDF002EF848 /* monster.cpp */; };
+		B5CD3EB02A40B323008E4118 /* safe_reference.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C912A092CE6002EF848 /* safe_reference.cpp */; };
+		B5CD3EB12A40B323008E4118 /* sdl_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BFA2A092CD3002EF848 /* sdl_utils.cpp */; };
+		B5CD3EB22A40B323008E4118 /* string_id_null_ids.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C022A092CD4002EF848 /* string_id_null_ids.cpp */; };
+		B5CD3EB32A40B323008E4118 /* condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A6C2A092B74002EF848 /* condition.cpp */; };
+		B5CD3EB42A40B323008E4118 /* veh_appliance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C802A092CE4002EF848 /* veh_appliance.cpp */; };
+		B5CD3EB52A40B323008E4118 /* addiction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA62A092B7A002EF848 /* addiction.cpp */; };
+		B5CD3EB62A40B323008E4118 /* character_armor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB22A092B7C002EF848 /* character_armor.cpp */; };
+		B5CD3EB72A40B323008E4118 /* map_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B002A092B85002EF848 /* map_selector.cpp */; };
+		B5CD3EB82A40B323008E4118 /* savegame_legacy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C852A092CE5002EF848 /* savegame_legacy.cpp */; };
+		B5CD3EB92A40B323008E4118 /* event_statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BAE2A092C36002EF848 /* event_statistics.cpp */; };
+		B5CD3EBA2A40B323008E4118 /* creature_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AEC2A092B83002EF848 /* creature_tracker.cpp */; };
+		B5CD3EBB2A40B323008E4118 /* vitamin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A8F2A092B78002EF848 /* vitamin.cpp */; };
+		B5CD3EBC2A40B323008E4118 /* weather_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B052A092B86002EF848 /* weather_type.cpp */; };
+		B5CD3EBD2A40B323008E4118 /* mission_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C5A2A092CDF002EF848 /* mission_util.cpp */; };
+		B5CD3EBE2A40B323008E4118 /* trade_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C3E2A092CDC002EF848 /* trade_ui.cpp */; };
+		B5CD3EBF2A40B323008E4118 /* vehicle_autodrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C4D2A092CDE002EF848 /* vehicle_autodrive.cpp */; };
+		B5CD3EC02A40B323008E4118 /* avatar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ADA2A092B80002EF848 /* avatar.cpp */; };
+		B5CD3EC12A40B323008E4118 /* activity_handlers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA22A092B7A002EF848 /* activity_handlers.cpp */; };
+		B5CD3EC22A40B323008E4118 /* inventory_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C702A092CE2002EF848 /* inventory_ui.cpp */; };
+		B5CD3EC32A40B323008E4118 /* subbodypart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C132A092CD7002EF848 /* subbodypart.cpp */; };
+		B5CD3EC42A40B323008E4118 /* diary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A812A092B76002EF848 /* diary.cpp */; };
+		B5CD3EC52A40B323008E4118 /* talker_npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C612A092CE0002EF848 /* talker_npc.cpp */; };
+		B5CD3EC62A40B323008E4118 /* scent_block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C922A092CE6002EF848 /* scent_block.cpp */; };
+		B5CD3EC72A40B323008E4118 /* flexbuffer_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB82A092C37002EF848 /* flexbuffer_cache.cpp */; };
+		B5CD3EC82A40B323008E4118 /* vehicle_move.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C512A092CDE002EF848 /* vehicle_move.cpp */; };
+		B5CD3EC92A40B323008E4118 /* messages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C042A092CD5002EF848 /* messages.cpp */; };
+		B5CD3ECA2A40B323008E4118 /* requirements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C052A092CD5002EF848 /* requirements.cpp */; };
+		B5CD3ECB2A40B323008E4118 /* mapgendata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1F2A092CD8002EF848 /* mapgendata.cpp */; };
+		B5CD3ECC2A40B323008E4118 /* pixel_minimap_projectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C5B2A092CE0002EF848 /* pixel_minimap_projectors.cpp */; };
+		B5CD3ECD2A40B323008E4118 /* profession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C7B2A092CE3002EF848 /* profession.cpp */; };
+		B5CD3ECE2A40B323008E4118 /* advanced_inv_area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB42A092B7C002EF848 /* advanced_inv_area.cpp */; };
+		B5CD3ECF2A40B323008E4118 /* simplexnoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C102A092CD6002EF848 /* simplexnoise.cpp */; };
+		B5CD3ED02A40B323008E4118 /* vehicle_selector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A732A092B75002EF848 /* vehicle_selector.cpp */; };
+		B5CD3ED12A40B323008E4118 /* distribution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD32A092B80002EF848 /* distribution.cpp */; };
+		B5CD3ED22A40B323008E4118 /* recipe_groups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C4C2A092CDE002EF848 /* recipe_groups.cpp */; };
+		B5CD3ED32A40B323008E4118 /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C432A092CDD002EF848 /* output.cpp */; };
+		B5CD3ED42A40B323008E4118 /* drawing_primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A942A092B78002EF848 /* drawing_primitives.cpp */; };
+		B5CD3ED52A40B323008E4118 /* translations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BE92A092CD1002EF848 /* translations.cpp */; };
+		B5CD3ED62A40B323008E4118 /* character_modifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AAE2A092B7B002EF848 /* character_modifier.cpp */; };
+		B5CD3ED72A40B323008E4118 /* craft_command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A6D2A092B74002EF848 /* craft_command.cpp */; };
+		B5CD3ED82A40B323008E4118 /* display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE82A092B82002EF848 /* display.cpp */; };
+		B5CD3ED92A40B323008E4118 /* player_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C162A092CD7002EF848 /* player_display.cpp */; };
+		B5CD3EDA2A40B323008E4118 /* cata_bitset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC22A092B7E002EF848 /* cata_bitset.cpp */; };
+		B5CD3EDB2A40B323008E4118 /* mondeath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C012A092CD4002EF848 /* mondeath.cpp */; };
+		B5CD3EDC2A40B323008E4118 /* units_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C212A092CD8002EF848 /* units_utility.cpp */; };
+		B5CD3EDD2A40B323008E4118 /* auto_note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD82A092B80002EF848 /* auto_note.cpp */; };
+		B5CD3EDE2A40B323008E4118 /* construction_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B042A092B86002EF848 /* construction_group.cpp */; };
+		B5CD3EDF2A40B323008E4118 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB52A092C37002EF848 /* game.cpp */; };
+		B5CD3EE02A40B323008E4118 /* iuse_software_sokoban.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ADB2A092B81002EF848 /* iuse_software_sokoban.cpp */; };
+		B5CD3EE12A40B323008E4118 /* crafting_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A9A2A092B79002EF848 /* crafting_gui.cpp */; };
+		B5CD3EE22A40B323008E4118 /* distraction_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AF22A092B84002EF848 /* distraction_manager.cpp */; };
+		B5CD3EE32A40B323008E4118 /* field_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BBA2A092C38002EF848 /* field_type.cpp */; };
+		B5CD3EE42A40B323008E4118 /* memorial_logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BEB2A092CD2002EF848 /* memorial_logger.cpp */; };
+		B5CD3EE52A40B323008E4118 /* mission_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C232A092CD9002EF848 /* mission_ui.cpp */; };
+		B5CD3EE62A40B323008E4118 /* regional_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C382A092CDB002EF848 /* regional_settings.cpp */; };
+		B5CD3EE72A40B323008E4118 /* live_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AAA2A092B7B002EF848 /* live_view.cpp */; };
+		B5CD3EE82A40B323008E4118 /* pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C372A092CDB002EF848 /* pathfinding.cpp */; };
+		B5CD3EE92A40B323008E4118 /* sdl_font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1A2A092CD7002EF848 /* sdl_font.cpp */; };
+		B5CD3EEA2A40B323008E4118 /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AFD2A092B85002EF848 /* character.cpp */; };
+		B5CD3EEB2A40B323008E4118 /* calendar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A912A092B78002EF848 /* calendar.cpp */; };
+		B5CD3EEC2A40B323008E4118 /* armor_layers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AFB2A092B85002EF848 /* armor_layers.cpp */; };
+		B5CD3EED2A40B323008E4118 /* iexamine_actors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C192A092CD7002EF848 /* iexamine_actors.cpp */; };
+		B5CD3EEE2A40B323008E4118 /* name.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C722A092CE2002EF848 /* name.cpp */; };
+		B5CD3EEF2A40B323008E4118 /* npc_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C6D2A092CE2002EF848 /* npc_class.cpp */; };
+		B5CD3EF02A40B323008E4118 /* cata_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AEF2A092B83002EF848 /* cata_utility.cpp */; };
+		B5CD3EF12A40B323008E4118 /* effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC22A092C39002EF848 /* effect.cpp */; };
+		B5CD3EF22A40B323008E4118 /* character_attire.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A6F2A092B74002EF848 /* character_attire.cpp */; };
+		B5CD3EF32A40B323008E4118 /* path_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C7E2A092CE4002EF848 /* path_info.cpp */; };
+		B5CD3EF42A40B323008E4118 /* talker_item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C752A092CE3002EF848 /* talker_item.cpp */; };
+		B5CD3EF52A40B323008E4118 /* stats_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C9D2A092CE8002EF848 /* stats_tracker.cpp */; };
+		B5CD3EF62A40B323008E4118 /* construction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A9D2A092B79002EF848 /* construction.cpp */; };
+		B5CD3EF72A40B323008E4118 /* bonuses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ABB2A092B7D002EF848 /* bonuses.cpp */; };
+		B5CD3EF82A40B323008E4118 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC92A092B7E002EF848 /* line.cpp */; };
+		B5CD3EF92A40B323008E4118 /* translation_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C292A092CD9002EF848 /* translation_manager_impl.cpp */; };
+		B5CD3EFA2A40B323008E4118 /* move_mode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C492A092CDD002EF848 /* move_mode.cpp */; };
+		B5CD3EFB2A40B323008E4118 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C502A092CDE002EF848 /* input.cpp */; };
+		B5CD3EFC2A40B323008E4118 /* timed_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C2B2A092CDA002EF848 /* timed_event.cpp */; };
+		B5CD3EFD2A40B323008E4118 /* handle_liquid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BC62A092C39002EF848 /* handle_liquid.cpp */; };
+		B5CD3EFE2A40B323008E4118 /* wcwidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A772A092B75002EF848 /* wcwidth.cpp */; };
+		B5CD3EFF2A40B323008E4118 /* character_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B072A092B86002EF848 /* character_id.cpp */; };
+		B5CD3F002A40B323008E4118 /* item_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C842A092CE5002EF848 /* item_group.cpp */; };
+		B5CD3F012A40B323008E4118 /* weather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A9C2A092B79002EF848 /* weather.cpp */; };
+		B5CD3F022A40B323008E4118 /* generic_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BBD2A092C38002EF848 /* generic_factory.cpp */; };
+		B5CD3F032A40B323008E4118 /* faction_camp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BAC2A092C36002EF848 /* faction_camp.cpp */; };
+		B5CD3F042A40B323008E4118 /* mission_place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C532A092CDE002EF848 /* mission_place.cpp */; };
+		B5CD3F052A40B323008E4118 /* recipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C942A092CE7002EF848 /* recipe.cpp */; };
+		B5CD3F062A40B323008E4118 /* temp_crafting_inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C062A092CD5002EF848 /* temp_crafting_inventory.cpp */; };
+		B5CD3F072A40B323008E4118 /* grab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB12A092C37002EF848 /* grab.cpp */; };
+		B5CD3F082A40B324008E4118 /* turret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C242A092CD9002EF848 /* turret.cpp */; };
+		B5CD3F092A40B324008E4118 /* mission_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C962A092CE7002EF848 /* mission_start.cpp */; };
+		B5CD3F0A2A40B324008E4118 /* monattack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C8A2A092CE5002EF848 /* monattack.cpp */; };
+		B5CD3F0B2A40B324008E4118 /* font_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BAF2A092C36002EF848 /* font_loader.cpp */; };
+		B5CD3F0C2A40B324008E4118 /* behavior_oracle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB52A092B7C002EF848 /* behavior_oracle.cpp */; };
+		B5CD3F0D2A40B324008E4118 /* overmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C112A092CD6002EF848 /* overmap.cpp */; };
+		B5CD3F0E2A40B324008E4118 /* talker_furniture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C792A092CE3002EF848 /* talker_furniture.cpp */; };
+		B5CD3F0F2A40B324008E4118 /* veh_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C7C2A092CE4002EF848 /* veh_utils.cpp */; };
+		B5CD3F102A40B324008E4118 /* color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A752A092B75002EF848 /* color.cpp */; };
+		B5CD3F112A40B324008E4118 /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB12A092B7C002EF848 /* item.cpp */; };
+		B5CD3F122A40B324008E4118 /* character_ammo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD52A092B80002EF848 /* character_ammo.cpp */; };
+		B5CD3F132A40B324008E4118 /* bionics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709ADE2A092B81002EF848 /* bionics.cpp */; };
+		B5CD3F142A40B324008E4118 /* item_location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C262A092CD9002EF848 /* item_location.cpp */; };
+		B5CD3F152A40B324008E4118 /* iteminfo_query.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A842A092B77002EF848 /* iteminfo_query.cpp */; };
+		B5CD3F162A40B324008E4118 /* magic_enchantment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA72A092B7B002EF848 /* magic_enchantment.cpp */; };
+		B5CD3F172A40B324008E4118 /* filesystem_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BA72A092C35002EF848 /* filesystem_impl.cpp */; };
+		B5CD3F182A40B324008E4118 /* map_extras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A8E2A092B78002EF848 /* map_extras.cpp */; };
+		B5CD3F192A40B324008E4118 /* mapgen_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A892A092B77002EF848 /* mapgen_functions.cpp */; };
+		B5CD3F1A2A40B324008E4118 /* catacharset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A7A2A092B75002EF848 /* catacharset.cpp */; };
+		B5CD3F1B2A40B324008E4118 /* coordinates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A922A092B78002EF848 /* coordinates.cpp */; };
+		B5CD3F1C2A40B324008E4118 /* mmap_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C2E2A092CDA002EF848 /* mmap_file.cpp */; };
+		B5CD3F1D2A40B324008E4118 /* mapbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC72A092B7E002EF848 /* mapbuffer.cpp */; };
+		B5CD3F1E2A40B324008E4118 /* newcharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C4F2A092CDE002EF848 /* newcharacter.cpp */; };
+		B5CD3F1F2A40B324008E4118 /* magic_ter_fur_transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC62A092B7E002EF848 /* magic_ter_fur_transform.cpp */; };
+		B5CD3F202A40B324008E4118 /* overmap_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C0A2A092CD5002EF848 /* overmap_noise.cpp */; };
+		B5CD3F212A40B324008E4118 /* effect_on_condition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BBB2A092C38002EF848 /* effect_on_condition.cpp */; };
+		B5CD3F222A40B324008E4118 /* proficiency_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C4A2A092CDD002EF848 /* proficiency_ui.cpp */; };
+		B5CD3F232A40B324008E4118 /* talker_topic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C392A092CDB002EF848 /* talker_topic.cpp */; };
+		B5CD3F242A40B324008E4118 /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C222A092CD8002EF848 /* simple_pathfinding.cpp */; };
+		B5CD3F252A40B324008E4118 /* gates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BB02A092C36002EF848 /* gates.cpp */; };
+		B5CD3F262A40B324008E4118 /* tgz_archiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C6C2A092CE2002EF848 /* tgz_archiver.cpp */; };
+		B5CD3F272A40B324008E4118 /* translation_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C172A092CD7002EF848 /* translation_manager.cpp */; };
+		B5CD3F282A40B324008E4118 /* vehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AB62A092B7C002EF848 /* vehicle.cpp */; };
+		B5CD3F292A40B324008E4118 /* basecamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AD02A092B7F002EF848 /* basecamp.cpp */; };
+		B5CD3F2A2A40B324008E4118 /* avatar_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AEA2A092B82002EF848 /* avatar_action.cpp */; };
+		B5CD3F2B2A40B324008E4118 /* cata_tiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709B012A092B85002EF848 /* cata_tiles.cpp */; };
+		B5CD3F2C2A40B324008E4118 /* crash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AC42A092B7E002EF848 /* crash.cpp */; };
+		B5CD3F2D2A40B324008E4118 /* cursesport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AA32A092B7A002EF848 /* cursesport.cpp */; };
+		B5CD3F2E2A40B324008E4118 /* item_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1E2A092CD8002EF848 /* item_factory.cpp */; };
+		B5CD3F2F2A40B324008E4118 /* system_locale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C7F2A092CE4002EF848 /* system_locale.cpp */; };
+		B5CD3F302A40B324008E4118 /* tileray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1D2A092CD8002EF848 /* tileray.cpp */; };
+		B5CD3F312A40B324008E4118 /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF02A092CD2002EF848 /* options.cpp */; };
+		B5CD3F322A40B324008E4118 /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C7A2A092CE3002EF848 /* text_snippets.cpp */; };
+		B5CD3F332A40B324008E4118 /* vehicle_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1B2A092CD8002EF848 /* vehicle_display.cpp */; };
+		B5CD3F342A40B324008E4118 /* monfaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C712A092CE2002EF848 /* monfaction.cpp */; };
+		B5CD3F352A40B324008E4118 /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF12A092CD2002EF848 /* mission.cpp */; };
+		B5CD3F402A40B343008E4118 /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A602A09283A002EF848 /* version.cpp */; };
+		B5CD3F412A40B343008E4118 /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.cpp */; };
+		B5CD3F432A40B54D008E4118 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD3F422A40B54D008E4118 /* SDL2.framework */; };
+		B5CD3F452A40B54E008E4118 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
+		B5CD3F462A40B54E008E4118 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
+		B5CD3F472A40B54E008E4118 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
+		B5CD3F502A40B641008E4118 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD3F4F2A40B640008E4118 /* MobileCoreServices.framework */; };
+		B5CD3F592A40B76B008E4118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F582A40B76B008E4118 /* AppDelegate.m */; };
+		B5CD3F5C2A40B76B008E4118 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5B2A40B76B008E4118 /* SceneDelegate.m */; };
+		B5CD3F5F2A40B76B008E4118 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5E2A40B76B008E4118 /* ViewController.mm */; };
+		B5CD3F622A40B76B008E4118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F602A40B76B008E4118 /* Main.storyboard */; };
+		B5CD3F642A40B76E008E4118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F632A40B76E008E4118 /* Assets.xcassets */; };
+		B5CD3F672A40B76E008E4118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */; };
+		B5CD3F6A2A40B76E008E4118 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.m */; };
+		B5CD3F702A40B995008E4118 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
+		B5CD3FB42A40C45D008E4118 /* CDDA0GFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5ED451E29B47C950015647C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B5ED451F29B47C950015647C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5ED452029B47C950015647C /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -1541,6 +1931,7 @@
 		B5ED452829B47C950015647C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54195C82955BBEA0035CC2F /* StoreKit.framework */; };
 		B5ED452929B47C950015647C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B5ED452A29B47C950015647C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
+		B5FD900F2A40B14B0038B6BD /* CDDA0GFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */; };
 		D138F4137888FA6D3BA8DBFE /* Pods_CDDA0F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F201E72B3AD3AE3BF8FFCB18 /* Pods_CDDA0F.framework */; };
 		E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */; };
@@ -1660,6 +2051,13 @@
 			remoteGlobalIDString = BE1FA90707AF96B2004B6283;
 			remoteInfo = "libSDL_mixer-iOS";
 		};
+		B5CD3F732A40BAAE008E4118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B57201C1259293EE003D2A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FD900B2A40B1480038B6BD;
+			remoteInfo = CDDA0GFramework;
+		};
 		B5ED43C629B47C950015647C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B54932E4259BD59D00667062 /* SDL_image.xcodeproj */;
@@ -1750,6 +2148,16 @@
 			name = "Copy mo to lang";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5CD3FB32A40C444008E4118 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5CD3FB42A40C45D008E4118 /* CDDA0GFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED453929B47C950015647C /* Copy gfx to data */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -1775,12 +2183,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18A481254E1A677404FB5012 /* Pods-CDDA0GFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0GFramework.debug.xcconfig"; path = "Target Support Files/Pods-CDDA0GFramework/Pods-CDDA0GFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		5EB0DAEB5165A9F399865EB4 /* Pods-CBNfreeIAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBNfreeIAP.release.xcconfig"; path = "Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP.release.xcconfig"; sourceTree = "<group>"; };
 		62C05DBE744F82367BA6434B /* Pods-CDDA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.release.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.release.xcconfig"; sourceTree = "<group>"; };
+		6330DFC3693BAA9F04413663 /* Pods-DynLoadTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynLoadTest.debug.xcconfig"; path = "Target Support Files/Pods-DynLoadTest/Pods-DynLoadTest.debug.xcconfig"; sourceTree = "<group>"; };
 		682E346F6D652CB3386A9607 /* Pods-CDDA0G.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0G.debug.xcconfig"; path = "Target Support Files/Pods-CDDA0G/Pods-CDDA0G.debug.xcconfig"; sourceTree = "<group>"; };
 		6E58C693953F0220D3ED7128 /* Pods-CBN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBN.release.xcconfig"; path = "Target Support Files/Pods-CBN/Pods-CBN.release.xcconfig"; sourceTree = "<group>"; };
+		6FB2A103FAB31E4FB8C9EFA7 /* Pods-DynLoadTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynLoadTest.release.xcconfig"; path = "Target Support Files/Pods-DynLoadTest/Pods-DynLoadTest.release.xcconfig"; sourceTree = "<group>"; };
 		757C4C44C48B333F1514F9AC /* Pods_CBN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772523E16F2630A67A600773 /* Pods-CDDA0GFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0GFramework.release.xcconfig"; path = "Target Support Files/Pods-CDDA0GFramework/Pods-CDDA0GFramework.release.xcconfig"; sourceTree = "<group>"; };
+		7DB87C639FC57721EA8ECD47 /* Pods_DynLoadTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynLoadTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBNfreeIAP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8394EE004B8B0EFBE5ED61E3 /* Pods_CDDA0GFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA0GFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D58F6D4BD7CE2C6DDE284A2 /* Pods-CDDA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA.debug.xcconfig"; path = "Target Support Files/Pods-CDDA/Pods-CDDA.debug.xcconfig"; sourceTree = "<group>"; };
 		8DD17C755D49E2A0EBF7F4AD /* Pods-Paywall debug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paywall debug.debug.xcconfig"; path = "Target Support Files/Pods-Paywall debug/Pods-Paywall debug.debug.xcconfig"; sourceTree = "<group>"; };
 		90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDDA0G.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2962,6 +3376,25 @@
 		B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PaywallDisplayEventSubscriber.mm; sourceTree = "<group>"; };
 		B5BD7A1A29770704001E3EAA /* PaywallSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		B5BD7A1D29770896001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subscribeDisplayingPaywallToCDDAEvents.h; sourceTree = "<group>"; };
+		B5CD3F422A40B54D008E4118 /* SDL2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDL2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CD3F492A40B56D008E4118 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = DEVELOPER_DIR; };
+		B5CD3F4B2A40B5DE008E4118 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		B5CD3F4D2A40B5FA008E4118 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		B5CD3F4F2A40B640008E4118 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/iOSSupport/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		B5CD3F552A40B76B008E4118 /* DynLoadTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynLoadTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CD3F572A40B76B008E4118 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5CD3F582A40B76B008E4118 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5CD3F5A2A40B76B008E4118 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B5CD3F5B2A40B76B008E4118 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B5CD3F5D2A40B76B008E4118 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B5CD3F5E2A40B76B008E4118 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B5CD3F612A40B76B008E4118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5CD3F632A40B76E008E4118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5CD3F662A40B76E008E4118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5CD3F682A40B76E008E4118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5CD3F692A40B76E008E4118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5CD3F762A40BB24008E4118 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5CD3F772A40BB24008E4118 /* SentryPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SentryPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
 		B5ED454429B47C950015647C /* CDDA0F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA0F.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ED454D29B47DA20015647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -2971,6 +3404,8 @@
 		B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
 		B5FD1F2B25A575AB00CE613D /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libintl.a; sourceTree = "<group>"; };
+		B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CDDA0GFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA0GFramework.h; sourceTree = "<group>"; };
 		B84339897945E68A045E797E /* Pods-CDDA0G.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDA0G.release.xcconfig"; path = "Target Support Files/Pods-CDDA0G/Pods-CDDA0G.release.xcconfig"; sourceTree = "<group>"; };
 		CDF2E72CBF5A8096EFCFE74E /* Pods-CBNfreeIAP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CBNfreeIAP.debug.xcconfig"; path = "Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AA2004026776E97BA46FE8 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSButton.m; path = Libraries/JSController/Controller/JSButton.m; sourceTree = SOURCE_ROOT; };
@@ -3080,6 +3515,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5CD3F522A40B76B008E4118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34ADF90185FF99A42B745AE /* Pods_DynLoadTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED451D29B47C950015647C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -3102,6 +3545,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5FD90092A40B1480038B6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CD3F432A40B54D008E4118 /* SDL2.framework in Frameworks */,
+				B5CD3F472A40B54E008E4118 /* libSDL2_ttf.a in Frameworks */,
+				B5CD3F502A40B641008E4118 /* MobileCoreServices.framework in Frameworks */,
+				B5CD3F462A40B54E008E4118 /* libSDL2_mixer.a in Frameworks */,
+				B5CD3F452A40B54E008E4118 /* libSDL2_image.a in Frameworks */,
+				3BFDEEB9D1041E545F06929A /* Pods_CDDA0GFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -3120,6 +3576,10 @@
 				D710729048186531BCA67AEE /* Pods-CDDA0F.release.xcconfig */,
 				682E346F6D652CB3386A9607 /* Pods-CDDA0G.debug.xcconfig */,
 				B84339897945E68A045E797E /* Pods-CDDA0G.release.xcconfig */,
+				6330DFC3693BAA9F04413663 /* Pods-DynLoadTest.debug.xcconfig */,
+				6FB2A103FAB31E4FB8C9EFA7 /* Pods-DynLoadTest.release.xcconfig */,
+				18A481254E1A677404FB5012 /* Pods-CDDA0GFramework.debug.xcconfig */,
+				772523E16F2630A67A600773 /* Pods-CDDA0GFramework.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -4070,6 +4530,8 @@
 				B57B282B29741CA80043A513 /* GoogleService-Info.plist */,
 				B5EDBF68270B94AB00FB4526 /* Common */,
 				B5625B2E29AF803300BA1FDF /* playground */,
+				B5FD900D2A40B14B0038B6BD /* CDDA0GFramework */,
+				B5CD3F562A40B76B008E4118 /* DynLoadTest */,
 				B599341525929CCE0074C0C0 /* Frameworks */,
 				B56E7DEA259BA378000701EF /* Libraries */,
 				B57201CA259293EE003D2A20 /* Products */,
@@ -4088,6 +4550,8 @@
 				B5625B2D29AF803300BA1FDF /* playground.app */,
 				B5ED454429B47C950015647C /* CDDA0F.app */,
 				B5709A432A0926E1002EF848 /* CDDA0G.app */,
+				B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */,
+				B5CD3F552A40B76B008E4118 /* DynLoadTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4122,6 +4586,13 @@
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5CD3F762A40BB24008E4118 /* Sentry.framework */,
+				B5CD3F772A40BB24008E4118 /* SentryPrivate.framework */,
+				B5CD3F4F2A40B640008E4118 /* MobileCoreServices.framework */,
+				B5CD3F4D2A40B5FA008E4118 /* AVFoundation.framework */,
+				B5CD3F4B2A40B5DE008E4118 /* CoreImage.framework */,
+				B5CD3F492A40B56D008E4118 /* UniformTypeIdentifiers.framework */,
+				B5CD3F422A40B54D008E4118 /* SDL2.framework */,
 				B5FCB825295720C400BD43A4 /* FirebaseAnalytics.xcframework */,
 				B54195C82955BBEA0035CC2F /* StoreKit.framework */,
 				B57AF1F82943D17D00604616 /* FirebaseCore.framework */,
@@ -4139,6 +4610,8 @@
 				837E1FB3A08EB9DC56713BDD /* Pods_CBNfreeIAP.framework */,
 				90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */,
 				F201E72B3AD3AE3BF8FFCB18 /* Pods_CDDA0F.framework */,
+				7DB87C639FC57721EA8ECD47 /* Pods_DynLoadTest.framework */,
+				8394EE004B8B0EFBE5ED61E3 /* Pods_CDDA0GFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4526,6 +4999,24 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		B5CD3F562A40B76B008E4118 /* DynLoadTest */ = {
+			isa = PBXGroup;
+			children = (
+				B5CD3F572A40B76B008E4118 /* AppDelegate.h */,
+				B5CD3F582A40B76B008E4118 /* AppDelegate.m */,
+				B5CD3F5A2A40B76B008E4118 /* SceneDelegate.h */,
+				B5CD3F5B2A40B76B008E4118 /* SceneDelegate.m */,
+				B5CD3F5D2A40B76B008E4118 /* ViewController.h */,
+				B5CD3F5E2A40B76B008E4118 /* ViewController.mm */,
+				B5CD3F602A40B76B008E4118 /* Main.storyboard */,
+				B5CD3F632A40B76E008E4118 /* Assets.xcassets */,
+				B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */,
+				B5CD3F682A40B76E008E4118 /* Info.plist */,
+				B5CD3F692A40B76E008E4118 /* main.m */,
+			);
+			path = DynLoadTest;
+			sourceTree = "<group>";
+		};
 		B5D5CB472971C62400CA0FC0 /* CDDA-Paywall */ = {
 			isa = PBXGroup;
 			children = (
@@ -4645,6 +5136,14 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		B5FD900D2A40B14B0038B6BD /* CDDA0GFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */,
+			);
+			path = CDDA0GFramework;
+			sourceTree = "<group>";
+		};
 		D0AA2CF4E91F11B6CE004D3E /* JSDPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -4655,6 +5154,17 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B5FD90072A40B1480038B6BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FD900F2A40B14B0038B6BD /* CDDA0GFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		B501C911297411E800CB965C /* CBN */ = {
@@ -4794,6 +5304,27 @@
 			productReference = B5867A02260402B600EACF2C /* CDDA.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B5CD3F542A40B76B008E4118 /* DynLoadTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5CD3F6B2A40B76E008E4118 /* Build configuration list for PBXNativeTarget "DynLoadTest" */;
+			buildPhases = (
+				E8F7107B647AD454FA85B501 /* [CP] Check Pods Manifest.lock */,
+				B5CD3F512A40B76B008E4118 /* Sources */,
+				B5CD3F522A40B76B008E4118 /* Frameworks */,
+				B5CD3F532A40B76B008E4118 /* Resources */,
+				FAF09DCBB6B56A1CE2010BD7 /* [CP] Embed Pods Frameworks */,
+				B5CD3FB32A40C444008E4118 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5CD3F742A40BAAE008E4118 /* PBXTargetDependency */,
+			);
+			name = DynLoadTest;
+			productName = DynLoadTest;
+			productReference = B5CD3F552A40B76B008E4118 /* DynLoadTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B5ED43C429B47C950015647C /* CDDA0F */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5ED454129B47C950015647C /* Build configuration list for PBXNativeTarget "CDDA0F" */;
@@ -4822,12 +5353,32 @@
 			productReference = B5ED454429B47C950015647C /* CDDA0F.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B5FD900B2A40B1480038B6BD /* CDDA0GFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FD90102A40B14B0038B6BD /* Build configuration list for PBXNativeTarget "CDDA0GFramework" */;
+			buildPhases = (
+				8FB57F733EC75A711021379A /* [CP] Check Pods Manifest.lock */,
+				B5FD90072A40B1480038B6BD /* Headers */,
+				B5FD90082A40B1480038B6BD /* Sources */,
+				B5FD90092A40B1480038B6BD /* Frameworks */,
+				B5FD900A2A40B1480038B6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDDA0GFramework;
+			productName = CDDA0GFramework;
+			productReference = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B57201C1259293EE003D2A20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Аполлов Юрий Андреевич";
 				TargetAttributes = {
@@ -4837,6 +5388,12 @@
 						TestTargetID = B57201C8259293EE003D2A20;
 					};
 					B5625B2C29AF803300BA1FDF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B5CD3F542A40B76B008E4118 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B5FD900B2A40B1480038B6BD = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -4888,6 +5445,8 @@
 				B53804FB25AC6DB200AEB52A /* CDDAUITests */,
 				B58678B4260402B600EACF2C /* CDDA iCloud debug */,
 				B5625B2C29AF803300BA1FDF /* playground */,
+				B5FD900B2A40B1480038B6BD /* CDDA0GFramework */,
+				B5CD3F542A40B76B008E4118 /* DynLoadTest */,
 			);
 		};
 /* End PBXProject section */
@@ -5027,6 +5586,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5CD3F532A40B76B008E4118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CD3F672A40B76E008E4118 /* LaunchScreen.storyboard in Resources */,
+				B5CD3F642A40B76E008E4118 /* Assets.xcassets in Resources */,
+				B5CD3F622A40B76B008E4118 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED452C29B47C950015647C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5042,6 +5611,13 @@
 				B5A2FA4B29B47F5900035DE0 /* Assets.xcassets in Resources */,
 				B5A2FE5429B4868400035DE0 /* data in Resources */,
 				B5A2FE5729B4869F00035DE0 /* icon_1024x1024.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FD900A2A40B1480038B6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5063,6 +5639,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB57F733EC75A711021379A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDDA0GFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B501C91A297411E800CB965C /* [CP] Check Pods Manifest.lock */ = {
@@ -5527,6 +6125,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0F/Pods-CDDA0F-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E8F7107B647AD454FA85B501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynLoadTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F0DAC377790271C417AEB9B8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5542,6 +6162,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0G/Pods-CDDA0G-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF09DCBB6B56A1CE2010BD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DynLoadTest/Pods-DynLoadTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DynLoadTest/Pods-DynLoadTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DynLoadTest/Pods-DynLoadTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -6672,6 +7309,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5CD3F512A40B76B008E4118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CD3F5F2A40B76B008E4118 /* ViewController.mm in Sources */,
+				B5CD3F702A40B995008E4118 /* path_utils.m in Sources */,
+				B5CD3F592A40B76B008E4118 /* AppDelegate.m in Sources */,
+				B5CD3F6A2A40B76E008E4118 /* main.m in Sources */,
+				B5CD3F5C2A40B76B008E4118 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5ED43CC29B47C950015647C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7005,6 +7654,387 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5FD90082A40B1480038B6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5CD3E1C2A40B323008E4118 /* cellular_automata.cpp in Sources */,
+				B5CD3DEC2A40B323008E4118 /* past_games_info.cpp in Sources */,
+				B5CD3E4C2A40B323008E4118 /* filesystem.cpp in Sources */,
+				B5CD3E382A40B323008E4118 /* wincurse.cpp in Sources */,
+				B5CD3E662A40B323008E4118 /* damage.cpp in Sources */,
+				B5CD3E8A2A40B323008E4118 /* character_proficiency.cpp in Sources */,
+				B5CD3EE82A40B323008E4118 /* pathfinding.cpp in Sources */,
+				B5CD3DC52A40B323008E4118 /* lru_cache.cpp in Sources */,
+				B5CD3E922A40B323008E4118 /* monmove.cpp in Sources */,
+				B5CD3F032A40B323008E4118 /* faction_camp.cpp in Sources */,
+				B5CD3DD72A40B323008E4118 /* weather_gen.cpp in Sources */,
+				B5CD3E6E2A40B323008E4118 /* ncurses_def.cpp in Sources */,
+				B5CD3E692A40B323008E4118 /* localized_comparator.cpp in Sources */,
+				B5CD3F152A40B324008E4118 /* iteminfo_query.cpp in Sources */,
+				B5CD3E3B2A40B323008E4118 /* translation_gendered.cpp in Sources */,
+				B5CD3F042A40B323008E4118 /* mission_place.cpp in Sources */,
+				B5CD3DD82A40B323008E4118 /* construction_category.cpp in Sources */,
+				B5CD3EEC2A40B323008E4118 /* armor_layers.cpp in Sources */,
+				B5CD3E822A40B323008E4118 /* handle_action.cpp in Sources */,
+				B5CD3E0B2A40B323008E4118 /* idl_parser.cpp in Sources */,
+				B5CD3EF02A40B323008E4118 /* cata_utility.cpp in Sources */,
+				B5CD3E342A40B323008E4118 /* iuse_software_lightson.cpp in Sources */,
+				B5CD3EBB2A40B323008E4118 /* vitamin.cpp in Sources */,
+				B5CD3EFE2A40B323008E4118 /* wcwidth.cpp in Sources */,
+				B5CD3F302A40B324008E4118 /* tileray.cpp in Sources */,
+				B5CD3DEA2A40B323008E4118 /* smart_controller_ui.cpp in Sources */,
+				B5CD3EE52A40B323008E4118 /* mission_ui.cpp in Sources */,
+				B5CD3E872A40B323008E4118 /* sounds.cpp in Sources */,
+				B5CD3E172A40B323008E4118 /* map.cpp in Sources */,
+				B5CD3E522A40B323008E4118 /* iuse_software.cpp in Sources */,
+				B5CD3EFF2A40B323008E4118 /* character_id.cpp in Sources */,
+				B5CD3F0C2A40B324008E4118 /* behavior_oracle.cpp in Sources */,
+				B5CD3E212A40B323008E4118 /* json_loader.cpp in Sources */,
+				B5CD3DE82A40B323008E4118 /* activity_tracker.cpp in Sources */,
+				B5CD3F002A40B323008E4118 /* item_group.cpp in Sources */,
+				B5CD3E982A40B323008E4118 /* monexamine.cpp in Sources */,
+				B5CD3E232A40B323008E4118 /* panels.cpp in Sources */,
+				B5CD3DC82A40B323008E4118 /* translation.cpp in Sources */,
+				B5CD3DD22A40B323008E4118 /* effect_source.cpp in Sources */,
+				B5CD3E5E2A40B323008E4118 /* speech.cpp in Sources */,
+				B5CD3EB12A40B323008E4118 /* sdl_utils.cpp in Sources */,
+				B5CD3E402A40B323008E4118 /* sdl_geometry.cpp in Sources */,
+				B5CD3E3E2A40B323008E4118 /* iuse_software_kitten.cpp in Sources */,
+				B5CD3DFC2A40B323008E4118 /* advanced_inv.cpp in Sources */,
+				B5CD3E612A40B323008E4118 /* compatibility.cpp in Sources */,
+				B5CD3F402A40B343008E4118 /* version.cpp in Sources */,
+				B5CD3F132A40B324008E4118 /* bionics.cpp in Sources */,
+				B5CD3ED12A40B323008E4118 /* distribution.cpp in Sources */,
+				B5CD3F062A40B323008E4118 /* temp_crafting_inventory.cpp in Sources */,
+				B5CD3DF22A40B323008E4118 /* ammo.cpp in Sources */,
+				B5CD3F332A40B324008E4118 /* vehicle_display.cpp in Sources */,
+				B5CD3EF92A40B323008E4118 /* translation_manager_impl.cpp in Sources */,
+				B5CD3EAB2A40B323008E4118 /* overmap_connection.cpp in Sources */,
+				B5CD3E562A40B323008E4118 /* scores_ui.cpp in Sources */,
+				B5CD3E672A40B323008E4118 /* mod_manager_ui.cpp in Sources */,
+				B5CD3E472A40B323008E4118 /* talker_character.cpp in Sources */,
+				B5CD3DDE2A40B323008E4118 /* medical_ui.cpp in Sources */,
+				B5CD3DE52A40B323008E4118 /* try_parse_integer.cpp in Sources */,
+				B5CD3E272A40B323008E4118 /* mapsharing.cpp in Sources */,
+				B5CD3DDC2A40B323008E4118 /* relic.cpp in Sources */,
+				B5CD3E0F2A40B323008E4118 /* npctrade.cpp in Sources */,
+				B5CD3EE92A40B323008E4118 /* sdl_font.cpp in Sources */,
+				B5CD3F342A40B324008E4118 /* monfaction.cpp in Sources */,
+				B5CD3E6D2A40B323008E4118 /* mapgenformat.cpp in Sources */,
+				B5CD3EA82A40B323008E4118 /* monstergenerator.cpp in Sources */,
+				B5CD3E632A40B323008E4118 /* flag.cpp in Sources */,
+				B5CD3DE22A40B323008E4118 /* talker_monster.cpp in Sources */,
+				B5CD3DFE2A40B323008E4118 /* character_oracle.cpp in Sources */,
+				B5CD3DD92A40B323008E4118 /* iuse_software_snake.cpp in Sources */,
+				B5CD3F272A40B324008E4118 /* translation_manager.cpp in Sources */,
+				B5CD3DF62A40B323008E4118 /* speed_description.cpp in Sources */,
+				B5CD3E512A40B323008E4118 /* item_stack.cpp in Sources */,
+				B5CD3EDD2A40B323008E4118 /* auto_note.cpp in Sources */,
+				B5CD3DE92A40B323008E4118 /* npctalk.cpp in Sources */,
+				B5CD3EC42A40B323008E4118 /* diary.cpp in Sources */,
+				B5CD3F352A40B324008E4118 /* mission.cpp in Sources */,
+				B5CD3E7A2A40B323008E4118 /* scent_map.cpp in Sources */,
+				B5CD3DCC2A40B323008E4118 /* map_memory.cpp in Sources */,
+				B5CD3E8B2A40B323008E4118 /* gamemode.cpp in Sources */,
+				B5CD3E412A40B323008E4118 /* veh_interact.cpp in Sources */,
+				B5CD3E1D2A40B323008E4118 /* mattack_actors.cpp in Sources */,
+				B5CD3E7F2A40B323008E4118 /* iuse.cpp in Sources */,
+				B5CD3DCF2A40B323008E4118 /* active_item_cache.cpp in Sources */,
+				B5CD3E912A40B323008E4118 /* json.cpp in Sources */,
+				B5CD3E972A40B323008E4118 /* main_menu.cpp in Sources */,
+				B5CD3DF32A40B323008E4118 /* scenario.cpp in Sources */,
+				B5CD3E352A40B323008E4118 /* item_search.cpp in Sources */,
+				B5CD3E282A40B323008E4118 /* auto_pickup.cpp in Sources */,
+				B5CD3F122A40B324008E4118 /* character_ammo.cpp in Sources */,
+				B5CD3EC02A40B323008E4118 /* avatar.cpp in Sources */,
+				B5CD3F1C2A40B324008E4118 /* mmap_file.cpp in Sources */,
+				B5CD3DEB2A40B323008E4118 /* butchery_requirements.cpp in Sources */,
+				B5CD3ED32A40B323008E4118 /* output.cpp in Sources */,
+				B5CD3EB62A40B323008E4118 /* character_armor.cpp in Sources */,
+				B5CD3F262A40B324008E4118 /* tgz_archiver.cpp in Sources */,
+				B5CD3F1B2A40B324008E4118 /* coordinates.cpp in Sources */,
+				B5CD3F082A40B324008E4118 /* turret.cpp in Sources */,
+				B5CD3EC32A40B323008E4118 /* subbodypart.cpp in Sources */,
+				B5CD3E8C2A40B323008E4118 /* demangle.cpp in Sources */,
+				B5CD3EA42A40B323008E4118 /* mission_end.cpp in Sources */,
+				B5CD3E372A40B323008E4118 /* veh_type.cpp in Sources */,
+				B5CD3E002A40B323008E4118 /* character_guns.cpp in Sources */,
+				B5CD3DC22A40B323008E4118 /* pickup.cpp in Sources */,
+				B5CD3DF52A40B323008E4118 /* character_inventory.cpp in Sources */,
+				B5CD3EB72A40B323008E4118 /* map_selector.cpp in Sources */,
+				B5CD3E932A40B323008E4118 /* inventory.cpp in Sources */,
+				B5CD3E222A40B323008E4118 /* item_action.cpp in Sources */,
+				B5CD3E9D2A40B323008E4118 /* npcmove.cpp in Sources */,
+				B5CD3E4E2A40B323008E4118 /* mood_face.cpp in Sources */,
+				B5CD3EDF2A40B323008E4118 /* game.cpp in Sources */,
+				B5CD3F0D2A40B324008E4118 /* overmap.cpp in Sources */,
+				B5CD3E042A40B323008E4118 /* stomach.cpp in Sources */,
+				B5CD3E622A40B323008E4118 /* bionics_ui.cpp in Sources */,
+				B5CD3E842A40B323008E4118 /* npctalk_funcs.cpp in Sources */,
+				B5CD3DFF2A40B323008E4118 /* creature.cpp in Sources */,
+				B5CD3ED22A40B323008E4118 /* recipe_groups.cpp in Sources */,
+				B5CD3EF12A40B323008E4118 /* effect.cpp in Sources */,
+				B5CD3E192A40B323008E4118 /* mutation.cpp in Sources */,
+				B5CD3E062A40B323008E4118 /* suffer.cpp in Sources */,
+				B5CD3E3F2A40B323008E4118 /* ascii_art.cpp in Sources */,
+				B5CD3E152A40B323008E4118 /* ranged.cpp in Sources */,
+				B5CD3E642A40B323008E4118 /* diary_ui.cpp in Sources */,
+				B5CD3E532A40B323008E4118 /* ammo_effect.cpp in Sources */,
+				B5CD3E882A40B323008E4118 /* dialogue_chatbin.cpp in Sources */,
+				B5CD3EB02A40B323008E4118 /* safe_reference.cpp in Sources */,
+				B5CD3E482A40B323008E4118 /* teleport.cpp in Sources */,
+				B5CD3E0A2A40B323008E4118 /* item_category.cpp in Sources */,
+				B5CD3E442A40B323008E4118 /* vehicle_use.cpp in Sources */,
+				B5CD3DE62A40B323008E4118 /* ui.cpp in Sources */,
+				B5CD3DDA2A40B323008E4118 /* widget.cpp in Sources */,
+				B5CD3EF82A40B323008E4118 /* line.cpp in Sources */,
+				B5CD3DD62A40B323008E4118 /* overmapbuffer.cpp in Sources */,
+				B5CD3E082A40B323008E4118 /* util.cpp in Sources */,
+				B5CD3F1F2A40B324008E4118 /* magic_ter_fur_transform.cpp in Sources */,
+				B5CD3EA32A40B323008E4118 /* editmap.cpp in Sources */,
+				B5CD3E7D2A40B323008E4118 /* clothing_mod.cpp in Sources */,
+				B5CD3F1E2A40B324008E4118 /* newcharacter.cpp in Sources */,
+				B5CD3E502A40B323008E4118 /* advanced_inv_listitem.cpp in Sources */,
+				B5CD3E602A40B323008E4118 /* mapgen.cpp in Sources */,
+				B5CD3EC82A40B323008E4118 /* vehicle_move.cpp in Sources */,
+				B5CD3F212A40B324008E4118 /* effect_on_condition.cpp in Sources */,
+				B5CD3DDD2A40B323008E4118 /* ordered_static_globals.cpp in Sources */,
+				B5CD3EA72A40B323008E4118 /* event_field_transformations.cpp in Sources */,
+				B5CD3F072A40B323008E4118 /* grab.cpp in Sources */,
+				B5CD3ED92A40B323008E4118 /* player_display.cpp in Sources */,
+				B5CD3E712A40B323008E4118 /* point.cpp in Sources */,
+				B5CD3F282A40B324008E4118 /* vehicle.cpp in Sources */,
+				B5CD3ED42A40B323008E4118 /* drawing_primitives.cpp in Sources */,
+				B5CD3E2A2A40B323008E4118 /* start_location.cpp in Sources */,
+				B5CD3F1D2A40B324008E4118 /* mapbuffer.cpp in Sources */,
+				B5CD3F012A40B323008E4118 /* weather.cpp in Sources */,
+				B5CD3E072A40B323008E4118 /* trait_group.cpp in Sources */,
+				B5CD3F0E2A40B324008E4118 /* talker_furniture.cpp in Sources */,
+				B5CD3DEF2A40B323008E4118 /* player_hardcoded_effects.cpp in Sources */,
+				B5CD3EAD2A40B323008E4118 /* harvest.cpp in Sources */,
+				B5CD3E052A40B323008E4118 /* flexbuffer_json.cpp in Sources */,
+				B5CD3DDB2A40B323008E4118 /* game_ui.cpp in Sources */,
+				B5CD3E2F2A40B323008E4118 /* submap.cpp in Sources */,
+				B5CD3DE42A40B323008E4118 /* text_style_check_reader.cpp in Sources */,
+				B5CD3EF52A40B323008E4118 /* stats_tracker.cpp in Sources */,
+				B5CD3EA12A40B323008E4118 /* dialogue_win.cpp in Sources */,
+				B5CD3DCA2A40B323008E4118 /* material.cpp in Sources */,
+				B5CD3E9C2A40B323008E4118 /* loading_ui.cpp in Sources */,
+				B5CD3EB52A40B323008E4118 /* addiction.cpp in Sources */,
+				B5CD3F202A40B324008E4118 /* overmap_noise.cpp in Sources */,
+				B5CD3E242A40B323008E4118 /* translation_document.cpp in Sources */,
+				B5CD3DC92A40B323008E4118 /* init.cpp in Sources */,
+				B5CD3ECA2A40B323008E4118 /* requirements.cpp in Sources */,
+				B5CD3EAC2A40B323008E4118 /* behavior_strategy.cpp in Sources */,
+				B5CD3F2B2A40B324008E4118 /* cata_tiles.cpp in Sources */,
+				B5CD3E262A40B323008E4118 /* bodygraph.cpp in Sources */,
+				B5CD3ED62A40B323008E4118 /* character_modifier.cpp in Sources */,
+				B5CD3DC72A40B323008E4118 /* game_inventory.cpp in Sources */,
+				B5CD3E752A40B323008E4118 /* coordinate_conversions.cpp in Sources */,
+				B5CD3E122A40B323008E4118 /* achievement.cpp in Sources */,
+				B5CD3E5D2A40B323008E4118 /* pixel_minimap.cpp in Sources */,
+				B5CD3E6C2A40B323008E4118 /* do_turn.cpp in Sources */,
+				B5CD3E3C2A40B323008E4118 /* martialarts.cpp in Sources */,
+				B5CD3E012A40B323008E4118 /* activity_actor.cpp in Sources */,
+				B5CD3F232A40B324008E4118 /* talker_topic.cpp in Sources */,
+				B5CD3EE12A40B323008E4118 /* crafting_gui.cpp in Sources */,
+				B5CD3E202A40B323008E4118 /* ballistics.cpp in Sources */,
+				B5CD3EFC2A40B323008E4118 /* timed_event.cpp in Sources */,
+				B5CD3E3D2A40B323008E4118 /* proficiency.cpp in Sources */,
+				B5CD3E8F2A40B323008E4118 /* magic.cpp in Sources */,
+				B5CD3DD12A40B323008E4118 /* item_contents.cpp in Sources */,
+				B5CD3E2E2A40B323008E4118 /* debug.cpp in Sources */,
+				B5CD3F0A2A40B324008E4118 /* monattack.cpp in Sources */,
+				B5CD3E422A40B323008E4118 /* itype.cpp in Sources */,
+				B5CD3E732A40B323008E4118 /* sdl_wrappers.cpp in Sources */,
+				B5CD3E702A40B323008E4118 /* player_activity.cpp in Sources */,
+				B5CD3EE32A40B323008E4118 /* field_type.cpp in Sources */,
+				B5CD3E1F2A40B323008E4118 /* mongroup.cpp in Sources */,
+				B5CD3F1A2A40B324008E4118 /* catacharset.cpp in Sources */,
+				B5CD3EC92A40B323008E4118 /* messages.cpp in Sources */,
+				B5CD3E0C2A40B323008E4118 /* crafting.cpp in Sources */,
+				B5CD3E762A40B323008E4118 /* sdl_gamepad.cpp in Sources */,
+				B5CD3DFD2A40B323008E4118 /* animation.cpp in Sources */,
+				B5CD3F0F2A40B324008E4118 /* veh_utils.cpp in Sources */,
+				B5CD3E992A40B323008E4118 /* string_input_popup.cpp in Sources */,
+				B5CD3E6B2A40B323008E4118 /* character_escape.cpp in Sources */,
+				B5CD3E9E2A40B323008E4118 /* safemode_ui.cpp in Sources */,
+				B5CD3E112A40B323008E4118 /* translation_plural_evaluator.cpp in Sources */,
+				B5CD3EEA2A40B323008E4118 /* character.cpp in Sources */,
+				B5CD3DC32A40B323008E4118 /* iexamine.cpp in Sources */,
+				B5CD3F252A40B324008E4118 /* gates.cpp in Sources */,
+				B5CD3E252A40B323008E4118 /* emit.cpp in Sources */,
+				B5CD3E392A40B323008E4118 /* npc.cpp in Sources */,
+				B5CD3F162A40B324008E4118 /* magic_enchantment.cpp in Sources */,
+				B5CD3DD32A40B323008E4118 /* npc_attack.cpp in Sources */,
+				B5CD3DC62A40B323008E4118 /* computer_session.cpp in Sources */,
+				B5CD3EE42A40B323008E4118 /* memorial_logger.cpp in Sources */,
+				B5CD3E492A40B323008E4118 /* iuse_actor.cpp in Sources */,
+				B5CD3EEE2A40B323008E4118 /* name.cpp in Sources */,
+				B5CD3E722A40B323008E4118 /* mutation_ui.cpp in Sources */,
+				B5CD3DD42A40B323008E4118 /* visitable.cpp in Sources */,
+				B5CD3E9B2A40B323008E4118 /* iuse_software_minesweeper.cpp in Sources */,
+				B5CD3E022A40B323008E4118 /* rng.cpp in Sources */,
+				B5CD3F2A2A40B324008E4118 /* avatar_action.cpp in Sources */,
+				B5CD3EBF2A40B323008E4118 /* vehicle_autodrive.cpp in Sources */,
+				B5CD3E312A40B323008E4118 /* mission_companion.cpp in Sources */,
+				B5CD3DC02A40B323008E4118 /* character_martial_arts.cpp in Sources */,
+				B5CD3DE32A40B323008E4118 /* action.cpp in Sources */,
+				B5CD3EA02A40B323008E4118 /* units.cpp in Sources */,
+				B5CD3EDC2A40B323008E4118 /* units_utility.cpp in Sources */,
+				B5CD3DFB2A40B323008E4118 /* advanced_inv_pane.cpp in Sources */,
+				B5CD3E1B2A40B323008E4118 /* shadowcasting.cpp in Sources */,
+				B5CD3E182A40B323008E4118 /* mutation_data.cpp in Sources */,
+				B5CD3E162A40B323008E4118 /* mutation_type.cpp in Sources */,
+				B5CD3F022A40B323008E4118 /* generic_factory.cpp in Sources */,
+				B5CD3E892A40B323008E4118 /* worldfactory.cpp in Sources */,
+				B5CD3E142A40B323008E4118 /* dispersion.cpp in Sources */,
+				B5CD3E542A40B323008E4118 /* map_item_stack.cpp in Sources */,
+				B5CD3DE72A40B323008E4118 /* character_body.cpp in Sources */,
+				B5CD3F2D2A40B324008E4118 /* cursesport.cpp in Sources */,
+				B5CD3E5B2A40B323008E4118 /* map_field.cpp in Sources */,
+				B5CD3DCE2A40B323008E4118 /* npctrade_utils.cpp in Sources */,
+				B5CD3F112A40B324008E4118 /* item.cpp in Sources */,
+				B5CD3E572A40B323008E4118 /* wish.cpp in Sources */,
+				B5CD3E6F2A40B323008E4118 /* event.cpp in Sources */,
+				B5CD3EFD2A40B323008E4118 /* handle_liquid.cpp in Sources */,
+				B5CD3E8D2A40B323008E4118 /* kill_tracker.cpp in Sources */,
+				B5CD3DF12A40B323008E4118 /* character_crafting.cpp in Sources */,
+				B5CD3E4B2A40B323008E4118 /* mod_tileset.cpp in Sources */,
+				B5CD3E0D2A40B323008E4118 /* disease.cpp in Sources */,
+				B5CD3F222A40B324008E4118 /* proficiency_ui.cpp in Sources */,
+				B5CD3DC12A40B323008E4118 /* string_id.cpp in Sources */,
+				B5CD3EA92A40B323008E4118 /* savegame.cpp in Sources */,
+				B5CD3DF72A40B323008E4118 /* unicode.cpp in Sources */,
+				B5CD3EC22A40B323008E4118 /* inventory_ui.cpp in Sources */,
+				B5CD3E5C2A40B323008E4118 /* cata_variant.cpp in Sources */,
+				B5CD3E812A40B323008E4118 /* shearing.cpp in Sources */,
+				B5CD3EC12A40B323008E4118 /* activity_handlers.cpp in Sources */,
+				B5CD3E772A40B323008E4118 /* sdltiles.cpp in Sources */,
+				B5CD3EB92A40B323008E4118 /* event_statistics.cpp in Sources */,
+				B5CD3E102A40B323008E4118 /* bodypart.cpp in Sources */,
+				B5CD3ECE2A40B323008E4118 /* advanced_inv_area.cpp in Sources */,
+				B5CD3E682A40B323008E4118 /* behavior.cpp in Sources */,
+				B5CD3EA22A40B323008E4118 /* vehicle_part.cpp in Sources */,
+				B5CD3E4D2A40B323008E4118 /* lightmap.cpp in Sources */,
+				B5CD3EBC2A40B323008E4118 /* weather_type.cpp in Sources */,
+				B5CD3DD52A40B323008E4118 /* ui_manager.cpp in Sources */,
+				B5CD3E962A40B323008E4118 /* consumption.cpp in Sources */,
+				B5CD3F0B2A40B324008E4118 /* font_loader.cpp in Sources */,
+				B5CD3ED02A40B323008E4118 /* vehicle_selector.cpp in Sources */,
+				B5CD3E7B2A40B323008E4118 /* gamemode_tutorial.cpp in Sources */,
+				B5CD3E452A40B323008E4118 /* magic_spell_effect.cpp in Sources */,
+				B5CD3DC42A40B323008E4118 /* dependency_tree.cpp in Sources */,
+				B5CD3EA62A40B323008E4118 /* mondefense.cpp in Sources */,
+				B5CD3F312A40B324008E4118 /* options.cpp in Sources */,
+				B5CD3DFA2A40B323008E4118 /* activity_type.cpp in Sources */,
+				B5CD3EDB2A40B323008E4118 /* mondeath.cpp in Sources */,
+				B5CD3EB22A40B323008E4118 /* string_id_null_ids.cpp in Sources */,
+				B5CD3E4A2A40B323008E4118 /* shop_cons_rate.cpp in Sources */,
+				B5CD3EF72A40B323008E4118 /* bonuses.cpp in Sources */,
+				B5CD3E9A2A40B323008E4118 /* cached_options.cpp in Sources */,
+				B5CD3E1E2A40B323008E4118 /* fault.cpp in Sources */,
+				B5CD3E0E2A40B323008E4118 /* assign.cpp in Sources */,
+				B5CD3E952A40B323008E4118 /* string_editor_window.cpp in Sources */,
+				B5CD3EEF2A40B323008E4118 /* npc_class.cpp in Sources */,
+				B5CD3EF62A40B323008E4118 /* construction.cpp in Sources */,
+				B5CD3DCB2A40B323008E4118 /* dump.cpp in Sources */,
+				B5CD3EAA2A40B323008E4118 /* weakpoint.cpp in Sources */,
+				B5CD3ED82A40B323008E4118 /* display.cpp in Sources */,
+				B5CD3EF32A40B323008E4118 /* path_info.cpp in Sources */,
+				B5CD3ED72A40B323008E4118 /* craft_command.cpp in Sources */,
+				B5CD3DDF2A40B323008E4118 /* gamemode_defense.cpp in Sources */,
+				B5CD3F102A40B324008E4118 /* color.cpp in Sources */,
+				B5CD3ECC2A40B323008E4118 /* pixel_minimap_projectors.cpp in Sources */,
+				B5CD3E592A40B323008E4118 /* popup.cpp in Sources */,
+				B5CD3E582A40B323008E4118 /* overlay_ordering.cpp in Sources */,
+				B5CD3E2D2A40B323008E4118 /* descriptions.cpp in Sources */,
+				B5CD3E5F2A40B323008E4118 /* skill_boost.cpp in Sources */,
+				B5CD3ECD2A40B323008E4118 /* profession.cpp in Sources */,
+				B5CD3F142A40B324008E4118 /* item_location.cpp in Sources */,
+				B5CD3DD02A40B323008E4118 /* fungal_effects.cpp in Sources */,
+				B5CD3EDA2A40B323008E4118 /* cata_bitset.cpp in Sources */,
+				B5CD3E552A40B323008E4118 /* overmap_ui.cpp in Sources */,
+				B5CD3EFA2A40B323008E4118 /* move_mode.cpp in Sources */,
+				B5CD3E302A40B323008E4118 /* test_data.cpp in Sources */,
+				B5CD3EC52A40B323008E4118 /* talker_npc.cpp in Sources */,
+				B5CD3DCD2A40B323008E4118 /* morale_types.cpp in Sources */,
+				B5CD3F092A40B324008E4118 /* mission_start.cpp in Sources */,
+				B5CD3EA52A40B323008E4118 /* debug_menu.cpp in Sources */,
+				B5CD3F172A40B324008E4118 /* filesystem_impl.cpp in Sources */,
+				B5CD3E362A40B323008E4118 /* item_pocket.cpp in Sources */,
+				B5CD3EC62A40B323008E4118 /* scent_block.cpp in Sources */,
+				B5CD3E1A2A40B323008E4118 /* monster_oracle.cpp in Sources */,
+				B5CD3E332A40B323008E4118 /* projectile.cpp in Sources */,
+				B5CD3E742A40B323008E4118 /* talker_avatar.cpp in Sources */,
+				B5CD3EE22A40B323008E4118 /* distraction_manager.cpp in Sources */,
+				B5CD3F192A40B324008E4118 /* mapgen_functions.cpp in Sources */,
+				B5CD3EED2A40B323008E4118 /* iexamine_actors.cpp in Sources */,
+				B5CD3E432A40B323008E4118 /* overmap_location.cpp in Sources */,
+				B5CD3EAE2A40B323008E4118 /* level_cache.cpp in Sources */,
+				B5CD3F292A40B324008E4118 /* basecamp.cpp in Sources */,
+				B5CD3DE02A40B323008E4118 /* savegame_json.cpp in Sources */,
+				B5CD3E5A2A40B323008E4118 /* help.cpp in Sources */,
+				B5CD3EBE2A40B323008E4118 /* trade_ui.cpp in Sources */,
+				B5CD3EB42A40B323008E4118 /* veh_appliance.cpp in Sources */,
+				B5CD3DF42A40B323008E4118 /* anatomy.cpp in Sources */,
+				B5CD3E462A40B323008E4118 /* character_morale.cpp in Sources */,
+				B5CD3ECB2A40B323008E4118 /* mapgendata.cpp in Sources */,
+				B5CD3EEB2A40B323008E4118 /* calendar.cpp in Sources */,
+				B5CD3E802A40B323008E4118 /* field.cpp in Sources */,
+				B5CD3EAF2A40B323008E4118 /* monster.cpp in Sources */,
+				B5CD3F2C2A40B324008E4118 /* crash.cpp in Sources */,
+				B5CD3EE62A40B323008E4118 /* regional_settings.cpp in Sources */,
+				B5CD3DE12A40B323008E4118 /* skill.cpp in Sources */,
+				B5CD3E7E2A40B323008E4118 /* sdlsound.cpp in Sources */,
+				B5CD3ECF2A40B323008E4118 /* simplexnoise.cpp in Sources */,
+				B5CD3F2F2A40B324008E4118 /* system_locale.cpp in Sources */,
+				B5CD3E322A40B323008E4118 /* music.cpp in Sources */,
+				B5CD3EBD2A40B323008E4118 /* mission_util.cpp in Sources */,
+				B5CD3EE72A40B323008E4118 /* live_view.cpp in Sources */,
+				B5CD3EDE2A40B323008E4118 /* construction_group.cpp in Sources */,
+				B5CD3F322A40B324008E4118 /* text_snippets.cpp in Sources */,
+				B5CD3E832A40B323008E4118 /* melee.cpp in Sources */,
+				B5CD3E292A40B323008E4118 /* string_formatter.cpp in Sources */,
+				B5CD3F242A40B324008E4118 /* simple_pathfinding.cpp in Sources */,
+				B5CD3EE02A40B323008E4118 /* iuse_software_sokoban.cpp in Sources */,
+				B5CD3E782A40B323008E4118 /* trapfunc.cpp in Sources */,
+				B5CD3E092A40B323008E4118 /* event_bus.cpp in Sources */,
+				B5CD3E652A40B323008E4118 /* morale.cpp in Sources */,
+				B5CD3E8E2A40B323008E4118 /* advanced_inv_pagination.cpp in Sources */,
+				B5CD3F052A40B323008E4118 /* recipe.cpp in Sources */,
+				B5CD3EF22A40B323008E4118 /* character_attire.cpp in Sources */,
+				B5CD3EB32A40B323008E4118 /* condition.cpp in Sources */,
+				B5CD3DEE2A40B323008E4118 /* computer.cpp in Sources */,
+				B5CD3E032A40B323008E4118 /* explosion.cpp in Sources */,
+				B5CD3E9F2A40B323008E4118 /* trap.cpp in Sources */,
+				B5CD3E902A40B323008E4118 /* mapdata.cpp in Sources */,
+				B5CD3E6A2A40B323008E4118 /* activity_item_handling.cpp in Sources */,
+				B5CD3E942A40B323008E4118 /* mtype.cpp in Sources */,
+				B5CD3EF42A40B323008E4118 /* talker_item.cpp in Sources */,
+				B5CD3EC72A40B323008E4118 /* flexbuffer_cache.cpp in Sources */,
+				B5CD3F2E2A40B324008E4118 /* item_factory.cpp in Sources */,
+				B5CD3ED52A40B323008E4118 /* translations.cpp in Sources */,
+				B5CD3E7C2A40B323008E4118 /* mod_manager.cpp in Sources */,
+				B5CD3DF02A40B323008E4118 /* recipe_dictionary.cpp in Sources */,
+				B5CD3E132A40B323008E4118 /* missiondef.cpp in Sources */,
+				B5CD3EB82A40B323008E4118 /* savegame_legacy.cpp in Sources */,
+				B5CD3F412A40B343008E4118 /* CDDA_main.cpp in Sources */,
+				B5CD3E2C2A40B323008E4118 /* char_validity_check.cpp in Sources */,
+				B5CD3E2B2A40B323008E4118 /* contents_change_handler.cpp in Sources */,
+				B5CD3DED2A40B323008E4118 /* reachability_cache.cpp in Sources */,
+				B5CD3DF82A40B323008E4118 /* vehicle_group.cpp in Sources */,
+				B5CD3EFB2A40B323008E4118 /* input.cpp in Sources */,
+				B5CD3EBA2A40B323008E4118 /* creature_tracker.cpp in Sources */,
+				B5CD3E862A40B323008E4118 /* rotatable_symbols.cpp in Sources */,
+				B5CD3E852A40B323008E4118 /* magic_teleporter_list.cpp in Sources */,
+				B5CD3F182A40B324008E4118 /* map_extras.cpp in Sources */,
+				B5CD3E792A40B323008E4118 /* faction.cpp in Sources */,
+				B5CD3E3A2A40B323008E4118 /* clzones.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -7052,6 +8082,11 @@
 			isa = PBXTargetDependency;
 			name = "libSDL_mixer-iOS";
 			targetProxy = B576B2672972F94D00221544 /* PBXContainerItemProxy */;
+		};
+		B5CD3F742A40BAAE008E4118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FD900B2A40B1480038B6BD /* CDDA0GFramework */;
+			targetProxy = B5CD3F732A40BAAE008E4118 /* PBXContainerItemProxy */;
 		};
 		B5ED43C529B47C950015647C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7193,6 +8228,22 @@
 				B5A2FA9E29B4820400035DE0 /* es */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5CD3F602A40B76B008E4118 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5CD3F612A40B76B008E4118 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5CD3F662A40B76E008E4118 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -7762,6 +8813,76 @@
 			};
 			name = Release;
 		};
+		B5CD3F6C2A40B76E008E4118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6330DFC3693BAA9F04413663 /* Pods-DynLoadTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynLoadTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.DynLoadTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5CD3F6D2A40B76E008E4118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB2A103FAB31E4FB8C9EFA7 /* Pods-DynLoadTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DynLoadTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.DynLoadTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B5ED454229B47C950015647C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB7CE7FDAB55628876236D9C /* Pods-CDDA0F.debug.xcconfig */;
@@ -7832,6 +8953,86 @@
 			};
 			name = Release;
 		};
+		B5FD90112A40B14B0038B6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A481254E1A677404FB5012 /* Pods-CDDA0GFramework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Аполлов Юрий Андреевич. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0GFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"worktree/Cataclysm-DDA/0.G/src/",
+					"worktree/Cataclysm-DDA/0.G/src/third-party/",
+				);
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5FD90122A40B14B0038B6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772523E16F2630A67A600773 /* Pods-CDDA0GFramework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3NJUD9MLAB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Аполлов Юрий Андреевич. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CDDA0GFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				USER_HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"worktree/Cataclysm-DDA/0.G/src/",
+					"worktree/Cataclysm-DDA/0.G/src/third-party/",
+				);
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -7898,11 +9099,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B5CD3F6B2A40B76E008E4118 /* Build configuration list for PBXNativeTarget "DynLoadTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5CD3F6C2A40B76E008E4118 /* Debug */,
+				B5CD3F6D2A40B76E008E4118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5ED454129B47C950015647C /* Build configuration list for PBXNativeTarget "CDDA0F" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5ED454229B47C950015647C /* Debug */,
 				B5ED454329B47C950015647C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FD90102A40B14B0038B6BD /* Build configuration list for PBXNativeTarget "CDDA0GFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FD90112A40B14B0038B6BD /* Debug */,
+				B5FD90122A40B14B0038B6BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
