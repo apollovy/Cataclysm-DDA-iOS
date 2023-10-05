@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0F50ECFEA796BDF2AAAD5A1F /* Pods_CDDA0G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3AD4521B0653F094AFF47C /* Pods_CDDA0G.framework */; };
-		481D1EC3C0CC73169D37E4FC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		481D1EC3C0CC73169D37E4FC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		4B734582ECF0E6F84999E62F /* Pods_CDDA0F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67819149139E1F8C565B78DD /* Pods_CDDA0F.framework */; };
 		93852E9747E8A0E7B486616E /* Pods_CBNfreeIAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EA63EE75753A6B49950B7A /* Pods_CBNfreeIAP.framework */; };
 		9675DF21262DF30FC5D2E42C /* Pods_CBN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F507B62FB50209BDCC6491E /* Pods_CBN.framework */; };
-		A252EA703B7FAB4517AD075B /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		A252EA703B7FAB4517AD075B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		B501C91C297411E800CB965C /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EF270E11D0002163AD /* text_snippets.cpp */; };
 		B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
 		B501C91E297411E800CB965C /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C07270E1216002163AD /* item.cpp */; };
@@ -366,7 +366,6 @@
 		B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
 		B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5237F392A095526006B3BE8 /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
-		B5237F3A2A095526006B3BE8 /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
 		B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
 		B526C62529B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B526C62629B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
@@ -378,6 +377,7 @@
 		B53D9E0D297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
 		B53D9E13297BF53600A23F16 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
+		B54CB6762ACEFA710021B82F /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
 		B55910D4271F2683001F34CD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55910D2271F24B4001F34CD /* CoreServices.framework */; };
 		B5625B4229AF803400BA1FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5625B4129AF803400BA1FDF /* main.m */; };
 		B5625BA429AFB87400BA1FDF /* avatar_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9829AFB87100BA1FDF /* avatar_functions.cpp */; };
@@ -3050,7 +3050,7 @@
 				B576B3C12972F94D00221544 /* StoreKit.framework in Frameworks */,
 				B576B3C22972F94D00221544 /* CoreMotion.framework in Frameworks */,
 				B576B3C32972F94D00221544 /* GameController.framework in Frameworks */,
-				A252EA703B7FAB4517AD075B /* BuildFile in Frameworks */,
+				A252EA703B7FAB4517AD075B /* (null) in Frameworks */,
 				93852E9747E8A0E7B486616E /* Pods_CBNfreeIAP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3091,7 +3091,7 @@
 				B5ED452829B47C950015647C /* StoreKit.framework in Frameworks */,
 				B5ED452929B47C950015647C /* CoreMotion.framework in Frameworks */,
 				B5ED452A29B47C950015647C /* GameController.framework in Frameworks */,
-				481D1EC3C0CC73169D37E4FC /* BuildFile in Frameworks */,
+				481D1EC3C0CC73169D37E4FC /* (null) in Frameworks */,
 				4B734582ECF0E6F84999E62F /* Pods_CDDA0F.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5989,6 +5989,7 @@
 				B5709B112A092B86002EF848 /* vehicle_selector.cpp in Sources */,
 				B5709B3A2A092B87002EF848 /* weather.cpp in Sources */,
 				B5709B4C2A092B88002EF848 /* character_modifier.cpp in Sources */,
+				B54CB6762ACEFA710021B82F /* displayInitialPaywall.m in Sources */,
 				B5709CD72A092CEA002EF848 /* talker_monster.cpp in Sources */,
 				B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */,
 				B5709B332A092B87002EF848 /* iuse_software_kitten.cpp in Sources */,
@@ -6295,7 +6296,6 @@
 				B5709B3B2A092B87002EF848 /* construction.cpp in Sources */,
 				B5709B392A092B87002EF848 /* vehicle_part.cpp in Sources */,
 				B5709CB42A092CE9002EF848 /* player_activity.cpp in Sources */,
-				B5237F3A2A095526006B3BE8 /* displayInitialPaywall.m in Sources */,
 				B5709D102A092CEB002EF848 /* units.cpp in Sources */,
 				B5709B702A092B88002EF848 /* distribution.cpp in Sources */,
 				B5709CA42A092CE8002EF848 /* ui_manager.cpp in Sources */,
@@ -7383,7 +7383,7 @@
 			baseConfigurationReference = 53B1DCB12ED060C34430502E /* Pods-CDDA0G.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.G/App.entitlements;
-				CURRENT_PROJECT_VERSION = 4003;
+				CURRENT_PROJECT_VERSION = 4004;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -7420,7 +7420,7 @@
 			baseConfigurationReference = 66E06B81747F63A2FFB8DA26 /* Pods-CDDA0G.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = CDDA/Versions/0.G/App.entitlements;
-				CURRENT_PROJECT_VERSION = 4003;
+				CURRENT_PROJECT_VERSION = 4004;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -7509,7 +7509,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ./Common/Binaries/glib/include;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = ./Common/Binaries/glib/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -7585,7 +7584,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ./Common/Binaries/glib/include;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = ./Common/Binaries/glib/lib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
