@@ -41,5 +41,5 @@ target 'CDDA0GFramework' do
 end
 
 target 'DynLoadTest' do
-  iOSDependencies
+  cDDADependencies
 end

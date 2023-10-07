@@ -1,10 +1,10 @@
 #include <Foundation/Foundation.h>
+#include <dlfcn.h>
 
 #include "CDDA_main.h"
 
 #include <UIKit/UIKit.h>
 #include "MainViewController.h"
-#import <SDL2/SDL.h>
 
 // https://stackoverflow.com/a/15318065/674557
 char** cArrayFromNSArray(NSArray* array)
@@ -50,6 +50,8 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(int attem
     );
 }
 
+typedef int (*CDDA_mainFunctionType)(int, char*[]);
+
 int CDDA_iOS_main(NSString* documentPath) {
     configureFirebase();
     NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
@@ -62,12 +64,24 @@ int CDDA_iOS_main(NSString* documentPath) {
     int newArgumentsCount = static_cast<int>(newArguments.count);
     char** stringArgs = cArrayFromNSArray(newArguments);
     
-    SDL_iPhoneSetEventPump(SDL_TRUE);
     if (!isUnlimitedFunctionalityUnlocked()) {
         repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds();
     }
-    int exitCode = CDDA_main(newArgumentsCount, stringArgs);
-    SDL_iPhoneSetEventPump(SDL_FALSE);
+    int exitCode;
+    void* cddaLib = dlopen("Frameworks/CDDA0GFramework.framework/CDDA0GFramework", RTLD_NOW);
+    if (cddaLib == NULL) {
+        NSLog(@"cddaLib == NULL: %s", dlerror());
+        exitCode = -1;
+    } else {
+        void* initializer = dlsym(cddaLib, "CDDA_main");
+        if (initializer == NULL) {
+            NSLog(@"initializer == NULL: %s",  dlerror());
+            exitCode = -2;
+        } else {
+            CDDA_mainFunctionType CDDA_main = (CDDA_mainFunctionType) initializer;
+            exitCode = CDDA_main(newArgumentsCount, stringArgs);
+        }
+    }
     
     dispatch_async(dispatch_get_main_queue(), ^{
         MainViewController* vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
