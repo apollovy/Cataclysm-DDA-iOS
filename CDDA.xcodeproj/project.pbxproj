@@ -370,10 +370,9 @@
 		B526C62529B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B526C62629B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B526C62829B4AF4F0086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B526C62729B4AF4F0086172F /* version.cpp */; };
-		B52FBAAF2AD2163500C2D3F9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52FBAA42AD2163500C2D3F9 /* CoreFoundation.framework */; };
-		B52FBAB12AD216C800C2D3F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52FBAB02AD216C800C2D3F9 /* CoreGraphics.framework */; };
-		B52FBAB32AD216F400C2D3F9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52FBAB22AD216F400C2D3F9 /* ImageIO.framework */; };
-		B52FBAB52AD2179D00C2D3F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52FBAB42AD2179D00C2D3F9 /* UIKit.framework */; };
+		B52FBACC2AD21D5400C2D3F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709AE72A092B82002EF848 /* main.cpp */; };
+		B52FBACD2AD21D9000C2D3F9 /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.cpp */; };
+		B52FBACF2AD222DD00C2D3F9 /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A602A09283A002EF848 /* version.cpp */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B53D9DE4297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
 		B53D9E08297BEA1800A23F16 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
@@ -437,7 +436,6 @@
 		B5709BA62A092BB1002EF848 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5709A672A092AE2002EF848 /* gfx */; };
 		B5709D592A092D94002EF848 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5709D572A092D69002EF848 /* mo */; };
 		B5709D5A2A092EEA002EF848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5709A542A092822002EF848 /* InfoPlist.strings */; };
-		B5709D5B2A092F87002EF848 /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A602A09283A002EF848 /* version.cpp */; };
 		B576B3B52972F94D00221544 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B576B3B72972F94D00221544 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B576B3B92972F94D00221544 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -1533,11 +1531,9 @@
 		B5CD3F332A40B324008E4118 /* vehicle_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C1B2A092CD8002EF848 /* vehicle_display.cpp */; };
 		B5CD3F342A40B324008E4118 /* monfaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709C712A092CE2002EF848 /* monfaction.cpp */; };
 		B5CD3F352A40B324008E4118 /* mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709BF12A092CD2002EF848 /* mission.cpp */; };
-		B5CD3F402A40B343008E4118 /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A602A09283A002EF848 /* version.cpp */; };
 		B5CD3F452A40B54E008E4118 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B5CD3F462A40B54E008E4118 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
 		B5CD3F472A40B54E008E4118 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
-		B5CD3F502A40B641008E4118 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD3F4F2A40B640008E4118 /* MobileCoreServices.framework */; };
 		B5CD3F592A40B76B008E4118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F582A40B76B008E4118 /* AppDelegate.m */; };
 		B5CD3F5C2A40B76B008E4118 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5B2A40B76B008E4118 /* SceneDelegate.m */; };
 		B5CD3F622A40B76B008E4118 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F602A40B76B008E4118 /* Main.storyboard */; };
@@ -1546,7 +1542,6 @@
 		B5CD3F6A2A40B76E008E4118 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.mm */; };
 		B5CD3F702A40B995008E4118 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B5CD3FB42A40C45D008E4118 /* CDDA0GFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5DC25972AD084AC00565DFD /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.cpp */; };
 		B5DC25A22AD085F200565DFD /* CDDA0GFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; };
 		B5DC25A32AD085F200565DFD /* CDDA0GFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B5ED451E29B47C950015647C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
@@ -3201,12 +3196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52FBAB32AD216F400C2D3F9 /* ImageIO.framework in Frameworks */,
-				B52FBAB52AD2179D00C2D3F9 /* UIKit.framework in Frameworks */,
 				B5CD3F472A40B54E008E4118 /* libSDL2_ttf.a in Frameworks */,
-				B5CD3F502A40B641008E4118 /* MobileCoreServices.framework in Frameworks */,
-				B52FBAAF2AD2163500C2D3F9 /* CoreFoundation.framework in Frameworks */,
-				B52FBAB12AD216C800C2D3F9 /* CoreGraphics.framework in Frameworks */,
 				B5CD3F462A40B54E008E4118 /* libSDL2_mixer.a in Frameworks */,
 				B5CD3F452A40B54E008E4118 /* libSDL2_image.a in Frameworks */,
 				3BFDEEB9D1041E545F06929A /* Pods_CDDA0GFramework.framework in Frameworks */,
@@ -6226,11 +6216,11 @@
 				B570996E2A0926E1002EF848 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */,
 				B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */,
-				B5709D5B2A092F87002EF848 /* version.cpp in Sources */,
 				B57099962A0926E1002EF848 /* MenuButton.swift in Sources */,
 				B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
 				B5237F392A095526006B3BE8 /* PaywallDisplayEventSubscriber.mm in Sources */,
 				B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
+				B52FBACD2AD21D9000C2D3F9 /* CDDA_main.cpp in Sources */,
 				B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B57099AF2A0926E1002EF848 /* GamePadViewController.m in Sources */,
 				B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
@@ -6994,7 +6984,6 @@
 				B5CD3E3E2A40B323008E4118 /* iuse_software_kitten.cpp in Sources */,
 				B5CD3DFC2A40B323008E4118 /* advanced_inv.cpp in Sources */,
 				B5CD3E612A40B323008E4118 /* compatibility.cpp in Sources */,
-				B5CD3F402A40B343008E4118 /* version.cpp in Sources */,
 				B5CD3F132A40B324008E4118 /* bionics.cpp in Sources */,
 				B5CD3ED12A40B323008E4118 /* distribution.cpp in Sources */,
 				B5CD3F062A40B323008E4118 /* temp_crafting_inventory.cpp in Sources */,
@@ -7017,6 +7006,7 @@
 				B5CD3E632A40B323008E4118 /* flag.cpp in Sources */,
 				B5CD3DE22A40B323008E4118 /* talker_monster.cpp in Sources */,
 				B5CD3DFE2A40B323008E4118 /* character_oracle.cpp in Sources */,
+				B52FBACC2AD21D5400C2D3F9 /* main.cpp in Sources */,
 				B5CD3DD92A40B323008E4118 /* iuse_software_snake.cpp in Sources */,
 				B5CD3F272A40B324008E4118 /* translation_manager.cpp in Sources */,
 				B5CD3DF62A40B323008E4118 /* speed_description.cpp in Sources */,
@@ -7030,6 +7020,7 @@
 				B5CD3E8B2A40B323008E4118 /* gamemode.cpp in Sources */,
 				B5CD3E412A40B323008E4118 /* veh_interact.cpp in Sources */,
 				B5CD3E1D2A40B323008E4118 /* mattack_actors.cpp in Sources */,
+				B52FBACF2AD222DD00C2D3F9 /* version.cpp in Sources */,
 				B5CD3E7F2A40B323008E4118 /* iuse.cpp in Sources */,
 				B5CD3DCF2A40B323008E4118 /* active_item_cache.cpp in Sources */,
 				B5CD3E912A40B323008E4118 /* json.cpp in Sources */,
@@ -7119,7 +7110,6 @@
 				B5CD3ECA2A40B323008E4118 /* requirements.cpp in Sources */,
 				B5CD3EAC2A40B323008E4118 /* behavior_strategy.cpp in Sources */,
 				B5CD3F2B2A40B324008E4118 /* cata_tiles.cpp in Sources */,
-				B5DC25972AD084AC00565DFD /* CDDA_main.cpp in Sources */,
 				B5CD3E262A40B323008E4118 /* bodygraph.cpp in Sources */,
 				B5CD3ED62A40B323008E4118 /* character_modifier.cpp in Sources */,
 				B5CD3DC72A40B323008E4118 /* game_inventory.cpp in Sources */,
