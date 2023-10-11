@@ -354,7 +354,7 @@
 		B501CA7C297411E800CB965C /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B501CA7E297411E800CB965C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
 		B501CA81297411E800CB965C /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
-		B501CA82297411E800CB965C /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
+		B501CA82297411E800CB965C /* CBN.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* CBN.png */; };
 		B505C87529B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
 		B505C87629B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
 		B505C87729B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
@@ -456,7 +456,7 @@
 		B576B3CC2972F94D00221544 /* UIControls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B560EE8A25D9822000FDE1C4 /* UIControls.storyboard */; };
 		B576B3CE2972F94D00221544 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B515981526348768008BFD0C /* Localizable.strings */; };
 		B576B3D12972F94D00221544 /* dPad-None@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B559EDAC25AB85A40065602D /* dPad-None@2x.png */; };
-		B576B3D22972F94D00221544 /* icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */; };
+		B576B3D22972F94D00221544 /* CBN.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* CBN.png */; };
 		B576B414297303D500221544 /* ascii_art.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B840270E16AD00155C37 /* ascii_art.cpp */; };
 		B576B415297303D500221544 /* map_item_stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A28270E11D1002163AD /* map_item_stack.cpp */; };
 		B576B416297303D500221544 /* mod_tileset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C04270E1216002163AD /* mod_tileset.cpp */; };
@@ -1542,8 +1542,6 @@
 		B5CD3F642A40B76E008E4118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F632A40B76E008E4118 /* Assets.xcassets */; };
 		B5CD3F672A40B76E008E4118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */; };
 		B5CD3F6A2A40B76E008E4118 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.mm */; };
-		B5CD3F702A40B995008E4118 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
-		B5CD3FB42A40C45D008E4118 /* CDDA0GFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5ED451E29B47C950015647C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B5ED451F29B47C950015647C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5ED452029B47C950015647C /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -1557,6 +1555,11 @@
 		B5ED452829B47C950015647C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54195C82955BBEA0035CC2F /* StoreKit.framework */; };
 		B5ED452929B47C950015647C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7F2592A0AD00505231 /* CoreMotion.framework */; };
 		B5ED452A29B47C950015647C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
+		B5F170A02AD6D1F200C00B5F /* GameChooser.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */; };
+		B5F170A22AD6D34500C00B5F /* CDDA.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F170A12AD6D34500C00B5F /* CDDA.png */; };
+		B5F170A72AD6DF3400C00B5F /* CBN.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* CBN.png */; };
+		B5F170A82AD6E1EE00C00B5F /* GameChooserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F170A42AD6D71600C00B5F /* GameChooserView.m */; };
+		B5F170AB2AD6E33100C00B5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5E2A40B76B008E4118 /* ViewController.m */; };
 		B5FD900F2A40B14B0038B6BD /* CDDA0GFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0AA2139DF1712133447F562 /* CDDAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA241AF87439EC8E6507CF /* CDDAUITests.swift */; };
 		D138F4137888FA6D3BA8DBFE /* Pods_CDDA0F.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F201E72B3AD3AE3BF8FFCB18 /* Pods_CDDA0F.framework */; };
@@ -1662,13 +1665,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = BE1FA90707AF96B2004B6283;
 			remoteInfo = "libSDL_mixer-iOS";
-		};
-		B5CD3F732A40BAAE008E4118 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B57201C1259293EE003D2A20 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5FD900B2A40B1480038B6BD;
-			remoteInfo = CDDA0GFramework;
 		};
 		B5DC25A52AD08BAC00565DFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1790,16 +1786,6 @@
 				B5C941D52AD3386D008B5E69 /* CDDA0GFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5CD3FB32A40C444008E4118 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B5CD3FB42A40C45D008E4118 /* CDDA0GFramework.framework in CopyFiles */,
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B5ED453929B47C950015647C /* Copy gfx to data */ = {
@@ -3036,7 +3022,7 @@
 		B5CD3F5A2A40B76B008E4118 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		B5CD3F5B2A40B76B008E4118 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		B5CD3F5D2A40B76B008E4118 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5CD3F5E2A40B76B008E4118 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		B5CD3F5E2A40B76B008E4118 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B5CD3F612A40B76B008E4118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CD3F632A40B76E008E4118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5CD3F662A40B76E008E4118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -3044,11 +3030,15 @@
 		B5CD3F692A40B76E008E4118 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B5CD3F762A40BB24008E4118 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CD3F772A40BB24008E4118 /* SentryPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SentryPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
+		B5E6FF7725A393DC003FB37F /* CBN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBN.png; sourceTree = "<group>"; };
 		B5ED454429B47C950015647C /* CDDA0F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA0F.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ED454D29B47DA20015647C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5ED454E29B47DBA0015647C /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		B5ED454F29B47DE10015647C /* icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024x1024.png; sourceTree = "<group>"; };
+		B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameChooser.xib; sourceTree = "<group>"; };
+		B5F170A12AD6D34500C00B5F /* CDDA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CDDA.png; path = CDDA/Versions/0.E/CDDA.png; sourceTree = SOURCE_ROOT; };
+		B5F170A42AD6D71600C00B5F /* GameChooserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameChooserView.m; sourceTree = "<group>"; };
+		B5F170A62AD6D72E00C00B5F /* GameChooserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameChooserView.h; sourceTree = "<group>"; };
 		B5FCB825295720C400BD43A4 /* FirebaseAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebaseAnalytics.xcframework; path = Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.xcframework; sourceTree = "<group>"; };
 		B5FCB828295720F200BD43A4 /* Pods_CDDA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_CDDA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FD1F2925A575AB00CE613D /* libintl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libintl.h; sourceTree = "<group>"; };
@@ -3256,7 +3246,7 @@
 				B57B282E29741D510043A513 /* mo */,
 				B57B282829741C250043A513 /* Assets.xcassets */,
 				B501CAC0297414AD00CB965C /* src */,
-				B5E6FF7725A393DC003FB37F /* icon_1024x1024.png */,
+				B5E6FF7725A393DC003FB37F /* CBN.png */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4657,12 +4647,15 @@
 				B5CD3F5A2A40B76B008E4118 /* SceneDelegate.h */,
 				B5CD3F5B2A40B76B008E4118 /* SceneDelegate.m */,
 				B5CD3F5D2A40B76B008E4118 /* ViewController.h */,
-				B5CD3F5E2A40B76B008E4118 /* ViewController.mm */,
+				B5CD3F5E2A40B76B008E4118 /* ViewController.m */,
 				B5CD3F602A40B76B008E4118 /* Main.storyboard */,
 				B5CD3F632A40B76E008E4118 /* Assets.xcassets */,
 				B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */,
 				B5CD3F682A40B76E008E4118 /* Info.plist */,
 				B5CD3F692A40B76E008E4118 /* main.mm */,
+				B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */,
+				B5F170A42AD6D71600C00B5F /* GameChooserView.m */,
+				B5F170A62AD6D72E00C00B5F /* GameChooserView.h */,
 			);
 			path = DynLoadTest;
 			sourceTree = "<group>";
@@ -4728,6 +4721,7 @@
 		B5ED454729B47CD10015647C /* Versions */ = {
 			isa = PBXGroup;
 			children = (
+				B5F170A32AD6D4E400C00B5F /* 0.E */,
 				B5709A4F2A09279C002EF848 /* 0.G */,
 				B5ED454629B47CC40015647C /* 0.F */,
 			);
@@ -4743,6 +4737,14 @@
 				B5B01B98259BF0480023AB00 /* source */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B5F170A32AD6D4E400C00B5F /* 0.E */ = {
+			isa = PBXGroup;
+			children = (
+				B5F170A12AD6D34500C00B5F /* CDDA.png */,
+			);
+			path = 0.E;
 			sourceTree = "<group>";
 		};
 		B5FCB836295721B200BD43A4 /* Recovered References */ = {
@@ -4961,13 +4963,11 @@
 				B5CD3F512A40B76B008E4118 /* Sources */,
 				B5CD3F522A40B76B008E4118 /* Frameworks */,
 				B5CD3F532A40B76B008E4118 /* Resources */,
-				B5CD3FB32A40C444008E4118 /* CopyFiles */,
 				951DDF8761889779EE2519FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B5CD3F742A40BAAE008E4118 /* PBXTargetDependency */,
 			);
 			name = DynLoadTest;
 			productName = DynLoadTest;
@@ -5170,7 +5170,7 @@
 				B501CA7E297411E800CB965C /* Localizable.strings in Resources */,
 				B501CA81297411E800CB965C /* dPad-None@2x.png in Resources */,
 				B57B28022974157F0043A513 /* InfoPlist.strings in Resources */,
-				B501CA82297411E800CB965C /* icon_1024x1024.png in Resources */,
+				B501CA82297411E800CB965C /* CBN.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5224,7 +5224,7 @@
 				B576B3D12972F94D00221544 /* dPad-None@2x.png in Resources */,
 				B57B28012974157D0043A513 /* InfoPlist.strings in Resources */,
 				B57B282A29741C250043A513 /* Assets.xcassets in Resources */,
-				B576B3D22972F94D00221544 /* icon_1024x1024.png in Resources */,
+				B576B3D22972F94D00221544 /* CBN.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5242,9 +5242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F170A72AD6DF3400C00B5F /* CBN.png in Resources */,
 				B542A03D2AD092EC00FB4493 /* gfx in Resources */,
 				B5CD3F672A40B76E008E4118 /* LaunchScreen.storyboard in Resources */,
 				B542A03E2AD092F000FB4493 /* mo in Resources */,
+				B5F170A22AD6D34500C00B5F /* CDDA.png in Resources */,
+				B5F170A02AD6D1F200C00B5F /* GameChooser.xib in Resources */,
 				B5CD3F642A40B76E008E4118 /* Assets.xcassets in Resources */,
 				B542A03C2AD092E400FB4493 /* data in Resources */,
 				B5CD3F622A40B76B008E4118 /* Main.storyboard in Resources */,
@@ -6595,8 +6598,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CD3F702A40B995008E4118 /* path_utils.m in Sources */,
+				B5F170A82AD6E1EE00C00B5F /* GameChooserView.m in Sources */,
 				B5CD3F592A40B76B008E4118 /* AppDelegate.m in Sources */,
+				B5F170AB2AD6E33100C00B5F /* ViewController.m in Sources */,
 				B5CD3F6A2A40B76E008E4118 /* main.mm in Sources */,
 				B5CD3F5C2A40B76B008E4118 /* SceneDelegate.m in Sources */,
 			);
@@ -7353,11 +7357,6 @@
 			isa = PBXTargetDependency;
 			name = "libSDL_mixer-iOS";
 			targetProxy = B576B2672972F94D00221544 /* PBXContainerItemProxy */;
-		};
-		B5CD3F742A40BAAE008E4118 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5FD900B2A40B1480038B6BD /* CDDA0GFramework */;
-			targetProxy = B5CD3F732A40BAAE008E4118 /* PBXContainerItemProxy */;
 		};
 		B5DC25A62AD08BAC00565DFD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
