@@ -56,6 +56,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" none="YES"/>
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="yYC-1J-sLM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2Mw-AL-ntO"/>
                 <constraint firstItem="zfZ-d1-qVn" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Idk-zH-L42"/>
