@@ -380,9 +380,6 @@
 		B53D9E0D297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
 		B53D9E13297BF53600A23F16 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
-		B542A03C2AD092E400FB4493 /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5709A682A092AE2002EF848 /* data */; };
-		B542A03D2AD092EC00FB4493 /* gfx in Resources */ = {isa = PBXBuildFile; fileRef = B5709A672A092AE2002EF848 /* gfx */; };
-		B542A03E2AD092F000FB4493 /* mo in Resources */ = {isa = PBXBuildFile; fileRef = B5709D572A092D69002EF848 /* mo */; };
 		B55910D4271F2683001F34CD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55910D2271F24B4001F34CD /* CoreServices.framework */; };
 		B5625B4229AF803400BA1FDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5625B4129AF803400BA1FDF /* main.m */; };
 		B5625BA429AFB87400BA1FDF /* avatar_functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9829AFB87100BA1FDF /* avatar_functions.cpp */; };
@@ -5261,13 +5258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F170A72AD6DF3400C00B5F /* CBN.png in Resources */,
-				B542A03D2AD092EC00FB4493 /* gfx in Resources */,
 				B5CD3F672A40B76E008E4118 /* LaunchScreen.storyboard in Resources */,
-				B542A03E2AD092F000FB4493 /* mo in Resources */,
 				B5F170A22AD6D34500C00B5F /* CDDA.png in Resources */,
 				B5F170A02AD6D1F200C00B5F /* GameChooser.xib in Resources */,
 				B5CD3F642A40B76E008E4118 /* Assets.xcassets in Resources */,
-				B542A03C2AD092E400FB4493 /* data in Resources */,
 				B5CD3F622A40B76B008E4118 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8149,11 +8143,12 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DynLoadTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8182,11 +8177,12 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DynLoadTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.role-playing-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
