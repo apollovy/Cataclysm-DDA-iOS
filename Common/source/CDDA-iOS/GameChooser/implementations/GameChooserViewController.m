@@ -6,17 +6,18 @@
 //  Copyright © 2023 Аполлов Юрий Андреевич. All rights reserved.
 //
 
-#import "GameChooser.h"
 #import "GameChooserViewController.h"
+#import "UIViewControllerInitializer.h"
+#import "IndependentUIViewControllerInitializerFactory.h"
 
 @implementation GameChooserViewController
 {
-    GameChooserControllerInitializer* _initializer;
+    id<UIViewControllerInitializer> _initializer;
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    _initializer = [[GameChooserControllerInitializer new] init:[ChosenDelegate new]];
+    _initializer = [[IndependentUIViewControllerInitializerFactory new] create];
     [_initializer initialize:self];
 }
 

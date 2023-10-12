@@ -1,5 +1,5 @@
 //
-//  GameChooserControllerInitializer.m
+//  GameChooserViewControllerInitializer.m
 //  DynLoadTest
 //
 //  Created by Аполлов Юрий Андреевич on 11.10.2023.
@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GameChooser.h"
 #import "GameChooserView.h"
+#import "ChosenDelegate.h"
+#import "ChosenDelegateUIViewControllerInitializer.h"
 
-@implementation GameChooserControllerInitializer
+@implementation ChosenDelegateUIViewControllerInitializer
 {
     id<ChosenDelegate> _chosenDelegate;
 }

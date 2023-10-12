@@ -819,8 +819,17 @@
 		B590B60629B9E87E00AF8258 /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */; };
 		B590B60729B9E88400AF8258 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
 		B590B60829B9E88700AF8258 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
-		B594AD592AD73A1C000636F1 /* GameChooserControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* GameChooserControllerInitializer.m */; };
-		B594AD5B2AD749D2000636F1 /* SimpleChosenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD5A2AD749D2000636F1 /* SimpleChosenDelegate.m */; };
+		B594AD592AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */; };
+		B594AD5B2AD749D2000636F1 /* IndependentChosenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD5A2AD749D2000636F1 /* IndependentChosenDelegate.m */; };
+		B594AD602AD74D1D000636F1 /* GameChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */; };
+		B594AD612AD74D2C000636F1 /* GameChooserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F170A42AD6D71600C00B5F /* GameChooserView.m */; };
+		B594AD622AD74D33000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */; };
+		B594AD632AD74D39000636F1 /* GameChooser.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */; };
+		B594AD642AD74D42000636F1 /* GameChooser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B594AD5C2AD74A2B000636F1 /* GameChooser.storyboard */; };
+		B594AD652AD752B4000636F1 /* CDDA.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F170A12AD6D34500C00B5F /* CDDA.png */; };
+		B594AD662AD752C2000636F1 /* CBN.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* CBN.png */; };
+		B594AD722AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */; };
+		B594AD732AD76F1D000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */; };
 		B5A20E0529B489D300035DE0 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A20E0629B489D300035DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5A20E0729B489D300035DE0 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
@@ -2414,10 +2423,16 @@
 		B590B60129B9E18100AF8258 /* CDDA_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_main.h; sourceTree = "<group>"; };
 		B590B60229B9E1F500AF8258 /* CDDA_main_patch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_main_patch.h; sourceTree = "<group>"; };
 		B590B60329B9E45400AF8258 /* CDDA_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDDA_main.cpp; sourceTree = "<group>"; };
-		B594AD4D2AD73497000636F1 /* GameChooser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameChooser.h; sourceTree = "<group>"; };
-		B594AD582AD73A1C000636F1 /* GameChooserControllerInitializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameChooserControllerInitializer.m; sourceTree = "<group>"; };
-		B594AD5A2AD749D2000636F1 /* SimpleChosenDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleChosenDelegate.m; sourceTree = "<group>"; };
+		B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChosenDelegateUIViewControllerInitializer.m; sourceTree = "<group>"; };
+		B594AD5A2AD749D2000636F1 /* IndependentChosenDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndependentChosenDelegate.m; sourceTree = "<group>"; };
 		B594AD5D2AD74A2B000636F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GameChooser.storyboard; sourceTree = "<group>"; };
+		B594AD672AD75EF6000636F1 /* UIViewControllerInitializerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerInitializerFactory.h; sourceTree = "<group>"; };
+		B594AD682AD76067000636F1 /* ChosenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChosenDelegate.h; sourceTree = "<group>"; };
+		B594AD692AD76094000636F1 /* IndependentChosenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndependentChosenDelegate.h; sourceTree = "<group>"; };
+		B594AD6A2AD760B1000636F1 /* UIViewControllerInitializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewControllerInitializer.h; sourceTree = "<group>"; };
+		B594AD6B2AD760D4000636F1 /* ChosenDelegateUIViewControllerInitializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChosenDelegateUIViewControllerInitializer.h; sourceTree = "<group>"; };
+		B594AD6E2AD763DD000636F1 /* IndependentUIViewControllerInitializerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndependentUIViewControllerInitializerFactory.h; sourceTree = "<group>"; };
+		B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndependentUIViewControllerInitializerFactory.m; sourceTree = "<group>"; };
 		B59669C4270E11CE002163AD /* sdl_font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_font.cpp; path = "worktree/Cataclysm-BN/src/sdl_font.cpp"; sourceTree = "<group>"; };
 		B59669C6270E11CE002163AD /* sdl_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sdl_utils.cpp; path = "worktree/Cataclysm-BN/src/sdl_utils.cpp"; sourceTree = "<group>"; };
 		B59669C8270E11CE002163AD /* turret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = turret.cpp; path = "worktree/Cataclysm-BN/src/turret.cpp"; sourceTree = "<group>"; };
@@ -4225,16 +4240,46 @@
 		B594AD5F2AD74AC1000636F1 /* GameChooser */ = {
 			isa = PBXGroup;
 			children = (
-				B594AD4D2AD73497000636F1 /* GameChooser.h */,
-				B594AD5C2AD74A2B000636F1 /* GameChooser.storyboard */,
+				B594AD6C2AD7627A000636F1 /* protocols */,
+				B594AD6D2AD76295000636F1 /* interfaces */,
+				B594AD6F2AD76456000636F1 /* implementations */,
 				B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */,
-				B594AD582AD73A1C000636F1 /* GameChooserControllerInitializer.m */,
-				B5F170A62AD6D72E00C00B5F /* GameChooserView.h */,
-				B5F170A42AD6D71600C00B5F /* GameChooserView.m */,
-				B5CD3F5D2A40B76B008E4118 /* GameChooserViewController.h */,
-				B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */,
+				B594AD5C2AD74A2B000636F1 /* GameChooser.storyboard */,
 			);
 			path = GameChooser;
+			sourceTree = "<group>";
+		};
+		B594AD6C2AD7627A000636F1 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B594AD682AD76067000636F1 /* ChosenDelegate.h */,
+				B594AD6A2AD760B1000636F1 /* UIViewControllerInitializer.h */,
+				B594AD672AD75EF6000636F1 /* UIViewControllerInitializerFactory.h */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B594AD6D2AD76295000636F1 /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B594AD6B2AD760D4000636F1 /* ChosenDelegateUIViewControllerInitializer.h */,
+				B5F170A62AD6D72E00C00B5F /* GameChooserView.h */,
+				B5CD3F5D2A40B76B008E4118 /* GameChooserViewController.h */,
+				B594AD692AD76094000636F1 /* IndependentChosenDelegate.h */,
+				B594AD6E2AD763DD000636F1 /* IndependentUIViewControllerInitializerFactory.h */,
+			);
+			path = interfaces;
+			sourceTree = "<group>";
+		};
+		B594AD6F2AD76456000636F1 /* implementations */ = {
+			isa = PBXGroup;
+			children = (
+				B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */,
+				B5F170A42AD6D71600C00B5F /* GameChooserView.m */,
+				B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */,
+				B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */,
+			);
+			path = implementations;
 			sourceTree = "<group>";
 		};
 		B599341525929CCE0074C0C0 /* Frameworks */ = {
@@ -4670,7 +4715,7 @@
 				B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */,
 				B5CD3F682A40B76E008E4118 /* Info.plist */,
 				B5CD3F692A40B76E008E4118 /* main.mm */,
-				B594AD5A2AD749D2000636F1 /* SimpleChosenDelegate.m */,
+				B594AD5A2AD749D2000636F1 /* IndependentChosenDelegate.m */,
 			);
 			path = DynLoadTest;
 			sourceTree = "<group>";
@@ -5210,16 +5255,20 @@
 				B5709A2C2A0926E1002EF848 /* Main.storyboard in Resources */,
 				B5709A2D2A0926E1002EF848 /* Assets.xcassets in Resources */,
 				B5709A2F2A0926E1002EF848 /* Settings.bundle in Resources */,
+				B594AD632AD74D39000636F1 /* GameChooser.xib in Resources */,
 				B5709A302A0926E1002EF848 /* LaunchScreen.storyboard in Resources */,
 				B5709A312A0926E1002EF848 /* UIControls.storyboard in Resources */,
 				B58480642A0A785600ADA17D /* GoogleService-Info.plist in Resources */,
+				B594AD652AD752B4000636F1 /* CDDA.png in Resources */,
 				B5709A322A0926E1002EF848 /* Localizable.strings in Resources */,
 				B58480662A0A794B00ADA17D /* PaywallSettings.plist in Resources */,
+				B594AD642AD74D42000636F1 /* GameChooser.storyboard in Resources */,
 				B5709A342A0926E1002EF848 /* dPad-None@2x.png in Resources */,
 				B5709ACB2A092B7F002EF848 /* data in Resources */,
 				B5709A642A0928CE002EF848 /* Assets.xcassets in Resources */,
 				B5709A652A092A8C002EF848 /* icon_1024x1024.png in Resources */,
 				B5709D5A2A092EEA002EF848 /* InfoPlist.strings in Resources */,
+				B594AD662AD752C2000636F1 /* CBN.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6232,14 +6281,18 @@
 				B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */,
 				B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */,
 				B57099962A0926E1002EF848 /* MenuButton.swift in Sources */,
+				B594AD732AD76F1D000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */,
 				B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
 				B5237F392A095526006B3BE8 /* PaywallDisplayEventSubscriber.mm in Sources */,
 				B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B52FBACD2AD21D9000C2D3F9 /* CDDA_main.mm in Sources */,
+				B594AD602AD74D1D000636F1 /* GameChooserViewController.m in Sources */,
+				B594AD612AD74D2C000636F1 /* GameChooserView.m in Sources */,
 				B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B57099AF2A0926E1002EF848 /* GamePadViewController.m in Sources */,
 				B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B57099D32A0926E1002EF848 /* MainViewController.m in Sources */,
+				B594AD622AD74D33000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */,
 				B57099FA2A0926E1002EF848 /* main.m in Sources */,
 				B57099FB2A0926E1002EF848 /* SDL_uikitview+CDDA.m in Sources */,
 				B5709A0D2A0926E1002EF848 /* unFullScreen.m in Sources */,
@@ -6610,12 +6663,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B594AD5B2AD749D2000636F1 /* SimpleChosenDelegate.m in Sources */,
+				B594AD722AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */,
+				B594AD5B2AD749D2000636F1 /* IndependentChosenDelegate.m in Sources */,
 				B5F170A82AD6E1EE00C00B5F /* GameChooserView.m in Sources */,
 				B5CD3F592A40B76B008E4118 /* AppDelegate.m in Sources */,
 				B5F170AB2AD6E33100C00B5F /* GameChooserViewController.m in Sources */,
 				B5CD3F6A2A40B76E008E4118 /* main.mm in Sources */,
-				B594AD592AD73A1C000636F1 /* GameChooserControllerInitializer.m in Sources */,
+				B594AD592AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */,
 				B5CD3F5C2A40B76B008E4118 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
