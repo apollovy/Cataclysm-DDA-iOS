@@ -358,6 +358,7 @@
 		B505C87529B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
 		B505C87629B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
 		B505C87729B748B600E94E10 /* unFullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B505C87429B748B600E94E10 /* unFullScreen.m */; };
+		B51018DE2AD89FAF003627D0 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B511BB8F29744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B511BB9029744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
@@ -432,7 +433,6 @@
 		B5709BA62A092BB1002EF848 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5709A672A092AE2002EF848 /* gfx */; };
 		B5709D592A092D94002EF848 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5709D572A092D69002EF848 /* mo */; };
 		B5709D5A2A092EEA002EF848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5709A542A092822002EF848 /* InfoPlist.strings */; };
-		B573D4712AD856920000099E /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B576B3B52972F94D00221544 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B576B3B72972F94D00221544 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B576B3B92972F94D00221544 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -6274,6 +6274,7 @@
 				B570990D2A0926E1002EF848 /* AppDelegate.m in Sources */,
 				B57099102A0926E1002EF848 /* game_dependent.mm in Sources */,
 				B57099142A0926E1002EF848 /* JSButton.m in Sources */,
+				B51018DE2AD89FAF003627D0 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */,
 				B57099302A0926E1002EF848 /* ShowAndFixGestureRecognizer.swift in Sources */,
 				B57099382A0926E1002EF848 /* path_utils.m in Sources */,
@@ -6289,7 +6290,6 @@
 				B594AD612AD74D2C000636F1 /* GameChooserView.m in Sources */,
 				B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B57099AF2A0926E1002EF848 /* GamePadViewController.m in Sources */,
-				B573D4712AD856920000099E /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B57099D32A0926E1002EF848 /* MainViewController.m in Sources */,
 				B594AD622AD74D33000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */,

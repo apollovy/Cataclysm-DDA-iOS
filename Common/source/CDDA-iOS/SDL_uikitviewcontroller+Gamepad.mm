@@ -122,7 +122,7 @@ NSDate* _startDate;
 
 @implementation SDL_uikitviewcontroller (Gamepad)
 
-MainViewController* _vc;
+MainViewController* _mainViewController;
 
 const NSArray<NSString*>* _observedSettings = @[@"overlayUIEnabled", @"panningWith1Finger", @"screenAutoresize"];
 
@@ -157,11 +157,11 @@ std::unique_ptr<ui_adaptor> _uiAdaptor;
     window.rootViewController = self;
     [window makeKeyAndVisible];
     
-    if (_vc == nil) {
+    if (_mainViewController == nil) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        _vc = [sb instantiateInitialViewController];
-        [self presentViewController:_vc animated:YES completion:^{
-            _vc = nil;
+        _mainViewController = [sb instantiateInitialViewController];
+        [self presentViewController:_mainViewController animated:YES completion:^{
+            _mainViewController = nil;
         }];
     }
 }
