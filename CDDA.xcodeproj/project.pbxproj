@@ -398,7 +398,6 @@
 		B57099142A0926E1002EF848 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
 		B57099302A0926E1002EF848 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B57099382A0926E1002EF848 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
-		B570996E2A0926E1002EF848 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
 		B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
 		B57099962A0926E1002EF848 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
@@ -433,6 +432,7 @@
 		B5709BA62A092BB1002EF848 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5709A672A092AE2002EF848 /* gfx */; };
 		B5709D592A092D94002EF848 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5709D572A092D69002EF848 /* mo */; };
 		B5709D5A2A092EEA002EF848 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5709A542A092822002EF848 /* InfoPlist.strings */; };
+		B573D4712AD856920000099E /* SDL_uikitviewcontroller+Gamepad.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */; };
 		B576B3B52972F94D00221544 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B576B3B72972F94D00221544 /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B576B3B92972F94D00221544 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -6277,7 +6277,6 @@
 				B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */,
 				B57099302A0926E1002EF848 /* ShowAndFixGestureRecognizer.swift in Sources */,
 				B57099382A0926E1002EF848 /* path_utils.m in Sources */,
-				B570996E2A0926E1002EF848 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */,
 				B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */,
 				B57099962A0926E1002EF848 /* MenuButton.swift in Sources */,
@@ -6290,6 +6289,7 @@
 				B594AD612AD74D2C000636F1 /* GameChooserView.m in Sources */,
 				B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B57099AF2A0926E1002EF848 /* GamePadViewController.m in Sources */,
+				B573D4712AD856920000099E /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
 				B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B57099D32A0926E1002EF848 /* MainViewController.m in Sources */,
 				B594AD622AD74D33000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */,

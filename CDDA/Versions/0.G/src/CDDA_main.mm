@@ -18,24 +18,8 @@ typedef int (*CDDA_mainFunctionType)(int, char*[]);
 int _argc;
 char** _argv;
 
-
-int CDDA_main(int argc, char** argv) {
-    _argc = argc;
-    _argv = argv;
-    UIViewController* vc = [[UIStoryboard storyboardWithName:@"GameChooser" bundle:nil] instantiateInitialViewController];
-    auto window = [[UIApplication.sharedApplication windows] firstObject];
-    window.rootViewController = vc;
-    [window makeKeyAndVisible];
-    return 0;
-}
-
-@implementation IndependentChosenDelegate
-
-- (void)firstChosen:(id)sender {
-    auto window = [[UIApplication.sharedApplication windows] firstObject];
-    window.rootViewController = nil;
-    window.hidden = @YES;
-    
+void runRexRun(void)
+{
     void* cddaLib = dlopen("@rpath/CDDA0GFramework.framework/CDDA0GFramework", RTLD_NOW);
     if (cddaLib == NULL) {
         [NSException raise:@"cddaLib == NULL" format:@"%s", dlerror()];
@@ -48,6 +32,32 @@ int CDDA_main(int argc, char** argv) {
             main(_argc, _argv);
         }
     }
+}
+
+
+int CDDA_main(int argc, char** argv) {
+    _argc = argc;
+    _argv = argv;
+//    UIViewController* vc = [[UIStoryboard storyboardWithName:@"GameChooser" bundle:nil] instantiateInitialViewController];
+//    auto window = [[UIApplication.sharedApplication windows] firstObject];
+//    window.rootViewController = vc;
+//    [window makeKeyAndVisible];
+    runRexRun();
+    return 0;
+}
+
+@implementation IndependentChosenDelegate
+
+- (void)firstChosen:(id)sender {
+    auto window = UIApplication.sharedApplication.keyWindow;
+    window.rootViewController = nil;
+    window.hidden = @YES;
+    if (@available(iOS 13.0, *))
+    {
+        window.windowScene = nil;
+    }
+    runRexRun();
+
 }
 
 - (void)secondChosen:(id)sender {

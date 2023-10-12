@@ -17,11 +17,10 @@ int main(int argc, char * argv[]) {
     @autoreleasepool {
         [SentrySDK startWithConfigureOptions:^(SentryOptions *options) {
             options.dsn = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"SentryDSN"];
+            options.debug = NO;
 #ifdef DEBUG
-            options.debug = YES;
             options.environment = @"development";
 #else
-            options.debug = NO;
             options.environment = @"production";
 #endif
         }];

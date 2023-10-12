@@ -13,6 +13,7 @@
 #endif
 
 #import "SDL_char_utils.h"
+#import <SDL.h>
 
 #import "SDL_uikitviewcontroller+Gamepad.h"
 #import "GamePadViewController.h"
@@ -121,6 +122,8 @@ NSDate* _startDate;
 
 @implementation SDL_uikitviewcontroller (Gamepad)
 
+MainViewController* _vc;
+
 const NSArray<NSString*>* _observedSettings = @[@"overlayUIEnabled", @"panningWith1Finger", @"screenAutoresize"];
 
 #if !defined(DCSS_IOS)
@@ -140,12 +143,27 @@ std::unique_ptr<ui_adaptor> _uiAdaptor;
         [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
 
     [self resizeRootView];
-    UIWindow* window = [[UIApplication.sharedApplication windows] firstObject];
+    auto windows = [UIApplication.sharedApplication windows];
+    auto neededWindowIndex = [windows indexOfObjectPassingTest:^BOOL(__kindof UIWindow * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
+    {
+        return [[obj.class description] containsString:@"SDL_uikitwindow"];
+    }];
+    UIWindow* window;
+    if (neededWindowIndex != -1) {
+        window = windows[neededWindowIndex];
+    } else {
+        window = [[UIApplication.sharedApplication windows] firstObject];
+    }
     window.rootViewController = self;
+    [window makeKeyAndVisible];
     
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    MainViewController *vc = [sb instantiateInitialViewController];
-    [self presentViewController:vc animated:YES completion:NULL];
+    if (_vc == nil) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        _vc = [sb instantiateInitialViewController];
+        [self presentViewController:_vc animated:YES completion:^{
+            _vc = nil;
+        }];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -155,12 +173,12 @@ std::unique_ptr<ui_adaptor> _uiAdaptor;
     _onKeyboardHandler = nil;
     _gamepadViewController = nil;
 
-    @try {
-        for (NSString* keyPath in _observedSettings)
+    for (NSString* keyPath in _observedSettings)
+        @try {
             [NSUserDefaults.standardUserDefaults removeObserver:self forKeyPath:keyPath context:nil];
-    } @catch (NSException *exception) {
-        NSLog(@"Failed to remove the observer: %@", exception);
-    }
+        } @catch (NSException *exception) {
+            NSLog(@"Failed to remove the observer: %@", exception);
+        }
 }
 
 
