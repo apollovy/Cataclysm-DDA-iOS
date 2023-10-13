@@ -9,28 +9,31 @@
 #import <Foundation/Foundation.h>
 
 #import "path_utils.h"
+#import "getCataclysmFlavor.h"
 
-NSURL* getICloudDocumentURL()
+NSURL* getICloudDocumentURL(void)
 {
+    NSString* flavor = getCataclysmFlavor();
     NSURL* url;
     if (TARGET_OS_SIMULATOR)
     {
+        NSString* path = [NSString stringWithFormat:@"/tmp/CDDA-iOS/iCloud/%@", flavor];
         NSError* error;
-        bool created = [[NSFileManager defaultManager] createDirectoryAtPath:@"/tmp/CDDA-iOS/iCloud" withIntermediateDirectories:YES attributes:nil error:&error];
+        bool created = [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
         if (!created){
             NSLog(@"Directory creation failed: %@", error);
             @throw error;
         }
         else
-            url = [NSURL fileURLWithPath:@"/tmp/CDDA-iOS/iCloud" isDirectory: YES];
+            url = [NSURL fileURLWithPath:path isDirectory: YES];
     }
     else
-        url = [[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"];
+        url = [[[[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil] URLByAppendingPathComponent:@"Documents"] URLByAppendingPathComponent:flavor];
     
     return url;
 }
 
-NSURL* getDocumentURL()
+NSURL* getDocumentURL(void)
 {
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    return [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:getCataclysmFlavor()];
 }

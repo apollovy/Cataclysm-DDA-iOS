@@ -4,6 +4,7 @@
 
 #include <UIKit/UIKit.h>
 #include "MainViewController.h"
+#import "getCataclysmFlavor.h"
 
 // https://stackoverflow.com/a/15318065/674557
 char** cArrayFromNSArray(NSArray* array)
@@ -52,9 +53,11 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(int attem
 int CDDA_iOS_main(NSString* documentPath) {
     configureFirebase();
     NSArray<NSString*>* arguments = NSProcessInfo.processInfo.arguments;
-    NSString* datadir = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/data/"];
+    NSString* pathInFramework = [NSString stringWithFormat:@"/%@Framework.framework/", getCataclysmFlavor()];
+    NSString* frameworkRootDir = [[[NSBundle mainBundle] privateFrameworksPath] stringByAppendingString:pathInFramework];
+    [NSFileManager.defaultManager changeCurrentDirectoryPath:frameworkRootDir];
     NSArray<NSString*>* newArguments = [arguments arrayByAddingObjectsFromArray:@[
-        @"--datadir", datadir,
+        @"--datadir", [frameworkRootDir stringByAppendingString:@"data/"],
         @"--userdir", [documentPath stringByAppendingString:@"/"],
         
     ]];

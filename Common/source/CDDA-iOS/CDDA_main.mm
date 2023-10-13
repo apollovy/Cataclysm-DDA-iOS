@@ -7,15 +7,9 @@
 //
 #import <dlfcn.h>
 #import <Foundation/Foundation.h>
-
+#import "getCataclysmFlavor.h"
 
 typedef int (*CDDA_mainFunctionType)(int, char*[]);
-
-NSString* getCataclysmFlavor(void)
-{
-    auto runDDA = [NSUserDefaults.standardUserDefaults boolForKey:@"runDDA"];
-    return runDDA ? @"CDDA0G" : @"CBN";
-}
 
 int CDDA_main(int argc, char** argv)
 {
