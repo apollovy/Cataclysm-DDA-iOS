@@ -143,17 +143,7 @@ std::unique_ptr<ui_adaptor> _uiAdaptor;
         [NSUserDefaults.standardUserDefaults addObserver:self forKeyPath:keyPath options:(NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew) context:nil];
 
     [self resizeRootView];
-    auto windows = [UIApplication.sharedApplication windows];
-    auto neededWindowIndex = [windows indexOfObjectPassingTest:^BOOL(__kindof UIWindow * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
-    {
-        return [[obj.class description] containsString:@"SDL_uikitwindow"];
-    }];
-    UIWindow* window;
-    if (neededWindowIndex != -1) {
-        window = windows[neededWindowIndex];
-    } else {
-        window = [[UIApplication.sharedApplication windows] firstObject];
-    }
+    auto window = [[UIApplication.sharedApplication windows] firstObject];
     window.rootViewController = self;
     [window makeKeyAndVisible];
     
