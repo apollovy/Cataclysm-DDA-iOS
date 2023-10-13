@@ -20,7 +20,7 @@ NSString* getCataclysmFlavor(void)
 int CDDA_main(int argc, char** argv)
 {
     NSString* flavor = getCataclysmFlavor();
-    auto libPath = [[NSString stringWithFormat:@"@rpath/%@Framework.framework/%@Framework", flavor, flavor] cStringUsingEncoding:kCFStringEncodingUTF8];
+    auto libPath = [[NSString stringWithFormat:@"@rpath/%@Framework.framework/%@Framework", flavor, flavor] cStringUsingEncoding:NSUTF8StringEncoding];
     void* cddaLib = dlopen(libPath, RTLD_NOW);
     if (cddaLib == NULL) {
         [NSException raise:@"cddaLib == NULL" format:@"%s", dlerror()];

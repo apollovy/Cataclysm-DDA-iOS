@@ -40,6 +40,10 @@ target 'CDDA0GFramework' do
   cDDADependencies
 end
 
+target 'CBNFramework' do
+  cDDADependencies
+end
+
 target 'DynLoadTest' do
   cDDADependencies
 end
