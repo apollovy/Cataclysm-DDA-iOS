@@ -7,61 +7,32 @@
 //
 #import <dlfcn.h>
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "IndependentChosenDelegate.h"
 
 
 typedef int (*CDDA_mainFunctionType)(int, char*[]);
 
-
-// FIXME!!!!!
-int _argc;
-char** _argv;
-
-void runRexRun(void)
+NSString* getCataclysmFlavor(void)
 {
-    void* cddaLib = dlopen("@rpath/CDDA0GFramework.framework/CDDA0GFramework", RTLD_NOW);
+    auto runDDA = [NSUserDefaults.standardUserDefaults boolForKey:@"runDDA"];
+    return runDDA ? @"CDDA0G" : @"CBN";
+}
+
+int CDDA_main(int argc, char** argv)
+{
+    NSString* flavor = getCataclysmFlavor();
+    auto libPath = [[NSString stringWithFormat:@"@rpath/%@Framework.framework/%@Framework", flavor, flavor] cStringUsingEncoding:kCFStringEncodingUTF8];
+    void* cddaLib = dlopen(libPath, RTLD_NOW);
     if (cddaLib == NULL) {
         [NSException raise:@"cddaLib == NULL" format:@"%s", dlerror()];
+        return -1;
     } else {
         void* initializer = dlsym(cddaLib, "main");
         if (initializer == NULL) {
             [NSException raise:@"cddaLib.initializer == NULL" format:@"%s", dlerror()];
+            return -2;
         } else {
             CDDA_mainFunctionType main = (CDDA_mainFunctionType) initializer;
-            main(_argc, _argv);
+            return main(argc, argv);
         }
     }
 }
-
-
-int CDDA_main(int argc, char** argv) {
-    _argc = argc;
-    _argv = argv;
-//    UIViewController* vc = [[UIStoryboard storyboardWithName:@"GameChooser" bundle:nil] instantiateInitialViewController];
-//    auto window = [[UIApplication.sharedApplication windows] firstObject];
-//    window.rootViewController = vc;
-//    [window makeKeyAndVisible];
-    runRexRun();
-    return 0;
-}
-
-@implementation IndependentChosenDelegate
-
-- (void)firstChosen:(id)sender {
-    auto window = UIApplication.sharedApplication.keyWindow;
-    window.rootViewController = nil;
-    window.hidden = @YES;
-    if (@available(iOS 13.0, *))
-    {
-        window.windowScene = nil;
-    }
-    runRexRun();
-
-}
-
-- (void)secondChosen:(id)sender {
-    NSLog(@"Not implemented");
-}
-
-@end

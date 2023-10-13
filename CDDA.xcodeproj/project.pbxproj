@@ -821,15 +821,9 @@
 		B590B60829B9E88700AF8258 /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
 		B594AD592AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */; };
 		B594AD5B2AD749D2000636F1 /* IndependentChosenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD5A2AD749D2000636F1 /* IndependentChosenDelegate.m */; };
-		B594AD602AD74D1D000636F1 /* GameChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */; };
-		B594AD612AD74D2C000636F1 /* GameChooserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F170A42AD6D71600C00B5F /* GameChooserView.m */; };
-		B594AD622AD74D33000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */; };
-		B594AD632AD74D39000636F1 /* GameChooser.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */; };
-		B594AD642AD74D42000636F1 /* GameChooser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B594AD5C2AD74A2B000636F1 /* GameChooser.storyboard */; };
 		B594AD652AD752B4000636F1 /* CDDA.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F170A12AD6D34500C00B5F /* CDDA.png */; };
 		B594AD662AD752C2000636F1 /* CBN.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* CBN.png */; };
 		B594AD722AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */; };
-		B594AD732AD76F1D000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */; };
 		B5A20E0529B489D300035DE0 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
 		B5A20E0629B489D300035DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5A20E0729B489D300035DE0 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
@@ -5255,14 +5249,12 @@
 				B5709A2C2A0926E1002EF848 /* Main.storyboard in Resources */,
 				B5709A2D2A0926E1002EF848 /* Assets.xcassets in Resources */,
 				B5709A2F2A0926E1002EF848 /* Settings.bundle in Resources */,
-				B594AD632AD74D39000636F1 /* GameChooser.xib in Resources */,
 				B5709A302A0926E1002EF848 /* LaunchScreen.storyboard in Resources */,
 				B5709A312A0926E1002EF848 /* UIControls.storyboard in Resources */,
 				B58480642A0A785600ADA17D /* GoogleService-Info.plist in Resources */,
 				B594AD652AD752B4000636F1 /* CDDA.png in Resources */,
 				B5709A322A0926E1002EF848 /* Localizable.strings in Resources */,
 				B58480662A0A794B00ADA17D /* PaywallSettings.plist in Resources */,
-				B594AD642AD74D42000636F1 /* GameChooser.storyboard in Resources */,
 				B5709A342A0926E1002EF848 /* dPad-None@2x.png in Resources */,
 				B5709ACB2A092B7F002EF848 /* data in Resources */,
 				B5709A642A0928CE002EF848 /* Assets.xcassets in Resources */,
@@ -6281,18 +6273,14 @@
 				B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */,
 				B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */,
 				B57099962A0926E1002EF848 /* MenuButton.swift in Sources */,
-				B594AD732AD76F1D000636F1 /* IndependentUIViewControllerInitializerFactory.m in Sources */,
 				B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
 				B5237F392A095526006B3BE8 /* PaywallDisplayEventSubscriber.mm in Sources */,
 				B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B52FBACD2AD21D9000C2D3F9 /* CDDA_main.mm in Sources */,
-				B594AD602AD74D1D000636F1 /* GameChooserViewController.m in Sources */,
-				B594AD612AD74D2C000636F1 /* GameChooserView.m in Sources */,
 				B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B57099AF2A0926E1002EF848 /* GamePadViewController.m in Sources */,
 				B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B57099D32A0926E1002EF848 /* MainViewController.m in Sources */,
-				B594AD622AD74D33000636F1 /* ChosenDelegateUIViewControllerInitializer.m in Sources */,
 				B57099FA2A0926E1002EF848 /* main.m in Sources */,
 				B57099FB2A0926E1002EF848 /* SDL_uikitview+CDDA.m in Sources */,
 				B5709A0D2A0926E1002EF848 /* unFullScreen.m in Sources */,

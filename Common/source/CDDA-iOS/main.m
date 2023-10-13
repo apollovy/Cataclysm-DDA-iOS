@@ -33,6 +33,7 @@ int main(int argc, char * argv[]) {
             @"resizeGameWindowWhenTogglingKeyboard": @YES,
             @"panningWith1Finger": @NO,
             @"screenAutoresize": @NO,
+            @"runDDA": @YES,
         };
         [NSUserDefaults.standardUserDefaults registerDefaults:appDefaults];
 
