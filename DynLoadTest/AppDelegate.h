@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface SDLUIKitDelegate : NSObject<UIApplicationDelegate>
+- (void)hideLaunchScreen;
+@end
+//
+@interface AppDelegate : SDLUIKitDelegate
+//@interface AppDelegate : NSObject<UIApplicationDelegate>
 
+@property UIWindow* launchWindow;
 
 @end
-

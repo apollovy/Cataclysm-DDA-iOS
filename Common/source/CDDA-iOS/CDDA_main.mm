@@ -20,13 +20,13 @@ int CDDA_main(int argc, char** argv)
         [NSException raise:@"cddaLib == NULL" format:@"%s", dlerror()];
         return -1;
     } else {
-        void* initializer = dlsym(cddaLib, "main");
+        void* initializer = dlsym(cddaLib, "CATA_main");
         if (initializer == NULL) {
             [NSException raise:@"cddaLib.initializer == NULL" format:@"%s", dlerror()];
             return -2;
         } else {
-            CDDA_mainFunctionType main = (CDDA_mainFunctionType) initializer;
-            return main(argc, argv);
+            CDDA_mainFunctionType CATA_main = (CDDA_mainFunctionType) initializer;
+            return CATA_main(argc, argv);
         }
     }
 }
