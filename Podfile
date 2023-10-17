@@ -46,4 +46,5 @@ end
 
 target 'DynLoadTest' do
   cDDADependencies
+  paywall
 end
