@@ -10,8 +10,21 @@
 #import "getCataclysmFlavor.h"
 
 
+@interface CataclysmFlavorKeeper : NSObject
+
+@property NSString* flavor;
+
+@end
+
+@implementation CataclysmFlavorKeeper
+@end
+
+static CataclysmFlavorKeeper* _keeper = [CataclysmFlavorKeeper new];
 NSString* getCataclysmFlavor(void)
 {
-    BOOL runDDA = [NSUserDefaults.standardUserDefaults boolForKey:@"runDDA"];
-    return runDDA ? @"CDDA0G" : @"CBN";
+    return _keeper.flavor;
+}
+void setCataclysmFlavor(NSString* flavor)
+{
+    _keeper.flavor = flavor;
 }

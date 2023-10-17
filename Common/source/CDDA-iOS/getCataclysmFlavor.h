@@ -16,6 +16,7 @@ extern "C" {
 #endif
 
 NSString* getCataclysmFlavor(void);
+void setCataclysmFlavor(NSString*);
 
 #ifdef __cplusplus
 }

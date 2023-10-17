@@ -10,7 +10,6 @@
 		37FA79FDCE132354E76914A0 /* Pods_CDDA0GFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A1DF0B4664DF32ED12078B /* Pods_CDDA0GFramework.framework */; };
 		481D1EC3C0CC73169D37E4FC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		61E64ADA4D769823A63C9CB9 /* Pods_CDDA0G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90030199A753D4F060FB9BDF /* Pods_CDDA0G.framework */; };
-		A252EA703B7FAB4517AD075B /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		B34ADF90185FF99A42B745AE /* Pods_DynLoadTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB87C639FC57721EA8ECD47 /* Pods_DynLoadTest.framework */; };
 		B501C91C297411E800CB965C /* text_snippets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B59669EF270E11D0002163AD /* text_snippets.cpp */; };
 		B501C91D297411E800CB965C /* simple_pathfinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9F276904EF00B02C8E /* simple_pathfinding.cpp */; };
@@ -177,7 +176,7 @@
 		B501C9C0297411E800CB965C /* activity_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B531B80B270E16AA00155C37 /* activity_type.cpp */; };
 		B501C9C1297411E800CB965C /* event_field_transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C01270E1216002163AD /* event_field_transformations.cpp */; };
 		B501C9C2297411E800CB965C /* iuse_software_snake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966C76270E121C002163AD /* iuse_software_snake.cpp */; };
-		B501C9C3297411E800CB965C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B501C9C3297411E800CB965C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */; };
 		B501C9C4297411E800CB965C /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966ACD270E11DF002163AD /* action.cpp */; };
 		B501C9C5297411E800CB965C /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFDA2276904EF00B02C8E /* shape.cpp */; };
 		B501C9C6297411E800CB965C /* distribution_grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966BF8270E1216002163AD /* distribution_grid.cpp */; };
@@ -710,13 +709,12 @@
 		B5625BAA29AFB87400BA1FDF /* rot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625B9D29AFB87200BA1FDF /* rot.cpp */; };
 		B5625BAC29AFB87400BA1FDF /* character_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625BA229AFB87300BA1FDF /* character_effects.cpp */; };
 		B57098EC2A0926E1002EF848 /* PageUpDownPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */; };
-		B570990D2A0926E1002EF848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B570990D2A0926E1002EF848 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */; };
 		B57099102A0926E1002EF848 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B57099142A0926E1002EF848 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
 		B57099302A0926E1002EF848 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B57099382A0926E1002EF848 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
-		B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
 		B57099962A0926E1002EF848 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
 		B57099A42A0926E1002EF848 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
@@ -765,9 +763,8 @@
 		B576B5532973040600221544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B576B5542973040600221544 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5436B4825C4D18D006579B4 /* MenuButton.swift */; };
 		B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
-		B576B5572973040600221544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B576B5572973040600221544 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */; };
 		B576B5582973040600221544 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
-		B576B55B2973044300221544 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
 		B576B59E29730FF500221544 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA2004026776E97BA46FE8 /* JSButton.m */; };
 		B57B28012974157D0043A513 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B57B27F7297415770043A513 /* InfoPlist.strings */; };
 		B57B28022974157F0043A513 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B501CAA82974124E00CB965C /* InfoPlist.strings */; };
@@ -790,7 +787,7 @@
 		B58679EA260402B600EACF2C /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54FDD7D2592A09000505231 /* GameController.framework */; };
 		B58679EE260402B600EACF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57201D5259293EF003D2A20 /* Assets.xcassets */; };
 		B58679F0260402B600EACF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57201D7259293EF003D2A20 /* LaunchScreen.storyboard */; };
-		B5867A172604030100EACF2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B5867A172604030100EACF2C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */; };
 		B5867A1B2604030A00EACF2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5867A2D2604036E00EACF2C /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
 		B590B5EB29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E429B9BD5700AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m */; };
@@ -802,9 +799,6 @@
 		B590B5F129B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B590B5F229B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
 		B590B5F329B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */; };
-		B590B5FE29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
-		B590B5FF29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
-		B590B60029B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */; };
 		B590B60429B9E45400AF8258 /* CDDA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B590B60329B9E45400AF8258 /* CDDA_main.cpp */; };
 		B590B60529B9E86E00AF8258 /* cdda_firebase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AA238E51E9785C5F120F6E /* cdda_firebase.m */; };
 		B590B60629B9E87E00AF8258 /* subscribeDisplayingPaywallToCDDAEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD79F4297705EC001E3EAA /* subscribeDisplayingPaywallToCDDAEvents.cpp */; };
@@ -816,7 +810,7 @@
 		B5A20E0629B489D300035DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED625F7DEB300EEEA0F /* main.m */; };
 		B5A20E0729B489D300035DE0 /* ShowAndFixGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5557CAE25E3E3F3001030D3 /* ShowAndFixGestureRecognizer.swift */; };
 		B5A20E0829B489D300035DE0 /* path_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEE925F7F31F00EEEA0F /* path_utils.m */; };
-		B5A20E0929B489D300035DE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */; };
+		B5A20E0929B489D300035DE0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */; };
 		B5A20E0A29B489D300035DE0 /* SDL_uikitview+CDDA.m in Sources */ = {isa = PBXBuildFile; fileRef = B59EBBA725D0849A0093445F /* SDL_uikitview+CDDA.m */; };
 		B5A20E0C29B489D300035DE0 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B5A20E0D29B489D300035DE0 /* ZipArchiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5412CF32605FEF20034128C /* ZipArchiver.swift */; };
@@ -1151,8 +1145,6 @@
 		B5BD60762ADD9BC800C6F038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */; };
 		B5BD607F2ADDA70900C6F038 /* CATA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD60792ADDA58300C6F038 /* CATA_main.cpp */; };
 		B5BD60802ADDA70D00C6F038 /* CATA_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5BD607B2ADDA63400C6F038 /* CATA_main.cpp */; };
-		B5BD60912ADDABFA00C6F038 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F582A40B76B008E4118 /* AppDelegate.mm */; };
-		B5BD60922ADDAC6300C6F038 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.m */; };
 		B5BD60B82ADDB90100C6F038 /* CBN.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6FF7725A393DC003FB37F /* CBN.png */; };
 		B5BD60B92ADDB95300C6F038 /* CDDA_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.mm */; };
 		B5BD60BC2ADDB9C600C6F038 /* getCDDARunArgs.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD60BB2ADDB9C600C6F038 /* getCDDARunArgs.mm */; };
@@ -1176,9 +1168,22 @@
 		B5CD3F472A40B54E008E4118 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932F8259BDD2100667062 /* libSDL2_ttf.a */; };
 		B5D46DEF2AD9A1AA00CF9AFD /* CDDA0GFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5D470AD2AD9A24000CF9AFD /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
-		B5D470B22AD9A57000CF9AFD /* CDDA0GFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; };
-		B5D470B32AD9A57000CF9AFD /* CDDA0GFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5D470B72AD9A69B00CF9AFD /* CDDA_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.mm */; };
+		B5E390312ADDFCEE0065AD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
+		B5E390332ADDFD230065AD6A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5E390322ADDFD230065AD6A /* MainViewController.mm */; };
+		B5E390342ADDFFDD0065AD6A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.mm */; };
+		B5E390382ADE00310065AD6A /* SDL_uikit_main.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E390372ADE00310065AD6A /* SDL_uikit_main.c */; };
+		B5E3903C2ADE0B8E0065AD6A /* IndependentChosenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E3903B2ADE0B7D0065AD6A /* IndependentChosenDelegate.m */; };
+		B5E3903D2ADE0D480065AD6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */; };
+		B5E3903E2ADE0F7C0065AD6A /* GameChooser.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F1709F2AD6D1F200C00B5F /* GameChooser.xib */; };
+		B5E3903F2ADE0F7F0065AD6A /* GameChooser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B594AD5C2AD74A2B000636F1 /* GameChooser.storyboard */; };
+		B5E390402ADE0FDE0065AD6A /* GameChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */; };
+		B5E390412ADE0FDE0065AD6A /* GameChooserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F170A42AD6D71600C00B5F /* GameChooserView.m */; };
+		B5E390422ADE0FDE0065AD6A /* ChosenDelegateUIViewControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */; };
+		B5E390432ADE0FDE0065AD6A /* IndependentUIViewControllerInitializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */; };
+		B5E390442ADE102E0065AD6A /* CDDA.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F170A12AD6D34500C00B5F /* CDDA.png */; };
+		B5E390452ADE14200065AD6A /* CDDA0GFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; };
+		B5E390462ADE14200065AD6A /* CDDA0GFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5ED451E29B47C950015647C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B5ED451F29B47C950015647C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B5ED452029B47C950015647C /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -1716,7 +1721,7 @@
 			remoteGlobalIDString = BE1FA72F07AF4C45004B6283;
 			remoteInfo = "libSDL_image-iOS";
 		};
-		B5D470B42AD9A57000CF9AFD /* PBXContainerItemProxy */ = {
+		B5E390472ADE14210065AD6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B57201C1259293EE003D2A20 /* Project object */;
 			proxyType = 1;
@@ -1819,7 +1824,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5D470B32AD9A57000CF9AFD /* CDDA0GFramework.framework in Embed Frameworks */,
+				B5E390462ADE14200065AD6A /* CDDA0GFramework.framework in Embed Frameworks */,
 				B5BD60702ADD99C000C6F038 /* CBNFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -2470,7 +2475,6 @@
 		B590B5E829B9BD5700AF8258 /* SDL_uikitviewcontroller+Gamepad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "SDL_uikitviewcontroller+Gamepad.mm"; sourceTree = "<group>"; };
 		B590B5E929B9BD5700AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDL_uikitviewcontroller+KeyboardKeysHandling.m"; sourceTree = "<group>"; };
 		B590B5EA29B9BD5700AF8258 /* SDL_uikitviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDL_uikitviewcontroller.h; sourceTree = "<group>"; };
-		B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDA_iOS_main.mm; sourceTree = "<group>"; };
 		B590B60129B9E18100AF8258 /* CDDA_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_main.h; sourceTree = "<group>"; };
 		B590B60229B9E1F500AF8258 /* CDDA_main_patch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_main_patch.h; sourceTree = "<group>"; };
 		B590B60329B9E45400AF8258 /* CDDA_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDDA_main.cpp; sourceTree = "<group>"; };
@@ -3068,8 +3072,7 @@
 		B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5A5BED625F7DEB300EEEA0F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDA_iOS_main.h; sourceTree = "<group>"; };
+		B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		B5A5BEE925F7F31F00EEEA0F /* path_utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = path_utils.m; sourceTree = "<group>"; };
 		B5A5BEF025F7F51300EEEA0F /* path_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = path_utils.h; sourceTree = "<group>"; };
 		B5A805232A0AC781009F8876 /* EventTypeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTypeCategory.h; sourceTree = "<group>"; };
@@ -3100,10 +3103,14 @@
 		B5CD3F5D2A40B76B008E4118 /* GameChooserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameChooserViewController.h; sourceTree = "<group>"; };
 		B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameChooserViewController.m; sourceTree = "<group>"; };
 		B5CD3F662A40B76E008E4118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B5CD3F692A40B76E008E4118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5CD3F692A40B76E008E4118 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		B5CD3F762A40BB24008E4118 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CD3F772A40BB24008E4118 /* SentryPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SentryPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBNFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E390322ADDFD230065AD6A /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		B5E390372ADE00310065AD6A /* SDL_uikit_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SDL_uikit_main.c; path = Libraries/SDL/src/main/uikit/SDL_uikit_main.c; sourceTree = SOURCE_ROOT; };
+		B5E390392ADE01FB0065AD6A /* globalWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globalWindow.h; sourceTree = "<group>"; };
+		B5E3903B2ADE0B7D0065AD6A /* IndependentChosenDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndependentChosenDelegate.m; sourceTree = "<group>"; };
 		B5E6FF7725A393DC003FB37F /* CBN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CBN.png; sourceTree = "<group>"; };
 		B5E993F62ADA3D6D00DDA903 /* SDL2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDL2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5ED454429B47C950015647C /* CDDA0F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA0F.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3202,9 +3209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5BD606F2ADD99C000C6F038 /* CBNFramework.framework in Frameworks */,
-				B5D470B22AD9A57000CF9AFD /* CDDA0GFramework.framework in Frameworks */,
-				A252EA703B7FAB4517AD075B /* (null) in Frameworks */,
 				E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */,
+				B5E390452ADE14200065AD6A /* CDDA0GFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3371,11 +3377,9 @@
 			isa = PBXGroup;
 			children = (
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
-				B5A5BED825F7DEB400EEEA0F /* AppDelegate.m */,
+				B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */,
 				B5BD60C22ADDBB5D00C6F038 /* cArrayFromNSArray.h */,
 				B5BD60C12ADDBB5D00C6F038 /* cArrayFromNSArray.mm */,
-				B5A5BEE425F7DFC200EEEA0F /* CDDA_iOS_main.h */,
-				B590B5FD29B9E0E400AF8258 /* CDDA_iOS_main.mm */,
 				B590B60129B9E18100AF8258 /* CDDA_main.h */,
 				B5709A5F2A092838002EF848 /* CDDA_main.mm */,
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
@@ -4360,6 +4364,7 @@
 		B594AD6F2AD76456000636F1 /* implementations */ = {
 			isa = PBXGroup;
 			children = (
+				B5E3903B2ADE0B7D0065AD6A /* IndependentChosenDelegate.m */,
 				B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */,
 				B5F170A42AD6D71600C00B5F /* GameChooserView.m */,
 				B5CD3F5E2A40B76B008E4118 /* GameChooserViewController.m */,
@@ -4796,12 +4801,15 @@
 		B5CD3F562A40B76B008E4118 /* DynLoadTest */ = {
 			isa = PBXGroup;
 			children = (
+				B5E390372ADE00310065AD6A /* SDL_uikit_main.c */,
 				B5CD3F572A40B76B008E4118 /* AppDelegate.h */,
 				B5CD3F582A40B76B008E4118 /* AppDelegate.mm */,
 				B5BD60C82ADDBF9A00C6F038 /* getCataclysmFlavor.m */,
 				B594AD5A2AD749D2000636F1 /* IndependentChosenDelegate.m */,
 				B5CD3F652A40B76E008E4118 /* LaunchScreen.storyboard */,
-				B5CD3F692A40B76E008E4118 /* main.m */,
+				B5CD3F692A40B76E008E4118 /* main.mm */,
+				B5E390322ADDFD230065AD6A /* MainViewController.mm */,
+				B5E390392ADE01FB0065AD6A /* globalWindow.h */,
 			);
 			path = DynLoadTest;
 			sourceTree = "<group>";
@@ -5078,8 +5086,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				B5D470B52AD9A57000CF9AFD /* PBXTargetDependency */,
 				B5BD60722ADD99C000C6F038 /* PBXTargetDependency */,
+				B5E390482ADE14210065AD6A /* PBXTargetDependency */,
 			);
 			name = CBNfreeIAP;
 			productName = CDDA;
@@ -5395,6 +5403,7 @@
 			files = (
 				B57B282D29741CA90043A513 /* GoogleService-Info.plist in Resources */,
 				B576B3C62972F94D00221544 /* Main.storyboard in Resources */,
+				B5E3903F2ADE0F7F0065AD6A /* GameChooser.storyboard in Resources */,
 				B576B3C72972F94D00221544 /* Assets.xcassets in Resources */,
 				B576B3C92972F94D00221544 /* Settings.bundle in Resources */,
 				B576B3CA2972F94D00221544 /* LaunchScreen.storyboard in Resources */,
@@ -5404,6 +5413,8 @@
 				B576B3D12972F94D00221544 /* dPad-None@2x.png in Resources */,
 				B57B28012974157D0043A513 /* InfoPlist.strings in Resources */,
 				B57B282A29741C250043A513 /* Assets.xcassets in Resources */,
+				B5E390442ADE102E0065AD6A /* CDDA.png in Resources */,
+				B5E3903E2ADE0F7C0065AD6A /* GameChooser.xib in Resources */,
 				B576B3D22972F94D00221544 /* CBN.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5422,6 +5433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E390312ADDFCEE0065AD6A /* Main.storyboard in Resources */,
 				B5BD60762ADD9BC800C6F038 /* LaunchScreen.storyboard in Resources */,
 				B5BD60B82ADDB90100C6F038 /* CBN.png in Resources */,
 			);
@@ -6229,7 +6241,7 @@
 				B501C9C0297411E800CB965C /* activity_type.cpp in Sources */,
 				B501C9C1297411E800CB965C /* event_field_transformations.cpp in Sources */,
 				B501C9C2297411E800CB965C /* iuse_software_snake.cpp in Sources */,
-				B501C9C3297411E800CB965C /* AppDelegate.m in Sources */,
+				B501C9C3297411E800CB965C /* AppDelegate.mm in Sources */,
 				B501C9C4297411E800CB965C /* action.cpp in Sources */,
 				B501C9C5297411E800CB965C /* shape.cpp in Sources */,
 				B5F33BB62AD9C7E800537339 /* font_loader.cpp in Sources */,
@@ -6392,7 +6404,6 @@
 				B501CA5F297411E800CB965C /* pixel_minimap.cpp in Sources */,
 				B501CA60297411E800CB965C /* item_factory.cpp in Sources */,
 				B501CA61297411E800CB965C /* field_type.cpp in Sources */,
-				B590B5FE29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */,
 				B501CA62297411E800CB965C /* overmap_connection.cpp in Sources */,
 				B501CA63297411E800CB965C /* stomach.cpp in Sources */,
 				B501CA64297411E800CB965C /* mondefense.cpp in Sources */,
@@ -6422,7 +6433,7 @@
 			files = (
 				B5A805282A0AC871009F8876 /* getEventTypeCategory.cpp in Sources */,
 				B57098EC2A0926E1002EF848 /* PageUpDownPanGestureRecognizer.swift in Sources */,
-				B570990D2A0926E1002EF848 /* AppDelegate.m in Sources */,
+				B570990D2A0926E1002EF848 /* AppDelegate.mm in Sources */,
 				B57099102A0926E1002EF848 /* game_dependent.mm in Sources */,
 				B57099142A0926E1002EF848 /* JSButton.m in Sources */,
 				B51018DE2AD89FAF003627D0 /* SDL_uikitviewcontroller+Gamepad.mm in Sources */,
@@ -6431,7 +6442,6 @@
 				B57099302A0926E1002EF848 /* ShowAndFixGestureRecognizer.swift in Sources */,
 				B57099382A0926E1002EF848 /* path_utils.m in Sources */,
 				B57099812A0926E1002EF848 /* ZipArchiver.swift in Sources */,
-				B570998B2A0926E1002EF848 /* CDDA_iOS_main.mm in Sources */,
 				B57099962A0926E1002EF848 /* MenuButton.swift in Sources */,
 				B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
 				B570999B2A0926E1002EF848 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
@@ -6454,7 +6464,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5237B7E2ADA24B200DDA083 /* displayInitialPaywall.m in Sources */,
+				B5E390432ADE0FDE0065AD6A /* IndependentUIViewControllerInitializerFactory.m in Sources */,
 				B576B5582973040600221544 /* ZipArchiver.swift in Sources */,
+				B5E390422ADE0FDE0065AD6A /* ChosenDelegateUIViewControllerInitializer.m in Sources */,
 				B576B5502973040600221544 /* SDL_char_utils.m in Sources */,
 				B576B54F2973040600221544 /* ShowAndFixGestureRecognizer.swift in Sources */,
 				B5BD60C42ADDBB5D00C6F038 /* cArrayFromNSArray.mm in Sources */,
@@ -6464,17 +6476,19 @@
 				B576B54D2973040600221544 /* path_utils.m in Sources */,
 				B576B5532973040600221544 /* main.m in Sources */,
 				B505C87629B748B600E94E10 /* unFullScreen.m in Sources */,
+				B5E390412ADE0FDE0065AD6A /* GameChooserView.m in Sources */,
 				B5237B802ADA24F800DDA083 /* PaywallDisplayEventSubscriber.mm in Sources */,
-				B576B55B2973044300221544 /* MainViewController.m in Sources */,
 				B576B59E29730FF500221544 /* JSButton.m in Sources */,
-				B576B5572973040600221544 /* AppDelegate.m in Sources */,
-				B590B5FF29B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */,
+				B576B5572973040600221544 /* AppDelegate.mm in Sources */,
+				B5E390402ADE0FDE0065AD6A /* GameChooserViewController.m in Sources */,
+				B5E3903D2ADE0D480065AD6A /* MainViewController.m in Sources */,
 				B590B5F229B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
 				B576B5512973040600221544 /* GamePadViewController.m in Sources */,
 				B5F33D302AD9D3EB00537339 /* getCataclysmFlavor.mm in Sources */,
 				B5237B7F2ADA24C400DDA083 /* EventsCountManager.m in Sources */,
 				B511BB9029744DCD00139993 /* game_dependent.mm in Sources */,
 				B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */,
+				B5E3903C2ADE0B8E0065AD6A /* IndependentChosenDelegate.m in Sources */,
 				B5D470B72AD9A69B00CF9AFD /* CDDA_main.mm in Sources */,
 				B590B5EC29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B576B5542973040600221544 /* MenuButton.swift in Sources */,
@@ -6490,7 +6504,7 @@
 			files = (
 				B5867A2D2604036E00EACF2C /* path_utils.m in Sources */,
 				B5867A1B2604030A00EACF2C /* main.m in Sources */,
-				B5867A172604030100EACF2C /* AppDelegate.m in Sources */,
+				B5867A172604030100EACF2C /* AppDelegate.mm in Sources */,
 				B5412CF52605FEF20034128C /* ZipArchiver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6502,9 +6516,10 @@
 				B5BD60C92ADDBF9A00C6F038 /* getCataclysmFlavor.m in Sources */,
 				B5BD60B92ADDB95300C6F038 /* CDDA_main.mm in Sources */,
 				B5BD60C72ADDBB5D00C6F038 /* cArrayFromNSArray.mm in Sources */,
-				B5BD60912ADDABFA00C6F038 /* AppDelegate.mm in Sources */,
-				B5BD60922ADDAC6300C6F038 /* main.m in Sources */,
+				B5E390332ADDFD230065AD6A /* MainViewController.mm in Sources */,
 				B5BD60CB2ADDC65400C6F038 /* path_utils.m in Sources */,
+				B5E390382ADE00310065AD6A /* SDL_uikit_main.c in Sources */,
+				B5E390342ADDFFDD0065AD6A /* main.mm in Sources */,
 				B5BD60CA2ADDC22D00C6F038 /* getCDDARunArgs.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6898,7 +6913,7 @@
 				B5A2FE1E29B4836100035DE0 /* map.cpp in Sources */,
 				B5A2FDA129B4836000035DE0 /* effect_source.cpp in Sources */,
 				B5A2FDBB29B4836000035DE0 /* pickup.cpp in Sources */,
-				B5A20E0929B489D300035DE0 /* AppDelegate.m in Sources */,
+				B5A20E0929B489D300035DE0 /* AppDelegate.mm in Sources */,
 				B5A2FD8629B4836000035DE0 /* rng.cpp in Sources */,
 				B5A2FD2129B4835F00035DE0 /* recipe_dictionary.cpp in Sources */,
 				B5A20E1029B489D300035DE0 /* game_dependent.mm in Sources */,
@@ -7025,7 +7040,6 @@
 				B5A2FD2729B4835F00035DE0 /* line.cpp in Sources */,
 				B5A2FE1129B4836100035DE0 /* posix_time.cpp in Sources */,
 				B5A2FD8D29B4836000035DE0 /* input.cpp in Sources */,
-				B590B60029B9E0E400AF8258 /* CDDA_iOS_main.mm in Sources */,
 				B5A2FDF329B4836100035DE0 /* mongroup.cpp in Sources */,
 				B5A2FE1229B4836100035DE0 /* weather.cpp in Sources */,
 				B590B60829B9E88700AF8258 /* PaywallUnlimitedFunctionality.m in Sources */,
@@ -7618,10 +7632,10 @@
 			name = "libSDL_image-iOS";
 			targetProxy = B5BD608B2ADDA75900C6F038 /* PBXContainerItemProxy */;
 		};
-		B5D470B52AD9A57000CF9AFD /* PBXTargetDependency */ = {
+		B5E390482ADE14210065AD6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5FD900B2A40B1480038B6BD /* CDDA0GFramework */;
-			targetProxy = B5D470B42AD9A57000CF9AFD /* PBXContainerItemProxy */;
+			targetProxy = B5E390472ADE14210065AD6A /* PBXContainerItemProxy */;
 		};
 		B5ED43C529B47C950015647C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
