@@ -362,6 +362,7 @@
 		B511BB9029744DCD00139993 /* game_dependent.mm in Sources */ = {isa = PBXBuildFile; fileRef = B511BB8C29744DCD00139993 /* game_dependent.mm */; };
 		B51597E02634833A008BFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B518A567297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m in Sources */ = {isa = PBXBuildFile; fileRef = B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */; };
+		B51C06F32ADEB943003A2AB8 /* CDDA0GFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5237B7E2ADA24B200DDA083 /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
 		B5237B7F2ADA24C400DDA083 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5237B802ADA24F800DDA083 /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
@@ -687,7 +688,6 @@
 		B5237CC62ADA349C00DDA083 /* wish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A04270E11D0002163AD /* wish.cpp */; };
 		B5237CC72ADA349C00DDA083 /* wisheffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B50EFD9D276904EF00B02C8E /* wisheffect.cpp */; };
 		B5237CC82ADA349C00DDA083 /* worldfactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5966A8F270E11DA002163AD /* worldfactory.cpp */; };
-		B5237CC92ADA370600DDA083 /* CBNFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */; };
 		B5237CCA2ADA370600DDA083 /* CBNFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5237F372A095526006B3BE8 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
 		B5237F382A095526006B3BE8 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
@@ -1137,7 +1137,6 @@
 		B5A2FE5829B486C200035DE0 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5A2FE5029B4868300035DE0 /* gfx */; };
 		B5A2FE5929B486D400035DE0 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5A2FE5229B4868400035DE0 /* mo */; };
 		B5A805282A0AC871009F8876 /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */; };
-		B5BD606F2ADD99C000C6F038 /* CBNFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */; };
 		B5BD60702ADD99C000C6F038 /* CBNFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5BD60732ADD9A3900C6F038 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B5BD60742ADD9A3900C6F038 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -1182,7 +1181,6 @@
 		B5E390422ADE0FDE0065AD6A /* ChosenDelegateUIViewControllerInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD582AD73A1C000636F1 /* ChosenDelegateUIViewControllerInitializer.m */; };
 		B5E390432ADE0FDE0065AD6A /* IndependentUIViewControllerInitializerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B594AD712AD76472000636F1 /* IndependentUIViewControllerInitializerFactory.m */; };
 		B5E390442ADE102E0065AD6A /* CDDA.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F170A12AD6D34500C00B5F /* CDDA.png */; };
-		B5E390452ADE14200065AD6A /* CDDA0GFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; };
 		B5E390462ADE14200065AD6A /* CDDA0GFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD900C2A40B1490038B6BD /* CDDA0GFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5ED451E29B47C950015647C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B5ED451F29B47C950015647C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
@@ -1609,6 +1607,13 @@
 			remoteGlobalIDString = BE1FA90707AF96B2004B6283;
 			remoteInfo = "libSDL_mixer-iOS";
 		};
+		B51C06F42ADEB943003A2AB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B57201C1259293EE003D2A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FD900B2A40B1480038B6BD;
+			remoteInfo = CDDA0GFramework;
+		};
 		B5237CCB2ADA370600DDA083 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B57201C1259293EE003D2A20 /* Project object */;
@@ -1780,6 +1785,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B51C06F32ADEB943003A2AB8 /* CDDA0GFramework.framework in Embed Frameworks */,
 				B5237CCA2ADA370600DDA083 /* CBNFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -3208,9 +3214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BD606F2ADD99C000C6F038 /* CBNFramework.framework in Frameworks */,
 				E95A49C1699B5BF83FC66E52 /* Pods_CBNfreeIAP.framework in Frameworks */,
-				B5E390452ADE14200065AD6A /* CDDA0GFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3238,7 +3242,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B34ADF90185FF99A42B745AE /* Pods_DynLoadTest.framework in Frameworks */,
-				B5237CC92ADA370600DDA083 /* CBNFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5126,6 +5129,7 @@
 			);
 			dependencies = (
 				B5237CCC2ADA370600DDA083 /* PBXTargetDependency */,
+				B51C06F52ADEB943003A2AB8 /* PBXTargetDependency */,
 			);
 			name = DynLoadTest;
 			productName = DynLoadTest;
@@ -7586,6 +7590,11 @@
 			isa = PBXTargetDependency;
 			name = "libSDL_mixer-iOS";
 			targetProxy = B501C917297411E800CB965C /* PBXContainerItemProxy */;
+		};
+		B51C06F52ADEB943003A2AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FD900B2A40B1480038B6BD /* CDDA0GFramework */;
+			targetProxy = B51C06F42ADEB943003A2AB8 /* PBXContainerItemProxy */;
 		};
 		B5237CCC2ADA370600DDA083 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
