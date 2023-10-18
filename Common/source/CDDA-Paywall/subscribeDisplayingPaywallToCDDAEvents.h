@@ -6,11 +6,14 @@
 #ifndef subscribeDisplayingPaywallToCDDAEvents_H
 #define subscribeDisplayingPaywallToCDDAEvents_H
 
+#import <Foundation/Foundation.h>
+#import "PaywallDisplayEventSubscriberDelegate.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-bool subscribeDisplayingPaywallToCDDAEvents();
+bool CDDAAPI_subscribeDisplayingPaywallToCDDAEvents(id<PaywallDisplayEventSubscriberDelegate> delegate);
 
 #ifdef __cplusplus
 };

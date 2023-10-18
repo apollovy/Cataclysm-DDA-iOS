@@ -8,10 +8,13 @@
 #import "AppDelegate.h"
 #import "Sentry.h"
 #import "getCataclysmFlavor.h"
-#import "subscribeDisplayingPaywallToCDDAEvents.h"
 #import "displayInitialPaywall.h"
 #import "getCDDARunArgs.h"
 #include "CDDA_main.h"
+#include "CDDAAPI.h"
+#import "PaywallDisplayEventSubscriberDelegate.h"
+#import "DefaultPaywallDisplayEventSubscriberDelegate.h"
+#import "ReturnToMainMenuPaywallCloseActionDelegate.h"
 
 extern "C"
 {
@@ -21,15 +24,17 @@ extern "C"
 #import "PaywallUnlimitedFunctionality.h"
 }
 
-void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(int attempt=1) {
+void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<PaywallDisplayEventSubscriberDelegate> delegate, int attempt=1) {
     dispatch_after(
                    dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC),
                    dispatch_get_main_queue(),
                    ^{
                        NSLog(@"Trying to subscribe to events with %i attempt.",
                              attempt);
-                       if (!subscribeDisplayingPaywallToCDDAEvents()) {
-                           repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(attempt + 1);
+                       auto subscription_f_ptr = CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_ptr;
+                       
+                       if (subscription_f_ptr == NULL || !(*subscription_f_ptr)(delegate)) {
+                           repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(delegate, attempt + 1);
                        };
                    }
                    );
@@ -68,7 +73,10 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(int attem
     unFullScreen(documentPath);
     configureFirebase();
     if (!isUnlimitedFunctionalityUnlocked()) {
-        repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds();
+        auto eventsCountManager = [EventsCountManager new];
+        auto closeActionDelegate = [ReturnToMainMenuPaywallCloseActionDelegate new];
+        auto paywallDisplayEventSubscriberDelegate = [DefaultPaywallDisplayEventSubscriberDelegate newWith:eventsCountManager closeWhenTrialIsOverWith:closeActionDelegate];
+        repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(paywallDisplayEventSubscriberDelegate);
     }
     auto cDDARunArgs = getCDDARunArgs(documentPath);
     CDDA_main(std::get<0>(cDDARunArgs), std::get<1>(cDDARunArgs));

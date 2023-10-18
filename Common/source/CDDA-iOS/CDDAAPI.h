@@ -9,10 +9,15 @@
 #ifndef CDDAAPI_h
 #define CDDAAPI_h
 
+#import <Foundation/Foundation.h>
+#import "PaywallDisplayEventSubscriberDelegate.h"
+
 namespace CDDAAPI
 {
-    typedef void (returnToMainMenu_f)();
-    extern returnToMainMenu_f* returnToMainMenu_ptr;
+typedef void (void_f)();
+typedef bool (subscribeDisplayingPaywallToCDDAEvents_f)(id<PaywallDisplayEventSubscriberDelegate>);
+extern void_f* returnToMainMenu_ptr;
+extern subscribeDisplayingPaywallToCDDAEvents_f* subscribeDisplayingPaywallToCDDAEvents_ptr;
 };
 
 #endif /* CDDAAPI_h */

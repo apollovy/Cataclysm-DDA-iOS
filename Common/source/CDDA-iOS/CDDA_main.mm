@@ -25,7 +25,9 @@ int CDDA_main(int argc, char** argv)
     } else {
         void* main_ptr = dlsymOrGTFO(cddaLib, "CATA_main");
         void* returnToMainMenu_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_returnToMainMenu");
-        CDDAAPI::returnToMainMenu_ptr = (CDDAAPI::returnToMainMenu_f*)returnToMainMenu_ptr;
+        CDDAAPI::returnToMainMenu_ptr = (CDDAAPI::void_f*)returnToMainMenu_ptr;
+        void* subscribeDisplayingPaywallToCDDAEvents_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_subscribeDisplayingPaywallToCDDAEvents");
+        CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_ptr = (CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_f*)subscribeDisplayingPaywallToCDDAEvents_ptr;
         CDDA_mainFunctionType CATA_main = (CDDA_mainFunctionType) main_ptr;
         return CATA_main(argc, argv);
     }

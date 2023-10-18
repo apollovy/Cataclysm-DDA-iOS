@@ -42,6 +42,7 @@ end
 
 target 'CBNFramework' do
   cDDADependencies
+  paywall
 end
 
 target 'DynLoadTest' do

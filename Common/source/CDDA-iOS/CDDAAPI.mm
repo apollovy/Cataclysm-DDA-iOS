@@ -10,5 +10,6 @@
 
 namespace CDDAAPI
 {
-    returnToMainMenu_f* returnToMainMenu_ptr;
+    void_f* returnToMainMenu_ptr;
+    subscribeDisplayingPaywallToCDDAEvents_f* subscribeDisplayingPaywallToCDDAEvents_ptr;
 };
