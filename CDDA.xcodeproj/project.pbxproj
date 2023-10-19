@@ -710,7 +710,7 @@
 		B5625BAC29AFB87400BA1FDF /* character_effects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5625BA229AFB87300BA1FDF /* character_effects.cpp */; };
 		B56355A92ADF07E5002E0C3D /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
 		B56355B22ADF0FB7002E0C3D /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
-		B56355C12ADF2253002E0C3D /* CDDAAPI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56355BE2ADF224E002E0C3D /* CDDAAPI.cpp */; };
+		B56355C12ADF2253002E0C3D /* CDDAAPI_returnToMainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56355BE2ADF224E002E0C3D /* CDDAAPI_returnToMainMenu.cpp */; };
 		B56355C62ADF2F89002E0C3D /* CDDAAPI.mm in Sources */ = {isa = PBXBuildFile; fileRef = B56355C52ADF2F89002E0C3D /* CDDAAPI.mm */; };
 		B56355C72ADF2F89002E0C3D /* CDDAAPI.mm in Sources */ = {isa = PBXBuildFile; fileRef = B56355C52ADF2F89002E0C3D /* CDDAAPI.mm */; };
 		B56355C92ADF3110002E0C3D /* dlsymOrGTFO.mm in Sources */ = {isa = PBXBuildFile; fileRef = B56355C82ADF3110002E0C3D /* dlsymOrGTFO.mm */; };
@@ -1144,11 +1144,18 @@
 		B5A2FE5829B486C200035DE0 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5A2FE5029B4868300035DE0 /* gfx */; };
 		B5A2FE5929B486D400035DE0 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5A2FE5229B4868400035DE0 /* mo */; };
 		B5A805282A0AC871009F8876 /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */; };
-		B5BB25D12AE1C29D0075359C /* CDDAUIAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BB25D02AE1C29D0075359C /* CDDAUIAdaptor.h */; };
 		B5BB25E12AE1C4260075359C /* DefaultCDDAUIAdaptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BB25E02AE1C4260075359C /* DefaultCDDAUIAdaptor.mm */; };
 		B5BB25E22AE1CC0C0075359C /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B5BB25E32AE1CD670075359C /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
 		B5BB25E42AE1CDD50075359C /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
+		B5BB25E52AE1D3610075359C /* DefaultCDDAUIAdaptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BB25E02AE1C4260075359C /* DefaultCDDAUIAdaptor.mm */; };
+		B5BB25E62AE1D3A50075359C /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
+		B5BB25E72AE1D42F0075359C /* CDDAAPI_returnToMainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B56355BE2ADF224E002E0C3D /* CDDAAPI_returnToMainMenu.cpp */; };
+		B5BB25EA2AE1D54E0075359C /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */; };
+		B5BB25EB2AE1D56C0075359C /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
+		B5BB25EC2AE1D5D00075359C /* data in Resources */ = {isa = PBXBuildFile; fileRef = B5709A682A092AE2002EF848 /* data */; };
+		B5BB25F02AE1D6340075359C /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5709A672A092AE2002EF848 /* gfx */; };
+		B5BB25F42AE1D6760075359C /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5709D572A092D69002EF848 /* mo */; };
 		B5BD60702ADD99C000C6F038 /* CBNFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5BD60732ADD9A3900C6F038 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B5BD60742ADD9A3900C6F038 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -1824,6 +1831,28 @@
 			name = "Copy mo to lang";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5BB25EF2AE1D6270075359C /* Copy gfx to data */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = data;
+			dstSubfolderSpec = 1;
+			files = (
+				B5BB25F02AE1D6340075359C /* gfx in Copy gfx to data */,
+			);
+			name = "Copy gfx to data";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5BB25F32AE1D66C0075359C /* Copy mo to lang */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = lang;
+			dstSubfolderSpec = 1;
+			files = (
+				B5BB25F42AE1D6760075359C /* mo in Copy mo to lang */,
+			);
+			name = "Copy mo to lang";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C941D62AD3386E008B5E69 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2074,7 +2103,7 @@
 		B5625B9D29AFB87200BA1FDF /* rot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rot.cpp; path = "worktree/Cataclysm-BN/src/rot.cpp"; sourceTree = "<group>"; };
 		B5625BA229AFB87300BA1FDF /* character_effects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = character_effects.cpp; path = "worktree/Cataclysm-BN/src/character_effects.cpp"; sourceTree = "<group>"; };
 		B56355A72ADED06E002E0C3D /* CDDAAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAAPI.h; sourceTree = "<group>"; };
-		B56355BE2ADF224E002E0C3D /* CDDAAPI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDDAAPI.cpp; sourceTree = "<group>"; };
+		B56355BE2ADF224E002E0C3D /* CDDAAPI_returnToMainMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CDDAAPI_returnToMainMenu.cpp; sourceTree = "<group>"; };
 		B56355C52ADF2F89002E0C3D /* CDDAAPI.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CDDAAPI.mm; sourceTree = "<group>"; };
 		B56355C82ADF3110002E0C3D /* dlsymOrGTFO.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = dlsymOrGTFO.mm; sourceTree = "<group>"; };
 		B56355CB2ADF3160002E0C3D /* dlsymOrGTFO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dlsymOrGTFO.h; sourceTree = "<group>"; };
@@ -3355,7 +3384,6 @@
 			children = (
 				B501CAA72974124E00CB965C /* CBN */,
 				B576B57A297306C600221544 /* CBNfreeIAP */,
-				B56355BE2ADF224E002E0C3D /* CDDAAPI.cpp */,
 			);
 			path = Versions;
 			sourceTree = "<group>";
@@ -3427,9 +3455,6 @@
 		B526C62329B4A3090086172F /* CDDA-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B5BB25DF2AE1C4100075359C /* implementations */,
-				B5BB25DD2AE1C3A50075359C /* interfaces */,
-				B5BB25DC2AE1C39A0075359C /* protocols */,
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
 				B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */,
 				B5BD60C22ADDBB5D00C6F038 /* cArrayFromNSArray.h */,
@@ -3437,6 +3462,11 @@
 				B590B60129B9E18100AF8258 /* CDDA_main.h */,
 				B5709A5F2A092838002EF848 /* CDDA_main.mm */,
 				B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */,
+				B56355BE2ADF224E002E0C3D /* CDDAAPI_returnToMainMenu.cpp */,
+				B56355A72ADED06E002E0C3D /* CDDAAPI.h */,
+				B56355C52ADF2F89002E0C3D /* CDDAAPI.mm */,
+				B56355CB2ADF3160002E0C3D /* dlsymOrGTFO.h */,
+				B56355C82ADF3110002E0C3D /* dlsymOrGTFO.mm */,
 				B511BB8C29744DCD00139993 /* game_dependent.mm */,
 				B594AD5F2AD74AC1000636F1 /* GameChooser */,
 				B50B447025A24ECA00628243 /* GamePadViewController.h */,
@@ -3445,6 +3475,8 @@
 				B5F33D2F2AD9D3EB00537339 /* getCataclysmFlavor.mm */,
 				B5BD60BA2ADDB9C600C6F038 /* getCDDARunArgs.h */,
 				B5BD60BB2ADDB9C600C6F038 /* getCDDARunArgs.mm */,
+				B5BB25DF2AE1C4100075359C /* implementations */,
+				B5BB25DD2AE1C3A50075359C /* interfaces */,
 				B5A5BED625F7DEB300EEEA0F /* main.m */,
 				B5A20E0129B4892000035DE0 /* MainViewController.h */,
 				B5A5BEBE25F7DEB200EEEA0F /* MainViewController.m */,
@@ -3452,6 +3484,7 @@
 				B59EBBC325D09BC80093445F /* PageUpDownPanGestureRecognizer.swift */,
 				B5A5BEF025F7F51300EEEA0F /* path_utils.h */,
 				B5A5BEE925F7F31F00EEEA0F /* path_utils.m */,
+				B5BB25DC2AE1C39A0075359C /* protocols */,
 				B589263425C34CB500BE1213 /* SDL_char_utils.h */,
 				B589261625C34C8500BE1213 /* SDL_char_utils.m */,
 				B59EBBA625D0849A0093445F /* SDL_uikitview+CDDA.h */,
@@ -3467,10 +3500,6 @@
 				B505C87829B748E100E94E10 /* unFullScreen.h */,
 				B505C87429B748B600E94E10 /* unFullScreen.m */,
 				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
-				B56355A72ADED06E002E0C3D /* CDDAAPI.h */,
-				B56355C52ADF2F89002E0C3D /* CDDAAPI.mm */,
-				B56355C82ADF3110002E0C3D /* dlsymOrGTFO.mm */,
-				B56355CB2ADF3160002E0C3D /* dlsymOrGTFO.h */,
 			);
 			path = "CDDA-iOS";
 			sourceTree = "<group>";
@@ -5052,7 +5081,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BB25D12AE1C29D0075359C /* CDDAUIAdaptor.h in Headers */,
 				B5D46DEF2AD9A1AA00CF9AFD /* CDDA0GFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5287,6 +5315,13 @@
 				B5FD90082A40B1480038B6BD /* Sources */,
 				B5FD90092A40B1480038B6BD /* Frameworks */,
 				B5FD900A2A40B1480038B6BD /* Resources */,
+				B5BB25ED2AE1D5DC0075359C /* Touch gfx dir to always have its copying to the product */,
+				B5BB25EF2AE1D6270075359C /* Copy gfx to data */,
+				B5BB25F12AE1D63C0075359C /* Compile lang/mo if po changed */,
+				B5BB25F22AE1D6570075359C /* Touch lang/mo dir to always have its copying to the product */,
+				B5BB25F32AE1D66C0075359C /* Copy mo to lang */,
+				B5BB25F52AE1D6810075359C /* Remove redundant directories from data */,
+				29C694C3301A42989D1B6402 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -5559,12 +5594,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BB25EC2AE1D5D00075359C /* data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		29C694C3301A42989D1B6402 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA0GFramework/Pods-CDDA0GFramework-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDDA0GFramework/Pods-CDDA0GFramework-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDDA0GFramework/Pods-CDDA0GFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		33AED6A7CFCE6C31554A460A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -5906,6 +5959,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CBNfreeIAP/Pods-CBNfreeIAP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BB25ED2AE1D5DC0075359C /* Touch gfx dir to always have its copying to the product */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Touch gfx dir to always have its copying to the product";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo touching gfx\ntouch worktree/Cataclysm-DDA/0.G/gfx\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BB25F12AE1D63C0075359C /* Compile lang/mo if po changed */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile lang/mo if po changed";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "echo compiling mo\ncd worktree/Cataclysm-DDA/0.G/lang && ./compile_mo.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BB25F22AE1D6570075359C /* Touch lang/mo dir to always have its copying to the product */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Touch lang/mo dir to always have its copying to the product";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo touching mo\ntouch worktree/Cataclysm-DDA/0.G/lang/mo\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BB25F52AE1D6810075359C /* Remove redundant directories from data */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Remove redundant directories from data";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -d \"${CODESIGNING_FOLDER_PATH}\"/data/osx ]]; then\n    rm -r \"${CODESIGNING_FOLDER_PATH}\"/data/osx\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B5D46DED2AD9A1AA00CF9AFD /* [CP] Check Pods Manifest.lock */ = {
@@ -6878,7 +7010,7 @@
 				B5237C5E2ADA349B00DDA083 /* npctalk_funcs.cpp in Sources */,
 				B5237C5F2ADA349B00DDA083 /* npctalk.cpp in Sources */,
 				B5237C602ADA349B00DDA083 /* npctrade.cpp in Sources */,
-				B56355C12ADF2253002E0C3D /* CDDAAPI.cpp in Sources */,
+				B56355C12ADF2253002E0C3D /* CDDAAPI_returnToMainMenu.cpp in Sources */,
 				B5237C612ADA349B00DDA083 /* options.cpp in Sources */,
 				B5237C622ADA349B00DDA083 /* output.cpp in Sources */,
 				B5237C632ADA349B00DDA083 /* overlay_ordering.cpp in Sources */,
@@ -7350,6 +7482,7 @@
 				B5F33A352AD9C78A00537339 /* armor_layers.cpp in Sources */,
 				B5F33A362AD9C78A00537339 /* ascii_art.cpp in Sources */,
 				B5F33A372AD9C78A00537339 /* assign.cpp in Sources */,
+				B5BB25EB2AE1D56C0075359C /* PaywallDisplayEventSubscriber.mm in Sources */,
 				B5F33A382AD9C78A00537339 /* auto_note.cpp in Sources */,
 				B5F33A392AD9C78A00537339 /* auto_pickup.cpp in Sources */,
 				B5F33A3A2AD9C78A00537339 /* avatar_action.cpp in Sources */,
@@ -7466,6 +7599,7 @@
 				B5F33AA92AD9C78C00537339 /* iexamine_actors.cpp in Sources */,
 				B5F33AAA2AD9C78C00537339 /* iexamine.cpp in Sources */,
 				B5F33AAB2AD9C78C00537339 /* init.cpp in Sources */,
+				B5BB25E52AE1D3610075359C /* DefaultCDDAUIAdaptor.mm in Sources */,
 				B5F33AAC2AD9C78C00537339 /* input.cpp in Sources */,
 				B5F33AAD2AD9C78C00537339 /* inventory_ui.cpp in Sources */,
 				B5F33AAE2AD9C78C00537339 /* inventory.cpp in Sources */,
@@ -7504,6 +7638,7 @@
 				B5F33ACF2AD9C78C00537339 /* magic_teleporter_list.cpp in Sources */,
 				B5F33AD02AD9C78C00537339 /* magic_ter_fur_transform.cpp in Sources */,
 				B5F33AD12AD9C78C00537339 /* magic.cpp in Sources */,
+				B5BB25E62AE1D3A50075359C /* SDL_char_utils.m in Sources */,
 				B5F33AD22AD9C78C00537339 /* main_menu.cpp in Sources */,
 				B5F33AD42AD9C78C00537339 /* map_extras.cpp in Sources */,
 				B5F33AD52AD9C78C00537339 /* map_field.cpp in Sources */,
@@ -7556,6 +7691,7 @@
 				B5F33B042AD9C78D00537339 /* mutation_data.cpp in Sources */,
 				B5F33B052AD9C78D00537339 /* mutation_type.cpp in Sources */,
 				B5F33B062AD9C78D00537339 /* mutation_ui.cpp in Sources */,
+				B5BB25E72AE1D42F0075359C /* CDDAAPI_returnToMainMenu.cpp in Sources */,
 				B5F33B072AD9C78D00537339 /* mutation.cpp in Sources */,
 				B5F33B082AD9C78D00537339 /* name.cpp in Sources */,
 				B5F33B092AD9C78D00537339 /* ncurses_def.cpp in Sources */,
@@ -7698,6 +7834,7 @@
 				B5F33B922AD9C78F00537339 /* weather.cpp in Sources */,
 				B5F33B932AD9C78F00537339 /* widget.cpp in Sources */,
 				B5F33B942AD9C78F00537339 /* wincurse.cpp in Sources */,
+				B5BB25EA2AE1D54E0075359C /* getEventTypeCategory.cpp in Sources */,
 				B5F33B952AD9C78F00537339 /* wish.cpp in Sources */,
 				B5F33B962AD9C78F00537339 /* worldfactory.cpp in Sources */,
 			);
@@ -8366,7 +8503,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3013;
+				CURRENT_PROJECT_VERSION = 5000;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -8384,7 +8521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.2.1;
+				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -8401,7 +8538,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 3013;
+				CURRENT_PROJECT_VERSION = 5000;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -8419,7 +8556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.2.1;
+				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tk.apollov.CBNfreeIAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

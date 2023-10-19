@@ -10,5 +10,5 @@
 
 const char *getVersionString()
 {
-    return "cbn-experimental-2023-02-28-2224/ios";
+    return "cbn-0.3/ios";
 }

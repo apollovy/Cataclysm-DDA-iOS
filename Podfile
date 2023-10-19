@@ -38,6 +38,7 @@ end
 
 target 'CDDA0GFramework' do
   cDDADependencies
+  paywall
 end
 
 target 'CBNFramework' do
