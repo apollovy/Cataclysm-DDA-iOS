@@ -11,13 +11,18 @@
 
 #import <Foundation/Foundation.h>
 #import "PaywallDisplayEventSubscriberDelegate.h"
+#import "CDDAUIAdaptor.h"
 
 namespace CDDAAPI
 {
 typedef void (void_f)();
-typedef bool (subscribeDisplayingPaywallToCDDAEvents_f)(id<PaywallDisplayEventSubscriberDelegate>);
 extern void_f* returnToMainMenu_ptr;
+
+typedef bool (subscribeDisplayingPaywallToCDDAEvents_f)(id<PaywallDisplayEventSubscriberDelegate>);
 extern subscribeDisplayingPaywallToCDDAEvents_f* subscribeDisplayingPaywallToCDDAEvents_ptr;
+
+typedef id<CDDAUIAdaptor>(createUIAdapter_f)();
+extern createUIAdapter_f* createUIAdapter_ptr;
 };
 
 #endif /* CDDAAPI_h */

@@ -23,12 +23,18 @@ int CDDA_main(int argc, char** argv)
         [NSException raise:@"cddaLib == NULL" format:@"%s", dlerror()];
         return -1;
     } else {
-        void* main_ptr = dlsymOrGTFO(cddaLib, "CATA_main");
         void* returnToMainMenu_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_returnToMainMenu");
         CDDAAPI::returnToMainMenu_ptr = (CDDAAPI::void_f*)returnToMainMenu_ptr;
+        
         void* subscribeDisplayingPaywallToCDDAEvents_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_subscribeDisplayingPaywallToCDDAEvents");
         CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_ptr = (CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_f*)subscribeDisplayingPaywallToCDDAEvents_ptr;
+        
+        void* createUIAdapter_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_createUIAdapter");
+        CDDAAPI::createUIAdapter_ptr = (CDDAAPI::createUIAdapter_f*)createUIAdapter_ptr;
+        
+        void* main_ptr = dlsymOrGTFO(cddaLib, "CATA_main");
         CDDA_mainFunctionType CATA_main = (CDDA_mainFunctionType) main_ptr;
+        
         return CATA_main(argc, argv);
     }
 }

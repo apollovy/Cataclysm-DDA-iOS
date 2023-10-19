@@ -15,6 +15,7 @@
 #import "game_dependent.h"
 #import "MainViewController.h"
 #import "CDDAAPI.h"
+#import "CDDAUIAdaptor.h"
 
 
 #pragma mark - OnKeyboardHandler
@@ -119,15 +120,14 @@ MainViewController* _mainViewController;
 
 const NSArray<NSString*>* _observedSettings = @[@"overlayUIEnabled", @"panningWith1Finger", @"screenAutoresize"];
 
-#if !defined(DCSS_IOS)
-std::unique_ptr<CDDAAPI::ui_adaptor> _uiAdaptor;
-#endif
+id<CDDAUIAdaptor> _uiAdaptor;
 
 - (void)viewDidAppear:(BOOL)animated {
     _onKeyboardHandler = [OnKeyboardHandler initWithController:self];
-#if !defined(DCSS_IOS)
-    _uiAdaptor = std::make_unique<CDDAAPI::ui_adaptor>();
-#endif
+    if (CDDAAPI::createUIAdapter_ptr != NULL)
+    {
+        _uiAdaptor = (*CDDAAPI::createUIAdapter_ptr)();
+    }
 
     for (NSNotificationName notification in @[UIKeyboardWillShowNotification, UIKeyboardWillHideNotification,  UIApplicationDidBecomeActiveNotification, UIApplicationWillResignActiveNotification])
         [[NSNotificationCenter defaultCenter] addObserver:_onKeyboardHandler selector:@selector(onKeyboard) name:notification object:nil];
@@ -226,11 +226,10 @@ static CGSize _minSize = {632, 368};
 #if !defined(DCSS_IOS)
     if (![NSUserDefaults.standardUserDefaults boolForKey:@"screenAutoresize"])
     {
-        _uiAdaptor->on_screen_resize( [&]( CDDAAPI::ui_adaptor & ui ) {
-            CDDAAPI::resize_term(CDDAAPI::get_option<int>( "TERMINAL_X" ), CDDAAPI::get_option<int>( "TERMINAL_Y" ));
-        });
+        [_uiAdaptor resizeToFullScreenOnScreenResize];
+
     } else {
-        _uiAdaptor->on_screen_resize( [&]( CDDAAPI::ui_adaptor & ui ){});
+        [_uiAdaptor doNothingOnScreenResize];
     }
 #endif
 }

@@ -360,9 +360,6 @@
 		B50CAD592AE037E10047F950 /* PaywallDisplayEventSubscriber.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BD7A17297706EB001E3EAA /* PaywallDisplayEventSubscriber.mm */; };
 		B50CAD5E2AE03CE70047F950 /* Pods_CBNFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664806F1A6550BA4E4A6C78A /* Pods_CBNFramework.framework */; };
 		B50CAD6E2AE03F210047F950 /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A8052B2A0AC94D009F8876 /* getEventTypeCategory.cpp */; };
-		B50CAD6F2AE03F290047F950 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
-		B50CAD702AE03F2F0047F950 /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
-		B50CAD712AE03F340047F950 /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
 		B50CAD732AE03F950047F950 /* SDL_char_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B589261625C34C8500BE1213 /* SDL_char_utils.m */; };
 		B50CAD742AE0405B0047F950 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B53D9DE3297BD8FA00A23F16 /* ReturnToMainMenuPaywallCloseActionDelegate.mm */; };
 		B50CAD7B2AE04BA10047F950 /* DefaultPaywallDisplayEventSubscriberDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = B50CAD7A2AE04BA10047F950 /* DefaultPaywallDisplayEventSubscriberDelegate.mm */; };
@@ -1147,6 +1144,11 @@
 		B5A2FE5829B486C200035DE0 /* gfx in Copy gfx to data */ = {isa = PBXBuildFile; fileRef = B5A2FE5029B4868300035DE0 /* gfx */; };
 		B5A2FE5929B486D400035DE0 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B5A2FE5229B4868400035DE0 /* mo */; };
 		B5A805282A0AC871009F8876 /* getEventTypeCategory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */; };
+		B5BB25D12AE1C29D0075359C /* CDDAUIAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BB25D02AE1C29D0075359C /* CDDAUIAdaptor.h */; };
+		B5BB25E12AE1C4260075359C /* DefaultCDDAUIAdaptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5BB25E02AE1C4260075359C /* DefaultCDDAUIAdaptor.mm */; };
+		B5BB25E22AE1CC0C0075359C /* EventsCountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E12297BF53600A23F16 /* EventsCountManager.m */; };
+		B5BB25E32AE1CD670075359C /* displayInitialPaywall.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E09297BEACB00A23F16 /* displayInitialPaywall.m */; };
+		B5BB25E42AE1CDD50075359C /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
 		B5BD60702ADD99C000C6F038 /* CBNFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5BD60732ADD9A3900C6F038 /* libSDL2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54932EC259BD59D00667062 /* libSDL2_image.a */; };
 		B5BD60742ADD9A3900C6F038 /* libSDL2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B549331D259BE20000667062 /* libSDL2_mixer.a */; };
@@ -3105,6 +3107,9 @@
 		B5A8052B2A0AC94D009F8876 /* getEventTypeCategory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getEventTypeCategory.cpp; sourceTree = "<group>"; };
 		B5B107472ADA19680036D035 /* CDDA_Paywall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CDDA_Paywall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B107522ADA1DC20036D035 /* CDDA_Paywall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CDDA_Paywall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BB25D02AE1C29D0075359C /* CDDAUIAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDAUIAdaptor.h; sourceTree = "<group>"; };
+		B5BB25DE2AE1C3C10075359C /* DefaultCDDAUIAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultCDDAUIAdaptor.h; sourceTree = "<group>"; };
+		B5BB25E02AE1C4260075359C /* DefaultCDDAUIAdaptor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DefaultCDDAUIAdaptor.mm; sourceTree = "<group>"; };
 		B5BD60792ADDA58300C6F038 /* CATA_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CATA_main.cpp; sourceTree = "<group>"; };
 		B5BD607B2ADDA63400C6F038 /* CATA_main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CATA_main.cpp; sourceTree = "<group>"; };
 		B5BD60BA2ADDB9C600C6F038 /* getCDDARunArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getCDDARunArgs.h; sourceTree = "<group>"; };
@@ -3422,6 +3427,9 @@
 		B526C62329B4A3090086172F /* CDDA-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B5BB25DF2AE1C4100075359C /* implementations */,
+				B5BB25DD2AE1C3A50075359C /* interfaces */,
+				B5BB25DC2AE1C39A0075359C /* protocols */,
 				B5A5BED525F7DEB200EEEA0F /* AppDelegate.h */,
 				B5A5BED825F7DEB400EEEA0F /* AppDelegate.mm */,
 				B5BD60C22ADDBB5D00C6F038 /* cArrayFromNSArray.h */,
@@ -4849,6 +4857,30 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		B5BB25DC2AE1C39A0075359C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB25D02AE1C29D0075359C /* CDDAUIAdaptor.h */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		B5BB25DD2AE1C3A50075359C /* interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB25DE2AE1C3C10075359C /* DefaultCDDAUIAdaptor.h */,
+			);
+			path = interfaces;
+			sourceTree = "<group>";
+		};
+		B5BB25DF2AE1C4100075359C /* implementations */ = {
+			isa = PBXGroup;
+			children = (
+				B5BB25E02AE1C4260075359C /* DefaultCDDAUIAdaptor.mm */,
+			);
+			path = implementations;
+			sourceTree = "<group>";
+		};
 		B5CD3F562A40B76B008E4118 /* DynLoadTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -5020,6 +5052,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BB25D12AE1C29D0075359C /* CDDAUIAdaptor.h in Headers */,
 				B5D46DEF2AD9A1AA00CF9AFD /* CDDA0GFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6554,6 +6587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BB25E42AE1CDD50075359C /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B5E390432ADE0FDE0065AD6A /* IndependentUIViewControllerInitializerFactory.m in Sources */,
 				B576B5582973040600221544 /* ZipArchiver.swift in Sources */,
 				B5E390422ADE0FDE0065AD6A /* ChosenDelegateUIViewControllerInitializer.m in Sources */,
@@ -6566,9 +6600,11 @@
 				B576B5532973040600221544 /* main.m in Sources */,
 				B505C87629B748B600E94E10 /* unFullScreen.m in Sources */,
 				B5E390412ADE0FDE0065AD6A /* GameChooserView.m in Sources */,
+				B5BB25E32AE1CD670075359C /* displayInitialPaywall.m in Sources */,
 				B576B59E29730FF500221544 /* JSButton.m in Sources */,
 				B576B5572973040600221544 /* AppDelegate.mm in Sources */,
 				B5E390402ADE0FDE0065AD6A /* GameChooserViewController.m in Sources */,
+				B5BB25E22AE1CC0C0075359C /* EventsCountManager.m in Sources */,
 				B5E3903D2ADE0D480065AD6A /* MainViewController.m in Sources */,
 				B50CAD742AE0405B0047F950 /* ReturnToMainMenuPaywallCloseActionDelegate.mm in Sources */,
 				B590B5F229B9BD5800AF8258 /* SDL_uikitviewcontroller+KeyboardKeysHandling.m in Sources */,
@@ -6642,6 +6678,7 @@
 				B5237B992ADA349B00DDA083 /* armor_layers.cpp in Sources */,
 				B5237B9A2ADA349B00DDA083 /* artifact.cpp in Sources */,
 				B5237B9B2ADA349B00DDA083 /* ascii_art.cpp in Sources */,
+				B5BB25E12AE1C4260075359C /* DefaultCDDAUIAdaptor.mm in Sources */,
 				B5237B9C2ADA349B00DDA083 /* auto_note.cpp in Sources */,
 				B5237B9D2ADA349B00DDA083 /* auto_pickup.cpp in Sources */,
 				B5237B9E2ADA349B00DDA083 /* avatar_action.cpp in Sources */,
@@ -6774,7 +6811,6 @@
 				B5237C1A2ADA349B00DDA083 /* language.cpp in Sources */,
 				B5237C1B2ADA349B00DDA083 /* lightmap.cpp in Sources */,
 				B5237C1C2ADA349B00DDA083 /* line.cpp in Sources */,
-				B50CAD712AE03F340047F950 /* EventsCountManager.m in Sources */,
 				B5237C1D2ADA349B00DDA083 /* live_view.cpp in Sources */,
 				B5237C1E2ADA349B00DDA083 /* loading_ui.cpp in Sources */,
 				B5237C1F2ADA349B00DDA083 /* lru_cache.cpp in Sources */,
@@ -6869,7 +6905,6 @@
 				B5237C782ADA349B00DDA083 /* projectile.cpp in Sources */,
 				B5237C792ADA349B00DDA083 /* ranged_aoe.cpp in Sources */,
 				B5237C7A2ADA349B00DDA083 /* ranged.cpp in Sources */,
-				B50CAD6F2AE03F290047F950 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */,
 				B5237C7B2ADA349B00DDA083 /* recipe_dictionary.cpp in Sources */,
 				B5237C7C2ADA349B00DDA083 /* recipe_groups.cpp in Sources */,
 				B5237C7D2ADA349B00DDA083 /* recipe.cpp in Sources */,
@@ -6931,7 +6966,6 @@
 				B5237CB42ADA349B00DDA083 /* veh_interact.cpp in Sources */,
 				B5237CB52ADA349B00DDA083 /* veh_type.cpp in Sources */,
 				B5237CB62ADA349B00DDA083 /* veh_utils.cpp in Sources */,
-				B50CAD702AE03F2F0047F950 /* displayInitialPaywall.m in Sources */,
 				B5237CB72ADA349B00DDA083 /* vehicle_autodrive.cpp in Sources */,
 				B5237CB82ADA349B00DDA083 /* vehicle_display.cpp in Sources */,
 				B5237CB92ADA349B00DDA083 /* vehicle_group.cpp in Sources */,
