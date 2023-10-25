@@ -780,7 +780,6 @@
 		B57B282D29741CA90043A513 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57B282B29741CA80043A513 /* GoogleService-Info.plist */; };
 		B57B283229741DBB0043A513 /* mo in Copy mo to lang */ = {isa = PBXBuildFile; fileRef = B57B282E29741D510043A513 /* mo */; };
 		B58480642A0A785600ADA17D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B58480592A0A785600ADA17D /* GoogleService-Info.plist */; };
-		B58480662A0A794B00ADA17D /* PaywallSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B58480652A0A794700ADA17D /* PaywallSettings.plist */; };
 		B58679DE260402B600EACF2C /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C7A5A25A8B373007856B5 /* CoreHaptics.framework */; };
 		B58679DF260402B600EACF2C /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FD1F2B25A575AB00CE613D /* libintl.a */; };
 		B58679E0260402B600EACF2C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A5855225A53D7A00E73D9A /* libiconv.tbd */; };
@@ -1187,6 +1186,7 @@
 		B5D46DEF2AD9A1AA00CF9AFD /* CDDA0GFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5D470AD2AD9A24000CF9AFD /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B5D470B72AD9A69B00CF9AFD /* CDDA_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.mm */; };
+		B5DBF9322AE3186B00CBEE5A /* StoreObserver.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5DBF9312AE3186B00CBEE5A /* StoreObserver.mm */; };
 		B5E390312ADDFCEE0065AD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B5E390332ADDFD230065AD6A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5E390322ADDFD230065AD6A /* MainViewController.mm */; };
 		B5E390342ADDFFDD0065AD6A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.mm */; };
@@ -2517,7 +2517,6 @@
 		B57B282B29741CA80043A513 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B57B282E29741D510043A513 /* mo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = mo; path = "worktree/Cataclysm-BN/lang/mo"; sourceTree = SOURCE_ROOT; };
 		B58480592A0A785600ADA17D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B58480652A0A794700ADA17D /* PaywallSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PaywallSettings.plist; sourceTree = "<group>"; };
 		B58678802603E72500EACF2C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B5867A02260402B600EACF2C /* CDDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5867A03260402B700EACF2C /* CDDA iCloud debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDA iCloud debug.plist"; sourceTree = "<group>"; };
@@ -3165,6 +3164,8 @@
 		B5CD3F762A40BB24008E4118 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CD3F772A40BB24008E4118 /* SentryPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SentryPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBNFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DBF9312AE3186B00CBEE5A /* StoreObserver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StoreObserver.mm; sourceTree = "<group>"; };
+		B5DBF93D2AE3199100CBEE5A /* StoreObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreObserver.h; sourceTree = "<group>"; };
 		B5E390322ADDFD230065AD6A /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		B5E390372ADE00310065AD6A /* SDL_uikit_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SDL_uikit_main.c; path = Libraries/SDL/src/main/uikit/SDL_uikit_main.c; sourceTree = SOURCE_ROOT; };
 		B5E390392ADE01FB0065AD6A /* globalWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globalWindow.h; sourceTree = "<group>"; };
@@ -3500,6 +3501,8 @@
 				B505C87829B748E100E94E10 /* unFullScreen.h */,
 				B505C87429B748B600E94E10 /* unFullScreen.m */,
 				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
+				B5DBF9312AE3186B00CBEE5A /* StoreObserver.mm */,
+				B5DBF93D2AE3199100CBEE5A /* StoreObserver.h */,
 			);
 			path = "CDDA-iOS";
 			sourceTree = "<group>";
@@ -4859,7 +4862,6 @@
 		B5A805242A0AC7CE009F8876 /* CDDA */ = {
 			isa = PBXGroup;
 			children = (
-				B58480652A0A794700ADA17D /* PaywallSettings.plist */,
 				B5A805272A0AC871009F8876 /* getEventTypeCategory.cpp */,
 			);
 			path = CDDA;
@@ -5512,7 +5514,6 @@
 				B58480642A0A785600ADA17D /* GoogleService-Info.plist in Resources */,
 				B594AD652AD752B4000636F1 /* CDDA.png in Resources */,
 				B5709A322A0926E1002EF848 /* Localizable.strings in Resources */,
-				B58480662A0A794B00ADA17D /* PaywallSettings.plist in Resources */,
 				B5709A342A0926E1002EF848 /* dPad-None@2x.png in Resources */,
 				B5709ACB2A092B7F002EF848 /* data in Resources */,
 				B5709A642A0928CE002EF848 /* Assets.xcassets in Resources */,
@@ -6748,6 +6749,7 @@
 				B56355C62ADF2F89002E0C3D /* CDDAAPI.mm in Sources */,
 				B5D470B72AD9A69B00CF9AFD /* CDDA_main.mm in Sources */,
 				B50CAD7B2AE04BA10047F950 /* DefaultPaywallDisplayEventSubscriberDelegate.mm in Sources */,
+				B5DBF9322AE3186B00CBEE5A /* StoreObserver.mm in Sources */,
 				B590B5EC29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B576B5542973040600221544 /* MenuButton.swift in Sources */,
 				B56355C92ADF3110002E0C3D /* dlsymOrGTFO.mm in Sources */,
@@ -8503,7 +8505,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 5000;
+				CURRENT_PROJECT_VERSION = 5001;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",
@@ -8538,7 +8540,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_ENTITLEMENTS = CBN/Versions/CBNfreeIAP/App.entitlements;
-				CURRENT_PROJECT_VERSION = 5000;
+				CURRENT_PROJECT_VERSION = 5001;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sentry\"",

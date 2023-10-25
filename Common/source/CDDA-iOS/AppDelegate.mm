@@ -15,6 +15,7 @@
 #import "PaywallDisplayEventSubscriberDelegate.h"
 #import "DefaultPaywallDisplayEventSubscriberDelegate.h"
 #import "ReturnToMainMenuPaywallCloseActionDelegate.h"
+#import "StoreObserver.h"
 
 extern "C"
 {
@@ -43,6 +44,8 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<Paywal
 @implementation AppDelegate
 {
     UIWindow* mainWindow;
+    StoreObserver* _storeObserver;
+    
 }
 + (NSString *)getAppDelegateClassName
 {
@@ -50,6 +53,11 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<Paywal
 }
 - (void)postFinishLaunch
 {
+    _storeObserver = [StoreObserver new];
+    [SKPaymentQueue.defaultQueue addTransactionObserver:_storeObserver];
+    
+    configureFirebase();
+    
     [self performSelector:@selector(hideLaunchScreen) withObject:nil afterDelay:0.0];
 
     if (self.launchWindow) {
@@ -71,7 +79,6 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<Paywal
             [scope addAttachment:[[SentryAttachment alloc] initWithPath:[documentPath stringByAppendingString:file]]];
     }];
     unFullScreen(documentPath);
-    configureFirebase();
     if (!isUnlimitedFunctionalityUnlocked()) {
         auto eventsCountManager = [EventsCountManager new];
         auto closeActionDelegate = [ReturnToMainMenuPaywallCloseActionDelegate new];
