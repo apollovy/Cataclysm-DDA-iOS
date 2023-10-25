@@ -697,6 +697,7 @@
 		B5237F3B2A095526006B3BE8 /* ClosePaywallPaywallCloseActionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E0C297BEB3700A23F16 /* ClosePaywallPaywallCloseActionDelegate.m */; };
 		B526C62629B4AF470086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B526C62829B4AF4F0086172F /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B526C62729B4AF4F0086172F /* version.cpp */; };
+		B52F9E0E2AE9BCF8007C35F8 /* NoopStoreObserverDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B52F9E0A2AE9BC5E007C35F8 /* NoopStoreObserverDelegate.m */; };
 		B52FBACD2AD21D9000C2D3F9 /* CDDA_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.mm */; };
 		B538050C25AC6E3500AEB52A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538050B25AC6E3500AEB52A /* SnapshotHelper.swift */; };
 		B53D9E08297BEA1800A23F16 /* displayInitialPaywall.c in Sources */ = {isa = PBXBuildFile; fileRef = B53D9E07297BEA1800A23F16 /* displayInitialPaywall.c */; };
@@ -1186,7 +1187,6 @@
 		B5D46DEF2AD9A1AA00CF9AFD /* CDDA0GFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FD900E2A40B14B0038B6BD /* CDDA0GFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5D470AD2AD9A24000CF9AFD /* version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5127665289C5723004882AA /* version.cpp */; };
 		B5D470B72AD9A69B00CF9AFD /* CDDA_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5709A5F2A092838002EF848 /* CDDA_main.mm */; };
-		B5DBF9322AE3186B00CBEE5A /* StoreObserver.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5DBF9312AE3186B00CBEE5A /* StoreObserver.mm */; };
 		B5E390312ADDFCEE0065AD6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51597E22634833A008BFD0C /* Main.storyboard */; };
 		B5E390332ADDFD230065AD6A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5E390322ADDFD230065AD6A /* MainViewController.mm */; };
 		B5E390342ADDFFDD0065AD6A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5CD3F692A40B76E008E4118 /* main.mm */; };
@@ -1998,6 +1998,8 @@
 		B5174A6725C0ADE60085F2C7 /* CDDA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDA-Bridging-Header.h"; sourceTree = "<group>"; };
 		B518A566297EA2CA00A0DEDE /* PaywallUnlimitedFunctionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaywallUnlimitedFunctionality.m; sourceTree = "<group>"; };
 		B526C62729B4AF4F0086172F /* version.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = version.cpp; sourceTree = "<group>"; };
+		B52F9E0A2AE9BC5E007C35F8 /* NoopStoreObserverDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoopStoreObserverDelegate.m; sourceTree = "<group>"; };
+		B52F9E0D2AE9BC7C007C35F8 /* NoopStoreObserverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoopStoreObserverDelegate.h; sourceTree = "<group>"; };
 		B52FBAA42AD2163500C2D3F9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		B52FBAB02AD216C800C2D3F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		B52FBAB22AD216F400C2D3F9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
@@ -3164,8 +3166,6 @@
 		B5CD3F762A40BB24008E4118 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CD3F772A40BB24008E4118 /* SentryPrivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SentryPrivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D46F702AD9A1AA00CF9AFD /* CBNFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBNFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5DBF9312AE3186B00CBEE5A /* StoreObserver.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StoreObserver.mm; sourceTree = "<group>"; };
-		B5DBF93D2AE3199100CBEE5A /* StoreObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreObserver.h; sourceTree = "<group>"; };
 		B5E390322ADDFD230065AD6A /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		B5E390372ADE00310065AD6A /* SDL_uikit_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SDL_uikit_main.c; path = Libraries/SDL/src/main/uikit/SDL_uikit_main.c; sourceTree = SOURCE_ROOT; };
 		B5E390392ADE01FB0065AD6A /* globalWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globalWindow.h; sourceTree = "<group>"; };
@@ -3501,8 +3501,6 @@
 				B505C87829B748E100E94E10 /* unFullScreen.h */,
 				B505C87429B748B600E94E10 /* unFullScreen.m */,
 				B5412CF32605FEF20034128C /* ZipArchiver.swift */,
-				B5DBF9312AE3186B00CBEE5A /* StoreObserver.mm */,
-				B5DBF93D2AE3199100CBEE5A /* StoreObserver.h */,
 			);
 			path = "CDDA-iOS";
 			sourceTree = "<group>";
@@ -4900,6 +4898,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BB25DE2AE1C3C10075359C /* DefaultCDDAUIAdaptor.h */,
+				B52F9E0D2AE9BC7C007C35F8 /* NoopStoreObserverDelegate.h */,
 			);
 			path = interfaces;
 			sourceTree = "<group>";
@@ -4908,6 +4907,7 @@
 			isa = PBXGroup;
 			children = (
 				B5BB25E02AE1C4260075359C /* DefaultCDDAUIAdaptor.mm */,
+				B52F9E0A2AE9BC5E007C35F8 /* NoopStoreObserverDelegate.m */,
 			);
 			path = implementations;
 			sourceTree = "<group>";
@@ -6744,12 +6744,12 @@
 				B576B5512973040600221544 /* GamePadViewController.m in Sources */,
 				B5F33D302AD9D3EB00537339 /* getCataclysmFlavor.mm in Sources */,
 				B511BB9029744DCD00139993 /* game_dependent.mm in Sources */,
+				B52F9E0E2AE9BCF8007C35F8 /* NoopStoreObserverDelegate.m in Sources */,
 				B576B5562973040600221544 /* SDL_uikitview+CDDA.m in Sources */,
 				B5E3903C2ADE0B8E0065AD6A /* IndependentChosenDelegate.m in Sources */,
 				B56355C62ADF2F89002E0C3D /* CDDAAPI.mm in Sources */,
 				B5D470B72AD9A69B00CF9AFD /* CDDA_main.mm in Sources */,
 				B50CAD7B2AE04BA10047F950 /* DefaultPaywallDisplayEventSubscriberDelegate.mm in Sources */,
-				B5DBF9322AE3186B00CBEE5A /* StoreObserver.mm in Sources */,
 				B590B5EC29B9BD5800AF8258 /* SDL_uikitviewcontroller+VirtualKeyboardInput.m in Sources */,
 				B576B5542973040600221544 /* MenuButton.swift in Sources */,
 				B56355C92ADF3110002E0C3D /* dlsymOrGTFO.mm in Sources */,

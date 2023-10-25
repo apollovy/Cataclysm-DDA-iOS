@@ -16,6 +16,8 @@
 #import "DefaultPaywallDisplayEventSubscriberDelegate.h"
 #import "ReturnToMainMenuPaywallCloseActionDelegate.h"
 #import "StoreObserver.h"
+#import "LoggerWithContext.h"
+#import "NoopStoreObserverDelegate.h"
 
 extern "C"
 {
@@ -53,7 +55,9 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<Paywal
 }
 - (void)postFinishLaunch
 {
-    _storeObserver = [StoreObserver new];
+    auto logger = [LoggerWithContext newWithContext:@{}];
+    auto storeObserverDelegate = [NoopStoreObserverDelegate new];
+    _storeObserver = [StoreObserver newWithDelegate:storeObserverDelegate andLogger:logger];
     [SKPaymentQueue.defaultQueue addTransactionObserver:_storeObserver];
     
     configureFirebase();
