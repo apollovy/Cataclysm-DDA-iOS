@@ -4746,8 +4746,9 @@
 				B501CA65297411E800CB965C /* Frameworks */,
 				B501CA75297411E800CB965C /* Resources */,
 				B501CA8B297411E800CB965C /* [CP] Embed Pods Frameworks */,
-				B5B4A8FF2DE26CCA009A46EA /* Embed Frameworks */,
 				822C6F9E3CB174C52E9435F7 /* [CP] Copy Pods Resources */,
+				B5B4A8FF2DE26CCA009A46EA /* Embed Frameworks */,
+				B59D460C2DE28962003405E7 /* Delete all symlinks */,
 			);
 			buildRules = (
 			);
@@ -5397,6 +5398,26 @@
 			showEnvVarsInLog = 0;
 		};
 		B59309CC2BD46CB4003DD9D7 /* Delete all symlinks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Delete all symlinks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"${CODESIGNING_FOLDER_PATH}\" -type l -delete\n";
+			showEnvVarsInLog = 0;
+		};
+		B59D460C2DE28962003405E7 /* Delete all symlinks */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
