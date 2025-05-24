@@ -23,17 +23,12 @@ end
 target 'CBN' do
   cDDADependencies
   iOSDependencies
+  paywall
 end
 
 target 'CDDA0F' do
   cDDADependencies
   iOSDependencies
-end
-
-target 'CDDA0G' do
-  cDDADependencies
-  iOSDependencies
-  paywall
 end
 
 target 'CDDA0GFramework' do

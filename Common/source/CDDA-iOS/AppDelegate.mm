@@ -69,6 +69,7 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<Paywal
         self.launchWindow = nil;
     }
     mainWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+#if defined(CDDA_PAYWALL)
     auto ctl = [[UIStoryboard storyboardWithName:@"GameChooser" bundle:nil] instantiateInitialViewController];
     mainWindow.rootViewController = ctl;
     [mainWindow makeKeyAndVisible];
@@ -76,7 +77,9 @@ void repeatTryingToSubscribeDisplayingPaywallToCDDAEventsUntilSucceeds(id<Paywal
     while (!getCataclysmFlavor()) {
         CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1, true);
     }
-    
+#else
+    setCataclysmFlavor(@"CBN");
+#endif // CDDA_PAYWALL
     NSString* documentPath = getDocumentURL().path;
     [SentrySDK configureScope:^(SentryScope *_Nonnull scope) {
         for (NSString* file in @[@"/config/debug.log", @"/config/debug.log.prev", @"/config/options.json"])

@@ -13,7 +13,12 @@
 
 NSURL* getICloudDocumentURL(void)
 {
-    NSString* flavor = getCataclysmFlavor();
+    NSString* flavor =
+#if defined(CDDA_PAYWALL)
+    getCataclysmFlavor();
+#else
+    @"";
+#endif //CDDA_PAYWALL
     NSURL* url;
     if (TARGET_OS_SIMULATOR)
     {
@@ -35,5 +40,11 @@ NSURL* getICloudDocumentURL(void)
 
 NSURL* getDocumentURL(void)
 {
-    return [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:getCataclysmFlavor()];
+    return [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:
+#if defined(CDDA_PAYWALL)
+    getCataclysmFlavor()
+#else
+    @""
+#endif //CDDA_PAYWALL
+    ];
 }
