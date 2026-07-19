@@ -11,6 +11,5 @@
 namespace CDDAAPI
 {
 void_f* returnToMainMenu_ptr;
-subscribeDisplayingPaywallToCDDAEvents_f* subscribeDisplayingPaywallToCDDAEvents_ptr;
 createUIAdapter_f* createUIAdapter_ptr;
 };

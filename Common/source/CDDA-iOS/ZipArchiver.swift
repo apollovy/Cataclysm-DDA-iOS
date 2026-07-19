@@ -12,7 +12,7 @@ import Zip
 
 class ZipArchiver : NSObject
 {
-    @objc static var savedDirs: Array<String> = ["save", "memorial", "graveyard"]
+    @objc static let savedDirs: Array<String> = ["save", "memorial", "graveyard"]
 
     @objc class func zip(_ source: URL, destination: URL, errorPtr: NSErrorPointer, progress: @escaping ((_ progress: Double) -> ()))
     {

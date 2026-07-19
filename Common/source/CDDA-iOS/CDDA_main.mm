@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "getCataclysmFlavor.h"
 #import "CDDAAPI.h"
-#import "ReturnToMainMenuPaywallCloseActionDelegate.h"
 #import "dlsymOrGTFO.h"
 
 typedef int (*CDDA_mainFunctionType)(int, char*[]);
@@ -25,9 +24,6 @@ int CDDA_main(int argc, char** argv)
     } else {
         void* returnToMainMenu_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_returnToMainMenu");
         CDDAAPI::returnToMainMenu_ptr = (CDDAAPI::void_f*)returnToMainMenu_ptr;
-        
-        void* subscribeDisplayingPaywallToCDDAEvents_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_subscribeDisplayingPaywallToCDDAEvents");
-        CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_ptr = (CDDAAPI::subscribeDisplayingPaywallToCDDAEvents_f*)subscribeDisplayingPaywallToCDDAEvents_ptr;
         
         void* createUIAdapter_ptr = dlsymOrGTFO(cddaLib, "CDDAAPI_createUIAdapter");
         CDDAAPI::createUIAdapter_ptr = (CDDAAPI::createUIAdapter_f*)createUIAdapter_ptr;

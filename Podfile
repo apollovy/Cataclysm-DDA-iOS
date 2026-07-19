@@ -1,8 +1,7 @@
-platform :ios, '11.0'
+platform :ios, '13.0'
 use_frameworks!
 
 def paywall
-  pod 'CDDA-Paywall', :path => './Libraries/CDDA-Paywall'
 end
 
 def cDDADependencies

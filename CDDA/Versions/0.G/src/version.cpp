@@ -10,5 +10,5 @@
 
 const char *getVersionString()
 {
-    return "0.G";
+    return "0.I";
 }
